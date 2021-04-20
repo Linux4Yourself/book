@@ -1,4 +1,4 @@
 - Вступительная часть
 
   - [Предисловие](prologue/foreword.md)	
-  - [Cover page](cover.md)
+  - [Аудитория, на которую рассчитана эта книга](prologue/audience.md)
