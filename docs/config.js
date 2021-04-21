@@ -13,6 +13,7 @@ window.$docsify = {
 	homepage: 'index.md',
 	autoHeader: true,
 	executeScript: true,
+	subMaxLevel: 5,
 	notFoundPage: {
 		'/': '_404.md',
 	},

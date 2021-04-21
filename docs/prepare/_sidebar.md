@@ -1,4 +1,5 @@
 - [Подготовительные работы](prepare/prepare)
 
-  - [Все пакеты](prepare/packages/all-packages)
-
+  - [Требования](prepare/requrements)
+  - [О времени сборки пакетов](prepare/about-SBU)
+  - [Все пакеты](prepare/all-packages)
