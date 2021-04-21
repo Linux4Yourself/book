@@ -4,7 +4,8 @@
 	"description": "Книга обеспечит Вас необходимыми знаниями чтобы создать свою собственную Linux систему с самого начала.",
 	"main": "index.js",
 	"scripts": {
-		"start": "node ./node_modules/docsify-cli/bin/docsify serve docs"
+		"start": "node ./node_modules/docsify-cli/bin/docsify serve docs",
+		"start:ssr": "node ./node_modules/docsify-cli/bin/docsify start . -c ssr.config.js",
 	},
 	"repository": {
 		"type": "git",
@@ -22,5 +23,17 @@
 	"homepage": "https://github.com/Linux4Yourself/Linux4Yourself.Book#readme",
 	"devDependencies": {
 		"docsify-cli": "^4.4.3"
+	},
+	"files": [
+		"docs"
+	],
+	"docsify": {
+		"config": {
+			"basePath": "https://docsify.js.org/",
+			"loadSidebar": true,
+			"loadNavbar": true,
+			"coverpage": true,
+			"name": "docsify"
+		}
 	}
 }
