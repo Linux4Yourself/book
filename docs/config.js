@@ -9,17 +9,22 @@ window.$docsify = {
 	coverpage: false,
 	loadNavbar: true,
 	loadSidebar: true,
+	loadSidebar: '_sidebar.md',
+	maxLevel: 2,
+	subMaxLevel: 3,
 	auto2top: true,
 	homepage: 'index.md',
 	autoHeader: true,
 	executeScript: true,
-	subMaxLevel: 5,
 	notFoundPage: {
 		'/': '_404.md',
 	},
 	search: {
 		placeholder: 'Поиск',
-	}
+	},
+	alias: {
+		'/.*/_sidebar.md': '/_sidebar.md',
+	},
 }
 
 // Секция локальной настройки для содержания книги.
