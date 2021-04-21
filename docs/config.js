@@ -25,6 +25,11 @@ window.$docsify = {
 	alias: {
 		'/.*/_sidebar.md': '/_sidebar.md',
 	},
+	copyCode: {
+		buttonText: 'Скопировать  в буфер обмена',
+		errorText: 'Ошибка',
+		successText: 'Текст скопирован  в буфер обмена'
+	}
 }
 
 // Секция локальной настройки для содержания книги.
