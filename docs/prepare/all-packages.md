@@ -17,7 +17,7 @@
 		data: { packages: [] },
 		mounted: function () {
 				axios
-					.get('https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/feature/core-packages/src/core-packages.json')
+					.get('https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/src/core-packages.json')
 					.then(response => (this.packages = response.data));
 		},
 		
