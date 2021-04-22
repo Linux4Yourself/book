@@ -17,9 +17,9 @@ mkdir -pv $LIN
 
 Далее смонтируем раздел:
 ```bash
-mount  -v /dev/sdxY $LIN
+mount  -v /dev/sdX $LIN
 ```
-Где sdxY - ваш корневой раздел.
+Где sdX - ваш корневой раздел.
   
 ## Монитрование раздела EFI
 
@@ -31,9 +31,9 @@ mkdir -pv $LIN/boot/efi
 Далее смонтируем раздел:
 
 ```bash
-mount -v /dev/sdxY /boot/efi
+mount -v /dev/sdN /boot/efi
 ```
-Где sdxY - EFI раздел.
+Где sdN - EFI раздел.
   
 ## Другие разделы
 
