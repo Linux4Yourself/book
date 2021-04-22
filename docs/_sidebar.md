@@ -15,4 +15,5 @@
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
+  - [Выбор размера подкачки](additional/swap)
   - [Настройка zram](additional/zram)
