@@ -6,13 +6,13 @@
   - [Преимущества](prologue/benefits.md)
   - [Прежде чем начать](prologue/before-start.md)
 
+- [**Вспомогательные материалы**](additional/additional)
+  - [Установка программ из исходных кодов в Linux](additional/src-compiling)
+  - [Настройка zram](additional/zram)
+
 - [**Подготовительные работы**](prepare/prepare)
   - [Требования](prepare/requrements)
   - [О времени сборки пакетов](prepare/about-SBU)
   - [Все пакеты](prepare/all-packages)
   - [Создание разделов](prepare/create-partition)
   - [Монтирование разделов](prepare/mount-partition)
-
-- [**Вспомогательные материалы**](additional/additional)
-  - [Установка программ из исходных кодов в Linux](additional/src-compiling)
-  - [Настройка zram](additional/zram)
