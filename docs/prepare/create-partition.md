@@ -27,7 +27,7 @@ mkswap /dev/sdY
 ```
 Где sdY - ваш swap раздел.
 
-?> Больше о создании и настройке подкачки читать [здесь] (https://github.com/Linux4Yourself/Linux4Yourself.Book/blob/develop/docs/additional/swap.md)
+?> Больше о создании и настройке подкачки читать [здесь](additional/swap.md)
 
 
 ## Другие разделы
