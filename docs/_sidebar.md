@@ -18,6 +18,7 @@
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
+  - [Типы и разделов и каталогов](additional/partitions_calalogs)
   - [Выбор размера файла подкачки](additional/swap)
   - [Настройка zram](additional/zram)
   - [Виды популярных архитектур процессоров](additional/cpu-arch)
