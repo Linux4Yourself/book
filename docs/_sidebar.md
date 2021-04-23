@@ -11,7 +11,7 @@
 - [**Подготовительные работы**](prepare/prepare)
   - [Требования](prepare/requrements)
   - [О времени сборки пакетов](prepare/about-SBU)
-  - [О поддержке MultiLib](prepare/about-multilib
+  - [О поддержке MultiLib](prepare/about-multilib)
   - [Все пакеты](prepare/all-packages)
   - [Создание разделов](prepare/create-partition)
   - [Монтирование разделов](prepare/mount-partition)
