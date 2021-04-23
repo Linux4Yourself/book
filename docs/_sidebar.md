@@ -7,12 +7,12 @@
   - [Прежде чем начать](prologue/before-start.md)
   - [Обозначения принятые в книге](prologue/typography.md)
   - [Информация об используемых пакетах](prologue/packages)
+  - [Опечатки и неточности](prologue/inaccuracies)
+  - [Целевые архитектуры](prologue/arch)
 
 - [**Подготовительные работы**](prepare/prepare)
   - [Требования](prepare/requrements)
   - [О времени сборки пакетов](prepare/about-SBU)
-  - [О поддержке MultiLib](prepare/about-multilib)
-  - [Все пакеты](prepare/all-packages)
   - [Создание разделов](prepare/create-partition)
   - [Монтирование разделов](prepare/mount-partition)
 
@@ -20,3 +20,4 @@
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
   - [Выбор размера файла подкачки](additional/swap)
   - [Настройка zram](additional/zram)
+  - [Виды популярных архитектур процессоров](additional/cpu-arch)
