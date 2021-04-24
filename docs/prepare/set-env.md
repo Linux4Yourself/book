@@ -1,6 +1,6 @@
 ﻿# Настройка окружения
 
-Необходимо настроить окружение для не давно созданного пользователя.
+Необходимо настроить окружение для недавно созданного пользователя.
 Во первых создадим `.bash_profile`:
 
 ```bash 
@@ -21,7 +21,7 @@ LIN_TGT=$(uname -m)-lin-linux-gnu
 PATH=/usr/bin
 if [ ! -L /bin ]; then PATH=/bin:$PATH; fi
 PATH=$LIN/tools/bin:$PATH
-export LFS LC_ALL LFS_TGT PATH CONFIG_SITE
+export LIN LC_ALL LIN_TGT PATH CONFIG_SITE
 EOF
 ```
 
