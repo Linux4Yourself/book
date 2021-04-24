@@ -14,6 +14,7 @@
   - [Требования](prepare/requrements)
   - [О времени сборки пакетов](prepare/about-SBU)
   - [Создание разделов](prepare/create-partition)
+  - [Установка переменной $LIN](prepare/set-LIN)
   - [Монтирование разделов](prepare/mount-partition)
   - [Создание основных каталогов и символических ссылок](prepare/create-dirs)
 
