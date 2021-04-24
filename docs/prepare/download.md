@@ -12,7 +12,12 @@ wget --input-file=wget-list --continue --directory-prefix=$LIN/sources
 
 При желании, вы можете выполнить проверку пакетов на соответствие контрольным суммам.
 
-Загрузите файл [md5sums](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/src/md5sums),поместите его в каталог ``$LIN/sources`` и выполните команду:
+Загрузите файл [md5sums](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/src/md5sums):
+```bash
+wget https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/src/md5sums
+```
+
+Поместите его в каталог ``$LIN/sources`` и выполните команду:
 
 ```bash
 pushd $LIN/sources
