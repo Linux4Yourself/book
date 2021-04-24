@@ -15,6 +15,7 @@
   - [О времени сборки пакетов](prepare/about-SBU)
   - [Создание разделов](prepare/create-partition)
   - [Монтирование разделов](prepare/mount-partition)
+  - [Создание основных каталогов и символических ссылок](prepare/create-dirs)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
