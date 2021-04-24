@@ -17,6 +17,8 @@
   - [Установка переменной $LIN](prepare/set-LIN)
   - [Монтирование разделов](prepare/mount-partition)
   - [Создание основных каталогов и символических ссылок](prepare/create-dirs)
+  - [Требуемые пакеты и патчи](prepare/download)
+  - [Создание пользователя](prepare/add-user)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
