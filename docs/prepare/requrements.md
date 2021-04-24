@@ -10,7 +10,7 @@
 
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/version-check.sh ':include')
 
-?> Внимательно изучите результат выполнения. В нём не должно встречаться строк, содержащих ERROR.
+?> Внимательно изучите результат выполнения. В нём не должно встречаться строк, содержащих ERROR, command not found, failed.
 
 **Ошибочный результат**
 
