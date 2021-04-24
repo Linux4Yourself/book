@@ -9,8 +9,10 @@ mkdir -pv $LIN/sources
 mkdir -pv $LIN/tools
 ```
 Теперь создайте базовую иеархию файловой системы:
+
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/file-system.sh ':include')
-Подробнее об этом вы можете прочитать в стандарте [FHS](https://refspecs.linuxfoundation.org/fhs.shtml)
+
+Подробнее об иерархии каталогов можно узнать в спецификации [FHS](https://refspecs.linuxfoundation.org/fhs.shtml)
 
 ## Для MultiLib
 Создайте директорию для 32-битных библиотек:
