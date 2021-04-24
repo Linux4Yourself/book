@@ -19,6 +19,7 @@
   - [Создание основных каталогов и символических ссылок](prepare/create-dirs)
   - [Требуемые пакеты и патчи](prepare/download)
   - [Создание пользователя](prepare/add-user)
+  - [Настройка окружения](prepare/set-env)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
