@@ -25,6 +25,7 @@
   - [Общая инструкция по сборке пакетов](prepare/general-build-instruction)
 
 - [**Сборка кросс компилятора**](cross-toolchain/cross-toolchain.md)
+  - [Binutils](cross-toolchain/binutils)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
