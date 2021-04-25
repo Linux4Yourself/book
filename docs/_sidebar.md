@@ -21,6 +21,7 @@
   - [Создание пользователя](prepare/add-user)
   - [Настройка окружения](prepare/set-env)
   - [О тестах](prepare/about-tests)
+  - [О приоритете](prepare/about-preiority)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
