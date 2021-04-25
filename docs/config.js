@@ -39,3 +39,17 @@ book = {
 	// выставить в релизной ветке.
 	revision: 'develop',
 }
+
+// источник метаданных пакетов.
+const pkgsSrc = `https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/${book.revision}/src/core-packages.json`;
+
+// Получить список всех пакетов из источника.
+getPackages = function () {
+	return axios.get(pkgsSrc);
+}
+
+// Получить пакет по наименованию
+getPackage = function (name) {
+	return axios.get(pkgsSrc)
+		.then(response => response.data.filter(pkg => pkg.name === name)[0]);
+}

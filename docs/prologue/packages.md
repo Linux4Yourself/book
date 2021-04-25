@@ -15,14 +15,11 @@
 </div>
 
 <script>
-	// TODO: WIP.
 	new Vue({
 		el: '#main',
 		data: { packages: [] },
 		mounted: function () {
-				axios
-					.get('https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/src/core-packages.json')
-					.then(response => (this.packages = response.data));
+				getPackages().then(response => (this.packages = response.data));
 		},
   })
 </script>
