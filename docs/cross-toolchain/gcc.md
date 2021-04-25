@@ -2,7 +2,7 @@
 
 Описание: {{ package.description }}
 
-Ссылка для скачивания: {{ package.url }}
+Ссылка для загрузки: <a :href="package.url">{{ package.url}}</a>
 
 Размер архива: {{ package.size }}
 
@@ -10,9 +10,9 @@
 
 md5-сумма файла: {{ package.md5 }}
 
-Страница релизов: {{ package.releasesUrl }}
+Страница релизов: <a :href="package.releasesUrl">{{ package.releasesUrl}}</a>
 
-Домашняя страница: {{ package.homeUrl }}
+Домашняя страница:  <a :href="package.homeUrl">{{ package.homeUrl}}</a>
 
 Приоритет: {{ package.priority }}
 
@@ -21,28 +21,48 @@ SBU: {{ package.sbu }}
 <script>
 		new Vue({
 		el: '#main',
-		data: { package: {} },
+		data: { package: {}, mpc: {}, mpfgr: {}, gmp : {}, isl: {} },
 		mounted: function () {
 				this.getPackage('gcc');
+				this.getMpc();
+				this.getMpfr();
+				this.getGmp();
+				this.getIsl();
 		},
 		methods: {
 			getPackage: function(name) {
 					getPackage(name)
 					.then(response => this.package = response);
-			}
+			},
+			getMpc: function() {
+					getPackage('mpc')
+					.then(response => this.mpc = response);
+			},
+			getMpfr: function() {
+					getPackage('mpfr')
+					.then(response => this.mpfgr = response);
+			},
+			getGmp: function() {
+					getPackage('gmp')
+					.then(response => this.gmp = response);
+			},
+			getIsl: function() {
+					getPackage('isl')
+					.then(response => this.isl = response);
+			},
 		}
   })
 </script>
 
 ## Дополнительные необходимые файлы
 
-https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz
+<a :href="mpc.url">{{ mpc.url}}</a>
 
-https://www.mpfr.org/mpfr-4.1.0/mpfr-4.1.0.tar.xz
+<a :href="gmp.url">{{ gmp.url}}</a>
 
-https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz
+<a :href="mpfgr.url">{{ mpfgr.url}}</a>
 
-http://isl.gforge.inria.fr/isl-0.23.tar.xz
+<a :href="isl.url">{{ isl.url}}</a>
 
 ## Сборка 
 
