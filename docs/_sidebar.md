@@ -22,6 +22,7 @@
   - [Настройка окружения](prepare/set-env)
   - [О тестах](prepare/about-tests)
   - [О приоритете пакетов](prepare/about-priority)
+  - [Общая инструкция по сборке пакетов](prepare/general-build-instruction)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
