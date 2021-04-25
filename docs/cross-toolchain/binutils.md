@@ -2,7 +2,7 @@
 
 Описание: {{ package.description }}
 
-Ссылка для: скачивания {{ package.url }}
+Ссылка для скачивания: {{ package.url }}
 
 Размер архива: {{ package.size }}
 
