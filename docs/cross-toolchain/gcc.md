@@ -80,7 +80,7 @@ cd bld
     --target=$LIN_TGT                              \
     --prefix=$LIN/tools                            \
     --with-glibc-version=2.11                      \
-    --with-sysroot=$LFS                            \
+    --with-sysroot=$LIN                            \
     --with-newlib                                  \
     --without-headers                              \
     --enable-initfini-array                        \
