@@ -24,6 +24,8 @@
   - [О приоритете пакетов](prepare/about-priority)
   - [Общая инструкция по сборке пакетов](prepare/general-build-instruction)
 
+- [**Сборка кросс компилятора**](cross-toolchain/cross-toolchain.md)
+
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
   - [Типы и разделов и каталогов](additional/partitions_calalogs)
