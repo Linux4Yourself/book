@@ -2,17 +2,17 @@
 
 Описание: {{ package.description }}
 
-Ссылка для: скачивания {{ package.url }}
+Ссылка для загрузки: <a :href="package.url">{{ package.url}}</a>
 
-Размер архива: {{ package.size }}
+Размер архива: {{ package.size }} Mb
 
 Имя файла: {{ package.fileName }}
 
 md5-сумма файла: {{ package.md5 }}
 
-Страница релизов: {{ package.releasesUrl }}
+Страница релизов: <a :href="package.releasesUrl">{{ package.releasesUrl}}</a>
 
-Домашняя страница: {{ package.homeUrl }}
+Домашняя страница: <a :href="package.homeUrl">{{ package.homeUrl}}</a>
 
 Приоритет: {{ package.priority }}
 
@@ -80,4 +80,3 @@ make install -j1
 ```
 
 `-j1` предотвращает возможную ошибку
-
