@@ -55,7 +55,7 @@ echo "export MAKEFLAGS=\"-jN\" " >> ~/.bashrc
 Для MultiLib выполните:
 
 ```bash
-echo "export LIN_TGT32=i686-lfs-linux-gnu" >> ~/.bashrc
+echo "export LIN_TGT32=i686-lin-linux-gnu" >> ~/.bashrc
 ```
 
 Эта переменная используется для сборки i386 библиотек.
