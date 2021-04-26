@@ -32,5 +32,6 @@
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
   - [Типы и разделов и каталогов](additional/partitions_calalogs)
   - [Выбор размера файла подкачки](additional/swap)
+  - [Кросс-компилятор](additional/cross-compiler)
   - [Настройка zram](additional/zram)
   - [Виды популярных архитектур процессоров](additional/cpu-arch)
