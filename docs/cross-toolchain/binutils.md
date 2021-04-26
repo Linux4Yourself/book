@@ -1,22 +1,4 @@
-# {{ package.name }} v.{{ package.version }}
-
-Описание: {{ package.description }}
-
-Ссылка для загрузки: <a :href="package.url">{{ package.url}}</a>
-
-Размер архива: {{ package.size }} Mb
-
-Имя файла: {{ package.fileName }}
-
-md5-сумма файла: {{ package.md5 }}
-
-Страница релизов: <a :href="package.releasesUrl">{{ package.releasesUrl}}</a>
-
-Домашняя страница: <a :href="package.homeUrl">{{ package.homeUrl}}</a>
-
-Приоритет: {{ package.priority }}
-
-SBU: {{ package.sbu }}
+<package-info :package="package" showsbu></package-info>
 
 <script>
 		new Vue({
