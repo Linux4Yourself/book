@@ -1,12 +1,35 @@
-# Заголовки ядра Linux
+# Заголовки ядра Linux v.{{ package.version }}
+Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
+<br />
+Текущая версия: <b>{{ package.version }}</b>
+<br />
+Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
+<br />
+Важность: <b>{{ package.priority }}</b>
+<br />
+Размер архива: <b>{{ package.size }} Mb</b>
 
-(не знаю как шапку этому пакету приклеить)
+<script>
+		new Vue({
+		el: '#main',
+		data: { package: {} },
+		mounted: function () {
+				this.getPackage('linux');
+		},
+		methods: {
+			getPackage: function(name) {
+					getPackage(name)
+					.then(response => this.package = response);
+			}
+		}
+  })
+</script>
 
 ## Сборка
 
 !> **Данный пакет является частью архива с ядром Linux**
 
-!> **Данный пакет устанавливается на свое окончательное место и не будет пере установлен впоследствии**
+!> **Данный пакет устанавливается на свое окончательное место и не будет переустановлен впоследствии**
  
  Во первых убедитесь что в архив не включены файлы которые могут помешать сборке:
  
