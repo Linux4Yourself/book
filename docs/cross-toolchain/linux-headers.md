@@ -27,7 +27,7 @@ make headers
 ```bash
 find usr/include -name '.*' -delete
 rm usr/include/Makefile
-cp -rv usr/include $LFS/usr
+cp -rv usr/include $LIN/usr
 ```
 
 ## Установленные файлы
