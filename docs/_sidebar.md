@@ -27,6 +27,7 @@
 - [**Сборка кросс компилятора**](cross-toolchain/cross-toolchain.md)
   - [Binutils](cross-toolchain/binutils)
   - [GCC](cross-toolchain/gcc)
+  - [Linux headers](cross-toolchain/linux-headers)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
