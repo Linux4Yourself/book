@@ -13,7 +13,7 @@ Vue.component('package-info', {
 			<br />
 			Важность: <b>{{ package.priority }}</b>
 			<br />
-			Размер: <b>{{ package.size }} Mb</b>
+			Размер архива: <b>{{ package.size }} Mb</b>
 
 			<span v-if="showsbu">
 				<br />
