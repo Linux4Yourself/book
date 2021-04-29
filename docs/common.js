@@ -7,7 +7,9 @@ Vue.component('package-info', {
 	template: `
 	<div class="pkg">
 		<p class="pkg-desc">
-			Текущая версия: <a :href="package.url"><b>{{ package.version }}</b></a>
+			Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
+			<br />
+			Текущая версия: <b>{{ package.version }}</b>
 			<br />
 			Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
 			<br />
