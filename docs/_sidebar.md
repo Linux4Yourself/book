@@ -33,6 +33,7 @@
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
+  - [Решение ошибок сборки](additional/error-fix)
   - [Типы и разделов и каталогов](additional/partitions_calalogs)
   - [Выбор размера файла подкачки](additional/swap)
   - [Кросс-компилятор](additional/cross-compiler)
