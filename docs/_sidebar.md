@@ -30,6 +30,7 @@
 
 - [**Сборка временной системы**](build-temp-system/tempsystem.md)
   - [Заголовки ядра Linux](build-temp-system/linux-headers.md)
+  - [Glibc](build-temp-system/glibc)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
