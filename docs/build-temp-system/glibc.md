@@ -11,10 +11,6 @@
 			getPackage: function(name) {
 					getPackage(name)
 					.then(response => this.package = response);
-			}
-			getGlibc-patch: function() {
-					getPackage('glibc-patch')
-					.then(response => this.glibc-patch = response);
 			},
 		}
   })
@@ -22,7 +18,7 @@
 
 ## Дополнительные необходимые файлы
 
-<a :href="glibc-patch.url">{{ glibc-patch.url}}</a>
+http://www.linuxfromscratch.org/patches/lfs/development/glibc-2.33-fhs-1.patch
 
 ## Сборка
 
