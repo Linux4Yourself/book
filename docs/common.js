@@ -16,6 +16,7 @@ Vue.component('package-info', {
 	},
 	template: `
 	<div class="pkg">
+		<p>{{ package.description }}</p>
 		<p class="pkg-desc">
 			Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
 			<br />
@@ -36,8 +37,7 @@ Vue.component('package-info', {
 				<br />
 				<span v-if="package.sbu2">Приблизительное время сборки: <b>{{ package.sbu2 }} SBU</b><span>
 			</span>
-		<p>
-		<p class="pkg-desc">{{ package.description }}<p>
+		</p>
 		<slot></slot>
 	</div>`,
 })
