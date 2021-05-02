@@ -33,6 +33,7 @@
   - [Glibc](build-temp-system/glibc)
   - [Libstdc++ pass-1](build-temp-system/libstdc)
   - [m4](build-temp-system/m4.md)
+  - [Ncurses](build-temp-system/ncurses.md)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
