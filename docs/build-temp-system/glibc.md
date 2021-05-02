@@ -142,7 +142,7 @@ find .. -name "*.a" -delete
 ```bash
 CC="$LIN_TGT-gcc -m32" \
 CXX="$LIN_TGT-g++ -m32" \
-../configure                             \
+CFLAGS="-O2 -s" ../configure                             \
       --prefix=/usr                      \
       --host=$LIN_TGT32                  \
       --build=$(../scripts/config.guess) \
