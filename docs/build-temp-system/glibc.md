@@ -165,11 +165,11 @@ make
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
-cp -a DESTDIR/lib32/*     $LFS/lib32/
-cp -a DESTDIR/usr/lib32 $LFS/usr/
+cp -a DESTDIR/lib32/*     $LIN/lib32/
+cp -a DESTDIR/usr/lib32 $LIN/usr/
 install -vm644 DESTDIR/usr/include/gnu/{lib-names,stubs}-32.h \
-               $LFS/usr/include/gnu/
-ln -svf ../lib32/ld-linux.so.2 $LFS/lib/ld-linux.so.2
+               $LIN/usr/include/gnu/
+ln -svf ../lib32/ld-linux.so.2 $LIN/lib/ld-linux.so.2
 ```
 
 Чтобы проверить работоспособность 32-битной glibc выполните
