@@ -3,14 +3,19 @@
 <script>
 		new Vue({
 		el: '#main',
-		data: { package: {} },
+		data: { package: {}, patch: {} },
 		mounted: function () {
-				this.getPackage('glibc');
+				this.getPackage();
+				this.getPatch();
 		},
 		methods: {
-			getPackage: function(name) {
-					getPackage(name)
+			getPackage: function() {
+					getPackage('glibc')
 					.then(response => this.package = response);
+			},
+			getPatch: function() {
+					getPackage('glibc-patch')
+					.then(response => this.patch = response);
 			},
 		}
   })
@@ -18,7 +23,9 @@
 
 ## Дополнительные необходимые файлы
 
-http://www.linuxfromscratch.org/patches/lfs/development/glibc-2.33-fhs-1.patch
+<a :href="patch.url">
+{{ patch.url }}
+</a>
 
 ## Сборка
 
