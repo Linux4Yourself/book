@@ -32,7 +32,7 @@
   - [Заголовки ядра Linux](build-temp-system/linux-headers.md)
   - [Glibc](build-temp-system/glibc)
   - [LibstdС++ проход 1](build-temp-system/libstdc)
-  - [m4](build-temp-system/m4.md)
+  - [M4](build-temp-system/m4.md)
   - [Ncurses](build-temp-system/ncurses.md)
 
 - [**Вспомогательные материалы**](additional/additional)
