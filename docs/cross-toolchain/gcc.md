@@ -57,8 +57,8 @@ tar -xf ../gmp-6.2.1.tar.xz
 mv -v gmp-6.2.1 gmp
 tar -xf ../mpc-1.2.1.tar.gz
 mv -v mpc-1.2.1 mpc
-tar -xf ../isl-0.23.tar.xz
-mv -v isl-0.23 isl
+tar -xf ../isl-0.24.tar.xz
+mv -v isl-0.24 isl
 ```
 
 Смените пути установки библиотек:
