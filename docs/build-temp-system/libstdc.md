@@ -65,6 +65,11 @@ cd       build
 
 `--with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.1.0` - Путь поиска заголовков C++
 
+Решите возможную ошибку сборки:
+
+```bash
+rm include/fenv.h
+```
 
 Далее соберем пакет:
 
