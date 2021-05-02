@@ -133,7 +133,7 @@ rm -v dummy.c a.out
 Для этого, во первых удалите оставшиеся от 64-битной сборки glibc:
 
 ```bash
-make clean
+rm -rf ./*
 find .. -name "*.a" -delete
 ```
 
