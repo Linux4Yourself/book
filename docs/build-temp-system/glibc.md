@@ -54,7 +54,7 @@ cd       build
 Далее запустите скрипт `configure`: 
 
 ```bash
-CFLAGS="-O2 -s" ../configure                             \
+ ../configure                             \
       --prefix=/usr                      \
       --host=$LIN_TGT                    \
       --build=$(../scripts/config.guess) \
@@ -71,8 +71,6 @@ CFLAGS="-O2 -s" ../configure                             \
 Для MultiLib добавьте параметр `--enable-multi-arch`
 
 ### Объяснение параметров configure
-
-`CFLAGS="-O2 -s "` - исправляет возможную ошибку сборки
 
  `--host=$LIN_TGT    --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
  
@@ -142,7 +140,7 @@ find .. -name "*.a" -delete
 ```bash
 CC="$LIN_TGT-gcc -m32" \
 CXX="$LIN_TGT-g++ -m32" \
-CFLAGS="-O2 -s" ../configure                             \
+../configure                             \
       --prefix=/usr                      \
       --host=$LIN_TGT32                  \
       --build=$(../scripts/config.guess) \
