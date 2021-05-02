@@ -31,7 +31,7 @@
 - [**Сборка временной системы**](build-temp-system/tempsystem.md)
   - [Заголовки ядра Linux](build-temp-system/linux-headers.md)
   - [Glibc](build-temp-system/glibc)
-  - [Libstdc++ pass-1](build-temp-system/libstdc)
+  - [LibstdС++ проход 1](build-temp-system/libstdc)
   - [m4](build-temp-system/m4.md)
 
 - [**Вспомогательные материалы**](additional/additional)

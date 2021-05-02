@@ -4,6 +4,16 @@ Vue.component('package-info', {
 		showsbu: Boolean,
 		showsbu2: Boolean,
 	},
+	computed: {
+		priorityName: function () {
+			switch (this.package.priority) {
+				case 'important': return 'Важный';
+				case 'required': return 'Необходимый';
+				case 'optional': return 'Не обязательный';
+			}
+			return '';
+		},
+	},
 	template: `
 	<div class="pkg">
 		<p class="pkg-desc">
@@ -13,7 +23,7 @@ Vue.component('package-info', {
 			<br />
 			Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
 			<br />
-			Важность: <b>{{ package.priority }}</b>
+			Важность: <b>{{ priorityName }}</b>
 			<br />
 			Размер архива: <b>{{ package.size }} Mb</b>
 
