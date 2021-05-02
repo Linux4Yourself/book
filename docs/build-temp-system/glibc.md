@@ -54,7 +54,7 @@ cd       build
 Далее запустите скрипт `configure`: 
 
 ```bash
-CFLAGS="-O2 -s" ../configure                             \
+ ../configure                             \
       --prefix=/usr                      \
       --host=$LIN_TGT                    \
       --build=$(../scripts/config.guess) \
@@ -71,8 +71,6 @@ CFLAGS="-O2 -s" ../configure                             \
 Для MultiLib добавьте параметр `--enable-multi-arch`
 
 ### Объяснение параметров configure
-
-`CFLAGS="-O2 -s "` - исправляет возможную ошибку сборки
 
  `--host=$LIN_TGT    --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
  
@@ -133,7 +131,7 @@ rm -v dummy.c a.out
 Для этого, во первых удалите оставшиеся от 64-битной сборки glibc:
 
 ```bash
-make clean
+rm -rf ./*
 find .. -name "*.a" -delete
 ```
 
