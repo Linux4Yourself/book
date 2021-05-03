@@ -3,7 +3,7 @@
 <script>
 		new Vue({
 		el: '#main',
-		data: { package: {}, mpc: {}, mpfgr: {}, gmp : {}, isl: {} },
+		data: { package: {}, mpc: {}, mpfr: {}, gmp : {}, isl: {} },
 		mounted: function () {
 				this.getPackage('gcc');
 				this.getMpc();
@@ -22,7 +22,7 @@
 			},
 			getMpfr: function() {
 					getPackage('mpfr')
-					.then(response => this.mpfgr = response);
+					.then(response => this.mpfr = response);
 			},
 			getGmp: function() {
 					getPackage('gmp')
@@ -42,7 +42,7 @@
 
 <a :href="gmp.url">{{ gmp.url}}</a>
 
-<a :href="mpfgr.url">{{ mpfgr.url}}</a>
+<a :href="mpfr.url">{{ mpfr.url}}</a>
 
 <a :href="isl.url">{{ isl.url}}</a>
 
@@ -50,16 +50,18 @@
 
 Сначала распакуйте дополнительные пакеты:
 
-```bash
-tar -xf ../mpfr-4.1.0.tar.xz
-mv -v mpfr-4.1.0 mpfr
-tar -xf ../gmp-6.2.1.tar.xz
-mv -v gmp-6.2.1 gmp
-tar -xf ../mpc-1.2.1.tar.gz
-mv -v mpc-1.2.1 mpc
-tar -xf ../isl-0.24.tar.xz
-mv -v isl-0.24 isl
-```
+!> Обратите внимание, что распаковка указанных пакетов должна производится из каталога пакета GCC.
+
+<pre>
+tar -xf ../{{ mpfr.fileName }}
+mv -v {{ mpfr.name }}-{{ mpfr.version }} {{ mpfr.name }}
+tar -xf ../{{ gmp.fileName }}
+mv -v {{ gmp.name }}-{{ gmp.version }} {{ gmp.name }}
+tar -xf ../{{ mpc.fileName }}
+mv -v {{ mpc.name }}-{{ mpc.version }} {{ mpc.name }}
+tar -xf ../{{ isl.fileName }}
+mv -v {{ isl.name }}-{{ isl.version }} {{ isl.name }}
+</pre>
 
 Смените пути установки библиотек:
 
