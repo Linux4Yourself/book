@@ -7,15 +7,14 @@ window.$docsify = {
 	name: 'Linux для себя',
 	repo: 'https://github.com/Linux4Yourself/Linux4Yourself.Book',
 	coverpage: false,
-	loadNavbar: true,
 	loadSidebar: true,
-	loadSidebar: '_sidebar.md',
 	maxLevel: 2,
 	subMaxLevel: 3,
 	auto2top: true,
 	homepage: 'index.md',
 	autoHeader: true,
 	executeScript: true,
+	mergeNavbar: true,
 	notFoundPage: {
 		'/': '_404.md',
 	},
@@ -29,7 +28,10 @@ window.$docsify = {
 		buttonText: 'Скопировать  в буфер обмена',
 		errorText: 'Ошибка',
 		successText: 'Текст скопирован  в буфер обмена'
-	}
+	},
+	requestHeaders: {
+		'cache-control': 'max-age=0',
+	},
 }
 
 // Секция локальной настройки для содержания книги.

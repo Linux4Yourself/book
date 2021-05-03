@@ -2,10 +2,8 @@
 	"name": "linux4yourself.book",
 	"version": "1.0.0",
 	"description": "Книга обеспечит Вас необходимыми знаниями чтобы создать свою собственную Linux систему с самого начала.",
-	"main": "index.js",
 	"scripts": {
-		"start": "node ./node_modules/docsify-cli/bin/docsify serve docs",
-		"start:ssr": "node ./node_modules/docsify-cli/bin/docsify start . -c ssr.config.js"
+		"start": "node ./node_modules/docsify-cli/bin/docsify serve docs"
 	},
 	"repository": {
 		"type": "git",
@@ -26,14 +24,5 @@
 	},
 	"files": [
 		"docs"
-	],
-	"docsify": {
-		"config": {
-			"basePath": "https://docsify.js.org/",
-			"loadSidebar": true,
-			"loadNavbar": true,
-			"coverpage": true,
-			"name": "docsify"
-		}
-	}
+	]
 }
