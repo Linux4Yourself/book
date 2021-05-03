@@ -53,7 +53,7 @@ make DESTDIR=$LIN install
 mv $LIN/usr/bin/bash $LIN/bin/bash
 ```
 
-Сделайте ссылку на программы, использующие ``sh`` для оболочки:
+Сделайте символическую ссылку для программ, которые используют ``sh`` для оболочки:
 
 ```bash
 ln -sv bash $LIN/bin/sh
