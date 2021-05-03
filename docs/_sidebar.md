@@ -34,6 +34,7 @@
   - [LibstdС++ проход 1](build-temp-system/libstdc)
   - [M4](build-temp-system/m4.md)
   - [Ncurses](build-temp-system/ncurses.md)
+  - [Bash](build-temp-system/bash.md)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
