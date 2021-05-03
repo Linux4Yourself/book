@@ -1,3 +1,5 @@
+<!-- Этот шаблон  можно использовавть для инструкции по сборке пакета. Каркас. -->
+
 <package-info :package="package" showsbu></package-info>
 
 <script>
@@ -5,6 +7,8 @@
 		el: '#main',
 		data: { package: {} },
 		mounted: function () {
+				// заменить на название пакета, которые необходим.
+				// см. файл.https://github.com/Linux4Yourself/Linux4Yourself.Book.Packages/blob/develop/src/core-packages.json
 				this.getPackage('m4');
 		},
 		methods: {
@@ -18,19 +22,10 @@
 
 ## Настройка
 
-Во первых примените исправление для новых версий glibc:
-
-```bash
-sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' lib/*.c
-echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h
-```
-
 Запустите скрипт `configure`:
 
 ```bash
-./configure --prefix=/usr   \
-            --host=$LIN_TGT \
-            --build=$(build-aux/config.guess)
+./configure --prefix=/usr
 ```
 
 ## Сборка
@@ -46,5 +41,5 @@ make
 Для установки {{ package.name }} выполните:
 
 ```bash
-make DESTDIR=$LIN install
+make install
 ```
