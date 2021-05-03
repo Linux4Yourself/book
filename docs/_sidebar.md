@@ -35,6 +35,7 @@
   - [M4](build-temp-system/m4.md)
   - [Ncurses](build-temp-system/ncurses.md)
   - [Bash](build-temp-system/bash.md)
+  - [Coreutils](build-temp-system/coreutils.md)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
