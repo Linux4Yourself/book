@@ -36,6 +36,7 @@
   - [Ncurses](build-temp-system/ncurses.md)
   - [Bash](build-temp-system/bash.md)
   - [Coreutils](build-temp-system/coreutils.md)
+  - [Diffutils](build-temp-system/diffutils.md)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
