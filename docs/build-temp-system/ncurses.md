@@ -16,7 +16,7 @@
   })
 </script>
 
-## Сборка
+## Настройка
 
 Во первых, убедитесь что `gawk` будет найден первым:
 
@@ -34,7 +34,6 @@ cd tic-build
   make -C progs tic
 cd ..
 ```
-
 Запустите скрипт `configure`:
 
 ```bash
@@ -61,15 +60,13 @@ cd ..
 
 `--enable-widec` - Включает установку библиотек с поддержкой много-байтовых символов. 
 
-Соберите пакет:
+## Сборка
 
 ```bash
 make
 ```
 
 ## Установка
-
-Для установки ncurses выполните:
 
 ```bash
 make DESTDIR=$LIN TIC_PATH=$(pwd)/tic-build/progs/tic install
@@ -78,6 +75,7 @@ echo "INPUT(-lncursesw)" > $LIN/usr/lib/libncurses.so
 
 ## Для MultiLib
 
+### Настройка
 Соберите 32-битную версию ncurses:
 Для этого, во первых выполните:
 
@@ -109,13 +107,13 @@ CXX="$LIN_TGT-g++ -m32"             \
             --with-pkg-config-libdir=/usr/lib32/pkgconfig
 ```
 
-Соберите пакет:
+### Сборка
 
 ```bash
 make
 ```
 
-Установите пакет:
+### Установка
 
 ```bash
 make DESTDIR=$PWD/DESTDIR TIC_PATH=$(pwd)/tic-build/progs/tic install

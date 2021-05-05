@@ -21,21 +21,15 @@
 Запустите скрипт `configure`:
 
 ```bash
-./configure --prefix=/usr --host=$LIN_TGT   --disable-nls 
+./configure --prefix=/usr --host=$LIN_TGT --disable-nls 
 ```
 
 ## Сборка
-
-Соберите пакет:
-
 ```bash
 make
 ```
 
 ## Установка
-
-Для установки {{ package.name }} выполните:
-
 ```bash
 make DESTDIR=$LIN install
 ```
