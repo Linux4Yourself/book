@@ -17,8 +17,5 @@ echo $LIN
 Сменим владельца на пользователя ``root``
 
 ```bash
-chown -R root:root $LIN/{usr,lib,var,etc,bin,sbin,tools}
-case $(uname -m) in
-  x86_64) chown -R root:root $LIN/lib64 ;;
-esac
+chown -R root:root $LIN
 ```
