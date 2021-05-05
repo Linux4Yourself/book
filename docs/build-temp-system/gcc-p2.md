@@ -78,7 +78,7 @@ mkdir build
 cd build
 ```
 
-Разрешим сборку ``libgcc`` с поддержкой много-поточности:
+Разрешим сборку ``libgcc`` с поддержкой многопоточности:
 
 ```bash
 mkdir -pv $LIN_TGT/libgcc
