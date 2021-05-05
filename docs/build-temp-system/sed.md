@@ -7,7 +7,7 @@
 		el: '#main',
 		data: { package: {} },
 		mounted: function () {
-				this.getPackage('patch');
+				this.getPackage('sed');
 		},
 		methods: {
 			getPackage: function(name) {
@@ -21,7 +21,6 @@
 ```bash
 ./configure --prefix=/usr   \
             --host=$LIN_TGT \
-            --build=$(build-aux/config.guess)
 ```
 
 ## Сборка
