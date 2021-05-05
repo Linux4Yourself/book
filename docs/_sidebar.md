@@ -38,7 +38,7 @@
   - [Coreutils](build-temp-system/coreutils)
   - [Diffutils](build-temp-system/diffutils)
   - [File](build-temp-system/file)
-  - [FindUtils](build-temp-system/findutils)
+  - [Findutils](build-temp-system/findutils)
   - [Gawk](build-temp-system/gawk)
   - [Grep](build-temp-system/grep)
   - [Gzip](build-temp-system/gzip)
