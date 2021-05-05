@@ -21,7 +21,7 @@
 
 ```bash
 ./configure --prefix=/usr   \
-            --host=$LIN_TGT \
+            --host=$LIN_TGT  --disable-nls  
 ```
 
 ## Сборка
