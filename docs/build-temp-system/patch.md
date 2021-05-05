@@ -17,7 +17,6 @@
 		}
   })
 </script>
-
 ## Настройка
 ```bash
 ./configure --prefix=/usr   \
