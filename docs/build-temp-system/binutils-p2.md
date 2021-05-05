@@ -53,10 +53,5 @@ make
 
 ```bash
 make DESTDIR=$LIN install -j1
-```
-
-Во время установки скорее всего произайдет ошибка связанная с ``libctf``. Её можно обойти следующим образом:
-
-```bash
 install -vm755 libctf/.libs/libctf.so.0.0.0 $LIN/usr/lib
 ```
