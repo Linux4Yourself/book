@@ -37,16 +37,11 @@
 
 ## Сборка
 
-Соберите пакет:
-
 ```bash
 make
 ```
 
 ## Установка
-
-Для установки {{ package.name }} выполните:
-
 ```bash
 make DESTDIR=$LIN install
 ```

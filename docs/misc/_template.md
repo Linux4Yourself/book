@@ -22,7 +22,6 @@
 
 ## Настройка
 
-Запустите скрипт `configure`:
 
 ```bash
 ./configure --prefix=/usr
@@ -30,15 +29,12 @@
 
 ## Сборка
 
-Соберите пакет:
 
 ```bash
 make
 ```
 
 ## Установка
-
-Для установки {{ package.name }} выполните:
 
 ```bash
 make install
