@@ -52,6 +52,9 @@
   - [Смена владельца для каталога $LIN](build-temp-system/change-owner)
   - [Вход в окружение chroot](build-temp-system/enter-in-chroot)
   - [Создание базовых файлов и ссылок](build-temp-system/create-files)
+  - [LibstdC++ проход 2](build-temp-system/libstdc-p2)
+  - [Gettext](build-temp-system/gettext)
+  - [Bison](build-temp-system/bison)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
