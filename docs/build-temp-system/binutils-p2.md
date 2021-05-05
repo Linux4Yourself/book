@@ -52,6 +52,6 @@ make
 ## Установка
 
 ```bash
-make install -j1
+make DESTDIR=$LIN install -j1
 install -vm755 libctf/.libs/libctf.so.0.0.0 $LIN/usr/lib
 ```
