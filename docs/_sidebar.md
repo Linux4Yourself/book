@@ -55,6 +55,7 @@
   - [LibstdC++ проход 2](build-temp-system/libstdc-p2)
   - [Gettext](build-temp-system/gettext)
   - [Bison](build-temp-system/bison)
+  - [Python](build-temp-system/python)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
