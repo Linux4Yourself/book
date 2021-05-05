@@ -42,7 +42,7 @@ popd
 
 
 ```bash
-make
+make FILE_COMPILE=$(pwd)/build/src/file
 ```
 
 ## Установка
