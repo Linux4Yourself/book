@@ -23,7 +23,7 @@
 ./configure --prefix=/usr   \
             --without-guile \
             --host=$LIN_TGT \
-            --build=$(build-aux/config.guess)
+            --build=$(build-aux/config.guess)  --disable-nls  
 ```
 
 ### Значения параметров configure
