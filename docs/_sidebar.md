@@ -50,6 +50,7 @@
   - [Binutils проход 2](build-temp-system/binutils-p2)
   - [GCC проход 2](build-temp-system/gcc-p2)
   - [Смена владельца для каталога $LIN](build-temp-system/change-owner)
+  - [Вход в chroot](build-temp-system/enter-in-chroot)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
