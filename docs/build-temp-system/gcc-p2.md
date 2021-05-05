@@ -85,7 +85,7 @@ mkdir -pv $LIN_TGT/libgcc
 ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
 ```
 
-Сначала запустим скрипт `configure`:
+Запустите скрипт `configure`:
 ```bash
 ../configure                                       \
     --build=$(../config.guess)                     \

@@ -28,7 +28,7 @@ sed -i 's/extras//' Makefile.in
 ```bash
 ./configure --prefix=/usr   \
             --host=$LIN_TGT \
-            --build=$(./config.guess)
+            --build=$(./config.guess)  --disable-nls  
 ```
 
 ## Сборка
