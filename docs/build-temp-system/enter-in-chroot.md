@@ -28,3 +28,14 @@ if [ -h $LIN/dev/shm ]; then
   mkdir -pv $LIN/$(readlink $LIN/dev/shm)
 fi
 ```
+
+Войдите в ``chroot``:
+
+```bash
+chroot "$LIN" /usr/bin/env -i   \
+    HOME=/root                  \
+    TERM="$TERM"                \
+    PS1='(chroot) \u:\w\$ ' \
+    PATH=/bin:/usr/bin:/sbin:/usr/sbin \
+    /bin/bash --login +h
+```
