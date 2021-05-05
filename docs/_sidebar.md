@@ -55,7 +55,11 @@
   - [LibstdC++ проход 2](build-temp-system/libstdc-p2)
   - [Gettext](build-temp-system/gettext)
   - [Bison](build-temp-system/bison)
+  - [Perl](build-temp-system/perl)
   - [Python](build-temp-system/python)
+  - [Texinfo](build-temp-system/texinfo)
+  - [Util-linux](build-temp-system/util-linux)
+  - [Очистка и сохранение временной системы](build-temp-system/cleanup)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
