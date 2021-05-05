@@ -22,7 +22,6 @@
 ```bash
 ./configure --prefix=/usr   \
             --host=$LIN_TGT \
-            --bindir=/bin
 ```
 
 ## Сборка
