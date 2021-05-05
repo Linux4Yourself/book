@@ -17,12 +17,10 @@
 </script>
 
 ## Настройка
-Подготовьте пакет `patch` к компиляции посредством скрипта `configure`:
 ```
 ./configure --prefix=/usr                     \
             --host=$LIN_TGT                   \
             --build=$(build-aux/config.guess) \
-            --bindir=/bin
 ```
 
 ## Компиляция
