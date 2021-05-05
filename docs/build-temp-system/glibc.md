@@ -71,7 +71,7 @@ cd       build
 
 Добавьте параметр `--enable-multi-arch`
 
-### Объяснение параметров configure
+### Значения параметров configure
 
  `--host=$LIN_TGT    --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
  

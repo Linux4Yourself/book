@@ -29,7 +29,7 @@
             --disable-nls    
 ```
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 ` --enable-install-program=hostname` - Включает установку программы `hostname`, нужной некоторым пакетам.
 
