@@ -15,7 +15,7 @@ cat > /etc/hosts << EOF
 EOF
 ```
 
-Создайте файл базовый файл ``/etc/passwd``:
+Создайте файл списка пользовательских учётных записей /etc/passwd:
 
 ```bash
 cat > /etc/passwd << "EOF"
@@ -28,7 +28,7 @@ nobody:x:99:99:Unprivileged User:/dev/null:/bin/false
 EOF
 ```
 
-Создайте базовый файл ``/etc/group`` 
+Создайте файл имён групп и членов каждой группы: 
 
 ```bash
 cat > /etc/group << "EOF"
