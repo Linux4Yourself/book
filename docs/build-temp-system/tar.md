@@ -17,18 +17,18 @@
 </script>
 
 ## Настройка
-```
+```bash
 ./configure --prefix=/usr                     \
             --host=$LIN_TGT                   \
             --build=$(build-aux/config.guess)  --disable-nls  --disable-acl 
 ```
 
 ## Компиляция
-```
+```bash
 make
 ```
 
 ## Установка
-```
+```bash
 make DESTDIR=$LIN install
 ```
