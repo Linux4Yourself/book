@@ -37,8 +37,14 @@ mkdir -pv /var/lib/hwclock
             --disable-pylibmount \
             --disable-static     \
             --without-python     \
-            runstatedir=/run
+            runstatedir=/run  --enable-usrdir-path  
 ```
+
+### Объяснение параметров configure
+
+`--disable-*` - Отключает программы, которые предоставляются другими пакетами
+
+`--without-python` - Отключает сборку не нужных превязок python.
 
 ## Сборка
 
@@ -68,7 +74,6 @@ make distclean
 ```bash
 CC="gcc -m32" \
 ./configure ADJTIME_PATH=/var/lib/hwclock/adjtime    \
-            --docdir=/usr/share/doc/util-linux-2.36.2 \
             --disable-chfn-chsh  \
             --disable-login      \
             --disable-nologin    \
@@ -79,8 +84,15 @@ CC="gcc -m32" \
             --disable-static     \
             --without-python     \
             --libdir=/usr/lib32      \
-            --host=i686-pc-linux-gnu
+            --host=i686-pc-linux-gnu \
+	    --enable-usrdir-path \
+	    --disable-bash-completion \
+	    --disable-schedutils   --disable-fdisks  --disable-mount  --disable-fsck   
 ```
+
+Объснение опций configure
+
+`--disable-*` - Позволяет сэкономить время, отключив сборку не нужных для компонентов.
 
 Соберите пакет:
 
