@@ -75,7 +75,7 @@ cd       build
 
  `--host=$LIN_TGT    --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
  
-`--enable-kernel=3.2` - оптимизирует glibc для использования с ядром 3.2.
+`--enable-kernel=3.2` - оптимизирует glibc для использования с ядрами новее 3.2.
 
 `--with-headers=$LIN/usr/include` - задает путь к заголовкам ядра.
 
