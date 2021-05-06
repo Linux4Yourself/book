@@ -59,6 +59,8 @@
   - [Util-linux](build-temp-system/util-linux)
   - [Очистка и сохранение временной системы](build-temp-system/cleanup)
 
+- [**Сборка Linux системы**](build-system/build-system)
+
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
   - [Решение ошибок сборки](additional/error-fix)
