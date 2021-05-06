@@ -49,3 +49,9 @@
 ## Другие стартовые скрипты
 
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/other.sh ':include')
+
+## Применить изменения
+
+```bash
+bash --login +h
+```
