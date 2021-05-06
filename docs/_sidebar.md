@@ -1,5 +1,3 @@
-- [**Добро пожаловать**](index)
-
 - **Предисловие**
   - [Предисловие](prologue/foreword)
   - [От авторов](prologue/from-authors)
