@@ -20,9 +20,6 @@
 ```bash
 cp services protocols /etc
 ```
-
-## Содержимое
-
 ### Установленные файлы
 
 ``/etc/protocols`` и ``/etc/services``
