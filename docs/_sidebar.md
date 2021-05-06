@@ -60,6 +60,7 @@
   - [Очистка и сохранение временной системы](build-temp-system/cleanup)
 
 - [**Сборка Linux системы**](build-system/build-system)
+  - [Настройка окружения bash](build-system/set-profile)
   - [Iana-etc](build-system/iana-etc)
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
