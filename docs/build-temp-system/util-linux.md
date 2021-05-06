@@ -37,8 +37,14 @@ mkdir -pv /var/lib/hwclock
             --disable-pylibmount \
             --disable-static     \
             --without-python     \
-            runstatedir=/run
+            runstatedir=/run  --enable-usrdir-path  
 ```
+
+### Объяснение параметров configure
+
+`--disable-*` - Отключает программы, которые предоставляются другими пакетами
+
+`--without-python` - Отключает сборку не нужных превязок python.
 
 ## Сборка
 
@@ -79,7 +85,7 @@ CC="gcc -m32" \
             --disable-static     \
             --without-python     \
             --libdir=/usr/lib32      \
-            --host=i686-pc-linux-gnu
+            --host=i686-pc-linux-gnu  --enable-usrdir-path  
 ```
 
 Соберите пакет:
