@@ -38,7 +38,8 @@ cd build
              --disable-werror        
 ```
 
-Для MultiLib добавьте параметр ``--enable-multilib``
+### Для multilib
+Добавьте параметр``--enable-multilib``
 
 ### Объяснение 
 
