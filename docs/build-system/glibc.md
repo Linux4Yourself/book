@@ -230,6 +230,12 @@ EOF
 mkdir -pv /etc/ld.so.conf.d
 ```
 
+Обновите кеш библиотек:
+
+```bash
+ldconfig
+```
+
 ## Для MultiLib
 
 ### Подготовка
@@ -281,6 +287,11 @@ ln -svf ../lib32/ld-linux.so.2 /lib/ld-linux.so.2
 echo "/usr/lib32" >> /etc/ld.so.conf
 ```
 
+Обновите кеш библиотек:
+
+```bash
+ldconfig
+```
 
 ## Установленные файлы
 
