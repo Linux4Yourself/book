@@ -23,7 +23,7 @@
             --build=$(build-aux/config.guess)  --disable-nls  --disable-acl 
 ```
 
-## Компиляция
+## Сборка
 ```bash
 make
 ```
