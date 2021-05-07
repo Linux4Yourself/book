@@ -65,7 +65,7 @@ cd       build
       libc_cv_include_x86_isa_level=no  
 ```
 
-### Для MultiLib
+### Для multilib
 Добавьте параметр `--enable-multi-arch`
 
 ### Объяснение параметров configure
@@ -236,11 +236,11 @@ mkdir -pv /etc/ld.so.conf.d
 ldconfig
 ```
 
-## Для MultiLib
+## Для multilib
 
 ### Подготовка
 
-Для MultiLib требуется установить 32-битную версию glibc.
+Для multilib требуется установить 32-битную версию glibc.
 Для этого, во первых удалите оставшиеся от 64-битной сборки glibc файлы:
 
 ```bash
