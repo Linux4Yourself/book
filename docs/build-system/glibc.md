@@ -1,24 +1,30 @@
 <package-info :package="package" showsbu2 ></package-info>
 
 <script>
-		new Vue({
+	new Vue({
 		el: '#main',
-		data: { package: {} },
+		data: { 
+			package: {}, 
+			tzdata: {},
+			glibcPatch: {},
+		},
 		mounted: function () {
 				this.getPackage('glibc');
+				this.getTzdata();
+				this.getGlibcPatch();
 		},
 		methods: {
 			getPackage: function(name) {
 					getPackage(name)
 					.then(response => this.package = response);
-			}
+			},
 			getTzdata: function() {
-					getPackage('tzdata)
+					getPackage('tzdata')
 					.then(response => this.tzdata = response);
-			}
-			getGlibc-patch: function() {
+			},
+			getGlibcPatch: function() {
 					getPackage('glibc-patch')
-					.then(response => this.glibc-patch = response);
+					.then(response => this.glibcPatch = response);
 			},
 		}
   })
@@ -26,7 +32,7 @@
 
 ## Дополнительные необходимые файлы
 
-<a :href="glibc-patch.url">{{ glibc-patch.url}}</a>
+<a :href="glibcPatch.url">{{ glibcPatch.url}}</a>
 
 <a :href="tzdata.url">{{ tzdata.url}}</a>
 
@@ -153,7 +159,7 @@ localedef -i zh_CN -f GB18030 zh_CN.GB18030
 localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 ```
 
-## Настройка {{package.name}} 
+## Настройка
 
 ### nsswitch.conf
 
