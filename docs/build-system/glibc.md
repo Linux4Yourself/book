@@ -55,7 +55,7 @@ sed -e '402a\      *result = local->data.services[database_index];' \
 
 ```bash
 mkdir  build
-cd       build
+cd     build
 ```
 
 ## Настройка
@@ -63,11 +63,11 @@ cd       build
 ```bash
 ../configure                             \
       --prefix=/usr                      \
-      --disable-werror        \
+      --disable-werror                   \
       --enable-kernel=3.2                \
       --with-headers=/usr/include        \
       --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/lib                \
+      libc_cv_slibdir=/lib               \
       libc_cv_include_x86_isa_level=no  
 ```
 
@@ -98,7 +98,7 @@ make check
 
 ## Установка
 
-Удалите предупреждение при установке и отключите запуск не нужных проверок:
+Удалите предупреждение при установке и отключите запуск ненужных проверок:
 
 ```bash
 touch /etc/ld.so.conf
@@ -113,7 +113,7 @@ cp -v ../nscd/nscd.conf /etc/nscd.conf
 mkdir -pv /var/cache/nscd
 ```
 
-Если вы собираетесь использовать `systemd` установите соответствующие файлы для демона `nscd`:
+Если вы собираетесь использовать `systemd`, установите соответствующие файлы для демона `nscd`:
 
 ```bash
 install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf
@@ -247,7 +247,7 @@ ldconfig
 ### Подготовка
 
 Для multilib требуется установить 32-битную версию glibc.
-Для этого, во первых удалите оставшиеся от 64-битной сборки glibc файлы:
+Для этого, во первых, удалите оставшиеся от 64-битной сборки glibc файлы:
 
 ```bash
 rm -rf ./*
@@ -389,4 +389,4 @@ ldconfig
 
 `libthread_db` - Содержит функции, полезные для построения отладчиков для многопоточных программ
 
-`libutil` - Содержит кл для «стандартных» функций, используемых в большинстве различных утилит Unix 
+`libutil` - Содержит ключи для «стандартных» функций, используемых в большинстве различных утилит Unix 
