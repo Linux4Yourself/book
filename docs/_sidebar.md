@@ -21,6 +21,7 @@
   - [О тестах](prepare/about-tests)
   - [О приоритете пакетов](prepare/about-priority)
   - [Общая инструкция по сборке пакетов](prepare/general-build-instruction)
+  - [О потоках](prepare/about-threads)
 
 - [**Сборка кросс компилятора**](cross-toolchain/cross-toolchain)
   - [Binutils](cross-toolchain/binutils)
