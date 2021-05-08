@@ -73,7 +73,7 @@ make DESTDIR=$LIN TIC_PATH=$(pwd)/tic-build/progs/tic install
 echo "INPUT(-lncursesw)" > $LIN/usr/lib/libncurses.so
 ```
 
-## Для MultiLib
+## Для multilib
 
 ### Настройка
 Соберите 32-битную версию ncurses:

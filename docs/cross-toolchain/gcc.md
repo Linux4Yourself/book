@@ -101,7 +101,7 @@ cd build
     --enable-languages=c,c++ --disable-multilib
 ```
 
-### Для MultiLib 
+### Для multilib 
 замените параметр `--disable-multilib` на `--enable-multilib --with-multilib-list=m64,m32`
 
 ### Объяснение 

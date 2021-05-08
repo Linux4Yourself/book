@@ -56,7 +56,7 @@ cd       build
     --disable-libstdcxx-pch --disable-multilib
 ```
 
-### Для MultiLib
+### Для multilib
 
 Замените ``--disable-multilib`` на ``--enable-multilib``.
 

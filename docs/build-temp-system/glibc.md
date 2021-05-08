@@ -67,7 +67,7 @@ cd       build
       --disable-nscd  \
       --disable-timezone-tools
 ```
-### Для MultiLib
+### Для multilib
 
 Добавьте параметр `--enable-multi-arch`
 
@@ -124,7 +124,7 @@ readelf -l a.out | grep '/ld-linux'
 rm -v dummy.c a.out
 ```
 
-## Для MultiLib
+## Для multilib
 
 Для MultiLib требуется установить 32-битную версию glibc.
 Для этого, удалите оставшиеся файлы от 64-битной сборки glibc:
