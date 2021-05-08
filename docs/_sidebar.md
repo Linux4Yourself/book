@@ -66,6 +66,7 @@
   - [Zlib-ng](build-system/zlib)
   - [Bzip2](build-system/bz2)
   - [Xz](build-system/xz)
+  - [Zstd](build-system/zstd)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
