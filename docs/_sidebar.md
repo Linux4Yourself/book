@@ -69,6 +69,7 @@
   - [Xz](build-system/xz)
   - [Zstd](build-system/zstd)
   - [File](build-system/file)
+  - [Readline](build-system/readline)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
