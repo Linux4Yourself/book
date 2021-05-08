@@ -3,18 +3,19 @@
 <script>
 		new Vue({
 		el: '#main',
-		data: { package: {} },
+		data: { package: {}, patch: {} },
 		mounted: function () {
 				this.getPackage('bzip2');
+				this.getBzipPatch();
 		},
 		methods: {
 			getPackage: function(name) {
 					getPackage(name)
 					.then(response => this.package = response);
-			}
-			getBzip-patch: function() {
+			},
+			getBzipPatch: function() {
 					getPackage('bzip2-patch')
-					.then(response => this.glibc-patch = response);
+					.then(response => this.patch = response);
 			},
 		}
   })
@@ -22,9 +23,7 @@
 
 ## Дополнительные необходимые файлы
 
-<a :href="bzip2-patch.url">{{ bzip2-patch.url}}</a>
-
-
+<a :href="patch.url">{{ patch.url}}</a>
 
 ## Подготовка
 
