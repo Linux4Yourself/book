@@ -73,6 +73,7 @@
   - [M4](build-system/m4)
   - [Bc](build-system/bc)
   - [Flex](build-system/flex)
+  - [Binutils](build-system/binutils)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
