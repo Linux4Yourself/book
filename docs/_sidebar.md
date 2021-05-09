@@ -70,6 +70,9 @@
   - [Zstd](build-system/zstd)
   - [File](build-system/file)
   - [Readline](build-system/readline)
+  - [M4](build-system/m4)
+  - [Bc](build-system/bc)
+  - [Flex](build-system/flex)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
