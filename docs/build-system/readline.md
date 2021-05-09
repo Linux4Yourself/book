@@ -5,7 +5,7 @@
 		el: '#main',
 		data: { package: {} },
 		mounted: function () {
-				this.getPackage('xz');
+				this.getPackage('readline');
 		},
 		methods: {
 			getPackage: function(name) {
