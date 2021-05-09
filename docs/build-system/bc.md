@@ -41,3 +41,7 @@ make test
 ```bash
 make install
 ```
+
+## Установленные файлы
+
+Программы: `bc` и `dc`
