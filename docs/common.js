@@ -9,7 +9,7 @@ Vue.component('package-info', {
 			switch (this.package.priority) {
 				case 'important': return 'Важный';
 				case 'required': return 'Необходимый';
-				case 'optional': return 'Не обязательный';
+				case 'optional': return 'Необязательный';
 			}
 			return '';
 		},
