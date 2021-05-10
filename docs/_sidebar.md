@@ -77,6 +77,9 @@
     - [Flex](build-system/flex)
     - [Binutils](build-system/binutils)
     - [GMP](build-system/gmp)
+    - [MPFR](build-system/mpfr)
+    - [MPC](build-system/mpc)
+    - [ISL](build-system/isl)
 
 - [**Создание Embedded Linux системы**](embeded/introduction)
   - [Подготовительные работы](embeded/prepare)
