@@ -76,6 +76,7 @@
     - [Bc](build-system/bc)
     - [Flex](build-system/flex)
     - [Binutils](build-system/binutils)
+    - [GMP](build-system/gmp)
 
 - [**Создание Embedded Linux системы**](embeded/introduction)
   - [Подготовительные работы](embeded/prepare)
