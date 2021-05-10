@@ -1,13 +1,4 @@
-# Заголовки ядра Linux v.{{ package.version }}
-Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
-<br />
-Текущая версия: <b>{{ package.version }}</b>
-<br />
-Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
-<br />
-Важность: <b>{{ package.priority }}</b>
-<br />
-Размер архива: <b>{{ package.size }} Mb</b>
+<package-info :package="package" showsbu></package-info>
 
 <script>
 		new Vue({

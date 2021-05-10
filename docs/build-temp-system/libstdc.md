@@ -1,18 +1,4 @@
-# LibstdС++ Проход 1
-
-Версия <b>v.{{ package.version }}</b>
-<br />
-Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
-<br />
-Текущая версия: <b>{{ package.version }}</b>
-<br />
-Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
-<br />
-Важность: <b>{{ package.priority }}</b>
-<br />
-Размер архива: <b>{{ package.size }} Mb</b>
-<br />
-SBU: <b>2.6</b>
+<package-info :package="package" showsbu></package-info>
 
 <script>
 		new Vue({
@@ -29,7 +15,6 @@ SBU: <b>2.6</b>
 		}
   })
 </script>
-
 
 ## Настройка
 
