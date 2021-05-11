@@ -84,6 +84,7 @@
     - [Acl](build-system/acl)
     - [Libcap](build-system/libcap)
     - [Shadow](build-system/shadow)
+    - [GCC](build-system/gcc)
 
 - [**Создание Embedded Linux системы**](embeded/introduction)
   - [Подготовительные работы](embeded/prepare)
