@@ -80,6 +80,8 @@
     - [MPFR](build-system/mpfr)
     - [MPC](build-system/mpc)
     - [ISL](build-system/isl)
+    - [Attr](build-system/attr)
+    - [Acl](build-system/acl)
 
 - [**Создание Embedded Linux системы**](embeded/introduction)
   - [Подготовительные работы](embeded/prepare)
