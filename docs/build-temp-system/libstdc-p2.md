@@ -5,7 +5,7 @@
 <br />
 Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
 <br />
-Важность: <b>{{ package.priority }}</b>
+Важность: <b>Необходимый</b>
 <br />
 Размер архива: <b>{{ package.size }} Mb</b>
 <br />
