@@ -9,7 +9,7 @@
 
 - **Создание Linux системы**
   - **Подготовительные работы**
-    - [Целевые архитектуры](prologue/arch)
+    - [Целевые архитектуры](prepare/arch)
     - [Требования](prepare/requrements)
     - [О времени сборки пакетов](prepare/about-SBU)
     - [Создание разделов](prepare/create-partition)
