@@ -87,8 +87,12 @@
     - [GCC](build-system/gcc)
 
 - [**Создание Embedded Linux системы**](embeded/introduction)
-  - [Подготовительные работы](embeded/prepare)
-  - [Создание иерархии файловой системы](embeded/fs)
+  - [**Подготовительные работы**](embeded/prepare)
+    - [Создание иерархии файловой системы](embeded/fs)
+    - [Необходимые пакеты](embeded/packages)
+    - [Настройка окружения](embeded/env)
+  - [**Создание инструментов для кросс компиляции**](embeded/cross)
+   - [Дополнительные переменные окружения](embeded/build-vars)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
