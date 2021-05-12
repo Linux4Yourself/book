@@ -11,7 +11,7 @@ li.folder p strong {
 
 
 .pkg {
-	padding: 0;
+	padding: 0 0 1rem 0;
 	background: #fefefe;
 	border-bottom: solid 1px #ccc;
 }
