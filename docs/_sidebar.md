@@ -7,9 +7,8 @@
   - [Информация об используемых пакетах](prologue/packages)
   - [Опечатки и неточности](prologue/inaccuracies)
 
-
-- [**Создание Linux системы**](prepare/prepare)
-  - [**Подготовительные работы**](prepare/prepare)
+- **Создание Linux системы**
+  - **Подготовительные работы**
     - [Целевые архитектуры](prologue/arch)
     - [Требования](prepare/requrements)
     - [О времени сборки пакетов](prepare/about-SBU)
@@ -24,7 +23,6 @@
     - [О приоритете пакетов](prepare/about-priority)
     - [Общая инструкция по сборке пакетов](prepare/general-build-instruction)
     - [О потоках](prepare/about-threads)
-
   - [**Сборка кросс компилятора**](cross-toolchain/cross-toolchain)
     - [Binutils](cross-toolchain/binutils)
     - [GCC](cross-toolchain/gcc)
@@ -85,10 +83,6 @@
     - [Libcap](build-system/libcap)
     - [Shadow](build-system/shadow)
     - [GCC](build-system/gcc)
-
-- [**Создание Embedded Linux системы**](embeded/introduction)
-  - [Подготовительные работы](embeded/prepare)
-  - [Создание иерархии файловой системы](embeded/fs)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
