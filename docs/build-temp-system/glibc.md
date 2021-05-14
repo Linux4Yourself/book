@@ -118,7 +118,7 @@ readelf -l a.out | grep '/ld-linux'
 [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
 ```
 
-#### Если все хорошо, удалите не нужные файлы:
+#### Если все хорошо, удалите ненужные файлы:
 
 ```bash
 rm -v dummy.c a.out
