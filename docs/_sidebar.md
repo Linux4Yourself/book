@@ -84,6 +84,7 @@
     - [Shadow](build-system/shadow)
     - [GCC](build-system/gcc)
     - [Pkg-config](build-system/pkg-config)
+    - [Ncurses](build-system/ncurses)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
