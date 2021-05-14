@@ -69,11 +69,13 @@ echo "INPUT(-lncursesw)" > /usr/lib/libcursesw.so
 ln -sfv libncurses.so      /usr/lib/libcurses.so
 ```
 
-Удалите не нужную статическую библиотеку:
+Удалите ненужную статическую библиотеку:
 
 ```bash
 rm -fv /usr/lib/libncurses++w.a
 ```
+
+<!-- TODO добавить инфу о сборке libncurses.so.5, но нужен многострочный хелпер --> 
  
 ## Для multilib
 
@@ -123,9 +125,13 @@ cp -Rv DESTDIR/usr/lib32/* /usr/lib32
 rm -rf DESTDIR
 ```
 
+<!-- TODO добавить инфу о сборке 32-bit libncurses.so.5, но нужен многострочный хелпер --> 
+
 ## Установленные файлы
 
-Программы: 
+Программы: captoinfo (ссылка на tic), clear, infocmp, infotocap (ссылка на tic), ncursesw6-config, reset (ссылка на tset), tabs, tic, toe, tput и tset
 
-Библиотеки: 
+Библиотеки: libcursesw.so (ссылка на libncursesw.so), libformw.so, libmenuw.so, libncursesw.so, libpanelw.so и их версии без широких символов
+
+Директории: /usr/share/tabset /usr/share/terminfo
 
