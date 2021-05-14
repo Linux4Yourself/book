@@ -1,0 +1,131 @@
+<package-info :package="package" showsbu2></package-info>
+
+<script>
+		new Vue({
+		el: '#main',
+		data: { package: {} },
+		mounted: function () {
+				this.getPackage('ncurses');
+		},
+		methods: {
+			getPackage: function(name) {
+					getPackage(name)
+					.then(response => this.package = response);
+			},
+		}
+  })
+</script>
+
+## Настройка
+
+
+```bash
+./configure --prefix=/usr           \
+            --mandir=/usr/share/man \
+            --with-shared           \
+            --without-debug         \
+            --without-normal        \
+            --enable-pc-files       \
+            --enable-widec          \
+            --with-pkg-config-libdir=/usr/lib/pkgconfig
+```
+
+### Объяснение параметров configure
+
+`--without-normal` - Отключает установку большинства статических библиотек.
+
+`--enable-pc-files` - Включает установку файлов для `pkg-config`.
+
+`--enable-widec` - Включает сборку библиотек с широкими (многобайтовыми) символами. Они совместимы с обычными библиотеками `ncurses` при сборке из исходного кода, но не совместимы бинарно.
+
+## Сборка
+
+
+```bash
+make
+```
+
+## Установка
+
+```bash
+make install
+```
+
+Многие пакеты при компоновке ищут библиотеки без широких символов. Для компоновки с библиотеками содержащими широкие символы выполните:
+
+```bash
+for lib in ncurses form panel menu ; do
+    rm -vf                    /usr/lib/lib${lib}.so
+    echo "INPUT(-l${lib}w)" > /usr/lib/lib${lib}.so
+    ln -sfv ${lib}w.pc        /usr/lib/pkgconfig/${lib}.pc
+done
+```
+
+Для сборки старых программ использующих `-lcurses` выполните:
+
+```bash
+rm -vf                     /usr/lib/libcursesw.so
+echo "INPUT(-lncursesw)" > /usr/lib/libcursesw.so
+ln -sfv libncurses.so      /usr/lib/libcurses.so
+```
+
+Удалите не нужную статическую библиотеку:
+
+```bash
+rm -fv /usr/lib/libncurses++w.a
+```
+ 
+## Для multilib
+
+### Очистка
+
+```bash
+make distclean
+```
+
+### Настройка
+
+```bash
+CC="gcc -m32" CXX="g++ -m32" \
+./configure --prefix=/usr           \
+            --host=i686-pc-linux-gnu \
+            --libdir=/usr/lib32     \
+            --mandir=/usr/share/man \
+            --with-shared           \
+            --without-debug         \
+            --without-normal        \
+            --enable-pc-files       \
+            --enable-widec          \
+            --with-pkg-config-libdir=/usr/lib32/pkgconfig
+```
+
+### Сборка 
+
+```bash
+make
+```
+
+### Установка
+
+```bash
+make DESTDIR=$PWD/DESTDIR install
+mkdir -p DESTDIR/usr/lib32/pkgconfig
+for lib in ncurses form panel menu ; do
+    rm -vf                    DESTDIR/usr/lib32/lib${lib}.so
+    echo "INPUT(-l${lib}w)" > DESTDIR/usr/lib32/lib${lib}.so
+    ln -svf ${lib}w.pc        DESTDIR/usr/lib32/pkgconfig/$lib.pc
+done
+rm -vf                     DESTDIR/usr/lib32/libcursesw.so
+echo "INPUT(-lncursesw)" > DESTDIR/usr/lib32/libcursesw.so
+ln -sfv libncurses.so      DESTDIR/usr/lib32/libcurses.so
+rm -fv DESTDIR/usr/lib32/libncurses++w.a
+cp -Rv DESTDIR/usr/lib32/* /usr/lib32
+rm -rf DESTDIR
+```
+
+## Установленные файлы
+
+Программы: 
+
+Библиотеки: 
+
