@@ -90,6 +90,7 @@
     - [Gettext](build-system/gettext)
     - [Bison](build-system/bison)
     - [Grep](build-system/grep)
+    - [Bash](build-system/bash)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
