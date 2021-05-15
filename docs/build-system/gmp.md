@@ -25,7 +25,7 @@
             --disable-static   --enable-cxx  
 ```
 
-### Объяснение опций configure
+### Объяснение параметров configure
 
 `--enable-cxx` - Собрать библиотеку C++
 
@@ -97,4 +97,3 @@ rm -rf DESTDIR
 ## Установленные файлы
 
 Библиотеки: libgmp.so libgmpxx.so
-
