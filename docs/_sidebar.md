@@ -94,6 +94,7 @@
     - [Libtool](build-system/libtool)
     - [GDBM](build-system/gdbm)
     - [Gperf](build-system/gperf)
+    - [Expat](build-system/expat)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
