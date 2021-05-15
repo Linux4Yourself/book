@@ -97,7 +97,7 @@
     - [Expat](build-system/expat)
 
 - [**Вспомогательные материалы**](additional/additional)
-  - [Строение GNU/Linux](additional/LinuxStructure1)
+  - [Строение GNU/Linux. Часть 1](additional/LinuxStructure1)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
   - [Решение ошибок сборки](additional/error-fix)
   - [Типы и разделов и каталогов](additional/partitions_calalogs)
