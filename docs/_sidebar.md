@@ -85,6 +85,7 @@
     - [GCC](build-system/gcc)
     - [Pkg-config](build-system/pkg-config)
     - [Ncurses](build-system/ncurses)
+    - [Sed](build-system/sed)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
