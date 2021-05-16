@@ -95,6 +95,7 @@
     - [GDBM](build-system/gdbm)
     - [Gperf](build-system/gperf)
     - [Expat](build-system/expat)
+    - [Inetutils](build-system/inetutils)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Строение GNU/Linux. Часть 1](additional/LinuxStructure1)
