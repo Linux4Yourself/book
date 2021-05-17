@@ -100,6 +100,7 @@
     - [XML::Parser](build-system/xml-parser)
     - [Intltool](build-system/intltool)
     - [Autoconf](build-system/autoconf)
+    - [Automake](build-system/automake)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
