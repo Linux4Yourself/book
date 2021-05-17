@@ -98,6 +98,7 @@
     - [Inetutils](build-system/inetutils)
     - [Perl](build-system/perl)
     - [XML::Parser](build-system/xml-parser)
+    - [Intltool](build-system/intltool)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
