@@ -96,6 +96,8 @@
     - [Gperf](build-system/gperf)
     - [Expat](build-system/expat)
     - [Inetutils](build-system/inetutils)
+    - [Perl](build-system/perl)
+    - [XML::Parser](build-system/xml-parser)
 
 - [**Вспомогательные материалы**](additional/additional)
   - [Строение GNU/Linux. Часть 1](additional/LinuxStructure1)
