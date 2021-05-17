@@ -101,6 +101,7 @@
     - [Intltool](build-system/intltool)
     - [Autoconf](build-system/autoconf)
     - [Automake](build-system/automake)
+    - [Kmod](build-system/kmod)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
