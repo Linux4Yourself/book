@@ -102,6 +102,7 @@
     - [Autoconf](build-system/autoconf)
     - [Automake](build-system/automake)
     - [Kmod](build-system/kmod)
+    - [Libelf](build-system/libelf)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
