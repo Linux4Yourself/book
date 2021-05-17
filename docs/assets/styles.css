@@ -18,3 +18,9 @@ li.folder p strong {
 
 .pkg .pkg-desc { line-height: 1.6; }
 .pkg .pkg-priority { background-color: #ddd; padding: 2px 6px; border-radius: 12px; }
+
+warn {
+	border: solid 2px #42b983;
+	padding: 20px;
+	display: block;
+}

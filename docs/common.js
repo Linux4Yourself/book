@@ -40,4 +40,12 @@ Vue.component('package-info', {
 		</p>
 		<slot></slot>
 	</div>`,
-})
+});
+
+Vue.component('warn', {
+		template: `
+			<div class="warn-description">
+				<slot></slot>
+			</div>
+		`,
+});
