@@ -75,7 +75,23 @@ ln -sfv libncurses.so      /usr/lib/libcurses.so
 rm -fv /usr/lib/libncurses++w.a
 ```
 
-<!-- TODO добавить инфу о сборке libncurses.so.5, но нужен многострочный хелпер --> 
+<warn>
+
+Если вам для запуска старых бинарных программ требуется библиотека ncurses без широких символов - соберите её:
+
+```bash
+make distclean
+./configure --prefix=/usr    \
+            --with-shared    \
+            --without-normal \
+            --without-debug  \
+            --without-cxx-binding \
+            --with-abi-version=5 
+make sources libs
+cp -av lib/lib*.so.5* /usr/lib
+```
+
+</warn>
  
 ## Для multilib
 
@@ -125,7 +141,23 @@ cp -Rv DESTDIR/usr/lib32/* /usr/lib32
 rm -rf DESTDIR
 ```
 
-<!-- TODO добавить инфу о сборке 32-bit libncurses.so.5, но нужен многострочный хелпер --> 
+<warn>
+
+Если вам для запуска старых бинарных программ требуется 32-битная библиотека ncurses без широких символов - соберите её:
+
+```bash
+make distclean
+CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr    \
+            --with-shared    \
+            --without-normal \
+            --without-debug  \
+            --without-cxx-binding \
+            --with-abi-version=5 --host=i686-pc-linux-gnu
+make sources libs
+cp -av lib/lib*.so.5* /usr/lib
+```
+
+</warn>
 
 ## Установленные файлы
 
