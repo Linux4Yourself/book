@@ -99,6 +99,7 @@
     - [Perl](build-system/perl)
     - [XML::Parser](build-system/xml-parser)
     - [Intltool](build-system/intltool)
+    - [Autoconf](build-system/autoconf)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
