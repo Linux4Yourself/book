@@ -111,6 +111,7 @@
       - **SysVinit**
       - **SystemD**
         - [Ninja](build-system/ninja)
+        - [Meson](build-system/meson)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
