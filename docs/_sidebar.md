@@ -109,6 +109,7 @@
     - [Python](build-system/python.md)
     - [Ninja](build-system/ninja)
     - [Meson](build-system/meson)
+    - [Coreutils](build-system/coreutils)
   
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
