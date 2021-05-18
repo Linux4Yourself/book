@@ -107,11 +107,12 @@
     - [Openssl](build-system/openssl)
     - [Sqlite](build-system/sqlite)
     - [Python](build-system/python.md)
+    - [Ninja](build-system/ninja)
+    - [Meson](build-system/meson)
+  
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
       - **SystemD**
-        - [Ninja](build-system/ninja)
-        - [Meson](build-system/meson)
         - [SystemD](build-system/systemd)
         - [D-Bus](build-system/dbus)
 
