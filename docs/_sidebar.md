@@ -106,7 +106,7 @@
     - [Libffi](build-system/libffi)
     - [Openssl](build-system/openssl)
     - [Sqlite](build-system/sqlite)
-    - [Python](build-system/python)
+    - [Python](build-system/python.md)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
