@@ -110,6 +110,7 @@
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
       - **SystemD**
+        - [Ninja](build-system/ninja)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
