@@ -112,6 +112,7 @@
       - **SystemD**
         - [Ninja](build-system/ninja)
         - [Meson](build-system/meson)
+        - [SystemD](build-system/systemd)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
