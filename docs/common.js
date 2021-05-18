@@ -30,12 +30,12 @@ Vue.component('package-info', {
 
 			<span v-if="showsbu">
 				<br />
-				<span v-if="package.sbu">Приблизительное время сборки: <b>{{ package.sbu }} SBU</b><span>
+				<span v-if="package.sbu">Приблизительное время сборки: <b>{{ package.sbu }} SBU</b></span>
 			</span>
 
 			<span v-if="showsbu2">
 				<br />
-				<span v-if="package.sbu2">Приблизительное время сборки: <b>{{ package.sbu2 }} SBU</b><span>
+				<span v-if="package.sbu2">Приблизительное время сборки: <b>{{ package.sbu2 }} SBU</b></span>
 			</span>
 		</p>
 		<slot></slot>
