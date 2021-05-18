@@ -113,6 +113,7 @@
         - [Ninja](build-system/ninja)
         - [Meson](build-system/meson)
         - [SystemD](build-system/systemd)
+        - [D-Bus](build-system/dbus)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
