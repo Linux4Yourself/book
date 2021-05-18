@@ -107,6 +107,9 @@
     - [Openssl](build-system/openssl)
     - [Sqlite](build-system/sqlite)
     - [Python](build-system/python.md)
+    - [**Выбор системы инициализации**](build-system/init-system)
+      - **SysVinit**
+      - **SystemD**
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
