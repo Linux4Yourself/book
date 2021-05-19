@@ -110,6 +110,7 @@
     - [Ninja](build-system/ninja)
     - [Meson](build-system/meson)
     - [Coreutils](build-system/coreutils)
+    - [Check](build-system/check)
   
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
