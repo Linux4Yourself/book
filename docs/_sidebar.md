@@ -111,7 +111,8 @@
     - [Meson](build-system/meson)
     - [Coreutils](build-system/coreutils)
     - [Check](build-system/check)
-  
+    - [Diffutils](build-system/diffutils)
+
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
       - **SystemD**

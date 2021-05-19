@@ -5,7 +5,7 @@
 		el: '#main',
 		data: { package: {} },
 		mounted: function () {
-				this.getPackage('check');
+				this.getPackage('diffutils');
 		},
 		methods: {
 			getPackage: function(name) {
@@ -36,5 +36,5 @@ make check
 ## Установка
 
 ```bash
-make docdir=/usr/share/doc/check install
+make install
 ```
