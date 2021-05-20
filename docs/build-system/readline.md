@@ -34,7 +34,7 @@ sed -i '/{OLDSUFF}/c:' support/shlib-install
             --with-curses  
 ```
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 `--with-curses` - Включает использование библиотеки `ncurses`
 
@@ -91,4 +91,3 @@ rm -rf DESTDIR
 ## Установленные файлы
 
 Библиотеки: `libhistory.so` и `libreadline.so`
-

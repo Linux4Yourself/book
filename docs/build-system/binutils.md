@@ -49,7 +49,7 @@ cd       build
 
 Добавьте параметр `--enable-multilib`
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 `--enable-gold` - Установить компоновщик `gold`.
 

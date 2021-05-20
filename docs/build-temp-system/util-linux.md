@@ -40,7 +40,7 @@ mkdir -pv /var/lib/hwclock
             runstatedir=/run  --enable-usrdir-path  
 ```
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 `--disable-*` - Отключает программы, которые предоставляются другими пакетами
 

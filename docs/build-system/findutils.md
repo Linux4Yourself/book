@@ -5,7 +5,7 @@
 		el: '#main',
 		data: { package: {} },
 		mounted: function () {
-				this.getPackage('gdbm');
+				this.getPackage('findutils');
 		},
 		methods: {
 			getPackage: function(name) {
@@ -19,25 +19,22 @@
 ## Настройка
 
 ```bash
-./configure --prefix=/usr    \
-            --disable-static \
-            --enable-libgdbm-compat
+./configure --prefix=/usr --localstatedir=/var/lib/locate
 ```
 
 ### Значения параметров configure
-
-``--enable-libgdbm-compat`` - Позволяет использовать библиотеку для совместимости c `libgdbm`. Некоторые пакеты могут использовать старые процедуры DBM, которые и предоставляет эта библиотека.
+`--localstatedir` - замена расположения базы данных `locate` в `/var/lib/locate` для соответствия FHS.
 
 ## Сборка
 
 ```bash
 make
 ```
-
 ## Тестирование
 
 ```bash
-make check
+chown -Rv tester .
+su tester -c "PATH=$PATH make check"
 ```
 
 ## Установка

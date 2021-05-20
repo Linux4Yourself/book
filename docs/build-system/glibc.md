@@ -74,7 +74,7 @@ cd     build
 ### Для multilib
 Добавьте параметр `--enable-multi-arch`
 
-### Объяснение параметров configure
+### Значения параметров configure
  
 `--enable-kernel=3.2` - оптимизирует glibc для использования с ядрами новее 3.2.
 

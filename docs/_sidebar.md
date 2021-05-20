@@ -113,6 +113,7 @@
     - [Check](build-system/check)
     - [Diffutils](build-system/diffutils)
     - [Gawk](build-system/gawk)
+    - [Findutils](build-system/findutils)
 
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**

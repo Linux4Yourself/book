@@ -49,7 +49,7 @@ cd       build
 
 Замените параметр `--disable-multilib` на `--enable-multilib --with-multilib-list=m64,m32 `
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 `--disable-bootstrap` - Предотвращает многократную пересборку GCC
 

@@ -34,7 +34,7 @@ sed -i  '/^bashline.o:.*shmbchar.h/a bashline.o: ${DEFDIR}/builtext.h' Makefile.
             --with-installed-readline
 ```
 
-## Объяснение параметров configure
+### Значения параметров configure
 
 `--without-bash-malloc` - Этот параметр отключает использование функции выделения памяти (malloc) Bash, которая вызывает ошибки сегментации. Отключив эту опцию, Bash будет использовать функции malloc из libc, которые более стабильны.
 
