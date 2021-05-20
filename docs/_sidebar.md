@@ -112,6 +112,7 @@
     - [Coreutils](build-system/coreutils)
     - [Check](build-system/check)
     - [Diffutils](build-system/diffutils)
+    - [Gawk](build-system/gawk)
 
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
