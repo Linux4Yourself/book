@@ -115,6 +115,7 @@
     - [Gawk](build-system/gawk)
     - [Findutils](build-system/findutils)
     - [Groff](build-system/groff)
+    - [Less](build-system/less)
 
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
