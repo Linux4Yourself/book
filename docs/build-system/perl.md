@@ -44,7 +44,7 @@ sh Configure -des                                         \
              -Dusethreads
 ```
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 `-Dvendorprefix=/usr` - Устанавливать модули в `/usr`.
 

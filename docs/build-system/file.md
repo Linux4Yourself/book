@@ -23,7 +23,7 @@
 ./configure --prefix=/usr    
 ```
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 
 ## Сборка
@@ -80,4 +80,3 @@ rm -rf DESTDIR
 Программы: file
 
 Библиотеки: libmagic.so
-

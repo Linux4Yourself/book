@@ -31,7 +31,7 @@
             --disable-servers
 ```
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 `--disable-*` - Отключает установку программ, лучшие версии которых предоставляют другие пакеты.
 
@@ -57,4 +57,3 @@ make install
 ## Установленные файлы
 
 Программы: dnsdomainname, ftp, ifconfig, hostname, ping, ping6, talk, telnet, tftp и traceroute
-

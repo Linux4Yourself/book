@@ -25,7 +25,7 @@
             --disable-static   --enable-cxx  
 ```
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 `--enable-cxx` - Собрать библиотеку C++
 

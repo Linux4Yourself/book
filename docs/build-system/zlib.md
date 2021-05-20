@@ -23,7 +23,7 @@
 ./configure --prefix=/usr --zlib-compat --native
 ```
 
-### Объяснение параметров configure
+### Значения параметров configure
 
 `--zlib-compat` - Включает полную совместимость с API `zlib`.
 
