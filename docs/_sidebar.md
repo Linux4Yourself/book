@@ -116,6 +116,7 @@
     - [Findutils](build-system/findutils)
     - [Groff](build-system/groff)
     - [Less](build-system/less)
+    - [Gzip](build-system/gzip)
 
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
