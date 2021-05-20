@@ -114,6 +114,7 @@
     - [Diffutils](build-system/diffutils)
     - [Gawk](build-system/gawk)
     - [Findutils](build-system/findutils)
+    - [Groff](build-system/groff)
 
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
