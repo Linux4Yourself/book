@@ -24,3 +24,7 @@ warn {
 	padding: 20px;
 	display: block;
 }
+
+.pre {
+	padding: 12px 24px !important;
+}
