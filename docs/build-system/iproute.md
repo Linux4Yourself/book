@@ -5,7 +5,7 @@
 		el: '#main',
 		data: { package: {} },
 		mounted: function () {
-				this.getPackage('iproute');
+				this.getPackage('iproute2');
 		},
 		methods: {
 			getPackage: function(name) {
