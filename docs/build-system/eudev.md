@@ -1,20 +1,29 @@
-<package-info :package="package" showsbu2></package-info>
+<package-info :package="package" showsbu2 ></package-info>
 
 <script>
 		new Vue({
 		el: '#main',
-		data: { package: {} },
+		data: { package: {}, patch: {} },
 		mounted: function () {
 				this.getPackage('eudev');
+				this.getBzipPatch();
 		},
 		methods: {
 			getPackage: function(name) {
 					getPackage(name)
 					.then(response => this.package = response);
 			},
+			getBzipPatch: function() {
+					getPackage('udev')
+					.then(response => this.patch = response);
+			},
 		}
   })
 </script>
+
+## Дополнительные необходимые файлы
+
+<a :href="patch.url">{{ patch.url}}</a>
 
 ## Настройка
 
@@ -54,12 +63,12 @@ make install
 
 Установите необходимые файлы:
 
-<!-- TODO: добавить в шапку ссылку на это -->
-
-```bash
-tar -xvf ../udev-lfs-20171102.tar.xz
-make -f udev-lfs-20171102/Makefile.lfs install
-```
+<pre class="pre">
+mkdir udev
+cd udev
+tar -xvf ../../{{patch.fileName}}
+make -f Makefile.lfs install
+</pre>
  
 ## Для multilib
 
