@@ -50,3 +50,41 @@ make install
 ```bash
 ln -sfv /etc/machine-id /var/lib/dbus
 ```
+
+## Для multilib
+
+### Очистка
+
+```bash
+make distclean
+```
+
+### Настройка
+
+```bash
+CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr     \
+            --sysconfdir=/etc                    \
+            --localstatedir=/var                 \
+            --disable-static                     \
+            --disable-doxygen-docs               \
+            --disable-xml-docs                   \
+            --docdir=/usr/share/doc/dbus         \
+            --with-console-auth-dir=/run/console \
+            --with-system-pid-file=/run/dbus/pid \
+            --with-system-socket=/run/dbus/system_bus_socket
+            --libdir=/usr/lib32
+```
+
+### Сборка 
+
+```bash
+make
+```
+
+### Установка
+
+```bash
+make DESTDIR=$PWD/DESTDIR install
+cp -Rv DESTDIR/usr/lib32/* /usr/lib32
+rm -rf DESTDIR
+```

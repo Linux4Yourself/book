@@ -53,7 +53,7 @@ meson --prefix=/usr                 \
       -Duserdb=false                \
       -Dman=false                   \
       -Dmode=release                \
-      -Ddocdir=/usr/share/doc/systemd \
+      -Dtests=false
       ..
 ```
 
@@ -92,4 +92,54 @@ systemctl preset-all
 
 ```bash
 systemctl disable systemd-time-wait-sync.service
+```
+
+## Для multilib
+
+### Очистка
+
+```bash
+rm -rf ./*
+```
+
+### Настройка
+
+```bash
+mkdir -p build
+cd       build
+
+LANG=en_US.UTF-8  CC="gcc -m32" CXX="g++ -m32"     \
+meson --prefix=/usr                 \
+      --sysconfdir=/etc             \
+      --localstatedir=/var          \
+      --libdir=/usr/lib32           \
+      -Dblkid=true                  \
+      -Dbuildtype=release           \
+      -Ddefault-dnssec=no           \
+      -Dfirstboot=false             \
+      -Dinstall-tests=false         \
+      -Dldconfig=false              \
+      -Dsysusers=false              \
+      -Db_lto=false                 \
+      -Drpmmacrosdir=no             \
+      -Dhomed=false                 \
+      -Duserdb=false                \
+      -Dman=false                   \
+      -Dmode=release                \
+      -Dtests=false
+      ..
+```
+
+### Сборка 
+
+```bash
+ninja
+```
+
+### Установка
+
+```bash
+DESTDIR=$PWD/DESTDIR ninja install
+cp -Rv DESTDIR/usr/lib32/* /usr/lib32
+rm -rf DESTDIR
 ```
