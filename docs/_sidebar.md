@@ -124,6 +124,7 @@
     - [Patch](build-system/patch)
     - [Tar](build-system/tar.md)
     - [Man-DB](build-system/mandb.md)
+    - [Textinfo](build-system/texinfo.md)
   
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
