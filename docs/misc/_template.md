@@ -77,10 +77,3 @@ make DESTDIR=$PWD/DESTDIR install
 cp -Rv DESTDIR/usr/lib32/* /usr/lib32
 rm -rf DESTDIR
 ```
-
-## Установленные файлы
-
-Программы: 
-
-Библиотеки: 
-
