@@ -126,6 +126,8 @@
     - [Man-DB](build-system/mandb.md)
     - [Textinfo](build-system/texinfo.md)
   
+    - [**Выбор текстового редактора**](build-system/text-editor)
+
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
       - **SystemD**
