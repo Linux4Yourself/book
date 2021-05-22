@@ -50,7 +50,10 @@ book = {
 }
 
 // источник метаданных пакетов.
-const pkgsSrc = `https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/${book.revision}/src/core-packages.json`;
+const pkgsUrlBase = `https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/${book.revision}/src/packages/core`;
+const pkgsSrc =  `${pkgsUrlBase}/packages.json`;
+const wgetList = `${pkgsUrlBase}/wget-list`;
+const md5Sums =  `${pkgsUrlBase}/md5sums`;
 
 // Получить список всех пакетов из источника.
 getPackages = function () {
