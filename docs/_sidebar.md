@@ -127,9 +127,16 @@
   
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
+        - [Eudev](build-system/eudev.md)
+        - [Procps-ng](build-system/procps-ng.md)
+        - [Util-linux](build-system/util-linux-sysvinit.md)
+        - [Sysklogd](build-system/sysklogd)
+        - [SysVinit](build-system/sysvinit)
       - **SystemD**
         - [SystemD](build-system/systemd)
         - [D-Bus](build-system/dbus)
+        - [Procps-ng](build-system/procps-ng.md)
+        - [Util-linux](build-system/util-linux-systemd.md)
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
