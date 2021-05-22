@@ -118,6 +118,7 @@
     - [Less](build-system/less)
     - [Gzip](build-system/gzip)
     - [Iproute2](build-system/iproute)
+    - [Kbd](build-system/kbd.md)
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
       - **SystemD**
