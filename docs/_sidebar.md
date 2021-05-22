@@ -119,7 +119,9 @@
     - [Gzip](build-system/gzip)
     - [Iproute2](build-system/iproute)
     - [Kbd](build-system/kbd.md)
-    - [Libpipeline](build-system/libpipeline.md)
+    - [Libpipeline](build-system/libpipeline.)
+    - [Make](build-system/make)
+  
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
       - **SystemD**
