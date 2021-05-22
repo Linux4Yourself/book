@@ -121,6 +121,7 @@
     - [Kbd](build-system/kbd.md)
     - [Libpipeline](build-system/libpipeline.)
     - [Make](build-system/make)
+    - [Tar](build-system/tar.md)
   
     - [**Выбор системы инициализации**](build-system/init-system)
       - **SysVinit**
