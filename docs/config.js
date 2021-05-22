@@ -32,6 +32,13 @@ window.$docsify = {
 	requestHeaders: {
 		'cache-control': 'max-age=0',
 	},
+	// https://github.com/imyelo/docsify-pagination
+	pagination: {
+		previousText: 'Назад',
+		nextText: 'Вперёд',
+		crossChapter: true,
+		crossChapterText: true,
+	},
 }
 
 // Секция локальной настройки для содержания книги.
