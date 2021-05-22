@@ -119,7 +119,7 @@
     - [Gzip](build-system/gzip)
     - [Iproute2](build-system/iproute)
     - [Kbd](build-system/kbd.md)
-    - [Libpipeline](build-system/libpipeline.)
+    - [Libpipeline](build-system/libpipeline)
     - [Make](build-system/make)
     - [Patch](build-system/patch)
     - [Tar](build-system/tar.md)
