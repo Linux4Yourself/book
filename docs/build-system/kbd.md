@@ -46,7 +46,7 @@ sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
 ./configure --prefix=/usr --disable-vlock
 ```
 
-### Пояснение параметров configure
+### Значения параметров configure
 
 `--disable-vlock` - Данная библиотека требует Linux-PAM.
 
