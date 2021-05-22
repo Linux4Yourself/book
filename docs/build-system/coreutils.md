@@ -48,6 +48,8 @@ FORCE_UNSAFE_CONFIGURE=1 ./configure \
             --enable-no-install-program=kill,uptime
 ```
 
+### Пояснение параметров configure
+
 `autoreconf` - Требует патч поддержки локализации
 
 `FORCE_UNSAFE_CONFIGURE=1` - Разрешает запуск `configure` под пользователем `root`
