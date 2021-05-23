@@ -142,6 +142,8 @@
         - [Procps-ng](build-system/procps-ng.md)
         - [Util-linux](build-system/util-linux-systemd.md)
 
+    - [E2fsprogs](build-system/e2fsprogs)
+
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
     - [Строение GNU/Linux. Часть 1](additional/LinuxStructure1)
