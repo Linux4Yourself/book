@@ -54,10 +54,8 @@ make install
 ```bash
 
 for target in depmod insmod lsmod modinfo modprobe rmmod; do
-  ln -sfv ../bin/kmod /sbin/$target
+  ln -sfv kmod /usr/bin/$target
 done
-
-ln -sfv kmod /bin/lsmod
 ```
 
 ## Для multilib
