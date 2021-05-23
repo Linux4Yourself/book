@@ -27,11 +27,12 @@ find man -name Makefile.in -exec sed -i 's/getspnam\.3 / /' {} \;
 find man -name Makefile.in -exec sed -i 's/passwd\.5 / /'   {} \;
 ```
 
-Для использования более безопасного метода шифрования SHA-512 вместо стандартного `crypt` метода выполните, а также использования `/var/mail` вместо устаревшего `/var/spool/mail` выполните:
+Для использования более безопасного метода шифрования SHA-512 вместо стандартного `crypt` метода выполните, а также использования `/var/mail` вместо устаревшего `/var/spool/mail` и устранения дублирования путей в переменной `PATH` по умолчанию выполните:
 
 ```bash
 sed -e 's:#ENCRYPT_METHOD DES:ENCRYPT_METHOD SHA512:' \
     -e 's:/var/spool/mail:/var/mail:'                 \
+    -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'                \
     -i etc/login.defs
 ```
 
