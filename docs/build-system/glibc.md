@@ -189,7 +189,7 @@ EOF
 
 Установите информацию о часовых поясах:
 
-```bash
+<pre class="pre">
 tar -xf ../../{{tzdata.fileName}}
 
 ZONEINFO=/usr/share/zoneinfo
@@ -205,7 +205,7 @@ done
 cp -v zone.tab zone1970.tab iso3166.tab $ZONEINFO
 zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO
-```
+</pre>
 
 Для выбора часового пояса запустите скрипт:
 
