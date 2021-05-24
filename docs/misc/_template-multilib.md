@@ -46,3 +46,34 @@ make check
 make install
 ```
  
+## Для multilib
+
+### Очистка
+
+```bash
+make distclean
+```
+
+### Настройка
+
+```bash
+CC="gcc -m32" CXX="g++ -m32" ./configure \
+    --prefix=/usr         \
+    --disable-static      \
+    --libdir=/usr/lib32   \
+    --host=i686-pc-linux-gnu
+```
+
+### Сборка 
+
+```bash
+make
+```
+
+### Установка
+
+```bash
+make DESTDIR=$PWD/DESTDIR install
+cp -Rv DESTDIR/usr/lib32/* /usr/lib32
+rm -rf DESTDIR
+```
