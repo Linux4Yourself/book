@@ -151,6 +151,8 @@
     - [E2fsprogs](build-system/e2fsprogs.md)
     - [Grub](build-system/about-grub.md)
       - **EFI**
+        - [Efivar](build-system/efivar.md)
+        - [Efibootmgr](build-system/efibootmgr.md)
       - **Legacy boot**
 
 - [**Вспомогательные материалы**](additional/additional)
