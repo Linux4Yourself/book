@@ -1,11 +1,11 @@
 - **Предисловие**
-  - [Предисловие](prologue/foreword)
-  - [От авторов](prologue/from-authors)
-  - [Преимущества](prologue/benefits)
-  - [Прежде чем начать](prologue/before-start)
-  - [Обозначения принятые в книге](prologue/typography)
-  - [Информация об используемых пакетах](prologue/packages)
-  - [Опечатки и неточности](prologue/inaccuracies)
+  - [Предисловие](prologue/foreword.md)
+  - [От авторов](prologue/from-authors.md)
+  - [Преимущества](prologue/benefits.md)
+  - [Прежде чем начать](prologue/before-start.md)
+  - [Обозначения принятые в книге](prologue/typography.md)
+  - [Информация об используемых пакетах](prologue/packages.md)
+  - [Опечатки и неточности](prologue/inaccuracies.md)
 
 - **Создание Linux системы**
   - **Подготовительные работы**
@@ -27,7 +27,7 @@
     - [Binutils](cross-toolchain/binutils)
     - [GCC](cross-toolchain/gcc)
 
-  - [**Сборка временной системы**](build-temp-system/tempsystem)
+  - [**Сборка временной системы**](build-temp-system/tempsystem.md)
     - [Заголовки ядра Linux](build-temp-system/linux-headers)
     - [Glibc](build-temp-system/glibc)
     - [LibstdС++ проход 1](build-temp-system/libstdc)
@@ -60,14 +60,14 @@
     - [Util-linux](build-temp-system/util-linux)
     - [Очистка и сохранение временной системы](build-temp-system/cleanup)
 
-  - [**Сборка Linux системы**](build-system/build-system)
-    - [Настройка окружения bash](build-system/set-profile)
-    - [Iana-etc](build-system/iana-etc)
-    - [Glibc](build-system/glibc)
-    - [Zlib-ng](build-system/zlib)
-    - [Bzip2](build-system/bz2)
-    - [Xz](build-system/xz)
-    - [Zstd](build-system/zstd)
+  - [**Сборка Linux системы**](build-system/build-system.md)
+    - [Настройка окружения bash](build-system/set-profile.md)
+    - [Iana-etc](build-system/iana-etc.md)
+    - [Glibc](build-system/glibc.md)
+    - [Zlib-ng](build-system/zlib.md)
+    - [Bzip2](build-system/bz2.md)
+    - [Xz](build-system/xz.md)
+    - [Zstd](build-system/zstd.md)
     - [File](build-system/file)
     - [Readline](build-system/readline)
     - [M4](build-system/m4)
@@ -130,6 +130,7 @@
     - [Textinfo](build-system/texinfo.md)
     - [Popt](build-system/popt.md)
     - [Freetype](build-system/freetype.md)
+    - [Dosfstools](build-system/dosfstools.md)
   
     - [**Выбор текстового редактора**](build-system/text-editor.md)
 
