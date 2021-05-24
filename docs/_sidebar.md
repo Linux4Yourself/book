@@ -129,6 +129,7 @@
     - [Man-DB](build-system/mandb.md)
     - [Textinfo](build-system/texinfo.md)
     - [Popt](build-system/popt.md)
+    - [Freetype](build-system/freetype.md)
   
     - [**Выбор текстового редактора**](build-system/text-editor.md)
 

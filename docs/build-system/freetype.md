@@ -1,5 +1,3 @@
-<!-- Этот шаблон  можно использовавть для инструкции по сборке пакета. Каркас. -->
-
 <package-info :package="package" showsbu2></package-info>
 
 <script>
@@ -7,9 +5,7 @@
 		el: '#main',
 		data: { package: {} },
 		mounted: function () {
-				// заменить на название пакета, которые необходим.
-				// см. файл.https://github.com/Linux4Yourself/Linux4Yourself.Book.Packages/blob/develop/src/core-packages.json
-				this.getPackage('m4');
+				this.getPackage('freetype');
 		},
 		methods: {
 			getPackage: function(name) {
@@ -22,10 +18,15 @@
 
 ## Настройка
 
+?> В extra книге данный пакет следует переустановить после установки harfbuzz из-за круговой зависимости.
 
 ```bash
-./configure --prefix=/usr    \
-            --disable-static 
+sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg &&
+
+sed -r "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" \
+    -i include/freetype/config/ftoption.h  &&
+
+./configure --prefix=/usr --enable-freetype-config --disable-static --without-harfbuzz
 ```
 
 ## Сборка
@@ -33,11 +34,6 @@
 
 ```bash
 make
-```
-## Тестирование
-
-```bash
-make check
 ```
 
 ## Установка
@@ -61,7 +57,7 @@ CC="gcc -m32" CXX="g++ -m32" ./configure \
     --prefix=/usr         \
     --disable-static      \
     --libdir=/usr/lib32   \
-    --host=i686-pc-linux-gnu
+    --host=i686-pc-linux-gnu --without-harfbuzz
 ```
 
 ### Сборка 
