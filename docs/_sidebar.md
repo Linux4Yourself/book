@@ -166,3 +166,4 @@
   - [Кросс-компилятор](additional/cross-compiler)
   - [Настройка zram](additional/zram)
   - [Виды популярных архитектур процессоров](additional/cpu-arch)
+  - [О шебангах в скриптах Linux](additional/sha-bang)
