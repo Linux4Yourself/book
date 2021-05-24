@@ -122,30 +122,34 @@
     - [Gzip](build-system/gzip)
     - [Iproute2](build-system/iproute)
     - [Kbd](build-system/kbd.md)
-    - [Libpipeline](build-system/libpipeline)
-    - [Make](build-system/make)
-    - [Patch](build-system/patch)
+    - [Libpipeline](build-system/libpipeline.md)
+    - [Make](build-system/make.md)
+    - [Patch](build-system/patch.md)
     - [Tar](build-system/tar.md)
     - [Man-DB](build-system/mandb.md)
     - [Textinfo](build-system/texinfo.md)
+    - [Popt](build-system/popt.md)
   
-    - [**Выбор текстового редактора**](build-system/text-editor)
+    - [**Выбор текстового редактора**](build-system/text-editor.md)
 
-    - [**Выбор системы инициализации**](build-system/init-system)
+    - [**Выбор системы инициализации**](build-system/init-system.md)
       - **SysVinit**
         - [Eudev](build-system/eudev.md)
         - [Procps-ng](build-system/procps-ng.md)
         - [Util-linux](build-system/util-linux-sysvinit.md)
-        - [Sysklogd](build-system/sysklogd)
-        - [SysVinit](build-system/sysvinit)
-        - [Bootscripts](build-system/bootscripts)
+        - [Sysklogd](build-system/sysklogd.md)
+        - [SysVinit](build-system/sysvinit.md)
+        - [Bootscripts](build-system/bootscripts.md)
       - **SystemD**
-        - [SystemD](build-system/systemd)
-        - [D-Bus](build-system/dbus)
+        - [SystemD](build-system/systemd.md)
+        - [D-Bus](build-system/dbus.md)
         - [Procps-ng](build-system/procps-ng.md)
         - [Util-linux](build-system/util-linux-systemd.md)
-
-    - [E2fsprogs](build-system/e2fsprogs)
+        
+    - [E2fsprogs](build-system/e2fsprogs.md)
+    - [Grub](build-system/about-grub.md)
+      - **EFI**
+      - **Legacy boot**
 
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
