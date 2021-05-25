@@ -154,7 +154,7 @@
       - **EFI**
         - [Efivar](build-system/efivar.md)
         - [Efibootmgr](build-system/efibootmgr.md)
-        - [GRUB](build-system/grub-efi.md
+        - [GRUB](build-system/grub-efi.md)
       - **Legacy boot**
         - [GRUB](build-system/grub-mbr.md)
 
