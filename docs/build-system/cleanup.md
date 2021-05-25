@@ -10,7 +10,7 @@ rm -rf /tmp/*
 
 ```bash
 logout
-chroot "$LFS" /usr/bin/env -i          \
+chroot "$LIN" /usr/bin/env -i          \
     HOME=/root TERM="$TERM"            \
     PS1='(chroot) \u:\w\$ '        \
     PATH=/usr/bin            \
