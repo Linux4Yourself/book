@@ -143,6 +143,7 @@
         - [SysVinit](build-system/sysvinit.md)
         - [Bootscripts](build-system/bootscripts.md)
       - **SystemD**
+        - [Создание пользователей и групп для SystemD](build-system/systemd-users.md)
         - [SystemD](build-system/systemd.md)
         - [D-Bus](build-system/dbus.md)
         - [Procps-ng](build-system/procps-ng.md)
