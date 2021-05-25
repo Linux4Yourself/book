@@ -5,7 +5,7 @@
 		el: '#main',
 		data: { package: {} },
 		mounted: function () {
-				this.getPackage('m4');
+				this.getPackage('findutils');
 		},
 		methods: {
 			getPackage: function(name) {
