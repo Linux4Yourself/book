@@ -157,9 +157,12 @@
         - [GRUB](build-system/grub-efi.md)
       - **Legacy boot**
         - [GRUB](build-system/grub-mbr.md)
-    - [Очистка](build-system/cleanup.mp)
+    - [Очистка](build-system/cleanup)
     
   - [Настройка системы](setup/setup.md)
+
+  - [**Настройка и установка ядра**](kernel/kernel-setup-intro.md)
+    - [Настройка](kernel/kernel-setup.md)
       
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
