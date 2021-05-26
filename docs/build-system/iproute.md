@@ -43,7 +43,13 @@ make
 ```bash
 make install
 ```
- 
+## Установка документации
+
+```bash
+mkdir -v /usr/share/doc/iproute2
+cp -v COPYING README* /usr/share/doc/iproute2
+```
+
 ## Установленные файлы
 
 Программы: bridge, ctstat (ссылка на lnstat), genl, ifcfg, ifstat, ip, lnstat, nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (ссылка на lnstat), ss, and tc
