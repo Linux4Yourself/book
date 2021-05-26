@@ -44,11 +44,6 @@ sed -i '/{OLDSUFF}/c:' support/shlib-install
 ```bash
 make SHLIB_LIBS="-lncursesw" 
 ```
-## Тестирование
-
-```bash
-make check
-```
 
 ## Установка
 
