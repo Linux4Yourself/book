@@ -9,7 +9,7 @@
 <br />
 Размер архива: <b>{{ package.size }} Mb</b>
 <br />
-SBU: <b>3.3</b>
+SBU: <b>1</b>
 
 <script>
 		new Vue({
