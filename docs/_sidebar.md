@@ -133,6 +133,7 @@
     - [Dosfstools](build-system/dosfstools.md)
   
     - [**Выбор текстового редактора**](build-system/text-editor.md)
+      - [Vim](build-system/vim.md)
 
     - [**Выбор системы инициализации**](build-system/init-system.md)
       - **SysVinit**
