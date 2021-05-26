@@ -67,7 +67,7 @@ cd     build
       --enable-kernel=3.2                \
       --with-headers=/usr/include        \
       --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/lib               \
+      libc_cv_slibdir=/usr/lib               \
       libc_cv_include_x86_isa_level=no  
 ```
 
@@ -267,7 +267,7 @@ CC="gcc -m32" CXX="g++ -m32" \
       --enable-multi-arch                \
       --libdir=/usr/lib32                \
       --libexecdir=/usr/lib32            \
-      libc_cv_slibdir=/lib32 
+      libc_cv_slibdir=/usr/lib32 
 ```
 
 ## Сборка
