@@ -7,6 +7,8 @@
 
 <!-- объяснение давать как коментарии в самом скрипте -->
 
+Вы могли заметить файлы `~/.profile`, `~/.bash_profile` и ряд других. Они используются для задания элементов окружения для оболочки пользователя. Например, `umask`, а так же переменных `PS1` или `PATH`. Тоже самое и с файлом `/etc/profile`, только он используется для задания общесистемных параметров, а файлы в каталоге пользователя - для задания параметров конкретного пользователя системы.
+
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/profile.sh ':include')
 
 ### О CFLAGS и CXXFLAGS
@@ -35,6 +37,8 @@
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/completion.sh ':include')
 
 ## Dircolors
+
+Этот файл нужен для цветного вывода таких утилит, как `ls`. Пример: `ls --color=auto`.
 
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/dircolors.sh ':include')
 
