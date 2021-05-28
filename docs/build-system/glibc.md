@@ -120,16 +120,27 @@ install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf
 install -v -Dm644 ../nscd/nscd.service /lib/systemd/system/nscd.service
 ```
 
-Далее установите локали. Для этого выполните:
 
-<!-- C.utf-8 лучше поставить -->
+
+### Установка локали
+
+Разные страны и культуры имеют различные соглашения для коммуникаций. Эти соглашения состоят как из очень простых, таких как форматы даты и времени, так и из более сложных, таких как разговорный язык. "Интернационализация" программ GNU работает с помощью локалей (locales).
+
+Чтобы установить локали, выполните:
 
 ```bash
 mkdir -pv /usr/lib/locale
 localedef -i POSIX -f UTF-8 C.UTF-8 2> /dev/null || true
 ```
 
-Также можете установить локаль для языка, на котором вы планируете использовать систему, выполнив команду из списка ниже:
+Вы можете установить все локали, которые содержатся в файле ``{{ package.fileName }}/localedata/SUPPORTED``. 
+Выполните следующую команду:
+
+```bash
+make localedata/install-locales
+```
+
+Чтобы установить локаль для языка, на котором вы планируете использовать систему, выполните команду из списка ниже:
 
 ```bash
 localedef -i cs_CZ -f UTF-8 cs_CZ.UTF-8
@@ -158,6 +169,7 @@ localedef -i tr_TR -f UTF-8 tr_TR.UTF-8
 localedef -i zh_CN -f GB18030 zh_CN.GB18030
 localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 ```
+
 
 ## Настройка
 
