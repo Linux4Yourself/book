@@ -162,7 +162,7 @@
         - [GRUB](build-system/grub-mbr.md)
     - [Очистка](build-system/cleanup)
     
-  - [Настройка системы](setup/setup.md)
+  - [**Настройка системы**](setup/setup.md)
 
   - [**Настройка и установка ядра**](kernel/kernel-setup-intro.md)
     - [Настройка](kernel/kernel-setup.md)
