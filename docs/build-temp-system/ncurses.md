@@ -18,7 +18,7 @@
 
 ## Настройка
 
-Во первых, убедитесь что `gawk` будет найден первым:
+Во-первых, убедитесь что `gawk` будет найден первым:
 
 ```bash
 sed -i s/mawk// configure
@@ -40,9 +40,9 @@ cd ..
 ./configure --prefix=/usr                \
             --host=$LIN_TGT              \
             --build=$(./config.guess)    \
-            --without-manpages  \
-            --without-tests     \
-            --without-cxx   \
+            --without-manpages           \
+            --without-tests              \
+            --without-cxx                \
             --with-shared                \
             --without-debug              \
             --without-ada                \
@@ -52,11 +52,11 @@ cd ..
 
 ### Значения параметров configure
 
-`--without-manpages` `--without-tests` `--without-cxx` - Man-страницы, тесты и библиотека c++ ненужны для временной системы.
+`--without-manpages` `--without-tests` `--without-cxx` - Man-страницы, тесты и библиотека c++ не нужны для временной системы.
 
 `--without-ada` - Отключает сборку компонентов на языке `ada`, так как в собираемой системе отсутствуют необходимые для их запуска компоненты.
 
-`--without-normal` - Отключает установка большинства статических библиотек.
+`--without-normal` - Отключает установку большинства статических библиотек.
 
 `--enable-widec` - Включает установку библиотек с поддержкой много-байтовых символов. 
 
@@ -77,7 +77,7 @@ echo "INPUT(-lncursesw)" > $LIN/usr/lib/libncurses.so
 
 ### Настройка
 Соберите 32-битную версию ncurses:
-Для этого, во первых выполните:
+Для этого, во первых, выполните:
 
 ```bash
 make distclean
@@ -88,22 +88,22 @@ make distclean
 Далее запустите скрипт `configure`:
 
 ```bash
-CC="$LIN_TGT-gcc -m32"              \
-CXX="$LIN_TGT-g++ -m32"             \
-./configure --prefix=/usr           \
-            --host=$LIN_TGT32       \
+CC="$LIN_TGT-gcc -m32"                   \
+CXX="$LIN_TGT-g++ -m32"                  \
+./configure --prefix=/usr                \
+            --host=$LIN_TGT32            \
             --build=$(./config.guess)    \
-            --libdir=/usr/lib32     \
-            --without-manpages  \
-            --without-tests        \
-            --without-cxx           \
-            --without-progs       \
-            --with-shared           \
-            --without-debug      \
-            --without-ada           \
-            --without-normal     \
-            --enable-pc-files       \
-            --enable-widec          \
+            --libdir=/usr/lib32          \
+            --without-manpages           \
+            --without-tests              \
+            --without-cxx                \
+            --without-progs              \
+            --with-shared                \
+            --without-debug              \
+            --without-ada                \
+            --without-normal             \
+            --enable-pc-files            \
+            --enable-widec               \
             --with-pkg-config-libdir=/usr/lib32/pkgconfig
 ```
 
