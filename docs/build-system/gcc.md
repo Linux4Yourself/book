@@ -120,7 +120,7 @@ mv -v /usr/lib32/*gdb.py /usr/share/gdb/auto-load/usr/lib32
 ```bash
 echo 'int main(){}' > dummy.c
 cc dummy.c
-exec a.out || echo fail
+./a.out | echo succes
 ```
 
 Для multilib:
@@ -128,7 +128,7 @@ exec a.out || echo fail
 ```bash
 echo 'int main(){}' > dummy.c
 cc -m32 dummy.c
-exec a.out || echo fail
+./a.out | echo succes
 ```
 
 Удалите тестовые файлы:
