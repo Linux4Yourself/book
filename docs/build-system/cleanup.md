@@ -10,12 +10,9 @@ rm -rf /tmp/*
 
 ```bash
 logout
-chroot "$LIN" /usr/bin/env -i          \
-    HOME=/root TERM="$TERM"            \
-    PS1='(chroot) \u:\w\$ '        \
-    PATH=/usr/bin            \
-    /bin/bash --login
 ```
+
+[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/chroot.sh ':include')
 
 Файлы `.la` потеряли свою актуальность и могут вызвать проблемы при обновлении. Удалите их:
 
