@@ -22,7 +22,6 @@
 
 ## Настройка
 
-
 ```bash
 ./configure --prefix=/usr    \
             --disable-static 
@@ -34,6 +33,7 @@
 ```bash
 make
 ```
+
 ## Тестирование
 
 ```bash
