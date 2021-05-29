@@ -31,11 +31,4 @@ fi
 
 Войдите в ``chroot``:
 
-```bash
-chroot "$LIN" /usr/bin/env -i   \
-    HOME=/root                  \
-    TERM="$TERM"                \
-    PS1='(chroot) \u:\w\$ ' \
-    PATH=/bin:/usr/bin:/sbin:/usr/sbin \
-    /bin/bash --login +h
-```
+[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/chroot.sh ':include')
