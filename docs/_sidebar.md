@@ -131,6 +131,7 @@
     - [Popt](build-system/popt.md)
     - [Freetype](build-system/freetype.md)
     - [Dosfstools](build-system/dosfstools.md)
+    - [Wget](build-system/wget.md)
   
     - [**Выбор текстового редактора**](build-system/text-editor.md)
       - [Vim](build-system/vim.md)
@@ -161,7 +162,7 @@
         - [GRUB](build-system/grub-mbr.md)
     - [Очистка](build-system/cleanup)
     
-  - [Настройка системы](setup/setup.md)
+  - [**Настройка системы**](setup/setup.md)
 
   - [**Настройка и установка ядра**](kernel/kernel-setup-intro.md)
     - [Настройка](kernel/kernel-setup.md)
