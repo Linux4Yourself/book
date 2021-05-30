@@ -45,7 +45,7 @@ make prefix=/usr lib=lib install
 Установите корректные права для библиотек:
 
 ```bash
-chmod -v 755 /lib/lib{cap,psx}.so.2
+chmod -v 755 /usr/lib/lib{cap,psx}.so.2
 ```
  
 ## Для multilib
@@ -68,7 +68,7 @@ make CC="gcc -m32 -march=i686"
 make lib=lib32 prefix=$PWD/DESTDIR/usr -C libcap install
 cp -Rv DESTDIR/usr/lib32/* /usr/lib32
 sed -e "s|^libdir=.*|libdir=/usr/lib32|" -i /usr/lib32/pkgconfig/lib{cap,psx}.pc
-chmod -v 755 /usr/lib32/libcap.so.2.49
+chmod -v 755 /usr/lib32/lib{cap,psx}.so.2
 rm -rf DESTDIR
 ```
 

@@ -34,7 +34,6 @@ make
 make install
 
 chown -v -R root:root /usr/share/emacs/27.1 &&
-rm -vf /usr/lib/systemd/user/emacs.service
 ```
 
 !> Emacs устанавливает файлы иконок в `/usr/share/icons/hicolor`. После того, как вы скомпилируете Xorg/Wayland и GTK+ 2.24.33 или 3.24.25, вы можете улучшить производительность и использование памяти, обновив файл `/usr/share/icons/hicolor/index.theme`.  Выполните:

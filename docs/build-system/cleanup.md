@@ -37,3 +37,16 @@ rm -rf /tools
 ```bash
 userdel -r tester
 ```
+
+Также, вы можете удалить ненужные символы из исполняемых файлов:
+
+```bash
+find /usr/lib{,32} -type f -name \*.a \
+   -exec strip --strip-debug {} ';'
+
+find /usr/lib{,32} -type f -name \*.so* ! -name \*dbg \
+   -exec strip --strip-unneeded {} ';'
+
+find /usr/{bin,sbin,libexec} -type f \
+    -exec strip --strip-all {} ';'
+```

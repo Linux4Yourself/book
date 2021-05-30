@@ -18,7 +18,7 @@
 
 ## Настройка
 
-Для начала, измените расположение файла `vimrc` на `/etc`:
+Измените расположение файла `vimrc` на `/etc`:
 
 ```bash
 echo '#define SYS_VIMRC_FILE "/etc/vimrc"' >> src/feature.h
@@ -63,7 +63,7 @@ done
 Документация Vim устанавливается в `/usr/share/vim`. Для совместимости с другими пакетами, создайте символическую ссылку:
 
 ```bash
-ln -snfv ../vim/vim82/doc /usr/share/doc/vim-8.2.2433
+ln -snfv ../vim/vim82/doc /usr/share/doc/vim
 ```
 
 ## Объяснение новых команд

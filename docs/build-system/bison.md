@@ -19,7 +19,7 @@
 ## Настройка
 
 ```bash
-./configure --prefix=/usr --docdir=/usr/share/doc/bison
+./configure --prefix=/usr
 ```
 ## Сборка
 

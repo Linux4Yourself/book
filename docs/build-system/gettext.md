@@ -20,8 +20,7 @@
 
 ```bash
 ./configure --prefix=/usr    \
-            --disable-static \
-            --docdir=/usr/share/doc/gettext
+            --disable-static 
 ```
 ## Сборка
 
