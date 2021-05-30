@@ -21,7 +21,6 @@
 ```bash
 ./configure --prefix=/usr    \
             --disable-static \
-            --docdir=/usr/share/doc/expat
 ```
 
 ## Сборка

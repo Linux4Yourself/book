@@ -76,6 +76,7 @@ rm -fv /usr/lib/libncurses++w.a
 ```
 
 <warn>
+
 Если вам для запуска старых бинарных программ требуется библиотека ncurses без широких символов - соберите её:
 
 ```bash
@@ -89,6 +90,7 @@ make distclean
 make sources libs
 cp -av lib/lib*.so.5* /usr/lib
 ```
+
 </warn>
  
 ## Для multilib
