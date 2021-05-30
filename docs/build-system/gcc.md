@@ -89,10 +89,10 @@ rm -rf /usr/lib/gcc/$(gcc -dumpmachine)/11.1.0/include-fixed/bits/
 
 Убедитесь что владелец установленных заголовков корректный:
 
-```bash
+<pre class="pre">
 chown -v -R root:root \
-    /usr/lib/gcc/*linux-gnu/11.1.0/include{,-fixed}
-```
+    /usr/lib/gcc/*linux-gnu/{{package.version}}/include{,-fixed}
+</pre>
 
 По историческим причинам некоторые программы могут пытаться найти `cpp` в директории `/lib`. Создайте ссылку:
 
