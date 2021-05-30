@@ -91,7 +91,7 @@ rm -rf /usr/lib/gcc/$(gcc -dumpmachine)/11.1.0/include-fixed/bits/
 
 ```bash
 chown -v -R root:root \
-    /usr/lib/gcc/*linux-gnu/10.2.0/include{,-fixed}
+    /usr/lib/gcc/*linux-gnu/11.1.0/include{,-fixed}
 ```
 
 По историческим причинам некоторые программы могут пытаться найти `cpp` в директории `/lib`. Создайте ссылку:
