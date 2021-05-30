@@ -41,10 +41,10 @@ userdel -r tester
 Также, вы можете удалить не нужные символы из исполняемых файлов:
 
 ```bash
-find /usr/lib -type f -name \*.a \
+find /usr/lib{,32} -type f -name \*.a \
    -exec strip --strip-debug {} ';'
 
-find /usr/lib -type f -name \*.so* ! -name \*dbg \
+find /usr/lib{,32} -type f -name \*.so* ! -name \*dbg \
    -exec strip --strip-unneeded {} ';'
 
 find /usr/{bin,sbin,libexec} -type f \
