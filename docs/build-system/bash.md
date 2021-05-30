@@ -29,7 +29,6 @@ sed -i  '/^bashline.o:.*shmbchar.h/a bashline.o: ${DEFDIR}/builtext.h' Makefile.
 
 ```bash
 ./configure --prefix=/usr                    \
-            --docdir=/usr/share/doc/bash     \
             --without-bash-malloc            \
             --with-installed-readline
 ```
