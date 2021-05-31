@@ -19,7 +19,7 @@
 ## Настройка
 
 ```bash
-./configure --prefix=/usr --docdir=/usr/share/doc/gperf
+./configure --prefix=/usr
 ```
 
 ## Сборка

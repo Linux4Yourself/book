@@ -21,8 +21,7 @@
 ```bash
 ./configure --prefix=/usr     \
             --sysconfdir=/etc \
-            --enable-utf8     \
-            --docdir=/usr/share/doc/nano
+            --enable-utf8     
 ```
 
 ## Сборка
