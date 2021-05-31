@@ -133,14 +133,7 @@ mkdir -pv /usr/lib/locale
 localedef -i POSIX -f UTF-8 C.UTF-8 2> /dev/null || true
 ```
 
-Вы можете установить все локали, которые содержатся в файле ``{{ package.fileName }}/localedata/SUPPORTED``. 
-Выполните следующую команду:
-
-```bash
-make localedata/install-locales
-```
-
-Чтобы установить локаль для языка, на котором вы планируете использовать систему, выполните команду из списка ниже:
+Чтобы установить локаль для языка, на котором вы планируете использовать систему, выберите из списка необходимую, и выполните команду:
 
 ```bash
 localedef -i cs_CZ -f UTF-8 cs_CZ.UTF-8
@@ -170,6 +163,12 @@ localedef -i zh_CN -f GB18030 zh_CN.GB18030
 localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 ```
 
+Также, вы можете установить все локали, которые содержатся в файле ``{{ package.fileName }}/localedata/SUPPORTED``. 
+Выполните следующую команду:
+
+```bash
+make localedata/install-locales
+```
 
 ## Настройка
 
