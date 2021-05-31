@@ -18,12 +18,6 @@
 
 ## Подготовка
 
-Примените патч, чтобы исправить ошибки при сборке.
-
-```bash
-patch -Np1 -i ../systemd-248-upstream_fixes-1.patch
-```
-
 Удалите ненужную группу `render` из правил `udev`:
 
 ```bash
@@ -105,8 +99,6 @@ rm -rf ./*
 ### Настройка
 
 ```bash
-mkdir -p build
-cd       build
 
 LANG=en_US.UTF-8  CC="gcc -m32" CXX="g++ -m32"     \
 meson --prefix=/usr                 \
