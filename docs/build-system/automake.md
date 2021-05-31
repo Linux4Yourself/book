@@ -24,7 +24,7 @@ sed -i "s/''/etags/" t/tags-lisp-space.sh
 ```
 
 ```bash
-./configure --prefix=/usr --docdir=/usr/share/doc/automake
+./configure --prefix=/usr
 ```
 
 ## Сборка
