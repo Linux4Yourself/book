@@ -47,7 +47,7 @@ meson --prefix=/usr                 \
       -Duserdb=false                \
       -Dman=false                   \
       -Dmode=release                \
-      -Dtests=false
+      -Dtests=false                 \
       ..
 ```
 
@@ -118,7 +118,7 @@ meson --prefix=/usr                 \
       -Duserdb=false                \
       -Dman=false                   \
       -Dmode=release                \
-      -Dtests=false
+      -Dtests=false                 \
       ..
 ```
 
