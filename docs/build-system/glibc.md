@@ -131,6 +131,7 @@ install -v -Dm644 ../nscd/nscd.service /lib/systemd/system/nscd.service
 ```bash
 mkdir -pv /usr/lib/locale
 localedef -i POSIX -f UTF-8 C.UTF-8 2> /dev/null || true
+localedef -i en_US -f UTF-8 en_US.UTF-8
 ```
 
 Чтобы установить локаль для языка, на котором вы планируете использовать систему, выберите из списка необходимую, и выполните команду:
@@ -145,7 +146,6 @@ localedef -i en_GB -f UTF-8 en_GB.UTF-8
 localedef -i en_HK -f ISO-8859-1 en_HK
 localedef -i en_PH -f ISO-8859-1 en_PH
 localedef -i en_US -f ISO-8859-1 en_US
-localedef -i en_US -f UTF-8 en_US.UTF-8
 localedef -i es_MX -f ISO-8859-1 es_MX
 localedef -i fa_IR -f UTF-8 fa_IR
 localedef -i fr_FR -f ISO-8859-1 fr_FR

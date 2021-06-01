@@ -69,7 +69,7 @@ CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr     \
             --disable-xml-docs                   \
             --with-console-auth-dir=/run/console \
             --with-system-pid-file=/run/dbus/pid \
-            --with-system-socket=/run/dbus/system_bus_socket
+            --with-system-socket=/run/dbus/system_bus_socket \
             --libdir=/usr/lib32
 ```
 
