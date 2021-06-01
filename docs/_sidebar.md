@@ -164,6 +164,7 @@
     - [Очистка](build-system/cleanup)
     
   - [**Настройка системы**](setup/setup.md)
+    - [Создание файла /etc/shells](setup/shells.md)
 
   - [**Настройка и установка ядра**](kernel/kernel-setup-intro.md)
     - [Настройка](kernel/kernel-setup.md)
