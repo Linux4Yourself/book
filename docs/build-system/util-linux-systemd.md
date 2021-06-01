@@ -31,7 +31,8 @@
             --disable-pylibmount \
             --disable-static     \
             --without-python     \
-            runstatedir=/run
+            runstatedir=/run     \
+            --enable-usrdir-path 
 ```
 
 ## Сборка
