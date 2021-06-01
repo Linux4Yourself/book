@@ -100,7 +100,7 @@ rm -rf ./*
 
 ```bash
 
-LANG=en_US.UTF-8  CC="gcc -m32" CXX="g++ -m32"     \
+LANG=en_US.UTF-8  CC="gcc -m32" CXX="g++ -m32"  PKG_CONFIG_PATH="/usr/lib32/pkgconfig"   \
 meson --prefix=/usr                 \
       --sysconfdir=/etc             \
       --localstatedir=/var          \
