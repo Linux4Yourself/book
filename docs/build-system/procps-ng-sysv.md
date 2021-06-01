@@ -25,7 +25,6 @@
             --disable-kill
 ```
 
-Для использования systemd добавьте параметр `--with-systemd`
 
 ## Сборка
 

@@ -33,7 +33,8 @@
             --without-python     \
             --without-systemd    \
             --without-systemdsystemunitdir \
-            runstatedir=/run
+            runstatedir=/run     \
+            --enable-usrdir-path 
 ```
 
 ## Сборка
@@ -82,7 +83,8 @@ CC="gcc -m32" \
             --enable-libmount-force-mountinfo \
             --without-systemd        \
             --without-systemdsystemunitdir \
-            runstatedir=/run --disable-fdisks  --disable-mount  --disable-fsck   
+            runstatedir=/run --disable-fdisks \
+             --disable-mount  --disable-fsck   
 ```
 
 ### Сборка 
