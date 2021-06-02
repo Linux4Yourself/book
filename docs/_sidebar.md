@@ -146,9 +146,9 @@
         - [Sysklogd](build-system/sysklogd.md)
         - [SysVinit](build-system/sysvinit.md)
         - [Bootscripts](build-system/bootscripts.md)
-      - **SystemD**
-        - [Создание пользователей и групп для SystemD](build-system/systemd-users.md)
-        - [SystemD](build-system/systemd.md)
+      - **Systemd**
+        - [Создание пользователей и групп для Systemd](build-system/systemd-users.md)
+        - [Systemd](build-system/systemd.md)
         - [D-Bus](build-system/dbus.md)
         - [Procps-ng](build-system/procps-ng.md)
         - [Util-linux](build-system/util-linux-systemd.md)
@@ -166,6 +166,8 @@
   - [**Настройка системы**](setup/setup.md)
     - [Создание файла /etc/fstab](setup/fstab.md)
     - [Создание файла /etc/shells](setup/shells.md)
+    - [Настройка аппаратных часов для Systemd](setup/hw-clock.md)
+    - [Настройка System V init](setup/sysvinit-conf.md)
 
   - [**Настройка и установка ядра**](kernel/kernel-setup-intro.md)
     - [Настройка](kernel/kernel-setup.md)
