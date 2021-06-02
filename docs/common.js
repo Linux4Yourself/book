@@ -24,7 +24,7 @@ Vue.component('package-info', {
 			<br />
 			Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
 			<br />
-			Важность: <b>{{ priorityName }}</b>
+			Важность: <a href="#/prepare/about-priority"><b>{{ priorityName }}</b></a>
 			<br />
 			Размер архива: <b>{{ package.size }} Mb</b>
 
