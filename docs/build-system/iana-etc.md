@@ -18,7 +18,7 @@
 
 ## Установка
 ```bash
-cp services protocols /etc
+cp -v services protocols /etc
 ```
 ### Установленные файлы
 
