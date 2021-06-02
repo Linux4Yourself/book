@@ -166,8 +166,10 @@
   - [**Настройка системы**](setup/setup.md)
     - [Создание файла /etc/fstab](setup/fstab.md)
     - [Создание файла /etc/shells](setup/shells.md)
-    - [Настройка аппаратных часов для Systemd](setup/hw-clock.md)
-    - [Настройка System V init](setup/sysvinit-conf.md)
+    - **SystemD**
+      - [Настройка аппаратных часов](setup/hw-clock.md)
+    - **SystemVInit**
+      - [Настройка System V init](setup/sysvinit-conf.md)
 
   - [**Настройка и установка ядра**](kernel/kernel-setup-intro.md)
     - [Настройка](kernel/kernel-setup.md)
