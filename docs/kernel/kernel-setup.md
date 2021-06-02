@@ -258,7 +258,7 @@ cp -iv .config /boot/config-{{ package.version }}
 
 <pre class="pre">
 install -d /usr/share/doc/linux-{{ package.version }}
-cp -r Documentation/* /usr/share/doc/linux-{{ package.version }}
+cp -rv Documentation/* /usr/share/doc/linux-{{ package.version }}
 </pre>
 
 ## Настройка каталога с исходным кодом
