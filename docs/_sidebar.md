@@ -168,6 +168,7 @@
     - [Создание файла /etc/shells](setup/shells.md)
     - **SystemD**
       - [Настройка аппаратных часов](setup/hw-clock.md)
+      - [Настройка сети](setup/network-systemd.md)
     - **SystemVInit**
       - [Настройка System V init](setup/sysvinit-conf.md)
 
