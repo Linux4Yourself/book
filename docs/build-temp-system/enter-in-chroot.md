@@ -32,3 +32,5 @@ fi
 Войдите в ``chroot``:
 
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/chroot.sh ':include')
+
+[filename](../shared/chroot.md ':include')
