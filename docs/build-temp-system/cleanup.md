@@ -12,25 +12,20 @@ find /usr/{lib{,32},libexec} -name \*.la -delete
 rm -rf /usr/share/{info,man,doc}/*
 ```
 
+## Выход из среды chroot
+
+[filename](../shared/chroot.md ':include')
+
 ## Сохранение
 
-При желании вы можете сохранить временную систему.
-Сначала выйдите из `chroot` и отключите виртуальные файловые системы: 
-
-```bash
-exit
-umount $LIN/dev{/pts,}
-umount $LIN/{sys,proc,run}
-```
-
-Далее сохраните временную систему в архив:
+При желании  сохраните временную систему в архив:
 
 ```bash
 cd $LIN &&
 tar -cJpf $HOME/lin-temp-tools.tar.xz .
 ```
 
-### Восстановление
+## Восстановление
 
 Выполняется из под хост-системы:
 
