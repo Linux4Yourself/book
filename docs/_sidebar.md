@@ -108,7 +108,6 @@
     - [Libelf](build-system/libelf)
     - [Libffi](build-system/libffi)
     - [Openssl](build-system/openssl)
-    - [Sqlite](build-system/sqlite)
     - [Python](build-system/python.md)
     - [Ninja](build-system/ninja)
     - [Meson](build-system/meson)
