@@ -19,7 +19,7 @@ Vue.component('package-info', {
 	<div class="pkg">
 		<p>{{ package.description }}</p>
 		<p class="pkg-desc">
-			Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
+			Ссылка для скачивания: <a :href="package.url"><b>{{ package.downloadUrl }}</b></a>
 			<br />
 			Текущая версия: <b>{{ package.version }}</b>
 			<br />
