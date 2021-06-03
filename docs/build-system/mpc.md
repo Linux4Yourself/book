@@ -1,48 +1,19 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('mpc');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
+<pkg :name="'mpc'" instsize showsbu2></pkg>
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr        \
-            --disable-static     
-```
+<package-script :package="'mpc'" :type="'configure'"></package-script>
 
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'mpc'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'mpc'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'mpc'" :type="'install'"></package-script>
  
 ## Установленные файлы
 
 Библиотеки: libmpc.so
 
+<script>
+	new Vue({ el: '#main' })
+</script> 
