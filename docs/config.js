@@ -15,6 +15,7 @@ window.$docsify = {
 	autoHeader: true,
 	executeScript: true,
 	mergeNavbar: true,
+	el: '#main',
 	notFoundPage: {
 		'/': '_404.md',
 	},
@@ -51,9 +52,9 @@ book = {
 
 // источник метаданных пакетов.
 const pkgsUrlBase = `https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/${book.revision}/src/packages/core`;
-const pkgsSrc =  `${pkgsUrlBase}/packages.json`;
+const pkgsSrc = `${pkgsUrlBase}/packages.json`;
 const wgetList = `${pkgsUrlBase}/wget-list`;
-const md5Sums =  `${pkgsUrlBase}/md5sums`;
+const md5Sums = `${pkgsUrlBase}/md5sums`;
 
 // Получить список всех пакетов из источника.
 getPackages = function () {
@@ -63,5 +64,12 @@ getPackages = function () {
 // Получить пакет по наименованию
 getPackage = function (name) {
 	return axios.get(pkgsSrc)
-		.then(response => response.data.filter(pkg => pkg.name === name)[0]);
+		.then(response => (response.data.filter(pkg => pkg.name === name))[0]);
+}
+
+getPackageScript = function (name, script) {
+	return axios.get(`${pkgsUrlBase}/${name}/${script}`, {
+			responseType: 'text'
+		})
+		.then(response => response.data);
 }
