@@ -51,7 +51,7 @@ UTC=1
 CLOCKPARAMS=
 
 # End /etc/sysconfig/clock
-```
 EOF
+```
 
 <!-- TODO Дополнить -->
