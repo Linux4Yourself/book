@@ -32,7 +32,8 @@
 ./configure --prefix=/usr           \
             --sysconfdir=/etc       \
             --enable-manpages       \
-            --disable-static
+            --disable-static        \
+            --sbindir=/usr/bin 
 ```
 
 ## Сборка
@@ -67,7 +68,8 @@ make install
 mkdir udev
 cd udev
 tar -xvf ../../{{patch.fileName}}
-make -f Makefile.lfs install
+make install
+cd ..
 </pre>
  
 ## Для multilib
@@ -84,7 +86,6 @@ make distclean
 CC="gcc -m32" \
 ./configure --host=i686-pc-linux-gnu       \
             --prefix=/usr                  \
-            --bindir=/usr/sbin             \
             --libdir=/usr/lib32            \
             --sysconfdir=/etc              \
             --disable-manpages             \
@@ -102,6 +103,7 @@ make
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
+rm -rf DESTDIR/usr/lib32/udev
 cp -Rv DESTDIR/usr/lib32/* /usr/lib32
 rm -rf DESTDIR
 ```

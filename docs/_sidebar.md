@@ -141,7 +141,7 @@
     - [**Выбор системы инициализации**](build-system/init-system.md)
       - **SysVinit**
         - [Eudev](build-system/eudev.md)
-        - [Procps-ng](build-system/procps-ng.md)
+        - [Procps-ng](build-system/procps-ng-sysv.md)
         - [Util-linux](build-system/util-linux-sysvinit.md)
         - [Sysklogd](build-system/sysklogd.md)
         - [SysVinit](build-system/sysvinit.md)
@@ -150,7 +150,7 @@
         - [Создание пользователей и групп для Systemd](build-system/systemd-users.md)
         - [Systemd](build-system/systemd.md)
         - [D-Bus](build-system/dbus.md)
-        - [Procps-ng](build-system/procps-ng.md)
+        - [Procps-ng](build-system/procps-ng-systemd.md)
         - [Util-linux](build-system/util-linux-systemd.md)
         
     - [E2fsprogs](build-system/e2fsprogs.md)
@@ -166,7 +166,7 @@
   - [**Настройка системы**](setup/setup.md)
     - [Создание файла /etc/fstab](setup/fstab.md)
     - [Создание файла /etc/shells](setup/shells.md)
-    - **SystemD**
+    - **Systemd**
       - [Настройка аппаратных часов](setup/hw-clock.md)
       - [Настройка сети](setup/network-systemd.md)
     - **SystemVInit**
