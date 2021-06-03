@@ -35,8 +35,7 @@
 <package-script :package="'mpc'" :type="'install'"></package-script>
  
 ## Установленные файлы
-
-Библиотеки: libmpc.so
+<package-script :package="'mpc'" :type="'files'"></package-script>
 
 <script>
 	new Vue({ el: '#main' })
