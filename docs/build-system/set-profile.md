@@ -34,6 +34,8 @@
 
 ## Bash-completion
 
+bash-completion расширяет существующие возможности дополнения в bash, позволяя вводить сложные командные строки нажатием буквально нескольких клавиш. Целью является создание программируемых процедур дополнения для большинства распространённых команд Linux/UNIX, которые позволили бы системным администраторам и программистам сократить количество нажатий клавиш при выполнении ежедневных задач.
+
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/completion.sh ':include')
 
 ## Dircolors
@@ -44,9 +46,13 @@
 
 ## Readline
 
+Этот файл нужен для настройки ``inputrc``. Если пользователь не имеет индивидуальных установок, он использует глобальный файл.
+
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/inputrc.sh ':include')
 
 ## Umask
+
+Установка значения ``umask`` важна для безопасности. Здесь права доступа для записи группы по умолчанию выключены для пользователей системы и когда имена пользователя и группы не совпадают.
 
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/umask.sh ':include')
 
