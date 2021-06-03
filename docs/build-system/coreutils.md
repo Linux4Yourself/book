@@ -1,4 +1,4 @@
-<package-info :package="package" showsbu2 ></package-info>
+<package-info :package="package" instsize showsbu2 ></package-info>
 
 <script>
 		new Vue({

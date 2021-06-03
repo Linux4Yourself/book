@@ -3,6 +3,7 @@ Vue.component('package-info', {
 		package: Object,
 		showsbu: Boolean,
 		showsbu2: Boolean,
+		instsize: Boolean,
 	},
 	computed: {
 		priorityName: function () {
@@ -36,6 +37,10 @@ Vue.component('package-info', {
 			<span v-if="showsbu2">
 				<br />
 				<span v-if="package.sbu2">Приблизительное время сборки: <b>{{ package.sbu2 }} SBU</b></span>
+			</span>
+			<span v-if="instsize">
+				<br />
+				<span v-if="package.installedSize">Приблизительный размер после установки: <b>{{ package.installedSize }} МБ</b></span>
 			</span>
 		</p>
 		<slot></slot>
