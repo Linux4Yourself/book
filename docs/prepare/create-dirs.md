@@ -20,10 +20,15 @@ mkdir -pv $LIN/tools
 Подробнее об иерархии каталогов можно узнать в спецификации [FHS](https://refspecs.linuxfoundation.org/fhs.shtml)
 
 ## Для multilib
+
 Создайте директорию для 32-битных библиотек:
+
 ```bash
 mkdir -pv $LIN/usr/lib32
 ```
+
 А также символическую ссылку на неё
+
 ```bash
 ln -sv usr/lib32 $LIN/lib32
+```
