@@ -9,14 +9,14 @@
 
 - **Создание Linux системы**
   - **Подготовительные работы**
-    - [Целевые архитектуры](prepare/arch)
-    - [Требования](prepare/requrements)
-    - [О времени сборки пакетов](prepare/about-SBU)
-    - [Создание разделов](prepare/create-partition)
-    - [Установка переменной $LIN](prepare/set-LIN)
-    - [Монтирование разделов](prepare/mount-partition)
-    - [Создание основных каталогов и символических ссылок](prepare/create-dirs)
-    - [Требуемые пакеты и патчи](prepare/download)
+    - [Целевые архитектуры](prepare/arch.md)
+    - [Требования](prepare/requrements.md)
+    - [О времени сборки пакетов](prepare/about-sbu.md)
+    - [Создание разделов](prepare/create-partition.md)
+    - [Установка переменной $LIN](prepare/set-lin.md)
+    - [Монтирование разделов](prepare/mount-partition.md)
+    - [Создание основных каталогов и символических ссылок](prepare/create-dirs.md)
+    - [Требуемые пакеты и патчи](prepare/download.md)
     - [Создание пользователя](prepare/add-user)
     - [Настройка окружения](prepare/set-env)
     - [О тестах](prepare/about-tests)
