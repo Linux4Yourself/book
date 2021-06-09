@@ -65,7 +65,7 @@ make defconfig
 настройки, в ином случае, система может работать неправильно, или вовсе не
 загрузится:
 
-```bash
+```
 General setup -->
    [ ] Auditing Support [CONFIG_AUDIT]
    [*] Control Group support [CONFIG_CGROUPS]
@@ -102,7 +102,7 @@ File systems  --->
 ### EFI
 Если вы будете использовать EFI, необходимо обеспечить его поддержку:
 
-```bash
+```
 Processor type and features --->
   [*] EFI runtime service support                              [CONFIG_EFI]
   [*]   EFI stub support                                       [CONFIG_EFI_STUB]
@@ -128,7 +128,7 @@ File systems --->
 ```
 ### FUSE
 
-```bash
+```
 File systems  --->
   <*/M> FUSE (Filesystem in Userspace) support [CONFIG_FUSE_FS]
 ```
@@ -143,7 +143,7 @@ File systems --->
 ```
 ### XFS
 
-```bash
+```
 File systems --->
   <*/M> XFS filesystem support [CONFIG_XFS_FS]
 
@@ -160,7 +160,7 @@ LVM — это метод распределения пространства ж
 Физические тома собираются в группы логических томов, за исключением раздела /boot/. Раздел /boot/ не может находиться в группе логических томов, так как в этом случае загрузчику не удастся его прочитать. Если корневой раздел (/) находится на логическом томе, создайте отдельный раздел /boot/ вне группы томов.
 
 
-```bash
+```
 Device Drivers --->
   [*] Multiple devices driver support (RAID and LVM) ---> [CONFIG_MD]
     <*/M>   Device mapper support                         [CONFIG_BLK_DEV_DM]
@@ -175,7 +175,7 @@ Kernel hacking --->
 ```
 ### Cryptographic API
 
-```bash
+```
 Device Drivers  --->          
   [*] Multiple devices driver support (RAID and LVM) ---> [CONFIG_MD]
        <*/M> Device mapper support                        [CONFIG_BLK_DEV_DM]
@@ -190,7 +190,7 @@ Cryptographic API  --->
   For tests:
   <*/M> Twofish cipher algorithm                          [CONFIG_CRYPTO_TWOFISH]
 
-````
+```
 
 ### Драйверы устройств
 
@@ -251,6 +251,14 @@ cp -iv System.map /boot/System.map-{{ package.version }}
 <pre class="pre">
 cp -iv .config /boot/config-{{ package.version }}
 </pre>
+
+Для облегчения обновления ядра создайте символическую ссылку:
+
+<pre class="pre">
+ln -svf vmlinuz-{{ package.version }}-my-kernel /boot/vmlinuz
+</pre>
+
+При обновлении ядра будет достаточно установить новую версию и обновить символическую ссылку.
 
 ## Установка документации
 
