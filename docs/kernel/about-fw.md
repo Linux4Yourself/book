@@ -10,9 +10,9 @@
 
 ## Установка прошивок
 
-Прошивки можно установить двумя способами:
+Их можно установить двумя способами:
 
-Первый - скомпилировать требующий прошивку драйвер как модуль и поместить прошивку в `/lib/firmware`.
+Первый - скомпилировать требующий прошивку драйвер как модуль и поместить её в `/lib/firmware`.
 
 Второй - задать опцию `CONFIG_EXTRA_FIRMWARE`. В ней должны быть перечислены через пробел все прошивки, которые необходимо включить в ядро.
 Также, можно изменить путь поиска включенных в опцию `CONFIG_EXTRA_FIRMWARE` прошивок, задав опцию `CONFIG_EXTRA_FIRMWARE_DIR` (по умолчанию ``/lib/firmware``)
@@ -24,6 +24,6 @@ CONFIG_EXTRA_FIRMWARE="amdgpu/picasso_asd.bin amdgpu/picasso_gpu_info.bin amdgpu
 CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
 ```
 
-В этом случае подключаются прошивки для видеокарт AMDGPU семейства picasso (Например Vega 8). Прошивки в таком случае находятся в `/lib/firmware/amdgpu/`
+В этом случае подключаются firmware для видеокарт AMDGPU семейства picasso (Например Vega 8). Они в таком случае находятся в `/lib/firmware/amdgpu/`
 
 Найти и загрузить большую часть прошивок можно здесь `https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/`
