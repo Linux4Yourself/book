@@ -53,26 +53,22 @@ Date.prototype.toW3CString = function () {
 		offsetSign + offsetHours + ':' + offsetMinutes;
 }
 
-const dataItems = [];
+let dataItems = [];
 
-dataItems.push(`
-<?xml version="1.0" encoding="UTF-8"?>
-	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-`);
+dataItems.push(`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`);
 
 require('fs').readFileSync('docs/_sidebar.md', 'utf-8').split(/\r?\n/).forEach(function (line) {
 	const data = line.split(']')[1];
 	if (data) {
 		const result = data.replace('(', '').replace(')', '');
 		const url = `${urlBase}${result}`;
-		const urlItem = `
-			<url>
-				<loc>${url}</loc>
-				<lastmod>${new Date().toW3CString()}</lastmod>
-				<changefreq>monthly</changefreq>
-				<priority>0.25</priority>
-			</url>
-		`;
+		const urlItem = `<url>
+	<loc>${url}</loc>
+	<lastmod>${new Date().toW3CString()}</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.25</priority>
+</url>`;
 		console.log(urlItem);
 		dataItems.push(urlItem);
 	}
