@@ -185,7 +185,7 @@
   - [Решение ошибок сборки](additional/error-fix)
   - [Типы и разделов и каталогов](additional/partitions_calalogs)
   - [Выбор размера файла подкачки](additional/swap)
-  - [Кросс-компилятор](additional/cross-compiler)
   - [Настройка zram](additional/zram)
+  - [Кросс-компилятор](additional/cross-compiler)
   - [Виды популярных архитектур процессоров](additional/cpu-arch)
   - [О шебангах в скриптах Linux](additional/sha-bang)
