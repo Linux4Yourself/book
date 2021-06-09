@@ -131,6 +131,9 @@
     - [Freetype](build-system/freetype.md)
     - [Dosfstools](build-system/dosfstools.md)
     - [Wget](build-system/wget.md)
+    - [libtasn1](build-system/libtasn1.md)
+    - [p11-kit](build-system/p11-kit.md)
+    - [Make-ca](build-system/make-ca.md)
   
     - [**Выбор текстового редактора**](build-system/text-editor.md)
       - [Vim](build-system/vim.md)
