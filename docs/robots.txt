@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+sitemap https://lx4u.ru/dev/#/sitemap.xml
