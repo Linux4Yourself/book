@@ -48,7 +48,10 @@ book = {
 	// ревизия книги. (develop | release | tag (releases/v.0.0.1))
 	// выставить в релизной ветке.
 	revision: 'develop',
+	revisionShort: 'dev',
 }
+
+const exrtraUrl =  `${book.revisionShort}-extra/#/`;
 
 // источник метаданных пакетов.
 const pkgsUrlBase = `https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/${book.revision}/src/packages/core`;
