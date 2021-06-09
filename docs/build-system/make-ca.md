@@ -6,7 +6,7 @@
 
 <package-script :package="'make-ca'" :type="'install'"></package-script>
 
-загрузите источник сертификата и подготовьте к использованию в системе с помощью следующей команды:
+Загрузите источник сертификата и подготовьте к использованию в системе с помощью следующей команды:
 
 <package-script :package="'make-ca'" :type="'postinstall'"></package-script>
 
