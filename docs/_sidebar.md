@@ -176,6 +176,8 @@
 
   - [**Настройка и установка ядра**](kernel/kernel-setup-intro)
     - [Настройка](kernel/kernel-setup)
+    
+- [**Заключение**](end/end.md)
       
 - [**Вспомогательные материалы**](additional/additional)
   - **Строение GNU/Linux**
