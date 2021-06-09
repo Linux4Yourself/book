@@ -20,7 +20,7 @@ echo "1.0 devel" > /etc/lx4y-release
 cat > /etc/lsb-release << "EOF"
 DISTRIB_ID="Linux for Yourself"
 DISTRIB_RELEASE="1.0_devel"
-DISTRIB_CODENAME="<Ваше кодовое имя>"
+DISTRIB_CODENAME="<кодовое имя дистрибутива>"
 DISTRIB_DESCRIPTION="Linux for Yourself 1.0"
 EOF
 ```
@@ -37,7 +37,7 @@ NAME="Linux Fof Yourself"
 VERSION="1.0_devel"
 ID=lx4y
 PRETTY_NAME="Linux for Yourself 1.0 develop"
-VERSION_CODENAME="<кодовое имя>"
+VERSION_CODENAME="<кодовое имя дистрибутива>"
 EOF
 ```
 
