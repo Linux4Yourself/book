@@ -170,7 +170,10 @@
     - [Настройка System V init](setup/sysvinit-conf)
 - [**Настройка и установка ядра**](kernel/kernel-setup-intro)
   - [Настройка](kernel/kernel-setup)
-  - 
+
+- [**Делаем систему загрузочной**](boot/boot)
+  - [**Создание файла /etc/fstab**](boot/fstab)
+
 - [**Заключительная часть**](final/final)
 
 - [**Вспомогательные материалы**](additional/additional)
