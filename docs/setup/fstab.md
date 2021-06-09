@@ -29,7 +29,7 @@ echo "/dev/sdN     /boot/efi      vfat    umask=0077           0     0" >> /etc/
 
 Заменив `sdN` на нужное значение.
 
-Для использования `swap` добавьте:
+Для использования `swap` выполните:
 
 ```bash
 echo "/dev/sdY     swap         swap     pri=1               0     0" >> /etc/fstab
