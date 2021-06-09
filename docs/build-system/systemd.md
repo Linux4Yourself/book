@@ -34,8 +34,8 @@ LANG=en_US.UTF-8                    \
 meson --prefix=/usr                 \
       --sysconfdir=/etc             \
       --localstatedir=/var          \
+      --buildtype=release           \
       -Dblkid=true                  \
-      -Dbuildtype=release           \
       -Ddefault-dnssec=no           \
       -Dfirstboot=false             \
       -Dinstall-tests=false         \
@@ -68,7 +68,6 @@ LANG=en_US.UTF-8 ninja install
 ```bash
 rm -rf /usr/lib/pam.d
 ```
-
 
 Создайте файл `/etc/machine-id` необходимый для `systemd-journald`:
 
