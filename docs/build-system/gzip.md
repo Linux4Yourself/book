@@ -1,41 +1,16 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gzip');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
+<pkg :name="'gzip'" instsize showsbu2></pkg>
 ## Настройка
-
-```bash
-./configure --prefix=/usr
-```
+<package-script :package="'gzip'" :type="'configure'"></package-script>
 
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'gzip'" :type="'build'"></package-script>
 
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'gzip'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'gzip'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -1,34 +1,8 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('man-db');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'man-db'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr                        \
-            --sysconfdir=/etc                    \
-            --disable-setuid                     \
-            --enable-cache-owner=bin             \
-            --with-browser=/usr/bin/lynx         \
-            --with-vgrind=/usr/bin/vgrind        \
-            --with-grap=/usr/bin/grap
-```
-
-## Значения параметров configure
+<package-script :package="'man-db'" :type="'configure'"></package-script>
+## Значения параметров
 
 ``--disable-setuid``
 запрещает задавать программе man setuid пользователю man.
@@ -40,21 +14,13 @@
 Эти три аргумента используются для настройки программ по умолчанию. lynx текстовый веб-обозреватель, vgrind преобразовывает исходные кода программ в входные данные Groff и grap полезен для набора графов в документах Groff. Программы vgrind и grap обычно нужны для просмотра справочных страниц.
 
 ## Сборка
+<package-script :package="'man-db'" :type="'build'"></package-script>
 
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'man-db'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'man-db'" :type="'install'"></package-script>
 ## Страницы руководств на других языках
 
 В нижеприведенной таблице указано соответствие кодировки, которая допускается при использовании в Man-DB страницах, расположенных в каталоге ``/usr/share/man/``. 
@@ -105,3 +71,8 @@ make install
 | Turkish (tr) |	ISO-8859-9	|
 | Ukrainian (uk) |	KOI8-U	|
 | Vietnamese (vi) |	TCVN5712-1	|
+
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

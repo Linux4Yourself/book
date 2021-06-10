@@ -55,7 +55,7 @@ echo " . /etc/bash_completion" >> ~/.bashrc
 ```bash
 lscpu | grep "CPU(s):"
 ```
-При желании, добавьте соответсвующую переменную окружения:
+При желании, добавьте соответствующую переменную окружения:
 
 ```bash
 echo "export MAKEFLAGS=\"-jN\" " >> ~/.bashrc

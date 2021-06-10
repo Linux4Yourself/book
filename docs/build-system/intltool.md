@@ -1,53 +1,27 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('intltool');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'intltool'" instsize showsbu2></pkg>
 
 ## Настройка
 
 Исправьте предупреждение, которое может появиться при использовании perl версии 5.22 и выше:
 
-```bash
-sed -i 's:\\\${:\\\$\\{:' intltool-update.in
-```
-
+<package-script :package="'intltool'" :type="'prepare'"></package-script>
+<package-script :package="'intltool'" :type="'configure'"></package-script>
 ```bash
 ./configure --prefix=/usr
 ```
 
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'intltool'" :type="'build'"></package-script>
 
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'intltool'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'intltool'" :type="'install'"></package-script>
 
 ## Установка документации
+<package-script :package="'intltool'" :type="'install-doc'"></package-script>
 
-```bash
-install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool/I18N-HOWTO
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

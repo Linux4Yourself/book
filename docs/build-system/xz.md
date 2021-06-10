@@ -1,78 +1,35 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('xz');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'xz'" instsize showsbu2></pkg>
 
 ## Настройка
 
-
-```bash
-./configure --prefix=/usr    \
-            --disable-static 
-```
-
+<package-script :package="'xz'" :type="'configure'"></package-script>
 ## Сборка
 
-
-```bash
-make
-```
+<package-script :package="'xz'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'xz'" :type="'test'"></package-script>
 
 ## Установка
 
-```bash
-make install
-```
+<package-script :package="'xz'" :type="'install'"></package-script>
  
 ## Для multilib
 
 ### Очистка
 
-```bash
-make distclean
-```
+<package-script :package="'xz'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
 
-```bash
-CC="gcc -m32" ./configure \
-    --prefix=/usr         \
-    --disable-static      \
-    --libdir=/usr/lib32   \
-    --host=i686-pc-linux-gnu
-```
+<package-script :package="'xz'" :type="'multi_configure'"></package-script>
 
-### Сборка 
+### Сборка
 
-```bash
-make
-```
+<package-script :package="'xz'" :type="'multi_build'"></package-script>
 
 ### Установка
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<package-script :package="'xz'" :type="'multi_install'"></package-script>
 
 ## Установленные файлы
 
@@ -129,3 +86,7 @@ rm -rf DESTDIR
 `xzmore` - Работает больше с файлами, сжатыми XZ
 
 `liblzma` - Библиотека, реализующая сжатие данных без потерь с сортировкой по блокам с использованием цепного алгоритма Лемпеля-Зива-Маркова. 
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -1,55 +1,21 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('binutils');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'binutils'" instsize showsbu2></pkg>
 
 ## Подготовка
 
 Удалите проблемный тест:
 
-```bash
-sed -i '/@\tincremental_copy/d' gold/testsuite/Makefile.in
-```
-
-В документации пакета {{package.name}} требуется использовать отдельную директорию для сборки:
-
-```bash
-mkdir -v build
-cd       build
-```
+<package-script :package="'binutils'" :type="'prepare'"></package-script>
 
 ## Настройка
 
+<package-script :package="'binutils'" :type="'configure'"></package-script>
 
-```bash
-../configure --prefix=/usr       \
-             --enable-gold       \
-             --enable-ld=default \
-             --enable-plugins    \
-             --enable-shared     \
-             --disable-werror    \
-             --enable-64-bit-bfd \
-             --with-system-zlib  
-```
 
 ### Для multilib
 
-Добавьте параметр `--enable-multilib`
+<package-script :package="'binutils'" :type="'multi_configure'"></package-script>
 
-### Значения параметров configure
+### Значения параметров
 
 `--enable-gold` - Установить компоновщик `gold`.
 
@@ -62,28 +28,17 @@ cd       build
 `--with-system-zlib` - Использовать системную версию `zlib`, а не включенную в пакет.
 
 ## Сборка
-
-
-```bash
-make tooldir=/usr
-```
+<package-script :package="'binutils'" :type="'build'"></package-script>
 ## Тестирование
 
-```bash
-make -k check
-```
-
+<package-script :package="'binutils'" :type="'test'"></package-script>
 ## Установка
 
-```bash
-make tooldir=/usr install -j1
-```
+<package-script :package="'binutils'" :type="'install'"></package-script>
  
 Удалите бесполезные статические библиотеки:
 
-```bash
-rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.a
-```
+<package-script :package="'binutils'" :type="'postinstall'"></package-script>
 
 ## Установленные файлы
 
@@ -92,3 +47,7 @@ rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.a
 Библиотеки: libbfd.so, libctf.so, libctf-nobfd.so и libopcodes.so
 
 Директории: /usr/lib/ldscripts
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

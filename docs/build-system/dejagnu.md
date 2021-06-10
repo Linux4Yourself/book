@@ -1,38 +1,15 @@
-<package-info :package="package" instsize showsbu2></package-info>
+<pkg :name="'dejagnu'" instsize showsbu2></pkg>
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('dejagnu');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+[filename](../shared/test-pkgs.md ':include')
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr
-makeinfo --html --no-split -o doc/dejagnu.html doc/dejagnu.texi
-makeinfo --plaintext       -o doc/dejagnu.txt  doc/dejagnu.texi
-```
+<package-script :package="'dejagnu'" :type="'configure'"></package-script>
 
 ## Сборка и установка
-
-```bash
-make install
-install -v -dm755  /usr/share/doc/dejagnu
-install -v -m644   doc/dejagnu.{html,txt} /usr/share/doc/dejagnu
-```
+<package-script :package="'dejagnu'" :type="'install'"></package-script>
 ## Тестирование
+<package-script :package="'dejagnu'" :type="'test'"></package-script>
 
-```bash
-make check
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

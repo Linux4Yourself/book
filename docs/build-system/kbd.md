@@ -1,25 +1,5 @@
-<package-info :package="package" instsize showsbu2 ></package-info>
+<pkg :name="'kbd'" instsize showsbu2></pkg>
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPackage('kbd');
-				this.getBzipPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getBzipPatch: function() {
-					getPackage('kbd-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>
 
 ## Дополнительные необходимые файлы
 
@@ -28,42 +8,40 @@
 ## Подготовка
 
 Примените патч для исправления работы клавиш backspace и delete:
-
-<pre class="pre">
-patch -Np1 -i ../{{patch.fileName}}
-</pre>
+<package-script :package="'kbd'" :type="'patch'"></package-script>
 
 Удалите не нужную программу `resizecons` требующею svgalib:
+<package-script :package="'kbd'" :type="'prepare'"></package-script>
 
-```bash
-sed -i '/RESIZECONS_PROGS=/s/yes/no/' configure
-sed -i 's/resizecons.8 //' docs/man/man8/Makefile.in
-```
 
 ## Настройка
+<package-script :package="'kbd'" :type="'configure'"></package-script>
 
-```bash
-./configure --prefix=/usr --disable-vlock
-```
-
-### Значения параметров configure
+### Значения параметров
 
 `--disable-vlock` - Данная библиотека требует Linux-PAM.
 
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'kbd'" :type="'build'"></package-script>
 
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'kbd'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'kbd'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+		new Vue({
+		el: '#main',
+		data: { package: {}, patch: {} },
+		mounted: function () {
+				this.getPatch();
+		},
+		methods: {
+			getPatch: function() {
+					getPackage('kbd-patch')
+					.then(response => this.patch = response);
+			},
+		}
+  })
+</script>

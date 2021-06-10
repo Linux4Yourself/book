@@ -1,87 +1,25 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('openssl');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'openssl'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./config --prefix=/usr         \
-         --openssldir=/etc/ssl \
-         --libdir=lib          \
-         shared                \
-         zlib-dynamic
-```
-
+<package-script :package="'openssl'" :type="'configure'"></package-script>
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'openssl'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make test
-```
-
+<package-script :package="'openssl'" :type="'test'"></package-script>
 ## Установка
-
-```bash
-sed -i '/INSTALL_LIBS/s/libcrypto.a libssl.a//' Makefile
-make MANSUFFIX=ssl install
-```
+<package-script :package="'openssl'" :type="'install'"></package-script>
  
 ## Для multilib
-
 ### Очистка
-
-```bash
-make distclean
-```
-
-### Настройка
-
-```bash
-MACHINE="i686"             \
-CC="gcc -m32 -march=i686"  \
-CXX="g++ -m32 -march=i686" \
-    ./config               \
-    --prefix=/usr          \
-    --libdir=/usr/lib32    \
-    --openssldir=/etc/ssl  \
-    --libdir=lib32         \
-    shared                 \
-    zlib-dynamic
-```
+<package-script :package="'openssl'" :type="'multi_prepare'"></package-script>
+### Подготовка
+<package-script :package="'openssl'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
-
-```bash
-make
-```
+<package-script :package="'openssl'" :type="'multi_build'"></package-script>
 
 ### Установка
-
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<package-script :package="'openssl'" :type="'multi_install'"></package-script>
 
 ## Установленные файлы
 
@@ -91,3 +29,6 @@ rm -rf DESTDIR
 
 Директории:  /etc/ssl, /usr/include/openssl и /usr/lib/engines
 
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -1,62 +1,25 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('kmod');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'kmod'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr          \
-            --sysconfdir=/etc      \
-            --with-xz              \
-            --with-zstd            \
-            --with-zlib
-```
-
-### Значения параметров configure
+<package-script :package="'kmod'" :type="'configure'"></package-script>
+### Значения параметров
 ``--with-xz, --with-zlib, --with-zstd``
 
 Параметры позволяют `Kmod` обрабатывать сжатые модули ядра соответствующим алгоритмом сжатия.
 
-
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'kmod'" :type="'build'"></package-script>
 
 ## Тестирование
 
 Пакет не имеет тестов которые можно запустить непосредственно сейчас. Необходимо дополнительно установить `git`, при этом, некоторые тесты также не будут выполнены вне репозитория.
 
-
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'kmod'" :type="'install'"></package-script>
 
 Необходимо создать символические ссылки (симлинки) для совместимости с `Module-Init-Tools` (Предыдущая реализация программы обработки модулей ядра):
 
-```bash
-
-for target in depmod insmod lsmod modinfo modprobe rmmod; do
-  ln -sfv kmod /usr/bin/$target
-done
-```
+<package-script :package="'kmod'" :type="'postinstall'"></package-script>
 
 ## Для multilib
 
@@ -64,35 +27,17 @@ done
 
 Очистите предыдущую сборку, но сохраните страницы руководства, так как они не могут быть воссозданы, поскольку пакет `xsltproc` не установлен:
 
-```bash
-sed -e "s/^CLEANFILES =.*/CLEANFILES =/" -i man/Makefile
-make clean
-```
+<pkg :name="'kmod'" instsize showsbu2></pkg>
 
 ### Подготовка
-
-```bash
-CC="gcc -m32" ./configure \
-    --prefix=/usr                 \
-    --bindir=/bin                 \
-    --libdir=/usr/lib32          \
-    --sysconfdir=/etc             \
-    --with-xz                     \
-    --with-zlib                   \
-    --host=i686-pc-linux-gnu      \
-    --with-rootlibdir=/usr/lib32
-```
+<package-script :package="'kmod'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
-
-```bash
-make
-```
+<package-script :package="'kmod'" :type="'multi_build'"></package-script>
 
 ### Установка
+<package-script :package="'kmod'" :type="'multi_install'"></package-script>
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

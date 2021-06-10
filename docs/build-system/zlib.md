@@ -1,29 +1,10 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('zlib-ng');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'zlib-ng'" instsize showsbu2></pkg>
 
 ## Настройка
 
+<package-script :package="'zlib-ng'" :type="'configure'"></package-script>
 
-```bash
-./configure --prefix=/usr --zlib-compat --native
-```
-
-### Значения параметров configure
+### Значения параметров
 
 `--zlib-compat` - Включает полную совместимость с API `zlib`.
 
@@ -31,63 +12,40 @@
 
 ## Сборка
 
-
-```bash
-make
-```
+<package-script :package="'zlib-ng'" :type="'build'"></package-script>
 ## Тестирование
 
-```bash
-make check
-```
+<package-script :package="'zlib-ng'" :type="'test'"></package-script>
 
 ## Установка
 
-```bash
-make install
-```
+<package-script :package="'zlib-ng'" :type="'install'"></package-script>
 
- Также, удалите ненужную статическую библиотеку:
+Удалите ненужную статическую библиотеку:
  
-```bash
- rm -fv /usr/lib/libz.a
-```
+<package-script :package="'zlib-ng'" :type="'postinstall'"></package-script>
  
 ## Для multilib
 
 ### Очистка
 
-```bash
-make distclean
-```
+<package-script :package="'zlib-ng'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
 
-```bash
-CC="gcc -m32" \
-./configure --prefix=/usr \
-    --libdir=/usr/lib32  --zlib-compat --native
-```
+<package-script :package="'zlib-ng'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
 
-```bash
-make
-```
+<package-script :package="'zlib-ng'" :type="'multi_build'"></package-script>
 
 ### Установка
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<package-script :package="'zlib-ng'" :type="'multi_install'"></package-script>
 
-Также, удалите ненужную статическую библиотеку:
+Удалите ненужную статическую библиотеку:
 
-```bash
-rm -fv /usr/lib32/libz.a
-```
+<package-script :package="'zlib-ng'" :type="'multi_postinstall'"></package-script>
 
 ## Установленные файлы
 
@@ -96,3 +54,7 @@ rm -fv /usr/lib32/libz.a
 ### Краткое описание
 
 `libz.so` - Содержит функции сжатия, используемые многими программами
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

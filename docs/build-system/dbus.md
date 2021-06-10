@@ -1,88 +1,32 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('dbus');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'dbus'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr                        \
-            --sysconfdir=/etc                    \
-            --localstatedir=/var                 \
-            --disable-static                     \
-            --disable-doxygen-docs               \
-            --disable-xml-docs                   \
-            --with-console-auth-dir=/run/console \
-            --with-system-pid-file=/run/dbus/pid \
-            --with-system-socket=/run/dbus/system_bus_socket
-```
+<package-script :package="'dbus'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'dbus'" :type="'build'"></package-script>
 
-
-```bash
-make
-```
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'dbus'" :type="'install'"></package-script>
 
 Создайте символическую ссылку, чтобы `SystemD` и `D-Bus` использовали один и тот же файл `machine-id`
-
-```bash
-ln -sfv /etc/machine-id /var/lib/dbus
-```
+<package-script :package="'dbus'" :type="'postinstall'"></package-script>
 
 ## Для multilib
 
 ### Очистка
-
-```bash
-make distclean
-```
+<package-script :package="'dbus'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
-
-```bash
-CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr     \
-            --sysconfdir=/etc                    \
-            --localstatedir=/var                 \
-            --disable-static                     \
-            --disable-doxygen-docs               \
-            --disable-xml-docs                   \
-            --with-console-auth-dir=/run/console \
-            --with-system-pid-file=/run/dbus/pid \
-            --with-system-socket=/run/dbus/system_bus_socket \
-            --libdir=/usr/lib32
-```
+<package-script :package="'dbus'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
-
-```bash
-make
-```
+<package-script :package="'dbus'" :type="'multi_build'"></package-script>
 
 ### Установка
+<package-script :package="'dbus'" :type="'multi_install'"></package-script>
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -50,7 +50,7 @@ cd ..
             --enable-widec
 ```
 
-### Значения параметров configure
+### Значения параметров
 
 `--without-manpages` `--without-tests` `--without-cxx` - Man-страницы, тесты и библиотека c++ не нужны для временной системы.
 

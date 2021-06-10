@@ -1,25 +1,5 @@
-<package-info :package="package" instsize showsbu2 ></package-info>
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPackage('sysvinit');
-				this.getBzipPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getBzipPatch: function() {
-					getPackage('sysvinit-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'sysvinit'" instsize showsbu2></pkg>
 
 ## Дополнительные необходимые файлы
 
@@ -29,20 +9,28 @@
 
 Примените необходимый патч:
 
-<pre class="pre">
-patch -Np1 -i ../{{patch.fileName}}
-</pre>
+<package-script :package="'sysvinit'" :type="'patch'"></package-script>
 
 
 ## Сборка
 
-```bash
-make
-```
+<package-script :package="'sysvinit'" :type="'build'"></package-script>
 
 ## Установка
+<package-script :package="'sysvinit'" :type="'install'"></package-script>
 
-```bash
-make install
-```
-
+<script>
+		new Vue({
+		el: '#main',
+		data: { package: {}, patch: {} },
+		mounted: function () {
+				this.getPatch();
+		},
+		methods: {
+			getPatch: function() {
+					getPackage('sysvinit-patch')
+					.then(response => this.patch = response);
+			},
+		}
+  })
+</script>

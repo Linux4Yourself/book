@@ -1,75 +1,32 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('freetype');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'freetype'" instsize showsbu2></pkg>
 
 ## Настройка
 
-?> В extra книге данный пакет следует переустановить после установки harfbuzz из-за круговой зависимости.
+?> В extra книге данный пакет следует переустановить после установки ``harfbuzz`` из-за циклической зависимости.
 
-```bash
-sed -ri "s:.*(AUX_MODULES.*valid):\1:" modules.cfg &&
-
-sed -r "s:.*(#.*SUBPIXEL_RENDERING) .*:\1:" \
-    -i include/freetype/config/ftoption.h  &&
-
-./configure --prefix=/usr --enable-freetype-config --disable-static --without-harfbuzz
-```
+<package-script :package="'freetype'" :type="'configure'"></package-script>
 
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'freetype'" :type="'build'"></package-script>
 
 ## Установка
+<package-script :package="'freetype'" :type="'install'"></package-script>
 
-```bash
-make install
-```
- 
 ## Для multilib
 
 ### Очистка
 
-```bash
-make distclean
-```
+<package-script :package="'freetype'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
 
-```bash
-CC="gcc -m32" CXX="g++ -m32" ./configure \
-    --prefix=/usr         \
-    --disable-static      \
-    --libdir=/usr/lib32   \
-    --host=i686-pc-linux-gnu --without-harfbuzz
-```
+<package-script :package="'freetype'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
-
-```bash
-make
-```
-
+<package-script :package="'freetype'" :type="'multi_build'"></package-script>
 ### Установка
+<package-script :package="'freetype'" :type="'multi_install'"></package-script>
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

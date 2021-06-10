@@ -1,40 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('make');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'make'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr
-```
+<package-script :package="'make'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'make'" :type="'build'"></package-script>
 
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'make'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'make'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -1,52 +1,20 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('flex');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'flex'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr    \
-            --disable-static 
-```
+<package-script :package="'flex'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'flex'" :type="'build'"></package-script>
 
-
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'flex'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'flex'" :type="'install'"></package-script>
 
 Некоторые программы обращаются к `lex`, а не `flex`, поэтому создайте ссылку:
 
-```bash
-ln -sv flex /usr/bin/lex
-```
+<package-script :package="'flex'" :type="'postinstall'"></package-script>
  
 ## Установленные файлы
 
@@ -54,3 +22,6 @@ ln -sv flex /usr/bin/lex
 
 Библиотеки: `libfl.so`
 
+<script>
+	new Vue({ el: '#main' })
+</script> 

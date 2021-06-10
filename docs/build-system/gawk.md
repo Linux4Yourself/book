@@ -1,55 +1,21 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gawk');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
+<pkg :name="'gawk'" instsize showsbu2></pkg>
 ## Подготовка
-
 Следует убедиться, что ненужные файлы не будут установлены
-
-```bash
-sed -i 's/extras//' Makefile.in
-```
-
+<package-script :package="'gawk'" :type="'prepare'"></package-script>
 ## Настройка
-
-```bash
-./configure --prefix=/usr
-```
+<package-script :package="'gawk'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'gawk'" :type="'build'"></package-script>
 
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'gawk'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
-
+<package-script :package="'gawk'" :type="'install'"></package-script>
 ## Установка документации
+<package-script :package="'gawk'" :type="'install-doc'"></package-script>
 
-```bash
-mkdir -v /usr/share/doc/gawk
-cp    -v doc/{awkforai.txt,*.{eps,pdf,jpg}} /usr/share/doc/gawk
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

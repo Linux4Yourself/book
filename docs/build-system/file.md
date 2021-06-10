@@ -1,82 +1,37 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('file');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'file'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr    
-```
-
-### Значения параметров configure
-
+<package-script :package="'file'" :type="'configure'"></package-script>
 
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'file'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'file'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'file'" :type="'install'"></package-script>
 
-```bash
-make install
-```
- 
 ## Для multilib
 
 ### Очистка
 
-```bash
-make distclean
-```
+<package-script :package="'file'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
 
-```bash
-CC="gcc -m32" ./configure \
-    --prefix=/usr         \
-    --libdir=/usr/lib32   \
-    --host=i686-pc-linux-gnu
-```
+<package-script :package="'file'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
-
-```bash
-make
-```
-
+<package-script :package="'file'" :type="'multi_build'"></package-script>
 ### Установка
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
-
+<package-script :package="'file'" :type="'multi_install'"></package-script>
 ## Установленные файлы
 
 Программы: file
 
 Библиотеки: libmagic.so
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

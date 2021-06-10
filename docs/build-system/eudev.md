@@ -1,109 +1,52 @@
-<package-info :package="package" instsize showsbu2 ></package-info>
+<pkg :name="'eudev'" instsize showsbu2></pkg>
+
+## Дополнительные необходимые файлы
+
+<a :href="patch.url">{{ patch.url}}</a>
+## Настройка
+<package-script :package="'eudev'" :type="'configure'"></package-script>
+
+## Сборка
+<package-script :package="'eudev'" :type="'build'"></package-script>
+
+## Тестирование
+<package-script :package="'eudev'" :type="'test'"></package-script>
+
+## Установка
+<package-script :package="'eudev'" :type="'install'"></package-script>
+
+
+Установите необходимые файлы:
+
+<package-script :package="'eudev'" :type="'postinstall'"></package-script>
+ 
+## Для multilib
+
+### Очистка
+
+<package-script :package="'eudev'" :type="'multi_prepare'"></package-script>
+
+### Настройка
+<package-script :package="'eudev'" :type="'multi_configure'"></package-script>
+
+### Сборка 
+<package-script :package="'eudev'" :type="'multi_build'"></package-script>
+
+### Установка
+<package-script :package="'eudev'" :type="'multi_install'"></package-script>
 
 <script>
 		new Vue({
 		el: '#main',
 		data: { package: {}, patch: {} },
 		mounted: function () {
-				this.getPackage('eudev');
-				this.getBzipPatch();
+				this.getPatch();
 		},
 		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getBzipPatch: function() {
+			getPatch: function() {
 					getPackage('udev')
 					.then(response => this.patch = response);
 			},
 		}
   })
 </script>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
-
-## Настройка
-
-
-```bash
-./configure --prefix=/usr           \
-            --sysconfdir=/etc       \
-            --enable-manpages       \
-            --disable-static        \
-            --sbindir=/usr/bin 
-```
-
-## Сборка
-
-
-```bash
-make
-```
-
-Создайте необходимые директории:
-
-```bash
-mkdir -pv /usr/lib/udev/rules.d
-mkdir -pv /etc/udev/rules.d
-```
-
-## Тестирование
-
-```bash
-make check
-```
-
-## Установка
-
-```bash
-make install
-```
-
-Установите необходимые файлы:
-
-<pre class="pre">
-mkdir udev
-cd udev
-tar -xvf ../../{{patch.fileName}}
-make install
-cd ..
-</pre>
- 
-## Для multilib
-
-### Очистка
-
-```bash
-make distclean
-```
-
-### Настройка
-
-```bash
-CC="gcc -m32" \
-./configure --host=i686-pc-linux-gnu       \
-            --prefix=/usr                  \
-            --libdir=/usr/lib32            \
-            --sysconfdir=/etc              \
-            --disable-manpages             \
-            --disable-static               \
-            --config-cache
-```
-
-### Сборка 
-
-```bash
-make
-```
-
-### Установка
-
-```bash
-make DESTDIR=$PWD/DESTDIR install
-rm -rf DESTDIR/usr/lib32/udev
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```

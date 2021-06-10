@@ -1,43 +1,19 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('nano');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
+<pkg :name="'nano'" instsize showsbu2></pkg>
 ## Настройка
-
-```bash
-./configure --prefix=/usr     \
-            --sysconfdir=/etc \
-            --enable-utf8     
-```
+<package-script :package="'nano'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'nano'" :type="'build'"></package-script>
 
-```bash
-make
-```
+## Тестирование
+<package-script :package="'nano'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'nano'" :type="'install'"></package-script>
 
 ## Установка документации
+<package-script :package="'nano'" :type="'install-doc'"></package-script>
 
-```bash
-install -v -m644 doc/{nano.html,sample.nanorc} /usr/share/doc/nano
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -1,45 +1,17 @@
-<!-- Этот шаблон  можно использовавть для инструкции по сборке пакета. Каркас. -->
-
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('popt');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'popt'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr    \
-            --disable-static 
-```
+<package-script :package="'popt'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'popt'" :type="'build'"></package-script>
 
-
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'popt'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'popt'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

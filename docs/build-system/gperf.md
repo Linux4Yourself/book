@@ -1,41 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gperf');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'gperf'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr
-```
+<package-script :package="'gperf'" :type="'configure'"></package-script>
 
 ## Сборка
-
-```bash
-make
-```
-
+<package-script :package="'gperf'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make -j1 check
-```
+<package-script :package="'gperf'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'gperf'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

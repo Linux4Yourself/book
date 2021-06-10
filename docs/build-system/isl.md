@@ -1,50 +1,22 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('isl');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'isl'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr        \
-            --disable-static     
-```
+<package-script :package="'isl'" :type="'configure'"></package-script>
 
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'isl'" :type="'build'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'isl'" :type="'install'"></package-script>
 
 Переместите неправильно установленные файлы:
 
-```bash
-mkdir -pv /usr/share/gdb/auto-load/usr/lib
-mv -v /usr/lib/libisl*gdb.py /usr/share/gdb/auto-load/usr/lib
-```
+<package-script :package="'isl'" :type="'postinstall'"></package-script>
  
 ## Установленные файлы
 
 Библиотеки: libmpc.so
 
+<script>
+	new Vue({ el: '#main' })
+</script> 

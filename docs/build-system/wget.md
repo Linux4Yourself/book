@@ -1,44 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('wget');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'wget'" instsize showsbu2></pkg>
 
 ## Настройка
+<package-script :package="'wget'" :type="'configure'"></package-script>
 
-```bash
-./configure --prefix=/usr --sysconfdir=/etc \
-            --with-ssl=openssl
-```
-
-## Сборка
-
-```bash
-make
-```
-
-## Установка
-
-```bash
-make install
-```
-
-## Описание новых команд
+### Значения параметров
 
 * `--sysconfdir=/etc` - меняет путь к директории с настройками с `/usr/etc` на `/etc`
 * `--with-ssl=openssl` - позволяет использовать openssl вместо GnuTLS.
+
+## Сборка
+<package-script :package="'wget'" :type="'build'"></package-script>
+## Установка
+<package-script :package="'wget'" :type="'install'"></package-script>
 
 ## Конфигурационные файлы
 
@@ -48,5 +21,7 @@ make install
 ## Установленные файлы
 
 * **Установленные программы:** `wget`
-* **Установленные бибилиотеки:** нет
-* **Установленные директории:** нет
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

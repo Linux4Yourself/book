@@ -1,38 +1,13 @@
-<package-info :package="package" instsize showsbu2></package-info>
+<pkg :name="'less'" instsize showsbu2></pkg>
+## Настройка
+<package-script :package="'less'" :type="'configure'"></package-script>
+### Значения параметров
+`--sysconfdir=/etc` - настроить путь `/etc` для хранения конфигурации.
+## Сборка
+<package-script :package="'less'" :type="'build'"></package-script>
+## Установка
+<package-script :package="'less'" :type="'install'"></package-script>
 
 <script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('less');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
-## Настройка
-
-```bash
-./configure --prefix=/usr --sysconfdir=/etc
-```
-
-### Значения параметров configure
-`--sysconfdir=/etc` - настроить путь `/etc` для хранения конфигурации.
-
-## Сборка
-
-```bash
-make
-```
-
-## Установка
-
-```bash
-make install
-```
+	new Vue({ el: '#main' })
+</script> 

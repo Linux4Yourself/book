@@ -1,54 +1,26 @@
-<package-info :package="package" instsize showsbu2></package-info>
+<pkg :name="'sed'" instsize showsbu2></pkg>
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('sed');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
 
 ## Настройка
+<package-script :package="'sed'" :type="'configure'"></package-script>
 
-```bash
-./configure --prefix=/usr
-```
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'sed'" :type="'build'"></package-script>
 
 ## Сборка документации
 
-```bash
-make html
-```
+<package-script :package="'sed'" :type="'build-doc'"></package-script>
 
 ## Тестирование
-
-```bash
-chown -Rv tester .
-su tester -c "PATH=$PATH make check"
-```
+<package-script :package="'sed'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'sed'" :type="'install'"></package-script>
 
 ## Установка документации
+<package-script :package="'sed'" :type="'install-doc'"></package-script>
 
-```bash
-install -d -m755           /usr/share/doc/sed
-install -m644 doc/sed.html /usr/share/doc/sed
-```
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -1,64 +1,27 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('zstd');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
+<pkg :name="'zstd'" instsize showsbu2></pkg>
 
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'zstd'" :type="'build'"></package-script>
 ## Тестирование
 
-```bash
-make check
-```
+<package-script :package="'zstd'" :type="'test'"></package-script>
 
 ## Установка
 
-```bash
-make prefix=/usr install
-rm -v /usr/lib/libzstd.a
-```
+<package-script :package="'zstd'" :type="'install'"></package-script>
  
 ## Для multilib
 
 ### Очистка
-
-```bash
-make clean
-```
+<package-script :package="'xz'" :type="'multi_prepare'"></package-script>
 
 ### Сборка 
 
-```bash
-CC="gcc -m32" make
-```
+<package-script :package="'xz'" :type="'multi_build'"></package-script>
 
 ### Установка
 
-```bash
-CC="gcc -m32" make prefix=/usr DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib/* /usr/lib32/
-sed -e "/^libdir/s/lib$/lib32/" -i /usr/lib32/pkgconfig/libzstd.pc
-rm -rf DESTDIR
-rm -v /usr/lib32/libzstd.a
-```
+<package-script :package="'xz'" :type="'multi_install'"></package-script>
 
 ## Установленные файлы
 
@@ -71,3 +34,7 @@ rm -v /usr/lib32/libzstd.a
 `zstd` - Сжимает и распаковывает файлы с помощью алгоритма ZSTD
 
 `libzstd` - Библиотека для формата сжатия ZSTD
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

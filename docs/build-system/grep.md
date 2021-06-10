@@ -1,40 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('grep');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'grep'" instsize showsbu2></pkg>
 
 ## Настройка
+<package-script :package="'grep'" :type="'configure'"></package-script>
 
-```bash
-./configure --prefix=/usr
-```
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'grep'" :type="'build'"></package-script>
 
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'grep'" :type="'build'"></package-script>
 
 ## Установка
+<package-script :package="'grep'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

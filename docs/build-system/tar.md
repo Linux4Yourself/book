@@ -1,43 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('tar');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'tar'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-FORCE_UNSAFE_CONFIGURE=1  \
-./configure --prefix=/usr
-```
+<package-script :package="'tar'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'tar'" :type="'build'"></package-script>
 
-
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'tar'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'tar'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

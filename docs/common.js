@@ -83,7 +83,7 @@ Vue.component('pkg', {
 	<div v-if="package" class="pkg">
 		<p>{{ package.description }}</p>
 		<p class="pkg-desc">
-			Ссылка для скачивания: <a :href="package.url"><b>{{ package.downloadUrl }}</b></a>
+			Ссылка для скачивания: <a :href="package.downloadUrl"><b>{{ package.downloadUrl }}</b></a>
 			<br />
 			Текущая версия: <b>{{ package.version }}</b>
 			<br />
