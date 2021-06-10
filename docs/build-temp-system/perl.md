@@ -29,7 +29,7 @@ sh Configure -des                                        \
              -Dvendorlib=/usr/lib/perl5/5.32/vendor_perl \
              -Dvendorarch=/usr/lib/perl5/5.32/vendor_perl
 ```
-### Значения параметров configure
+### Значения параметров
 ``-des``  Это комбинация трех опций:
 
 ``-d`` использует значения по умолчанию для всех элементов,

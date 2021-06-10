@@ -1,40 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('patch');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'patch'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr
-```
+<package-script :package="'patch'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'patch'" :type="'build'"></package-script>
 
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'patch'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'patch'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -29,7 +29,7 @@ cd build
 
 ?> 1 SBU равен времени сборки данного пакета
 
-Сначала запустим скрипт `configure`:
+Запустим скрипт `configure`:
 ```bash
 ../configure  --prefix=$LIN/tools       \
              --with-sysroot=$LIN        \

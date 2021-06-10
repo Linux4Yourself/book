@@ -26,7 +26,7 @@ find /usr/lib /usr/libexec /usr/lib32 -name \*.la -delete
 find /usr -depth -name $(uname -m)-lin-linux-gnu\* | xargs rm -rf
 ```
 
-Также удалите кросс-компилятор:
+Удалите кросс-компилятор:
 
 ```bash
 rm -rf /tools
@@ -38,7 +38,7 @@ rm -rf /tools
 userdel -r tester
 ```
 
-Также, вы можете удалить ненужные символы из исполняемых файлов:
+Вы можете удалить ненужные символы из исполняемых файлов:
 
 ```bash
 find /usr/lib{,32} -type f -name \*.a \

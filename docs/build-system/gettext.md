@@ -1,42 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gettext');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'gettext'" instsize showsbu2></pkg>
 
 ## Настройка
+<package-script :package="'gettext'" :type="'configure'"></package-script>
 
-```bash
-./configure --prefix=/usr    \
-            --disable-static 
-```
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'gettext'" :type="'build'"></package-script>
 
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'gettext'" :type="'build'"></package-script>
 
 ## Установка
+<package-script :package="'gettext'" :type="'install'"></package-script>
 
-```bash
-make install
-chmod -v 0755 /usr/lib/preloadable_libintl.so
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

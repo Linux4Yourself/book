@@ -1,88 +1,47 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('readline');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'readline'" instsize showsbu2></pkg>
 
 ## Подготовка
 
 Переустановка Readline приведет к переименованию старых библиотек в <имя библиотеки> .old. Хотя обычно это не проблема, в некоторых случаях это может вызвать ошибку в ldconfig. Этого можно избежать, выполнив следующие команды: 
 
-```bash
-sed -i '/MV.*old/d' Makefile.in
-sed -i '/{OLDSUFF}/c:' support/shlib-install
-```
+<package-script :package="'readline'" :type="'prepare'"></package-script>
 
 ## Настройка
+<package-script :package="'readline'" :type="'configure'"></package-script>
 
-
-```bash
-./configure --prefix=/usr    \
-            --disable-static \
-            --with-curses  
-```
-
-### Значения параметров configure
+### Значения параметров
 
 `--with-curses` - Включает использование библиотеки `ncurses`
 
 ## Сборка
-
-
-```bash
-make SHLIB_LIBS="-lncursesw" 
-```
+<package-script :package="'readline'" :type="'build'"></package-script>
 
 ## Установка
 
-```bash
-make SHLIB_LIBS="-lncursesw" install
-```
+<package-script :package="'readline'" :type="'install'"></package-script>
  
 ## Для multilib
 
 ### Очистка
 
-```bash
-make distclean
-```
+<package-script :package="'readline'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
 
-```bash
-CC="gcc -m32" ./configure \
-    --prefix=/usr         \
-    --disable-static      \
-    --libdir=/usr/lib32   \
-    --host=i686-pc-linux-gnu
-```
+<package-script :package="'readline'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
 
-```bash
-make
-```
+<package-script :package="'readline'" :type="'multi_build'"></package-script>
 
 ### Установка
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<package-script :package="'readline'" :type="'multi_install'"></package-script>
 
 ## Установленные файлы
 
 Библиотеки: `libhistory.so` и `libreadline.so`
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

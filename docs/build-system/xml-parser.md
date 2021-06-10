@@ -1,48 +1,17 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('XML-Parser');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
+<pkg :name="'xml-parser'" instsize showsbu2></pkg>
 ## Настройка
-
-
-```bash
-perl Makefile.PL
-```
-
+<package-script :package="'xml-parser'" :type="'configure'"></package-script>
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'xml-parser'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make test
-```
-
+<package-script :package="'xml-parser'" :type="'build'"></package-script>
 ## Установка
-
-```bash
-make install
-```
- 
+<package-script :package="'xml-parser'" :type="'install'"></package-script>
 
 ## Установленные файлы
 
 Библиотеки: Модуль `perl` - `Expat.so`
 
+<script>
+	new Vue({ el: '#main' })
+</script> 

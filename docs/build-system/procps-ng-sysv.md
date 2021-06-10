@@ -1,46 +1,16 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('procps-ng');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
+<pkg :name="'procps-ng'" instsize showsbu2></pkg>
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr                            \
-            --disable-static                         \
-            --disable-kill
-```
-
+<package-script :package="'procps-ng'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'procps-ng'" :type="'build'"></package-script>
 
-
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'procps-ng'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'procps-ng'" :type="'install'"></package-script>
 
-```bash
-make install
-```
- 
+<script>
+	new Vue({ el: '#main' })
+</script> 

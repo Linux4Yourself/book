@@ -1,40 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('check');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'check'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr
-```
+<package-script :package="'check'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'check'" :type="'build'"></package-script>
 
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'check'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'check'" :type="'install'"></package-script>
 
-```bash
-make docdir=/usr/share/doc/check install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

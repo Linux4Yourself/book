@@ -55,7 +55,7 @@ cd       build
     --with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.1.0
 ```
 
-### Значения параметров configure
+### Значения параметров
 
 ` --host=$LIN_TGT` `--build=$(../config.guess)` - Необходимо для кросс-компиляции
 

@@ -1,40 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('bison');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'bison'" instsize showsbu2></pkg>
 
 ## Настройка
+<package-script :package="'bison'" :type="'configure'"></package-script>
 
-```bash
-./configure --prefix=/usr
-```
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'bison'" :type="'build'"></package-script>
 
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'bison'" :type="'build'"></package-script>
 
 ## Установка
+<package-script :package="'bison'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

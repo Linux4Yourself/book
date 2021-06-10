@@ -1,50 +1,20 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('m4');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'pkg-config'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr              \
-            --with-internal-glib       \
-            --disable-host-tool    
-```
+<package-script :package="'pkg-config'" :type="'configure'"></package-script>
 
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'pkg-config'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'pkg-config'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
- 
+<package-script :package="'pkg-config'" :type="'install'"></package-script>
 
 ## Установленные файлы
 
 Программы: `pkg-config`
 
+<script>
+	new Vue({ el: '#main' })
+</script> 

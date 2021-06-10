@@ -1,40 +1,17 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('libpipeline');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'libpipeline'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr
-```
+<package-script :package="'libpipeline'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'libpipeline'" :type="'build'"></package-script>
 
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'libpipeline'" :type="'test'"></package-script>
 
 ## Установка
+<package-script :package="'libpipeline'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

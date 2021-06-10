@@ -1,136 +1,39 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('systemd');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'systemd'" instsize showsbu2></pkg>
 
 ## Подготовка
-
 Удалите ненужную группу `render` из правил `udev`:
-
-```bash
-sed -i 's/GROUP="render"/GROUP="video"/' rules.d/50-udev-default.rules.in
-```
+<package-script :package="'systemd'" :type="'prepare'"></package-script>
 
 ## Настройка
-
-```bash
-mkdir -p build
-cd       build
-
-LANG=en_US.UTF-8                    \
-meson --prefix=/usr                 \
-      --sysconfdir=/etc             \
-      --localstatedir=/var          \
-      --buildtype=release           \
-      -Dblkid=true                  \
-      -Ddefault-dnssec=no           \
-      -Dfirstboot=false             \
-      -Dinstall-tests=false         \
-      -Dldconfig=false              \
-      -Dsysusers=false              \
-      -Db_lto=false                 \
-      -Drpmmacrosdir=no             \
-      -Dhomed=false                 \
-      -Duserdb=false                \
-      -Dman=false                   \
-      -Dmode=release                \
-      -Dtests=false                 \
-      ..
-```
+<package-script :package="'systemd'" :type="'configure'"></package-script>
 
 ## Сборка
-
-```bash
-LANG=en_US.UTF-8 ninja
-```
+<package-script :package="'systemd'" :type="'build'"></package-script>
 
 ## Установка
+<package-script :package="'systemd'" :type="'install'"></package-script>
 
-```bash
-LANG=en_US.UTF-8 ninja install
-```
+- Удалите ненужный каталог:
+- Создайте файл `/etc/machine-id` необходимый для `systemd-journald`:
+- Настройте базовую целевую структуру:
+- Отключите службу, которая, как известно, вызывает проблемы с системами, использующими конфигурацию сети, отличную от той, которая предоставляется systemd-networkd:
 
-Удалите ненужный каталог:
-
-```bash
-rm -rf /usr/lib/pam.d
-```
-
-Создайте файл `/etc/machine-id` необходимый для `systemd-journald`:
-
-```bash
-systemd-machine-id-setup
-```
-
-Настройте базовую целевую структуру:
-
-```bash
-systemctl preset-all
-```
-
-Отключите службу, которая, как известно, вызывает проблемы с системами, использующими конфигурацию сети, отличную от той, которая предоставляется systemd-networkd:
-
-```bash
-systemctl disable systemd-time-wait-sync.service
-```
+<package-script :package="'systemd'" :type="'postinstall'"></package-script>
 
 ## Для multilib
 
 ### Очистка
-
-```bash
-rm -rf ./*
-```
+<package-script :package="'systemd'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
-
-```bash
-
-LANG=en_US.UTF-8  CC="gcc -m32" CXX="g++ -m32"  PKG_CONFIG_PATH="/usr/lib32/pkgconfig"   \
-meson --prefix=/usr                 \
-      --sysconfdir=/etc             \
-      --localstatedir=/var          \
-      --libdir=/usr/lib32           \
-      -Dblkid=true                  \
-      -Dbuildtype=release           \
-      -Ddefault-dnssec=no           \
-      -Dfirstboot=false             \
-      -Dinstall-tests=false         \
-      -Dldconfig=false              \
-      -Dsysusers=false              \
-      -Db_lto=false                 \
-      -Drpmmacrosdir=no             \
-      -Dhomed=false                 \
-      -Duserdb=false                \
-      -Dman=false                   \
-      -Dmode=release                \
-      -Dtests=false                 \
-      ..
-```
+<package-script :package="'systemd'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
-
-```bash
-ninja
-```
+<package-script :package="'systemd'" :type="'multi_build'"></package-script>
 
 ### Установка
+<package-script :package="'systemd'" :type="'multi_install'"></package-script>
 
-```bash
-DESTDIR=$PWD/DESTDIR ninja install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

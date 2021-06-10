@@ -1,25 +1,4 @@
-<package-info :package="package" instsize showsbu2 ></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPackage('efivar');
-				this.getBzipPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getBzipPatch: function() {
-					getPackage('efivar-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'efivar'" instsize showsbu2></pkg>
 
 ## Дополнительные необходимые файлы
 
@@ -29,19 +8,26 @@
 
 Примените патч, исправляющий ошибку сборки новыми версиями GCC:
 
-<pre class="pre">
-patch -Np1 -i ../{{patch.fileName}}
-</pre>
-
+<package-script :package="'efivar'" :type="'patch'"></package-script>
 
 ## Сборка
-
-```bash
-make CFLAGS="-O2 -Wno-stringop-truncation"
-```
+<package-script :package="'efivar'" :type="'build'"></package-script>
 
 ## Установка
+<package-script :package="'efivar'" :type="'install'"></package-script>
 
-```bash
-make install LIBDIR=/usr/lib BINDIR=/usr/bin
-```
+<script>
+		new Vue({
+		el: '#main',
+		data: { package: {}, patch: {} },
+		mounted: function () {
+				this.getPatch();
+		},
+		methods: {
+			getPatch: function() {
+					getPackage('efivar-patch')
+					.then(response => this.patch = response);
+			},
+		}
+  })
+</script>

@@ -1,24 +1,7 @@
-<package-info :package="package" ></package-info>
+<pkg :name="'bootscripts'" instsize showsbu2></pkg>
+## Установка
+<package-script :package="'bootscripts'" :type="'install'"></package-script>
 
 <script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('bootscripts');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
-## Установка
-
-```bash
-make install
-```
- 
+	new Vue({ el: '#main' })
+</script> 

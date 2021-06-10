@@ -1,47 +1,23 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('bc');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'bc'" instsize showsbu2></pkg>
 
 ## Настройка
 
-
-```bash
-CC=gcc ./configure --prefix=/usr -G -O3
-```
-
+<package-script :package="'bc'" :type="'configure'"></package-script>
 ## Сборка
 
-
-```bash
-make
-```
+<package-script :package="'bc'" :type="'build'"></package-script>
 
 ## Тестирование
 
-```bash
-make test
-```
+<package-script :package="'bc'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'bc'" :type="'install'"></package-script>
 
 ## Установленные файлы
 
 Программы: `bc` и `dc`
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -1,41 +1,19 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('autoconf');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'autoconf'" instsize showsbu2></pkg>
 
 ## Настройка
 
-```bash
-./configure --prefix=/usr
-```
-
+<package-script :package="'autoconf'" :type="'configure'"></package-script>
 ## Сборка
 
-```bash
-make
-```
-
+<package-script :package="'autoconf'" :type="'build'"></package-script>
 ## Тестирование
 
-```bash
-make check
-```
+<package-script :package="'autoconf'" :type="'test'"></package-script>
 
 ## Установка
 
-```bash
-make install
-```
+<package-script :package="'autoconf'" :type="'install'"></package-script>
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

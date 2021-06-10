@@ -71,7 +71,7 @@ cd       build
 
 Добавьте параметр `--enable-multi-arch`
 
-### Значения параметров configure
+### Значения параметров
 
  `--host=$LIN_TGT    --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
  
@@ -94,7 +94,7 @@ make
 make DESTDIR=$LIN install
 ```
 
-Также, завершите установку файла `limits.h`, запустив скрипт из состава GCC:
+Завершите установку файла `limits.h`, запустив скрипт из состава GCC:
 
 ```bash
 $LIN/tools/libexec/gcc/$LIN_TGT/11.1.0/install-tools/mkheaders

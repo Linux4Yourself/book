@@ -1,46 +1,16 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('automake');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'automake'" instsize showsbu2></pkg>
 
 ## Настройка
-
 Внесите исправление для некорректного теста:
-```bash
-sed -i "s/''/etags/" t/tags-lisp-space.sh
-```
-
-```bash
-./configure --prefix=/usr
-```
-
+<package-script :package="'automake'" :type="'prepare'"></package-script>
+<package-script :package="'automake'" :type="'configure'"></package-script>
 ## Сборка
-
-```bash
-make
-```
-
+<package-script :package="'automake'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check
-```
-
+<package-script :package="'automake'" :type="'test'"></package-script>
 ## Установка
+<package-script :package="'automake'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

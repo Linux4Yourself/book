@@ -1,25 +1,7 @@
-<package-info :package="package" instsize showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('iana-etc');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'iana-etc'" instsize></pkg>
 
 ## Установка
-```bash
-cp -v services protocols /etc
-```
+<package-script :package="'iana-etc'" :type="'install'"></package-script>
 ### Установленные файлы
 
 ``/etc/protocols`` и ``/etc/services``
@@ -32,3 +14,7 @@ cp -v services protocols /etc
        которые  доступны  через  подсистему  TCP/IP. Не  изменяйте  этот файл, так как изменения могут привести к некорректному формированию IP
        пакетов. Номера протоколов и их имена определяются Центром Сетевой Информации (DDN Network
        Information Center).
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

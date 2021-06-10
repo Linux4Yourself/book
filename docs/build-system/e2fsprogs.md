@@ -1,43 +1,9 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('e2fsprogs');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'e2fsprogs'" instsize showsbu2></pkg>
 
 ## Настройка
+<package-script :package="'e2fsprogs'" :type="'configure'"></package-script>
 
-В документации пакета {{package.name}} требуется использовать отдельную директорию для сборки:
-
-```bash
-mkdir -v build
-cd       build
-```
-
-```bash
-../configure --prefix=/usr           \
-             --sysconfdir=/etc       \
-             --enable-elf-shlibs     \
-             --disable-libblkid      \
-             --disable-libuuid       \
-             --disable-uuidd         \
-             --disable-fsck          \
-             --enable-symlink-install \
-             --enable-relative-symlinks
-```
-
-### Значения параметров configure
+### Значения параметров
 
 ``--enable-elf-shlibs``
 Это создает общие библиотеки, которые используются некоторыми программами пакета.
@@ -47,36 +13,21 @@ cd       build
 
 ``--enable-symlink-install`` ``--enable-relative-symlinks`` - Использовать относительные символические ссылки вместо жеских
 
-
 ## Сборка
-
-```bash
-make
-```
+<package-script :package="'e2fsprogs'" :type="'build'"></package-script>
 
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'e2fsprogs'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'e2fsprogs'" :type="'install'"></package-script>
 
 Пакет установит запакованный файл .info и не обновит системный файл dir. Распакуйте файл и обновите файл dir, выполнив следующую команду:
-
-```bash
-gunzip -v /usr/share/info/libext2fs.info.gz
-install-info --dir-file=/usr/share/info/dir /usr/share/info/libext2fs.info
-```
+<package-script :package="'e2fsprogs'" :type="'postinstall'"></package-script>
 
 При необходимости создайте и установите дополнительную документацию выполненив следующие команды:
+<package-script :package="'e2fsprogs'" :type="'install-doc'"></package-script>
 
-```bash
-makeinfo -o      doc/com_err.info ../lib/et/com_err.texinfo
-install -v -m644 doc/com_err.info /usr/share/info
-install-info --dir-file=/usr/share/info/dir /usr/share/info/com_err.info
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

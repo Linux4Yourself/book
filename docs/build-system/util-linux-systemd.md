@@ -1,97 +1,31 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('util-linux');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
+<pkg :name="'util-linux'" instsize showsbu2></pkg>
 ## Настройка
-
-
-```bash
-./configure ADJTIME_PATH=/var/lib/hwclock/adjtime   \
-            --libdir=/usr/lib    \
-            --disable-chfn-chsh  \
-            --disable-login      \
-            --disable-nologin    \
-            --disable-su         \
-            --disable-setpriv    \
-            --disable-runuser    \
-            --disable-pylibmount \
-            --disable-static     \
-            --without-python     \
-            runstatedir=/run     \
-            --enable-usrdir-path 
-```
+<package-script :package="'util-linux'" :type="'configure-systemd'"></package-script>
 
 ## Сборка
+<package-script :package="'util-linux'" :type="'build-systemd'"></package-script>
 
-
-```bash
-make
-```
 ## Тестирование
-
-```bash
-chown -Rv tester .
-su tester -c "make -k check"
-```
+<package-script :package="'util-linux'" :type="'test-systemd'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'util-linux'" :type="'install-systemd'"></package-script>
  
 ## Для multilib
 
 ### Очистка
 
-```bash
-make distclean
-```
+<package-script :package="'util-linux'" :type="'multi_prepare-systemd'"></package-script>
 
 ### Настройка
-
-```bash
-CC="gcc -m32" \
-./configure ADJTIME_PATH=/var/lib/hwclock/adjtime   \
-            --host=i686-pc-linux-gnu \
-            --libdir=/usr/lib32      \
-            --disable-chfn-chsh      \
-            --disable-login          \
-            --disable-nologin        \
-            --disable-su             \
-            --disable-setpriv        \
-            --disable-runuser        \
-            --disable-pylibmount     \
-            --disable-static         \
-            --without-python         \
-            --enable-libmount-force-mountinfo \
-            runstatedir=/run --disable-fdisks  --disable-mount  --disable-fsck   
-```
+<package-script :package="'util-linux'" :type="'multi_configure-systemd'"></package-script>
 
 ### Сборка 
-
-```bash
-make
-```
+<package-script :package="'util-linux'" :type="'multi_build-systemd'"></package-script>
 
 ### Установка
+<package-script :package="'util-linux'" :type="'multi_install-systemd'"></package-script>
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

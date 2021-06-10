@@ -1,49 +1,19 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('grub');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'grub'" instsize showsbu2></pkg>
 
 
 ## Настройка
+<package-script :package="'grub'" :type="'configure-mbr'"></package-script>
 
-```bash
-unset {C,CPP,CXX,LD}FLAGS
-./configure --prefix=/usr          \
-            --sbindir=/sbin        \
-            --sysconfdir=/etc      \
-            --disable-efiemu       \
-            --disable-werror
-```
-
-## Объяснение параметров configure
+## Значения параметров
 
 `--disable-efiemu` - Отключает установку большого и не нужного компонента
 
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'grub'" :type="'build'"></package-script>
 
 ## Установка
+<package-script :package="'grub'" :type="'install-mbr'"></package-script>
 
-```bash
-make install &&
-mv -v /etc/bash_completion.d/grub /usr/share/bash-completion/completions
-source /etc/profile
-```
- 
+<script>
+	new Vue({ el: '#main' })
+</script> 

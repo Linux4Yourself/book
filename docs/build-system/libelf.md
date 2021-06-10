@@ -1,81 +1,28 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('elfutils');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'elfutils'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr                \
-            --disable-debuginfod         \
-            --enable-libdebuginfod=dummy
-```
-
+<package-script :package="'libelf'" :type="'configure'"></package-script>
 ## Сборка
-
-```bash
-make
-```
-
+<package-script :package="'libelf'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check
-```
-
+<package-script :package="'libelf'" :type="'test'"></package-script>
 ## Установка
-
 Потребуется только установка библиотеки `libelf`.
-
-```bash
-make -C libelf install
-install -vm644 config/libelf.pc /usr/lib/pkgconfig
-rm /usr/lib/libelf.a
-```
+<package-script :package="'libelf'" :type="'install'"></package-script>
 
 ## Для multilib
 
 ### Очистка
-
-```bash
-make distclean
-```
-
+<package-script :package="'libelf'" :type="'multi_prepare'"></package-script>
 ### Подготовка
-
-```bash
-CC="gcc -m32" ./configure \
-    --prefix=/usr            \
-    --libdir=/usr/lib32     \
-    --host=i686-pc-linux-gnu \
-    --disable-debuginfod     \
-    --enable-libdebuginfod=dummy
-```
+<package-script :package="'libelf'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
-
-```bash
-make
-```
+<package-script :package="'libelf'" :type="'multi_build'"></package-script>
 
 ### Установка
+<package-script :package="'libelf'" :type="'multi_install'"></package-script>
 
-```bash
-make DESTDIR=$PWD/DESTDIR -C libelf install
-install -vDm644 config/libelf.pc DESTDIR/usr/lib32/pkgconfig/libelf.pc
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

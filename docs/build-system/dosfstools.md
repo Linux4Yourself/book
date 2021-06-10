@@ -1,39 +1,13 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('dosfstools');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'dosfstools'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr               \
-            --enable-compat-symlinks \
-            --mandir=/usr/share/man
-```
+<package-script :package="'dosfstools'" :type="'configure'"></package-script>
 
 ## Сборка
-
-
-```bash
-make
-```
-
+<package-script :package="'dosfstools'" :type="'build'"></package-script>
 ## Установка
+<package-script :package="'dosfstools'" :type="'install'"></package-script>
 
-```bash
-make install
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

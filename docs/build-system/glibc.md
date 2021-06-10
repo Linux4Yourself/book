@@ -74,7 +74,7 @@ cd     build
 ### Для multilib
 Добавьте параметр `--enable-multi-arch`
 
-### Значения параметров configure
+### Значения параметров
  
 `--enable-kernel=3.2` - оптимизирует glibc для использования с ядрами новее 3.2.
 
@@ -163,7 +163,7 @@ localedef -i zh_CN -f GB18030 zh_CN.GB18030
 localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 ```
 
-Также, вы можете установить все локали, которые содержатся в файле ``{{ package.fileName }}/localedata/SUPPORTED``. 
+Вы можете установить все локали, которые содержатся в файле ``{{ package.fileName }}/localedata/SUPPORTED``. 
 Выполните следующую команду:
 
 ```bash
@@ -298,7 +298,7 @@ install -vm644 DESTDIR/usr/include/gnu/{lib-names,stubs}-32.h \
 ln -svf ../lib32/ld-linux.so.2 /lib/ld-linux.so.2
 ```
 
-Также добавьте запись в `ld.so.conf`:
+Добавьте запись в `ld.so.conf`:
 
 ```bash
 echo "/usr/lib32" >> /etc/ld.so.conf

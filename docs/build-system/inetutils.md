@@ -1,59 +1,24 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('inetutils');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'inetutils'" instsize showsbu2></pkg>
 
 ## Настройка
+<package-script :package="'inetutils'" :type="'configure'"></package-script>
 
-
-```bash
-./configure --prefix=/usr        \
-            --localstatedir=/var \
-            --disable-logger     \
-            --disable-whois      \
-            --disable-rcp        \
-            --disable-rexec      \
-            --disable-rlogin     \
-            --disable-rsh        \
-            --disable-servers
-```
-
-### Значения параметров configure
+### Значения параметров
 
 `--disable-*` - Отключает установку программ, лучшие версии которых предоставляют другие пакеты.
 
 ## Сборка
-
-
-```bash
-make
-```
+<package-script :package="'inetutils'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'inetutils'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'inetutils'" :type="'install'"></package-script>
  
-
 ## Установленные файлы
 
 Программы: dnsdomainname, ftp, ifconfig, hostname, ping, ping6, talk, telnet, tftp и traceroute
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

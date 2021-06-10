@@ -1,49 +1,21 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('mpfr');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'mpfr'" instsize showsbu2></pkg>
 
 ## Настройка
-
-
-```bash
-./configure --prefix=/usr        \
-            --disable-static     \
-            --enable-thread-safe
-```
+<package-script :package="'mpfr'" :type="'configure'"></package-script>
 
 ## Сборка
+<package-script :package="'mpfr'" :type="'build'"></package-script>
 
-
-```bash
-make
-```
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'mpfr'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'mpfr'" :type="'install'"></package-script>
  
 ## Установленные файлы
 
 Библиотеки: libmpfr.so
 
+<script>
+	new Vue({ el: '#main' })
+</script> 

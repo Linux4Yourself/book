@@ -1,80 +1,31 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('expat');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'expat'" instsize showsbu2></pkg>
 
 ## Настройка
-
-```bash
-./configure --prefix=/usr    \
-            --disable-static \
-```
+<package-script :package="'expat'" :type="'configure'"></package-script>
 
 ## Сборка
-
-```bash
-make
-```
-
+<package-script :package="'expat'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make -j1 check
-```
+<package-script :package="'expat'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'expat'" :type="'install'"></package-script>
 
 ## Установка документации
-
-```bash
-install -v -m644 doc/*.{html,png,css} /usr/share/doc/expat
-```
+<package-script :package="'expat'" :type="'install-doc'"></package-script>
 
 ## Для multilib
-
 ### Очистка
-
-```bash
-sed -e "/^am__append_1/ s/doc//" -i Makefile
-make clean
-```
+<package-script :package="'expat'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
+<package-script :package="'expat'" :type="'multi_configure'"></package-script>
 
-```bash
-CC="gcc -m32" ./configure \
-    --prefix=/usr         \
-    --libdir=/usr/lib32  \
-    --host=i686-pc-linux-gnu
-```
-
-### Сборка
-
-```bash
-make
-```
-
+### Сборка 
+<package-script :package="'expat'" :type="'multi_build'"></package-script>
 ### Установка
+<package-script :package="'expat'" :type="'multi_install'"></package-script>
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

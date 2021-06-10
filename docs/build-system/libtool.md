@@ -1,77 +1,33 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('libtool');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'libtool'" instsize showsbu2></pkg>
 
 ## Настройка
+<package-script :package="'libtool'" :type="'configure'"></package-script>
 
-```bash
-./configure --prefix=/usr
-```
 ## Сборка
-
-```bash
-make
-```
-
+<package-script :package="'libtool'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check
-```
+<package-script :package="'libtool'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'libtool'" :type="'install'"></package-script>
 
 Удалите ненужную статическую библиотеку
 
-```bash
-rm -fv /usr/lib/libltdl.a
-```
-
+<package-script :package="'libtool'" :type="'postinstall'"></package-script>
 
 ## Для multilib
 
-## Очистка
+### Очистка
+<package-script :package="'libtool'" :type="'multi_prepare'"></package-script>
 
-```bash
-make distclean
-```
+### Настройка
+<package-script :package="'libtool'" :type="'multi_configure'"></package-script>
 
-## Настройка
+### Сборка 
+<package-script :package="'libtool'" :type="'multi_build'"></package-script>
+### Установка
+<package-script :package="'libtool'" :type="'multi_install'"></package-script>
 
-```bash
-CC="gcc -m32" ./configure \
-    --prefix=/usr         \
-    --libdir=/usr/lib32  \
-    --host=i686-pc-linux-gnu
-```
-## Сборка
-
-```bash
-make
-```
-
-## Установка
-
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR
-```
+<script>
+	new Vue({ el: '#main' })
+</script> 

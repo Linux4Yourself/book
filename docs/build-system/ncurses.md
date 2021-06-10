@@ -2,7 +2,7 @@
 
 ## Настройка
 <package-script :package="'ncurses'" :type="'configure'"></package-script>
-### Значения параметров configure
+### Значения параметров
 
 `--without-normal` - Отключает установку большинства статических библиотек.
 

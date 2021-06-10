@@ -23,7 +23,7 @@
 ./configure --prefix=/usr --enable-shared   --without-ensurepip
 ```
 
-### Значения параметров configure
+### Значения параметров
 
 ``--enable-shared`` - Включает установку динамических библиотек
 

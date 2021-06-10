@@ -1,99 +1,51 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gmp');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+<pkg :name="'gmp'" instsize showsbu2></pkg>
 
 ## Настройка
 
-?> По умолчанию gmp оптимизируется под ваш процессор. Для того чтобы её можно было запустить на другом процессоре выполните: `cp -v configfsf.guess config.guess` и `cp -v configfsf.sub config.sub`
+По умолчанию gmp оптимизируется под ваш процессор. Для того чтобы её можно было запустить на другом процессоре выполните: 
+<package-script :package="'gmp'" :type="'prepare'"></package-script>
 
 ```bash
 ./configure --prefix=/usr    \
             --disable-static   --enable-cxx  
 ```
 
-### Значения параметров configure
+### Значения параметров
 
 `--enable-cxx` - Собрать библиотеку C++
 
 ## Сборка
 
-
-```bash
-make
-```
+<package-script :package="'gmp'" :type="'build'"></package-script>
 ## Тестирование
-
-```bash
-make check 2>&1 | tee gmp-check-log
-awk '/# PASS:/{total+=$3} ; END{print total}' gmp-check-log
-```
+<package-script :package="'gmp'" :type="'test'"></package-script>
 
 ## Установка
-
-```bash
-make install
-```
+<package-script :package="'gmp'" :type="'install'"></package-script>
  
 ## Для multilib
 
-### Очистка
+### Очистка и подготовка
 
-```bash
-make distclean
-```
-
-### Подготовка
-
-```bash
-cp -v configfsf.guess config.guess
-cp -v configfsf.sub   config.sub
-```
+<package-script :package="'gmp'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
 
-```bash
-ABI="32" \
-CFLAGS="-m32 -O2 -pedantic -fomit-frame-pointer -mtune=generic -march=i686" \
-CXXFLAGS="$CFLAGS" \
-PKG_CONFIG_PATH="/usr/lib32/pkgconfig" \
-./configure             \
-    --prefix=/usr       \
-    --disable-static    \
-    --enable-cxx        \
-    --libdir=/usr/lib32 \
-    --includedir=/usr/include/m32/gmp
-```
+<package-script :package="'gmp'" :type="'multi_configure'"></package-script>
 
 ### Сборка 
 
-```bash
-sed -i 's/$(exec_prefix)\/include/$\(includedir\)/' Makefile
-make
-```
+<package-script :package="'gmp'" :type="'multi_build'"></package-script>
 
 ### Установка
 
-```bash
-make DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-cp -Rv DESTDIR/usr/include/m32/* /usr/include/m32/
-rm -rf DESTDIR
-```
+<package-script :package="'gmp'" :type="'multi_install'"></package-script>
 
 ## Установленные файлы
 
 Библиотеки: libgmp.so libgmpxx.so
+
+
+<script>
+	new Vue({ el: '#main' })
+</script> 
