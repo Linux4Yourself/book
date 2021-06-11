@@ -2,14 +2,16 @@
 
 ## Настройка
 
-?> Libffi как и GMP оптимизируется под определенный процессор
+?> Libffi как и GMP оптимизируется под определенный процессор. Если планируется переносить систему на компьютер с другим ЦП, экспортируйте `CFLAGS` и `CXXFLAGS`, чтобы указать универсальную сборку для вашей архитектуры.
 
 <package-script :package="'libffi'" :type="'configure'"></package-script>
 
 ## Сборка
 <package-script :package="'libffi'" :type="'build'"></package-script>
+
 ## Тестирование
 <package-script :package="'libffi'" :type="'test'"></package-script>
+
 ## Установка
 <package-script :package="'libffi'" :type="'install'"></package-script>
  
@@ -17,6 +19,7 @@
 
 ### Очистка
 <package-script :package="'libffi'" :type="'multi_prepare'"></package-script>
+
 ### Подготовка
 <package-script :package="'libffi'" :type="'multi_configure'"></package-script>
 
