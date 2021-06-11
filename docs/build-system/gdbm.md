@@ -13,6 +13,8 @@
 ## Тестирование
 <package-script :package="'gdbm'" :type="'test'"></package-script>
 
+?> Известно, что один тест (`version`) может дать сбой.
+
 ## Установка
 <package-script :package="'gdbm'" :type="'install'"></package-script>
 
