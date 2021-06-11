@@ -44,8 +44,8 @@ set timeout=5
 insmod ext2
 set root=(hd0,2)
 
-menuentry "GNU/Linux, Linux {{ package.version }}-mylinux" {
-        linux   /boot/vmlinuz-{{ package.version }}-mylinux root=/dev/sda2 ro
+menuentry "GNU/Linux, Linux" {
+        linux /boot/vmlinuz root=/dev/sda2 ro
 }
 EOF
 
@@ -54,20 +54,3 @@ EOF
 ?> Для GRUB файлы ядра относятся к используемому разделу. Если вы использовали отдельный раздел / boot, удалите / boot из указанной выше строки linux. Вам также нужно будет изменить строку установленного корня, чтобы она указывала на загрузочный раздел.
 
 GRUB - чрезвычайно мощная программа, которая предоставляет огромное количество вариантов загрузки с самых разных устройств, операционных систем и типов разделов. Существует также множество опций для настройки, таких как графические заставки, воспроизведение звуков, ввод мыши и т.д.
-
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getLinux();
-		},
-		methods: {
-			getLinux: function() {
-					getPackage('linux')
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
