@@ -2,16 +2,22 @@
 
 ## Настройка
 <package-script :package="'openssl'" :type="'configure'"></package-script>
+
 ## Сборка
 <package-script :package="'openssl'" :type="'build'"></package-script>
+
 ## Тестирование
 <package-script :package="'openssl'" :type="'test'"></package-script>
+
+?> Известно, что один тест `30-test_afalg.t` даст сбой в некоторых конфигурациях ядра (по-видимому, предполагает, что некоторые неопределенные параметры  `Crypto` были выбраны).
+
 ## Установка
 <package-script :package="'openssl'" :type="'install'"></package-script>
  
 ## Для multilib
 ### Очистка
 <package-script :package="'openssl'" :type="'multi_prepare'"></package-script>
+
 ### Подготовка
 <package-script :package="'openssl'" :type="'multi_configure'"></package-script>
 
