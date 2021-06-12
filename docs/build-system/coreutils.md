@@ -30,6 +30,8 @@
 ## Тестирование
 <package-script :package="'coreutils'" :type="'test'"></package-script>
 
+?> Известно, что тест `test-getlogin` не проходит в LX4.
+
 ## Установка
 <package-script :package="'coreutils'" :type="'install'"></package-script>
 
