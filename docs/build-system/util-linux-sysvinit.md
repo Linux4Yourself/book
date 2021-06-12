@@ -6,6 +6,9 @@
 <package-script :package="'util-linux'" :type="'build'"></package-script>
 
 ## Тестирование
+
+!> Тестирование пакета от имени пользователя `root` может сломать Вашу систему. Для того, чтобы этого не случилось, производите тесты от имени непривилегированного пользователя:
+
 <package-script :package="'util-linux'" :type="'test'"></package-script>
 
 ## Установка
