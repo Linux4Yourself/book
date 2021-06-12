@@ -9,6 +9,8 @@
 ## Тестирование
 <package-script :package="'check'" :type="'test'"></package-script>
 
+> Тесты добавляют 4 SBU ко всему времени установки пакета.
+
 ## Установка
 <package-script :package="'check'" :type="'install'"></package-script>
 
