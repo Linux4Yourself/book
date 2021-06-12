@@ -7,6 +7,9 @@
 <package-script :package="'tcl'" :type="'build'"></package-script>
 ## Тестирование
 <package-script :package="'tcl'" :type="'test'"></package-script>
+
+?> В результатах теста есть несколько мест, связанных с `clock.test`, которые указывают на сбой, но сводка в конце указывает никаких ошибок. `clock.test` проходит на полной системе LX4. 
+
 ## Установка
 <package-script :package="'tcl'" :type="'install'"></package-script>
 

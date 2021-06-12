@@ -32,6 +32,9 @@
 ## Тестирование
 
 <package-script :package="'binutils'" :type="'test'"></package-script>
+
+?> Известно, что четыре теста с меткой `Run property ...` могут дать сбои.
+
 ## Установка
 
 <package-script :package="'binutils'" :type="'install'"></package-script>

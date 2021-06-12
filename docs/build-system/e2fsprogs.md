@@ -19,6 +19,10 @@
 ## Тестирование
 <package-script :package="'e2fsprogs'" :type="'test'"></package-script>
 
+> Тесты могут занять довольно продолжительное время на HDD (около 4 SBU). На SSD же это будет быстрее - 1,5 SBU.
+
+?> Тест `m_rootdir_acl` может дать сбой.
+
 ## Установка
 <package-script :package="'e2fsprogs'" :type="'install'"></package-script>
 

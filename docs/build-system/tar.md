@@ -9,6 +9,10 @@
 ## Тестирование
 <package-script :package="'tar'" :type="'test'"></package-script>
 
+> Тестирование добавляет 3 SBU ко всему времени установки пакета
+
+?> Известно, что тест `store/restore` даёт сбой.
+
 ## Установка
 <package-script :package="'tar'" :type="'install'"></package-script>
 

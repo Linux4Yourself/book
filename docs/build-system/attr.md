@@ -6,6 +6,9 @@
 ## Сборка
 <package-script :package="'attr'" :type="'build'"></package-script>
 ## Тестирование
+
+!> Тестирование нужно производить на файловой системе, поддерживающей расширенные атрибуты. Например, ext2-ext4.
+
 <package-script :package="'attr'" :type="'test'"></package-script>
 
 ## Установка

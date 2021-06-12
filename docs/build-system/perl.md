@@ -25,6 +25,8 @@
 ## Тестирование
 <package-script :package="'perl'" :type="'test'"></package-script>
 
+> Тесты добавляют 11 SBU ко всему времени установки пакета.
+
 ## Установка
 <package-script :package="'perl'" :type="'install'"></package-script>
  
