@@ -9,7 +9,7 @@
 
 Вы могли заметить файлы `~/.profile`, `~/.bash_profile` и ряд других. Они используются для задания элементов окружения для оболочки пользователя. Например, `umask`, а так же переменных `PS1` или `PATH`. Тоже самое и с файлом `/etc/profile`, только он используется для задания общесистемных параметров, а файлы в каталоге пользователя - для задания параметров конкретного пользователя системы.
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/profile.sh ':include')
+<common-script :name="'profile'"></common-script>
 
 ### О CFLAGS и CXXFLAGS
 
@@ -36,32 +36,35 @@
 
 bash-completion расширяет существующие возможности дополнения в bash, позволяя вводить сложные командные строки нажатием буквально нескольких клавиш. Целью является создание программируемых процедур дополнения для большинства распространённых команд Linux/UNIX, которые позволили бы системным администраторам и программистам сократить количество нажатий клавиш при выполнении ежедневных задач.
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/completion.sh ':include')
+<common-script :name="'completion'"></common-script>
 
 ## Dircolors
 
 Этот файл нужен для цветного вывода таких утилит, как `ls`. Пример: `ls --color=auto`.
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/dircolors.sh ':include')
+<common-script :name="'dircolors'"></common-script>
 
 ## Readline
 
 Этот файл нужен для настройки ``inputrc``. Если пользователь не имеет индивидуальных установок, он использует глобальный файл.
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/inputrc.sh ':include')
+<common-script :name="'inputrc'"></common-script>
 
 ## Umask
 
 Установка значения ``umask`` важна для безопасности. Здесь права доступа для записи группы по умолчанию выключены для пользователей системы и когда имена пользователя и группы не совпадают.
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/umask.sh ':include')
+<common-script :name="'umask'"></common-script>
 
 ## Другие стартовые скрипты
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/other.sh ':include')
-
+<common-script :name="'other'"></common-script>
 ## Применить изменения
 
 ```bash
 bash --login +h
 ```
+
+<script>
+	new Vue({ el: '#main' })
+</script> 
