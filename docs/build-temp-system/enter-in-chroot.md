@@ -31,6 +31,11 @@ fi
 
 Войдите в ``chroot``:
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/chroot.sh ':include')
+<common-script :name="'chroot'"></common-script>
 
 [filename](../shared/chroot.md ':include')
+
+
+<script>
+	new Vue({ el: '#main' })
+</script> 
