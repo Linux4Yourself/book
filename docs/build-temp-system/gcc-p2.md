@@ -108,7 +108,7 @@ ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
 ### Для multilib 
 замените параметр `--disable-multilib` на `--enable-multilib --with-multilib-list=m64,m32`
 
-### Объяснение 
+### Значения параметров 
 
 `--enable-initfini-array`    Этот переключатель заставляет использовать некоторые внутренние структуры данных, которые необходимы, но не могут быть обнаружены при построении кросс-компилятора.
 
