@@ -33,4 +33,6 @@ fi
 
 [filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/chroot.sh ':include')
 
+?> После входа в chroot, в приглашении bash будет написано 'I have no name!'. Это нормально, и ничего плохого в этом нет. Дело в том, что файл `/etc/passwd` ещё не создан.
+
 [filename](../shared/chroot.md ':include')
