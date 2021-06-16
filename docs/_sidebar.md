@@ -25,8 +25,9 @@
 - [**Сборка кросс компилятора**](cross-toolchain/cross-toolchain)
   - [Binutils](cross-toolchain/binutils)
   - [GCC](cross-toolchain/gcc)
+- [**Заголовочные файлы ядра Linux**](build-system/linux-headers)
 - [**Сборка временной системы**](build-temp-system/tempsystem)
-  - [Заголовки ядра Linux](build-temp-system/linux-headers)
+
   - [Glibc](build-temp-system/glibc)
   - [LibstdС++ проход 1](build-temp-system/libstdc)
   - [M4](build-temp-system/m4)
