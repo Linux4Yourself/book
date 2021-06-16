@@ -73,7 +73,7 @@ cd       build
 
 ### Значения параметров
 
- `--host=$LIN_TGT    --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
+ `--host=$LIN_TGT, --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
  
 `--enable-kernel=3.2` - оптимизирует glibc для использования с ядрами новее 3.2.
 
@@ -81,7 +81,7 @@ cd       build
 
 `libc_cv_include_x86_isa_level=no` - исключает возможную ошибку.
 
-` --disable-nscd   --disable-timezone-tools` - демон nscd и инструменты для управления часовыми поясами не нужны для временной glibc. 
+` --disable-nscd, --disable-timezone-tools` - демон nscd и инструменты для управления часовыми поясами не нужны для временной glibc. 
 
 ## Сборка
 ```bash
