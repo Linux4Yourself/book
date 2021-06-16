@@ -1,9 +1,8 @@
-- **Предисловие**
-  - [Предисловие](prologue/foreword)
+- [**Предисловие**](prologue/foreword)
   - [От авторов](prologue/from-authors)
   - [Преимущества](prologue/benefits)
   - [Прежде чем начать](prologue/before-start)
-  - [Обозначения принятые в книге](prologue/typography)
+  - [Принятые обозначения](prologue/typography)
   - [Информация об используемых пакетах](prologue/packages)
   - [Опечатки и неточности](prologue/inaccuracies)
 
