@@ -11,7 +11,7 @@ window.$docsify = {
 	maxLevel: 2,
 	subMaxLevel: 3,
 	auto2top: true,
-	homepage: './prologue/foreword.md',
+	homepage: './index.md',
 	autoHeader: true,
 	executeScript: true,
 	mergeNavbar: true,
