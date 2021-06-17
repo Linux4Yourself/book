@@ -1,1034 +1,1064 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://lx4u.ru/dev/#/prologue/foreword</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prologue/foreword</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prologue/from-authors</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prologue/from-authors</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prologue/benefits</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prologue/benefits</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prologue/before-start</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prologue/before-start</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prologue/typography</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prologue/typography</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prologue/packages</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prologue/packages</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prologue/inaccuracies</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prologue/inaccuracies</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/arch</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/arch</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/requrements</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/requrements</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/about-sbu</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/about-sbu</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/create-partition</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/create-partition</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/set-lin</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/set-lin</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/mount-partition</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/mount-partition</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/create-dirs</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/create-dirs</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/download</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/download</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/add-user</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/add-user</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/set-env</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/set-env</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/about-tests</loc>
-	<lastmod>2021-06-09T17:37:47+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/about-tests</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/about-priority</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/about-priority</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/general-build-instruction</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/general-build-instruction</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/prepare/about-threads</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/prepare/about-threads</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/cross-toolchain/cross-toolchain</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/cross-toolchain/cross-toolchain</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/cross-toolchain/binutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/cross-toolchain/binutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/cross-toolchain/gcc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/cross-toolchain/gcc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/tempsystem</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/linux-headers</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/linux-headers</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/tempsystem</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/glibc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/glibc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/libstdc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/libstdc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/m4</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/m4</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/ncurses</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/ncurses</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/bash</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/bash</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/coreutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/coreutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/diffutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/diffutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/file</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/file</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/findutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/findutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/gawk</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/gawk</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/grep</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/grep</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/gzip</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/gzip</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/make</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/make</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/patch</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/patch</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/sed</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/sed</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/tar</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/tar</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/xz</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/xz</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/binutils-p2</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/binutils-p2</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/gcc-p2</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/gcc-p2</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/change-owner</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/change-owner</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/enter-in-chroot</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/enter-in-chroot</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/create-files</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/create-files</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/libstdc-p2</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/libstdc-p2</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/gettext</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/gettext</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/bison</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/bison</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/perl</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/perl</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/python</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/python</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/texinfo</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/texinfo</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/util-linux</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/util-linux</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-temp-system/cleanup</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-temp-system/cleanup</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/build-system</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/build-system</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/set-profile</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/set-profile</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/iana-etc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/iana-etc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/glibc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/glibc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/zlib</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/zlib</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/bz2</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/bz2</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/xz</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/xz</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/zstd</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/zstd</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/file</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/file</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/readline</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/readline</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/m4</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/m4</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/bc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/bc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/flex</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/flex</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/tcl</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/tcl</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/expect</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/expect</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/dejagnu</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/dejagnu</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/binutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/binutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/gmp</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/gmp</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/mpfr</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/mpfr</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/mpc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/mpc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/isl</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/isl</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/attr</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/attr</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/acl</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/acl</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/libcap</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/libcap</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/shadow</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/shadow</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/gcc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/gcc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/pkg-config</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/pkg-config</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/ncurses</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/ncurses</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/sed</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/sed</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/psmisc</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/psmisc</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/gettext</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/gettext</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/bison</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/bison</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/grep</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/grep</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/bash</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/bash</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/libtool</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/libtool</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/gdbm</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/gdbm</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/gperf</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/gperf</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/expat</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/expat</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/inetutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/inetutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/perl</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/perl</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/xml-parser</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/xml-parser</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/intltool</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/intltool</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/autoconf</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/autoconf</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/automake</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/automake</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/kmod</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/kmod</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/libelf</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/libelf</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/libffi</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/libffi</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/openssl</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/openssl</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/python</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/python</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/ninja</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/ninja</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/meson</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/meson</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/coreutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/coreutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/check</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/check</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/diffutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/diffutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/gawk</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/gawk</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/findutils</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/findutils</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/groff</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/groff</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/less</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/less</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/gzip</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/gzip</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/iproute</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/iproute</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/kbd</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/kbd</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/libpipeline</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/libpipeline</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/make</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/make</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/patch</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/patch</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/tar</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/tar</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/mandb</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/mandb</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/texinfo</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/texinfo</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/popt</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/popt</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/freetype</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/freetype</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/dosfstools</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/dosfstools</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/wget</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/wget</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/libtasn1</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/libtasn1</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/p11-kit</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/p11-kit</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/make-ca</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/make-ca</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/text-editor</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/text-editor</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/vim</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/vim</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/emacs</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/emacs</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/nano</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/nano</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/init-system</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/init-system</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/eudev</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/eudev</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/procps-ng-sysv</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/procps-ng-sysv</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/util-linux-sysvinit</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/util-linux-sysvinit</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/sysklogd</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/sysklogd</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/sysvinit</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/sysvinit</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/bootscripts</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/bootscripts</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/systemd-users</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/systemd-users</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/systemd</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/systemd</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/dbus</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/dbus</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/procps-ng-systemd</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/procps-ng-systemd</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/util-linux-systemd</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/util-linux-systemd</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/e2fsprogs</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/e2fsprogs</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/about-grub</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/about-grub</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/efivar</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/efivar</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/efibootmgr</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/efibootmgr</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/grub-efi</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/grub-efi</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/grub-mbr</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/grub-mbr</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/build-system/cleanup</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/build-system/cleanup</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/setup/setup</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/setup/setup</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/setup/fstab</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/setup/fstab</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/setup/shells</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/setup/shells</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/setup/hw-clock</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/setup/hw-clock</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/setup/network-systemd</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/setup/network-systemd</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/setup/sysvinit-conf</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/setup/sysvinit-conf</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/kernel/kernel-setup-intro</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/kernel/kernel-setup-intro</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/kernel/kernel-setup</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/kernel/kernel-setup</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/additional</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/kernel/about-fw</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/LinuxStructure1</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/boot/boot</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/LinuxStructure2</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/boot/mbr</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/src-compiling</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/boot/uefi</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/error-fix</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/final/final</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/partitions_calalogs</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/additional</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/swap</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/LinuxStructure1</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/cross-compiler</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/LinuxStructure2</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/zram</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/src-compiling</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/cpu-arch</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/error-fix</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
 <url>
-	<loc>https://lx4u.ru/dev/#/additional/sha-bang</loc>
-	<lastmod>2021-06-09T17:37:48+03:00</lastmod>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/partitions_calalogs</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.25</priority>
+</url>
+<url>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/swap</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.25</priority>
+</url>
+<url>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/zram</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.25</priority>
+</url>
+<url>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/cross-compiler</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.25</priority>
+</url>
+<url>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/cpu-arch</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.25</priority>
+</url>
+<url>
+	<loc>https://lx4u.ru/release/v.1.0/#/additional/sha-bang</loc>
+	<lastmod>2021-06-17T11:24:00+03:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.25</priority>
 </url>
