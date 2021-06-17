@@ -7,7 +7,7 @@
 <package-script :package="'gettext'" :type="'build'"></package-script>
 
 ## Тестирование
-<package-script :package="'gettext'" :type="'build'"></package-script>
+<package-script :package="'gettext'" :type="'test'"></package-script>
 
 > Тестирование добавляет +3 SBU ко всему времени установки пакета.
 
