@@ -7,7 +7,7 @@
 <package-script :package="'bison'" :type="'build'"></package-script>
 
 ## Тестирование
-<package-script :package="'bison'" :type="'build'"></package-script>
+<package-script :package="'bison'" :type="'test'"></package-script>
 
 > Добавляет примерно 5,5 SBU к общему времени установки пакета
 

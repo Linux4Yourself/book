@@ -4,7 +4,7 @@
 ## Сборка
 <package-script :package="'xml-parser'" :type="'build'"></package-script>
 ## Тестирование
-<package-script :package="'xml-parser'" :type="'build'"></package-script>
+<package-script :package="'xml-parser'" :type="'test'"></package-script>
 ## Установка
 <package-script :package="'xml-parser'" :type="'install'"></package-script>
 
