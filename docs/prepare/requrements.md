@@ -6,7 +6,7 @@
 
 **Чтобы узнать, что ваша хост-система полностью соответствует всем необходимым требованиям, для дальнейшей работы, выполните следующий набор команд:**
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/version-check.sh ':include')
+<common-script :name="'version-check'"></common-script>
 
 !> Внимательно изучите результат выполнения. В нём не должно встречаться строк, содержащих ERROR, command not found, failed.
 
@@ -74,3 +74,7 @@ texi2any (GNU texinfo) 6.6
 xz (XZ Utils) 5.2.4
 g++ compilation OK
 ```
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

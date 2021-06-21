@@ -13,15 +13,15 @@
 ## Для multilib
 
 ### Очистка
-<package-script :package="'xz'" :type="'multi_prepare'"></package-script>
+<package-script :package="'zstd'" :type="'multi_prepare'"></package-script>
 
 ### Сборка 
 
-<package-script :package="'xz'" :type="'multi_build'"></package-script>
+<package-script :package="'zstd'" :type="'multi_build'"></package-script>
 
 ### Установка
 
-<package-script :package="'xz'" :type="'multi_install'"></package-script>
+<package-script :package="'zstd'" :type="'multi_install'"></package-script>
 
 ## Установленные файлы
 

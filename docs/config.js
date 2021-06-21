@@ -11,7 +11,7 @@ window.$docsify = {
 	maxLevel: 2,
 	subMaxLevel: 3,
 	auto2top: true,
-	homepage: './prologue/foreword.md',
+	homepage: './index.md',
 	autoHeader: true,
 	executeScript: true,
 	mergeNavbar: true,
@@ -47,8 +47,8 @@ book = {
 	scriptsUrl: 'https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts',
 	// ревизия книги. (develop | release | tag (releases/v.0.0.1))
 	// выставить в релизной ветке.
-	revision: 'develop',
-	revisionShort: 'dev',
+	revision: 'release/v.1.0',
+	revisionShort: 'rel',
 }
 
 const exrtraUrl =  `${book.revisionShort}-extra/#/`;
@@ -58,6 +58,7 @@ const pkgsUrlBase = `https://raw.githubusercontent.com/Linux4Yourself/Linux4Your
 const pkgsSrc = `${pkgsUrlBase}/packages.json`;
 const wgetList = `${pkgsUrlBase}/wget-list`;
 const md5Sums = `${pkgsUrlBase}/md5sums`;
+const scriptsUrlBase = `${book.scriptsUrl}/${book.revision}/src`;
 
 // Получить список всех пакетов из источника.
 getPackages = function () {
@@ -72,6 +73,13 @@ getPackage = function (name) {
 
 getPackageScript = function (name, script) {
 	return axios.get(`${pkgsUrlBase}/${name}/${script}`, {
+			responseType: 'text'
+		})
+		.then(response => response.data);
+}
+
+selectScript = function(name) {
+		return axios.get(`${scriptsUrlBase}/${name}.sh`, {
 			responseType: 'text'
 		})
 		.then(response => response.data);

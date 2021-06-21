@@ -41,7 +41,7 @@ cd build
 ### Для multilib
 Добавьте параметр``--enable-multilib``
 
-### Объяснение 
+### Значения параметров 
 
 ` --with-sysroot=$LIN ` `--target=$LIN_TGT` - необходимо для кросс-компиляции.
 

@@ -17,7 +17,7 @@
 
 Создайте файл ``fstab``:
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/fstab.sh ':include')
+<common-script :name="'fstab'"></common-script>
 
 Замените `sdX` на нужное значение.
 
@@ -63,3 +63,7 @@ hdparm -I /dev/sda | grep NCQ
 Если результат будет пустой - данная опция не поддерживается.
 
 !> После выполнения данных инструкций внимательно проверьте данный файл на наличие ошибок.
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

@@ -6,6 +6,9 @@
 ## Сборка
 <package-script :package="'isl'" :type="'build'"></package-script>
 
+## Тестирование
+<package-script :package="'isl'" :type="'test'"></package-script>
+
 ## Установка
 <package-script :package="'isl'" :type="'install'"></package-script>
 
@@ -13,9 +16,6 @@
 
 <package-script :package="'isl'" :type="'postinstall'"></package-script>
  
-## Установленные файлы
-
-Библиотеки: libmpc.so
 
 <script>
 	new Vue({ el: '#main' })

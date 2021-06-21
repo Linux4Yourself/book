@@ -7,7 +7,7 @@
 <package-script :package="'grep'" :type="'build'"></package-script>
 
 ## Тестирование
-<package-script :package="'grep'" :type="'build'"></package-script>
+<package-script :package="'grep'" :type="'test'"></package-script>
 
 ## Установка
 <package-script :package="'grep'" :type="'install'"></package-script>

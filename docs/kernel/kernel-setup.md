@@ -317,4 +317,8 @@ modprobe.d/usb.conf`` как раз для этой цели. Этот файл 
 
 Создайте новый файл ``/etc/modprobe.d/usb.conf`` выполнив следующую команду:
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/modprobe.sh ':include')
+<common-script :name="'modprobe'"></common-script>
+
+<script>
+	new Vue({ el: '#main' })
+</script> 
