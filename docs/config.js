@@ -48,7 +48,7 @@ book = {
 	// ревизия книги. (develop | release | tag (releases/v.0.0.1))
 	// выставить в релизной ветке.
 	revision: 'develop',
-	revisionShort: 'rel',
+	revisionShort: 'dev',
 }
 
 const exrtraUrl =  `${book.revisionShort}-extra/#/`;
