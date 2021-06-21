@@ -15,7 +15,7 @@ mkdir -pv $LIN/tools
 
 Теперь создайте базовую иеархию файловой системы:
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/file-system.sh ':include')
+<common-script :name="'file-system'"></common-script>
 
 Подробнее об иерархии каталогов можно узнать в спецификации [FHS](https://refspecs.linuxfoundation.org/fhs.shtml)
 
@@ -32,3 +32,7 @@ mkdir -pv $LIN/usr/lib32
 ```bash
 ln -sv usr/lib32 $LIN/lib32
 ```
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

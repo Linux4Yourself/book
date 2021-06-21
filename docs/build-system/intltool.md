@@ -6,10 +6,6 @@
 
 <package-script :package="'intltool'" :type="'prepare'"></package-script>
 <package-script :package="'intltool'" :type="'configure'"></package-script>
-```bash
-./configure --prefix=/usr
-```
-
 ## Сборка
 <package-script :package="'intltool'" :type="'build'"></package-script>
 

@@ -12,7 +12,7 @@ rm -rf /tmp/*
 logout
 ```
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/chroot.sh ':include')
+<common-script :name="'chroot'"></common-script>
 
 Файлы `.la` потеряли свою актуальность и могут вызвать проблемы при обновлении. Удалите их:
 
@@ -50,3 +50,7 @@ find /usr/lib{,32} -type f -name \*.so* ! -name \*dbg \
 find /usr/{bin,sbin,libexec} -type f \
     -exec strip --strip-all {} ';'
 ```
+
+<script>
+	new Vue({ el: '#main' })
+</script> 

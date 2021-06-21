@@ -4,6 +4,8 @@
 
 Создайте данный файл:
 
-[filename](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts/develop/src/etc-inputrc.sh ':include')
+<common-script :name="'etc-inputrc'"></common-script>
 
-
+<script>
+	new Vue({ el: '#main' })
+</script> 

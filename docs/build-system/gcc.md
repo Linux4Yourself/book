@@ -48,7 +48,7 @@
 
 <package-script :package="'gcc'" :type="'test'"></package-script>
 
-> Тестирование занимает достаточно большое время. Учитывайте это.
+> Тестирование занимает достаточно много времени.
 
 Для просмотра итогов теста выполните:
 
@@ -75,7 +75,7 @@
 ```bash
 echo 'int main(){}' > dummy.c
 cc dummy.c
-./a.out | echo succes
+./a.out | echo success
 ```
 
 Для multilib:
@@ -83,7 +83,7 @@ cc dummy.c
 ```bash
 echo 'int main(){}' > dummy.c
 cc -m32 dummy.c
-./a.out | echo succes
+./a.out | echo success
 ```
 
 Удалите тестовые файлы:
