@@ -47,7 +47,7 @@ book = {
 	scriptsUrl: 'https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Scripts',
 	// ревизия книги. (develop | release | tag (releases/v.0.0.1))
 	// выставить в релизной ветке.
-	revision: 'release/v.1.0',
+	revision: 'develop',
 	revisionShort: 'rel',
 }
 
