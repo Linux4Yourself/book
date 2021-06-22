@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-sitemap https://lx4u.ru/release/v.1.0/#/sitemap.xml
+sitemap https://lx4u.ru/dev/#/sitemap.xml
