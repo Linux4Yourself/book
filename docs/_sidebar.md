@@ -5,6 +5,7 @@
   - [Принятые обозначения](prologue/typography)
   - [Информация об используемых пакетах](prologue/packages)
   - [Опечатки и неточности](prologue/inaccuracies)
+  - [Журнал изменений](prologue/changelog)
 
 - **Подготовительные работы**
   - [Целевые архитектуры](prepare/arch)
