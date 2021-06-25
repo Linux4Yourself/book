@@ -1,4 +1,21 @@
-<pkg :name="'check'" instsize showsbu2></pkg>
+<package-info :package="package" showsbu2></package-info>
+
+<script>
+		new Vue({
+		el: '#main',
+		data: { package: {} },
+		mounted: function () {
+				this.getPackage('check');
+		},
+		methods: {
+			getPackage: function(name) {
+					getPackage(name)
+					.then(response => this.package = response);
+			},
+		}
+  })
+</script>
+
 
 ## Настройка
 <package-script :package="'check'" :type="'configure'"></package-script>
