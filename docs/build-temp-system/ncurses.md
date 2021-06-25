@@ -77,7 +77,7 @@ echo "INPUT(-lncursesw)" > $LIN/usr/lib/libncurses.so
 
 ### Настройка
 Соберите 32-битную версию ncurses:
-Для этого, во первых, выполните:
+Для этого, во-первых, выполните:
 
 ```bash
 make distclean
