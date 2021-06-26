@@ -27,7 +27,7 @@
 
 Очистите предыдущую сборку, но сохраните страницы руководства, так как они не могут быть воссозданы, поскольку пакет `xsltproc` не установлен:
 
-<pkg :name="'kmod'" instsize showsbu2></pkg>
+<package-script :package="'kmod'" :type="'multi_prepare'"></package-script>
 
 ### Подготовка
 <package-script :package="'kmod'" :type="'multi_configure'"></package-script>
