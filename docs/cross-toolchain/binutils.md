@@ -16,7 +16,7 @@
   })
 </script>
 
-## Настройка 
+## Настройка
 
 !> **Пакет binutils должен быть установлен раньше GCC и libc**
 
@@ -30,26 +30,28 @@ cd build
 ?> 1 SBU равен времени сборки данного пакета
 
 Запустим скрипт `configure`:
+
 ```bash
 ../configure  --prefix=$LIN/tools       \
              --with-sysroot=$LIN        \
              --target=$LIN_TGT          \
              --disable-nls              \
-             --disable-werror        
+             --disable-werror
 ```
 
 ### Для multilib
-Добавьте параметр``--enable-multilib``
 
-### Значения параметров 
+Добавьте параметр`--enable-multilib`
 
-` --with-sysroot=$LIN ` `--target=$LIN_TGT` - необходимо для кросс-компиляции.
+### Значения параметров
+
+`--with-sysroot=$LIN` `--target=$LIN_TGT` - необходимо для кросс-компиляции.
 
 `--disable-nls` - Для кросс-компилятора не требуется локализация.
 
 `--disable-werror` - Отключает остановку сборки при предупреждениях.
 
-## Сборка 
+## Сборка
 
 ```bash
 make

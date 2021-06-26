@@ -20,4 +20,4 @@
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

@@ -24,15 +24,13 @@
 sed -i 's/extras//' Makefile.in
 ```
 
-
 ```bash
 ./configure --prefix=/usr   \
             --host=$LIN_TGT \
-            --build=$(./config.guess)  --disable-nls  
+            --build=$(./config.guess)  --disable-nls
 ```
 
 ## Сборка
-
 
 ```bash
 make

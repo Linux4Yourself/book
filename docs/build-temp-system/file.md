@@ -33,13 +33,11 @@ popd
 
 ## Настройка
 
-
 ```bash
 ./configure --prefix=/usr --host=$LIN_TGT --build=$(./config.guess)
 ```
 
 ## Сборка
-
 
 ```bash
 make FILE_COMPILE=$(pwd)/build/src/file

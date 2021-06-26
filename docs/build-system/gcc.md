@@ -1,4 +1,5 @@
 <pkg :name="'gcc'" instsize showsbu2></pkg>
+
 <script>
 		new Vue({
 		el: '#main',
@@ -43,8 +44,8 @@
 
 ## Тестирование
 
-* Увеличьте размер стека по умолчанию
-* Произведите тестирование от непривилегированного пользователя во избежание непредвиденных ситуаций с системой.
+- Увеличьте размер стека по умолчанию
+- Произведите тестирование от непривилегированного пользователя во избежание непредвиденных ситуаций с системой.
 
 <package-script :package="'gcc'" :type="'test'"></package-script>
 
@@ -56,7 +57,7 @@
 ../contrib/test_summary
 ```
 
-?> Известно, что 6 тестов, связанных с `get_time`, дают сбои. По видимому, это связано с локалью `en_HK`. Кроме того, тест `COSTEXPR-52830` не удается. 
+?> Известно, что 6 тестов, связанных с `get_time`, дают сбои. По видимому, это связано с локалью `en_HK`. Кроме того, тест `COSTEXPR-52830` не удается.
 
 ## Установка
 
@@ -94,8 +95,8 @@ rm -v dummy.c a.out
 
 ## Установленные файлы
 
-Программы:  c++ (ссылка на g++), cc (ссылка на gcc), cpp, g++, gcc, gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump и gcov-tool
+Программы: c++ (ссылка на g++), cc (ссылка на gcc), cpp, g++, gcc, gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump и gcov-tool
 
-Библиотеки:  libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so}, liblsan.{a,so}, liblto_plugin.so, libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a, libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so} и libubsan.{a,so}
+Библиотеки: libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so}, liblsan.{a,so}, liblto_plugin.so, libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a, libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so} и libubsan.{a,so}
 
-Директории:  /usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc и /usr/share/gcc-11.1.0
+Директории: /usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc и /usr/share/gcc-11.1.0

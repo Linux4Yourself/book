@@ -26,7 +26,7 @@
             --build=$(build-aux/config.guess) \
             --enable-install-program=hostname \
             --enable-no-install-program=kill,uptime  \
-            --disable-nls    
+            --disable-nls
 ```
 
 ### Значения параметров
@@ -42,6 +42,7 @@ make
 ```
 
 ## Установка
+
 ```bash
 make DESTDIR=$LIN install
 ```

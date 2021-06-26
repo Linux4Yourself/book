@@ -17,7 +17,9 @@
 		}
   })
 </script>
+
 ## Настройка
+
 ```bash
 ./configure --prefix=/usr   \
             --host=$LIN_TGT \
@@ -25,11 +27,13 @@
 ```
 
 ## Сборка
+
 ```bash
 make
 ```
 
 ## Установка
+
 ```bash
 make DESTDIR=$LIN install
 ```
