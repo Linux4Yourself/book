@@ -250,7 +250,7 @@ cp -iv arch/x86/boot/bzImage /boot/vmlinuz-{{ package.version }}-my-kernel
 процедур, используемых ядром операционной системы Linux. В этой таблице перечислены
 имена переменных и функций и их адреса в памяти компьютера. Эта таблица весьма полезна
 при отладке ядра в случае Kernel panic или Linux oops. System.map генерируется при компиляции
-ядра. Выполните следующщую команду для установки файла System.map :
+ядра. Выполните следующую команду для установки файла System.map :
 
 <pre class="pre">
 cp -iv System.map /boot/System.map-{{ package.version }}
