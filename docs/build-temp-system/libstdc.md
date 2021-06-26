@@ -32,7 +32,6 @@ SBU: <b>1</b>
   })
 </script>
 
-
 ## Настройка
 
 !> **Данный пакет входит в архив с исходным кодом пакета GCC**
@@ -44,7 +43,7 @@ mkdir -v build
 cd       build
 ```
 
-Запустите скрипт `configure` 
+Запустите скрипт `configure`
 
 ```bash
 ../libstdc++-v3/configure           \
@@ -66,7 +65,6 @@ cd       build
 `--disable-libstdcxx-pch` - Отключает установку предварительно скомпилированных заголовков, ненужных на данном этапе
 
 `--with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.1.0` - Путь поиска заголовков C++
-
 
 ## Сборка
 

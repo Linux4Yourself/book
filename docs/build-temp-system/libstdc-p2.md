@@ -30,7 +30,6 @@ SBU: <b>1</b>
   })
 </script>
 
-
 ## Настройка
 
 !> **Данный пакет входит в архив с исходниками GCC**
@@ -48,7 +47,7 @@ mkdir -v build
 cd       build
 ```
 
-Запустите скрипт `configure` 
+Запустите скрипт `configure`
 
 ```bash
 ../libstdc++-v3/configure            \
@@ -61,7 +60,7 @@ cd       build
 
 ### Для multilib
 
-Замените ``--disable-multilib`` на ``--enable-multilib``.
+Замените `--disable-multilib` на `--enable-multilib`.
 
 ### Значения параметров
 

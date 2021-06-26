@@ -1,4 +1,5 @@
 - [**Предисловие**](prologue/foreword)
+
   - [От авторов](prologue/from-authors)
   - [Преимущества](prologue/benefits)
   - [Прежде чем начать](prologue/before-start)
@@ -58,7 +59,9 @@
   - [Texinfo](build-temp-system/texinfo)
   - [Util-linux](build-temp-system/util-linux)
   - [Очистка и сохранение временной системы](build-temp-system/cleanup)
+
 - [**Сборка Linux системы**](build-system/build-system)
+
   - [Настройка окружения bash](build-system/set-profile)
   - [Iana-etc](build-system/iana-etc)
   - [Glibc](build-system/glibc)
@@ -151,7 +154,6 @@
       - [D-Bus](build-system/dbus)
       - [Procps-ng](build-system/procps-ng-systemd)
       - [Util-linux](build-system/util-linux-systemd)
-      
   - [E2fsprogs](build-system/e2fsprogs)
   - [Grub](build-system/about-grub)
     - **EFI**
@@ -161,6 +163,7 @@
     - **Legacy boot**
       - [GRUB](build-system/grub-mbr)
   - [Очистка](build-system/cleanup)
+
 - [**Настройка системы**](setup/setup)
   - [Создание файла /etc/fstab](setup/fstab)
   - [Создание файла /etc/shells](setup/shells)
@@ -170,10 +173,12 @@
   - **SystemVInit**
     - [Настройка System V init](setup/sysvinit-conf)
 - [**Настройка и установка ядра**](kernel/kernel-setup-intro)
+
   - [Настройка](kernel/kernel-setup)
   - [О прошивках](kernel/about-fw)
 
 - [**Делаем систему загрузочной**](boot/boot)
+
   - [Создание загрузочной системы Legacy Boot MBR](boot/mbr)
   - [Создание загрузочной системы EFI](boot/uefi)
 

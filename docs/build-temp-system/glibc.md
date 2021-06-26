@@ -51,7 +51,7 @@ mkdir  build
 cd       build
 ```
 
-Далее запустите скрипт `configure`: 
+Далее запустите скрипт `configure`:
 
 ```bash
  ../configure                             \
@@ -67,23 +67,25 @@ cd       build
       --disable-nscd  \
       --disable-timezone-tools
 ```
+
 ### Для multilib
 
 Добавьте параметр `--enable-multi-arch`
 
 ### Значения параметров
 
- `--host=$LIN_TGT, --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
- 
+`--host=$LIN_TGT, --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
+
 `--enable-kernel=3.2` - оптимизирует glibc для использования с ядрами новее 3.2.
 
 `--with-headers=$LIN/usr/include` - задает путь к заголовкам ядра.
 
 `libc_cv_include_x86_isa_level=no` - исключает возможную ошибку.
 
-` --disable-nscd, --disable-timezone-tools` - демон nscd и инструменты для управления часовыми поясами не нужны для временной glibc. 
+` --disable-nscd, --disable-timezone-tools` - демон nscd и инструменты для управления часовыми поясами не нужны для временной glibc.
 
 ## Сборка
+
 ```bash
 make
 ```

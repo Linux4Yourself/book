@@ -3,16 +3,19 @@
 ## Настройка
 
 <package-script :package="'xz'" :type="'configure'"></package-script>
+
 ## Сборка
 
 <package-script :package="'xz'" :type="'build'"></package-script>
+
 ## Тестирование
+
 <package-script :package="'xz'" :type="'test'"></package-script>
 
 ## Установка
 
 <package-script :package="'xz'" :type="'install'"></package-script>
- 
+
 ## Для multilib
 
 ### Очистка
@@ -85,8 +88,8 @@
 
 `xzmore` - Работает больше с файлами, сжатыми XZ
 
-`liblzma` - Библиотека, реализующая сжатие данных без потерь с сортировкой по блокам с использованием цепного алгоритма Лемпеля-Зива-Маркова. 
+`liblzma` - Библиотека, реализующая сжатие данных без потерь с сортировкой по блокам с использованием цепного алгоритма Лемпеля-Зива-Маркова.
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

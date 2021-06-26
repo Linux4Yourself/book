@@ -10,7 +10,6 @@
 
 <package-script :package="'binutils'" :type="'configure'"></package-script>
 
-
 ### Для multilib
 
 <package-script :package="'binutils'" :type="'multi_configure'"></package-script>
@@ -28,7 +27,9 @@
 `--with-system-zlib` - Использовать системную версию `zlib`, а не включенную в пакет.
 
 ## Сборка
+
 <package-script :package="'binutils'" :type="'build'"></package-script>
+
 ## Тестирование
 
 <package-script :package="'binutils'" :type="'test'"></package-script>
@@ -38,7 +39,7 @@
 ## Установка
 
 <package-script :package="'binutils'" :type="'install'"></package-script>
- 
+
 Удалите бесполезные статические библиотеки:
 
 <package-script :package="'binutils'" :type="'postinstall'"></package-script>
@@ -53,4 +54,4 @@
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

@@ -14,6 +14,7 @@
 ```bash
 mkfs -v -t ext4 /dev/sdX
 ```
+
 Где sdX - ваш раздел
 
 ## Форматирование EFI раздела
@@ -25,7 +26,7 @@ mkfs -v -t ext4 /dev/sdX
 mkfs.vfat -v /dev/sdN
 ```
 
-Где  sdN - ваш раздел.
+Где sdN - ваш раздел.
 После этого следует установить на него флаги boot,esp.
 
 ## Для MBR и Legacy boot
@@ -47,7 +48,6 @@ mkswap /dev/sdY
 Где sdY - ваш swap раздел.
 
 ?> Больше о создании и настройке подкачки читать [здесь](additional/swap.md)
-
 
 ## Другие разделы
 

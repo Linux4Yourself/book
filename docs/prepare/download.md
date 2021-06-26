@@ -7,7 +7,7 @@
 wget {{ wgetList }}
 </pre>
 
-Далее его можно передать как параметр программе ``wget``.
+Далее его можно передать как параметр программе `wget`.
 
 <pre>
 wget --input-file=wget-list --continue --directory-prefix=$LIN/usr/src
@@ -21,7 +21,7 @@ wget --input-file=wget-list --continue --directory-prefix=$LIN/usr/src
 wget {{ md5Sums }}
 </pre>
 
-Поместите его в каталог ``$LIN/usr/src`` и выполните команду:
+Поместите его в каталог `$LIN/usr/src` и выполните команду:
 
 ```bash
 pushd $LIN/usr/src

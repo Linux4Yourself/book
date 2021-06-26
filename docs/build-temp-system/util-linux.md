@@ -18,7 +18,7 @@
 
 ## Настройка
 
-FHS рекомендует использовать директорию ``/var/lib/hwclock`` для файла ``adjtime``. Создайте её:
+FHS рекомендует использовать директорию `/var/lib/hwclock` для файла `adjtime`. Создайте её:
 
 ```bash
 mkdir -pv /var/lib/hwclock
@@ -37,7 +37,7 @@ mkdir -pv /var/lib/hwclock
             --disable-pylibmount \
             --disable-static     \
             --without-python     \
-            runstatedir=/run  --enable-usrdir-path  
+            runstatedir=/run  --enable-usrdir-path
 ```
 
 ### Значения параметров
@@ -47,7 +47,6 @@ mkdir -pv /var/lib/hwclock
 `--without-python` - Отключает сборку ненужных привязок python.
 
 ## Сборка
-
 
 ```bash
 make
@@ -87,7 +86,7 @@ CC="gcc -m32" \
             --host=i686-pc-linux-gnu \
 	    --enable-usrdir-path \
 	    --disable-bash-completion \
-	    --disable-schedutils   --disable-fdisks  --disable-mount  --disable-fsck   
+	    --disable-schedutils   --disable-fdisks  --disable-mount  --disable-fsck
 ```
 
 Объснение опций configure

@@ -36,7 +36,7 @@
   })
 </script>
 
-## Настройка 
+## Настройка
 
 ### Дополнительные необходимые файлы
 
@@ -78,7 +78,7 @@ mkdir build
 cd build
 ```
 
-Разрешим сборку ``libgcc`` с поддержкой многопоточности:
+Разрешим сборку `libgcc` с поддержкой многопоточности:
 
 ```bash
 mkdir -pv $LIN_TGT/libgcc
@@ -86,6 +86,7 @@ ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
 ```
 
 Запустите скрипт `configure`:
+
 ```bash
 ../configure                                       \
     --build=$(../config.guess)                     \
@@ -105,29 +106,31 @@ ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
     --enable-languages=c,c++ --disable-multilib
 ```
 
-### Для multilib 
+### Для multilib
+
 замените параметр `--disable-multilib` на `--enable-multilib --with-multilib-list=m64,m32`
 
-### Значения параметров 
+### Значения параметров
 
-`--enable-initfini-array`    Этот переключатель заставляет использовать некоторые внутренние структуры данных, которые необходимы, но не могут быть обнаружены при построении кросс-компилятора.
+`--enable-initfini-array` Этот переключатель заставляет использовать некоторые внутренние структуры данных, которые необходимы, но не могут быть обнаружены при построении кросс-компилятора.
 
-`--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx`    Эти переключатели отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp, libvtv и стандартной библиотеки C ++ соответственно. Эти функции не будут скомпилированы при сборке кросс-компилятора и не являются необходимыми для кросс-компиляции временной libc.
+`--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx` Эти переключатели отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp, libvtv и стандартной библиотеки C ++ соответственно. Эти функции не будут скомпилированы при сборке кросс-компилятора и не являются необходимыми для кросс-компиляции временной libc.
 
-`--enable-languages ​​= c, c ++`    Эта опция гарантирует, что будут построены только компиляторы C и C ++. Это единственные языки, которые нужны сейчас. 
+`--enable-languages ​​= c, c ++` Эта опция гарантирует, что будут построены только компиляторы C и C ++. Это единственные языки, которые нужны сейчас.
 
-## Сборка 
+## Сборка
 
 ```bash
 make
 ```
 
 ## Установка
+
 ```bash
-make DESTDIR=$LIN install 
+make DESTDIR=$LIN install
 ```
 
-Некоторые программы используют команду ``cc``, а не ``gcc``. Создайте символическую ссылку на ``gcc``:
+Некоторые программы используют команду `cc`, а не `gcc`. Создайте символическую ссылку на `gcc`:
 
 ```bash
 ln -sv gcc $LIN/usr/bin/cc

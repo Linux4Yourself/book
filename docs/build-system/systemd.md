@@ -1,16 +1,20 @@
 <pkg :name="'systemd'" instsize showsbu2></pkg>
 
 ## Подготовка
+
 Удалите ненужную группу `render` из правил `udev`:
 <package-script :package="'systemd'" :type="'prepare'"></package-script>
 
 ## Настройка
+
 <package-script :package="'systemd'" :type="'configure'"></package-script>
 
 ## Сборка
+
 <package-script :package="'systemd'" :type="'build'"></package-script>
 
 ## Установка
+
 <package-script :package="'systemd'" :type="'install'"></package-script>
 
 - Удалите ненужный каталог:
@@ -23,17 +27,21 @@
 ## Для multilib
 
 ### Очистка
+
 <package-script :package="'systemd'" :type="'multi_prepare'"></package-script>
 
 ### Настройка
+
 <package-script :package="'systemd'" :type="'multi_configure'"></package-script>
 
-### Сборка 
+### Сборка
+
 <package-script :package="'systemd'" :type="'multi_build'"></package-script>
 
 ### Установка
+
 <package-script :package="'systemd'" :type="'multi_install'"></package-script>
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>
