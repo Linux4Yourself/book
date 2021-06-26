@@ -17,9 +17,9 @@
 
 <package-script :package="'systemd'" :type="'install'"></package-script>
 
-- Удалите ненужный каталог:
-- Создайте файл `/etc/machine-id` необходимый для `systemd-journald`:
-- Настройте базовую целевую структуру:
+- Удалите ненужный каталог;
+- Создайте файл `/etc/machine-id`, необходимый для `systemd-journald`;
+- Настройте базовую целевую структуру;
 - Отключите службу, которая, как известно, вызывает проблемы с системами, использующими конфигурацию сети, отличную от той, которая предоставляется systemd-networkd:
 
 <package-script :package="'systemd'" :type="'postinstall'"></package-script>

@@ -2,8 +2,8 @@
 
 ## Подготовка
 
-- Программа `arpd` требует установленной Berkeley DB. Отключите её,
-- Отключите 2 модуля требующих `iptables`,
+- Программа `arpd` требует установленную Berkeley DB. Отключите её,
+- Отключите 2 модуля, требующие `iptables`,
 
 <package-script :package="'iproute2'" :type="'prepare'"></package-script>
 
