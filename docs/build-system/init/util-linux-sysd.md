@@ -36,4 +36,4 @@
 
 <script>
 	new Vue({ el: '#main' })
-</script>https://github.com/Linux4Yourself/Linux4Yourself.Book/blob/Linuxoid85-patch-2/docs/build-system/sysvinit.md
+</script>
