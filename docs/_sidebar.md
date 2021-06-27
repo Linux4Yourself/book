@@ -138,12 +138,15 @@
   - [Make-ca](build-system/make-ca)
 
   - [**Выбор текстового редактора**](build-system/text-editor)
+
     - [Vim](build-system/vim)
     - [Emacs](build-system/emacs)
     - [Nano](build-system/nano)
 
   - [**Выбор системы инициализации**](build-system/init-system)
+
     - [**SysVinit**](build-system/init/sysvinit-page)
+
       - [Eudev](build-system/init/eudev-sysv)
       - [Procps-ng](build-system/init/procps-ng-sysv)
       - [Util-linux](build-system/init/util-linux-sysv)
@@ -152,33 +155,38 @@
       - [Bootscripts](build-system/init/bootscripts)
 
     - [**Systemd**](build-system/init/systemd-page.md)
-      - [Создание пользователей и групп для Systemd](build-system/init/systemd-users)
+      - [Создание пользователей и групп для systemd](build-system/init/systemd-users)
       - [Systemd](build-system/init/systemd)
       - [D-Bus](build-system/init/dbus-sysd)
       - [Procps-ng](build-system/init/procps-ng-sysd)
       - [Util-linux](build-system/init/util-linux-sysd)
 
   - [E2fsprogs](build-system/e2fsprogs)
-  - [Grub](build-system/about-grub)
+  - [GRUB](build-system/about-grub)
+
     - **EFI**
+
       - [Efivar](build-system/efivar)
       - [Efibootmgr](build-system/efibootmgr)
       - [GRUB](build-system/grub-efi)
 
     - **Legacy boot**
       - [GRUB](build-system/grub-mbr)
+
   - [Очистка](build-system/cleanup)
 
 - [**Настройка системы**](setup/setup)
+
   - [Создание файла /etc/fstab](setup/fstab)
   - [Создание файла /etc/shells](setup/shells)
 
-  - **Systemd**
+  - **systemd**
+
     - [Настройка аппаратных часов](setup/hw-clock)
     - [Настройка сети](setup/network-systemd)
 
-  - **SystemVInit**
-    - [Настройка System V init](setup/sysvinit-conf)
+  - **SysVinit**
+    - [Настройка SysVinit](setup/sysvinit-conf)
 
 - [**Настройка и установка ядра**](kernel/kernel-setup-intro)
 

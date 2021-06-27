@@ -9,7 +9,7 @@
 Примените патч для исправления работы клавиш backspace и delete:
 <package-script :package="'kbd'" :type="'patch'"></package-script>
 
-Удалите ненужную программу `resizecons` требующую `svgalib`:
+Удалите ненужную программу `resizecons`, требующую `svgalib`:
 <package-script :package="'kbd'" :type="'prepare'"></package-script>
 
 ## Настройка
