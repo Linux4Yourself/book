@@ -1,4 +1,4 @@
-<pkg :name="'xml-parser'" instsize showsbu2></pkg>
+<pkg :name="'XML-Parser'" instsize showsbu2></pkg>
 
 ## Настройка
 
