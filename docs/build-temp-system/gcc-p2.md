@@ -114,9 +114,9 @@ ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
 
 `--enable-initfini-array` Этот переключатель заставляет использовать некоторые внутренние структуры данных, которые необходимы, но не могут быть обнаружены при построении кросс-компилятора.
 
-`--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx` Эти переключатели отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp, libvtv и стандартной библиотеки C ++ соответственно. Эти функции не будут скомпилированы при сборке кросс-компилятора и не являются необходимыми для кросс-компиляции временной libc.
+`--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx` Эти переключатели отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp, libvtv и стандартной библиотеки C++ соответственно. Эти функции не будут скомпилированы при сборке кросс-компилятора и не являются необходимыми для кросс-компиляции временной libc.
 
-`--enable-languages ​​= c, c ++` Эта опция гарантирует, что будут построены только компиляторы C и C ++. Это единственные языки, которые нужны сейчас.
+`--enable-languages​​=c,c++` Эта опция гарантирует, что будут построены только компиляторы C иC ++. Это единственные языки, которые нужны сейчас.
 
 ## Сборка
 
