@@ -104,7 +104,7 @@ ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
     --disable-libvtv           \
     --disable-libstdcxx        \
     --enable-languages=c,c++   \
-	--disable-multilib
+    --disable-multilib
 ```
 
 ### Для multilib

@@ -100,7 +100,7 @@ cd build
     --disable-libvtv          \
     --disable-libstdcxx       \
     --enable-languages=c,c++  \
-	--disable-multilib
+    --disable-multilib
 ```
 
 ### Для multilib
