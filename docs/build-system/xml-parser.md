@@ -1,20 +1,20 @@
-<pkg :name="'xml-parser'" instsize showsbu2></pkg>
+<pkg :name="'XML-Parser'" instsize showsbu2></pkg>
 
 ## Настройка
 
-<package-script :package="'xml-parser'" :type="'configure'"></package-script>
+<package-script :package="'XML-Parser'" :type="'configure'"></package-script>
 
 ## Сборка
 
-<package-script :package="'xml-parser'" :type="'build'"></package-script>
+<package-script :package="'XML-Parser'" :type="'build'"></package-script>
 
 ## Тестирование
 
-<package-script :package="'xml-parser'" :type="'test'"></package-script>
+<package-script :package="'XML-Parser'" :type="'test'"></package-script>
 
 ## Установка
 
-<package-script :package="'xml-parser'" :type="'install'"></package-script>
+<package-script :package="'XML-Parser'" :type="'install'"></package-script>
 
 ## Установленные файлы
 
