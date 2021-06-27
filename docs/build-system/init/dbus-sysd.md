@@ -12,7 +12,7 @@
 
 <package-script :package="'dbus'" :type="'install'"></package-script>
 
-Создайте символическую ссылку, чтобы `SystemD` и `D-Bus` использовали один и тот же файл `machine-id`
+Создайте символическую ссылку, чтобы `systemd` и `D-Bus` использовали один и тот же файл `machine-id`
 <package-script :package="'dbus'" :type="'postinstall'"></package-script>
 
 ## Для multilib

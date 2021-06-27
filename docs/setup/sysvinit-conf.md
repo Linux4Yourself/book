@@ -1,4 +1,4 @@
-# Настройка System V init
+# Настройка SysVinit
 
 При загрузке `init` читает файл `/etc/inittab`. Создайте его:
 

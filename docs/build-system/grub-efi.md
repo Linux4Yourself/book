@@ -6,7 +6,7 @@ https://unifoundry.com/pub/unifont/unifont-13.0.06/font-builds/unifont-13.0.06.p
 
 ## Подготовка
 
-Установите шрифт, используемый grub
+Установите шрифт, используемый grub:
 
 <package-script :package="'grub'" :type="'prepare'"></package-script>
 
