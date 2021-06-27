@@ -2,19 +2,19 @@
 
 ## Настройка
 
-<package-script :package="'XML-Parser'" :type="'configure'"></package-script>
+<package-script :package="'xml-parser'" :type="'configure'"></package-script>
 
 ## Сборка
 
-<package-script :package="'XML-Parser'" :type="'build'"></package-script>
+<package-script :package="'xml-parser'" :type="'build'"></package-script>
 
 ## Тестирование
 
-<package-script :package="'XML-Parser'" :type="'test'"></package-script>
+<package-script :package="'xml-parser'" :type="'test'"></package-script>
 
 ## Установка
 
-<package-script :package="'XML-Parser'" :type="'install'"></package-script>
+<package-script :package="'xml-parser'" :type="'install'"></package-script>
 
 ## Установленные файлы
 
