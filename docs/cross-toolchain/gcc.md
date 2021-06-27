@@ -50,7 +50,7 @@
 
 Распакуйте дополнительные пакеты:
 
-!> Обратите внимание, что распаковка указанных пакетов должна производится из каталога пакета GCC.
+!> Обратите внимание, что распаковка указанных пакетов должна производиться из каталога пакета GCC.
 
 <pre>
 tar -xf ../{{ mpfr.fileName }}
@@ -81,25 +81,26 @@ cd build
 Запустим скрипт `configure`:
 
 ```bash
-../configure                                       \
-    --target=$LIN_TGT                              \
-    --prefix=$LIN/tools                            \
-    --with-glibc-version=2.11                      \
-    --with-sysroot=$LIN                            \
-    --with-newlib                                  \
-    --without-headers                              \
-    --enable-initfini-array                        \
-    --disable-nls                                  \
-    --disable-shared                               \
-    --disable-decimal-float                        \
-    --disable-threads                              \
-    --disable-libatomic                            \
-    --disable-libgomp                              \
-    --disable-libquadmath                          \
-    --disable-libssp                               \
-    --disable-libvtv                               \
-    --disable-libstdcxx                            \
-    --enable-languages=c,c++ --disable-multilib
+../configure                  \
+    --target=$LIN_TGT         \
+    --prefix=$LIN/tools       \
+    --with-glibc-version=2.11 \
+    --with-sysroot=$LIN       \
+    --with-newlib             \
+    --without-headers         \
+    --enable-initfini-array   \
+    --disable-nls             \
+    --disable-shared          \
+    --disable-decimal-float   \
+    --disable-threads         \
+    --disable-libatomic       \
+    --disable-libgomp         \
+    --disable-libquadmath     \
+    --disable-libssp          \
+    --disable-libvtv          \
+    --disable-libstdcxx       \
+    --enable-languages=c,c++  \
+	--disable-multilib
 ```
 
 ### Для multilib
@@ -116,11 +117,11 @@ cd build
 
 `--enable-initfini-array` Этот переключатель заставляет использовать некоторые внутренние структуры данных, которые необходимы, но не могут быть обнаружены при построении кросс-компилятора.
 
-`--disable-shared` Этот переключатель заставляет GCC связывать свои внутренние библиотеки статически. Нам это нужно, потому что общие библиотеки требуют glibc, которая еще не установлена ​​в целевой системе.
+`--disable-shared` Этот переключатель заставляет GCC связывать свои внутренние библиотеки статически. Нам это нужно, потому что общие библиотеки требуют glibc, которая ещё не установлена ​​в целевой системе.
 
-`--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx` Эти переключатели отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp, libvtv и стандартной библиотеки C ++ соответственно. Эти функции не будут скомпилированы при сборке кросс-компилятора и не являются необходимыми для кросс-компиляции временной libc.
+`--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx` Эти переключатели отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp, libvtv и стандартной библиотеки C++ соответственно. Эти функции не будут скомпилированы при сборке кросс-компилятора и не являются необходимыми для кросс-компиляции временной libc.
 
-`--enable-languages​​=c,c++` Эта опция гарантирует, что будут построены только компиляторы C и C ++. Это единственные языки, которые нужны сейчас.
+`--enable-languages​​=c,c++` Эта опция гарантирует, что будут построены только компиляторы C и C++. Это единственные языки, которые нужны сейчас.
 
 ## Сборка
 
@@ -134,7 +135,7 @@ make
 make install
 ```
 
-Создадим полную версию `limits.h` - заголовочного файла в котором записаны лимиты.
+Создадим полную версию `limits.h` - заголовочного файла, в котором записаны лимиты:
 
 ```bash
 cd ..

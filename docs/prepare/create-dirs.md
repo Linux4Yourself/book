@@ -28,7 +28,7 @@ mkdir -pv $LIN/tools
 mkdir -pv $LIN/usr/lib32
 ```
 
-А также символическую ссылку на неё
+А также символическую ссылку на неё:
 
 ```bash
 ln -sv usr/lib32 $LIN/lib32
