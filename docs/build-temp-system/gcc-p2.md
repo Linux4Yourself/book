@@ -88,22 +88,23 @@ ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
 Запустите скрипт `configure`:
 
 ```bash
-../configure                                       \
-    --build=$(../config.guess)                     \
-    --host=$LIN_TGT                                \
-    --prefix=/usr                                  \
-    CC_FOR_TARGET=$LIN_TGT-gcc                     \
-    --with-build-sysroot=$LIN                      \
-    --enable-initfini-array                        \
-    --disable-nls                                    \
-    --disable-decimal-float                        \
-    --disable-libatomic                            \
-    --disable-libgomp                              \
-    --disable-libquadmath                          \
-    --disable-libssp                               \
-    --disable-libvtv                               \
-    --disable-libstdcxx                            \
-    --enable-languages=c,c++ --disable-multilib
+../configure                   \
+    --build=$(../config.guess) \
+    --host=$LIN_TGT            \
+    --prefix=/usr              \
+    CC_FOR_TARGET=$LIN_TGT-gcc \
+    --with-build-sysroot=$LIN  \
+    --enable-initfini-array    \
+    --disable-nls              \
+    --disable-decimal-float    \
+    --disable-libatomic        \
+    --disable-libgomp          \
+    --disable-libquadmath      \
+    --disable-libssp           \
+    --disable-libvtv           \
+    --disable-libstdcxx        \
+    --enable-languages=c,c++   \
+    --disable-multilib
 ```
 
 ### Для multilib

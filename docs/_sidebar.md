@@ -30,7 +30,7 @@
 - [**Сборка временной системы**](build-temp-system/tempsystem)
 
   - [Glibc](build-temp-system/glibc)
-  - [LibstdС++ проход 1](build-temp-system/libstdc)
+  - [LibstdC++ проход 1](build-temp-system/libstdc)
   - [M4](build-temp-system/m4)
   - [Ncurses](build-temp-system/ncurses)
   - [Bash](build-temp-system/bash)
