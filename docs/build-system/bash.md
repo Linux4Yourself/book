@@ -30,7 +30,7 @@
 
 <package-script :package="'bash'" :type="'install'"></package-script>
 
-Запустите `bash` (заменив который в настоящее время выполняется):
+Запустите `bash` (заменив тот, который в настоящее время выполняется):
 
 ```bash
 exec /bin/bash --login +h
