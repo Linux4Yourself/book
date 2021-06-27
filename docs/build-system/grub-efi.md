@@ -16,7 +16,7 @@ https://unifoundry.com/pub/unifont/unifont-13.0.06/font-builds/unifont-13.0.06.p
 
 ## Значения параметров
 
-`--disable-efiemu` - Отключает установку большого и не нужного компонента
+`--disable-efiemu` - Отключает установку большого и ненужного компонента
 
 `--with-platform=efi` - Использовать EFI
 
