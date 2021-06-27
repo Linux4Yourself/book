@@ -72,24 +72,27 @@ make distclean
 
 ```bash
 CC="gcc -m32" \
-./configure ADJTIME_PATH=/var/lib/hwclock/adjtime    \
+./configure ADJTIME_PATH=/var/lib/hwclock/adjtime \
+            --enable-usrdir-path      \
+            --host=i686-pc-linux-gnu  \
+            --libdir=/usr/lib32       \
+            --disable-bash-completion \
             --disable-chfn-chsh  \
+            --disable-fdisks     \
+            --disable-fsck       \
             --disable-login      \
+            --disable-mount      \
             --disable-nologin    \
-            --disable-su         \
-            --disable-setpriv    \
-            --disable-runuser    \
             --disable-pylibmount \
+            --disable-runuser    \
+            --disable-schedutils \
+            --disable-setpriv    \
             --disable-static     \
-            --without-python     \
-            --libdir=/usr/lib32      \
-            --host=i686-pc-linux-gnu \
-	    --enable-usrdir-path \
-	    --disable-bash-completion \
-	    --disable-schedutils   --disable-fdisks  --disable-mount  --disable-fsck
+            --disable-su         \
+            --without-python
 ```
 
-Объснение опций configure
+Объяснение опций configure:
 
 `--disable-*` - Позволяет сэкономить время, отключив сборку ненужных компонентов.
 
