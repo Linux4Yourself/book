@@ -163,7 +163,7 @@
 
   - [E2fsprogs](build-system/e2fsprogs)
 
-  - [**GRUB**](build-system/about-grub)
+  - [**GRUB**](build-system/boot/about-grub)
 
     - **EFI**
 
