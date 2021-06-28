@@ -62,33 +62,34 @@ make install
 
 Необходимо собрать 32-битные библиотеки из состава этого пакета:
 
-Очистите директории сборки:
+### Очистка
 
 ```bash
 make distclean
 ```
 
+### Настройка
 Запустите скрипт `configure`:
 
 ```bash
 CC="gcc -m32" \
 ./configure ADJTIME_PATH=/var/lib/hwclock/adjtime \
-            --enable-usrdir-path      \
-            --host=i686-pc-linux-gnu  \
-            --libdir=/usr/lib32       \
-            --disable-bash-completion \
-            --disable-chfn-chsh  \
-            --disable-fdisks     \
-            --disable-fsck       \
-            --disable-login      \
-            --disable-mount      \
-            --disable-nologin    \
-            --disable-pylibmount \
-            --disable-runuser    \
-            --disable-schedutils \
-            --disable-setpriv    \
-            --disable-static     \
-            --disable-su         \
+            --enable-usrdir-path                  \
+            --host=i686-pc-linux-gnu              \
+            --libdir=/usr/lib32                   \
+            --disable-bash-completion             \
+            --disable-chfn-chsh                   \
+            --disable-fdisks                      \
+            --disable-fsck                        \
+            --disable-login                       \
+            --disable-mount                       \
+            --disable-nologin                     \
+            --disable-pylibmount                  \
+            --disable-runuser                     \
+            --disable-schedutils                  \
+            --disable-setpriv                     \
+            --disable-static                      \
+            --disable-su                          \
             --without-python
 ```
 
@@ -96,13 +97,13 @@ CC="gcc -m32" \
 
 `--disable-*` - Позволяет сэкономить время, отключив сборку ненужных компонентов.
 
-Соберите пакет:
+### Сборка
 
 ```bash
 make
 ```
 
-Установите пакет:
+### Установка
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install
