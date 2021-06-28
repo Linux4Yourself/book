@@ -165,15 +165,12 @@
 
   - [**GRUB**](build-system/boot/about-grub)
 
-    - **EFI**
-
-      - [EFI](build-system/boot/efi)
+    - [**EFI**](build-system/boot/efi)
       - [Efivar](build-system/boot/efivar)
       - [Efibootmgr](build-system/boot/efibootmgr)
       - [GRUB](build-system/boot/grub-efi)
 
-    - **BIOS/Legacy boot**
-      - [BIOS/Legacy](build-system/boot/bios)
+    - [**BIOS/Legacy boot**](build-system/boot/bios)
       - [GRUB](build-system/boot/grub-mbr)
 
   - [Очистка](build-system/cleanup)
