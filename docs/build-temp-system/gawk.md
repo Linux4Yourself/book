@@ -24,6 +24,8 @@
 sed -i 's/extras//' Makefile.in
 ```
 
+Выполним скрипт `configure`:
+
 ```bash
 ./configure --prefix=/usr   \
             --host=$LIN_TGT \

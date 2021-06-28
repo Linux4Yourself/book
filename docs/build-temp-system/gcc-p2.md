@@ -75,7 +75,7 @@ sed -e '/m64=/s/lib64/lib/' \
 
 ```bash
 mkdir build
-cd build
+cd    build
 ```
 
 Разрешим сборку `libgcc` с поддержкой многопоточности:

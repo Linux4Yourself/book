@@ -48,13 +48,13 @@ patch -Np1 -i ../glibc-2.33-fhs-1.patch
 
 ```bash
 mkdir  build
-cd       build
+cd     build
 ```
 
 Далее запустите скрипт `configure`:
 
 ```bash
- ../configure                             \
+ ../configure                            \
       --prefix=/usr                      \
       --host=$LIN_TGT                    \
       --build=$(../scripts/config.guess) \
@@ -62,9 +62,9 @@ cd       build
       --with-headers=$LIN/usr/include    \
       --libdir=/usr/lib                  \
       --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/lib                \
-      libc_cv_include_x86_isa_level=no  \
-      --disable-nscd  \
+      libc_cv_slibdir=/lib               \
+      libc_cv_include_x86_isa_level=no   \
+      --disable-nscd                     \
       --disable-timezone-tools
 ```
 
@@ -104,7 +104,7 @@ $LIN/tools/libexec/gcc/$LIN_TGT/11.1.0/install-tools/mkheaders
 
 ## Тестирование
 
-!> На данном этапе необходимо убедиться, что установленные ранее пакеты работают правильно. И связка с {{package.name}} прошла корректно. Внимательно изучите результаты вывода команд, и проверьте, что они строго соответствуют результатам вывода, приведенным ниже. Если есть несоответствия, значит инструкции на предыдущих этапах были выполнены некорректно.
+!> На данном этапе необходимо убедиться, что установленные ранее пакеты работают правильно. Внимательно изучите результаты вывода команд, и проверьте, что они строго соответствуют результатам вывода, приведенным ниже. Если есть несоответствия, значит инструкции на предыдущих этапах были выполнены некорректно.
 
 ### Чтобы проверить правильность работы кросс-компилятора и libc, выполните:
 
@@ -141,8 +141,8 @@ find .. -name "*.a" -delete
 Далее запустите скрипт `configure`:
 
 ```bash
-CC="$LIN_TGT-gcc -m32" \
-CXX="$LIN_TGT-g++ -m32" \
+CC="$LIN_TGT-gcc -m32"                   \
+CXX="$LIN_TGT-g++ -m32"                  \
 ../configure                             \
       --prefix=/usr                      \
       --host=$LIN_TGT32                  \
@@ -152,9 +152,9 @@ CXX="$LIN_TGT-g++ -m32" \
       --enable-multi-arch                \
       --libdir=/usr/lib32                \
       --libexecdir=/usr/lib32            \
-      libc_cv_slibdir=/lib32  \
-      libc_cv_include_x86_isa_level=no  \
-      --disable-nscd  \
+      libc_cv_slibdir=/lib32             \
+      libc_cv_include_x86_isa_level=no   \
+      --disable-nscd                     \
       --disable-timezone-tools
 ```
 
