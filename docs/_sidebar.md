@@ -167,13 +167,13 @@
 
     - **EFI**
 
-      - [EFI](build-system/boot/boot/efi)
+      - [EFI](build-system/boot/efi)
       - [Efivar](build-system/boot/efivar)
       - [Efibootmgr](build-system/boot/efibootmgr)
       - [GRUB](build-system/boot/grub-efi)
 
     - **BIOS/Legacy boot**
-      - [BIOS/Legacy](build-system/boot/boot)
+      - [BIOS/Legacy](build-system/boot/bios)
       - [GRUB](build-system/boot/grub-mbr)
 
   - [Очистка](build-system/cleanup)
