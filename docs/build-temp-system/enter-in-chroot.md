@@ -35,7 +35,7 @@ fi
 
 ?> После входа в chroot, в приглашении bash будет написано 'I have no name!'. Это нормально, и ничего плохого в этом нет. Дело в том, что файл `/etc/passwd` ещё не создан.
 
-[filename](/docs/shared/chroot.md ":include")
+[filename](../shared/chroot.md ':include')
 
 <script>
 	new Vue({ el: '#main' })

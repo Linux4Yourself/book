@@ -1,7 +1,6 @@
 <pkg :name="'tcl'" instsize showsbu2></pkg>
 
-[filename](../shared/test-pkgs.md ":include")
-
+[filename](../shared/test-pkgs.md ':include')
 ## Настройка
 
 <package-script :package="'tcl'" :type="'configure'"></package-script>

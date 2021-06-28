@@ -1,6 +1,6 @@
 <pkg :name="'dejagnu'" instsize showsbu2></pkg>
 
-[filename](../shared/test-pkgs.md ":include")
+[filename](../shared/test-pkgs.md ':include')
 
 ## Настройка
 
