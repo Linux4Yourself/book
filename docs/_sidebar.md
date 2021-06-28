@@ -162,16 +162,19 @@
       - [Util-linux](build-system/init/util-linux-sysd)
 
   - [E2fsprogs](build-system/e2fsprogs)
-  - [GRUB](build-system/about-grub)
+
+  - [**GRUB**](build-system/about-grub)
 
     - **EFI**
 
-      - [Efivar](build-system/efivar)
-      - [Efibootmgr](build-system/efibootmgr)
-      - [GRUB](build-system/grub-efi)
+      - [EFI](build-system/boot/boot/efi)
+      - [Efivar](build-system/boot/efivar)
+      - [Efibootmgr](build-system/boot/efibootmgr)
+      - [GRUB](build-system/boot/grub-efi)
 
-    - **Legacy boot**
-      - [GRUB](build-system/grub-mbr)
+    - **BIOS/Legacy boot**
+      - [BIOS/Legacy](build-system/boot/boot)
+      - [GRUB](build-system/boot/grub-mbr)
 
   - [Очистка](build-system/cleanup)
 
@@ -195,8 +198,8 @@
 
 - [**Делаем систему загрузочной**](boot/boot)
 
-  - [Создание загрузочной системы Legacy Boot MBR](boot/mbr)
-  - [Создание загрузочной системы EFI](boot/uefi)
+  - [**Создание загрузочной системы EFI**](boot/uefi)
+  - [**Создание загрузочной системы Legacy Boot MBR**](boot/mbr)
 
 - [**Заключительная часть**](final/final)
 
