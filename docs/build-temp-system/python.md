@@ -19,14 +19,15 @@
 ## Настройка
 
 ```bash
-./configure --prefix=/usr --enable-shared   --without-ensurepip
+./configure --prefix=/usr --enable-shared \
+            --without-ensurepip
 ```
 
 ### Значения параметров
 
-`--enable-shared` - Включает установку динамических библиотек
+`--enable-shared` - Включает установку динамических библиотек;
 
-`--without-ensurepip` - Менеджер пакетов pip не нужен на данном этапе
+`--without-ensurepip` - Менеджер пакетов `pip` не нужен на данном этапе.
 
 ## Сборка
 
