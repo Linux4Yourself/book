@@ -35,15 +35,14 @@ cd       build
     --disable-nls              \
     --enable-shared            \
     --disable-werror           \
-    --enable-64-bit-bfd 
+    --enable-64-bit-bfd
 ```
 
-### Для MultiLib 
+### Для MultiLib
 
-Добавьте параметр ``--enable-multilib``
+Добавьте параметр `--enable-multilib`
 
 ## Сборка
-
 
 ```bash
 make

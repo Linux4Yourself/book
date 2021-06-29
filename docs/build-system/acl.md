@@ -1,12 +1,15 @@
 <pkg :name="'attr'" instsize showsbu2></pkg>
 
 ## Настройка
+
 <package-script :package="'acl'" :type="'configure'"></package-script>
 
 ## Сборка
+
 <package-script :package="'acl'" :type="'build'"></package-script>
 
 ## Установка
+
 <package-script :package="'acl'" :type="'install'"></package-script>
 
 ## Для multilib
@@ -19,8 +22,10 @@
 
 <package-script :package="'acl'" :type="'multi_configure'"></package-script>
 
-### Сборка 
+### Сборка
+
 <package-script :package="'acl'" :type="'multi_build'"></package-script>
+
 ### Установка
 
 <package-script :package="'acl'" :type="'multi_install'"></package-script>
@@ -33,4 +38,4 @@
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

@@ -48,13 +48,13 @@ patch -Np1 -i ../glibc-2.33-fhs-1.patch
 
 ```bash
 mkdir  build
-cd       build
+cd     build
 ```
 
-Далее запустите скрипт `configure`: 
+Далее запустите скрипт `configure`:
 
 ```bash
- ../configure                             \
+ ../configure                            \
       --prefix=/usr                      \
       --host=$LIN_TGT                    \
       --build=$(../scripts/config.guess) \
@@ -62,28 +62,30 @@ cd       build
       --with-headers=$LIN/usr/include    \
       --libdir=/usr/lib                  \
       --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/lib                \
-      libc_cv_include_x86_isa_level=no  \
-      --disable-nscd  \
+      libc_cv_slibdir=/lib               \
+      libc_cv_include_x86_isa_level=no   \
+      --disable-nscd                     \
       --disable-timezone-tools
 ```
+
 ### Для multilib
 
 Добавьте параметр `--enable-multi-arch`
 
 ### Значения параметров
 
- `--host=$LIN_TGT, --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
- 
+`--host=$LIN_TGT, --build=$(../scripts/config.guess)` - необходимо для кросс-компиляции.
+
 `--enable-kernel=3.2` - оптимизирует glibc для использования с ядрами новее 3.2.
 
 `--with-headers=$LIN/usr/include` - задает путь к заголовкам ядра.
 
 `libc_cv_include_x86_isa_level=no` - исключает возможную ошибку.
 
-` --disable-nscd, --disable-timezone-tools` - демон nscd и инструменты для управления часовыми поясами не нужны для временной glibc. 
+` --disable-nscd, --disable-timezone-tools` - демон nscd и инструменты для управления часовыми поясами не нужны для временной glibc.
 
 ## Сборка
+
 ```bash
 make
 ```
@@ -102,9 +104,9 @@ $LIN/tools/libexec/gcc/$LIN_TGT/11.1.0/install-tools/mkheaders
 
 ## Тестирование
 
-!> На данном этапе необходимо убедиться, что установленные ранее пакеты работают правильно. И связка с {{package.name}} прошла корректно. Внимательно изучите результаты вывода команд, и проверьте, что они строго соответствуют результатам вывода, приведенным ниже. Если есть несоответствия, значит инструкции на предыдущих этапах были выполнены некорректно.
+!> На данном этапе необходимо убедиться, что установленные ранее пакеты работают правильно. Внимательно изучите результаты вывода команд, и проверьте, что они строго соответствуют результатам вывода, приведенным ниже. Если есть несоответствия, значит инструкции на предыдущих этапах были выполнены некорректно.
 
-### Чтобы проверить правильность работы кросс-компилятора и libc выполните:
+### Чтобы проверить правильность работы кросс-компилятора и libc, выполните:
 
 ```bash
 echo 'int main(){}' > dummy.c
@@ -139,8 +141,8 @@ find .. -name "*.a" -delete
 Далее запустите скрипт `configure`:
 
 ```bash
-CC="$LIN_TGT-gcc -m32" \
-CXX="$LIN_TGT-g++ -m32" \
+CC="$LIN_TGT-gcc -m32"                   \
+CXX="$LIN_TGT-g++ -m32"                  \
 ../configure                             \
       --prefix=/usr                      \
       --host=$LIN_TGT32                  \
@@ -150,9 +152,9 @@ CXX="$LIN_TGT-g++ -m32" \
       --enable-multi-arch                \
       --libdir=/usr/lib32                \
       --libexecdir=/usr/lib32            \
-      libc_cv_slibdir=/lib32  \
-      libc_cv_include_x86_isa_level=no  \
-      --disable-nscd  \
+      libc_cv_slibdir=/lib32             \
+      libc_cv_include_x86_isa_level=no   \
+      --disable-nscd                     \
       --disable-timezone-tools
 ```
 
@@ -177,7 +179,7 @@ ln -svf ../lib32/ld-linux.so.2 $LIN/lib/ld-linux.so.2
 
 ### Проверка работоспособности
 
-Чтобы проверить работоспособность 32-битной glibc выполните:
+Чтобы проверить работоспособность 32-битной glibc, выполните:
 
 ```bash
 echo 'int main(){}' > dummy.c
@@ -185,13 +187,13 @@ $LIN_TGT-gcc -m32 dummy.c
 readelf -l a.out | grep '/ld-linux'
 ```
 
-Вывод должен быть такой:
+Вывод должен быть таким:
 
 ```
 [Requesting program interpreter: /lib/ld-linux.so.2]
 ```
 
-Если все хорошо, удалите ненужные файлы:
+Если всё хорошо, удалите ненужные файлы:
 
 ```bash
 rm -v dummy.c a.out

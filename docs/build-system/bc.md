@@ -3,6 +3,7 @@
 ## Настройка
 
 <package-script :package="'bc'" :type="'configure'"></package-script>
+
 ## Сборка
 
 <package-script :package="'bc'" :type="'build'"></package-script>
@@ -12,6 +13,7 @@
 <package-script :package="'bc'" :type="'test'"></package-script>
 
 ## Установка
+
 <package-script :package="'bc'" :type="'install'"></package-script>
 
 ## Установленные файлы
@@ -20,4 +22,4 @@
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

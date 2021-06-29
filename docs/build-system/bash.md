@@ -10,26 +10,27 @@
 
 <package-script :package="'bash'" :type="'configure'"></package-script>
 
-
 ### Значения параметров
 
 `--without-bash-malloc` - Этот параметр отключает использование функции выделения памяти (malloc) Bash, которая вызывает ошибки сегментации. Отключив эту опцию, Bash будет использовать функции malloc из libc, которые более стабильны.
 
-`--with-installed-readline` - Указывает на то, что следует задействовать  ранее установленную библиотеку readline, вместо использования внутренней.
+`--with-installed-readline` - Указывает на то, что следует задействовать ранее установленную библиотеку readline, вместо использования внутренней.
 
 ## Сборка
+
 <package-script :package="'bash'" :type="'build'"></package-script>
 
 ## Тестирование
 
-Для корректного выполнения тестов, сделайте пользователя `tester` владельцем каталога и  запустите тесты от пользователя `tester`
+Для корректного выполнения тестов, сделайте пользователя `tester` владельцем каталога и запустите тесты от пользователя `tester`
 
 <package-script :package="'bash'" :type="'test'"></package-script>
 
 ## Установка
+
 <package-script :package="'bash'" :type="'install'"></package-script>
 
-Запустите ``bash`` (заменив который в настоящее время выполняется):
+Запустите `bash` (заменив тот, который в настоящее время выполняется):
 
 ```bash
 exec /bin/bash --login +h
@@ -37,4 +38,4 @@ exec /bin/bash --login +h
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

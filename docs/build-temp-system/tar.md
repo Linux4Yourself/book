@@ -1,4 +1,5 @@
 <package-info :package="package" showsbu></package-info>
+
 <script>
                 new Vue({
                 el: '#main',
@@ -21,7 +22,7 @@
 ```bash
 ./configure --prefix=/usr                     \
             --host=$LIN_TGT                   \
-            --build=$(build-aux/config.guess)  --disable-nls  --disable-acl 
+            --build=$(build-aux/config.guess)  --disable-nls  --disable-acl
 ```
 
 ## Сборка

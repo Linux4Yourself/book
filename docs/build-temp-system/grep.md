@@ -18,14 +18,12 @@
 
 ## Настройка
 
-
 ```bash
 ./configure --prefix=/usr   \
-            --host=$LIN_TGT  --disable-nls  
+            --host=$LIN_TGT  --disable-nls
 ```
 
 ## Сборка
-
 
 ```bash
 make

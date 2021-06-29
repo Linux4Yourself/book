@@ -13,6 +13,7 @@
 ## Сборка
 
 <package-script :package="'zlib-ng'" :type="'build'"></package-script>
+
 ## Тестирование
 
 <package-script :package="'zlib-ng'" :type="'test'"></package-script>
@@ -22,9 +23,9 @@
 <package-script :package="'zlib-ng'" :type="'install'"></package-script>
 
 Удалите ненужную статическую библиотеку:
- 
+
 <package-script :package="'zlib-ng'" :type="'postinstall'"></package-script>
- 
+
 ## Для multilib
 
 ### Очистка
@@ -35,7 +36,7 @@
 
 <package-script :package="'zlib-ng'" :type="'multi_configure'"></package-script>
 
-### Сборка 
+### Сборка
 
 <package-script :package="'zlib-ng'" :type="'multi_build'"></package-script>
 
@@ -57,4 +58,4 @@
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

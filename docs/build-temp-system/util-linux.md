@@ -18,7 +18,7 @@
 
 ## Настройка
 
-FHS рекомендует использовать директорию ``/var/lib/hwclock`` для файла ``adjtime``. Создайте её:
+FHS рекомендует использовать директорию `/var/lib/hwclock` для файла `adjtime`. Создайте её:
 
 ```bash
 mkdir -pv /var/lib/hwclock
@@ -37,7 +37,7 @@ mkdir -pv /var/lib/hwclock
             --disable-pylibmount \
             --disable-static     \
             --without-python     \
-            runstatedir=/run  --enable-usrdir-path  
+            runstatedir=/run  --enable-usrdir-path
 ```
 
 ### Значения параметров
@@ -47,7 +47,6 @@ mkdir -pv /var/lib/hwclock
 `--without-python` - Отключает сборку ненужных привязок python.
 
 ## Сборка
-
 
 ```bash
 make
@@ -63,44 +62,48 @@ make install
 
 Необходимо собрать 32-битные библиотеки из состава этого пакета:
 
-Очистите директории сборки:
+### Очистка
 
 ```bash
 make distclean
 ```
 
+### Настройка
 Запустите скрипт `configure`:
 
 ```bash
 CC="gcc -m32" \
-./configure ADJTIME_PATH=/var/lib/hwclock/adjtime    \
-            --disable-chfn-chsh  \
-            --disable-login      \
-            --disable-nologin    \
-            --disable-su         \
-            --disable-setpriv    \
-            --disable-runuser    \
-            --disable-pylibmount \
-            --disable-static     \
-            --without-python     \
-            --libdir=/usr/lib32      \
-            --host=i686-pc-linux-gnu \
-	    --enable-usrdir-path \
-	    --disable-bash-completion \
-	    --disable-schedutils   --disable-fdisks  --disable-mount  --disable-fsck   
+./configure ADJTIME_PATH=/var/lib/hwclock/adjtime \
+            --enable-usrdir-path                  \
+            --host=i686-pc-linux-gnu              \
+            --libdir=/usr/lib32                   \
+            --disable-bash-completion             \
+            --disable-chfn-chsh                   \
+            --disable-fdisks                      \
+            --disable-fsck                        \
+            --disable-login                       \
+            --disable-mount                       \
+            --disable-nologin                     \
+            --disable-pylibmount                  \
+            --disable-runuser                     \
+            --disable-schedutils                  \
+            --disable-setpriv                     \
+            --disable-static                      \
+            --disable-su                          \
+            --without-python
 ```
 
-Объснение опций configure
+Объяснение опций configure:
 
 `--disable-*` - Позволяет сэкономить время, отключив сборку ненужных компонентов.
 
-Соберите пакет:
+### Сборка
 
 ```bash
 make
 ```
 
-Установите пакет:
+### Установка
 
 ```bash
 make DESTDIR=$PWD/DESTDIR install

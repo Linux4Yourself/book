@@ -1,4 +1,3 @@
-
 <pkg :name="'sysvinit'" instsize showsbu2></pkg>
 
 ## Дополнительные необходимые файлы
@@ -11,12 +10,12 @@
 
 <package-script :package="'sysvinit'" :type="'patch'"></package-script>
 
-
 ## Сборка
 
 <package-script :package="'sysvinit'" :type="'build'"></package-script>
 
 ## Установка
+
 <package-script :package="'sysvinit'" :type="'install'"></package-script>
 
 <script>

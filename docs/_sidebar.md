@@ -1,10 +1,12 @@
 - [**Предисловие**](prologue/foreword)
+
   - [От авторов](prologue/from-authors)
   - [Преимущества](prologue/benefits)
   - [Прежде чем начать](prologue/before-start)
   - [Принятые обозначения](prologue/typography)
   - [Информация об используемых пакетах](prologue/packages)
   - [Опечатки и неточности](prologue/inaccuracies)
+  - [Журнал изменений](prologue/changelog)
 
 - **Подготовительные работы**
   - [Целевые архитектуры](prepare/arch)
@@ -25,10 +27,11 @@
   - [Binutils](cross-toolchain/binutils)
   - [GCC](cross-toolchain/gcc)
 - [**Заголовочные файлы ядра Linux**](build-system/linux-headers)
+
 - [**Сборка временной системы**](build-temp-system/tempsystem)
 
   - [Glibc](build-temp-system/glibc)
-  - [LibstdС++ проход 1](build-temp-system/libstdc)
+  - [LibstdC++ проход 1](build-temp-system/libstdc)
   - [M4](build-temp-system/m4)
   - [Ncurses](build-temp-system/ncurses)
   - [Bash](build-temp-system/bash)
@@ -57,7 +60,9 @@
   - [Texinfo](build-temp-system/texinfo)
   - [Util-linux](build-temp-system/util-linux)
   - [Очистка и сохранение временной системы](build-temp-system/cleanup)
+
 - [**Сборка Linux системы**](build-system/build-system)
+
   - [Настройка окружения bash](build-system/set-profile)
   - [Iana-etc](build-system/iana-etc)
   - [Glibc](build-system/glibc)
@@ -133,48 +138,65 @@
   - [Make-ca](build-system/make-ca)
 
   - [**Выбор текстового редактора**](build-system/text-editor)
+
     - [Vim](build-system/vim)
     - [Emacs](build-system/emacs)
     - [Nano](build-system/nano)
+
   - [**Выбор системы инициализации**](build-system/init-system)
-    - **SysVinit**
-      - [Eudev](build-system/eudev)
-      - [Procps-ng](build-system/procps-ng-sysv)
-      - [Util-linux](build-system/util-linux-sysvinit)
-      - [Sysklogd](build-system/sysklogd)
-      - [SysVinit](build-system/sysvinit)
-      - [Bootscripts](build-system/bootscripts)
-    - **Systemd**
-      - [Создание пользователей и групп для Systemd](build-system/systemd-users)
-      - [Systemd](build-system/systemd)
-      - [D-Bus](build-system/dbus)
-      - [Procps-ng](build-system/procps-ng-systemd)
-      - [Util-linux](build-system/util-linux-systemd)
-      
+
+    - [**SysVinit**](build-system/init/sysvinit-page)
+
+      - [Eudev](build-system/init/eudev-sysv)
+      - [Procps-ng](build-system/init/procps-ng-sysv)
+      - [Util-linux](build-system/init/util-linux-sysv)
+      - [Sysklogd](build-system/init/sysklogd-sysv)
+      - [SysVinit](build-system/init/sysvinit)
+      - [Bootscripts](build-system/init/bootscripts)
+
+    - [**Systemd**](build-system/init/systemd-page.md)
+      - [Создание пользователей и групп для systemd](build-system/init/systemd-users)
+      - [Systemd](build-system/init/systemd)
+      - [D-Bus](build-system/init/dbus-sysd)
+      - [Procps-ng](build-system/init/procps-ng-sysd)
+      - [Util-linux](build-system/init/util-linux-sysd)
+
   - [E2fsprogs](build-system/e2fsprogs)
-  - [Grub](build-system/about-grub)
-    - **EFI**
-      - [Efivar](build-system/efivar)
-      - [Efibootmgr](build-system/efibootmgr)
-      - [GRUB](build-system/grub-efi)
-    - **Legacy boot**
-      - [GRUB](build-system/grub-mbr)
+
+  - [**GRUB**](build-system/boot/about-grub)
+
+    - [**EFI**](build-system/boot/efi)
+      - [Efivar](build-system/boot/efivar)
+      - [Efibootmgr](build-system/boot/efibootmgr)
+      - [GRUB](build-system/boot/grub-efi)
+
+    - [**BIOS/Legacy boot**](build-system/boot/bios)
+      - [GRUB](build-system/boot/grub-mbr)
+
   - [Очистка](build-system/cleanup)
+
 - [**Настройка системы**](setup/setup)
+
   - [Создание файла /etc/fstab](setup/fstab)
   - [Создание файла /etc/shells](setup/shells)
-  - **Systemd**
+
+  - **systemd**
+
     - [Настройка аппаратных часов](setup/hw-clock)
     - [Настройка сети](setup/network-systemd)
-  - **SystemVInit**
-    - [Настройка System V init](setup/sysvinit-conf)
+
+  - **SysVinit**
+    - [Настройка SysVinit](setup/sysvinit-conf)
+
 - [**Настройка и установка ядра**](kernel/kernel-setup-intro)
+
   - [Настройка](kernel/kernel-setup)
   - [О прошивках](kernel/about-fw)
 
 - [**Делаем систему загрузочной**](boot/boot)
-  - [Создание загрузочной системы Legacy Boot MBR](boot/mbr)
-  - [Создание загрузочной системы EFI](boot/uefi)
+
+  - [**Создание загрузочной системы EFI**](boot/uefi)
+  - [**Создание загрузочной системы Legacy Boot MBR**](boot/mbr)
 
 - [**Заключительная часть**](final/final)
 
@@ -182,6 +204,8 @@
   - **Строение GNU/Linux**
     - [Строение GNU/Linux. Часть 1](additional/LinuxStructure1)
     - [Строение GNU/Linux. Часть 2](additional/LinuxStructure2)
+    - [Строение GNU/Linux. Часть 3](additional/LinuxStructure3)
+    - [Строение GNU/Linux. Часть 4](additional/LinuxStructure4)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
   - [Решение ошибок сборки](additional/error-fix)
   - [Типы и разделов и каталогов](additional/partitions_calalogs)

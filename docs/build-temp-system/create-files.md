@@ -1,16 +1,16 @@
 # Создание основных файлов и символических ссылок
 
-Исторически, в файле ``/etc/mtab`` записывалась информация о смонтированных разделах. Создайте символическую ссылку для совместимости:
+Исторически, в файле `/etc/mtab` записывалась информация о смонтированных разделах. Создайте символическую ссылку для совместимости:
 
 ```bash
 ln -sv /proc/self/mounts /etc/mtab
 ```
 
-Некоторым пакетам может понадобиться файл ``/etc/hosts``:
+Некоторым пакетам может понадобиться файл `/etc/hosts`:
 
 ```bash
 cat > /etc/hosts << EOF
-"127.0.0.1 localhost $(hostname)" 
+"127.0.0.1 localhost $(hostname)"
 ::1        localhost
 EOF
 ```
@@ -28,7 +28,7 @@ nobody:x:99:99:Unprivileged User:/dev/null:/bin/false
 EOF
 ```
 
-Создайте файл имён групп и членов каждой группы: 
+Создайте файл имён групп и членов каждой группы:
 
 ```bash
 cat > /etc/group << "EOF"
@@ -60,7 +60,7 @@ users:x:999:
 EOF
 ```
 
-Для проведения тестов некоторых пакетов вы можете добавить пользователя ``tester``:
+Для проведения тестов некоторых пакетов вы можете добавить пользователя `tester`:
 
 ```bash
 echo "tester:x:101:101::/home/tester:/bin/bash" >> /etc/passwd
@@ -68,7 +68,7 @@ echo "tester:x:101:" >> /etc/group
 install -o tester -d /home/tester
 ```
 
-Чтобы убрать надпись `I have no name!` в приглашении ``bash`` выполните:
+Чтобы убрать надпись `I have no name!` в приглашении `bash` выполните:
 
 ```bash
 bash --login +h
@@ -82,5 +82,3 @@ chgrp -v utmp /var/log/lastlog
 chmod -v 664  /var/log/lastlog
 chmod -v 600  /var/log/btmp
 ```
-
-

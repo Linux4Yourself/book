@@ -53,4 +53,4 @@ find /usr/{bin,sbin,libexec} -type f \
 
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

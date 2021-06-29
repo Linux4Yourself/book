@@ -1,4 +1,5 @@
 <pkg :name="'bzip2'" instsize showsbu2></pkg>
+
 ## Дополнительные необходимые файлы
 
 <a :href="patch.url">{{ patch.url}}</a>
@@ -9,7 +10,7 @@
 
 <package-script :package="'bzip2'" :type="'patch'"></package-script>
 
-Убедитесь, что будут созданы относительные символические ссылки и исправьте путь установки man-страниц:
+Убедитесь, что будут созданы относительные символические ссылки, и исправьте путь установки man-страниц:
 
 <package-script :package="'bzip2'" :type="'prepare'"></package-script>
 
@@ -22,20 +23,21 @@
 ## Установка
 
 <package-script :package="'bzip2'" :type="'install'"></package-script>
- 
+
 ## Для multilib
 
 ### Очистка
 
 <package-script :package="'bzip2'" :type="'multi_prepare'"></package-script>
 
-### Сборка 
+### Сборка
 
 <package-script :package="'bzip2'" :type="'multi_build'"></package-script>
 
 ### Установка
 
 <package-script :package="'bzip2'" :type="'multi_install'"></package-script>
+
 ## Установленные файлы
 
 Программы: bunzip2 (ссылка на bzip2), bzcat (ссылка на bzip2), bzcmp (ссылка на bzdiff), bzdiff, bzegrep (ссылка на bzgrep), bzfgrep (ссылка на bzgrep), bzgrep, bzip2, bzip2recover, bzless (ссылка на bzmore), и bzmore
@@ -66,8 +68,7 @@
 
 `bzmore` - Работает больше с файлами, сжатыми с помощью bzip
 
-`libbz2` - Библиотека, реализующая сжатие данных без потерь с сортировкой по блокам с использованием алгоритма Берроуза-Уиллера. 
-
+`libbz2` - Библиотека, реализующая сжатие данных без потерь с сортировкой по блокам с использованием алгоритма Берроуза-Уиллера.
 
 <script>
 		new Vue({

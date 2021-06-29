@@ -2,13 +2,12 @@
 
 ## Подготовка
 
- - Программа `arpd` требует установленной Berkeley DB. Отключите её,
- - Отключите 2 модуля требующих `iptables`,
+- Программа `arpd` требует установленную Berkeley DB. Отключите её,
+- Отключите 2 модуля, требующие `iptables`,
 
 <package-script :package="'iproute2'" :type="'prepare'"></package-script>
 
 ## Сборка
-
 
 ```bash
 make
@@ -19,6 +18,7 @@ make
 ```bash
 make install
 ```
+
 ## Установка документации
 
 ```bash
@@ -30,7 +30,6 @@ cp -v COPYING README* /usr/share/doc/iproute2
 
 Программы: bridge, ctstat (ссылка на lnstat), genl, ifcfg, ifstat, ip, lnstat, nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (ссылка на lnstat), ss, and tc
 
-
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>

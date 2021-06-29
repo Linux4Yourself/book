@@ -1,7 +1,9 @@
 <pkg :name="'ncurses'" instsize showsbu2></pkg>
 
 ## Настройка
+
 <package-script :package="'ncurses'" :type="'configure'"></package-script>
+
 ### Значения параметров
 
 `--without-normal` - Отключает установку большинства статических библиотек.
@@ -11,9 +13,11 @@
 `--enable-widec` - Включает сборку библиотек с широкими (многобайтовыми) символами. Они совместимы с обычными библиотеками `ncurses` при сборке из исходного кода, но не совместимы бинарно.
 
 ## Сборка
+
 <package-script :package="'ncurses'" :type="'build'"></package-script>
 
 ## Установка
+
 <package-script :package="'ncurses'" :type="'install'"></package-script>
 
 Многие пакеты при компоновке ищут библиотеки без широких символов. Для компоновки с библиотеками содержащими широкие символы выполните:
@@ -50,14 +54,15 @@ make distclean
             --without-normal \
             --without-debug  \
             --without-cxx-binding \
-            --with-abi-version=5 
+            --with-abi-version=5
 make sources libs
 cp -av lib/lib*.so.5* /usr/lib
 ```
+
 </warn>
 
- 
 ## Для multilib
+
 ### Очистка
 
 ```bash
@@ -65,12 +70,15 @@ make distclean
 ```
 
 ### Настройка
+
 <package-script :package="'ncurses'" :type="'multi_configure'"></package-script>
 
-### Сборка 
+### Сборка
+
 <package-script :package="'ncurses'" :type="'multi_build'"></package-script>
 
 ### Установка
+
 <package-script :package="'ncurses'" :type="'multi_install'"></package-script>
 
 <warn>
@@ -99,7 +107,6 @@ cp -av lib/lib*.so.5* /usr/lib
 
 Директории: /usr/share/tabset /usr/share/terminfo
 
-
 <script>
 	new Vue({ el: '#main' })
-</script> 
+</script>
