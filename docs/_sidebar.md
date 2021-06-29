@@ -204,6 +204,8 @@
   - **Строение GNU/Linux**
     - [Строение GNU/Linux. Часть 1](additional/LinuxStructure1)
     - [Строение GNU/Linux. Часть 2](additional/LinuxStructure2)
+    - [Строение GNU/Linux. Часть 3](additional/LinuxStructure3)
+    - [Строение GNU/Linux. Часть 4](additional/LinuxStructure4)
   - [Установка программ из исходных кодов в Linux](additional/src-compiling)
   - [Решение ошибок сборки](additional/error-fix)
   - [Типы и разделов и каталогов](additional/partitions_calalogs)
