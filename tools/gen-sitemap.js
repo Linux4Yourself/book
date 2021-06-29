@@ -1,5 +1,5 @@
 const fs = require('fs');
-const revision = 'dev';
+const revision = 'rel/1.1';
 const urlBase = `https://lx4u.ru/${revision}/#/`;
 
 /**
