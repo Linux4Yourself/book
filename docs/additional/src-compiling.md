@@ -144,7 +144,7 @@ gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzip64 minigzip64.o -L. lib
 make install
 ```
 
-или при наличии - воспользоваться командой sudo (от обычного пользователя):
+Или вместе с командой sudo (если этот пакет установлен; выполняется эта команда от имени обычного пользователя):
 
 ```bash
 sudo make install
@@ -156,7 +156,14 @@ sudo make install
 make DESTDIR=/путь/до/места/установки install
 ```
 
-Пакет будет установлен в `$DESTDIR` (где DESTDIR - путь до нужной папки). Если в `configure` был указан, например, `--prefix-/usr`, то пакет будет установлен в `$DESTDIR/usr`.
+Пакет будет установлен в `$DESTDIR` (где DESTDIR - путь до нужной папки). Если в `configure` был указан, например, `--prefix-/usr`, то пакет будет установлен в `$DESTDIR/usr`. К примеру, создадим в директории сборки папку `PKG` и установим пакет туда:
+
+```bash
+mkdir PKG
+make DESTDIR=$PWD/PKG install
+```
+
+?> Указание переменной `$PWD` в таком случае желательно, если директория для установки находится в папке с исходным кодом, в которой выполняется сборка.
 
 Некоторые системы сборки не поддерживают переменную DESTDIR, но поддерживают что-то аналогичное, например `INSTALL_DIR`. Либо `prefix`. Программы, собранные через qmake, устанавливаются через переменную `INSTALL_ROOT`:
 
@@ -164,22 +171,27 @@ make DESTDIR=/путь/до/места/установки install
 make install INSTALL_ROOT="/путь/до/места/установки"
 ```
 
-Некоторые системы сборки вообще не поддерживают такие переменные окружения, в этом случае файлы придётся копировать самому. Помните, что в той отдельной директории должны располагаться зеркальная иерархия корня системы, то есть так, как эти файлы должны лежать в системе со всеми подкаталогами. Например:
+Некоторые системы сборки вообще не поддерживают такие переменные окружения, в этом случае файлы придётся копировать самому. Помните, что в той отдельной директории должна располагаться зеркальная иерархия корня системы, то есть так, как эти файлы должны лежать в системе со всеми подкаталогами. Например:
 
 ```bash
-find /usr/pkg/nasm
+$ find PKG
 
-.
-./pkg
-./pkg/usr
-./pkg/usr/bin
-./pkg/usr/bin/ndisasm
-./pkg/usr/bin/nasm
-./pkg/usr/share
-./pkg/usr/share/man
-./pkg/usr/share/man/man1
-./pkg/usr/share/man/man1/nasm.1
-./pkg/usr/share/man/man1/ndisasm.1
+PKG
+PKG/usr
+PKG/usr/include
+PKG/usr/include/zconf.h
+PKG/usr/include/zlib.h
+PKG/usr/lib
+PKG/usr/lib/libz.so
+PKG/usr/lib/libz.so.1.2.11
+PKG/usr/lib/libz.so.1
+PKG/usr/lib/pkgconfig
+PKG/usr/lib/pkgconfig/zlib.pc
+PKG/usr/lib/libz.a
+PKG/usr/share
+PKG/usr/share/man
+PKG/usr/share/man/man3
+PKG/usr/share/man/man3/zlib.3
 ```
 
 На этом сборка из исходных кодов и установка пакета zlib успешно завершена.
