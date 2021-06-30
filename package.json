@@ -1,7 +1,7 @@
 {
 	"name": "linux4yourself.book",
 	"version": "1.0.0",
-	"description": "Книга обеспечит Вас необходимыми знаниями чтобы создать свою собственную Linux систему с самого начала.",
+	"description": "Книга обеспечит вас необходимыми знаниями чтобы создать свою собственную Linux систему с самого начала.",
 	"scripts": {
 		"start": "node ./node_modules/docsify-cli/bin/docsify serve docs"
 	},
