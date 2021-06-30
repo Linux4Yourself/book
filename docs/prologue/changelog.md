@@ -1,7 +1,8 @@
 # Журнал изменений
 
 ## 30.06.2021
-
+- [Выполнено #29](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/29)
+- [Выполнено #427](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/427)
 - [Исправлено #629](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/629)
 - [Фикс фалов со входом/выходом из chroot и исправление](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/635) бага [#634](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/634)
 
