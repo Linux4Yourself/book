@@ -44,7 +44,6 @@ ln -sfv libncurses.so      /usr/lib/libcurses.so
 rm -fv /usr/lib/libncurses++w.a
 ```
 
-<warn>
 Если вам для запуска старых бинарных программ требуется библиотека ncurses без широких символов - соберите её:
 
 ```bash
@@ -58,8 +57,6 @@ make distclean
 make sources libs
 cp -av lib/lib*.so.5* /usr/lib
 ```
-
-</warn>
 
 ## Для multilib
 
@@ -81,8 +78,6 @@ make distclean
 
 <package-script :package="'ncurses'" :type="'multi_install'"></package-script>
 
-<warn>
-
 Если вам для запуска старых бинарных программ требуется 32-битная библиотека ncurses без широких символов - соберите её:
 
 ```bash
@@ -96,8 +91,6 @@ CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr    \
 make sources libs
 cp -av lib/lib*.so.5* /usr/lib
 ```
-
-</warn>
 
 ## Установленные файлы
 
