@@ -1,6 +1,7 @@
 # Журнал изменений
 
 ## 30.06.2021
+- Исправлена опечатка в названии директории с загрузочными скриптами.
 - Обновлены пакеты: Python3-3.9.6, libffi-3.4.2
 - [Выполнено #29](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/29)
 - [Выполнено #427](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/427)
