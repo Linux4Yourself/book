@@ -14,7 +14,7 @@ rm -rf /usr/share/{info,man,doc}/*
 
 ## Выход из среды chroot
 
-[filename](../shared/exit-chroot.md ":include")
+[filename](exit-chroot.md ":include")
 
 ## Сохранение
 
