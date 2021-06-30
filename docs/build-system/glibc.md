@@ -91,7 +91,7 @@ make
 
 ## Тестирование
 
-Вы можете запустить тесты, выполнив:
+вы можете запустить тесты, выполнив:
 
 ```bash
 make check
@@ -170,7 +170,7 @@ localedef -i zh_CN -f GB18030 zh_CN.GB18030
 localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 ```
 
-Вы можете установить все локали, которые содержатся в файле `{{ package.fileName }}/localedata/SUPPORTED`.
+вы можете установить все локали, которые содержатся в файле `{{ package.fileName }}/localedata/SUPPORTED`.
 Выполните следующую команду:
 
 ```bash
