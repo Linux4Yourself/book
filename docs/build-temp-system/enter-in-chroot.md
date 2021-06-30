@@ -37,6 +37,8 @@ fi
 
 [filename](../shared/enter-chroot.md ':include')
 
+?> Сейчас выполнять действия по выходу из chroot не нужно, это понадобится после окончания сборки системы.
+
 <script>
 	new Vue({ el: '#main' })
 </script>
