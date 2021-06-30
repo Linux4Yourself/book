@@ -71,26 +71,104 @@
 
 <package-script :package="'gcc'" :type="'postinstall'"></package-script>
 
-Проверьте работоспособность:
+
+## Проверка работоспособности
+
+Выполните набор команд:
 
 ```bash
 echo 'int main(){}' > dummy.c
-cc dummy.c
-./a.out | echo success
+cc dummy.c -v -Wl,--verbose &> dummy.log
+readelf -l a.out | grep ': /lib'
 ```
 
-Для multilib:
+Ошибок быть не должно, а результат команды (учитывая различия в имени динамического компоновщика, зависящие от платформы) будет следующий:
+
+```
+Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+```
+
+Проверим что задействованы правильные стартовые файлы. Выполните команду:
 
 ```bash
-echo 'int main(){}' > dummy.c
-cc -m32 dummy.c
-./a.out | echo success
+grep -o '/usr/lib.*/crt[1in].*succeeded' dummy.log
 ```
+
+Результат выполнения:
+
+```
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crt1.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crti.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crtn.o succeeded
+```
+
+В зависимости от архитектуры, приведенное выше может немного отличаться. Разница будет в названии каталога после `/usr/lib/gcc`. Здесь важно обратить внимание на то, что `gcc` обнаружил все три файла `crt * .o` в каталоге `/usr/lib`.
+
+
+Проверим то, что компилятор выполняет поиск корректных заголовочных файлов:
+
+```bash
+grep -B4 '^ /usr/include' dummy.log
+```
+
+Результат выполнения:
+
+```
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed
+```
+
+Проверим, что компоновщик использует корректные пути поиска:
+
+```bash
+grep 'SEARCH.*/usr/lib' dummy.log |sed 's|; |\n|g'
+```
+
+Результат выполнения:
+
+```
+SEARCH_DIR("/usr/x86_64-pc-linux-gnu/lib64")
+SEARCH_DIR("/usr/local/lib64")
+SEARCH_DIR("/lib64")
+SEARCH_DIR("/usr/lib64")
+SEARCH_DIR("/usr/x86_64-pc-linux-gnu/lib")
+SEARCH_DIR("/usr/local/lib")
+SEARCH_DIR("/lib")
+SEARCH_DIR("/usr/lib");
+
+```
+
+Проверим, что используется корректная стандартная библиотека
+
+```bash
+grep "/lib.*/libc.so.6 " dummy.log
+```
+
+Результат выполнения:
+
+```
+attempt to open /usr/lib/libc.so.6 succeeded
+```
+
+Проверим, что используется корректный динамический компоновщик:
+
+```bash
+grep "/lib.*/libc.so.6 " dummy.log
+```
+
+Результат выполнения должен быть (учитывая различия в имени динамического компоновщика, зависящие от платформы):
+```
+found ld-linux-x86-64.so.2 at /usr/lib/ld-linux-x86-64.so.2
+```
+
+!> Если вывод не соответствует вышеуказанному, или вообще не получен, значит, что-то не так. Изучите и повторите шаги, чтобы выяснить, в чем проблема. Перед продолжением процесса необходимо решить любые проблемы.
 
 Удалите тестовые файлы:
 
 ```bash
-rm -v dummy.c a.out
+rm -v dummy.c a.out dummy.log
 ```
 
 ## Установленные файлы
