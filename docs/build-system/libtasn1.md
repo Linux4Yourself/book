@@ -8,6 +8,10 @@
 
 <package-script :package="'libtasn1'" :type="'build'"></package-script>
 
+## Тестирование
+
+<package-script :package="'libtasn1'" :type="'test'"></package-script>
+
 ## Установка
 
 <package-script :package="'libtasn1'" :type="'install'"></package-script>
