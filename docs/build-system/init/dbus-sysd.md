@@ -8,6 +8,9 @@
 
 <package-script :package="'dbus'" :type="'build'"></package-script>
 
+## Тестирование
+
+<package-script :package="'dbus'" :type="'test'"></package-script>
 ## Установка
 
 <package-script :package="'dbus'" :type="'install'"></package-script>
