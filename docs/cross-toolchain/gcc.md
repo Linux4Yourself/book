@@ -74,8 +74,8 @@ sed -e '/m64=/s/lib64/lib/' \
 В документации пакета {{package.name}} рекомендуется использовать отдельную директорию для сборки:
 
 ```bash
-mkdir build
-cd build
+mkdir -v build
+cd       build
 ```
 
 Запустим скрипт `configure`:

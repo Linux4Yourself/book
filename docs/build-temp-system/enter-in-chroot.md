@@ -35,7 +35,9 @@ fi
 
 ?> После входа в chroot, в приглашении bash будет написано 'I have no name!'. Это нормально, и ничего плохого в этом нет. Дело в том, что файл `/etc/passwd` ещё не создан.
 
-[filename](../shared/chroot.md ':include')
+[filename](files/exit-chroot.md ':include')
+
+?> Сейчас выполнять действия по выходу из chroot не нужно, это понадобится после окончания сборки системы.
 
 <script>
 	new Vue({ el: '#main' })
