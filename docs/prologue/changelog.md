@@ -5,6 +5,7 @@
 - p11-kit-0.24.0
 - Python3-3.9.6
 ## 01.07.20201
+- [Исправлено #636](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/636)
 - [Исправлено #659](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/659)
 - [Исправлено #662](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/662)
 - [Исправлено #655](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/655)
