@@ -4,7 +4,7 @@
 - libffi-3.4.2
 - p11-kit-0.24.0
 - Python3-3.9.6
-## 01.07.20201
+## 01.07.2021
 - [Исправлено #666](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/657)
 - [Исправлено #666](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/666)
 - [Исправлено #667](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/667)
