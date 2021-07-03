@@ -38,7 +38,7 @@ cd       build
     --enable-64-bit-bfd
 ```
 
-### Для MultiLib
+### Для multilib
 
 Добавьте параметр `--enable-multilib`
 
