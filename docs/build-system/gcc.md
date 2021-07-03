@@ -18,6 +18,10 @@
 
 ## Подготовка
 
+Примените патч, исправляющий несколько проблем:
+
+<package-script :package="'gcc'" :type="'patch'"></package-script>
+
 Исправьте пути установки библиотек:
 
 <package-script :package="'gcc'" :type="'prepare'"></package-script>

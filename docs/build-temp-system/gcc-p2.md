@@ -3,13 +3,14 @@
 <script>
 		new Vue({
 		el: '#main',
-		data: { package: {}, mpc: {}, mpfr: {}, gmp : {}, isl: {} },
+		data: { package: {}, mpc: {}, mpfr: {}, gmp : {}, isl: {}, patch: {} },
 		mounted: function () {
 				this.getPackage('gcc');
 				this.getMpc();
 				this.getMpfr();
 				this.getGmp();
 				this.getIsl();
+				this.getPatch();
 		},
 		methods: {
 			getPackage: function(name) {
@@ -32,6 +33,10 @@
 					getPackage('isl')
 					.then(response => this.isl = response);
 			},
+			getPatch: function() {
+					getPackage('gcc-patch')
+					.then(response => this.patch = response);
+			},
 		}
   })
 </script>
@@ -48,6 +53,10 @@
 
 <a :href="isl.url">{{ isl.url}}</a>
 
+<a :href="patch.url">
+{{ patch.url }}
+</a>
+
 Распакуйте дополнительные пакеты:
 
 !> Обратите внимание, что распаковка указанных пакетов должна производится из каталога пакета GCC.
@@ -62,6 +71,12 @@ mv -v {{ mpc.name }}-{{ mpc.version }} {{ mpc.name }}
 tar -xf ../{{ isl.fileName }}
 mv -v {{ isl.name }}-{{ isl.version }} {{ isl.name }}
 </pre>
+
+Примените патч, исправляющий некоторые проблемы в GCC:
+
+```bash
+patch -Np1 -i ../gcc-11.1.0-upstream_fixes-1.patch
+```
 
 Смените пути установки библиотек:
 
