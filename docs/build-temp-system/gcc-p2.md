@@ -3,13 +3,14 @@
 <script>
 		new Vue({
 		el: '#main',
-		data: { package: {}, mpc: {}, mpfr: {}, gmp : {}, isl: {} },
+		data: { package: {}, mpc: {}, mpfr: {}, gmp : {}, isl: {}, patch: {} },
 		mounted: function () {
 				this.getPackage('gcc');
 				this.getMpc();
 				this.getMpfr();
 				this.getGmp();
 				this.getIsl();
+				this.getPatch();
 		},
 		methods: {
 			getPackage: function(name) {
@@ -32,11 +33,15 @@
 					getPackage('isl')
 					.then(response => this.isl = response);
 			},
+			getPatch: function() {
+					getPackage('gcc-patch')
+					.then(response => this.patch = response);
+			},
 		}
   })
 </script>
 
-## Настройка
+## Подготовка
 
 ### Дополнительные необходимые файлы
 
@@ -47,6 +52,10 @@
 <a :href="mpfr.url">{{ mpfr.url}}</a>
 
 <a :href="isl.url">{{ isl.url}}</a>
+
+<a :href="patch.url">
+{{ patch.url }}
+</a>
 
 Распакуйте дополнительные пакеты:
 
@@ -63,6 +72,12 @@ tar -xf ../{{ isl.fileName }}
 mv -v {{ isl.name }}-{{ isl.version }} {{ isl.name }}
 </pre>
 
+Примените патч, исправляющий некоторые проблемы в GCC:
+
+```bash
+patch -Np1 -i ../gcc-11.1.0-upstream_fixes-1.patch
+```
+
 Смените пути установки библиотек:
 
 ```bash
@@ -71,7 +86,7 @@ sed -e '/m64=/s/lib64/lib/' \
     -i.orig gcc/config/i386/t-linux64
 ```
 
-В документации пакета {{package.name}} рекомендуется использовать отдельную директорию для сборки:
+Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
 mkdir build
@@ -85,7 +100,7 @@ mkdir -pv $LIN_TGT/libgcc
 ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
 ```
 
-Запустите скрипт `configure`:
+Настройка:
 
 ```bash
 ../configure                   \

@@ -51,7 +51,7 @@ sed -e '402a\      *result = local->data.services[database_index];' \
     -i nss/nss_database.c
 ```
 
-В документации пакета {{package.name}} требуется использовать отдельную директорию для сборки:
+Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
 mkdir  build
