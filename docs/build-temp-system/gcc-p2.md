@@ -41,7 +41,7 @@
   })
 </script>
 
-## Настройка
+## Подготовка
 
 ### Дополнительные необходимые файлы
 
@@ -86,7 +86,7 @@ sed -e '/m64=/s/lib64/lib/' \
     -i.orig gcc/config/i386/t-linux64
 ```
 
-В документации пакета {{package.name}} рекомендуется использовать отдельную директорию для сборки:
+Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
 mkdir build
@@ -100,7 +100,7 @@ mkdir -pv $LIN_TGT/libgcc
 ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
 ```
 
-Запустите скрипт `configure`:
+Настройка:
 
 ```bash
 ../configure                   \
