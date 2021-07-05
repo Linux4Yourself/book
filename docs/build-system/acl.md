@@ -1,4 +1,4 @@
-<pkg :name="'attr'" instsize showsbu2></pkg>
+<pkg :name="'acl'" instsize showsbu2></pkg>
 
 ## Настройка
 
