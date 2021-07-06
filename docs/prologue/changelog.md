@@ -2,8 +2,13 @@
 
 ## Обновления пакетов
 
-## 05.05.20201
-- [Исправлено. 680](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/680)
+## 06.07.2021
+
+- [Исправлено 690](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/690)
+
+## 05.07.2021
+- [Исправлено 680](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/680)
+
 ## 03.07.2021
 
 - [Добавлен патч для GCC](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/676)
