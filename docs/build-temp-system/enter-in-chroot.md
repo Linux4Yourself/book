@@ -31,11 +31,11 @@ fi
 
 Войдите в `chroot`:
 
-<common-script :name="'chroot'"></common-script>
+[filename](../scripts/chroot.md ':include')
 
-?> После входа в chroot, в приглашении bash будет написано 'I have no name!'. Это нормально, и ничего плохого в этом нет. Дело в том, что файл `/etc/passwd` ещё не создан.
+?> После входа в `chroot`, в приглашении `bash` будет написано ```I have no name!```. Это нормально, и ничего плохого в этом нет. Дело в том, что файл `/etc/passwd` ещё не создан.
 
-[filename](files/exit-chroot.md ':include')
+[filename](../shared/exit-chroot.md ':include')
 
 ?> Сейчас выполнять действия по выходу из chroot не нужно, это понадобится после окончания сборки системы.
 
