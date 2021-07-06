@@ -12,7 +12,8 @@ rm -rf /tmp/*
 logout
 ```
 
-<common-script :name="'chroot'"></common-script>
+[filename](../scripts/chroot.md ':include')
+
 
 Файлы `.la` потеряли свою актуальность и могут вызвать проблемы при обновлении. Удалите их:
 

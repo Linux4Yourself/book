@@ -16,7 +16,7 @@ mkdir -pv $LIN/tools
 
 Теперь создайте базовую иерархию файловой системы:
 
-<common-script :name="'file-system'"></common-script>
+[filename](../scripts/file-system.md ':include')
 
 Подробнее об иерархии каталогов можно узнать в спецификации [FHS](https://refspecs.linuxfoundation.org/fhs.shtml)
 
