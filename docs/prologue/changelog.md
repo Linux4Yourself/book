@@ -3,7 +3,7 @@
 ## Обновления пакетов
 
 ## 06.07.2021
-
+- [Дополнение инструкций по настройке SysVInit](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/695)
 - [Исправлено 690](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/690)
 
 ## 05.07.2021
