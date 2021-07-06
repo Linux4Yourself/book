@@ -3,7 +3,7 @@
 ## Обновления пакетов
 
 ## 06.07.2021
-
+- [Исправлено 688](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/688)
 - [Исправлено 690](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/690)
 
 ## 05.07.2021
