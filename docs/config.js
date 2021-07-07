@@ -77,10 +77,3 @@ getPackageScript = function (name, script) {
 		})
 		.then(response => response.data);
 }
-
-selectScript = function(name) {
-		return axios.get(`${scriptsUrlBase}/${name}.sh`, {
-			responseType: 'text'
-		})
-		.then(response => response.data);
-}

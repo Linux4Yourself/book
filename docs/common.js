@@ -131,25 +131,6 @@ Vue.component('package-script', {
 </pre>`,
 });
 
-Vue.component('common-script', {
-	props: {
-		name: String,
-	},
-	data() {
-		return {
-			info: null
-		};
-	},
-	mounted() {
-		selectScript(this.name)
-			.then(res => (this.info = res));
-	},
-	template: `
-<pre class="pre">
-{{ info }}
-</pre>`,
-});
-
 Vue.component('warn', {
 	template: `
 			<div class="warn-description">

@@ -4,8 +4,7 @@
 
 Создайте данный файл:
 
-<common-script :name="'etc-inputrc'"></common-script>
-
+[filename](../../scripts/etc-inputrc.md ':include')
 <script>
 	new Vue({ el: '#main' })
 </script>
