@@ -5,6 +5,7 @@
 - texinfo-6.8
 
 ## Исправлено
+- [Дополнено #707](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/707)
 - [Исправлено #187](https://github.com/Linux4Yourself/Linux4Yourself.Book.Packages/issues/187)
 - [Исправления опечаток и неточностей](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/708)
 - [Исправлено #700](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/701)
