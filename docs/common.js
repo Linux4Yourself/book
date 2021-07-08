@@ -43,7 +43,7 @@ Vue.component('package-info', {
 			</span>
 			<span v-if="instsize">
 				<br />
-				<span v-if="package.installedSize">Приблизительный размер после установки: <b>{{ package.installedSize }} МБ</b></span>
+				<span v-if="package.installedSize">Приблизительный размер после установки: <b>{{ package.installedSize }} Мб.</b></span>
 			</span>
 		</p>
 		<slot></slot>
@@ -104,7 +104,7 @@ Vue.component('pkg', {
 			</span>
 			<span v-if="instsize">
 				<br />
-				<span v-if="package.installedSize">Приблизительный размер после установки: <b>{{ package.installedSize }} МБ</b></span>
+				<span v-if="package.installedSize">Приблизительный размер после установки: <b>{{ package.installedSize }} Мб.</b></span>
 			</span>
 		</p>
 		<slot></slot>
