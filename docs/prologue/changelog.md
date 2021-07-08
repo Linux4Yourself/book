@@ -1,9 +1,11 @@
 ## Обновления пакетов
 
+- linux-5.13.1
+- systemd-249
 - texinfo-6.8
 
 ## Исправлено
-
+- [Исправлено #187](https://github.com/Linux4Yourself/Linux4Yourself.Book.Packages/issues/187)
 - [Исправления опечаток и неточностей](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/708)
 - [Исправлено #700](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/701)
 - [Дополнено #693](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/693)
