@@ -55,7 +55,17 @@ cat /proc/sys/vm/swappiness
 sudo sysctl vm.swappiness=X
 ```
 
-Где X - нужное значение.
+Либо же:
+
+```bash
+sudo vim /etc/sysctl.conf
+```
+
+```
+vm.swappiness=X
+```
+
+Где `X` - нужное значение.
 
 ## Сохранение изменений после перезагрузки
 
