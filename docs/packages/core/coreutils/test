@@ -1,0 +1,1 @@
+make NON_ROOT_USERNAME=tester check-root

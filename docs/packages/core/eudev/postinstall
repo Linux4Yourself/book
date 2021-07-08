@@ -1,0 +1,5 @@
+mkdir udev
+cd udev
+tar -xvf ../../udev.tar.xz
+make install
+cd ..

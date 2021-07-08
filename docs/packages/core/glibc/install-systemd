@@ -1,0 +1,2 @@
+install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf
+install -v -Dm644 ../nscd/nscd.service /lib/systemd/system/nscd.service

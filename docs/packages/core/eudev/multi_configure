@@ -1,0 +1,8 @@
+CC="gcc -m32" \
+./configure --host=i686-pc-linux-gnu       \
+            --prefix=/usr                  \
+            --libdir=/usr/lib32            \
+            --sysconfdir=/etc              \
+            --disable-manpages             \
+            --disable-static               \
+            --config-cache

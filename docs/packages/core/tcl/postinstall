@@ -1,0 +1,3 @@
+chmod -v u+w /usr/lib/libtcl8.6.so
+ln -sfv tclsh8.6 /usr/bin/tclsh
+mv /usr/share/man/man3/{Thread,Tcl_Thread}.3

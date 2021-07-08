@@ -1,0 +1,9 @@
+make distclean
+CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr    \
+            --with-shared    \
+            --without-normal \
+            --without-debug  \
+            --without-cxx-binding \
+            --with-abi-version=5 --host=i686-pc-linux-gnu
+make sources libs
+cp -av lib/lib*.so.5* /usr/lib

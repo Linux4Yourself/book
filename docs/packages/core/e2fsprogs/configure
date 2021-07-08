@@ -1,0 +1,9 @@
+./configure --prefix=/usr             \
+             --sysconfdir=/etc        \
+             --enable-elf-shlibs      \
+             --disable-libblkid       \
+             --disable-libuuid        \
+             --disable-uuidd          \
+             --disable-fsck           \
+             --enable-symlink-install \
+             --enable-relative-symlinks

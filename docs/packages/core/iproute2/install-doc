@@ -1,0 +1,2 @@
+mkdir -v /usr/share/doc/iproute
+cp -v COPYING README* /usr/share/doc/iproute2
