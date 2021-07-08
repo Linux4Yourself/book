@@ -1,4 +1,5 @@
 ```bash
+# Параметры для конкретного пользователя.
 cat > ~/.bash_profile << "EOF"
 
 if [ -f "$HOME/.bashrc" ] ; then
@@ -24,6 +25,11 @@ fi
 
 # End ~/.profile
 EOF
+
+
+# Файл ~/.bashrc определяет поведение командной оболочки. Внимательное
+# изучение этого примера поможет вам значительно продвинуться в понимании Bash.
+# На данный момент, здесь подключаются только конфиги /etc/bashrc и /etc/profile
 cat > ~/.bashrc << "EOF"
 # Begin ~/.bashrc
 # Written for Beyond Linux From Scratch
