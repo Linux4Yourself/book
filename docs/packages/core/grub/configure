@@ -1,0 +1,8 @@
+unset {C,CPP,CXX,LD}FLAGS
+./configure --prefix=/usr        \
+            --sbindir=/usr/bin      \
+            --sysconfdir=/etc    \
+            --disable-efiemu     \
+            --enable-grub-mkfont \
+            --with-platform=efi  \
+            --disable-werror   

@@ -1,0 +1,9 @@
+build
+configure
+install
+install-doc
+multi_build
+multi_configure
+multi_install
+multi_prepare
+test
