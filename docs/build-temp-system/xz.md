@@ -23,7 +23,7 @@
             --build=$(build-aux/config.guess) \
             --disable-static                  \
             --disable-nls                     \
-            --disable-doc                     \
+            --disable-doc
 ```
 
 ## Сборка
