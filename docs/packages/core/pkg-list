@@ -66,6 +66,8 @@ readline-8.1.tar.gz
 sed-4.8.tar.xz
 shadow-4.8.1.tar.xz
 sysklogd-1.5.1.tar.gz
+MarkupSafe-2.0.1.tar.gz
+Jinja2-3.0.1.tar.gz
 systemd-stable-249.tar.gz
 sysvinit-2.99.tar.xz
 tar-1.34.tar.xz
