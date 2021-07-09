@@ -34,7 +34,7 @@ make
 
 ## Установка
 
-Нам понадобятся только следующие утилиты: `msgfmt`, `msgmerge`, и `xgettext`. Поэтому выполним установку только перечисленных.
+Нам понадобятся только следующие утилиты: `msgfmt`, `msgmerge` и `xgettext`. Поэтому выполним установку только перечисленных.
 
 ```bash
 cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} /usr/bin
