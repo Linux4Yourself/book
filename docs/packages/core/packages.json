@@ -1688,6 +1688,46 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/sysklogd-1.5.1.tar.gz"
 	},
 	{
+		"name": "markupsafe",
+		"fileName": "MarkupSafe-2.0.1.tar.gz",
+		"description": "MarkupSafe - это модуль Python, который экранирует символы, поэтому текст безопасно использовать в HTML и XML. Символы, имеющие особое значение, заменяются так, чтобы они отображались как фактические символы. Это смягчает атаки инъекций, что означает, что вводимые пользователем данные, которым не доверяют, могут безопасно отображаться на странице.",
+		"url": "https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.0.1.tar.gz",
+		"homeUrl": "https://markupsafe.palletsprojects.com/en/2.0.x/",
+		"version": "2.0.1",
+		"releasesUrl": "https://pypi.org/project/MarkupSafe/#files",
+		"priority": "required",
+		"md5": "892e0fefa3c488387e5cc0cad2daa523",
+		"size": "0.02",
+		"installedSize": 0.36,
+		"sbu": 0,
+		"sbu2": 1.3,
+		"scripts": [
+			"install"
+		],
+		"multilibSupport": false,
+		"downloadUrl": "https://lx4u.ru/downloads/packages/MarkupSafe-2.0.1.tar.gz"
+	},
+	{
+		"name": "Jinja2",
+		"fileName": "Jinja2-3.0.1.tar.gz",
+		"description": "Jinja2 - это модуль Python, который реализует язык шаблона Pythonic.",
+		"url": "https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.1.tar.gz",
+		"homeUrl": "https://jinja.palletsprojects.com/en/3.0.x/",
+		"version": "3.0.1",
+		"releasesUrl": "https://github.com/pallets/jinja/releases",
+		"priority": "required",
+		"md5": "25ba6ef98c164878acff1036fbd72a1d",
+		"size": "0.26",
+		"installedSize": 23.9,
+		"sbu": 0,
+		"sbu2": 1.3,
+		"scripts": [
+			"install"
+		],
+		"multilibSupport": false,
+		"downloadUrl": "https://lx4u.ru/downloads/packages/Jinja2-3.0.1.tar.gz"
+	},
+	{
 		"name": "systemd",
 		"fileName": "systemd-stable-249.tar.gz",
 		"description": "Системный менеджер, демон инициализации других демонов в Linux, пришедший на замену используемому ранее SysVinit. Его особенностью является интенсивное распараллеливание запуска служб в процессе загрузки системы, что позволяет существенно ускорить запуск операционной системы. Systemd используется во многих коммерческих дистрибутивах.",

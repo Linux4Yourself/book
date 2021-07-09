@@ -66,6 +66,8 @@ https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz
 https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
 https://github.com/shadow-maint/shadow/releases/download/4.8.1/shadow-4.8.1.tar.xz
 https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz
+https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.0.1.tar.gz
+https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.1.tar.gz
 https://github.com/systemd/systemd-stable/archive/refs/tags/v249.tar.gz
 https://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.99.tar.xz
 https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz
