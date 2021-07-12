@@ -4,8 +4,10 @@
 - linux-5.13.1
 - systemd-249
 - texinfo-6.8
+- less-590
 
 ## Исправлено
+- [Исправлено #718](https://github.com/Linux4Yourself/Linux4Yourself.Book.Packages/issues/718)
 - [Дополнено #707](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/707)
 - [Исправлено #187](https://github.com/Linux4Yourself/Linux4Yourself.Book.Packages/issues/187)
 - [Исправления опечаток и неточностей](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/708)
