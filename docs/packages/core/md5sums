@@ -35,7 +35,7 @@ cf0fd928b1e5479c8108ee52cb114363 grub-2.06.tar.xz
 f2854be57fe281e3ffc7364984467d2f iana-etc-20210611.tar.gz
 5e1018502cd131ed8e42339f6b5c98aa inetutils-2.0.tar.xz
 12e517cac2b57a0121cda351570f1e63 intltool-0.51.0.tar.gz
-bbebacdabd4628ff86453ef4771a242a iproute2-5.12.0.tar.xz
+15fc3786303a173a14e180afe4cd2ecd iproute2-5.13.0.tar.xz
 fae030f604a9537adc2502990a8ab4d1 isl-0.24.tar.xz
 3cac5be0096fcf7b32dcbd3c53831380 kbd-2.4.0.tar.xz
 e81e63acd80697d001c8d85c1acb38a0 kmod-29.tar.xz
@@ -94,5 +94,5 @@ cd8ebed2a67fff2e231026df91af6776 coreutils-8.32-i18n-1.patch
 9a5997c3452909b1769918c759eff8a2 glibc-2.33-fhs-1.patch
 f75cca16a38da6caa7d52151f7136895 kbd-2.4.0-backspace-1.patch
 4900322141d493e74020c9cf437b2cdc sysvinit-2.99-consolidated-1.patch
-be1a50953a7f22c9f1e88d78bb86c326 gcc-11.1.0-upstream_fixes-1.patch
+27266d2a771f2ff812cb6ec9c8b456b4 gcc-11.1.0-upstream_fixes-1.patch
 e795e52eeefc0d2c62c6c4bd748d2d38 efivar-37-gcc_9-1.patch
