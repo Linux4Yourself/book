@@ -1,7 +1,1 @@
-mkdir p11-build &&
-cd    p11-build &&
-
-meson --prefix=/usr       \
-      --buildtype=release \
-      -Dtrust_paths=/etc/pki/anchors &&
-ninja
+make
