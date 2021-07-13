@@ -76,7 +76,7 @@ core/udev
 core/util-linux
 core/vim
 core/nano
-core/XML-Parser
+core/xml-parser
 core/xz
 core/zlib-ng
 core/zstd
