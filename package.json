@@ -16,7 +16,7 @@
 	"author": "Linux4Yourself community",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Linux4Yourself/Linux4Yourself.Book/issues"
+		"url": "https://github.com/Linux4Yourself/book/issues"
 	},
 	"homepage": "https://github.com/Linux4Yourself/Linux4Yourself.Book#readme",
 	"devDependencies": {

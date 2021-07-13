@@ -66,6 +66,8 @@ core/readline
 core/sed
 core/shadow
 core/sysklogd
+core/markupsafe
+core/jinja2
 core/systemd
 core/sysvinit
 core/tar
