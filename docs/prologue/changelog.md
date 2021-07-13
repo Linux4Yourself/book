@@ -5,7 +5,8 @@
 - systemd-249
 - texinfo-6.8
 
-## Исправлено
+## Изменения
+- [Для пакета `file` удаленна поддержка multilib](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/732)
 - [Дополнено #707](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/707)
 - [Исправлено #187](https://github.com/Linux4Yourself/Linux4Yourself.Book.Packages/issues/187)
 - [Исправления опечаток и неточностей](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/708)
