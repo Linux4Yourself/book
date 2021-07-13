@@ -1,14 +1,17 @@
 <pkg :name="'gmp'" instsize showsbu2></pkg>
 
+## Подготовка
+
+?> По умолчанию gmp оптимизируется под ваш процессор. Для того чтобы её можно было запустить на другом процессоре, можете выполнить:
+
+```
+cp -v configfsf.guess config.guess
+cp -v configfsf.sub config.sub
+```
+
 ## Настройка
 
-По умолчанию gmp оптимизируется под ваш процессор. Для того чтобы её можно было запустить на другом процессоре, выполните:
-<package-script :package="'gmp'" :type="'prepare'"></package-script>
-
-```bash
-./configure --prefix=/usr    \
-            --disable-static   --enable-cxx
-```
+<package-script :package="'gmp'" :type="'configure'"></package-script>
 
 ### Значения параметров
 
