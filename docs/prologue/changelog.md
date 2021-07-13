@@ -5,6 +5,8 @@
 - systemd-249
 - texinfo-6.8
 - less-590
+- Jinja2-3.0.1
+- MarkupSafe-2.0.1
 
 - [Для пакета `file` удаленна поддержка multilib](https://github.com/Linux4Yourself/Linux4Yourself.Book/pull/732)
 - [Исправлено #718](https://github.com/Linux4Yourself/Linux4Yourself.Book/issues/718)

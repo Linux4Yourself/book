@@ -136,6 +136,8 @@
   - [libtasn1](build-system/libtasn1)
   - [p11-kit](build-system/p11-kit)
   - [Make-ca](build-system/make-ca)
+  - [MarkupSafe](build-system/markupsafe)
+  - [Jinja2](build-system/jinja2)
 
   - [**Выбор текстового редактора**](build-system/text-editor)
 
@@ -146,7 +148,6 @@
   - [**Выбор системы инициализации**](build-system/init-system)
 
     - [**SysVinit**](build-system/init/sysvinit-page)
-
       - [Eudev](build-system/init/eudev-sysv)
       - [Procps-ng](build-system/init/procps-ng-sysv)
       - [Util-linux](build-system/init/util-linux-sysv)
@@ -156,6 +157,7 @@
 
     - [**Systemd**](build-system/init/systemd-page.md)
       - [Создание пользователей и групп для systemd](build-system/init/systemd-users)
+
       - [Systemd](build-system/init/systemd)
       - [D-Bus](build-system/init/dbus-sysd)
       - [Procps-ng](build-system/init/procps-ng-sysd)
@@ -194,7 +196,6 @@
   - [О прошивках](kernel/about-fw)
 
 - [**Делаем систему загрузочной**](boot/boot)
-
   - [**Создание загрузочной системы EFI**](boot/uefi)
   - [**Создание загрузочной системы Legacy Boot MBR**](boot/mbr)
 
