@@ -39,7 +39,7 @@ https://lx4u.ru/downloads/packages/iproute2-5.13.0.tar.xz
 https://lx4u.ru/downloads/packages/isl-0.24.tar.xz
 https://lx4u.ru/downloads/packages/kbd-2.4.0.tar.xz
 https://lx4u.ru/downloads/packages/kmod-29.tar.xz
-https://lx4u.ru/downloads/packages/less-581.2.tar.gz
+https://lx4u.ru/downloads/packages/less-590.tar.gz
 https://lx4u.ru/downloads/packages/bootscripts.tar.xz
 https://lx4u.ru/downloads/packages/libcap-2.51.tar.xz
 https://lx4u.ru/downloads/packages/libffi-3.4.2.tar.gz
@@ -66,6 +66,8 @@ https://lx4u.ru/downloads/packages/readline-8.1.tar.gz
 https://lx4u.ru/downloads/packages/sed-4.8.tar.xz
 https://lx4u.ru/downloads/packages/shadow-4.8.1.tar.xz
 https://lx4u.ru/downloads/packages/sysklogd-1.5.1.tar.gz
+https://lx4u.ru/downloads/packages/MarkupSafe-2.0.1.tar.gz
+https://lx4u.ru/downloads/packages/Jinja2-3.0.1.tar.gz
 https://lx4u.ru/downloads/packages/systemd-stable-249.tar.gz
 https://lx4u.ru/downloads/packages/sysvinit-2.99.tar.xz
 https://lx4u.ru/downloads/packages/tar-1.34.tar.xz

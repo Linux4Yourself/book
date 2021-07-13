@@ -1,9 +1,4 @@
 build
 configure
 install
-multi_build
-multi_configure
-multi_install
-multi_prepare
-multi_test
 test
