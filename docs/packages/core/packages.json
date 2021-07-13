@@ -532,11 +532,6 @@
 			"build",
 			"configure",
 			"install",
-			"multi_build",
-			"multi_configure",
-			"multi_install",
-			"multi_prepare",
-			"multi_test",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1950,12 +1945,7 @@
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0.1,
-		"scripts": [
-			"build",
-			"configure",
-			"install",
-			"test"
-		],
+		"scripts": [],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/XML-Parser-2.46.tar.gz"
 	},
