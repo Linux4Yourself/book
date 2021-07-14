@@ -9,6 +9,7 @@
 - MarkupSafe-2.0.1
 
 ## Изменения
+- [Исправлены команды сборки p11-kit и добавленны пояснения](https://github.com/Linux4Yourself/book/issues/740)
 - [Исправлено #736](https://github.com/Linux4Yourself/book/issues/736)
 - [Исправлено #734](https://github.com/Linux4Yourself/book/issues/734)
 - [Для пакета `file` удаленна поддержка multilib](https://github.com/Linux4Yourself/book/pull/732)

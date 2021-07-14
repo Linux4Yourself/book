@@ -2,11 +2,17 @@
 
 ## Подготовка
 
+Подготовьте специфичный для дистрибутива скрипт:
+
 <package-script :package="'p11-kit'" :type="'prepare'"></package-script>
 
 ## Настройка
 
 <package-script :package="'p11-kit'" :type="'configure'"></package-script>
+
+### Объяснение параметров configure
+
+`--with-trust-paths=/etc/pki/anchors` - задает путь для доверенных сертификатов
 
 ## Сборка
 
