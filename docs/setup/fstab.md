@@ -17,7 +17,7 @@
 
 Создайте файл `fstab`:
 
-[filename](../../scripts/fstab.md ':include')
+[filename](../scripts/fstab.md ':include')
 
 Замените `sdX` на нужное значение.
 
