@@ -9,6 +9,8 @@
 - MarkupSafe-2.0.1
 
 ## Изменения
+- [Исправлено #673](https://github.com/Linux4Yourself/book/issues/673)
+- [Исправлено #742](https://github.com/Linux4Yourself/book/issues/742)
 - [Исправлены команды сборки p11-kit и добавленны пояснения](https://github.com/Linux4Yourself/book/issues/740)
 - [Исправлено #736](https://github.com/Linux4Yourself/book/issues/736)
 - [Исправлено #734](https://github.com/Linux4Yourself/book/issues/734)
