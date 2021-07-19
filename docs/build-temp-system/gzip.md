@@ -33,3 +33,9 @@ make
 ```bash
 make DESTDIR=$LIN install
 ```
+
+Переместите исполняемый файл в нужную директорию:
+
+```bash
+mv -v $LIN/usr/bin/gzip $LIN/bin
+```
