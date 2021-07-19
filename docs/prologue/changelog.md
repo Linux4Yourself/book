@@ -11,6 +11,7 @@
 - meson-0.59.0
 
 ## Изменения
+- [Исправлено #706](https://github.com/Linux4Yourself/book/issues/706)
 - [Исправлено #715](https://github.com/Linux4Yourself/book/issues/715)
 - [Исправлено #750](https://github.com/Linux4Yourself/book/issues/750)
 - [Исправлено #694](https://github.com/Linux4Yourself/book/issues/694)
