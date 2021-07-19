@@ -33,3 +33,10 @@ make
 ```bash
 make DESTDIR=$LIN install
 ```
+
+Переместите исполныемый файл в нужную директорию:
+
+```bash
+mv -v $LIN/usr/bin/find $LIN/bin
+sed -i 's|find:=${BINDIR}|find:=/bin|' $LIN/usr/bin/updatedb
+```
