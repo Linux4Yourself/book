@@ -1,6 +1,7 @@
 <pkg :name="'tcl'" instsize showsbu2></pkg>
 
 [filename](../shared/test-pkgs.md ':include')
+
 ## Настройка
 
 <package-script :package="'tcl'" :type="'configure'"></package-script>
@@ -22,6 +23,12 @@
 Сделайте установленную библиотеку доступной для записи, чтобы отладочные символы можно было удалить позже, сделайте необходимую символическую ссылку и переименуйте страницу руководства, которая конфликтует со страницей руководства Perl:
 
 <package-script :package="'tcl'" :type="'postinstall'"></package-script>
+
+Сделайте необходимую ссылку:
+
+```bash
+ln -sfv tclsh8.6 /usr/bin/tclsh
+```
 
 <script>
 	new Vue({ el: '#main' })
