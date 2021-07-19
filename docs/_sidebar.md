@@ -128,7 +128,7 @@
   - [Patch](build-system/patch)
   - [Tar](build-system/tar)
   - [Man-DB](build-system/mandb)
-  - [Textinfo](build-system/texinfo)
+  - [Texinfo](build-system/texinfo)
   - [Popt](build-system/popt)
   - [Freetype](build-system/freetype)
   - [Dosfstools](build-system/dosfstools)
