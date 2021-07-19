@@ -1,12 +1,14 @@
 ## Обновления пакетов
 
 - IProute2-5.13
-- linux-5.13.1
+- linux-5.13.3
 - systemd-249
 - texinfo-6.8
 - less-590
 - Jinja2-3.0.1
 - MarkupSafe-2.0.1
+- binutils-2.37
+- meson-0.59.0
 
 ## Изменения
 - [Исправлено #746](https://github.com/Linux4Yourself/book/pull/746)
