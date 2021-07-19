@@ -46,3 +46,16 @@ make
 ```bash
 make DESTDIR=$LIN install
 ```
+
+Переместите программы в их окончательные ожидаемые места. Хотя в этой временной среде в этом нет необходимости, но вым нужно это сделать, потому что некоторые программы используют фиксированное расположение исполняемых файлов:
+
+```bash
+mv -v $LIN/usr/bin/{cat,chgrp,chmod,chown,cp,date,dd,df,echo} $LIN/bin
+mv -v $LIN/usr/bin/{false,ln,ls,mkdir,mknod,mv,pwd,rm}        $LIN/bin
+mv -v $LIN/usr/bin/{rmdir,stty,sync,true,uname}               $LIN/bin
+mv -v $LIN/usr/bin/{head,nice,sleep,touch}                    $LIN/bin
+mv -v $LIN/usr/bin/chroot                                     $LIN/usr/sbin
+mkdir -pv $LIN/usr/share/man/man8
+mv -v $LIN/usr/share/man/man1/chroot.1                        $LIN/usr/share/man/man8/chroot.8
+sed -i 's/"1"/"8"/'                                           $LIN/usr/share/man/man8/chroot.8
+```
