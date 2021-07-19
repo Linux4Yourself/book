@@ -150,15 +150,15 @@
 	},
 	{
 		"name": "binutils",
-		"fileName": "binutils-2.36.1.tar.xz",
+		"fileName": "binutils-2.37.tar.xz",
 		"description": "Пакет содержит компоновщик, ассемблер и другие утилиты и инструменты для работы с объектными файлам. Программы в этом пакете необходимы для компиляции большинства пакетов.",
-		"url": "https://ftp.gnu.org/gnu/binutils/binutils-2.36.1.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz",
 		"homeUrl": "https://www.gnu.org/software/binutils",
-		"version": "2.36.1",
+		"version": "2.37",
 		"releasesUrl": "https://ftp.gnu.org/gnu/binutils",
 		"priority": "required",
-		"md5": "628d490d976d8957279bbbff06cf29d4",
-		"size": "21.72",
+		"md5": "e78d9ff2976b745a348f4c1f27c77cb1",
+		"size": "21.86",
 		"installedSize": 16.5,
 		"sbu": 1,
 		"sbu2": 4.1,
@@ -176,7 +176,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.36.1.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.37.tar.xz"
 	},
 	{
 		"name": "bison",
@@ -1193,19 +1193,19 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.13.1.tar.xz",
+		"fileName": "linux-5.13.3.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.1.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.3.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.13.1",
+		"version": "5.13.3",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "6499bdaa4ee1ef873ffd6533492140e7",
-		"size": "113.76",
+		"md5": "510d875f1dafbe3269cd409bba35ec8e",
+		"size": "113.79",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.13.1.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.13.3.tar.xz",
 		"scripts": []
 	},
 	{
@@ -1297,15 +1297,15 @@
 	},
 	{
 		"name": "meson",
-		"fileName": "meson-0.58.1.tar.gz",
+		"fileName": "meson-0.59.0.tar.gz",
 		"description": "Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.",
-		"url": "https://github.com/mesonbuild/meson/releases/download/0.58.1/meson-0.58.1.tar.gz",
+		"url": "https://github.com/mesonbuild/meson/releases/download/0.59.0/meson-0.59.0.tar.gz",
 		"homeUrl": "https://mesonbuild.com",
-		"version": "0.58.1",
+		"version": "0.59.0",
 		"releasesUrl": "https://github.com/mesonbuild/meson/releases/",
 		"priority": "important",
-		"md5": "7e10667e08159a61c4f524b148799ec8",
-		"size": "1.81",
+		"md5": "bb8bf3898afefc8272989e4be8ff0a5b",
+		"size": "1.85",
 		"installedSize": 5.3,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -1315,7 +1315,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.58.1.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.59.0.tar.gz"
 	},
 	{
 		"name": "mpc",
