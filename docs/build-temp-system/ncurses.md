@@ -74,6 +74,8 @@ make DESTDIR=$LIN TIC_PATH=$(pwd)/tic-build/progs/tic install
 echo "INPUT(-lncursesw)" > $LIN/usr/lib/libncurses.so
 ```
 
+## При раздельной структуре каталогов
+
 Переместите разделяемые библиотеки в `$LIN/lib`:
 
 ```bash
