@@ -1,5 +1,5 @@
 ```bash
-mkdir -pv $LIN/{bin,sbin,lib,usr,etc,var,lib64}
+mkdir -pv $LIN/{bin,etc,lib,lib64,sbin,usr,var}
 mkdir -pv $LIN/{boot,home,mnt,opt,srv}
 mkdir -pv $LIN/usr/{,local/}{bin,sbin,include,lib,src}
 mkdir -pv $LIN/{dev,proc,sys,run}
