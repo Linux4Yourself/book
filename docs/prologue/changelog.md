@@ -11,10 +11,11 @@
 - meson-0.59.0
 
 ## Изменения
-- [Исправлено #750](https://github.com/Linux4Yourself/book/pull/750)
-- [Исправлено #694](https://github.com/Linux4Yourself/book/pull/694)
-- [Исправлено #752](https://github.com/Linux4Yourself/book/pull/752)
-- [Исправлено #746](https://github.com/Linux4Yourself/book/pull/746)
+- [Исправлено #715](https://github.com/Linux4Yourself/book/issues/715)
+- [Исправлено #750](https://github.com/Linux4Yourself/book/issues/750)
+- [Исправлено #694](https://github.com/Linux4Yourself/book/issues/694)
+- [Исправлено #752](https://github.com/Linux4Yourself/book/issues/752)
+- [Исправлено #746](https://github.com/Linux4Yourself/book/issues/746)
 - [Исправлено #673](https://github.com/Linux4Yourself/book/issues/673)
 - [Исправлено #742](https://github.com/Linux4Yourself/book/issues/742)
 - [Исправлены команды сборки p11-kit и добавленны пояснения](https://github.com/Linux4Yourself/book/issues/740)
