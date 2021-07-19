@@ -43,14 +43,16 @@ make
 make DESTDIR=$LIN install
 ```
 
-Переместите `bash` в нужную директорию:
-
-```bash
-mv $LIN/usr/bin/bash $LIN/bin/bash
-```
-
 Сделайте символическую ссылку для программ, которые используют `sh` в качестве интерпретатора:
 
 ```bash
 ln -sv bash $LIN/bin/sh
+```
+
+## При раздельной структуре каталогов
+
+Переместите `bash` в нужную директорию:
+
+```bash
+mv $LIN/usr/bin/bash $LIN/bin/bash
 ```
