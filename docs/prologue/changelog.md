@@ -10,7 +10,8 @@
 - binutils-2.37
 - meson-0.59.0
 
-## Изменения
+## [Изменения](https://github.com/Linux4Yourself/book/issues?q=is%3Aissue+milestone%3Av.1.3+is%3Aclosed)
+- [Исправлено #766](https://github.com/Linux4Yourself/book/issues/766)
 - [Исправлено #682](https://github.com/Linux4Yourself/book/issues/682)
 - [Исправлено #706](https://github.com/Linux4Yourself/book/issues/706)
 - [Исправлено #715](https://github.com/Linux4Yourself/book/issues/715)
@@ -33,7 +34,7 @@
 - [Дополнено #704](https://github.com/Linux4Yourself/book/pull/704)
 - [Исправлено #187](https://github.com/Linux4Yourself/Linux4Yourself.Book.Packages/issues/187)
 - [Исправления опечаток и неточностей](https://github.com/Linux4Yourself/book/pull/708)
-- [Исправлено #700](https://github.com/Linux4Yourself/book/pull/701)
+- [Исправлено #700](https://github.com/Linux4Yourself/book/issues/700)
 - [Дополнено #693](https://github.com/Linux4Yourself/book/issues/693)
 - [Дополнение инструкций по настройке SysVInit](https://github.com/Linux4Yourself/book/pull/695)
 - [Исправлено #688](https://github.com/Linux4Yourself/book/issues/688)
@@ -45,6 +46,15 @@
 - [Исправлено #686](https://github.com/Linux4Yourself/book/issues/686)
 - [Исправлено #685](https://github.com/Linux4Yourself/book/issues/685)
 - [Исправлено #684](https://github.com/Linux4Yourself/book/issues/684)
+
+## Благодарности
+
+Спасибо всем участникам сообщества, которые внесли вклад в этот релиз.
+
+- [vk6677](https://github.com/vk6677)
+- [amadis](https://github.com/amadis)
+- [Mintormo](https://github.com/Mintormo)
+- [aburuss](https://github.com/aburuss)
 
 ## 01.07.2021
 
