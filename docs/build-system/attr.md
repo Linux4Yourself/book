@@ -2,45 +2,45 @@
 
 ## Настройка
 
-<package-script :package="'attr'" :type="'configure'"></package-script>
+[filename](../packages/core/attr/configure ':include')
 
 ## Сборка
 
-<package-script :package="'attr'" :type="'build'"></package-script>
+[filename](../packages/core/attr/build ':include')
 
 ## Тестирование
 
 !> Тестирование нужно производить на файловой системе, поддерживающей расширенные атрибуты. Например, ext2-ext4.
 
-<package-script :package="'attr'" :type="'test'"></package-script>
+[filename](../packages/core/attr/test ':include')
 
 ## Установка
 
-<package-script :package="'attr'" :type="'install'"></package-script>
+[filename](../packages/core/attr/install ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'attr'" :type="'multi_prepare'"></package-script>
+[filename](../packages/core/attr/multi_prepare ':include')
 
 ### Настройка
 
-<package-script :package="'attr'" :type="'multi_configure'"></package-script>
+[filename](../packages/core/attr/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'attr'" :type="'multi_build'"></package-script>
+[filename](../packages/core/attr/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'attr'" :type="'multi_install'"></package-script>
+[filename](../packages/core/attr/multi_install ':include')
 
 ## Установленные файлы
 
-Программы: attr getfattr setfattr
+Программы: `attr`, `getfattr`, `setfattr`
 
-Библиотеки: libattr.so
+Библиотеки: `libattr.so`
 
 <script>
 	new Vue({ el: '#main' })
