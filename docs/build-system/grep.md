@@ -2,19 +2,23 @@
 
 ## Настройка
 
-<package-script :package="'grep'" :type="'configure'"></package-script>
+[filename](../packages/core/grep/configure ':include')
+
+## При раздельной структуре каталогов
+
+Добавьте параметр `--bindir=/bin` скрипту `configure`.
 
 ## Сборка
 
-<package-script :package="'grep'" :type="'build'"></package-script>
+[filename](../packages/core/grep/build ':include')
 
 ## Тестирование
 
-<package-script :package="'grep'" :type="'test'"></package-script>
+[filename](../packages/core/grep/test ':include')
 
 ## Установка
 
-<package-script :package="'grep'" :type="'install'"></package-script>
+[filename](../packages/core/grep/install ':include')
 
 <script>
 	new Vue({ el: '#main' })
