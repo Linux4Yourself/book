@@ -1,0 +1,4 @@
+make DESTDIR=$PWD/DESTDIR -C libelf install
+install -vDm644 config/libelf.pc DESTDIR/usr/lib32/pkgconfig/libelf.pc
+cp -Rv DESTDIR/usr/lib32/* /usr/lib32
+rm -rf DESTDIR

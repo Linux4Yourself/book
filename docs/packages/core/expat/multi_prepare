@@ -1,0 +1,2 @@
+sed -e "/^am__append_1/ s/doc//" -i Makefile
+make clean

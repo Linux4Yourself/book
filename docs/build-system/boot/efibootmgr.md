@@ -15,9 +15,9 @@
 
 ## Значения новых команд
 
-- `EFIDIR=LIN`: указывает имя подкаталога дистрибутива в `/boot/efi/EFI`. Это нужно указать явно.
-- `EFI_LOADER=grubx64.efi`: указывает имя загрузчика EFI по умолчанию.
-- `sbindir=/usr/bin`: установить `efibootmgr` в /usr/bin.
+- `EFIDIR=LIN`- указывает имя подкаталога дистрибутива в `/boot/efi/EFI`. Это нужно указать явно.
+- `EFI_LOADER=grubx64.efi`- указывает имя загрузчика EFI по умолчанию.
+- `sbindir=/usr/bin` - установить `efibootmgr` в /usr/bin.
 
 <script>
 	new Vue({ el: '#main' })

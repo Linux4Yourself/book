@@ -16,11 +16,11 @@ https://unifoundry.com/pub/unifont/unifont-13.0.06/font-builds/unifont-13.0.06.p
 
 ## Значения параметров
 
-`--disable-efiemu` - Отключает установку большого и ненужного компонента
+`--disable-efiemu` - отключает установку большого и ненужного компонента
 
-`--with-platform=efi` - Использовать EFI
+`--with-platform=efi` - использовать EFI
 
-`--enable-grub-mkfont` - Включает установку шрифтов
+`--enable-grub-mkfont` - включает установку шрифтов
 
 ## Сборка
 

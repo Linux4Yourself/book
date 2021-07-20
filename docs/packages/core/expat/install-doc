@@ -1,0 +1,1 @@
+install -v -m644 doc/*.{html,png,css} /usr/share/doc/expat

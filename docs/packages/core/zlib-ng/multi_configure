@@ -1,0 +1,3 @@
+CC="gcc -m32" \
+./configure --prefix=/usr \
+    --libdir=/usr/lib32  --zlib-compat --native

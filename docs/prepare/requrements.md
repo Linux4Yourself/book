@@ -61,7 +61,7 @@ urpmi bison gawk texinfo make gcc-c++
 
 Чтобы узнать, что ваша хост-система полностью соответствует всем необходимым для дальнейшей работы требованиям, выполните следующий набор команд:
 
-<common-script :name="'version-check'"></common-script>
+[filename](../scripts/version-check.md ':include')
 
 !> Внимательно изучите результат выполнения. В нём не должно встречаться строк, содержащих `ERROR`, `command not found`, `failed`.
 

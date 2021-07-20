@@ -317,7 +317,7 @@ chown -R 0:0 /usr/src/linux-{{ package.version }}
 
 Создайте новый файл `/etc/modprobe.d/usb.conf`, выполнив следующую команду:
 
-<common-script :name="'modprobe'"></common-script>
+[filename](../scripts/modprobe.md ':include')
 
 <script>
 	new Vue({ el: '#main' })

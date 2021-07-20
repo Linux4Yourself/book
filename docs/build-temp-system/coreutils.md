@@ -31,9 +31,9 @@
 
 ### Значения параметров
 
-` --enable-install-program=hostname` - Включает установку программы `hostname`, нужной некоторым пакетам.
+` --enable-install-program=hostname` - включает установку программы `hostname`, нужной некоторым пакетам.
 
-`--enable-no-install-program=kill,uptime` - Программы `kill` и `uptime` предоставляются другими пакетами.
+`--enable-no-install-program=kill,uptime` - программы `kill` и `uptime` предоставляются другими пакетами.
 
 ## Сборка
 

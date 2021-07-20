@@ -1,0 +1,6 @@
+build
+configure
+install
+install-doc
+prepare
+test

@@ -1,0 +1,1 @@
+chmod -v 755 /lib/lib{cap,psx}.so.2

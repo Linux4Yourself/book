@@ -1,0 +1,3 @@
+./configure --prefix=/usr        \
+            --disable-static     \
+            --enable-thread-safe

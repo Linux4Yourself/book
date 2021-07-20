@@ -22,7 +22,9 @@ Vue.component('package-info', {
 	<div class="pkg">
 		<p>{{ package.description }}</p>
 		<p class="pkg-desc">
-			Ссылка для скачивания: <a :href="package.url"><b>{{ package.downloadUrl }}</b></a>
+			Ссылка для скачивания: <a :href="package.downloadUrl"><b>{{ package.downloadUrl }}</b></a>
+			<br />
+			Оригинальное расположение: <a :href="package.url"><b>{{ package.url }}</b></a>
 			<br />
 			Текущая версия: <b>{{ package.version }}</b>
 			<br />
@@ -85,6 +87,8 @@ Vue.component('pkg', {
 		<p class="pkg-desc">
 			Ссылка для скачивания: <a :href="package.downloadUrl"><b>{{ package.downloadUrl }}</b></a>
 			<br />
+			Оригинальное расположение: <a :href="package.url"><b>{{ package.url }}</b></a>
+			<br />
 			Текущая версия: <b>{{ package.version }}</b>
 			<br />
 			Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
@@ -123,25 +127,6 @@ Vue.component('package-script', {
 	},
 	mounted() {
 		getPackageScript(this.package, this.type)
-			.then(res => (this.info = res));
-	},
-	template: `
-<pre class="pre">
-{{ info }}
-</pre>`,
-});
-
-Vue.component('common-script', {
-	props: {
-		name: String,
-	},
-	data() {
-		return {
-			info: null
-		};
-	},
-	mounted() {
-		selectScript(this.name)
 			.then(res => (this.info = res));
 	},
 	template: `

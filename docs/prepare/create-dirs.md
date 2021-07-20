@@ -16,7 +16,7 @@ mkdir -pv $LIN/tools
 
 Теперь создайте базовую иерархию файловой системы:
 
-<common-script :name="'file-system'"></common-script>
+[filename](../scripts/file-system.md ':include')
 
 Подробнее об иерархии каталогов можно узнать в спецификации [FHS](https://refspecs.linuxfoundation.org/fhs.shtml)
 
@@ -33,6 +33,8 @@ mkdir -pv $LIN/usr/lib32
 ```bash
 ln -sv usr/lib32 $LIN/lib32
 ```
+
+?> Обратите внимание, что указанная символическая ссылка правильная. Если указать `$LIN/usr/lib32`, то при входе в среду `chroot`, ссылка будет некорректная.
 
 <script>
 	new Vue({ el: '#main' })
