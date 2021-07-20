@@ -9,6 +9,7 @@
 - MarkupSafe-2.0.1
 - binutils-2.37
 - meson-0.59.0
+- freetype-2.11.0
 
 ## [Изменения](https://github.com/Linux4Yourself/book/issues?q=is%3Aissue+milestone%3Av.1.3+is%3Aclosed)
 - [Исправлено #683](https://github.com/Linux4Yourself/book/issues/683)
