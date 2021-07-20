@@ -58,7 +58,7 @@ echo " . /etc/bash_completion" >> ~/.bashrc
 
 ## Для multilib
 
-Для M=multilib выполните:
+Для multilib выполните:
 
 ```bash
 echo "export LIN_TGT32=i686-lin-linux-gnu" >> ~/.bashrc
