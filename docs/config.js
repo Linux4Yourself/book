@@ -46,8 +46,8 @@ window.$docsify = {
 book = {
 	// ревизия книги. (develop | release | tag (releases/v.0.0.1))
 	// выставить в релизной ветке.
-	revision: 'develop',
-	revisionShort: 'dev',
+	revision: 'release/v.1.3',
+	revisionShort: 'rel',
 }
 
 const exrtraUrl =  `${book.revisionShort}-extra/#/`;
