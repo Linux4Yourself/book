@@ -2,26 +2,31 @@
 
 ## Настройка
 
-<package-script :package="'sed'" :type="'configure'"></package-script>
+[filename](../packages/core/sed/configure ':include')
+
+## При раздельной структуре каталогов
+
+Добавьте параметр `--bindir=/bin` скрипту `configure`.
 
 ## Сборка
 
-<package-script :package="'sed'" :type="'build'"></package-script>
+[filename](../packages/core/sed/build ':include')
 
 ## Сборка документации
 
-<package-script :package="'sed'" :type="'build-doc'"></package-script>
+[filename](../packages/core/sed/build-doc ':include')
 
 ## Тестирование
 
-<package-script :package="'sed'" :type="'test'"></package-script>
+[filename](../packages/core/sed/test ':include')
 
 ## Установка
 
-<package-script :package="'sed'" :type="'install'"></package-script>
+[filename](../packages/core/sed/install ':include')
 
 ## Установка документации
 
+[filename](../packages/core/sed/install-doc ':include')
 <package-script :package="'sed'" :type="'install-doc'"></package-script>
 
 <script>
