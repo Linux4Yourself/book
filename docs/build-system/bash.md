@@ -4,11 +4,11 @@
 
 Для многоядерных процессоров внесите исправление, которое устраняет проблему "состояния гонки" при использовании нескольких ядер.
 
-<package-script :package="'bash'" :type="'prepare'"></package-script>
+[filename](../packages/core/bash/prepare ':include')
 
 ## Настройка
 
-<package-script :package="'bash'" :type="'configure'"></package-script>
+[filename](../packages/core/bash/configure ':include')
 
 ### Значения параметров
 
@@ -18,17 +18,27 @@
 
 ## Сборка
 
-<package-script :package="'bash'" :type="'build'"></package-script>
+[filename](../packages/core/bash/build ':include')
 
 ## Тестирование
 
 Для корректного выполнения тестов, сделайте пользователя `tester` владельцем каталога и запустите тесты от пользователя `tester`
 
-<package-script :package="'bash'" :type="'test'"></package-script>
+[filename](../packages/core/bash/test ':include')
 
 ## Установка
 
-<package-script :package="'bash'" :type="'install'"></package-script>
+[filename](../packages/core/bash/install ':include')
+
+## При раздельной структуре каталогов
+
+Создайте ссылку на нужный бинарный файл.
+
+[filename](../packages/core/bash/cldirs ':include')
+
+`bash` должен находиться в `/bin`. Для упрощённой структуры этого делать не требуется.
+
+## Запуск новой сессии
 
 Запустите `bash` (заменив тот, который в настоящее время выполняется):
 
