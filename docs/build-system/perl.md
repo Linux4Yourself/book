@@ -14,11 +14,11 @@
 
 `-Dvendorprefix=/usr` - Устанавливать модули в `/usr`.
 
-`-Dpager="/usr/bin/less -isR"` - Использовать `less` вместо `more`.
+`-Dpager="/usr/bin/less -isR"` - использовать `less` вместо `more`.
 
 `-Duseshrplib` - Установить динамическую библиотеку.
 
-`-Dusethreads` - Использовать многопоточность.
+`-Dusethreads` - использовать многопоточность.
 
 ## Сборка
 

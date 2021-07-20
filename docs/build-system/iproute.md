@@ -9,23 +9,15 @@
 
 ## Сборка
 
-```bash
-make
-```
+<package-script :package="'iproute2'" :type="'build'"></package-script>
 
 ## Установка
 
-```bash
-make install
-```
+<package-script :package="'iproute2'" :type="'install'"></package-script>
 
 ## Установка документации
 
-```bash
-mkdir -v /usr/share/doc/iproute2
-cp -v COPYING README* /usr/share/doc/iproute2
-```
-
+<package-script :package="'iproute2'" :type="'install-doc'"></package-script>
 ## Установленные файлы
 
 Программы: bridge, ctstat (ссылка на lnstat), genl, ifcfg, ifstat, ip, lnstat, nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (ссылка на lnstat), ss, and tc
