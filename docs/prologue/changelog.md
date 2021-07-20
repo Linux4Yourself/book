@@ -11,6 +11,7 @@
 - meson-0.59.0
 
 ## [Изменения](https://github.com/Linux4Yourself/book/issues?q=is%3Aissue+milestone%3Av.1.3+is%3Aclosed)
+- [Исправлено #683](https://github.com/Linux4Yourself/book/issues/683)
 - [Исправлено #766](https://github.com/Linux4Yourself/book/issues/766)
 - [Исправлено #682](https://github.com/Linux4Yourself/book/issues/682)
 - [Исправлено #706](https://github.com/Linux4Yourself/book/issues/706)
@@ -24,7 +25,7 @@
 - [Исправлены команды сборки p11-kit и добавлены пояснения](https://github.com/Linux4Yourself/book/issues/740)
 - [Исправлено #736](https://github.com/Linux4Yourself/book/issues/736)
 - [Исправлено #734](https://github.com/Linux4Yourself/book/issues/734)
-- [Для пакета `file` удаленна поддержка multilib](https://github.com/Linux4Yourself/book/pull/732)
+- [Для пакета `file` удаленна поддержка multilib](https://github.com/Linux4Yourself/book/pull/733)
 - [Исправлено #722](https://github.com/Linux4Yourself/book/issues/722)
 - [Исправлено #720](https://github.com/Linux4Yourself/book/issues/720)
 - [Исправлено #718](https://github.com/Linux4Yourself/book/issues/718)
