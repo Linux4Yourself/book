@@ -18,6 +18,10 @@
 
 [filename](../packages/core/attr/install ':include')
 
+## При раздельной структуре каталогов
+
+[filename](../packages/core/attr/cldirs ':include')
+
 ## Для multilib
 
 ### Очистка
