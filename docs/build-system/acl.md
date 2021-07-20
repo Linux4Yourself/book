@@ -2,39 +2,43 @@
 
 ## Настройка
 
-<package-script :package="'acl'" :type="'configure'"></package-script>
+[filename](../packages/core/acl/configure ':include')
 
 ## Сборка
 
-<package-script :package="'acl'" :type="'build'"></package-script>
+[filename](../packages/core/acl/build ':include')
 
 ## Установка
 
-<package-script :package="'acl'" :type="'install'"></package-script>
+[filename](../packages/core/acl/install ':include')
+
+## Для раздельной структуры каталогов
+
+[filename](../packages/core/acl/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'acl'" :type="'multi_prepare'"></package-script>
+[filename](../packages/core/acl/multi_prepare ':include')
 
 ### Настройка
 
-<package-script :package="'acl'" :type="'multi_configure'"></package-script>
+[filename](../packages/core/acl/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'acl'" :type="'multi_build'"></package-script>
+[filename](../packages/core/acl/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'acl'" :type="'multi_install'"></package-script>
+[filename](../packages/core/acl/multi_install ':include')
 
 ## Установленные файлы
 
-Программы: chacl, getfacl, setfacl
+Программы: `chacl`, `getfacl`, `setfacl`
 
-Библиотеки: libacl.so
+Библиотеки: `libacl.so`
 
 <script>
 	new Vue({ el: '#main' })
