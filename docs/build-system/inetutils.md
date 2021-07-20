@@ -2,7 +2,7 @@
 
 ## Настройка
 
-<package-script :package="'inetutils'" :type="'configure'"></package-script>
+[filename](../packages/core/inetutils/configure ':include')
 
 ### Значения параметров
 
@@ -10,21 +10,25 @@
 
 ## Сборка
 
-<package-script :package="'inetutils'" :type="'build'"></package-script>
+[filename](../packages/core/inetutils/build ':include')
 
 ## Тестирование
 
-<package-script :package="'inetutils'" :type="'test'"></package-script>
+[filename](../packages/core/inetutils/test ':include')
 
 ?> Тест `libls.sh` даёт сбой, когда система LX4 находится в среде chroot, а тест `ping-localhost.sh` не проходит, если в хост-системе нет поддержки IPv6.
 
 ## Установка
 
-<package-script :package="'inetutils'" :type="'install'"></package-script>
+[filename](../packages/core/inetutils/install ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/core/inetutils/cldirs ':include')
 
 ## Установленные файлы
 
-Программы: dnsdomainname, ftp, ifconfig, hostname, ping, ping6, talk, telnet, tftp и traceroute
+Программы: `dnsdomainname`, `ftp`, `ifconfig`, `hostname`, `ping`, `ping6`, `talk`, `telnet`, `tftp` и `traceroute`
 
 <script>
 	new Vue({ el: '#main' })
