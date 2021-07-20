@@ -2,13 +2,13 @@
 
 ## Подготовка
 
-Переустановка Readline приведет к переименованию старых библиотек в <имя библиотеки>.old. Хотя обычно это не проблема, в некоторых случаях это может вызвать ошибку в ldconfig. Этого можно избежать, выполнив следующие команды:
+Переустановка Readline приведет к переименованию старых библиотек в `<имя библиотеки>.old`. Хотя обычно это не проблема, в некоторых случаях это может вызвать ошибку в ldconfig. Этого можно избежать, выполнив следующие команды:
 
-<package-script :package="'readline'" :type="'prepare'"></package-script>
+[filename](../packages/core/readline/prepare ':include')
 
 ## Настройка
 
-<package-script :package="'readline'" :type="'configure'"></package-script>
+[filename](../packages/core/readline/configure ':include')
 
 ### Значения параметров
 
@@ -16,29 +16,33 @@
 
 ## Сборка
 
-<package-script :package="'readline'" :type="'build'"></package-script>
+[filename](../packages/core/readline/build ':include')
 
 ## Установка
 
-<package-script :package="'readline'" :type="'install'"></package-script>
+[filename](../packages/core/readline/install ':include')
+
+## При использовании раздельной структуры каталогов
+
+[filename](../packages/core/readline/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'readline'" :type="'multi_prepare'"></package-script>
+[filename](../packages/core/readline/multi_prepare ':include')
 
 ### Настройка
 
-<package-script :package="'readline'" :type="'multi_configure'"></package-script>
+[filename](../packages/core/readline/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'readline'" :type="'multi_build'"></package-script>
+[filename](../packages/core/readline/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'readline'" :type="'multi_install'"></package-script>
+[filename](../packages/core/readline/multi_install ':include')
 
 ## Установленные файлы
 
