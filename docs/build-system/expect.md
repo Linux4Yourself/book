@@ -4,19 +4,19 @@
 
 ## Настройка
 
-<package-script :package="'expect'" :type="'configure'"></package-script>
+[filename](../packages/core/expext/configure)
 
 ## Сборка
 
-<package-script :package="'expect'" :type="'build'"></package-script>
+[filename](../packages/core/expect/build)
 
 ## Тестирование
 
-<package-script :package="'expect'" :type="'test'"></package-script>
+[filename](../packages/core/expect/test)
 
 ## Установка
 
-<package-script :package="'expect'" :type="'install'"></package-script>
+[filename](../packages/core/expect/install)
 
 <script>
 	new Vue({ el: '#main' })
