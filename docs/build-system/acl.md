@@ -12,7 +12,7 @@
 
 [filename](../packages/core/acl/install ':include')
 
-## Для раздельной структуры каталогов
+## При раздельной структуры каталогов
 
 [filename](../packages/core/acl/cldirs ':include')
 
