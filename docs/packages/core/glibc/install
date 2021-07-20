@@ -1,3 +1,4 @@
+ln -sfnv $PWD/elf/ld-linux-x86-64.so.2 /lib
 touch /etc/ld.so.conf
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
