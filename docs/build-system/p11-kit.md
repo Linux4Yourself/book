@@ -10,7 +10,7 @@
 
 <package-script :package="'p11-kit'" :type="'configure'"></package-script>
 
-### Объяснение параметров configure
+### Значение параметров configure
 
 `--with-trust-paths=/etc/pki/anchors` - задает путь для доверенных сертификатов
 

@@ -97,7 +97,7 @@ sudo rm /swapfile
 
 И удалите записи в `/etc/fstab` и `/etc/sysctl.conf`.
 
-**Объяснение новых команд**
+**Значение новых команд**
 
 - `sudo swapoff...` - отключить подкачку
 - `sudo rm /swapfile` - удалить подкачку

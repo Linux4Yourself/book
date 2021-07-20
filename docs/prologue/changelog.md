@@ -12,6 +12,8 @@
 - freetype-2.11.0
 
 ## [Изменения](https://github.com/Linux4Yourself/book/issues?q=is%3Aissue+milestone%3Av.1.3+is%3Aclosed)
+
+- [Исправлено #672](https://github.com/Linux4Yourself/book/issues/672)
 - [Исправлено #683](https://github.com/Linux4Yourself/book/issues/683)
 - [Исправлено #766](https://github.com/Linux4Yourself/book/issues/766)
 - [Исправлено #682](https://github.com/Linux4Yourself/book/issues/682)

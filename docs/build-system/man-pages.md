@@ -18,6 +18,4 @@
 
 ## Установка
 
-```bash
-make install
-```
+<package-script :package="'man-pages'" :type="'install'"></package-script>

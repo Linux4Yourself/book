@@ -12,7 +12,7 @@
 `--disable-*`
 Исключает установку библиотек libuuid и libblkid, службы uuidd и fsck обертки, которые содержатся в пакете Util-Linux и являются более актуальными.
 
-`--enable-symlink-install` `--enable-relative-symlinks` - Использовать относительные символические ссылки вместо жёстких.
+`--enable-symlink-install` `--enable-relative-symlinks` - использовать относительные символические ссылки вместо жёстких.
 
 ## Сборка
 
