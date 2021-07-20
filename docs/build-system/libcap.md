@@ -3,43 +3,48 @@
 ## Подготовка
 
 Отключите установку статических библиотек:
-<package-script :package="'libcap'" :type="'prepare'"></package-script>
+
+[filename](../packages/core/libcap/prepare ':include')
 
 ## Сборка
 
-<package-script :package="'libcap'" :type="'build'"></package-script>
+[filename](../packages/core/libcap/build ':include')
 
 ## Тестирование
 
-<package-script :package="'libcap'" :type="'test'"></package-script>
+[filename](../packages/core/libcap/test ':include')
 
 ## Установка
 
-<package-script :package="'libcap'" :type="'install'"></package-script>
+[filename](../packages/core/libcap/install ':include')
 
 Установите корректные права для библиотек:
 
-<package-script :package="'libcap'" :type="'postinstall'"></package-script>
+[filename](../packages/core/libcap/postinstall ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/core/libcap/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'libcap'" :type="'multi_prepare'"></package-script>
+[filename](../packages/core/libcap/multi_prepare ':include')
 
 ### Сборка
 
-<package-script :package="'libcap'" :type="'multi_build'"></package-script>
+[filename](../packages/core/libcap/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'libcap'" :type="'multi_install'"></package-script>
+[filename](../packages/core/libcap/multi_install ':include')
 
 ## Установленные файлы
 
-Программы: capsh, getcap, getpcaps и setcap
+Программы: `capsh`, `getcap`, `getpcaps` и `setcap`
 
-Библиотеки: libcap.so и libpsx.so
+Библиотеки: `libcap.so` и `libpsx.so`
 
 <script>
 	new Vue({ el: '#main' })
