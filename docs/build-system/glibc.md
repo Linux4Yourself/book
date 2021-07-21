@@ -54,8 +54,8 @@ sed -e '402a\      *result = local->data.services[database_index];' \
 Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
-mkdir  build
-cd     build
+mkdir -v build
+cd       build
 ```
 
 ## Настройка
