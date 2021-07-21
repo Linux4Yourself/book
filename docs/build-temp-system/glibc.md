@@ -68,6 +68,8 @@ cd     build
       --disable-timezone-tools
 ```
 
+!> Для компиляции {{package.name}} для системы с раздельными каталогами используйте соответствующую команду ниже.
+
 ### Для multilib
 
 Добавьте параметр `--enable-multi-arch`
@@ -100,6 +102,20 @@ make DESTDIR=$LIN install
 
 ```bash
 $LIN/tools/libexec/gcc/$LIN_TGT/11.1.0/install-tools/mkheaders
+```
+
+## При раздельной структуре каталогов
+
+Замените команду `../configure ...` на:
+
+```bash
+../configure                             \
+      --prefix=/usr                      \
+      --host=$LFS_TGT                    \
+      --build=$(../scripts/config.guess) \
+      --enable-kernel=3.2                \
+      --with-headers=$LFS/usr/include    \
+      libc_cv_slibdir=/lib
 ```
 
 ## Тестирование
