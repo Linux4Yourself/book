@@ -89,8 +89,8 @@ sed -e '/m64=/s/lib64/lib/' \
 Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
-mkdir build
-cd    build
+mkdir -v build
+cd       build
 ```
 
 Разрешим сборку `libgcc` с поддержкой многопоточности:
