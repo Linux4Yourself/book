@@ -4,7 +4,7 @@
 
 ## Настройка
 
-[filename](../packages/core/expext/configure ':include')
+[filename](../packages/core/expeсt/configure ':include')
 
 ## Сборка
 
