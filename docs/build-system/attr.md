@@ -20,6 +20,8 @@
 
 ## При раздельной структуре каталогов
 
+Добавьте к скрипту `configure` опцию `--bindir=/bin`.
+
 [filename](../packages/core/attr/cldirs ':include')
 
 ## Для multilib
