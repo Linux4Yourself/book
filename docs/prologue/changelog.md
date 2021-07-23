@@ -7,6 +7,7 @@
 - linux-5.13.4
 - util-linux-2.37.1
 - zlib-ng-2.0.5
+- systemd-249.1
 
 ## 20.07.2021
 
