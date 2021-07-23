@@ -1193,19 +1193,19 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.13.3.tar.xz",
+		"fileName": "linux-5.13.4.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.3.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.4.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.13.3",
+		"version": "5.13.4",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "510d875f1dafbe3269cd409bba35ec8e",
-		"size": "113.79",
+		"md5": "50aa48ae38a736b3f313a777574af3d3",
+		"size": "113.80",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.13.3.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.13.4.tar.xz",
 		"scripts": []
 	},
 	{
@@ -1293,7 +1293,10 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/man-pages-5.12.tar.xz",
-		"scripts": []
+		"scripts": [
+			"install"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "meson",
@@ -1729,14 +1732,14 @@
 	},
 	{
 		"name": "systemd",
-		"fileName": "systemd-stable-249.tar.gz",
-		"description": "Системный менеджер, демон инициализации других демонов в Linux, пришедший на замену используемому ранее SysVinit. Его особенностью является интенсивное распараллеливание запуска служб в процессе загрузки системы, что позволяет существенно ускорить запуск операционной системы. Systemd используется во многих коммерческих дистрибутивах.",
-		"url": "https://github.com/systemd/systemd-stable/archive/refs/tags/v249.tar.gz",
+		"fileName": "systemd-stable-249.1.tar.gz",
+		"description": "Системный менеджер, демон инициализации других демонов в Linux, пришедший на замену используемому ранее SystemVInit. Его особенностью является интенсивное распараллеливание запуска служб в процессе загрузки системы, что позволяет существенно ускорить запуск операционной системы. Systemd используется во многих коммерческих дистрибутивах.",
+		"url": "https://github.com/systemd/systemd-stable/archive/refs/tags/v249.1.tar.gz",
 		"homeUrl": "https://systemd.io/",
-		"version": "249",
+		"version": "249.1",
 		"releasesUrl": "https://github.com/systemd/systemd/releases",
 		"priority": "required",
-		"md5": "fb0481dfe8f30ea06d270005f1039364",
+		"md5": "f237f154c1085de78503fc2b767e4173",
 		"size": "10.10",
 		"installedSize": 23.9,
 		"sbu": 0,
@@ -1754,7 +1757,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/systemd-stable-249.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/systemd-stable-249.1.tar.gz"
 	},
 	{
 		"name": "sysvinit",
@@ -1889,15 +1892,15 @@
 	},
 	{
 		"name": "util-linux",
-		"fileName": "util-linux-2.37.tar.xz",
+		"fileName": "util-linux-2.37.1.tar.xz",
 		"description": "Содержит стандартный набор служебных утилит командной строки, такие как: утилиты для работы с файловой системой, консолью, разделами, и сообщениями.",
-		"url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.1.tar.xz",
 		"homeUrl": "https://en.wikipedia.org/wiki/Util-linux",
-		"version": "2.37.0",
+		"version": "2.37.1",
 		"releasesUrl": "https://www.kernel.org/pub/linux/utils/util-linux/",
 		"priority": "required",
-		"md5": "75eb0a648098332d4042f1646eca4069",
-		"size": "5.26",
+		"md5": "6d244f0f59247e9109f47d6e5dd0556b",
+		"size": "5.37",
 		"installedSize": 7.9,
 		"sbu": 0.8,
 		"sbu2": 0.5,
@@ -1920,7 +1923,7 @@
 			"test-systemd"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/util-linux-2.37.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/util-linux-2.37.1.tar.xz"
 	},
 	{
 		"name": "vim",
@@ -2024,15 +2027,15 @@
 	},
 	{
 		"name": "zlib-ng",
-		"fileName": "zlib-ng-2.0.3.tar.gz",
+		"fileName": "zlib-ng-2.0.5.tar.gz",
 		"description": "Пакет Zlib содержит библиотеку для сжатия и распаковки, которую используют некоторые программы. Zlib-ng - это форк Zlib с улучшенной оптимизацией и дополнительными патчами.",
-		"url": "https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.0.3.tar.gz",
+		"url": "https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.0.5.tar.gz",
 		"homeUrl": "https://github.com/zlib-ng/zlib-ng",
-		"version": "2.0.3",
+		"version": "2.0.5",
 		"releasesUrl": "https://github.com/zlib-ng/zlib-ng/releases",
 		"priority": "required",
-		"md5": "59d0d6c2f407b1ebbecc0a8e769cf409",
-		"size": "0.67",
+		"md5": "6c17fa8456627d60dd1332a32d8e98bb",
+		"size": "0.77",
 		"installedSize": 0.24,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -2050,7 +2053,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/zlib-ng-2.0.3.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/zlib-ng-2.0.5.tar.gz"
 	},
 	{
 		"name": "zstd",
