@@ -24,6 +24,8 @@
 
 ## При раздельной структуре каталогов
 
+Уберите `prefix=/usr` в сборке и установке.
+
 [filename](../packages/core/libcap/cldirs ':include')
 
 ## Для multilib

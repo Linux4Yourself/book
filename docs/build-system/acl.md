@@ -14,6 +14,8 @@
 
 ## При раздельной структуры каталогов
 
+Добавьте к скрипту `configure` опцию `--bindir=/bin`.
+
 [filename](../packages/core/acl/cldirs ':include')
 
 ## Для multilib
