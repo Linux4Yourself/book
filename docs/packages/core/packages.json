@@ -611,11 +611,11 @@
 	},
 	{
 		"name": "gcc",
-		"fileName": "gcc-11.1.0.tar.xz",
+		"fileName": "gcc-11.2.0.tar.xz",
 		"description": "Пакет содержит набор компиляторов GNU для таких языков как Си и Си++.",
-		"url": "https://ftp.gnu.org/gnu/gcc/gcc-11.1.0/gcc-11.1.0.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz",
 		"homeUrl": "https://gnu.org/software/gcc",
-		"version": "11.1.0",
+		"version": "11.2.0",
 		"releasesUrl": "https://ftp.gnu.org/gnu/gcc",
 		"priority": "required",
 		"md5": "77f6252be0861ab918042acf42bc10ff",
@@ -623,9 +623,6 @@
 		"installedSize": 161,
 		"sbu": 14.8,
 		"sbu2": 25,
-		"patches": [
-			"gcc-patch"
-		],
 		"scripts": [
 			"build",
 			"configure",
@@ -637,7 +634,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/gcc-11.1.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz"
 	},
 	{
 		"name": "gdbm",
@@ -2373,23 +2370,6 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch",
-		"scripts": []
-	},
-	{
-		"name": "gcc-patch",
-		"fileName": "gcc-11.1.0-upstream_fixes-1.patch",
-		"description": "",
-		"url": "https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/gcc-11.1.0-upstream_fixes-1.patch",
-		"homeUrl": "",
-		"version": "11.1.0-upstream_fixes-1",
-		"releasesUrl": "",
-		"priority": "required",
-		"md5": "be1a50953a7f22c9f1e88d78bb86c326",
-		"size": "0.02",
-		"installedSize": 0,
-		"sbu": 0,
-		"sbu2": 0,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/gcc-11.1.0-upstream_fixes-1.patch",
 		"scripts": []
 	},
 	{
