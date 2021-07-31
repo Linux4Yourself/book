@@ -22,7 +22,7 @@ file-5.40.tar.gz
 findutils-4.8.0.tar.xz
 flex-2.6.4.tar.gz
 gawk-5.1.0.tar.xz
-gcc-11.1.0.tar.xz
+gcc-11.2.0.tar.xz
 gdbm-1.20.tar.gz
 gettext-0.21.tar.xz
 glibc-2.33.tar.xz
@@ -96,5 +96,4 @@ coreutils-8.32-i18n-1.patch
 glibc-2.33-fhs-1.patch
 kbd-2.4.0-backspace-1.patch
 sysvinit-2.99-consolidated-1.patch
-gcc-11.1.0-upstream_fixes-1.patch
 efivar-37-gcc_9-1.patch

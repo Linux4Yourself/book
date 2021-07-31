@@ -22,7 +22,7 @@ a4fb91a9441bcaec576d4c4a56fa3aa6 expat-2.4.1.tar.xz
 eeefe2e6380931a77dfa6d9350b43186 findutils-4.8.0.tar.xz
 2882e3179748cc9f9c23ec593d6adc8d flex-2.6.4.tar.gz
 8470c34eeecc41c1aa0c5d89e630df50 gawk-5.1.0.tar.xz
-77f6252be0861ab918042acf42bc10ff gcc-11.1.0.tar.xz
+31c86f2ced76acac66992eeedce2fce2 gcc-11.2.0.tar.xz
 006c19b8b60828fd6916a16f3496bd3c gdbm-1.20.tar.gz
 40996bbaf7d1356d3c22e33a8b255b31 gettext-0.21.tar.xz
 390bbd889c7e8e8a7041564cb6b27cca glibc-2.33.tar.xz
@@ -91,10 +91,9 @@ b939ee54eabc6b9b0a8d5c03ace879c9 wget-1.21.1.tar.gz
 c46f6eb3bd1287031ae5d36465094402 libtasn1-4.17.0.tar.gz
 8ccf11c4a2e2e505b8e516d8549e64a5 p11-kit-0.24.0.tar.xz
 e0356f5ae5623f227a3f69b5e8848ec6 make-ca-1.7.tar.xz
-19852fe67b6babb67bfae0b6db9ef732 bzip2-1.0.8-install_docs-1.patch
-fe2680b5a72d1ca7f7fee7b723456e0e coreutils-8.32-i18n-1.patch
-dd09372fc5740324c82aed7d97635d6d glibc-2.33-fhs-1.patch
-3249eddfaf6138c9542d0b5165033d5d kbd-2.4.0-backspace-1.patch
-fd07ab7c0e5ec38ac2aa2d79178e4562 sysvinit-2.99-consolidated-1.patch
-be1a50953a7f22c9f1e88d78bb86c326 gcc-11.1.0-upstream_fixes-1.patch
-6c3af2c50718168f781bf0c565736928 efivar-37-gcc_9-1.patch
+b45d3bea4ddb7f64b6e56033ecc0fb11 bzip2-1.0.8-install_docs-1.patch
+cd8ebed2a67fff2e231026df91af6776 coreutils-8.32-i18n-1.patch
+9a5997c3452909b1769918c759eff8a2 glibc-2.33-fhs-1.patch
+f75cca16a38da6caa7d52151f7136895 kbd-2.4.0-backspace-1.patch
+4900322141d493e74020c9cf437b2cdc sysvinit-2.99-consolidated-1.patch
+e795e52eeefc0d2c62c6c4bd748d2d38 efivar-37-gcc_9-1.patch

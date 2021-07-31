@@ -96,5 +96,4 @@ core/coreutils-patch
 core/glibc-patch
 core/kbd-patch
 core/sysvinit-patch
-core/gcc-patch
 core/efivar-patch
