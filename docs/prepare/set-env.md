@@ -50,15 +50,15 @@ echo " . /etc/bash_completion" >> ~/.bashrc
 Это можно сделать двумя способами:
 
 - Указывать при каждом вызове `make` аргумент `-jN`
-- Добавить переменую окружения `MAKEFLAGS`
+- Добавить переменную окружения `MAKEFLAGS`
 
 Замените `N` на число потоков вашего процессора.
 
 О дополнительной информации о потоках процессора читайте [здесь](prepare/about-threads).
 
-## Для MultiLib
+## Для multilib
 
-Для MultiLib выполните:
+Для multilib выполните:
 
 ```bash
 echo "export LIN_TGT32=i686-lin-linux-gnu" >> ~/.bashrc
@@ -87,5 +87,3 @@ source ~/.bash_profile
 `PATH=/usr/bin if [ ! -L /bin ]; then PATH=/bin:$PATH; fi` - Задаёт пути поиска исполняемых файлов в хост-системе.
 
 `PATH=$LIN/tools/bin:$PATH` - Необходимо для обнаружения исполняемых файлов кросс-компилятора.
-
-`CONFIG_SITE=$LIN/usr/share/config.site` - Необходимо некоторым пакетам.
