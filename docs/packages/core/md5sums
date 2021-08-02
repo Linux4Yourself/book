@@ -25,7 +25,7 @@ eeefe2e6380931a77dfa6d9350b43186 findutils-4.8.0.tar.xz
 31c86f2ced76acac66992eeedce2fce2 gcc-11.2.0.tar.xz
 006c19b8b60828fd6916a16f3496bd3c gdbm-1.20.tar.gz
 40996bbaf7d1356d3c22e33a8b255b31 gettext-0.21.tar.xz
-390bbd889c7e8e8a7041564cb6b27cca glibc-2.33.tar.xz
+31998b53fb39cb946e96abc310af1c89 glibc-2.34.tar.xz
 0b82665c4a92fd2ade7440c13fcaa42b gmp-6.2.1.tar.xz
 9e251c0a618ad0824b51117d5d9db87e gperf-3.1.tar.gz
 f47fe27049510b2249dba7f862ac1b51 grep-3.6.tar.xz

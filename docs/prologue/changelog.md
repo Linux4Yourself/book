@@ -4,6 +4,7 @@
 
 ## Обновления пакетов
 
+- glibc-2.34
 - e2fsprogs-1.46.3
 - automake-1.16.4
 - shadow-4.9
