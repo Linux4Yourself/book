@@ -21,13 +21,15 @@
 
 Замените `sdX` на нужное значение.
 
-## Для SysVInit
+Если вы используете SysVInit, выполните:
 
-[filename](../scripts/fstab-sysv.md ':include')
-
-Замените `sdX` на нужное значение.
-
-## Дополнительно
+```bash
+echo "proc           /proc        proc     nosuid,noexec,nodev 0     0
+sysfs          /sys         sysfs    nosuid,noexec,nodev 0     0
+devpts         /dev/pts     devpts   gid=5,mode=620      0     0
+tmpfs          /run         tmpfs    defaults            0     0
+devtmpfs       /dev         devtmpfs mode=0755,nosuid    0     0" >> /etc/fstab
+```
 
 Для использования UEFI выполните:
 
