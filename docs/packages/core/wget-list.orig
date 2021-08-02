@@ -1,7 +1,7 @@
 https://download.savannah.gnu.org/releases/acl/acl-2.3.1.tar.xz
 https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
-https://ftp.gnu.org/gnu/automake/automake-1.16.3.tar.xz
+https://ftp.gnu.org/gnu/automake/automake-1.16.4.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz
 https://github.com/gavinhoward/bc/releases/download/4.0.2/bc-4.0.2.tar.xz
 https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz
@@ -9,10 +9,10 @@ https://ftp.gnu.org/gnu/bison/bison-3.7.6.tar.xz
 https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
-https://dbus.freedesktop.org/releases/dbus/dbus-1.12.20.tar.gz
+https://dbus.freedesktop.org/releases/dbus/dbus-1.13.18.tar.gz
 https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
-https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.46.2/e2fsprogs-1.46.2.tar.gz
+https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.46.3/e2fsprogs-1.46.3.tar.gz
 https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
 https://sourceware.org/ftp/elfutils/0.185/elfutils-0.185.tar.bz2
 https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz
@@ -33,7 +33,7 @@ https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
 https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz
 https://github.com/Mic92/iana-etc/releases/download/20210611/iana-etc-20210611.tar.gz
-https://ftp.gnu.org/gnu/inetutils/inetutils-2.0.tar.xz
+https://ftp.gnu.org/gnu/inetutils/inetutils-2.1.tar.xz
 https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.13.0.tar.xz
 http://isl.gforge.inria.fr/isl-0.24.tar.xz
@@ -45,7 +45,7 @@ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.51.t
 https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz
 https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz
 https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
-https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.4.tar.xz
+https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.7.tar.xz
 https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
 https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
 https://download.savannah.gnu.org/releases/man-db/man-db-2.9.4.tar.xz
@@ -64,11 +64,11 @@ https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.4.tar.xz
 https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tar.xz
 https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz
 https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
-https://github.com/shadow-maint/shadow/releases/download/4.8.1/shadow-4.8.1.tar.xz
+https://github.com/shadow-maint/shadow/releases/download/4.9/shadow-4.9.tar.xz
 https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz
 https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.0.1.tar.gz
 https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.1.tar.gz
-https://github.com/systemd/systemd-stable/archive/refs/tags/v249.1.tar.gz
+https://github.com/systemd/systemd-stable/archive/refs/tags/v249.2.tar.gz
 https://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.99.tar.xz
 https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz
 https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz
@@ -76,7 +76,7 @@ https://ftp.gnu.org/gnu/texinfo/texinfo-6.8.tar.xz
 https://www.iana.org/time-zones/repository/releases/tzdata2021a.tar.gz
 https://github.com/Linux4Yourself/Linux4Yourself.Udev/releases/download/0.1/udev.tar.xz
 https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.1.tar.xz
-https://github.com/vim/vim/archive/refs/tags/v8.2.3060.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v8.2.3273.tar.gz
 https://www.nano-editor.org/dist/v5/nano-5.8.tar.xz
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
 https://tukaani.org/xz/xz-5.2.5.tar.xz
