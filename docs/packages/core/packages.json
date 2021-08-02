@@ -78,15 +78,15 @@
 	},
 	{
 		"name": "automake",
-		"fileName": "automake-1.16.3.tar.xz",
+		"fileName": "automake-1.16.4.tar.xz",
 		"description": "Программы для создания файлов Makefile для использования его программой Autoconf. Он также необходим для повторной компиляции пакета после обновления процедур сборки.",
-		"url": "https://ftp.gnu.org/gnu/automake/automake-1.16.3.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/automake/automake-1.16.4.tar.xz",
 		"homeUrl": "https://www.gnu.org/software/automake",
-		"version": "1.16.3",
+		"version": "1.16.4",
 		"releasesUrl": "https://ftp.gnu.org/gnu/automake/",
 		"priority": "optional",
-		"md5": "c27f608a4e1f302ec7ce42f1251c184e",
-		"size": "1.52",
+		"md5": "86e8e682bd74e6390a016c4d9c11267c",
+		"size": "1.53",
 		"installedSize": 1.4,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -98,7 +98,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/automake-1.16.3.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/automake-1.16.4.tar.xz"
 	},
 	{
 		"name": "bash",
@@ -285,15 +285,15 @@
 	},
 	{
 		"name": "dbus",
-		"fileName": "dbus-1.12.20.tar.gz",
+		"fileName": "dbus-1.13.18.tar.gz",
 		"description": "D-Bus - система межпроцессного взаимодействия, которая позволяет приложениям в операционной системе сообщаться друг с другом. D-Bus предоставляет собой системную службу (для обработки таких событий, как 'Добавлено новое аппаратное устройство' или 'очередь принтеров изменена') и системную службу сеанса для каждого пользователя (для общих потребностей IPC среди пользовательских приложений.) Кроме того, D-Bus построен поверх общей платформы передачи сообщений от одного к другому, которая может использоваться любыми двумя приложениями для связки (в обход шины сообщений).",
-		"url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.12.20.tar.gz",
+		"url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.13.18.tar.gz",
 		"homeUrl": "https://www.freedesktop.org/wiki/Software/dbus/",
-		"version": "1.12.20",
+		"version": "1.13.18",
 		"releasesUrl": "https://dbus.freedesktop.org/releases/dbus/",
 		"priority": "important",
-		"md5": "dfe8a71f412e0b53be26ed4fbfdc91c4",
-		"size": "2.00",
+		"md5": "0bb0f9efa79b11b6d57012c2860f6304",
+		"size": "0.00",
 		"installedSize": 1.2,
 		"sbu": 0,
 		"sbu2": 0.2,
@@ -309,7 +309,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/dbus-1.12.20.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/dbus-1.13.18.tar.gz"
 	},
 	{
 		"name": "dejagnu",
@@ -358,15 +358,15 @@
 	},
 	{
 		"name": "e2fsprogs",
-		"fileName": "e2fsprogs-1.46.2.tar.gz",
+		"fileName": "e2fsprogs-1.46.3.tar.gz",
 		"description": "Утилиты для работы с файловыми системами ext2, ext3 и ext4. Это наиболее распространенные и тщательно протестированные файловые системы, поддерживаемые в Linux.",
-		"url": "https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.46.2/e2fsprogs-1.46.2.tar.gz",
+		"url": "https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.46.3/e2fsprogs-1.46.3.tar.gz",
 		"homeUrl": "https://sourceforge.net/projects/e2fsprogs/",
-		"version": "1.46.2",
+		"version": "1.46.3",
 		"releasesUrl": "https://sourceforge.net/projects/e2fsprogs/files/e2fsprogs/",
 		"priority": "required",
-		"md5": "e8ef5fa3b72557be5e9fe564a25da6eb",
-		"size": "9.06",
+		"md5": "0edcffc4b601a4191bfa152f61b406b2",
+		"size": "9.07",
 		"installedSize": 3.2,
 		"sbu": 0,
 		"sbu2": 0.5,
@@ -380,7 +380,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/e2fsprogs-1.46.2.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/e2fsprogs-1.46.3.tar.gz"
 	},
 	{
 		"name": "emacs",
@@ -891,15 +891,15 @@
 	},
 	{
 		"name": "inetutils",
-		"fileName": "inetutils-2.0.tar.xz",
+		"fileName": "inetutils-2.1.tar.xz",
 		"description": "Пакет Inetutils содержит базовые программы для работы с сетью.",
-		"url": "https://ftp.gnu.org/gnu/inetutils/inetutils-2.0.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/inetutils/inetutils-2.1.tar.xz",
 		"homeUrl": "",
-		"version": "2.0",
+		"version": "2.1",
 		"releasesUrl": "https://ftp.gnu.org/gnu/inetutils/",
 		"priority": "important",
-		"md5": "5e1018502cd131ed8e42339f6b5c98aa",
-		"size": "1.43",
+		"md5": "4e7676d1980e57c7df665e5c5c3c1047",
+		"size": "1.46",
 		"installedSize": 0.8,
 		"sbu": 0,
 		"sbu2": 0.2,
@@ -910,7 +910,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/inetutils-2.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/inetutils-2.1.tar.xz"
 	},
 	{
 		"name": "intltool",
@@ -1189,19 +1189,19 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.13.4.tar.xz",
+		"fileName": "linux-5.13.7.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.4.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.7.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.13.4",
+		"version": "5.13.7",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "50aa48ae38a736b3f313a777574af3d3",
-		"size": "113.80",
+		"md5": "9bd74571c148a7753f5a237ba52f8ee5",
+		"size": "113.81",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.13.4.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.13.7.tar.xz",
 		"scripts": []
 	},
 	{
@@ -1637,15 +1637,15 @@
 	},
 	{
 		"name": "shadow",
-		"fileName": "shadow-4.8.1.tar.xz",
+		"fileName": "shadow-4.9.tar.xz",
 		"description": "Пакет Shadow содержит программы для работы с паролями безопасным способом.",
-		"url": "https://github.com/shadow-maint/shadow/releases/download/4.8.1/shadow-4.8.1.tar.xz",
+		"url": "https://github.com/shadow-maint/shadow/releases/download/4.9/shadow-4.9.tar.xz",
 		"homeUrl": "https://shadow-maint.github.io/shadow/",
-		"version": "4.8.1",
+		"version": "4.9",
 		"releasesUrl": "https://github.com/shadow-maint/shadow/releases/",
 		"priority": "required",
-		"md5": "4b05eff8a427cf50e615bda324b5bc45",
-		"size": "1.54",
+		"md5": "9d1ead73e678fa2f51a70a933b0bf017",
+		"size": "0.00",
 		"installedSize": 1.7,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -1658,7 +1658,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/shadow-4.8.1.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/shadow-4.9.tar.xz"
 	},
 	{
 		"name": "sysklogd",
@@ -1728,14 +1728,14 @@
 	},
 	{
 		"name": "systemd",
-		"fileName": "systemd-stable-249.1.tar.gz",
+		"fileName": "systemd-stable-249.2.tar.gz",
 		"description": "Системный менеджер, демон инициализации других демонов в Linux, пришедший на замену используемому ранее SystemVInit. Его особенностью является интенсивное распараллеливание запуска служб в процессе загрузки системы, что позволяет существенно ускорить запуск операционной системы. Systemd используется во многих коммерческих дистрибутивах.",
-		"url": "https://github.com/systemd/systemd-stable/archive/refs/tags/v249.1.tar.gz",
+		"url": "https://github.com/systemd/systemd-stable/archive/refs/tags/v249.2.tar.gz",
 		"homeUrl": "https://systemd.io/",
-		"version": "249.1",
+		"version": "249.2",
 		"releasesUrl": "https://github.com/systemd/systemd/releases",
 		"priority": "required",
-		"md5": "f237f154c1085de78503fc2b767e4173",
+		"md5": "bfebfccccc031621321d9c92fc78de68",
 		"size": "10.10",
 		"installedSize": 23.9,
 		"sbu": 0,
@@ -1753,7 +1753,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/systemd-stable-249.1.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/systemd-stable-249.2.tar.gz"
 	},
 	{
 		"name": "sysvinit",
@@ -1923,15 +1923,15 @@
 	},
 	{
 		"name": "vim",
-		"fileName": "vim-8.2.3060.tar.gz",
+		"fileName": "vim-8.2.3273.tar.gz",
 		"description": "Один из мощнейших текстовых редакторов с полной свободой настройки и автоматизации, возможными благодаря расширениям и надстройкам.",
-		"url": "https://github.com/vim/vim/archive/refs/tags/v8.2.3060.tar.gz",
+		"url": "https://github.com/vim/vim/archive/refs/tags/v8.2.3273.tar.gz",
 		"homeUrl": "https://www.vim.org/",
-		"version": "8.2.3060",
+		"version": "8.2.3273",
 		"releasesUrl": "https://github.com/vim/vim/releases",
 		"priority": "optional",
-		"md5": "63986be615cef730b3362dcce4bf1352",
-		"size": "14.85",
+		"md5": "d3518dc72dd729ec85bc2a577fe0f709",
+		"size": "14.94",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 2.1,
@@ -1944,7 +1944,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.3060.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.3273.tar.gz"
 	},
 	{
 		"name": "nano",
