@@ -15,11 +15,21 @@
 
 Здесь всегда есть запись о корневой файловой системе. Раздел swap является специальным, поэтому его не видно в древовидной структуре, и в поле точки монтирования для таких разделов всегда содержится ключевое слово swap.
 
-Создайте файл `fstab`:
+## Для systemd
 
 [filename](../scripts/fstab.md ':include')
 
 Замените `sdX` на нужное значение.
+
+Если вы используете SysVInit, выполните:
+
+```bash
+echo "proc           /proc        proc     nosuid,noexec,nodev 0     0
+sysfs          /sys         sysfs    nosuid,noexec,nodev 0     0
+devpts         /dev/pts     devpts   gid=5,mode=620      0     0
+tmpfs          /run         tmpfs    defaults            0     0
+devtmpfs       /dev         devtmpfs mode=0755,nosuid    0     0" >> /etc/fstab
+```
 
 Для использования UEFI выполните:
 
