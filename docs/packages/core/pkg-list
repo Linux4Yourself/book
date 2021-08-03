@@ -11,7 +11,7 @@ check-0.15.2.tar.gz
 coreutils-8.32.tar.xz
 dbus-1.13.18.tar.gz
 dejagnu-1.6.3.tar.gz
-diffutils-3.7.tar.xz
+diffutils-3.8.tar.xz
 e2fsprogs-1.46.3.tar.gz
 emacs-27.2.tar.xz
 elfutils-0.185.tar.bz2
@@ -41,7 +41,7 @@ kbd-2.4.0.tar.xz
 kmod-29.tar.xz
 less-590.tar.gz
 bootscripts.tar.xz
-libcap-2.51.tar.xz
+libcap-2.52.tar.xz
 libffi-3.4.2.tar.gz
 libpipeline-1.5.3.tar.gz
 libtool-2.4.6.tar.xz

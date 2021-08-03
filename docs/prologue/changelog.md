@@ -4,6 +4,8 @@
 
 ## Обновления пакетов
 
+- diffutils-3.8
+- libcap-2.52
 - glibc-2.34
 - e2fsprogs-1.46.3
 - automake-1.16.4

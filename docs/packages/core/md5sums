@@ -11,7 +11,7 @@ d61aa92e3562cb7292b004ce96173cf7 bison-3.7.6.tar.xz
 022042695b7d5bcf1a93559a9735e668 coreutils-8.32.tar.xz
 0bb0f9efa79b11b6d57012c2860f6304 dbus-1.13.18.tar.gz
 68c5208c58236eba447d7d6d1326b821 dejagnu-1.6.3.tar.gz
-4824adc0e95dbbf11dfbdfaad6a1e461 diffutils-3.7.tar.xz
+6a6b0fdc72acfe3f2829aab477876fbc diffutils-3.8.tar.xz
 0edcffc4b601a4191bfa152f61b406b2 e2fsprogs-1.46.3.tar.gz
 4c3d9ff35b2ab2fe518dc7eb3951e128 emacs-27.2.tar.xz
 2b6e94c2eebc1f2194173e31bca9396e elfutils-0.185.tar.bz2
@@ -41,7 +41,7 @@ fae030f604a9537adc2502990a8ab4d1 isl-0.24.tar.xz
 e81e63acd80697d001c8d85c1acb38a0 kmod-29.tar.xz
 f029087448357812fba450091a1172ab less-590.tar.gz
 4f2a2b6159a437d1e89961b0231eaab0 bootscripts.tar.xz
-4c9febc1bf0afca6a4d9f86fcdb6d900 libcap-2.51.tar.xz
+91548d37bbb5b706928bc3b3bb0e22ac libcap-2.52.tar.xz
 294b921e6cf9ab0fbaea4b639f8fdbe8 libffi-3.4.2.tar.gz
 dad443d0911cf9f0f1bd90a334bc9004 libpipeline-1.5.3.tar.gz
 1bfb9b923f2c1339b4d2ce1807064aa5 libtool-2.4.6.tar.xz

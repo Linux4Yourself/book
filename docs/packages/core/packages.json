@@ -335,15 +335,15 @@
 	},
 	{
 		"name": "diffutils",
-		"fileName": "diffutils-3.7.tar.xz",
+		"fileName": "diffutils-3.8.tar.xz",
 		"description": "Пакет содержит программы, которые отображают разницу в содержимом между файлами и каталогами. Эти программы могут быть использованы для создания патчей, а также они используются в процедурах сборки для большинства пакетов.",
-		"url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.8.tar.xz",
 		"homeUrl": "https://www.gnu.org/software/diffutils",
-		"version": "3.7",
+		"version": "3.8",
 		"releasesUrl": "https://ftp.gnu.org/gnu/diffutils/",
 		"priority": "required",
-		"md5": "4824adc0e95dbbf11dfbdfaad6a1e461",
-		"size": "1.38",
+		"md5": "6a6b0fdc72acfe3f2829aab477876fbc",
+		"size": "1.51",
 		"installedSize": 0,
 		"sbu": 0.2,
 		"sbu2": 0.2,
@@ -354,7 +354,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/diffutils-3.7.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/diffutils-3.8.tar.xz"
 	},
 	{
 		"name": "e2fsprogs",
@@ -1084,15 +1084,15 @@
 	},
 	{
 		"name": "libcap",
-		"fileName": "libcap-2.51.tar.xz",
+		"fileName": "libcap-2.52.tar.xz",
 		"description": "Пакет Libcap реализует интерфейсы пользовательского пространства для возможностей POSIX 1003.1 e, доступных в ядрах Linux. Эти возможности представляют собой разделение привилегий All powerful root на набор различных привилегий.",
-		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.51.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.52.tar.xz",
 		"homeUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
-		"version": "2.51",
+		"version": "2.52",
 		"releasesUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
 		"priority": "important",
-		"md5": "4c9febc1bf0afca6a4d9f86fcdb6d900",
-		"size": "0.14",
+		"md5": "91548d37bbb5b706928bc3b3bb0e22ac",
+		"size": "0.15",
 		"installedSize": 0.19,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -1107,7 +1107,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.51.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.52.tar.xz"
 	},
 	{
 		"name": "libffi",
