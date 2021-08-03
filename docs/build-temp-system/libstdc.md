@@ -53,7 +53,7 @@ cd       build
     --disable-multilib              \
     --disable-nls                   \
     --disable-libstdcxx-pch         \
-    --with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.1.0
+    --with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.2.0
 ```
 
 ### Значения параметров
@@ -64,7 +64,7 @@ cd       build
 
 `--disable-libstdcxx-pch` - отключает установку предварительно скомпилированных заголовков, ненужных на данном этапе
 
-`--with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.1.0` - путь поиска заголовков C++
+`--with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.2.0` - путь поиска заголовков C++
 
 ## Сборка
 
