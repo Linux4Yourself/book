@@ -99,7 +99,7 @@ make DESTDIR=$LIN install
 Завершите установку файла `limits.h`, запустив скрипт из состава GCC:
 
 ```bash
-$LIN/tools/libexec/gcc/$LIN_TGT/11.1.0/install-tools/mkheaders
+$LIN/tools/libexec/gcc/$LIN_TGT/11.2.0/install-tools/mkheaders
 ```
 
 ## Тестирование
