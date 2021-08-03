@@ -11,7 +11,7 @@ https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.13.18.tar.gz
 https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz
-https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
+https://ftp.gnu.org/gnu/diffutils/diffutils-3.8.tar.xz
 https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.46.3/e2fsprogs-1.46.3.tar.gz
 https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
 https://sourceware.org/ftp/elfutils/0.185/elfutils-0.185.tar.bz2
@@ -41,7 +41,7 @@ https://www.kernel.org/pub/linux/utils/kbd/kbd-2.4.0.tar.xz
 https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-29.tar.xz
 https://www.greenwoodsoftware.com/less/less-590.tar.gz
 https://github.com/Linux4Yourself/bootscripts/releases/download/1.1/bootscripts.tar.xz
-https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.51.tar.xz
+https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.52.tar.xz
 https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz
 https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz
 https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
