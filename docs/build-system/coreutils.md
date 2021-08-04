@@ -7,37 +7,42 @@
 ## Подготовка
 
 Примените необязательный патч для поддержки локализации:
-<package-script :package="'coreutils'" :type="'patch'"></package-script>
+
+[filename](../packages/core/coreutils/patch ':include')
 
 !> В этом патче могут встречаться баги. При обнаружении новых ошибок обязательно отошлите отчёт об этом сопровождающим `coreutils`, перед этим проверив, воспроизводима ли ошибка без этого патча.
 
 Удалите проблемный тест:
 
-<package-script :package="'coreutils'" :type="'prepare'"></package-script>
+[filename](../packages/core/coreutils/prepare ':include')
 
 ## Настройка
 
-<package-script :package="'coreutils'" :type="'configure'"></package-script>
+[filename](../packages/core/coreutils/configure ':include)
 
 ### Значения параметров
 
-`autoreconf` - Требует патч поддержки локализации
+`autoreconf` - Требует патч поддержки локализации;
 
-`FORCE_UNSAFE_CONFIGURE=1` - Разрешает запуск `configure` под пользователем `root`
+`FORCE_UNSAFE_CONFIGURE=1` - Разрешает запуск `configure` под пользователем `root`.
 
 ## Сборка
 
-<package-script :package="'coreutils'" :type="'build'"></package-script>
+[filename](../packages/core/coreutils/build ':include)
 
 ## Тестирование
 
-<package-script :package="'coreutils'" :type="'test'"></package-script>
+[filename](../packages/core/coreutils/test ':include')
 
 ?> Известно, что тест `test-getlogin` не проходит в LX4.
 
 ## Установка
 
-<package-script :package="'coreutils'" :type="'install'"></package-script>
+[filename](../packages/core/coreutils/install ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/core/coreutils/cldirs ':include')
 
 ## Установленные файлы
 
