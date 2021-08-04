@@ -2,7 +2,7 @@
 
 ## Настройка
 
-<package-script :package="'findutils'" :type="'configure'"></package-script>
+[filename](../packages/core/findutils/configure ':include')
 
 ### Значения параметров
 
@@ -10,15 +10,19 @@
 
 ## Сборка
 
-<package-script :package="'findutils'" :type="'build'"></package-script>
+[filename](../packages/core/findutils/build ':include')
 
 ## Тестирование
 
-<package-script :package="'findutils'" :type="'test'"></package-script>
+[filename](../packages/core/findutils/test ':include')
 
 ## Установка
 
-<package-script :package="'findutils'" :type="'install'"></package-script>
+[filename](../packages/core/findutils/install ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/core/findutils/cldirs ':include')
 
 <script>
 	new Vue({ el: '#main' })
