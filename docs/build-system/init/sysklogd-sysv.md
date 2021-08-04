@@ -4,24 +4,31 @@
 
 Исправьте ошибку, приводящую к краху программы:
 
-<package-script :package="'sysklogd'" :type="'prepare'"></package-script>
+[filename](../packages/core/sysklogd/prepare ':include')
 
 ## Сборка
 
-<package-script :package="'sysklogd'" :type="'build'"></package-script>
+[filename](../packages/core/sysklogd/build ':include')
 
 ## Тестирование
 
-<package-script :package="'sysklogd'" :type="'test'"></package-script>
+[filename](../packages/core/sysklogd/test ':include')
 
 ## Установка
 
-<package-script :package="'sysklogd'" :type="'install'"></package-script>
+[filename](../packages/core/sysklogd/install ':include')
+
+> Если вы собираете систему с раздельной структурой каталогов, то пропустите шаг с установкой, перейдя к следующему
+
+## При раздельной структуре каталогов
+
+[filename](../packages/core/sysklogd/cldirs ':include')
 
 ## Настройка
 
 Создайте конфигурационный файл:
-<package-script :package="'sysklogd'" :type="'postinstall'"></package-script>
+
+[filename](../packages/core/sysklogd/postinstall ':include')
 
 <script>
 	new Vue({ el: '#main' })
