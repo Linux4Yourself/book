@@ -3,44 +3,57 @@
 ## Подготовка
 
 Удалите ненужную группу `render` из правил `udev`:
-<package-script :package="'systemd'" :type="'prepare'"></package-script>
+
+[filename](../packages/core/systemd/prepare ':include')
 
 ## Настройка
 
-<package-script :package="'systemd'" :type="'configure'"></package-script>
+[filename](../packages/core/systemd/configure ':include')
+
+## При раздельной структуре каталогов
+
+Добавьте к `meson` ключи:
+
+- `-Dkmod-path=/bin/kmod`
+- `-Dmount-path=/bin/mount`
+- `-Drootlibdir=/lib`
+- `-Dsplit-usr=true`
+- `-Dsulogin-path=/sbin/sulogin`
+- `-Dsulogin-path=/sbin/sulogin`
+- `-Dumount-path=/bin/umount`
 
 ## Сборка
 
-<package-script :package="'systemd'" :type="'build'"></package-script>
+[filename](../packages/core/systemd/build ':include')
 
 ## Установка
 
-<package-script :package="'systemd'" :type="'install'"></package-script>
+[filename](../packages/core/systemd/install ':include')
 
 - Удалите ненужный каталог;
 - Создайте файл `/etc/machine-id`, необходимый для `systemd-journald`;
 - Настройте базовую целевую структуру;
 - Отключите службу, которая, как известно, вызывает проблемы с системами, использующими конфигурацию сети, отличную от той, которая предоставляется systemd-networkd:
 
-<package-script :package="'systemd'" :type="'postinstall'"></package-script>
+[filename](../packages/core/systemd/postinstall ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'systemd'" :type="'multi_prepare'"></package-script>
+[filename](../packages/core/systemd/multi_prepare ':include')
 
 ### Настройка
 
-<package-script :package="'systemd'" :type="'multi_configure'"></package-script>
+[filename](../packages/core/systemd/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'systemd'" :type="'multi_build'"></package-script>
+[filename](../packages/core/systemd/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'systemd'" :type="'multi_install'"></package-script>
+[filename](../packages/core/systemd/multi_install ':include')
 
 <script>
 	new Vue({ el: '#main' })
