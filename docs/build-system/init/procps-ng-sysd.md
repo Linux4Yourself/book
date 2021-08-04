@@ -2,21 +2,25 @@
 
 ## Настройка
 
-<package-script :package="'procps-ng'" :type="'configure-systemd'"></package-script>
+[filename](../packages/core/procps-ng/configure-systemd ':include')
 
 ## Сборка
 
-<package-script :package="'procps-ng'" :type="'build'"></package-script>
+[filename](../packages/core/procps-ng/build ':include')
 
 ## Тестирование
 
-<package-script :package="'procps-ng'" :type="'test'"></package-script>
+[filename](../packages/core/procps-ng/test ':include')
 
 ?> Пять тестов, связанных с `pkill` дают сбои, так как они (тесты) не были обновлены.
 
 ## Установка
 
-<package-script :package="'procps-ng'" :type="'install'"></package-script>
+[filename](../packages/core/procps-ng/install ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/core/procps-ng/cldirs ':include')
 
 <script>
 	new Vue({ el: '#main' })
