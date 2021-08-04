@@ -2,15 +2,15 @@
 
 ## Настройка
 
-<package-script :package="'tar'" :type="'configure'"></package-script>
+[filename](../packages/core/tar/configure ':include')
 
 ## Сборка
 
-<package-script :package="'tar'" :type="'build'"></package-script>
+[filename](../packages/core/tar/build ':include')
 
 ## Тестирование
 
-<package-script :package="'tar'" :type="'test'"></package-script>
+[filename](../packages/core/tar/test ':include')
 
 > Тестирование добавляет 3 SBU ко всему времени установки пакета
 
@@ -18,7 +18,11 @@
 
 ## Установка
 
-<package-script :package="'tar'" :type="'install'"></package-script>
+[filename](../packages/core/tar/install ':include')
+
+## При раздельной структуре каталогов
+
+Добавьте к скрипту `configure` ключ `--bindir=/bin`.
 
 <script>
 	new Vue({ el: '#main' })
