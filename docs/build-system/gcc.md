@@ -101,9 +101,9 @@ grep -o '/usr/lib.*/crt[1in].*succeeded' dummy.log
 Результат выполнения:
 
 ```
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crt1.o succeeded
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crti.o succeeded
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crtn.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crt1.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crti.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crtn.o succeeded
 ```
 
 В зависимости от архитектуры, приведенное выше может немного отличаться. Разница будет в названии каталога после `/usr/lib/gcc`. Здесь важно обратить внимание на то, что `gcc` обнаружил все три файла `crt * .o` в каталоге `/usr/lib`.
@@ -119,9 +119,9 @@ grep -B4 '^ /usr/include' dummy.log
 
 ```
 #include <...> search starts here:
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
  /usr/local/include
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
 ```
 
 Проверим, что компоновщик использует корректные пути поиска:
@@ -181,4 +181,4 @@ rm -v dummy.c a.out dummy.log
 
 Библиотеки: libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so}, liblsan.{a,so}, liblto_plugin.so, libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a, libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so} и libubsan.{a,so}
 
-Директории: /usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc и /usr/share/gcc-11.1.0
+Директории: /usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc и /usr/share/gcc-11.2.0

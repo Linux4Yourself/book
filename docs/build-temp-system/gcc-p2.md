@@ -72,12 +72,6 @@ tar -xf ../{{ isl.fileName }}
 mv -v {{ isl.name }}-{{ isl.version }} {{ isl.name }}
 </pre>
 
-Примените патч, исправляющий некоторые проблемы в GCC:
-
-```bash
-patch -Np1 -i ../gcc-11.1.0-upstream_fixes-1.patch
-```
-
 Смените пути установки библиотек:
 
 ```bash
