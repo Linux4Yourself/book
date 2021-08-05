@@ -20,10 +20,6 @@
 
 [filename](../packages/core/tar/install ':include')
 
-## При раздельной структуре каталогов
-
-Добавьте к скрипту `configure` ключ `--bindir=/bin`.
-
 <script>
 	new Vue({ el: '#main' })
 </script>

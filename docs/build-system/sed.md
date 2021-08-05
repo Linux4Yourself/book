@@ -4,10 +4,6 @@
 
 [filename](../packages/core/sed/configure ':include')
 
-## При раздельной структуре каталогов
-
-Добавьте параметр `--bindir=/bin` скрипту `configure`.
-
 ## Сборка
 
 [filename](../packages/core/sed/build ':include')

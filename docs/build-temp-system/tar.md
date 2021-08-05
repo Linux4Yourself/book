@@ -22,7 +22,9 @@
 ```bash
 ./configure --prefix=/usr                     \
             --host=$LIN_TGT                   \
-            --build=$(build-aux/config.guess)  --disable-nls  --disable-acl
+            --build=$(build-aux/config.guess) \
+            --disable-nls  --disable-acl      \
+            --bindir=/bin
 ```
 
 ## Сборка
@@ -36,7 +38,3 @@ make
 ```bash
 make DESTDIR=$LIN install
 ```
-
-## При раздельной структуре каталогов
-
-Добавьте к скрипту `configure` ключ `--bindir=/bin`.

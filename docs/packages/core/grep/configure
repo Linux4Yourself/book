@@ -1,1 +1,1 @@
-./configure --prefix=/usr
+./configure --prefix=/usr --bindir=/bin
