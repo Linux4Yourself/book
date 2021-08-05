@@ -37,7 +37,7 @@ mkdir -pv /var/lib/hwclock
             --disable-pylibmount \
             --disable-static     \
             --without-python     \
-            runstatedir=/run  --enable-usrdir-path
+            runstatedir=/run
 ```
 
 ### Значения параметров
