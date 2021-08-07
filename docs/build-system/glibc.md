@@ -71,6 +71,8 @@ cd       build
       libc_cv_include_x86_isa_level=no
 ```
 
+> Если вы используете раздельную структуру каталогов, то измените значение параметра `libc_cv_slibdir` на `/lib`: `libc_cv_slibdir=/lib`, и удалите параметр `--libexecdir=/usr/lib`.
+
 ### Для multilib
 
 Добавьте параметр `--enable-multi-arch`
