@@ -24,6 +24,12 @@
 
 [filename](../packages/core/bzip2/install ':include')
 
+Создайте необходимые символические ссылки:
+
+[filename](../packages/core/bzip2/postinstall ':include')
+
+> Если вы собираете систему с раздельной структурой каталогов, то пропустите шаг с созданием ссылок, перейдя к следующему.
+
 ## При раздельной структуре каталогов
 
 [filename](../packages/core/bzip2/cldirs ':include')
