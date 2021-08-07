@@ -18,7 +18,7 @@
 
 ## Настройка
 
-[filename](../packages/core/coreutils/configure ':include)
+[filename](../packages/core/coreutils/configure ':include')
 
 ### Значения параметров
 
@@ -28,7 +28,7 @@
 
 ## Сборка
 
-[filename](../packages/core/coreutils/build ':include)
+[filename](../packages/core/coreutils/build ':include')
 
 ## Тестирование
 
