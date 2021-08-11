@@ -127,15 +127,15 @@
 	},
 	{
 		"name": "bc",
-		"fileName": "bc-4.0.2.tar.xz",
+		"fileName": "bc-5.0.0.tar.xz",
 		"description": "BC (basic calculator) — интерактивный интерпретатор Си-подобного языка, позволяет выполнять вычисления с произвольно заданной точностью. Часто используется как калькулятор в командной строке UNIX-подобных операционных систем.",
-		"url": "https://github.com/gavinhoward/bc/releases/download/4.0.2/bc-4.0.2.tar.xz",
+		"url": "https://github.com/gavinhoward/bc/releases/download/5.0.0/bc-5.0.0.tar.xz",
 		"homeUrl": "https://git.yzena.com/gavin/bc",
-		"version": "4.0.1",
+		"version": "5.0.0",
 		"releasesUrl": "https://git.yzena.com/gavin/bc/releases",
 		"priority": "important",
-		"md5": "230d780f978f1bc3f725bfbaf63c2b43",
-		"size": "0.22",
+		"md5": "8345bb81c576ddfc8c27e0842370603c",
+		"size": "0.41",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -146,7 +146,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/bc-4.0.2.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/bc-5.0.0.tar.xz"
 	},
 	{
 		"name": "binutils",
@@ -768,15 +768,15 @@
 	},
 	{
 		"name": "grep",
-		"fileName": "grep-3.6.tar.xz",
+		"fileName": "grep-3.7.tar.xz",
 		"description": "Пакет содержит программу, которая находит на вводе строки, отвечающие заданному регулярному выражению, и выводит их, если вывод не отменён специальным ключом. Пакет используется в процедурах сборки для большинства пакетов.",
-		"url": "https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/grep/grep-3.7.tar.xz",
 		"homeUrl": "https://gnu.org/software/grep",
-		"version": "3.6",
+		"version": "3.7",
 		"releasesUrl": "https://ftp.gnu.org/gnu/grep/",
 		"priority": "required",
-		"md5": "f47fe27049510b2249dba7f862ac1b51",
-		"size": "1.52",
+		"md5": "d45af87c3d9d3ddbe11cac971e11236c",
+		"size": "0.00",
 		"installedSize": 0.26,
 		"sbu": 0.2,
 		"sbu2": 0.2,
@@ -787,7 +787,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/grep-3.6.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/grep-3.7.tar.xz"
 	},
 	{
 		"name": "groff",
@@ -1189,19 +1189,19 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.13.7.tar.xz",
+		"fileName": "linux-5.13.9.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.7.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.9.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.13.7",
+		"version": "5.13.9",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "9bd74571c148a7753f5a237ba52f8ee5",
+		"md5": "f1ce10256453cb1746536d09f9daf263",
 		"size": "113.81",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.13.7.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.13.9.tar.xz",
 		"scripts": []
 	},
 	{
@@ -1728,14 +1728,14 @@
 	},
 	{
 		"name": "systemd",
-		"fileName": "systemd-stable-249.2.tar.gz",
+		"fileName": "systemd-stable-249.3.tar.gz",
 		"description": "Системный менеджер, демон инициализации других демонов в Linux, пришедший на замену используемому ранее SystemVInit. Его особенностью является интенсивное распараллеливание запуска служб в процессе загрузки системы, что позволяет существенно ускорить запуск операционной системы. Systemd используется во многих коммерческих дистрибутивах.",
-		"url": "https://github.com/systemd/systemd-stable/archive/refs/tags/v249.2.tar.gz",
+		"url": "https://github.com/systemd/systemd-stable/archive/refs/tags/v249.3.tar.gz",
 		"homeUrl": "https://systemd.io/",
-		"version": "249.2",
+		"version": "249.3",
 		"releasesUrl": "https://github.com/systemd/systemd/releases",
 		"priority": "required",
-		"md5": "bfebfccccc031621321d9c92fc78de68",
+		"md5": "72dc46529e8f4b660f3ecf4e544d8c41",
 		"size": "10.10",
 		"installedSize": 23.9,
 		"sbu": 0,
@@ -1753,7 +1753,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/systemd-stable-249.2.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/systemd-stable-249.3.tar.gz"
 	},
 	{
 		"name": "sysvinit",

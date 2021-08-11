@@ -3,7 +3,7 @@ attr-2.5.1.tar.gz
 autoconf-2.71.tar.xz
 automake-1.16.4.tar.xz
 bash-5.1.8.tar.gz
-bc-4.0.2.tar.xz
+bc-5.0.0.tar.xz
 binutils-2.37.tar.xz
 bison-3.7.6.tar.xz
 bzip2-1.0.8.tar.gz
@@ -28,7 +28,7 @@ gettext-0.21.tar.xz
 glibc-2.34.tar.xz
 gmp-6.2.1.tar.xz
 gperf-3.1.tar.gz
-grep-3.6.tar.xz
+grep-3.7.tar.xz
 groff-1.22.4.tar.gz
 grub-2.06.tar.xz
 gzip-1.10.tar.xz
@@ -45,7 +45,7 @@ libcap-2.52.tar.xz
 libffi-3.4.2.tar.gz
 libpipeline-1.5.3.tar.gz
 libtool-2.4.6.tar.xz
-linux-5.13.7.tar.xz
+linux-5.13.9.tar.xz
 m4-1.4.19.tar.xz
 make-4.3.tar.gz
 man-db-2.9.4.tar.xz
@@ -68,7 +68,7 @@ shadow-4.9.tar.xz
 sysklogd-1.5.1.tar.gz
 MarkupSafe-2.0.1.tar.gz
 Jinja2-3.0.1.tar.gz
-systemd-stable-249.2.tar.gz
+systemd-stable-249.3.tar.gz
 sysvinit-2.99.tar.xz
 tar-1.34.tar.xz
 tcl8.6.11-src.tar.gz
