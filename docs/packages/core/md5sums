@@ -3,7 +3,7 @@ ac1c5a7a084f0f83b8cace34211f64d8 attr-2.5.1.tar.gz
 12cfa1687ffa2606337efe1a64416106 autoconf-2.71.tar.xz
 86e8e682bd74e6390a016c4d9c11267c automake-1.16.4.tar.xz
 23eee6195b47318b9fd878e590ccb38c bash-5.1.8.tar.gz
-230d780f978f1bc3f725bfbaf63c2b43 bc-4.0.2.tar.xz
+8345bb81c576ddfc8c27e0842370603c bc-5.0.0.tar.xz
 e78d9ff2976b745a348f4c1f27c77cb1 binutils-2.37.tar.xz
 d61aa92e3562cb7292b004ce96173cf7 bison-3.7.6.tar.xz
 67e051268d0c475ea773822f7500d0e5 bzip2-1.0.8.tar.gz
@@ -28,7 +28,7 @@ eeefe2e6380931a77dfa6d9350b43186 findutils-4.8.0.tar.xz
 31998b53fb39cb946e96abc310af1c89 glibc-2.34.tar.xz
 0b82665c4a92fd2ade7440c13fcaa42b gmp-6.2.1.tar.xz
 9e251c0a618ad0824b51117d5d9db87e gperf-3.1.tar.gz
-f47fe27049510b2249dba7f862ac1b51 grep-3.6.tar.xz
+d45af87c3d9d3ddbe11cac971e11236c grep-3.7.tar.xz
 08fb04335e2f5e73f23ea4c3adbf0c5f groff-1.22.4.tar.gz
 cf0fd928b1e5479c8108ee52cb114363 grub-2.06.tar.xz
 691b1221694c3394f1c537df4eee39d3 gzip-1.10.tar.xz
@@ -45,7 +45,7 @@ f029087448357812fba450091a1172ab less-590.tar.gz
 294b921e6cf9ab0fbaea4b639f8fdbe8 libffi-3.4.2.tar.gz
 dad443d0911cf9f0f1bd90a334bc9004 libpipeline-1.5.3.tar.gz
 1bfb9b923f2c1339b4d2ce1807064aa5 libtool-2.4.6.tar.xz
-9bd74571c148a7753f5a237ba52f8ee5 linux-5.13.7.tar.xz
+f1ce10256453cb1746536d09f9daf263 linux-5.13.9.tar.xz
 0d90823e1426f1da2fd872df0311298d m4-1.4.19.tar.xz
 fc7a67ea86ace13195b0bce683fd4469 make-4.3.tar.gz
 6e233a555f7b9ae91ce7cd0faa322bce man-db-2.9.4.tar.xz
@@ -68,7 +68,7 @@ e9557dd5b1409f5d7b37ef717c64518e readline-8.1.tar.gz
 c70599ab0d037fde724f7210c2c8d7f8 sysklogd-1.5.1.tar.gz
 892e0fefa3c488387e5cc0cad2daa523 MarkupSafe-2.0.1.tar.gz
 25ba6ef98c164878acff1036fbd72a1d Jinja2-3.0.1.tar.gz
-bfebfccccc031621321d9c92fc78de68 systemd-stable-249.2.tar.gz
+72dc46529e8f4b660f3ecf4e544d8c41 systemd-stable-249.3.tar.gz
 6abc0ea61b8dd4a41b4e931a43b1bb90 sysvinit-2.99.tar.xz
 9a08d29a9ac4727130b5708347c0f5cf tar-1.34.tar.xz
 8a4c004f48984a03a7747e9ba06e4da4 tcl8.6.11-src.tar.gz

@@ -4,6 +4,10 @@
 
 ## Обновления пакетов
 
+- bc-5.0.0
+- grep-3.7
+- systemd-249.3
+- linux-13.9
 - diffutils-3.8
 - libcap-2.52
 - glibc-2.34
@@ -11,15 +15,11 @@
 - automake-1.16.4
 - shadow-4.9
 - inetutils-2.1
-- systemd-249.2
-- linux-5.13.7
 - dbus-1.13.18
 - vim-8.2.3273
 - gcc-11.2.0
-- linux-5.13.4
 - util-linux-2.37.1
 - zlib-ng-2.0.5
-- systemd-249.1
 
 ## 20.07.2021
 

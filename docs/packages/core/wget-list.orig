@@ -3,7 +3,7 @@ https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.4.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz
-https://github.com/gavinhoward/bc/releases/download/4.0.2/bc-4.0.2.tar.xz
+https://github.com/gavinhoward/bc/releases/download/5.0.0/bc-5.0.0.tar.xz
 https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz
 https://ftp.gnu.org/gnu/bison/bison-3.7.6.tar.xz
 https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
@@ -28,7 +28,7 @@ https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.xz
 https://ftp.gnu.org/gnu/glibc/glibc-2.34.tar.xz
 https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz
 https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz
-https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz
+https://ftp.gnu.org/gnu/grep/grep-3.7.tar.xz
 https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
 https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz
@@ -45,7 +45,7 @@ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.52.t
 https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz
 https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz
 https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
-https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.7.tar.xz
+https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.9.tar.xz
 https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
 https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
 https://download.savannah.gnu.org/releases/man-db/man-db-2.9.4.tar.xz
@@ -68,7 +68,7 @@ https://github.com/shadow-maint/shadow/releases/download/4.9/shadow-4.9.tar.xz
 https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz
 https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.0.1.tar.gz
 https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.1.tar.gz
-https://github.com/systemd/systemd-stable/archive/refs/tags/v249.2.tar.gz
+https://github.com/systemd/systemd-stable/archive/refs/tags/v249.3.tar.gz
 https://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.99.tar.xz
 https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz
 https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz
