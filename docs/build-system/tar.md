@@ -2,15 +2,15 @@
 
 ## Настройка
 
-[filename](../packages/core/tar/configure ':include')
+[filename](../packages/tar/configure ':include')
 
 ## Сборка
 
-[filename](../packages/core/tar/build ':include')
+[filename](../packages/tar/build ':include')
 
 ## Тестирование
 
-[filename](../packages/core/tar/test ':include')
+[filename](../packages/tar/test ':include')
 
 > Тестирование добавляет 3 SBU ко всему времени установки пакета
 
@@ -18,7 +18,7 @@
 
 ## Установка
 
-[filename](../packages/core/tar/install ':include')
+[filename](../packages/tar/install ':include')
 
 <script>
 	new Vue({ el: '#main' })

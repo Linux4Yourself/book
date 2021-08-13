@@ -8,45 +8,45 @@
 
 > Если вы собираете систему с раздельной структурой каталогов, то пропустите этот шаг и приступите к следующему.
 
-[filename](../../packages/core/eudev/configure ':include')
+[filename](../../packages/eudev/configure ':include')
 
 ## При раздельной структуре каталогов
 
-[filename](../../packages/core/eudev/cldirs ':include')
+[filename](../../packages/eudev/cldirs ':include')
 
 ## Сборка
 
-[filename](../../packages/core/eudev/build ':include')
+[filename](../../packages/eudev/build ':include')
 
 ## Тестирование
 
-[filename](../../packages/core/eudev/test ':include')
+[filename](../../packages/eudev/test ':include')
 
 ## Установка
 
-[filename](../../packages/core/eudev/install ':include')
+[filename](../../packages/eudev/install ':include')
 
 Установите необходимые файлы:
 
-[filename](../../packages/core/eudev/postinstall ':include')
+[filename](../../packages/eudev/postinstall ':include')
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/core/eudev/multi_prepare ':include')
+[filename](../packages/eudev/multi_prepare ':include')
 
 ### Настройка
 
-[filename](../../packages/core/eudev/multi_configure ':include')
+[filename](../../packages/eudev/multi_configure ':include')
 
 ### Сборка
 
-[filename](../../packages/core/eudev/multi_build ':include')
+[filename](../../packages/eudev/multi_build ':include')
 
 ### Установка
 
-[filename](../../packages/core/eudev/multi_install ':include')
+[filename](../../packages/eudev/multi_install ':include')
 
 <script>
 		new Vue({

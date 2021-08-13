@@ -12,45 +12,45 @@
 
 ## Сборка
 
-[filename](../packages/core/zlib-ng/build ':include')
+[filename](../packages/zlib-ng/build ':include')
 
 ## Тестирование
 
-[filename](../packages/core/zlib-ng/test ':include')
+[filename](../packages/zlib-ng/test ':include')
 
 ## Установка
 
-[filename](../packages/core/zlib-ng/install ':include')
+[filename](../packages/zlib-ng/install ':include')
 
 Удалите ненужную статическую библиотеку:
 
-[filename](../packages/core/zlib-ng/postinstall ':include')
+[filename](../packages/zlib-ng/postinstall ':include')
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/core/zlib-ng/cldirs ':include')
+[filename](../packages/zlib-ng/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/core/zlib-ng/multi_prepare ':include')
+[filename](../packages/zlib-ng/multi_prepare ':include')
 
 ### Настройка
 
-[filename](../packages/core/zlib-ng/multi_configure ':include')
+[filename](../packages/zlib-ng/multi_configure ':include')
 
 ### Сборка
 
-[filename](../packages/core/zlib-ng/multi_build ':include')
+[filename](../packages/zlib-ng/multi_build ':include')
 
 ### Установка
 
-[filename](../packages/core/zlib-ng/multi_install ':include')
+[filename](../packages/zlib-ng/multi_install ':include')
 
 Удалите ненужную статическую библиотеку:
 
-[filename](../packages/core/zlib-ng/multi_postinstall ':include')
+[filename](../packages/zlib-ng/multi_postinstall ':include')
 
 ## Установленные файлы
 

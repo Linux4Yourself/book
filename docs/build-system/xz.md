@@ -2,41 +2,41 @@
 
 ## Настройка
 
-[filename](../packages/core/xz/configure ':include')
+[filename](../packages/xz/configure ':include')
 
 ## Сборка
 
-[filename](../packages/core/xz/build ':include')
+[filename](../packages/xz/build ':include')
 
 ## Тестирование
 
-[filename](../packages/core/xz/test ':include')
+[filename](../packages/xz/test ':include')
 
 ## Установка
 
-[filename](../packages/core/xz/install ':include')
+[filename](../packages/xz/install ':include')
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/core/xz/cldirs ':include')
+[filename](../packages/xz/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/core/xz/multi_prepare ':include')
+[filename](../packages/xz/multi_prepare ':include')
 
 ### Настройка
 
-[filename](../packages/core/xz/multi_configure ':include')
+[filename](../packages/xz/multi_configure ':include')
 
 ### Сборка
 
-[filename](../packages/core/xz/multi_build ':include')
+[filename](../packages/xz/multi_build ':include')
 
 ### Установка
 
-[filename](../packages/core/xz/multi_install ':include')
+[filename](../packages/xz/multi_install ':include')
 
 ## Установленные файлы
 

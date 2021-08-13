@@ -2,7 +2,7 @@
 
 ## Настройка
 
-[filename](../packages/core/inetutils/configure ':include')
+[filename](../packages/inetutils/configure ':include')
 
 ### Значения параметров
 
@@ -10,21 +10,21 @@
 
 ## Сборка
 
-[filename](../packages/core/inetutils/build ':include')
+[filename](../packages/inetutils/build ':include')
 
 ## Тестирование
 
-[filename](../packages/core/inetutils/test ':include')
+[filename](../packages/inetutils/test ':include')
 
 ?> Тест `libls.sh` даёт сбой, когда система LX4 находится в среде chroot, а тест `ping-localhost.sh` не проходит, если в хост-системе нет поддержки IPv6.
 
 ## Установка
 
-[filename](../packages/core/inetutils/install ':include')
+[filename](../packages/inetutils/install ':include')
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/core/inetutils/cldirs ':include')
+[filename](../packages/inetutils/cldirs ':include')
 
 ## Установленные файлы
 

@@ -2,27 +2,27 @@
 
 ## Настройка
 
-[filename](../packages/core/sed/configure ':include')
+[filename](../packages/sed/configure ':include')
 
 ## Сборка
 
-[filename](../packages/core/sed/build ':include')
+[filename](../packages/sed/build ':include')
 
 ## Сборка документации
 
-[filename](../packages/core/sed/build-doc ':include')
+[filename](../packages/sed/build-doc ':include')
 
 ## Тестирование
 
-[filename](../packages/core/sed/test ':include')
+[filename](../packages/sed/test ':include')
 
 ## Установка
 
-[filename](../packages/core/sed/install ':include')
+[filename](../packages/sed/install ':include')
 
 ## Установка документации
 
-[filename](../packages/core/sed/install-doc ':include')
+[filename](../packages/sed/install-doc ':include')
 <package-script :package="'sed'" :type="'install-doc'"></package-script>
 
 <script>

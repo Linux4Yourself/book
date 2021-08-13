@@ -14,11 +14,11 @@
 
 ## Сборка
 
-[filename](../packages/core/ncurses/build ':include')
+[filename](../packages/ncurses/build ':include')
 
 ## Установка
 
-[filename](../packages/core/ncurses/install ':include')
+[filename](../packages/ncurses/install ':include')
 
 Многие пакеты при компоновке ищут библиотеки без широких символов. Для компоновки с библиотеками содержащими широкие символы выполните:
 
@@ -60,7 +60,7 @@ cp -av lib/lib*.so.5* /usr/lib
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/core/ncurses/cldirs ':include')
+[filename](../packages/ncurses/cldirs ':include')
 
 ## Для multilib
 
@@ -72,15 +72,15 @@ make distclean
 
 ### Настройка
 
-[filename](../packages/core/ncurses/multi_configure ':include')
+[filename](../packages/ncurses/multi_configure ':include')
 
 ### Сборка
 
-[filename](../packages/core/ncurses/multi_build ':include')
+[filename](../packages/ncurses/multi_build ':include')
 
 ### Установка
 
-[filename](../packages/core/ncurses/multi_install ':include')
+[filename](../packages/ncurses/multi_install ':include')
 
 ?> Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
 
