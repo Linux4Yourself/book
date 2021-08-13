@@ -8,17 +8,17 @@
 
 Примените необязательный патч для поддержки локализации:
 
-[filename](../packagesutils/patch ':include')
+[filename](../packages/coreutils/patch ':include')
 
 !> В этом патче могут встречаться баги. При обнаружении новых ошибок обязательно отошлите отчёт об этом сопровождающим `coreutils`, перед этим проверив, воспроизводима ли ошибка без этого патча.
 
 Удалите проблемный тест:
 
-[filename](../packagesutils/prepare ':include')
+[filename](../packages/coreutils/prepare ':include')
 
 ## Настройка
 
-[filename](../packagesutils/configure ':include')
+[filename](../packages/coreutils/configure ':include')
 
 ### Значения параметров
 
@@ -28,21 +28,21 @@
 
 ## Сборка
 
-[filename](../packagesutils/build ':include')
+[filename](../packages/coreutils/build ':include')
 
 ## Тестирование
 
-[filename](../packagesutils/test ':include')
+[filename](../packages/coreutils/test ':include')
 
 ?> Известно, что тест `test-getlogin` не проходит в LX4.
 
 ## Установка
 
-[filename](../packagesutils/install ':include')
+[filename](../packages/coreutils/install ':include')
 
 ## При раздельной структуре каталогов
 
-[filename](../packagesutils/cldirs ':include')
+[filename](../packages/coreutils/cldirs ':include')
 
 ## Установленные файлы
 
