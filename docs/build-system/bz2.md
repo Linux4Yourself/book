@@ -8,45 +8,45 @@
 
 Примените патч для правильной установки документации:
 
-[filename](../packages/core/bzip2/patch ':include')
+[filename](../packages/bzip2/patch ':include')
 
 Убедитесь, что будут созданы относительные символические ссылки, и исправьте путь установки man-страниц:
 
-[filename](../packages/core/bzip2/prepare ':include')
+[filename](../packages/bzip2/prepare ':include')
 
 ## Сборка
 
 Для сборки динамической библиотеки `libbz2.so` и самого пакета:
 
-[filename](../packages/core/bzip2/build ':include')
+[filename](../packages/bzip2/build ':include')
 
 ## Установка
 
-[filename](../packages/core/bzip2/install ':include')
+[filename](../packages/bzip2/install ':include')
 
 Создайте необходимые символические ссылки:
 
-[filename](../packages/core/bzip2/postinstall ':include')
+[filename](../packages/bzip2/postinstall ':include')
 
 > Если вы собираете систему с раздельной структурой каталогов, то пропустите шаг с созданием ссылок, перейдя к следующему.
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/core/bzip2/cldirs ':include')
+[filename](../packages/bzip2/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/core/bzip2/multi_prepare ':include')
+[filename](../packages/bzip2/multi_prepare ':include')
 
 ### Сборка
 
-[filename](../packages/core/bzip2/multi_build ':include')
+[filename](../packages/bzip2/multi_build ':include')
 
 ### Установка
 
-[filename](../packages/core/bzip2/multi_install ':include')
+[filename](../packages/bzip2/multi_install ':include')
 
 ## Установленные файлы
 

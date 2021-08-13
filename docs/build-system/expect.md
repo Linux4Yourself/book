@@ -4,19 +4,19 @@
 
 ## Настройка
 
-[filename](../packages/core/expeсt/configure ':include')
+[filename](../packages/expeсt/configure ':include')
 
 ## Сборка
 
-[filename](../packages/core/expect/build)
+[filename](../packages/expect/build ':include')
 
 ## Тестирование
 
-[filename](../packages/core/expect/test)
+[filename](../packages/expect/test ':include')
 
 ## Установка
 
-[filename](../packages/core/expect/install)
+[filename](../packages/expect/install ':include')
 
 <script>
 	new Vue({ el: '#main' })

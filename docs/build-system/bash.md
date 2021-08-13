@@ -4,11 +4,11 @@
 
 Для многоядерных процессоров внесите исправление, которое устраняет проблему "состояния гонки" при использовании нескольких ядер.
 
-[filename](../packages/core/bash/prepare ':include')
+[filename](../packages/bash/prepare ':include')
 
 ## Настройка
 
-[filename](../packages/core/bash/configure ':include')
+[filename](../packages/bash/configure ':include')
 
 ### Значения параметров
 
@@ -18,23 +18,23 @@
 
 ## Сборка
 
-[filename](../packages/core/bash/build ':include')
+[filename](../packages/bash/build ':include')
 
 ## Тестирование
 
 Для корректного выполнения тестов, сделайте пользователя `tester` владельцем каталога и запустите тесты от пользователя `tester`
 
-[filename](../packages/core/bash/test ':include')
+[filename](../packages/bash/test ':include')
 
 ## Установка
 
-[filename](../packages/core/bash/install ':include')
+[filename](../packages/bash/install ':include')
 
 ## При раздельной структуре каталогов
 
 Создайте ссылку на нужный бинарный файл.
 
-[filename](../packages/core/bash/cldirs ':include')
+[filename](../packages/bash/cldirs ':include')
 
 `bash` должен находиться в `/bin`. Для упрощённой структуры этого делать не требуется.
 

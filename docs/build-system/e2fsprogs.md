@@ -2,7 +2,7 @@
 
 ## Настройка
 
-[filename](../packages/core/e2fsprogs/configure ':include')
+[filename](../packages/e2fsprogs/configure ':include')
 
 ## При раздельной структуре каталогов
 
@@ -20,11 +20,11 @@
 
 ## Сборка
 
-[filename](../packages/core/e2fsprogs/build ':include')
+[filename](../packages/e2fsprogs/build ':include')
 
 ## Тестирование
 
-[filename](../packages/core/e2fsprogs/test ':include')
+[filename](../packages/e2fsprogs/test ':include')
 
 > Тесты могут занять довольно продолжительное время на HDD (около 4 SBU). На SSD же это будет быстрее - 1,5 SBU.
 
@@ -32,15 +32,15 @@
 
 ## Установка
 
-[filename](../packages/core/e2fsprogs/install ':include')
+[filename](../packages/e2fsprogs/install ':include')
 
 Пакет установит запакованный файл .info и не обновит системный файл dir. Распакуйте файл и обновите файл dir, выполнив следующую команду:
 
-[filename](../packages/core/e2fsprogs/postinstall ':include')
+[filename](../packages/e2fsprogs/postinstall ':include')
 
 При необходимости создайте и установите дополнительную документацию выполнив следующие команды:
 
-[filename](../packages/core/e2fsprogs/install-doc ':include')
+[filename](../packages/e2fsprogs/install-doc ':include')
 
 <script>
 	new Vue({ el: '#main' })

@@ -2,45 +2,45 @@
 
 ## Настройка
 
-[filename](../packages/core/attr/configure ':include')
+[filename](../packages/attr/configure ':include')
 
 ## Сборка
 
-[filename](../packages/core/attr/build ':include')
+[filename](../packages/attr/build ':include')
 
 ## Тестирование
 
 !> Тестирование нужно производить на файловой системе, поддерживающей расширенные атрибуты. Например, ext2-ext4.
 
-[filename](../packages/core/attr/test ':include')
+[filename](../packages/attr/test ':include')
 
 ## Установка
 
-[filename](../packages/core/attr/install ':include')
+[filename](../packages/attr/install ':include')
 
 ## При раздельной структуре каталогов
 
 Добавьте к скрипту `configure` опцию `--bindir=/bin`.
 
-[filename](../packages/core/attr/cldirs ':include')
+[filename](../packages/attr/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/core/attr/multi_prepare ':include')
+[filename](../packages/attr/multi_prepare ':include')
 
 ### Настройка
 
-[filename](../packages/core/attr/multi_configure ':include')
+[filename](../packages/attr/multi_configure ':include')
 
 ### Сборка
 
-[filename](../packages/core/attr/multi_build ':include')
+[filename](../packages/attr/multi_build ':include')
 
 ### Установка
 
-[filename](../packages/core/attr/multi_install ':include')
+[filename](../packages/attr/multi_install ':include')
 
 ## Установленные файлы
 

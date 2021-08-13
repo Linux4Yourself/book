@@ -2,39 +2,39 @@
 
 ## Настройка
 
-[filename](../packages/core/acl/configure ':include')
+[filename](../packages/acl/configure ':include')
 
 ## Сборка
 
-[filename](../packages/core/acl/build ':include')
+[filename](../packages/acl/build ':include')
 
 ## Установка
 
-[filename](../packages/core/acl/install ':include')
+[filename](../packages/acl/install ':include')
 
 ## При раздельной структуры каталогов
 
 Добавьте к скрипту `configure` опцию `--bindir=/bin`.
 
-[filename](../packages/core/acl/cldirs ':include')
+[filename](../packages/acl/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/core/acl/multi_prepare ':include')
+[filename](../packages/acl/multi_prepare ':include')
 
 ### Настройка
 
-[filename](../packages/core/acl/multi_configure ':include')
+[filename](../packages/acl/multi_configure ':include')
 
 ### Сборка
 
-[filename](../packages/core/acl/multi_build ':include')
+[filename](../packages/acl/multi_build ':include')
 
 ### Установка
 
-[filename](../packages/core/acl/multi_install ':include')
+[filename](../packages/acl/multi_install ':include')
 
 ## Установленные файлы
 
