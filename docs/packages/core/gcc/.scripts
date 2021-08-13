@@ -1,7 +1,0 @@
-build
-configure
-install
-multi_configure
-postinstall
-prepare
-test

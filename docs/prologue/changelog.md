@@ -21,6 +21,10 @@
 - util-linux-2.37.1
 - zlib-ng-2.0.5
 
+## Изменения
+
+- [Исправлено #821](https://github.com/Linux4Yourself/book/issues/821)
+
 ## 20.07.2021
 
 - [Выпущен релиз 1.3](https://lx4u.ru/rel/1.3/#/)
