@@ -11,11 +11,11 @@
 - bc-5.0.0
 - grep-3.7
 - systemd-249.3
-- linux-13.9
+- linux-5.13.12
 - diffutils-3.8
 - libcap-2.52
 - glibc-2.34
-- e2fsprogs-1.46.3
+- e2fsprogs-1.46.4
 - automake-1.16.4
 - shadow-4.9
 - inetutils-2.1
@@ -24,6 +24,7 @@
 - gcc-11.2.0
 - util-linux-2.37.1
 - zlib-ng-2.0.5
+- meson-0.59.1
 
 ## 20.07.2021
 
