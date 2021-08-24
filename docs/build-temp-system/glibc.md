@@ -51,7 +51,7 @@ mkdir  build
 cd     build
 ```
 
-Далее запустите скрипт `configure`:
+Запустите скрипт `configure`:
 
 ```bash
  ../configure                            \
@@ -136,7 +136,7 @@ rm -rf ./*
 find .. -name "*.a" -delete
 ```
 
-Далее запустите скрипт `configure`:
+Запустите скрипт `configure`:
 
 ```bash
 CC="$LIN_TGT-gcc -m32"                   \

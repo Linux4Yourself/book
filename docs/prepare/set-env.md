@@ -1,7 +1,7 @@
 ﻿# Настройка окружения
 
 Необходимо настроить окружение для недавно созданного пользователя.
-Во-первых, создадим `.bash_profile`:
+Создадим `.bash_profile`:
 
 ```bash
 cat > ~/.bash_profile << "EOF"
@@ -9,7 +9,7 @@ exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
 EOF
 ```
 
-Далее создадим базовый `.bashrc`:
+Создадим базовый `.bashrc`:
 
 ```bash
 cat > ~/.bashrc << "EOF"

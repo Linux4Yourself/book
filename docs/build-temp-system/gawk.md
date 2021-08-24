@@ -24,7 +24,7 @@
 sed -i 's/extras//' Makefile.in
 ```
 
-Выполним скрипт `configure`:
+Выполните скрипт `configure`:
 
 ```bash
 ./configure --prefix=/usr   \
