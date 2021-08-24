@@ -1,12 +1,11 @@
+- [Журнал изменений](changelog)
 - [**Предисловие**](prologue/foreword)
-
   - [От авторов](prologue/from-authors)
   - [Преимущества](prologue/benefits)
   - [Прежде чем начать](prologue/before-start)
   - [Принятые обозначения](prologue/typography)
   - [Информация об используемых пакетах](prologue/packages)
   - [Опечатки и неточности](prologue/inaccuracies)
-  - [Журнал изменений](prologue/changelog)
 
 - **Подготовительные работы**
   - [Целевые архитектуры](prepare/arch)
