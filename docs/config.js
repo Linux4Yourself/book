@@ -53,7 +53,7 @@ book = {
 const exrtraUrl =  `${book.revisionShort}-extra/#/`;
 
 // источник метаданных пакетов.
-const pkgsUrlBase = `packages/core`;
+const pkgsUrlBase = `packages`;
 const pkgsSrc = `${pkgsUrlBase}/packages.json`;
 const wgetList = `${pkgsUrlBase}/wget-list`;
 const md5Sums = `${pkgsUrlBase}/md5sums`;

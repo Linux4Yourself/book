@@ -15,6 +15,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -42,6 +43,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -116,6 +118,7 @@
 		"sbu2": 0.3,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"postinstall",
@@ -220,12 +223,14 @@
 		],
 		"scripts": [
 			"build",
+			"cldirs",
 			"install",
 			"multi_build",
 			"multi_install",
 			"multi_prepare",
 			"multi_test",
 			"patch",
+			"postinstall",
 			"prepare",
 			"test"
 		],
@@ -274,6 +279,7 @@
 		],
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"patch",
@@ -299,6 +305,7 @@
 		"sbu2": 0.2,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -423,6 +430,7 @@
 		"multilibSupport": false,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -451,6 +459,7 @@
 		],
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -553,6 +562,7 @@
 		"sbu2": 0.3,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"test"
@@ -852,6 +862,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"test"
@@ -905,6 +916,7 @@
 		"sbu2": 0.2,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"test"
@@ -1029,6 +1041,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -1098,6 +1111,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"install",
 			"multi_build",
 			"multi_install",
@@ -1378,6 +1392,7 @@
 		"sbu2": 0.4,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -1528,6 +1543,7 @@
 		"sbu2": 0.2,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"configure-systemd",
 			"install",
@@ -1552,6 +1568,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install"
 		],
@@ -1597,6 +1614,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -1676,6 +1694,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"postinstall",
@@ -2009,6 +2028,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -2037,6 +2057,7 @@
 		"sbu2": 0.1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"configure",
 			"install",
 			"multi_build",
@@ -2067,6 +2088,7 @@
 		"sbu2": 1,
 		"scripts": [
 			"build",
+			"cldirs",
 			"install",
 			"multi_build",
 			"multi_install",

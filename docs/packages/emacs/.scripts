@@ -1,0 +1,4 @@
+build
+configure
+install
+postinstall
