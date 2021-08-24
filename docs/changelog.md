@@ -8,13 +8,13 @@
 
 ## Изменения
 
-- [Исправлено #821](https://github.com/Linux4Yourself/book/issues/821)
+- [Выполнено #756](https://github.com/Linux4Yourself/book/issues/756)
 - [Выполнено #767](https://github.com/Linux4Yourself/book/issues/767)
 - [Выполнено #779](https://github.com/Linux4Yourself/book/issues/779)
-- [Выполнено #756](https://github.com/Linux4Yourself/book/issues/756)
-- [Исправлено #829](https://github.com/Linux4Yourself/book/issues/829)
-- [Исправлено #815](https://github.com/Linux4Yourself/book/issues/815)
 - [Исправлено #804](https://github.com/Linux4Yourself/book/issues/804)
+- [Исправлено #815](https://github.com/Linux4Yourself/book/issues/815)
+- [Исправлено #821](https://github.com/Linux4Yourself/book/issues/821)
+- [Исправлено #829](https://github.com/Linux4Yourself/book/issues/829)
 
 ## Обновления пакетов
 
