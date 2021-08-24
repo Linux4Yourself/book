@@ -1,0 +1,10 @@
+build
+configure
+install
+multi_build
+multi_configure
+multi_install
+multi_prepare
+postinstall
+prepare
+test

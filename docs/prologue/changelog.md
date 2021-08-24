@@ -2,9 +2,18 @@
 ## Изменения
 ## Благодарности -->
 
+## Благодарности
+
+- [Михаил](https://github.com/Linuxoid85) за реализацию разделов по сборке пакета, используя раздельную структуру каталогов
+
 ## Изменения
 
+- [Исправлено #821](https://github.com/Linux4Yourself/book/issues/821)
+- [Выполнено #779](https://github.com/Linux4Yourself/book/issues/779)
+- [Выполнено #756](https://github.com/Linux4Yourself/book/issues/756)
 - [Исправлено #829](https://github.com/Linux4Yourself/book/issues/829)
+- [Исправлено #815](https://github.com/Linux4Yourself/book/issues/815)
+- [Исправлено #804](https://github.com/Linux4Yourself/book/issues/804)
 
 ## Обновления пакетов
 

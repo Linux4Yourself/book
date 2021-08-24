@@ -34,7 +34,7 @@
 
 ### Очистка
 
-[filename](../packages/eudev/multi_prepare ':include')
+[filename](../../packages/eudev/multi_prepare ':include')
 
 ### Настройка
 

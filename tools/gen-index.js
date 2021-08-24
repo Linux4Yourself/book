@@ -1,4 +1,4 @@
-const corePackages = require('../docs/packages/core/packages.json');
+const corePackages = require('../docs/packages/packages.json');
 const fs = require('fs');
 
 const allPackages = []
