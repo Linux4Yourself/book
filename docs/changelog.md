@@ -18,23 +18,23 @@
 
 ## Обновления пакетов
 
-- bc-5.0.0
-- grep-3.7
-- systemd-249.3
-- linux-5.13.12
-- diffutils-3.8
-- libcap-2.52
-- glibc-2.34
-- e2fsprogs-1.46.4
 - automake-1.16.4
-- shadow-4.9
-- inetutils-2.1
+- bc-5.0.0
 - dbus-1.13.18
-- vim-8.2.3273
+- diffutils-3.8
+- e2fsprogs-1.46.4
 - gcc-11.2.0
-- util-linux-2.37.1
-- zlib-ng-2.0.5
+- glibc-2.34
+- grep-3.7
+- inetutils-2.1
+- libcap-2.52
+- linux-5.13.12
 - meson-0.59.1
+- shadow-4.9
+- systemd-249.3
+- util-linux-2.37.1
+- vim-8.2.3273
+- zlib-ng-2.0.5
 
 ## 20.07.2021
 
