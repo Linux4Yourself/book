@@ -2,29 +2,33 @@
 
 ## Сборка
 
-<package-script :package="'zstd'" :type="'build'"></package-script>
+[filename](../packages/zstd/build ':include')
 
 ## Тестирование
 
-<package-script :package="'zstd'" :type="'test'"></package-script>
+[filename](../packages/zstd/test ':include')
 
 ## Установка
 
-<package-script :package="'zstd'" :type="'install'"></package-script>
+[filename](../packages/zstd/install ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/zstd/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'zstd'" :type="'multi_prepare'"></package-script>
+[filename](../packages/zstd/multi_prepare ':include')
 
 ### Сборка
 
-<package-script :package="'zstd'" :type="'multi_build'"></package-script>
+[filename](../packages/zstd/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'zstd'" :type="'multi_install'"></package-script>
+[filename](../packages/zstd/multi_install ':include')
 
 ## Установленные файлы
 

@@ -60,8 +60,6 @@ cd     build
       --build=$(../scripts/config.guess) \
       --enable-kernel=3.2                \
       --with-headers=$LIN/usr/include    \
-      --libdir=/usr/lib                  \
-      --libexecdir=/usr/lib              \
       libc_cv_slibdir=/lib               \
       libc_cv_include_x86_isa_level=no   \
       --disable-nscd                     \

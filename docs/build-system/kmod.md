@@ -2,7 +2,7 @@
 
 ## Настройка
 
-<package-script :package="'kmod'" :type="'configure'"></package-script>
+[filename](../packages/kmod/configure ':include')
 
 ### Значения параметров
 
@@ -12,7 +12,7 @@
 
 ## Сборка
 
-<package-script :package="'kmod'" :type="'build'"></package-script>
+[filename](../packages/kmod/build ':include')
 
 ## Тестирование
 
@@ -20,11 +20,21 @@
 
 ## Установка
 
-<package-script :package="'kmod'" :type="'install'"></package-script>
+[filename](../packages/kmod/install ':include')
 
-Необходимо создать символические ссылки (симлинки) для совместимости с `Module-Init-Tools` (Предыдущая реализация программы обработки модулей ядра):
+Необходимо создать символические ссылки (симлинки) для совместимости с `Module-Init-Tools` (предыдущая реализация программы обработки модулей ядра).
 
-<package-script :package="'kmod'" :type="'postinstall'"></package-script>
+[filename](../packages/kmod/postinstall ':include')
+
+> Заметьте, что эту команду не следует вводить, если вы используете систему с раздельной структурой каталогов, в таком случае перейдите к следующему шагу.
+
+## При раздельной структуре каталогов
+
+Добавьте опции `--bindir=/bin` и `--with-rootlibdir=/lib` скрипту `configure` из пункта "Настройка".
+
+Измените предыдущую команду (создающую симлинки для совместимости с `Module-Init-Tools`) и создайте необходимую ссылку в `/bin`:
+
+[filename](../packages/kmod/cldirs ':include')
 
 ## Для multilib
 
@@ -32,19 +42,19 @@
 
 Очистите предыдущую сборку, но сохраните страницы руководства, так как они не могут быть воссозданы, поскольку пакет `xsltproc` не установлен:
 
-<package-script :package="'kmod'" :type="'multi_prepare'"></package-script>
+[filename](../packages/kmod/multi_prepare ':include')
 
 ### Подготовка
 
-<package-script :package="'kmod'" :type="'multi_configure'"></package-script>
+[filename](../packages/kmod/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'kmod'" :type="'multi_build'"></package-script>
+[filename](../packages/kmod/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'kmod'" :type="'multi_install'"></package-script>
+[filename](../packages/kmod/multi_install ':include')
 
 <script>
 	new Vue({ el: '#main' })

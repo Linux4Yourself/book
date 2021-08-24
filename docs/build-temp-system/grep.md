@@ -20,7 +20,9 @@
 
 ```bash
 ./configure --prefix=/usr   \
-            --host=$LIN_TGT  --disable-nls
+            --host=$LIN_TGT \
+            --bindir=/bin   \
+            --disable-nls
 ```
 
 ## Сборка

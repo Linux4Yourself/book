@@ -2,19 +2,19 @@
 
 ## Настройка
 
-<package-script :package="'grep'" :type="'configure'"></package-script>
+[filename](../packages/grep/configure ':include')
 
 ## Сборка
 
-<package-script :package="'grep'" :type="'build'"></package-script>
+[filename](../packages/grep/build ':include')
 
 ## Тестирование
 
-<package-script :package="'grep'" :type="'test'"></package-script>
+[filename](../packages/grep/test ':include')
 
 ## Установка
 
-<package-script :package="'grep'" :type="'install'"></package-script>
+[filename](../packages/grep/install ':include')
 
 <script>
 	new Vue({ el: '#main' })

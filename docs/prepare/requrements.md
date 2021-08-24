@@ -46,14 +46,12 @@ ln -sf bash /bin/sh
 
 ```bash
 pacman -S base-devel
-
 ```
 
 ### Для Rosa
 
 ```bash
 urpmi bison gawk texinfo make gcc-c++
-
 ```
 
 

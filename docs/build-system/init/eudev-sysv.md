@@ -6,41 +6,47 @@
 
 ## Настройка
 
-<package-script :package="'eudev'" :type="'configure'"></package-script>
+> Если вы собираете систему с раздельной структурой каталогов, то пропустите этот шаг и приступите к следующему.
+
+[filename](../../packages/eudev/configure ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../../packages/eudev/cldirs ':include')
 
 ## Сборка
 
-<package-script :package="'eudev'" :type="'build'"></package-script>
+[filename](../../packages/eudev/build ':include')
 
 ## Тестирование
 
-<package-script :package="'eudev'" :type="'test'"></package-script>
+[filename](../../packages/eudev/test ':include')
 
 ## Установка
 
-<package-script :package="'eudev'" :type="'install'"></package-script>
+[filename](../../packages/eudev/install ':include')
 
 Установите необходимые файлы:
 
-<package-script :package="'eudev'" :type="'postinstall'"></package-script>
+[filename](../../packages/eudev/postinstall ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'eudev'" :type="'multi_prepare'"></package-script>
+[filename](../packages/eudev/multi_prepare ':include')
 
 ### Настройка
 
-<package-script :package="'eudev'" :type="'multi_configure'"></package-script>
+[filename](../../packages/eudev/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'eudev'" :type="'multi_build'"></package-script>
+[filename](../../packages/eudev/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'eudev'" :type="'multi_install'"></package-script>
+[filename](../../packages/eudev/multi_install ':include')
 
 <script>
 		new Vue({

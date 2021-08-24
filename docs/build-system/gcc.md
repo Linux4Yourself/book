@@ -20,7 +20,7 @@
 
 Примените патч, исправляющий несколько проблем:
 
-<package-script :package="'gcc'" :type="'patch'"></package-script>
+[filename](../packages/gcc/patch ':include')
 
 Исправьте пути установки библиотек:
 
@@ -30,11 +30,11 @@
 
 ?> На данном этапе необходимы только компиляторы для C и C++, однако вы можете собрать компиляторы для любых поддерживаемых GCC языков программирования, перечислив их через запятые в опции configure `--enable-languages=c,c++`. GCC поддерживает следующие языки - `c,c++,d,fortran,go,objc,obj-c++`. вы можете собрать все доступные компиляторы, добавив параметр `--enable-languages=c,c++,d,fortran,go,objc,obj-c++`. Если позднее вам потребуется компилятор для какого либо языка из этого списка - пересоберите GCC с его поддержкой.
 
-<package-script :package="'gcc'" :type="'configure'"></package-script>
+[filename](../packages/gcc/configure ':include')
 
 ### Для multilib
 
-<package-script :package="'gcc'" :type="'multi_configure'"></package-script>
+[filename](../packages/gcc/multi_configure ':include')
 
 ### Значения параметров
 
@@ -44,14 +44,14 @@
 
 ## Сборка
 
-<package-script :package="'gcc'" :type="'build'"></package-script>
+[filename](../packages/gcc/build ':include')
 
 ## Тестирование
 
 - Увеличьте размер стека по умолчанию
 - Произведите тестирование от непривилегированного пользователя во избежание непредвиденных ситуаций с системой.
 
-<package-script :package="'gcc'" :type="'test'"></package-script>
+[filename](../packages/gcc/test ':include')
 
 > Тестирование занимает достаточно много времени.
 
@@ -65,7 +65,7 @@
 
 ## Установка
 
-<package-script :package="'gcc'" :type="'install'"></package-script>
+[filename](../packages/gcc/install ':include')
 
 - Удалите ненужную директорию,
 - Убедитесь, что владелец установленных заголовков корректный,
@@ -73,8 +73,10 @@
 - Для поддержки LTO требуется следующая символическая ссылка,
 - Переместите файлы в правильное место:
 
-<package-script :package="'gcc'" :type="'postinstall'"></package-script>
+[filename](../packages/gcc/postinstall ':include')
 
+## При использовании раздельных каталогов:
+- Замените `ln -svr /usr/bin/cpp /usr/lib` из предыдущей команды на корректную для раздельной структуры.
 
 ## Проверка работоспособности
 

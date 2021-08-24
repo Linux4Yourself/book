@@ -2,26 +2,27 @@
 
 ## Настройка
 
-<package-script :package="'sed'" :type="'configure'"></package-script>
+[filename](../packages/sed/configure ':include')
 
 ## Сборка
 
-<package-script :package="'sed'" :type="'build'"></package-script>
+[filename](../packages/sed/build ':include')
 
 ## Сборка документации
 
-<package-script :package="'sed'" :type="'build-doc'"></package-script>
+[filename](../packages/sed/build-doc ':include')
 
 ## Тестирование
 
-<package-script :package="'sed'" :type="'test'"></package-script>
+[filename](../packages/sed/test ':include')
 
 ## Установка
 
-<package-script :package="'sed'" :type="'install'"></package-script>
+[filename](../packages/sed/install ':include')
 
 ## Установка документации
 
+[filename](../packages/sed/install-doc ':include')
 <package-script :package="'sed'" :type="'install-doc'"></package-script>
 
 <script>

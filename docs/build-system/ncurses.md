@@ -14,11 +14,11 @@
 
 ## Сборка
 
-<package-script :package="'ncurses'" :type="'build'"></package-script>
+[filename](../packages/ncurses/build ':include')
 
 ## Установка
 
-<package-script :package="'ncurses'" :type="'install'"></package-script>
+[filename](../packages/ncurses/install ':include')
 
 Многие пакеты при компоновке ищут библиотеки без широких символов. Для компоновки с библиотеками содержащими широкие символы выполните:
 
@@ -58,6 +58,10 @@ make sources libs
 cp -av lib/lib*.so.5* /usr/lib
 ```
 
+## При раздельной структуре каталогов
+
+[filename](../packages/ncurses/cldirs ':include')
+
 ## Для multilib
 
 ### Очистка
@@ -68,15 +72,15 @@ make distclean
 
 ### Настройка
 
-<package-script :package="'ncurses'" :type="'multi_configure'"></package-script>
+[filename](../packages/ncurses/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'ncurses'" :type="'multi_build'"></package-script>
+[filename](../packages/ncurses/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'ncurses'" :type="'multi_install'"></package-script>
+[filename](../packages/ncurses/multi_install ':include')
 
 ?> Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
 
@@ -94,9 +98,9 @@ cp -av lib/lib*.so.5* /usr/lib
 
 ## Установленные файлы
 
-Программы: captoinfo (ссылка на tic), clear, infocmp, infotocap (ссылка на tic), ncursesw6-config, reset (ссылка на tset), tabs, tic, toe, tput и tset
+Программы: `captoinfo` (ссылка на `tic`), `clear`, `infocmp`, `infotocap` (ссылка на `tic`), `ncursesw6-config`, `reset` (ссылка на `tset`), `tabs`, `tic`, `toe`, `tput` и `tset`
 
-Библиотеки: libcursesw.so (ссылка на libncursesw.so), libformw.so, libmenuw.so, libncursesw.so, libpanelw.so и их версии без широких символов
+Библиотеки: `libcursesw.so` (ссылка на `libncursesw.so`), `libformw.so`, `libmenuw.so`, `libncursesw.so`, `libpanelw.so` и их версии без широких символов
 
 Директории: /usr/share/tabset /usr/share/terminfo
 

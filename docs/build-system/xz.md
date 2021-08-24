@@ -2,37 +2,41 @@
 
 ## Настройка
 
-<package-script :package="'xz'" :type="'configure'"></package-script>
+[filename](../packages/xz/configure ':include')
 
 ## Сборка
 
-<package-script :package="'xz'" :type="'build'"></package-script>
+[filename](../packages/xz/build ':include')
 
 ## Тестирование
 
-<package-script :package="'xz'" :type="'test'"></package-script>
+[filename](../packages/xz/test ':include')
 
 ## Установка
 
-<package-script :package="'xz'" :type="'install'"></package-script>
+[filename](../packages/xz/install ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/xz/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'xz'" :type="'multi_prepare'"></package-script>
+[filename](../packages/xz/multi_prepare ':include')
 
 ### Настройка
 
-<package-script :package="'xz'" :type="'multi_configure'"></package-script>
+[filename](../packages/xz/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'xz'" :type="'multi_build'"></package-script>
+[filename](../packages/xz/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'xz'" :type="'multi_install'"></package-script>
+[filename](../packages/xz/multi_install ':include')
 
 ## Установленные файлы
 

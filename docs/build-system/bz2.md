@@ -8,35 +8,45 @@
 
 Примените патч для правильной установки документации:
 
-<package-script :package="'bzip2'" :type="'patch'"></package-script>
+[filename](../packages/bzip2/patch ':include')
 
 Убедитесь, что будут созданы относительные символические ссылки, и исправьте путь установки man-страниц:
 
-<package-script :package="'bzip2'" :type="'prepare'"></package-script>
+[filename](../packages/bzip2/prepare ':include')
 
 ## Сборка
 
 Для сборки динамической библиотеки `libbz2.so` и самого пакета:
 
-<package-script :package="'bzip2'" :type="'build'"></package-script>
+[filename](../packages/bzip2/build ':include')
 
 ## Установка
 
-<package-script :package="'bzip2'" :type="'install'"></package-script>
+[filename](../packages/bzip2/install ':include')
+
+Создайте необходимые символические ссылки:
+
+[filename](../packages/bzip2/postinstall ':include')
+
+> Если вы собираете систему с раздельной структурой каталогов, то пропустите шаг с созданием ссылок, перейдя к следующему.
+
+## При раздельной структуре каталогов
+
+[filename](../packages/bzip2/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'bzip2'" :type="'multi_prepare'"></package-script>
+[filename](../packages/bzip2/multi_prepare ':include')
 
 ### Сборка
 
-<package-script :package="'bzip2'" :type="'multi_build'"></package-script>
+[filename](../packages/bzip2/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'bzip2'" :type="'multi_install'"></package-script>
+[filename](../packages/bzip2/multi_install ':include')
 
 ## Установленные файлы
 

@@ -61,8 +61,8 @@ sed -e '402a\      *result = local->data.services[database_index];' \
 Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
-mkdir  build
-cd     build
+mkdir -v build
+cd       build
 ```
 
 ## Настройка
@@ -74,9 +74,11 @@ cd     build
       --enable-kernel=3.2                \
       --with-headers=/usr/include        \
       --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/usr/lib               \
+      libc_cv_slibdir=/usr/lib           \
       libc_cv_include_x86_isa_level=no
 ```
+
+> Если вы используете раздельную структуру каталогов, то измените значение параметра `libc_cv_slibdir` на `/lib`: `libc_cv_slibdir=/lib`, и удалите параметр `--libexecdir=/usr/lib`.
 
 ### Для multilib
 
@@ -98,7 +100,13 @@ make
 
 ## Тестирование
 
-вы можете запустить тесты, выполнив:
+Создайте необходимую для тестирования ссылку (**только если вы собираете систему с раздельными каталогами!**):
+
+```bash
+ln -sfnv $PWD/elf/ld-linux-x86-64.so.2 /lib
+```
+
+Вы можете запустить тесты, выполнив:
 
 ```bash
 make check

@@ -22,7 +22,9 @@
 ```bash
 ./configure --prefix=/usr                     \
             --host=$LIN_TGT                   \
-            --build=$(build-aux/config.guess)  --disable-nls  --disable-acl
+            --build=$(build-aux/config.guess) \
+            --disable-nls  --disable-acl      \
+            --bindir=/bin
 ```
 
 ## Сборка

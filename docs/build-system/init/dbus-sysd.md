@@ -2,39 +2,45 @@
 
 ## Настройка
 
-<package-script :package="'dbus'" :type="'configure'"></package-script>
+[filename](../packages/dbus/configure ':include')
 
 ## Сборка
 
-<package-script :package="'dbus'" :type="'build'"></package-script>
+[filename](../packages/dbus/build ':include')
 
 ## Тестирование
 
-<package-script :package="'dbus'" :type="'test'"></package-script>
+[filename](../packages/dbus/test ':include')
+
 ## Установка
 
-<package-script :package="'dbus'" :type="'install'"></package-script>
+[filename](../packages/dbus/install ':include')
 
-Создайте символическую ссылку, чтобы `systemd` и `D-Bus` использовали один и тот же файл `machine-id`
-<package-script :package="'dbus'" :type="'postinstall'"></package-script>
+Создайте символическую ссылку, чтобы `systemd` и `D-Bus` использовали один и тот же файл `machine-id`:
+
+[filename](../packages/dbus/postinstall ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/dbus/cldirs ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'dbus'" :type="'multi_prepare'"></package-script>
+[filename](../packages/dbus/multi_prepare ':include')
 
 ### Настройка
 
-<package-script :package="'dbus'" :type="'multi_configure'"></package-script>
+[filename](../packages/dbus/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'dbus'" :type="'multi_build'"></package-script>
+[filename](../packages/dbus/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'dbus'" :type="'multi_install'"></package-script>
+[filename](../packages/dbus/multi_install ':include')
 
 <script>
 	new Vue({ el: '#main' })

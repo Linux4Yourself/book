@@ -2,15 +2,19 @@
 
 ## Настройка
 
-<package-script :package="'psmisc'" :type="'configure'"></package-script>
+[filename](../packages/psmisc/configure ':include')
 
 ## Сборка
 
-<package-script :package="'psmisc'" :type="'build'"></package-script>
+[filename](../packages/psmisc/build ':include')
 
 ## Установка
 
-<package-script :package="'psmisc'" :type="'install'"></package-script>
+[filename](../packages/psmisc/install ':include')
+
+## При раздельной структуре каталогов
+
+[filename](../packages/psmisc/cldirs ':include')
 
 <script>
 	new Vue({ el: '#main' })

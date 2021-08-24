@@ -20,7 +20,9 @@
 
 ```bash
 ./configure --prefix=/usr   \
-            --host=$LIN_TGT  --disable-nls
+            --host=$LIN_TGT \
+            --disable-nls   \
+            --bindir=/bin
 ```
 
 ## Сборка
@@ -34,3 +36,7 @@ make
 ```bash
 make DESTDIR=$LIN install
 ```
+
+## При раздельной структуре каталогов
+
+Добавьте к скрипту `configure` ключ `--bindir=/bin`.
