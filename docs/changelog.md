@@ -11,6 +11,7 @@
 - [Выполнено #756](https://github.com/Linux4Yourself/book/issues/756)
 - [Выполнено #767](https://github.com/Linux4Yourself/book/issues/767)
 - [Выполнено #779](https://github.com/Linux4Yourself/book/issues/779)
+- [Исправлено #794](https://github.com/Linux4Yourself/book/issues/794)
 - [Исправлено #776](https://github.com/Linux4Yourself/book/issues/776)
 - [Исправлено #777](https://github.com/Linux4Yourself/book/issues/777)
 - [Исправлено #797](https://github.com/Linux4Yourself/book/issues/797)
