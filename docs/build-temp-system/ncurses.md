@@ -93,7 +93,7 @@ ln -sfv ../../lib/$(readlink $LIN/usr/lib/libncursesw.so) $LIN/usr/lib/libncurse
 ### Настройка
 
 Соберите 32-битную версию ncurses:
-Для этого, во-первых, выполните:
+Выполните:
 
 ```bash
 make distclean
@@ -101,7 +101,7 @@ make distclean
 
 Чтобы очистить директорию от файлов предыдущей сборки.
 
-Далее запустите скрипт `configure`:
+Запустите скрипт `configure`:
 
 ```bash
 CC="$LIN_TGT-gcc -m32"                   \
