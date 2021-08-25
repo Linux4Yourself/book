@@ -3,7 +3,7 @@ https://lx4u.ru/downloads/packages/attr-2.5.1.tar.gz
 https://lx4u.ru/downloads/packages/autoconf-2.71.tar.xz
 https://lx4u.ru/downloads/packages/automake-1.16.4.tar.xz
 https://lx4u.ru/downloads/packages/bash-5.1.8.tar.gz
-https://lx4u.ru/downloads/packages/bc-5.0.0.tar.xz
+https://lx4u.ru/downloads/packages/bc-5.0.1.tar.xz
 https://lx4u.ru/downloads/packages/binutils-2.37.tar.xz
 https://lx4u.ru/downloads/packages/bison-3.7.6.tar.xz
 https://lx4u.ru/downloads/packages/bzip2-1.0.8.tar.gz
@@ -41,7 +41,7 @@ https://lx4u.ru/downloads/packages/kbd-2.4.0.tar.xz
 https://lx4u.ru/downloads/packages/kmod-29.tar.xz
 https://lx4u.ru/downloads/packages/less-590.tar.gz
 https://lx4u.ru/downloads/packages/bootscripts.tar.xz
-https://lx4u.ru/downloads/packages/libcap-2.52.tar.xz
+https://lx4u.ru/downloads/packages/libcap-2.53.tar.xz
 https://lx4u.ru/downloads/packages/libffi-3.4.2.tar.gz
 https://lx4u.ru/downloads/packages/libpipeline-1.5.3.tar.gz
 https://lx4u.ru/downloads/packages/libtool-2.4.6.tar.xz
@@ -55,7 +55,7 @@ https://lx4u.ru/downloads/packages/mpc-1.2.1.tar.gz
 https://lx4u.ru/downloads/packages/mpfr-4.1.0.tar.xz
 https://lx4u.ru/downloads/packages/ncurses-6.2.tar.gz
 https://lx4u.ru/downloads/packages/ninja-1.10.2.tar.gz
-https://lx4u.ru/downloads/packages/openssl-1.1.1k.tar.gz
+https://lx4u.ru/downloads/packages/openssl-1.1.1l.tar.gz
 https://lx4u.ru/downloads/packages/patch-2.7.6.tar.xz
 https://lx4u.ru/downloads/packages/perl-5.34.0.tar.xz
 https://lx4u.ru/downloads/packages/pkg-config-0.29.2.tar.gz
@@ -75,7 +75,7 @@ https://lx4u.ru/downloads/packages/tcl8.6.11-src.tar.gz
 https://lx4u.ru/downloads/packages/texinfo-6.8.tar.xz
 https://lx4u.ru/downloads/packages/tzdata2021a.tar.gz
 https://lx4u.ru/downloads/packages/udev.tar.xz
-https://lx4u.ru/downloads/packages/util-linux-2.37.1.tar.xz
+https://lx4u.ru/downloads/packages/util-linux-2.37.2.tar.xz
 https://lx4u.ru/downloads/packages/vim-8.2.3273.tar.gz
 https://lx4u.ru/downloads/packages/nano-5.8.tar.xz
 https://lx4u.ru/downloads/packages/XML-Parser-2.46.tar.gz

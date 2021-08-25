@@ -3,7 +3,7 @@ ac1c5a7a084f0f83b8cace34211f64d8 attr-2.5.1.tar.gz
 12cfa1687ffa2606337efe1a64416106 autoconf-2.71.tar.xz
 86e8e682bd74e6390a016c4d9c11267c automake-1.16.4.tar.xz
 23eee6195b47318b9fd878e590ccb38c bash-5.1.8.tar.gz
-8345bb81c576ddfc8c27e0842370603c bc-5.0.0.tar.xz
+651c650c07440d03fd64ddf31daaf4b4 bc-5.0.1.tar.xz
 e78d9ff2976b745a348f4c1f27c77cb1 binutils-2.37.tar.xz
 d61aa92e3562cb7292b004ce96173cf7 bison-3.7.6.tar.xz
 67e051268d0c475ea773822f7500d0e5 bzip2-1.0.8.tar.gz
@@ -41,7 +41,7 @@ fae030f604a9537adc2502990a8ab4d1 isl-0.24.tar.xz
 e81e63acd80697d001c8d85c1acb38a0 kmod-29.tar.xz
 f029087448357812fba450091a1172ab less-590.tar.gz
 4f2a2b6159a437d1e89961b0231eaab0 bootscripts.tar.xz
-91548d37bbb5b706928bc3b3bb0e22ac libcap-2.52.tar.xz
+094994d4554c6689cf98ae4f717b8e19 libcap-2.53.tar.xz
 294b921e6cf9ab0fbaea4b639f8fdbe8 libffi-3.4.2.tar.gz
 dad443d0911cf9f0f1bd90a334bc9004 libpipeline-1.5.3.tar.gz
 1bfb9b923f2c1339b4d2ce1807064aa5 libtool-2.4.6.tar.xz
@@ -55,7 +55,7 @@ fc7a67ea86ace13195b0bce683fd4469 make-4.3.tar.gz
 bdd3d5efba9c17da8d83a35ec552baef mpfr-4.1.0.tar.xz
 e812da327b1c2214ac1aed440ea3ae8d ncurses-6.2.tar.gz
 639f75bc2e3b19ab893eaf2c810d4eb4 ninja-1.10.2.tar.gz
-c4e7d95f782b08116afa27b30393dd27 openssl-1.1.1k.tar.gz
+ac0d4387f3ba0ad741b0580dd45f6ff3 openssl-1.1.1l.tar.gz
 78ad9937e4caadcba1526ef1853730d5 patch-2.7.6.tar.xz
 df7ecb0653440b26dc951ad9dbfab517 perl-5.34.0.tar.xz
 f6e931e319531b736fadc017f470e68a pkg-config-0.29.2.tar.gz
@@ -75,7 +75,7 @@ c70599ab0d037fde724f7210c2c8d7f8 sysklogd-1.5.1.tar.gz
 a91b404e30561a5df803e6eb3a53be71 texinfo-6.8.tar.xz
 20eae7d1da671c6eac56339c8df85bbd tzdata2021a.tar.gz
 227cc8ccdd95487804ce1ca7dd817b5a udev.tar.xz
-6d244f0f59247e9109f47d6e5dd0556b util-linux-2.37.1.tar.xz
+d659bf7cd417d93dc609872f6334b019 util-linux-2.37.2.tar.xz
 d3518dc72dd729ec85bc2a577fe0f709 vim-8.2.3273.tar.gz
 d2249e3dd108c830df00efd7c1b79d86 nano-5.8.tar.xz
 80bb18a8e6240fcf7ec2f7b57601c170 XML-Parser-2.46.tar.gz
