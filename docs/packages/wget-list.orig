@@ -3,7 +3,7 @@ https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.4.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz
-https://github.com/gavinhoward/bc/releases/download/5.0.0/bc-5.0.0.tar.xz
+https://github.com/gavinhoward/bc/releases/download/5.0.1/bc-5.0.1.tar.xz
 https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz
 https://ftp.gnu.org/gnu/bison/bison-3.7.6.tar.xz
 https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
@@ -41,7 +41,7 @@ https://www.kernel.org/pub/linux/utils/kbd/kbd-2.4.0.tar.xz
 https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-29.tar.xz
 https://www.greenwoodsoftware.com/less/less-590.tar.gz
 https://github.com/Linux4Yourself/bootscripts/releases/download/1.1/bootscripts.tar.xz
-https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.52.tar.xz
+https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.53.tar.xz
 https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz
 https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz
 https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
@@ -55,7 +55,7 @@ https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz
 https://www.mpfr.org/mpfr-4.1.0/mpfr-4.1.0.tar.xz
 https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz
 https://github.com/ninja-build/ninja/archive/v1.10.2/ninja-1.10.2.tar.gz
-https://www.openssl.org/source/openssl-1.1.1k.tar.gz
+https://www.openssl.org/source/openssl-1.1.1l.tar.gz
 https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
 https://www.cpan.org/src/5.0/perl-5.34.0.tar.xz
 https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
@@ -75,7 +75,7 @@ https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz
 https://ftp.gnu.org/gnu/texinfo/texinfo-6.8.tar.xz
 https://www.iana.org/time-zones/repository/releases/tzdata2021a.tar.gz
 https://github.com/Linux4Yourself/Linux4Yourself.Udev/releases/download/0.1/udev.tar.xz
-https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.1.tar.xz
+https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz
 https://github.com/vim/vim/archive/refs/tags/v8.2.3273.tar.gz
 https://www.nano-editor.org/dist/v5/nano-5.8.tar.xz
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz

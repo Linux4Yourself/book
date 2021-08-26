@@ -22,7 +22,7 @@
 ## Обновления пакетов
 
 - automake-1.16.4
-- bc-5.0.0
+- bc-5.0.1
 - dbus-1.13.18
 - diffutils-3.8
 - e2fsprogs-1.46.4
@@ -30,12 +30,13 @@
 - glibc-2.34
 - grep-3.7
 - inetutils-2.1
-- libcap-2.52
+- libcap-2.53
 - linux-5.13.12
 - meson-0.59.1
+- openssl-1.1.1l
 - shadow-4.9
 - systemd-249.3
-- util-linux-2.37.1
+- util-linux-2.37.2
 - vim-8.2.3273
 - zlib-ng-2.0.5
 

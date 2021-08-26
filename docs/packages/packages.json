@@ -130,14 +130,14 @@
 	},
 	{
 		"name": "bc",
-		"fileName": "bc-5.0.0.tar.xz",
+		"fileName": "bc-5.0.1.tar.xz",
 		"description": "BC (basic calculator) — интерактивный интерпретатор Си-подобного языка, позволяет выполнять вычисления с произвольно заданной точностью. Часто используется как калькулятор в командной строке UNIX-подобных операционных систем.",
-		"url": "https://github.com/gavinhoward/bc/releases/download/5.0.0/bc-5.0.0.tar.xz",
+		"url": "https://github.com/gavinhoward/bc/releases/download/5.0.1/bc-5.0.1.tar.xz",
 		"homeUrl": "https://git.yzena.com/gavin/bc",
-		"version": "5.0.0",
+		"version": "5.0.1",
 		"releasesUrl": "https://git.yzena.com/gavin/bc/releases",
 		"priority": "important",
-		"md5": "8345bb81c576ddfc8c27e0842370603c",
+		"md5": "651c650c07440d03fd64ddf31daaf4b4",
 		"size": "0.41",
 		"installedSize": 0,
 		"sbu": 0,
@@ -149,7 +149,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/bc-5.0.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/bc-5.0.1.tar.xz"
 	},
 	{
 		"name": "binutils",
@@ -1097,14 +1097,14 @@
 	},
 	{
 		"name": "libcap",
-		"fileName": "libcap-2.52.tar.xz",
+		"fileName": "libcap-2.53.tar.xz",
 		"description": "Пакет Libcap реализует интерфейсы пользовательского пространства для возможностей POSIX 1003.1 e, доступных в ядрах Linux. Эти возможности представляют собой разделение привилегий All powerful root на набор различных привилегий.",
-		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.52.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.53.tar.xz",
 		"homeUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
-		"version": "2.52",
+		"version": "2.53",
 		"releasesUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
 		"priority": "important",
-		"md5": "91548d37bbb5b706928bc3b3bb0e22ac",
+		"md5": "094994d4554c6689cf98ae4f717b8e19",
 		"size": "0.15",
 		"installedSize": 0.19,
 		"sbu": 0,
@@ -1121,7 +1121,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.52.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.53.tar.xz"
 	},
 	{
 		"name": "libffi",
@@ -1431,15 +1431,15 @@
 	},
 	{
 		"name": "openssl",
-		"fileName": "openssl-1.1.1k.tar.gz",
+		"fileName": "openssl-1.1.1l.tar.gz",
 		"description": "Пакет содержит инструменты управления и библиотеки криптографии. Они полезны для предоставления криптографических функций к другим пакетам, таким как OpenSSH, почтовым приложениям и веб-браузерам (для доступа к сайтам по HTTPS).",
-		"url": "https://www.openssl.org/source/openssl-1.1.1k.tar.gz",
+		"url": "https://www.openssl.org/source/openssl-1.1.1l.tar.gz",
 		"homeUrl": "https://www.openssl.org/",
-		"version": "1.1.1k",
+		"version": "1.1.1l",
 		"releasesUrl": "https://www.openssl.org/source/",
 		"priority": "required",
-		"md5": "c4e7d95f782b08116afa27b30393dd27",
-		"size": "9.37",
+		"md5": "ac0d4387f3ba0ad741b0580dd45f6ff3",
+		"size": "9.38",
 		"installedSize": 5.6,
 		"sbu": 0,
 		"sbu2": 1.1,
@@ -1454,7 +1454,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/openssl-1.1.1k.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/openssl-1.1.1l.tar.gz"
 	},
 	{
 		"name": "patch",
@@ -1907,15 +1907,15 @@
 	},
 	{
 		"name": "util-linux",
-		"fileName": "util-linux-2.37.1.tar.xz",
+		"fileName": "util-linux-2.37.2.tar.xz",
 		"description": "Содержит стандартный набор служебных утилит командной строки, такие как: утилиты для работы с файловой системой, консолью, разделами, и сообщениями.",
-		"url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.1.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz",
 		"homeUrl": "https://en.wikipedia.org/wiki/Util-linux",
-		"version": "2.37.1",
+		"version": "2.37.2",
 		"releasesUrl": "https://www.kernel.org/pub/linux/utils/util-linux/",
 		"priority": "required",
-		"md5": "6d244f0f59247e9109f47d6e5dd0556b",
-		"size": "5.37",
+		"md5": "d659bf7cd417d93dc609872f6334b019",
+		"size": "5.36",
 		"installedSize": 7.9,
 		"sbu": 0.8,
 		"sbu2": 0.5,
@@ -1938,7 +1938,7 @@
 			"test-systemd"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/util-linux-2.37.1.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/util-linux-2.37.2.tar.xz"
 	},
 	{
 		"name": "vim",

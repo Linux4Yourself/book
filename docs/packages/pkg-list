@@ -3,7 +3,7 @@ attr-2.5.1.tar.gz
 autoconf-2.71.tar.xz
 automake-1.16.4.tar.xz
 bash-5.1.8.tar.gz
-bc-5.0.0.tar.xz
+bc-5.0.1.tar.xz
 binutils-2.37.tar.xz
 bison-3.7.6.tar.xz
 bzip2-1.0.8.tar.gz
@@ -41,7 +41,7 @@ kbd-2.4.0.tar.xz
 kmod-29.tar.xz
 less-590.tar.gz
 bootscripts.tar.xz
-libcap-2.52.tar.xz
+libcap-2.53.tar.xz
 libffi-3.4.2.tar.gz
 libpipeline-1.5.3.tar.gz
 libtool-2.4.6.tar.xz
@@ -55,7 +55,7 @@ mpc-1.2.1.tar.gz
 mpfr-4.1.0.tar.xz
 ncurses-6.2.tar.gz
 ninja-1.10.2.tar.gz
-openssl-1.1.1k.tar.gz
+openssl-1.1.1l.tar.gz
 patch-2.7.6.tar.xz
 perl-5.34.0.tar.xz
 pkg-config-0.29.2.tar.gz
@@ -75,7 +75,7 @@ tcl8.6.11-src.tar.gz
 texinfo-6.8.tar.xz
 tzdata2021a.tar.gz
 udev.tar.xz
-util-linux-2.37.1.tar.xz
+util-linux-2.37.2.tar.xz
 vim-8.2.3273.tar.gz
 nano-5.8.tar.xz
 XML-Parser-2.46.tar.gz
