@@ -6,6 +6,14 @@
 
 <package-script :package="'binutils'" :type="'prepare'"></package-script>
 
+<!-- temp solution TODO: Remove in next versions -->
+Ошибка в системе сборки приводит к тому, что страницы руководства становятся пустыми. Можно обойти проблему, чтобы страницы руководства были созданы правильно:
+
+```bash
+sed -i '63d' etc/texi2pod.pl
+find -name \*.1 -delete
+```
+
 ## Настройка
 
 <package-script :package="'binutils'" :type="'configure'"></package-script>
