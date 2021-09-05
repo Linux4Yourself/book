@@ -2,39 +2,41 @@
 
 ## Настройка
 
-<package-script :package="'util-linux'" :type="'configure'"></package-script>
+[filename](../../packages/util-linux/configure ':include')
 
 ## Сборка
 
-<package-script :package="'util-linux'" :type="'build'"></package-script>
+[filename](../../packages/util-linux/build ':include')
+
+> Если вы собираете систему с раздельной структурой каталогов, уберите аргумент `--libdir=/usr/lib`!
 
 ## Тестирование
 
 !> Тестирование пакета от имени пользователя `root` может сломать Вашу систему. Для того чтобы этого не случилось, производите тесты от имени непривилегированного пользователя. Для запуска тестов параметр `CONFIG_SCSI_DEBUG` для ядра должен быть доступен в текущей системе и должен быть собран в виде модуля. Также должны быть установлены некоторые другие пакеты из руководства extra. При желании этот тест может быть запущен после перезагрузки в завершенную систему LX4: `bash tests/run.sh --srcdir=$PWD --builddir=$PWD`
 
-<package-script :package="'util-linux'" :type="'test'"></package-script>
+[filename](../../packages/util-linux/test ':include')
 
 ## Установка
 
-<package-script :package="'util-linux'" :type="'install'"></package-script>
+[filename](../../packages/util-linux/install ':include')
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'util-linux'" :type="'multi_prepare'"></package-script>
+[filename](../../packages/util-linux/multi-prepare ':include')
 
 ### Настройка
 
-<package-script :package="'util-linux'" :type="'multi_configure'"></package-script>
+[filename](../../packages/util-linux/multi_configure ':include')
 
 ### Сборка
 
-<package-script :package="'util-linux'" :type="'multi_build'"></package-script>
+[filename](../../packages/util-linux/multi_build ':include')
 
 ### Установка
 
-<package-script :package="'util-linux'" :type="'multi_install'"></package-script>
+[filename](../../packages/util-linux/multi_install ':include')
 
 <script>
 	new Vue({ el: '#main' })
