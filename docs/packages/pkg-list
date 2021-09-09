@@ -5,7 +5,7 @@ automake-1.16.4.tar.xz
 bash-5.1.8.tar.gz
 bc-5.0.1.tar.xz
 binutils-2.37.tar.xz
-bison-3.7.6.tar.xz
+bison-3.8.tar.xz
 bzip2-1.0.8.tar.gz
 check-0.15.2.tar.gz
 coreutils-8.32.tar.xz
@@ -23,7 +23,7 @@ findutils-4.8.0.tar.xz
 flex-2.6.4.tar.gz
 gawk-5.1.0.tar.xz
 gcc-11.2.0.tar.xz
-gdbm-1.20.tar.gz
+gdbm-1.21.tar.gz
 gettext-0.21.tar.xz
 glibc-2.34.tar.xz
 gmp-6.2.1.tar.xz
@@ -31,11 +31,11 @@ gperf-3.1.tar.gz
 grep-3.7.tar.xz
 groff-1.22.4.tar.gz
 grub-2.06.tar.xz
-gzip-1.10.tar.xz
+gzip-1.11.tar.xz
 iana-etc-20210611.tar.gz
-inetutils-2.1.tar.xz
+inetutils-2.2.tar.xz
 intltool-0.51.0.tar.gz
-iproute2-5.13.0.tar.xz
+iproute2-5.14.0.tar.xz
 isl-0.24.tar.xz
 kbd-2.4.0.tar.xz
 kmod-29.tar.xz
@@ -45,7 +45,7 @@ libcap-2.54.tar.xz
 libffi-3.4.2.tar.gz
 libpipeline-1.5.3.tar.gz
 libtool-2.4.6.tar.xz
-linux-5.14.1.tar.xz
+linux-5.14.2.tar.xz
 m4-1.4.19.tar.xz
 make-4.3.tar.gz
 man-db-2.9.4.tar.xz
@@ -55,7 +55,7 @@ mpc-1.2.1.tar.gz
 mpfr-4.1.0.tar.xz
 ncurses-6.2.tar.gz
 ninja-1.10.2.tar.gz
-openssl-1.1.1l.tar.gz
+openssl-3.0.0.tar.gz
 patch-2.7.6.tar.xz
 perl-5.34.0.tar.xz
 pkg-config-0.29.2.tar.gz
@@ -87,7 +87,7 @@ freetype-2.11.0.tar.xz
 efivar-37.tar.bz2
 efibootmgr-17.tar.gz
 dosfstools-4.2.tar.gz
-wget-1.21.1.tar.gz
+wget-1.21.2.tar.gz
 libtasn1-4.17.0.tar.gz
 p11-kit-0.24.0.tar.xz
 make-ca-1.7.tar.xz
