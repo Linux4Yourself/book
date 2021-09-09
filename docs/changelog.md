@@ -26,21 +26,27 @@
 
 - automake-1.16.4
 - bc-5.0.1
+- bison-3.8
 - dbus-1.13.18
 - diffutils-3.8
 - e2fsprogs-1.46.4
 - gcc-11.2.0
+- gdbm-1.21
 - glibc-2.34
 - grep-3.7
-- inetutils-2.1
+- gzip-1.11
+- inetutils-2.2
+- inetutils-2.2
+- iproute2-5.14.0
 - libcap-2.53
-- linux-5.13.12
+- linux-5.14.2
 - meson-0.59.1
-- openssl-1.1.1l
+- openssl-3.0.0
 - shadow-4.9
-- systemd-249.3
+- systemd-249.4
 - util-linux-2.37.2
 - vim-8.2.3273
+- wget-1.21.2
 - zlib-ng-2.0.5
 
 ## 20.07.2021
