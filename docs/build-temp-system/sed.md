@@ -36,7 +36,3 @@ make
 ```bash
 make DESTDIR=$LIN install
 ```
-
-## При раздельной структуре каталогов
-
-Добавьте к скрипту `configure` ключ `--bindir=/bin`.
