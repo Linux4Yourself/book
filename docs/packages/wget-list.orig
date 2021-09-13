@@ -12,7 +12,7 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.13.18.tar.gz
 https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.8.tar.xz
-https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.46.3/e2fsprogs-1.46.4.tar.gz
+https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.4/e2fsprogs-1.46.4.tar.gz
 https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
 https://sourceware.org/ftp/elfutils/0.185/elfutils-0.185.tar.bz2
 https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz
