@@ -2,19 +2,19 @@
 
 ## Настройка
 
-<package-script :package="'bc'" :type="'configure'"></package-script>
+[filename](../packages/bc/configure ':include')
 
 ## Сборка
 
-<package-script :package="'bc'" :type="'build'"></package-script>
+[filename](../packages/bc/build ':include')
 
 ## Тестирование
 
-<package-script :package="'bc'" :type="'test'"></package-script>
+[filename](../packages/bc/test ':include')
 
 ## Установка
 
-<package-script :package="'bc'" :type="'install'"></package-script>
+[filename](../packages/bc/install ':include')
 
 ## Установленные файлы
 

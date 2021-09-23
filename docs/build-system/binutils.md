@@ -4,7 +4,7 @@
 
 Удалите проблемный тест:
 
-<package-script :package="'binutils'" :type="'prepare'"></package-script>
+[filename](../packages/binutils/prepare ':include')
 
 <!-- temp solution TODO: Remove in next versions -->
 Ошибка в системе сборки приводит к тому, что страницы руководства становятся пустыми. Можно обойти проблему, чтобы страницы руководства были созданы правильно:
@@ -16,11 +16,11 @@ find -name \*.1 -delete
 
 ## Настройка
 
-<package-script :package="'binutils'" :type="'configure'"></package-script>
+[filename](../packages/binutils/configure ':include')
 
 ### Для multilib
 
-<package-script :package="'binutils'" :type="'multi_configure'"></package-script>
+[filename](../packages/binutils/multi_prepare ':include')
 
 ### Значения параметров
 
@@ -36,21 +36,22 @@ find -name \*.1 -delete
 
 ## Сборка
 
-<package-script :package="'binutils'" :type="'build'"></package-script>
+[filename](../packages/binutils/build ':include')
 
 ## Тестирование
 
+[filename](../packages/binutils/test ':include')
 <package-script :package="'binutils'" :type="'test'"></package-script>
 
 ?> Известно, что четыре теста с меткой `Run property ...` могут дать сбои.
 
 ## Установка
 
-<package-script :package="'binutils'" :type="'install'"></package-script>
+[filename](../packages/binutils/install ':include')
 
 Удалите бесполезные статические библиотеки:
 
-<package-script :package="'binutils'" :type="'postinstall'"></package-script>
+[filename](../packages/binutils/postinstall ':include')
 
 ## Установленные файлы
 

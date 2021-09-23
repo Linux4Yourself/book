@@ -2,21 +2,21 @@
 
 ## Настройка
 
-<package-script :package="'check'" :type="'configure'"></package-script>
+[filename](../packages/check/configure ':include')
 
 ## Сборка
 
-<package-script :package="'check'" :type="'build'"></package-script>
+[filename](../packages/check/build ':include')
 
 ## Тестирование
 
-<package-script :package="'check'" :type="'test'"></package-script>
+[filename](../packages/check/test ':include')
 
 > Тесты добавляют 4 SBU ко всему времени установки пакета.
 
 ## Установка
 
-<package-script :package="'check'" :type="'install'"></package-script>
+[filename](../packages/check/install ':include')
 
 <script>
 	new Vue({ el: '#main' })
