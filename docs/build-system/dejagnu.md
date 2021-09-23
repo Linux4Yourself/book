@@ -4,14 +4,15 @@
 
 ## Настройка
 
-<package-script :package="'dejagnu'" :type="'configure'"></package-script>
+[filename](../packages/dejagnu/configure ':include')
 
 ## Сборка и установка
 
-<package-script :package="'dejagnu'" :type="'install'"></package-script>
+[filename](../packages/dejagnu/install ':include')
 
 ## Тестирование
 
+[filename](../packages/dejagnu/test ':include')
 <package-script :package="'dejagnu'" :type="'test'"></package-script>
 
 <script>

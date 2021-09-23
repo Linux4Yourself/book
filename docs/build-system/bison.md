@@ -2,21 +2,21 @@
 
 ## Настройка
 
-<package-script :package="'bison'" :type="'configure'"></package-script>
+[filename](../packages/bison/configure ':include')
 
 ## Сборка
 
-<package-script :package="'bison'" :type="'build'"></package-script>
+[filename](../packages/bison/build ':include')
 
 ## Тестирование
 
-<package-script :package="'bison'" :type="'test'"></package-script>
+[filename](../packages/bison/test ':include')
 
 > Добавляет примерно 5,5 SBU к общему времени установки пакета
 
 ## Установка
 
-<package-script :package="'bison'" :type="'install'"></package-script>
+[filename](../packages/bison/install ':include')
 
 <script>
 	new Vue({ el: '#main' })

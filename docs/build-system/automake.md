@@ -3,22 +3,22 @@
 ## Настройка
 
 Внесите исправление для некорректного теста:
-<package-script :package="'automake'" :type="'prepare'"></package-script>
-<package-script :package="'automake'" :type="'configure'"></package-script>
+[filename](../packages/automake/prepare ':include')
+[filename](../packages/automake/configure ':include')
 
 ## Сборка
 
-<package-script :package="'automake'" :type="'build'"></package-script>
+[filename](../packages/automake/build ':include')
 
 ## Тестирование
 
-<package-script :package="'automake'" :type="'test'"></package-script>
+[filename](../packages/automake/test ':include')
 
 ?> Известно, что тесты `t/subobj.sh`, `t/deprecated-acinit.sh` и `t/init.sh` не проходят в LX4.
 
 ## Установка
 
-<package-script :package="'automake'" :type="'install'"></package-script>
+[filename](../packages/automake/install ':include')
 
 <script>
 	new Vue({ el: '#main' })

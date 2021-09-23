@@ -8,6 +8,7 @@
 
 ## Изменения
 
+- [Исправлено #877](https://github.com/Linux4Yourself/book/issues/877)
 - [Исправлено #863](https://github.com/Linux4Yourself/book/pull/863)
 - [Исправлено #849](https://github.com/Linux4Yourself/book/issues/849)
 - [Исправлено #816](https://github.com/Linux4Yourself/book/issues/816)

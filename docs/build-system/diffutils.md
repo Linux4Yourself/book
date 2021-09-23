@@ -2,19 +2,19 @@
 
 ## Настройка
 
-<package-script :package="'diffutils'" :type="'configure'"></package-script>
+[filename](../packages/diffutils/configure ':include')
 
 ## Сборка
 
-<package-script :package="'diffutils'" :type="'build'"></package-script>
+[filename](../packages/diffutils/build ':include')
 
 ## Тестирование
 
-<package-script :package="'diffutils'" :type="'test'"></package-script>
+[filename](../packages/diffutils/test ':include')
 
 ## Установка
 
-<package-script :package="'diffutils'" :type="'install'"></package-script>
+[filename](../packages/diffutils/install ':include')
 
 <script>
 	new Vue({ el: '#main' })
