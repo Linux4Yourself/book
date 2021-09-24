@@ -17,13 +17,15 @@
 
 ## Обновления пакетов
 
+- bison-5.8.1
+- sysvinit-3.00
 - systemd-249.4
-- linux-5.14.1
+- linux-5.14.7
 - man-pages-5.13
-- vim-8.2.3400
+- vim-8.2.3455
 - python-3.9.7
-- libcap-2.54
-- bc-5.0.0
+- libcap-2.58
+- bc-5.0.2
 - grep-3.7
 - diffutils-3.8
 - glibc-2.34
