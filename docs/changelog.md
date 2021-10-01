@@ -26,9 +26,13 @@
 
 ## Обновления пакетов
 
+- tzdata-2021b
+- meson-0.59.2
+- linux-5.14.9
+- bison-3.8.2
+- coreutils-9.0
 - automake-1.16.4
 - bc-5.0.1
-- bison-3.8
 - dbus-1.13.18
 - diffutils-3.8
 - e2fsprogs-1.46.4
@@ -38,16 +42,13 @@
 - grep-3.7
 - gzip-1.11
 - inetutils-2.2
-- inetutils-2.2
 - iproute2-5.14.0
 - libcap-2.53
-- linux-5.14.2
-- meson-0.59.1
 - openssl-3.0.0
 - shadow-4.9
 - systemd-249.4
 - util-linux-2.37.2
-- vim-8.2.3273
+- vim-8.2.3455
 - wget-1.21.2
 - zlib-ng-2.0.5
 

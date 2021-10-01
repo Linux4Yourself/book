@@ -183,15 +183,15 @@
 	},
 	{
 		"name": "bison",
-		"fileName": "bison-3.8.1.tar.xz",
+		"fileName": "bison-3.8.2.tar.xz",
 		"description": "Пакет содержит GNU версию yacc (ещё один компилятор компиляторов), необходимый для сборки некоторых пакетов",
-		"url": "https://ftp.gnu.org/gnu/bison/bison-3.8.1.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.xz",
 		"homeUrl": "https://www.gnu.org/software/bison",
-		"version": "3.8.1",
+		"version": "3.8.2",
 		"releasesUrl": "https://ftp.gnu.org/gnu/bison",
 		"priority": "required",
-		"md5": "0ea56629a7136cc097668dba808afe3a",
-		"size": "2.67",
+		"md5": "c28f119f405a2304ff0a7ccdcc629713",
+		"size": "2.69",
 		"installedSize": 1.2,
 		"sbu": 0.2,
 		"sbu2": 0.2,
@@ -202,7 +202,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/bison-3.8.1.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/bison-3.8.2.tar.xz"
 	},
 	{
 		"name": "bzip2",
@@ -262,15 +262,15 @@
 	},
 	{
 		"name": "coreutils",
-		"fileName": "coreutils-8.32.tar.xz",
+		"fileName": "coreutils-9.0.tar.xz",
 		"description": "Coreutils - пакет программного обеспечения GNU, содержащий большое количество основных утилит, таких как cat, ls и rm, необходимых для UNIX-подобных операционных систем. Пакет включает несколько более ранних пакетов — textutils, shellutils, fileutils и другие различные утилиты.",
-		"url": "https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz",
 		"homeUrl": "https://gnu.org/software/coreutils",
-		"version": "8.32",
+		"version": "9.0",
 		"releasesUrl": "https://ftp.gnu.org/gnu/coreutils/",
 		"priority": "required",
-		"md5": "022042695b7d5bcf1a93559a9735e668",
-		"size": "5.29",
+		"md5": "0d79ae8a6124546e3b94171375e5e5d0",
+		"size": "5.35",
 		"installedSize": 3,
 		"sbu": 0.5,
 		"sbu2": 0.4,
@@ -287,7 +287,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-8.32.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-9.0.tar.xz"
 	},
 	{
 		"name": "dbus",
@@ -1203,19 +1203,19 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.14.7.tar.xz",
+		"fileName": "linux-5.14.9.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.14.7.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.14.9.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.14.7",
+		"version": "5.14.9",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "4119cf1e59ef6f109b9be9451a0899ae",
+		"md5": "9f4fe4d784f3c5dd34e9251f83202eba",
 		"size": "115.10",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.14.7.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.14.9.tar.xz",
 		"scripts": []
 	},
 	{
@@ -1310,15 +1310,15 @@
 	},
 	{
 		"name": "meson",
-		"fileName": "meson-0.59.1.tar.gz",
+		"fileName": "meson-0.59.2.tar.gz",
 		"description": "Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.",
-		"url": "https://github.com/mesonbuild/meson/releases/download/0.59.1/meson-0.59.1.tar.gz",
+		"url": "https://github.com/mesonbuild/meson/releases/download/0.59.2/meson-0.59.2.tar.gz",
 		"homeUrl": "https://mesonbuild.com",
-		"version": "0.59.1",
+		"version": "0.59.2",
 		"releasesUrl": "https://github.com/mesonbuild/meson/releases/",
 		"priority": "important",
-		"md5": "9c8135ecde820094be2f42f457fb6535",
-		"size": "1.85",
+		"md5": "9d65e09b53b1dfab6339a0982176935d",
+		"size": "1.86",
 		"installedSize": 5.3,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -1328,7 +1328,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.59.1.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.59.2.tar.gz"
 	},
 	{
 		"name": "mpc",
@@ -1873,19 +1873,19 @@
 	},
 	{
 		"name": "tzdata",
-		"fileName": "tzdata2021a.tar.gz",
+		"fileName": "tzdata2021b.tar.gz",
 		"description": "База данных часовых поясов.",
-		"url": "https://www.iana.org/time-zones/repository/releases/tzdata2021a.tar.gz",
+		"url": "https://www.iana.org/time-zones/repository/releases/tzdata2021b.tar.gz",
 		"homeUrl": "https://www.iana.org/time-zones",
-		"version": "2021a",
+		"version": "2021b",
 		"releasesUrl": "https://www.iana.org/time-zones/repository/releases/",
 		"priority": "optional",
-		"md5": "20eae7d1da671c6eac56339c8df85bbd",
-		"size": "0.39",
+		"md5": "f3b7d5040127e45ccd7ef0952e03edb2",
+		"size": "0.40",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/tzdata2021a.tar.gz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/tzdata2021b.tar.gz",
 		"scripts": []
 	},
 	{
