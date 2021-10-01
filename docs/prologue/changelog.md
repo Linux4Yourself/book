@@ -8,6 +8,7 @@
 
 ## Изменения
 
+- Произведена чистка JavaScript-кода.
 - [Исправлено #821](https://github.com/Linux4Yourself/book/issues/821)
 - [Выполнено #779](https://github.com/Linux4Yourself/book/issues/779)
 - [Выполнено #756](https://github.com/Linux4Yourself/book/issues/756)

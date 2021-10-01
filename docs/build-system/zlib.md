@@ -2,7 +2,7 @@
 
 ## Настройка
 
-<package-script :package="'zlib-ng'" :type="'configure'"></package-script>
+[filename](../packages/zlib-ng/configure ':include')
 
 ### Значения параметров
 

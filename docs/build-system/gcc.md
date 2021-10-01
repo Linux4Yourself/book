@@ -24,7 +24,7 @@
 
 Исправьте пути установки библиотек:
 
-<package-script :package="'gcc'" :type="'prepare'"></package-script>
+[filename](../packages/gcc/prepare ':include')
 
 ## Настройка
 

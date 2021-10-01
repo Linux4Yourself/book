@@ -1,4 +1,4 @@
-# Заголовочные файлы ядра Linux v.{{ package.version }}
+# Заголовочные файлы ядра Linux 
 
 Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
 <br />
