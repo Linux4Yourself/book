@@ -1,0 +1,3 @@
+./configure --prefix=/usr               \
+            --enable-compat-symlinks    \
+            --mandir=/usr/share/man

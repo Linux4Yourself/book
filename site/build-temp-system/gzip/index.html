@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>gzip - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "gzip";
+    var mkdocs_page_input_path = "build-temp-system/gzip.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-threads/">О потоках</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка кросс-компилятора</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/cross-toolchain/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/binutils/">Binutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/gcc/">GCC</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-system/linux-headers/">Заголовочные файлы ядра Linux</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка временной системы</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../tempsystem/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../glibc/">glibc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../libstdc/">libstdc++ проход 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../m4/">m4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ncurses/">ncurses</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bash/">bash</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../coreutils/">coreutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../diffutils/">diffutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../file/">file</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../findutils/">findutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gawk/">gawk</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../grep/">grep</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">gzip</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../make/">make</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../patch/">patch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sed/">sed</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tar/">tar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../xz/">xz</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../binutils-p2/">binutils проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gcc-p2/">gcc проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../change-owner/">Смена владельца каталога $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../enter-in-chroot/">Вход в окружение chroot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../create-files/">Создание базовых файлов и ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../libstdc-p2/">libstdc++ проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gettext/">gettext</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bison/">bison</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../perl/">perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../python/">python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../texinfo/">texinfo</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../util-linux/">util-linux</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../cleanup/">Очистка и сохранение временной системы</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Сборка временной системы &raquo;</li>
+        
+      
+    
+    <li>gzip</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><package-info :package="package" showsbu></package-info></p>
+<script>
+        new Vue({
+        el: '#main',
+        data: { package: {} },
+        mounted: function () {
+                this.getPackage('gzip');
+        },
+        methods: {
+            getPackage: function(name) {
+                    getPackage(name)
+                    .then(response => this.package = response);
+            },
+        }
+  })
+</script>
+
+<h2 id="_1">Настройка</h2>
+<pre><code class="language-bash">./configure --prefix=/usr --host=$LIN_TGT
+</code></pre>
+<h2 id="_2">Сборка</h2>
+<pre><code class="language-bash">make
+</code></pre>
+<h2 id="_3">Установка</h2>
+<pre><code class="language-bash">make DESTDIR=$LIN install
+</code></pre>
+<h2 id="_4">При раздельной структуре каталогов</h2>
+<p>Переместите исполняемый файл в нужную директорию:</p>
+<pre><code class="language-bash">mv -v $LIN/usr/bin/gzip $LIN/bin
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../make/" class="btn btn-neutral float-right" title="make">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../grep/" class="btn btn-neutral" title="grep"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../grep/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../make/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

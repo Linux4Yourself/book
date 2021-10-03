@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Kernel setup - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Kernel setup";
+    var mkdocs_page_input_path = "kernel/kernel-setup.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-threads/">О потоках</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка кросс-компилятора</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/cross-toolchain/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/binutils/">Binutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/gcc/">GCC</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-system/linux-headers/">Заголовочные файлы ядра Linux</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка временной системы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tempsystem/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/glibc/">glibc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc/">libstdc++ проход 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/m4/">m4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/ncurses/">ncurses</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bash/">bash</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/coreutils/">coreutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/diffutils/">diffutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/file/">file</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/findutils/">findutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gawk/">gawk</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/grep/">grep</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gzip/">gzip</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/make/">make</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/patch/">patch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/sed/">sed</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tar/">tar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/xz/">xz</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/binutils-p2/">binutils проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gcc-p2/">gcc проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/change-owner/">Смена владельца каталога $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/enter-in-chroot/">Вход в окружение chroot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/create-files/">Создание базовых файлов и ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc-p2/">libstdc++ проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gettext/">gettext</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bison/">bison</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/perl/">perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/python/">python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/texinfo/">texinfo</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/util-linux/">util-linux</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/cleanup/">Очистка и сохранение временной системы</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Kernel setup</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><package-info :package="package"></package-info></p>
+<script>
+        new Vue({
+        el: '#main',
+        data: { package: {} },
+        mounted: function () {
+                this.getPackage('linux');
+        },
+        methods: {
+            getPackage: function(name) {
+                    getPackage(name)
+                    .then(response => this.package = response);
+            },
+        }
+  })
+</script>
+
+<h1 id="_1">Настройка</h1>
+<p>В данной главе подробно рассказано о настройке ядра из исходного кода.</p>
+<h2 id="_2">Подготовка</h2>
+<p>Подготовьте пакет к компиляции, выполнив следующую команду:</p>
+<pre><code class="language-bash">make mrproper
+</code></pre>
+<p>Выполнение этой команды гарантирует, что дерево исходных кодов ядра будет абсолютно чистым.
+Разработчики ядра рекомендуют, чтобы эта команда выполнялась перед каждым процессом компиляции.</p>
+<p>!&gt; Обратите внимание что после распаковки пакета с исходным кодом не следует полагаться на его "чистоту".</p>
+<h2 id="_3">Инструменты настройки параметров ядра</h2>
+<p>Конфигурация ядра хранится в файле <code>.config</code>. Именно этот файл следует отредактировать, указав необходимые опции, в соответствии с вашим оборудованием и предпочтениями.</p>
+<p>Для наглядности и облегчения восприятия, настройку ядра можно произвести при помощи утилит, предоставляющих графический или псевдографический интерфейс:</p>
+<ul>
+<li><code>make xconfig</code> – при использовании графической среды KDE</li>
+<li><code>make gconfig</code> – при использовании графической среды GNOME</li>
+<li><code>make menuconfig</code> – псевдографический режим</li>
+<li><code>make config</code> – вариант настройки, выводящий запросы на задание значений каждого параметра ядра. (Не позволяет изменить уже заданные параметры)</li>
+</ul>
+<p>Практически все варианты (за исключением последнего) позволяют получать краткую справку по каждому параметру, производить поиск нужного параметра (или раздела), добавлять в конфигурацию дополнительные компоненты, драйверы, а также показывают, каким образом конкретный компонент может быть сконфигурирован — как компонент, встроенный в ядро или как загружаемый модуль, а также поддерживает ли он вообще вариант компиляции в качестве загружаемого модуля.</p>
+<h2 id="_4">Создание конфигурации</h2>
+<p>Хорошей отправной точкой для настройки ядра может стать запуск команды <code>make defconfig</code>.</p>
+<p>Выполните команду:</p>
+<pre><code class="language-bash">make defconfig
+</code></pre>
+<p>Будет создана базовая конфигурация с настройками по умолчанию с учётом архитектуры машины. Параметры берутся из архитектурно-зависимых <code>defconfig</code> файлов.</p>
+<h2 id="_5">Настройка параметров</h2>
+<p>!&gt; Убедитесь в том, что вы <strong>включили/отключили/указали</strong> указанные ниже параметры
+настройки. В ином случае система может работать неправильно или вовсе не загрузится:</p>
+<pre><code>General setup --&gt;
+   [ ] Auditing Support [CONFIG_AUDIT]
+   [*] Control Group support [CONFIG_CGROUPS]
+   [ ] Enable deprecated sysfs features to support old userspace tools [CONFIG_SYSFS_DEPRECATED]
+   [*] Configure standard kernel features (expert users) [CONFIG_EXPERT] ---&gt;
+      [*] open by fhandle syscalls [CONFIG_FHANDLE]
+Processor type and features  ---&gt;
+   [*] Enable seccomp to safely compute untrusted bytecode [CONFIG_SECCOMP]
+Firmware Drivers  ---&gt;
+   [*] Export DMI identification via sysfs to userspace [CONFIG_DMIID]
+Networking support ---&gt;        [CONFIG_NET]
+      Networking options ---&gt;
+        &lt;*&gt; Packet socket          [CONFIG_PACKET]
+        &lt;*&gt; The IPv6 Protocol ---&gt; [CONFIG_IPV6]
+Device Drivers  ---&gt;
+  Generic Driver Options  ---&gt;
+   [ ] Support for uevent helper [CONFIG_UEVENT_HELPER]
+   [*] Maintain a devtmpfs filesystem to mount at /dev [CONFIG_DEVTMPFS]
+   Firmware Loader ---&gt;
+      [ ] Enable the firmware sysfs fallback mechanism [CONFIG_FW_LOADER_USER_HELPER]
+File systems  ---&gt;
+   [*] Inotify support for userspace [CONFIG_INOTIFY_USER]
+  Pseudo filesystems  ---&gt;
+   [*] Tmpfs POSIX Access Control Lists [CONFIG_TMPFS_POSIX_ACL]
+</code></pre>
+<p>?&gt; указанные ниже параметры используйте на своё усмотрение.</p>
+<h3 id="_6">Поддержка файловых систем</h3>
+<p>Обратите внимание на раздел <code>File systems</code>. Включите поддержку требуемых файловых систем. Обязательно включите The Extended 4 (ext4) filesystem для её поддержки.</p>
+<h3 id="efi">EFI</h3>
+<p>Если вы будете использовать EFI, необходимо обеспечить его поддержку:</p>
+<pre><code>Processor type and features ---&gt;
+  [*] EFI runtime service support                              [CONFIG_EFI]
+  [*]   EFI stub support                                       [CONFIG_EFI_STUB]
+Firmware Drivers ---&gt;
+  EFI (Extensible Firmware Interface) Support ---&gt;
+    &lt; &gt; EFI Variable Support via sysfs                         [CONFIG_EFI_VARS]
+    [*] Export efi runtime maps to sysfs                       [CONFIG_EFI_RUNTIME_MAP]
+Enable the block layer ---&gt;
+  Partition Types ---&gt;
+    [*] Advanced partition selection                           [CONFIG_PARTITION_ADVANCED]
+    [*] EFI GUID Partition support                             [CONFIG_EFI_PARTITION]
+Device Drivers ---&gt;
+  Graphics support ---&gt;
+    Frame buffer Devices ---&gt;
+      Support for frame buffer devices ---&gt;                    [CONFIG_FB]
+        [*] EFI-based Framebuffer support                      [CONFIG_FB_EFI]
+    Console display driver support ---&gt;
+      [*] Framebuffer Console support                          [CONFIG_FRAMEBUFFER_CONSOLE]
+File systems ---&gt;
+  Pseudo filesystems ---&gt;
+    &lt;*/M&gt; EFI Variable filesystem                              [CONFIG_EFIVAR_FS]
+
+</code></pre>
+<h3 id="fuse">FUSE</h3>
+<p>FUSE (англ. filesystem in userspace — «файловая система в пользовательском пространстве») — свободный модуль для ядер Unix-подобных операционных систем, позволяющий разработчикам создавать новые типы файловых систем, доступные для монтирования пользователями без привилегий (прежде всего — виртуальных файловых систем); это достигается за счёт запуска кода файловой системы в пользовательском пространстве, в то время как модуль FUSE предоставляет связующее звено для актуальных интерфейсов ядра. C использованием средств FUSE разработаны, в частности, SSHFS, NTFS-3G, GlusterFS, ZFS.</p>
+<pre><code>File systems  ---&gt;
+  &lt;*/M&gt; FUSE (Filesystem in Userspace) support [CONFIG_FUSE_FS]
+</code></pre>
+<h3 id="windows">Файловые системы Windows</h3>
+<pre><code class="language-bash">File systems ---&gt;
+  &lt;DOS/FAT/EXFAT/NT Filesystems ---&gt;
+    &lt;*/M&gt; MSDOS fs support             [CONFIG_MSDOS_FS]
+    &lt;*/M&gt; VFAT (Windows-95) fs support [CONFIG_VFAT_FS]
+
+</code></pre>
+<h3 id="xfs">XFS</h3>
+<p>XFS — высокопроизводительная 64-битная журналируемая файловая система, созданная компанией Silicon Graphics для собственной операционной системы IRIX. 1 мая 2001 года Silicon Graphics выпустила XFS под GNU General Public License (Linux версия 2.2). XFS отличается от других файловых систем тем, что она изначально была рассчитана для использования на дисках большого объёма (более 2 терабайт).</p>
+<pre><code>File systems ---&gt;
+  &lt;*/M&gt; XFS filesystem support [CONFIG_XFS_FS]
+
+</code></pre>
+<h3 id="lvm">LVM</h3>
+<p>При необходимости включите поддержу LVM.</p>
+<p>LVM — это метод распределения пространства жёсткого диска по логическим томам, размер которых можно легко менять, в отличие от разделов.</p>
+<p>С LVM пространство жёсткого диска или набора дисков распределяется по физическим томам. Физический том не может располагаться более чем на одном диске.</p>
+<p>Физические тома собираются в группы логических томов, за исключением раздела /boot. Раздел /boot не может находиться в группе логических томов, так как в этом случае загрузчику не удастся его прочитать. Если корневой раздел (/) находится на логическом томе, создайте отдельный раздел /boot вне группы томов.</p>
+<pre><code>Device Drivers ---&gt;
+  [*] Multiple devices driver support (RAID and LVM) ---&gt; [CONFIG_MD]
+    &lt;*/M&gt;   Device mapper support                         [CONFIG_BLK_DEV_DM]
+    &lt;*/M&gt;   Crypt target support                          [CONFIG_DM_CRYPT]
+    &lt;*/M&gt;   Snapshot target                               [CONFIG_DM_SNAPSHOT]
+    &lt;*/M&gt;   Thin provisioning target                      [CONFIG_DM_THIN_PROVISIONING]
+    &lt;*/M&gt;   Mirror target                                 [CONFIG_DM_MIRROR]
+Kernel hacking ---&gt;
+  Generic Kernel Debugging Instruments ---&gt;
+    [*] Magic SysRq key                                   [CONFIG_MAGIC_SYSRQ]
+
+</code></pre>
+<h3 id="cryptographic-api">Cryptographic API</h3>
+<p>Cryptographic API предлагает богатый набор криптографических шифров, а также другие механизмы и методы преобразования данных для их вызова. Cryptographic API предоставляет различные вызовы API для следующих типов шифров:</p>
+<ul>
+<li>Симметричные шифры</li>
+<li>Шифры AEAD</li>
+<li>Дайджест сообщения, включая дайджест сообщения с ключом</li>
+<li>Генерация случайных чисел</li>
+<li>Интерфейс пользовательского пространства</li>
+</ul>
+<pre><code>Device Drivers  ---&gt;
+  [*] Multiple devices driver support (RAID and LVM) ---&gt; [CONFIG_MD]
+       &lt;*/M&gt; Device mapper support                        [CONFIG_BLK_DEV_DM]
+       &lt;*/M&gt; Crypt target support                         [CONFIG_DM_CRYPT]
+
+Cryptographic API  ---&gt;
+  &lt;*/M&gt; XTS support                                       [CONFIG_CRYPTO_XTS]
+  &lt;*/M&gt; SHA224 and SHA256 digest algorithm                [CONFIG_CRYPTO_SHA256]
+  &lt;*/M&gt; AES cipher algorithms                             [CONFIG_CRYPTO_AES]
+  &lt;*/M&gt; User-space interface for symmetric key cipher algorithms
+                                                          [CONFIG_CRYPTO_USER_API_SKCIPHER]
+  For tests:
+  &lt;*/M&gt; Twofish cipher algorithm                          [CONFIG_CRYPTO_TWOFISH]
+
+</code></pre>
+<h3 id="_7">Драйверы устройств</h3>
+<p>В разделе <code>Device Drivers</code> - нужно пройтись по разделам и включить драйвера для своего оборудования - нестандартные жёсткие диски, мышки, USB устройства, веб-камеры, Bluetooth, Wi-Fi адаптеры, принтеры и т. д.</p>
+<p>Посмотреть, какое оборудование подключено к вашей системе можно командой:</p>
+<pre><code class="language-bash"> lspci
+</code></pre>
+<h2 id="_8">Сборка</h2>
+<p>Когда все параметры настроены, можно приступать к сборке.</p>
+<p>Выполните комадну:</p>
+<pre><code class="language-bash">make
+</code></pre>
+<p>?&gt; Обратите внимание, что процесс сборки ядра может проходить длительное время (от 4.4 до 66.0 SBU). Это во многом зависит от установленных параметров конфигурации.</p>
+<p>Установите модули ядра:</p>
+<pre><code class="language-bash">make modules_install
+</code></pre>
+<h2 id="_9">Установка</h2>
+<p>После завершения сборки необходимо выполнить еще несколько шагов. Некоторые
+файлы должны быть скопированы в каталог <code>/boot</code>.</p>
+<p>Путь к образу ядра зависит от используемой платформы. Имя файла, указанное ниже, может
+иметь произвольное наименование, на ваш вкус, но имя файла должно начинаться с <code>vmlinuz</code>
+для обеспечения совместимости автоматической настройки процесса загрузки. При выполнении следующей команды будет считаться, что используется
+архитектура x86:</p>
+<pre class="pre">
+cp -iv arch/x86/boot/bzImage /boot/vmlinuz-{{ package.version }}-my-kernel
+</pre>
+
+<p><code>System.map</code> файл, внутри которого находится символьная таблица адресов функций и
+процедур, используемых ядром операционной системы Linux. В этой таблице перечислены
+имена переменных и функций и их адреса в памяти компьютера. Эта таблица весьма полезна
+при отладке ядра в случае Kernel panic или Linux oops. System.map генерируется при компиляции
+ядра. Выполните следующую команду для установки файла System.map :</p>
+<pre class="pre">
+cp -iv System.map /boot/System.map-{{ package.version }}
+</pre>
+
+<p>Файл конфигурации ядра <code>.config</code>, полученный в результате настройки <code>make menuconfig</code>
+содержит в себе все опции конфигурации скомпилированного ядра. Хорошей идеей будет
+оставить этот файл для будующей работы:</p>
+<pre class="pre">
+cp -iv .config /boot/config-{{ package.version }}
+</pre>
+
+<p>Для облегчения обновления ядра создайте символическую ссылку:</p>
+<pre class="pre">
+ln -svf vmlinuz-{{ package.version }}-my-kernel /boot/vmlinuz
+</pre>
+
+<p>При обновлении ядра будет достаточно установить новую версию и обновить символическую ссылку.</p>
+<h2 id="_10">Установка документации</h2>
+<p>Установите документацию, если она необходима</p>
+<pre class="pre">
+install -d /usr/share/doc/linux-{{ package.version }}
+cp -rv Documentation/* /usr/share/doc/linux-{{ package.version }}
+</pre>
+
+<h2 id="_11">Настройка каталога с исходным кодом</h2>
+<p>Важно отметить, что файлы в каталоге исходных кодов ядра не принадлежат пользователю
+<code>root</code>. Всякий раз, когда пакет распаковывается от пользователя <code>root</code> (как это и выполнялось
+внутри среды <code>chroot</code>), файлы имеют те идентификаторы пользователя и группы, которые были
+назначены при распаковке. Обычно это не вызывает проблем для других устанавливаемых
+пакетов, так как каталог с исходными кодами удаляется после установки пакета. Однако
+исходный код ядра Linux часто сохраняется в течение длительного времени. Из-за этого существует вероятность того, что идентификатор пользователя, используемый при распаковке,
+будет назначен другому пользователю. В таком случае этот пользователь будет иметь доступ на
+запись в этот каталог.</p>
+<p>?&gt; Во многих случаях конфигурация ядра должна быть обновлена для пакетов, которые
+будут установлены вами позднее. В отличие от других пакетов удалять дерево исходного
+кода ядра не требуется после компиляции и установки.</p>
+<p>Если вы планируете оставить каталог с исходным кодом ядра, выполните команду:</p>
+<pre class="pre">
+chown -R 0:0 /usr/src/linux-{{ package.version }}
+</pre>
+
+<p>!&gt; Заголовочные файлы, расположенные в системном каталоге <code>/usr/include</code>, должны
+всегда быть те, которые использовались при компиляции <code>Glibc</code>. Их никогда не следует заменять на чистые
+заголовочные файлы ядра или любые другие подготовленные заголовочные файлы.</p>
+<h2 id="linux">Настройка порядка загрузки модулей Linux</h2>
+<p>Обычно модули Linux загружаются автоматически, но иногда требуется определённый порядок.
+Программа, которая загружает модули, <code>modprobe</code> или <code>insmod</code>, использует файл <code>/etc/ modprobe.d/usb.conf</code> как раз для этой цели. Этот файл должен быть создан так, что,
+если USB-драйверы (<code>ehci_hcd</code>, <code>ohci_hcd</code> и <code>uhci_hcd</code>) были созданы в виде модулей, то они будут
+загружены в требуемом порядке: <code>ehci_hcd</code> должен быть загружен до <code>ohci_hcd</code> и <code>uhci_hcd</code> для того,
+чтобы избежать предупреждений во время загрузки.</p>
+<p>Создайте новый файл <code>/etc/modprobe.d/usb.conf</code>, выполнив следующую команду:</p>
+<p><a href="../../scripts/modprobe/" title=":include">filename</a></p>
+<script>
+    new Vue({ el: '#main' })
+</script>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

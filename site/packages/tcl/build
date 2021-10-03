@@ -1,0 +1,18 @@
+make
+
+sed -e "s|$SRCDIR/unix|/usr/lib|" \
+    -e "s|$SRCDIR|/usr/include|"  \
+    -i tclConfig.sh
+
+sed -e "s|$SRCDIR/unix/pkgs/tdbc1.1.2|/usr/lib/tdbc1.1.2|" \
+    -e "s|$SRCDIR/pkgs/tdbc1.1.2/generic|/usr/include|"    \
+    -e "s|$SRCDIR/pkgs/tdbc1.1.2/library|/usr/lib/tcl8.6|" \
+    -e "s|$SRCDIR/pkgs/tdbc1.1.2|/usr/include|"            \
+    -i pkgs/tdbc1.1.2/tdbcConfig.sh
+
+sed -e "s|$SRCDIR/unix/pkgs/itcl4.2.1|/usr/lib/itcl4.2.1|" \
+    -e "s|$SRCDIR/pkgs/itcl4.2.1/generic|/usr/include|"    \
+    -e "s|$SRCDIR/pkgs/itcl4.2.1|/usr/include|"            \
+    -i pkgs/itcl4.2.1/itclConfig.sh
+
+unset SRCDIR

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Строение Linux - часть 2. Принцип "всё есть файл", виды файлов. - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0421\u0442\u0440\u043e\u0435\u043d\u0438\u0435 Linux - \u0447\u0430\u0441\u0442\u044c 2. \u041f\u0440\u0438\u043d\u0446\u0438\u043f \"\u0432\u0441\u0451 \u0435\u0441\u0442\u044c \u0444\u0430\u0439\u043b\", \u0432\u0438\u0434\u044b \u0444\u0430\u0439\u043b\u043e\u0432.";
+    var mkdocs_page_input_path = "additional/LinuxStructure2.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-threads/">О потоках</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка кросс-компилятора</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/cross-toolchain/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/binutils/">Binutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/gcc/">GCC</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-system/linux-headers/">Заголовочные файлы ядра Linux</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка временной системы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tempsystem/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/glibc/">glibc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc/">libstdc++ проход 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/m4/">m4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/ncurses/">ncurses</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bash/">bash</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/coreutils/">coreutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/diffutils/">diffutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/file/">file</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/findutils/">findutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gawk/">gawk</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/grep/">grep</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gzip/">gzip</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/make/">make</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/patch/">patch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/sed/">sed</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tar/">tar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/xz/">xz</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/binutils-p2/">binutils проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gcc-p2/">gcc проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/change-owner/">Смена владельца каталога $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/enter-in-chroot/">Вход в окружение chroot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/create-files/">Создание базовых файлов и ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc-p2/">libstdc++ проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gettext/">gettext</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bison/">bison</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/perl/">perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/python/">python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/texinfo/">texinfo</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/util-linux/">util-linux</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/cleanup/">Очистка и сохранение временной системы</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Строение Linux - часть 2. Принцип "всё есть файл", виды файлов.</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="linux-2">Строение Linux - часть 2. Принцип "всё есть файл", виды файлов.</h1>
+<p>В первой части статьи речь была об общем строении системы. Так сказать, галопом по европам. А в следующих частях строение Linux будет описано подробнее. Каждая статья описывает только одну тему.</p>
+<p>Для начала стоит написать о концепции "всё есть файл". Концепция была перенята разработчиками Linux из Unix. Это было сделано для предоставления простого доступа ко всем возможностям ОС, не разрабатывая отдельных костылей. Т.е., преимущество такого принципа в том, что не надо реализовывать отдельный API для каждого устр-ва, в результате чего с ним (с файлом) могут работать все стандартные программы и API-интерфейсы. В Linux есть <code>корневая ФС</code> (корневая файловая система), куда монтируются раздел жёсткого диска, где установлена система, другие разделы, флешки, диски, псевдо-ФС и пр. Посмотрите на файл <code>/etc/os-release</code>:</p>
+<pre><code>file /etc/os-release
+</code></pre>
+<p><img alt="os-release" src="../pic/os-release.png" /></p>
+<p>Самое яркое представление этого принципа - устройства. Просмотрите содержимое каталога /dev:</p>
+<pre><code>ls /dev |less
+</code></pre>
+<p>В этот каталог подключаются все устройства: флеш-карты, мыши, клавиатуры, микрофоны, жёсткие диски и пр.</p>
+<p>А теперь просмотрите информацию о каком-нибудь файле в <code>/dev</code>:</p>
+<pre><code>file /dev/sda2
+</code></pre>
+<p><img alt="Информация о /dev/sda2" src="../pic/sda2.png" /></p>
+<p>В этом файле находятся двоичные данные, поэтому открыть его в каком-то текстовом редакторе бесмыссленно.</p>
+<p>Однако, самое главное достоинство Linux в том, что и в обычном файле можно создать файловую систему заместо содержимого файла. Например, тот же файл подкачки <code>/swapfile</code>. Это файл, но с ФС <code>swap</code>.</p>
+<p>Все конфиги, находящиеся в директориях <code>/etc</code>, <code>~/.local</code>, <code>~/.config</code> - тоже файлы.</p>
+<h2 id="_1">Типы файлов</h2>
+<p>Есть 3 типа файлов:</p>
+<ul>
+<li><strong>Обыкновенные</strong>, которые используются для хранения информации;</li>
+<li><strong>Специальные</strong> (для туннелей и устройств);</li>
+<li><strong>Директории</strong> (их ещё называют <em>папками</em> или <em>каталогами</em>).</li>
+</ul>
+<hr />
+<p>С обычными файлами пользователь работает чаще всего. Это документы, текстовые файлы, музыка, видео и пр.</p>
+<p>Для того чтобы просмотреть эти файлы, выполните:</p>
+<pre><code>ls -l /etc |grep &quot;^-&quot;
+</code></pre>
+<p><img alt="Обычные файлы" src="../pic/file1.png" /></p>
+<h3 id="_2">Значение команды</h3>
+<ul>
+<li><code>ls</code> - просматривает каталог, а ключ <code>-l</code> добавляет отображение прав на файл. <code>/etc</code> замените на нужную директорию.</li>
+<li><code>grep "^-"</code> - так как "обычные" файлы обозначаются чертой (в первой колонке вывода <code>ls</code>, где отображаются права на файл), то эта команда выведет только эти файлы по маске <code>^-</code>.</li>
+</ul>
+<hr />
+<p>По поводу специальных файлов. Они обеспечивают обмен информации с ядром, работу с устр-вами и пр. Собственно, делятся ещё на несколько видов:</p>
+<ul>
+<li><strong>Символьные файлы</strong> - любые специальные системные, например <code>/dev/null</code>, или периферийные устр-ва (последовательные/параллельные порты). Такие файлы идентифицированы символом <code>c</code>.</li>
+<li><strong>Блочные</strong> - периферийные устр-ва, но в отличие от предыдущего типа, содержание блочных файлов буферизируется. Эти файлы идентифицированы символом <code>b</code>.</li>
+</ul>
+<p><img alt="Блочные файлы" src="../pic/sda2.png" /></p>
+<ul>
+<li>
+<p><strong>Символические ссылки</strong> (симлинки) - указывают на другие файлы по их имени, указывают и на другие файлы, в т.ч. каталоги. Обозначены символом <code>l</code>. В выводе команды <code>ls -l /путь/до/директории |grep "^l"</code> можно увидеть, на какой файл ссылаются симлинки - в последней колонке название имеет следующий вид:
+  <code>НАЗВАНИЕ ФАЙЛА</code> -&gt; <code>НА ЧТО ССЫЛАЕТСЯ</code></p>
+</li>
+<li>
+<p><strong>Туннели</strong> (каналы/именованные каналы) - очень похожи на туннели из <code>Shell</code>, но разница в том, что именованные каналы имеют название. Они очень редки. Обозначены символом <code>p</code>.</p>
+</li>
+</ul>
+<h2 id="_3">Информация о файлах</h2>
+<h3 id="lsof">LSOF</h3>
+<p>Список всех открытых файлов можно просмотреть с помощью команды <code>lsof</code> - ListOpenFiles. Эта информация поможет узнать о многом происходящем в системе, об устройстве и работе Linux, а также решить проблемы, например, когда вы не можете размонтировать диск из-за того, что устройство используется, но вы не можете найти, какой именно программой.
+<img alt="lsof" src="../pic/lsof.png" /></p>
+<p>Вывод <code>lsof</code> состоит из нескольких колонок с информацией:</p>
+<ul>
+<li><code>COMMAND</code> - имя команды, которая открыла или использует файл;</li>
+<li><code>PID</code> - PID процесса;</li>
+<li><code>TID</code> - идентификационный номер задачи (потока). Пустой столбец означает, что это не задача, а процесс;</li>
+<li><code>TASKCMD</code> - имя команды задачи. Обычно имеет то же самое название, что и процесс, названный в столбце <code>COMMAND</code>, но некоторые реализации задач (например, Linux) позволяют задаче изменить имя своей команды;</li>
+<li><code>USER</code> - имя пользователя, которому соответствует процесс, либо тот пользователь, которому принадлежит директория <code>/proc</code>, откуда lsof берёт информацию о процессе;</li>
+<li><code>FD</code> - показывает файловый дескриптор файла;</li>
+<li><code>TYPE</code> - тип узла, связанного с файлом;</li>
+<li><code>DEVICE</code> - содержит номера устройств, разделённые запятыми, для специальных символьных, специальных блочных, обычных файлов, каталогов или NFS. Также может отображаться базовый адрес или имя устройства с сокетом Linux AX.25;</li>
+<li><code>SIZE/OFF</code> - размер файла/смещение файла в байтах;</li>
+<li><code>NODE</code> - показывает номер узла локального файла или номер узла NFS-файла на хосте сервера или тип интернет-протокола. Может отображаться STR для потока, IRQ или номер инода устройства с сокетом Linux AX.25;</li>
+<li><code>NAME</code> - имя точки монтирования и файловой системы, в которой находится файл;</li>
+</ul>
+<h3 id="lsof_1">Опции lsof</h3>
+<ul>
+<li><code>-u</code> - список файлов, открытых конкретным пользователем. Например, список открытых фалов пользователем <code>liveuser</code>:</li>
+</ul>
+<pre><code>lsof -u liveuser
+</code></pre>
+<p><img alt="liveuser" src="../pic/liveuser.png" /></p>
+<ul>
+<li>
+<p><code>-U</code> - вывести все файлы сокетов домена Unix
+  <img alt="unix" src="../pic/unix.png" /></p>
+</li>
+<li>
+<p><code>+d</code> - выяснить, какие папки и файлы открыты в некоей директории (но не в её поддиректориях): <code>lsof +d /usr/bin</code></p>
+</li>
+<li><code>-d</code> - задать список дескрипторов файлов, разделённых запятой, которые надо включить в вывод или исключить из него</li>
+</ul>
+<blockquote>
+<p>Список исключается из вывода, если все записи в наборе начинаются со знака <code>^</code>. Список будет включён в вывод, если ни одна запись не начинается с <code>^</code>. Смешивание записей разных видов не разрешается.</p>
+<p>В списке может присутствовать диапазон номеров дескрипторов файлов при условии, что ни один из его членов не пуст, оба члена являются числами, и завершающий член больше начального - то есть: «0-7» или «3-10».</p>
+<p>Диапазоны могут быть использованы для исключения записей из вывода, если перед ними стоит префикс <code>^</code>, то есть - <code>^0-7</code> исключает все дескрипторы с 0 по 7.</p>
+</blockquote>
+<ul>
+<li><code>-p</code> - вывести все файлы, открытые процессом с указанным при вызове команды PID</li>
+<li>И другие ключи. Перечислять их всех я не вижу смысла. Зайдите <a href="https://habr.com/ru/company/ruvds/blog/337934/">сюда</a>, чтобы узнать больше. И, конечно же, <code>man lsof</code>.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

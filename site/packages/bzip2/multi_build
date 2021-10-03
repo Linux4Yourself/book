@@ -1,0 +1,3 @@
+sed -e "s/^CC=.*/CC=gcc -m32/" -i Makefile{,-libbz2_so}
+make -f Makefile-libbz2_so
+make libbz2.a

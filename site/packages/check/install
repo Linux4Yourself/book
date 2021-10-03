@@ -1,0 +1,1 @@
+make docdir=/usr/share/doc/check install

@@ -1,0 +1,2 @@
+sed -e "s/^CLEANFILES =.*/CLEANFILES =/" -i man/Makefile
+make clean

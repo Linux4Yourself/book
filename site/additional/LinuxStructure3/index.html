@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Строение Linux - часть 3. Права доступа. - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0421\u0442\u0440\u043e\u0435\u043d\u0438\u0435 Linux - \u0447\u0430\u0441\u0442\u044c 3. \u041f\u0440\u0430\u0432\u0430 \u0434\u043e\u0441\u0442\u0443\u043f\u0430.";
+    var mkdocs_page_input_path = "additional/LinuxStructure3.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-threads/">О потоках</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка кросс-компилятора</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/cross-toolchain/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/binutils/">Binutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/gcc/">GCC</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-system/linux-headers/">Заголовочные файлы ядра Linux</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка временной системы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tempsystem/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/glibc/">glibc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc/">libstdc++ проход 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/m4/">m4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/ncurses/">ncurses</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bash/">bash</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/coreutils/">coreutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/diffutils/">diffutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/file/">file</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/findutils/">findutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gawk/">gawk</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/grep/">grep</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gzip/">gzip</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/make/">make</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/patch/">patch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/sed/">sed</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tar/">tar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/xz/">xz</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/binutils-p2/">binutils проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gcc-p2/">gcc проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/change-owner/">Смена владельца каталога $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/enter-in-chroot/">Вход в окружение chroot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/create-files/">Создание базовых файлов и ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc-p2/">libstdc++ проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gettext/">gettext</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bison/">bison</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/perl/">perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/python/">python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/texinfo/">texinfo</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/util-linux/">util-linux</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/cleanup/">Очистка и сохранение временной системы</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Строение Linux - часть 3. Права доступа.</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="linux-3">Строение Linux - часть 3. Права доступа.</h1>
+<p>Во второй части речь была про концепцию "всё есть файл" и типы файлов, поэтому в этой части статьи будет рассказано про права доступа к файлам.</p>
+<h2 id="_1">История</h2>
+<p>В отличии от DOS и подобных систем, Unix проектировался как многопользовательская ОС. Поэтому в Unix должна быть хорошая система управления доступа к файлам. А Linux - <em>Unix-подобное</em> ядро, поэтому и управление доступом было взято именно из Unix.</p>
+<h2 id="_2">Теория</h2>
+<p>Чтобы получить доступ к определённому файлу в Linux, используются разрешения, которые назначаются трём объектам: <em>файлу</em>, <em>группе</em> и другому объекту (т.е. всем остальным). Но перед этим нужно знать про владельца файла (директории не упоминаются специально, так как это тоже файл - концепция "Всё есть файл" в UNIX-подобных/образных).</p>
+<p>В Linux у каждого файла есть два владельца: пользователь и группа. Они устанавливаются при создании файла. Каждый файл имеет три категории пользователей, для которых можно устанавливать различные сочетания прав доступа:
+* <strong>Владелец</strong> - набор прав для владельца файла - пользователя, который создал его или сейчас установлен его владельцем. Обычно владелец имеет все права: <code>чтение</code>, <code>запись</code> и <code>исполнение</code>
+* <strong>Группа</strong> - любая группа пользователей, существующая в ОС и привязанная к файлу
+* <strong>Остальные</strong> - все пользователи (кроме владельца и юзеров, входящих в группу файла)</p>
+<blockquote>
+<p>Только пользователь <em>root</em> (он же суперпользователь) может работать со всеми файлами независимо от набора их полномочий.</p>
+</blockquote>
+<p>Пользователь, создавший файл, становится его владельцем, так же как и первичная группа, в которую он входит. Чтобы определить, есть ли у вас, как у пользователя, права доступа к файлу, оболочка проверяет владение им. Принцип работы таков:
+* Оболочка проверяет, являетесь ли вы владельцем файла, к которому запрашивается доступ. Если владельцем являетесь, то оболочка прекращает проверку и вы получаете разрешения. Если вы не являетесь владельцем, но входите в группу, у которой есть доступ к файлу, то вы получаете доступ к файлу с теми же разрешениями, что и у той группы.
+* Если же вы не являетесь ни пользователем, ни владельцем группы, то вы получаете права других пользователей (<code>other</code>).</p>
+<blockquote>
+<p>Каждый пользователь может получить полный доступ к файлу в том случае, если доступ ему разрешён. Либо же, если он является владельцем файла.</p>
+</blockquote>
+<p>Чтобы увидеть пользователя и группу-владельца файла, выполните:</p>
+<pre><code class="language-bash">ls -l
+</code></pre>
+<p>Чтобы просмотреть тоже самое, но для конкретного файла:</p>
+<pre><code class="language-bash">ls -l 'FILE'
+</code></pre>
+<p><code>FILE</code> замените на нужный файл.</p>
+<p><img alt="ls" src="../pic/LinuxStr3/LinuxStr1.png" /></p>
+<h2 id="_3">Изменение владельца файла</h2>
+<p>Иногда нужно изменить владельца файла. Например, я это часто делал при компиляции LFS. Особенно при выполнении некоторых тестов сборки пакетов, которые выполнять от имени <code>root</code> опасно, а от имени менее привилегированного пользователя очень даже кстати.</p>
+<p>Для смены владельца используется <code>chown</code> - change owner. Синтаксис этой команды очень прост:</p>
+<pre><code>chown пользователь опции /путь/к/файлу
+</code></pre>
+<h3 id="chown">Ключи и опции chown</h3>
+<ul>
+<li><code>-c</code> <code>--changes</code> - подробный вывод всех выполняемых операций</li>
+<li><code>-v</code> <code>--verbose</code> - описание действий и вывод подробных данных о каждом обработанном файле</li>
+<li><code>-R</code> <code>--recursive</code> - рекурсивная обработка всех подкаталогов</li>
+<li><code>-f</code> <code>--silent</code> <code>--quiet</code> - минимум информации, выводимой на экран, даже сообщения об ошибках</li>
+<li><code>--dereference</code> - изменять права для файла, к которому ведёт символическая ссылка вместо самой ссылки (<em>по умолчанию</em>)</li>
+<li><code>--no-dereference</code> <code>-h</code> - изменять права симлинков, но оставить неизменными файлы, на которые указывают эти симлинки</li>
+<li><code>-L</code> - переходить по всем симлинкам на каталоги</li>
+<li><code>-H</code> - если передан симлинк на каталог, перейти по нему</li>
+<li><code>-P</code> - не переходить по символическим ссылкам на каталоги (<em>по умолчанию</em>)</li>
+</ul>
+<h2 id="chown_1">Примеры использования chown</h2>
+<p><img alt="ls2" src="../pic/LinuxStr3/LinuxStr2.png" /></p>
+<p>Допустим, есть два пользователя: <code>root</code> и <code>liveuser</code>. В директории <code>/root</code> создана поддиректория <code>/root/liveuser</code>. Там ещё несколько файлов. Эта поддиректория принадлежит пользователю root, как и все файлы в ней. А надо сделать так, чтобы принадлежала пользователю <code>liveuser</code>. Выполнить в терминале:</p>
+<pre><code class="language-bash">sudo chown liveuser /root/liveuser
+</code></pre>
+<p>Если вы хотите видеть подробную информацию о проделанном действии, выполните:</p>
+<pre><code class="language-bash">sudo chown -v liveuser /root/liveuser
+</code></pre>
+<p><img alt="ls3" src="../pic/LinuxStr3/LinuxStr3.png" /></p>
+<p>Но вы сменили владельца только для каталога <code>/root/liveuser</code>. А все подпапки и другие файлы, которые находятся в нём, всё так же принадлежат пользователю root. В тех подкаталогах ещё какие-то каталоги находятся. Можно, конечно, для каждого файла/каталога изменить владельца персонально, но это утомительно, а в некоторых случаях невозможно вообще. На этот случай у есть ключ <code>-R</code>, задающий утилите <code>chown</code> рекурсивно обойти все файлы и каталоги, изменив их права:</p>
+<pre><code class="language-bash">sudo chown -R liveuser /root/liveuser/
+</code></pre>
+<p>Как вы видите, все файлы из <code>/root/liveuser</code> теперь пренадлежат пользователю <code>liveuser</code>, а не <code>root</code>. Однако, мы сменили только владельца, а не группу файла/ов.</p>
+<p>Опять возвращаем всё в то состояние, которое было до экспериментов с <code>chown</code>:</p>
+<pre><code class="language-bash">sudo chown -Rv root /root/liveuser
+</code></pre>
+<p>Если вы хотите поменять не только владельца, но и группу файла, то запишите имя пользователя и имя группы через двоеточие:</p>
+<pre><code class="language-bash">sudo chown -v liveuser:liveuser /root/liveuser
+</code></pre>
+<p>Теперь измените группу и владельца на <code>liveuser</code> только для тех файлов, у которых владелец и группа <code>root</code> в каталоге <code>/root/liveuser/</code>:</p>
+<pre><code class="language-bash">sudo chown --from=root:root liveuser:liveuser ./
+</code></pre>
+<h2 id="_4">Изменение группы файла</h2>
+<p>Для изменения группы файла используется команда <code>chgrp</code> (<em>change group</em>). В отличии от предыдущей описанной команды <code>chown</code>, для <code>chgrp</code> требуется только имя группы, имя пользователя не нужно.</p>
+<p>Синтаксис этой команды очень прост:</p>
+<pre><code class="language-bash">chgrp опции имя_группы /путь/к/директории
+</code></pre>
+<blockquote>
+<p>Вместо имени группы можно указать её <code>GID</code> (идентификатор группы)</p>
+</blockquote>
+<h3 id="chgrp">Ключи и опции chgrp</h3>
+<ul>
+<li><code>-c</code> <code>--changes</code> - подробно описывать действия для каждого файла, чья группа изменяется</li>
+<li><code>-f</code> <code>--silent</code> <code>--quiet</code> - не выдавать сообщения об ошибке для файлов, чья группа не может быть изменена</li>
+<li><code>-h</code> <code>--no-dereference</code> - работать с символьными ссылками, а не файлами, на которые они указывают. Данная опция доступна, только если используется <code>lchown</code></li>
+<li><code>-v</code> <code>--verbose</code> - подробно описывать действие или отсутствие для <strong>каждого</strong> файла</li>
+<li><code>-R</code> - рекурсивно изменить группы для каталогов и их содержимого, а возникающие ошибки не прекратят работу программы</li>
+<li><code>-L</code> (<strong>используется вместе с <code>-R</code></strong>)- для каждого файла, указанного или пользователем, или встреченного при обходе дерева каталогов, если этот файл является симлинком на каталог, изменить группу самогО этого каталога и всех файлов в его иерархии</li>
+<li><code>-h</code> - для каждого файла, являющегося символической ссылкой, изменить группу самой этой ссылки, а не объекта, на который она указывает, а если система не поддерживает группы для симлинков, то ничего не делать.</li>
+<li><code>--</code> - завершение списка опций</li>
+</ul>
+<h2 id="chgrp_1">Примеры использования chgrp</h2>
+<p>Опять же, перед изменением группы-владельца файла, проверьте с помощью <code>ls</code> текущую группу:</p>
+<pre><code class="language-bash">ls -l 'ИМЯ_ФАЙЛА'
+</code></pre>
+<p>Теперь добавьте некую группу <code>mygroup</code>:</p>
+<pre><code class="language-bash">sudo groupadd mygroup
+</code></pre>
+<p>И сделайте группу <code>mygroup</code> владельцем директории <code>/root/liveuser</code>:</p>
+<pre><code class="language-bash">sudo chgrp mygroup /root/liveuser
+</code></pre>
+<p>Как и в случае с <code>chown</code>, группа стала владельцем только каталога <code>/root/liveuser</code>, но не файлов и подкаталогов этой директории. Чтобы изменить группу-владельца файла, можно, конечно, сделать вручную, а можно воспользоваться рекурсивным способом. За это отвечает ключ <code>-R</code>:</p>
+<pre><code class="language-bash">sudo chgrp -R mygroup /root/liveuser/
+</code></pre>
+<p>Однако, рекурсивный метод не назначает прав на симлинки, поэтому у них сохраняется прежняя группа. Чтобы установить новую группу и на символические ссылки, добавьте ключ <code>-h</code>:</p>
+<pre><code class="language-bash">sudo chgrp -Rh mygroup /root/liveuser
+</code></pre>
+<p>Для того, чтобы скопировать группу владельцев директории, воспользуйтесь ключом <code>--reference</code>:</p>
+<pre><code class="language-bash">sudo chgrp --reference /home/liveuser /root/liveuser
+</code></pre>
+<h2 id="_5">Специальные права доступа к файлам</h2>
+<p>Для того, чтобы позволить <em>обычным</em> пользователям выполнять программы от имени суперпользователя, не зная его пароль, были созданы биты <code>SUID</code> и <code>SGIG</code>.
+* Если установлен бит <code>SUID</code>, то при выполнении программы, ID пользователя меняется на ID владельца файла. <em>Фактически</em>, это позволяет обычным пользователям запускать программы от имени суперюзера.
+* <code>SGID</code> работает аналогичным способом, но разница в том, что юзер считается членом группы, с которой связан этот файл, а не групп, которым он действительно принадлежит. Если флаг <code>SGID</code> установлен на каталог, все файлы, созданные в нём, будут связаны с группой каталога, а не пользователя. Такое поведение используется для организации общих папок.
+* Бит <code>Sticky-bit</code> так же используется для создания общих директорий. Когда он установлен, пользователь может только создавать, читать и выполнять файлы, но не может удалять их, если они принадлежат другим пользователям.</p>
+<p>Так, например, с помощью специальных прав доступа к файоам вы можете выполнять некоторые команды из <code>/sbin</code> и <code>/usr/sbin</code> от имени обычного пользователя.</p>
+<h2 id="-">Права на файлы - условные обозначения.</h2>
+<p>Опять же, чтобы узнать права на каждый файл, выполните:</p>
+<pre><code class="language-bash">ls -l
+</code></pre>
+<p><img alt="LinuxSTR1" src="../pic/LinuxStr3/LinuxStr4.png" /></p>
+<p>В первой колонке отображены права на файл. Вот условное обозначение каждого элемента:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Обозначение</th>
+<th align="left">Расшифровка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>---</code></td>
+<td align="left">совсем нет прав</td>
+</tr>
+<tr>
+<td align="center"><code>--x</code></td>
+<td align="left">разрешено только выполнение файла как программы, но не изменение и чтение</td>
+</tr>
+<tr>
+<td align="center"><code>-w-</code></td>
+<td align="left">разрешена только запись и изменение файла</td>
+</tr>
+<tr>
+<td align="center"><code>-wx</code></td>
+<td align="left">разрешено изменение и выполнение, но если это каталог, ещё и просмотр его содержимого</td>
+</tr>
+<tr>
+<td align="center"><code>r--</code></td>
+<td align="left">права только на чтение</td>
+</tr>
+<tr>
+<td align="center"><code>r-x</code></td>
+<td align="left">только чтение и выполнение, но не запись</td>
+</tr>
+<tr>
+<td align="center"><code>rw-</code></td>
+<td align="left">чтение и запись, но не выполнение</td>
+</tr>
+<tr>
+<td align="center"><code>rwx</code></td>
+<td align="left">все права</td>
+</tr>
+<tr>
+<td align="center"><code>--s</code></td>
+<td align="left">установлен <code>SUID</code> или <code>SGID</code> бит, первый отобпажается в поле для владельца, второй для группы</td>
+</tr>
+<tr>
+<td align="center"><code>--t</code></td>
+<td align="left">установлен <code>Sticky-bit</code>, из-за чего пользователи не могут удалить этот файл</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chmod">Примеры использования chmod</h2>
+<p>Для изменения прав на файл используется <code>chmod</code>. Работа с ней такая же простая, как и с предыдущими утилитами. Вот её синтаксис:</p>
+<pre><code>chmod опции &lt;категория&gt;&lt;действие&gt;&lt;флаг&gt; файл
+</code></pre>
+<h3 id="_6">Права доступа</h3>
+<p>В предыдущем разделе написал про права. Продублирую это и здесь, но покороче. Подобная таблица показывает "сокращения", которые используются для <code>chmod</code>, отображаются в выводе <code>ls</code> или <code>exa</code>, etc.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Обозначение</th>
+<th align="left">Расшифровка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>r</code></td>
+<td align="left">чтение (<em>Read</em>)</td>
+</tr>
+<tr>
+<td align="center"><code>w</code></td>
+<td align="left">запись (<em>Write</em>)</td>
+</tr>
+<tr>
+<td align="center"><code>x</code></td>
+<td align="left">выполнение (<em>eXecute</em>)</td>
+</tr>
+<tr>
+<td align="center"><code>s</code></td>
+<td align="left">выполнение от имени <em>суперпользователя</em> (<em>Superuser</em>) - дополнительный</td>
+</tr>
+</tbody>
+</table>
+<p>И категории пользователей:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Обозначение</th>
+<th align="left">Расшифровка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>u</code></td>
+<td align="left">владелец файла (<em>User</em>)</td>
+</tr>
+<tr>
+<td align="center"><code>g</code></td>
+<td align="left">группа файла (<em>Group</em>)</td>
+</tr>
+<tr>
+<td align="center"><code>o</code></td>
+<td align="left">все остальные пользователи (<em>Other</em>)</td>
+</tr>
+</tbody>
+</table>
+<p>В качестве действий могут использоваться знаки <code>+</code> (включить) и <code>-</code> (отключить). Вот несколько примеров:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Обозначение</th>
+<th align="left">Расшифровка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>u+x</code></td>
+<td align="left">разрешить выполнение для владельца</td>
+</tr>
+<tr>
+<td align="center"><code>ugo+x</code></td>
+<td align="left">разрешить выполнение для всех</td>
+</tr>
+<tr>
+<td align="center"><code>ug+w</code></td>
+<td align="left">разрешить запись для владельца и группы</td>
+</tr>
+<tr>
+<td align="center"><code>o-x</code></td>
+<td align="left">запретить выполнение для остальных пользователей</td>
+</tr>
+<tr>
+<td align="center"><code>ugo+rwx</code></td>
+<td align="left">разрешить все права для всех пользователей</td>
+</tr>
+</tbody>
+</table>
+<p>Действия так же можно записывать и с помощью цифр. Первая цифра используется для указания прав для пользователя, вторая для группы и третья для всех остальных.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Числа</th>
+<th align="left">Действие</th>
+<th align="center">Обозначение в буквенном варианте</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>0</code></td>
+<td align="left">разрешения отсутствуют</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center"><code>1</code></td>
+<td align="left"><code>x</code> - запуск (выполнение, исполнение)</td>
+<td align="center"><code>--x</code></td>
+</tr>
+<tr>
+<td align="center"><code>2</code></td>
+<td align="left"><code>w</code> - изменение (запись)</td>
+<td align="center"><code>-w-</code></td>
+</tr>
+<tr>
+<td align="center"><code>3</code></td>
+<td align="left"><code>x+w</code> - исполнение и запись</td>
+<td align="center"><code>-wx</code></td>
+</tr>
+<tr>
+<td align="center"><code>4</code></td>
+<td align="left"><code>r</code> - чтение</td>
+<td align="center"><code>r--</code></td>
+</tr>
+<tr>
+<td align="center"><code>5</code></td>
+<td align="left"><code>r+x</code> - чтение и исполнение</td>
+<td align="center"><code>r-x</code></td>
+</tr>
+<tr>
+<td align="center"><code>6</code></td>
+<td align="left"><code>r+w</code> - чтение и изменение</td>
+<td align="center"><code>rw-</code></td>
+</tr>
+<tr>
+<td align="center"><code>7</code></td>
+<td align="left"><code>r+w+x</code> - чтение, изменение и запуск</td>
+<td align="center"><code>rwx</code></td>
+</tr>
+</tbody>
+</table>
+<p>Примеры <em>цифровых</em> действий:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Обозначение</th>
+<th align="left">Расшифровка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>744</code></td>
+<td align="left">разрешить всё для владельца, а остальным только чтение</td>
+</tr>
+<tr>
+<td align="center"><code>755</code></td>
+<td align="left">всё для владельца, остальным только чтение и запуск (исполнение)</td>
+</tr>
+<tr>
+<td align="center"><code>764</code></td>
+<td align="left">всё для владельца, чтение и запись для группы, только чтение для остальных</td>
+</tr>
+<tr>
+<td align="center"><code>777</code></td>
+<td align="left">всем разрешено всё</td>
+</tr>
+</tbody>
+</table>
+<p>!&gt; И тут очень большая опасность. Будьте осторожны при выполнении <code>chmod</code> и <code>chown</code>. Например, при выполнении <code>sudo chmod 777 /</code> вы, по сути, сломаете систему. Ошибка в вводе аргументов команды может привести к очень неожиданным последствиям.</p>
+<h3 id="chmod_1">Опции и ключи chmod</h3>
+<ul>
+<li><code>-c</code> - выводить информацию обо всех изменениях</li>
+<li><code>-f</code> - не выводить сообщения об ошибках</li>
+<li><code>-v</code> - выводить максимум сообщений о ходе работы chmod</li>
+<li><code>-R</code> - рекурсивный метод</li>
+<li><code>--reference</code> - взять маску прав из указанного файла</li>
+<li><code>--preserve-root</code> - не выполнять рекурсивные операции для корня файловой системы</li>
+</ul>
+<h2 id="chmod_2">Примеры работы с chmod</h2>
+<p>Разрешить выполнение определённого скрипта или бинарника пользователю. Допустим, у нас есть некий ELF файл, который называется <code>binary</code>. И его надо сделать исполняемым. Для начала выполните <code>ls -l |grep binary</code>, дабы просмотреть его текущие права.</p>
+<pre><code class="language-bash">chmod u+x binary
+</code></pre>
+<p>Теперь запускаю его:</p>
+<pre><code class="language-bash">./binary
+</code></pre>
+<p>Тоже самое, но с помощью цифр:</p>
+<pre><code class="language-bash">chmod 766 binary
+</code></pre>
+<p>А теперь просмотрите, как изменились права на файл:</p>
+<pre><code class="language-bash">ls -l binary
+</code></pre>
+<p><img alt="chmod" src="../pic/LinuxStr3/LinuxStr5.png" /></p>
+<p>А теперь отберите у <code>binary</code> все права:</p>
+<pre><code class="language-bash">chmod ugo-rwx binary
+</code></pre>
+<p><img alt="ugo-rwx" src="../pic/LinuxStr3/LinuxStr6.png" /></p>
+<p>Файлы с правами 000 недоступны никаким пользователям, кроме суперпользователя и владельца. Вернем права обратно:</p>
+<pre><code class="language-bash">chmod 755 binary
+</code></pre>
+<p>Для применения расширенных прав так же используется <code>chmod</code>. Нужно указать четырёхзначный аргумент в chmod, первая цифра относится к специальному разрешению, например:</p>
+<pre><code class="language-bash">sudo mkdir binary.d
+sudo chmod 2755 binary.d
+</code></pre>
+<p>Эта команда добавит разрешение <code>SGID</code> на каталог <code>binary.d</code>.</p>
+<h3 id="suid-sgid-sticky-bit">Числовые значение SUID, SGID и Sticky bit</h3>
+<ul>
+<li>SUID - <code>4</code></li>
+<li>SGID - <code>2</code></li>
+<li>Sticky bit - <code>1</code></li>
+</ul>
+<p>Ну и самое важное:
+* SUID - <code>chmod u+s</code>
+* SGID - <code>chmod g+s</code>
+* Sticky bit - <code>chmod +t</code></p>
+<h2 id="suid-guid">Ещё немного про SUID, GUID. Понимание важного.</h2>
+<h3 id="suid">SUID</h3>
+<p>Рассмотрим простой пример. Нужно поменять пароль своей учётной записи. Для этого нужно отредактирвоать файл <code>/etc/shadow</code>. Но он доступен только суперпользователю. Однако, в утилите <code>/usr/bin/passwd</code> разрешение SUID применяется по умолчанию. В этом можно убедиться, просмотрев на этот самый <code>/usr/bin/passwd</code>:</p>
+<pre><code class="language-bash">ls -l /usr/bin/passwd
+</code></pre>
+<p>При смене пароля пользователь <strong>ВРЕМЕННО</strong> получает права root, что позволяет ему редактировать <code>/etc/shadow</code>, ибо есть разрешение <code>SUID</code>. Так ведь, если <code>passwd</code> именно это и делает? - редактирует нужный файл. Вот в этом и опасность разрешения SUID: с одной стороны, оно, однозначно, полезно и удобно, но довольно опасно. Поэтому пользуйтесь им <strong>с осторожностью</strong>.</p>
+<h3 id="sgid">SGID</h3>
+<p>А теперь второе.</p>
+<p><code>SGID</code> - идентификатор группы. SGID даёт пользователю, который исполняет определённый файл, разрешения владельца группы этого файла, что означает, что SGID позволяет выполнить примерно тоже самое, что и SUID. Но, как ни странно, SGID для этой цели если используется, то очень редко, но как в случае с SUID, он применяется к некоторым системным файлам по умолчанию.</p>
+<p>Однако, SGID может быть полезен тогда, когда он применяется к каталогу: вы можете использовать его для установки владельца группы по умолчанию для файлов и подкаталогов, созданных в этом каталоге. По умолчанию, когда пользователь создает файл, его эффективная первичная группа устанавливается как владелец группы для этого файла.</p>
+<h3 id="sticky-bit">Sticky-bit</h3>
+<p>И, наконец, третье - <code>Sticky-bit</code>. Это разрешение полезно для защиты файлов от <em>случайного</em> удаления в среде, где несколько пользователей имеют права на запись в одну и ту же директорию; если применяется закреплённый sticky-bit, пользователь может удалить файл, только если он является пользователем-владельцем файла/каталога, в котором содержится файл. Именно поэтому он применяется, скажем, в <code>/tmp</code>.</p>
+<p>Без sticky bit, если пользователь может создавать файлы в каталоге, он также может удалять файлы из этого каталога. В общедоступной групповой среде это может раздражать. Представьте себе пользователей linda и lori, которые оба имеют права на запись в каталог /data/account и получают эти разрешения благодаря участию в группе account. Поэтому linda может удалять файлы, созданные lori, и наоборот.</p>
+<p>Когда вы применяете sticky bit, пользователь может удалять файлы, только если выполняется одно из следующих условий:
+* пользователь является владельцем файла
+* пользователь является владельцем директории с этим файлом</p>
+<p>Увидеть <code>sticky-bit</code> можно, выполнив:</p>
+<pre><code class="language-bash">ls -ld
+</code></pre>
+<p>Увидите букву <code>t</code> в той позиции, где вы обычно видите разрешение на выполнение для других.</p>
+<h2 id="_7">Практика</h2>
+<p>Введите в терминале:</p>
+<pre><code class="language-bash">sudo chmod -x /usr/bin/chmod
+</code></pre>
+<p>Т.е., вы сняли бит исполнения у chmod. И... Всё. А как вернуть? Чтобы можно было запускать <code>chmod</code>? С помощью него же самого не возможно, поэтому рядовой пользователь Linux переустановил бы пакет <code>coreutils</code>. Но можно и проще:</p>
+<pre><code class="language-bash">ldd /usr/bin/chmod
+sudo /usr/lib64/ld-linux-x86-64.so.2 /usr/bin/chmod ugo+x /usr/bin/chmod
+
+ls -l $(which chmod)
+</code></pre>
+<p>Так вы вернули бит исполнения программе <code>chmod</code>.</p>
+<p>!&gt; Настоятельно не рекомендуем производить подобные эксперименты с другими системными файлами!</p>
+<h2 id="_8">Смотрите также:</h2>
+<ul>
+<li><code>man chmod</code></li>
+<li><code>man chown</code></li>
+<li><code>man ls</code></li>
+<li><code>man ldd</code></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

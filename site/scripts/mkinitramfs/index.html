@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Mkinitramfs - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Mkinitramfs";
+    var mkdocs_page_input_path = "scripts/mkinitramfs.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-threads/">О потоках</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка кросс-компилятора</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/cross-toolchain/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/binutils/">Binutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/gcc/">GCC</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-system/linux-headers/">Заголовочные файлы ядра Linux</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка временной системы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tempsystem/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/glibc/">glibc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc/">libstdc++ проход 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/m4/">m4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/ncurses/">ncurses</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bash/">bash</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/coreutils/">coreutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/diffutils/">diffutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/file/">file</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/findutils/">findutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gawk/">gawk</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/grep/">grep</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gzip/">gzip</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/make/">make</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/patch/">patch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/sed/">sed</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tar/">tar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/xz/">xz</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/binutils-p2/">binutils проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gcc-p2/">gcc проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/change-owner/">Смена владельца каталога $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/enter-in-chroot/">Вход в окружение chroot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/create-files/">Создание базовых файлов и ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc-p2/">libstdc++ проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gettext/">gettext</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bison/">bison</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/perl/">perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/python/">python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/texinfo/">texinfo</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/util-linux/">util-linux</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/cleanup/">Очистка и сохранение временной системы</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Mkinitramfs</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p>cat &gt; /sbin/mkinitramfs &lt;&lt; "EOF"</p>
+<h1 id="binbash">!/bin/bash</h1>
+<h1 id="this-file-based-in-part-on-the-mkinitramfs-script-for-the-lfs-livecd">This file based in part on the mkinitramfs script for the LFS LiveCD</h1>
+<h1 id="written-by-alexander-e-patrakov-and-jeremy-huntwork">written by Alexander E. Patrakov and Jeremy Huntwork.</h1>
+<p>copy()
+{
+  local file</p>
+<p>if [ "$2" = "lib" ]; then
+    file=$(PATH=/lib:/usr/lib type -p $1)
+  else
+    file=$(type -p $1)
+  fi</p>
+<p>if [ -n "$file" ] ; then
+    cp $file $WDIR/$2
+  else
+    echo "Missing required file: $1 for directory $2"
+    rm -rf $WDIR
+    exit 1
+  fi
+}</p>
+<p>if [ -z $1 ] ; then
+  INITRAMFS_FILE=initrd.img-no-kmods
+else
+  KERNEL_VERSION=$1
+  INITRAMFS_FILE=initrd.img-$KERNEL_VERSION
+fi</p>
+<p>if [ -n "$KERNEL_VERSION" ] &amp;&amp; [ ! -d "/lib/modules/$1" ] ; then
+  echo "No modules directory named $1"
+  exit 1
+fi</p>
+<p>mkdir -p /usr/share/mkinitramfs &amp;&amp;
+cat &gt; /usr/share/mkinitramfs/init.in &lt;&lt; "EOF"</p>
+<h1 id="binsh">!/bin/sh</h1>
+<p>PATH=/bin:/usr/bin:/sbin:/usr/sbin
+export PATH</p>
+<p>problem()
+{
+   printf "Encountered a problem!\n\nDropping you to a shell.\n\n"
+   sh
+}</p>
+<p>no_device()
+{
+   printf "The device %s, which is supposed to contain the\n" $1
+   printf "root file system, does not exist.\n"
+   printf "Please fix this problem and exit this shell.\n\n"
+}</p>
+<p>no_mount()
+{
+   printf "Could not mount device %s\n" $1
+   printf "Sleeping forever. Please reboot and fix the kernel command line.\n\n"
+   printf "Maybe the device is formatted with an unsupported file system?\n\n"
+   printf "Or maybe filesystem type autodetection went wrong, in which case\n"
+   printf "you should add the rootfstype=... parameter to the kernel command line.\n\n"
+   printf "Available partitions:\n"
+}</p>
+<p>do_mount_root()
+{
+   mkdir /.root
+   [ -n "$rootflags" ] &amp;&amp; rootflags="$rootflags,"
+   rootflags="$rootflags$ro"</p>
+<p>case "$root" in
+      /dev/<em>    ) device=$root ;;
+      UUID=</em>    ) eval $root; device="/dev/disk/by-uuid/$UUID" ;;
+      PARTUUID=<em>) eval $root; device="/dev/disk/by-partuuid/$PARTUUID" ;;
+      LABEL=</em>   ) eval $root; device="/dev/disk/by-label/$LABEL" ;;
+      ""        ) echo "No root device specified." ; problem ;;
+   esac</p>
+<p>while [ ! -b "$device" ] ; do
+       no_device $device
+       problem
+   done</p>
+<p>if ! mount -n -t "$rootfstype" -o "$rootflags" "$device" /.root ; then
+       no_mount $device
+       cat /proc/partitions
+       while true ; do sleep 10000 ; done
+   else
+       echo "Successfully mounted device $root"
+   fi
+}</p>
+<p>do_try_resume()
+{
+   case "$resume" in
+      UUID=<em> ) eval $resume; resume="/dev/disk/by-uuid/$UUID"  ;;
+      LABEL=</em>) eval $resume; resume="/dev/disk/by-label/$LABEL" ;;
+   esac</p>
+<p>if $noresume || ! [ -b "$resume" ]; then return; fi</p>
+<p>ls -lH "$resume" | ( read x x x x maj min x
+       echo -n ${maj%,}:$min &gt; /sys/power/resume )
+}</p>
+<p>init=/sbin/init
+root=
+rootdelay=
+rootfstype=auto
+ro="ro"
+rootflags=
+device=
+resume=
+noresume=false</p>
+<p>mount -n -t devtmpfs devtmpfs /dev
+mount -n -t proc     proc     /proc
+mount -n -t sysfs    sysfs    /sys
+mount -n -t tmpfs    tmpfs    /run</p>
+<p>read -r cmdline &lt; /proc/cmdline</p>
+<p>for param in $cmdline ; do
+  case $param in
+    init=<em>      ) init=${param#init=}             ;;
+    root=</em>      ) root=${param#root=}             ;;
+    rootdelay=<em> ) rootdelay=${param#rootdelay=}   ;;
+    rootfstype=</em>) rootfstype=${param#rootfstype=} ;;
+    rootflags=<em> ) rootflags=${param#rootflags=}   ;;
+    resume=</em>    ) resume=${param#resume=}         ;;
+    noresume    ) noresume=true                   ;;
+    ro          ) ro="ro"                         ;;
+    rw          ) ro="rw"                         ;;
+  esac
+done</p>
+<h1 id="udevd-location-depends-on-version">udevd location depends on version</h1>
+<p>if [ -x /sbin/udevd ]; then
+  UDEVD=/sbin/udevd
+elif [ -x /lib/udev/udevd ]; then
+  UDEVD=/lib/udev/udevd
+elif [ -x /lib/systemd/systemd-udevd ]; then
+  UDEVD=/lib/systemd/systemd-udevd
+else
+  echo "Cannot find udevd nor systemd-udevd"
+  problem
+fi</p>
+<p>${UDEVD} --daemon --resolve-names=never
+udevadm trigger
+udevadm settle</p>
+<p>if [ -f /etc/mdadm.conf ] ; then mdadm -As                       ; fi
+if [ -x /sbin/vgchange  ] ; then /sbin/vgchange -a y &gt; /dev/null ; fi
+if [ -n "$rootdelay"    ] ; then sleep "$rootdelay"              ; fi</p>
+<p>do_try_resume # This function will not return if resuming from disk
+do_mount_root</p>
+<p>killall -w ${UDEVD##*/}</p>
+<p>exec switch_root /.root "$init" "$@"</p>
+<p>EOF</p>
+<p>printf "Creating $INITRAMFS_FILE... "</p>
+<p>binfiles="sh cat cp dd killall ls mkdir mknod mount "
+binfiles="$binfiles umount sed sleep ln rm uname"
+binfiles="$binfiles readlink basename"</p>
+<h1 id="systemd-installs-udevadm-in-bin-other-udev-implementations-have-it-in-sbin">Systemd installs udevadm in /bin. Other udev implementations have it in /sbin</h1>
+<p>if [ -x /bin/udevadm ] ; then binfiles="$binfiles udevadm"; fi</p>
+<p>sbinfiles="modprobe blkid switch_root"</p>
+<h1 id="optional-files-and-locations">Optional files and locations</h1>
+<p>for f in mdadm mdmon udevd udevadm; do
+  if [ -x /sbin/$f ] ; then sbinfiles="$sbinfiles $f"; fi
+done</p>
+<h1 id="add-lvm-if-present-cannot-be-done-with-the-others-because-it">Add lvm if present (cannot be done with the others because it</h1>
+<h1 id="also-needs-dmsetup">also needs dmsetup</h1>
+<p>if [ -x /sbin/lvm ] ; then sbinfiles="$sbinfiles lvm dmsetup"; fi</p>
+<p>unsorted=$(mktemp /tmp/unsorted.XXXXXXXXXX)</p>
+<p>DATADIR=/usr/share/mkinitramfs
+INITIN=init.in</p>
+<h1 id="create-a-temporary-working-directory">Create a temporary working directory</h1>
+<p>WDIR=$(mktemp -d /tmp/initrd-work.XXXXXXXXXX)</p>
+<h1 id="create-base-directory-structure">Create base directory structure</h1>
+<p>mkdir -p $WDIR/{bin,dev,lib/firmware,run,sbin,sys,proc,usr}
+mkdir -p $WDIR/etc/{modprobe.d,udev/rules.d}
+touch $WDIR/etc/modprobe.d/modprobe.conf
+ln -s lib $WDIR/lib64
+ln -s ../bin $WDIR/usr/bin</p>
+<h1 id="create-necessary-device-nodes">Create necessary device nodes</h1>
+<p>mknod -m 640 $WDIR/dev/console c 5 1
+mknod -m 664 $WDIR/dev/null    c 1 3</p>
+<h1 id="install-the-udev-configuration-files">Install the udev configuration files</h1>
+<p>if [ -f /etc/udev/udev.conf ]; then
+  cp /etc/udev/udev.conf $WDIR/etc/udev/udev.conf
+fi</p>
+<p>for file in $(find /etc/udev/rules.d/ -type f) ; do
+  cp $file $WDIR/etc/udev/rules.d
+done</p>
+<h1 id="install-any-firmware-present">Install any firmware present</h1>
+<p>cp -a /lib/firmware $WDIR/lib</p>
+<h1 id="copy-the-raid-configuration-file-if-present">Copy the RAID configuration file if present</h1>
+<p>if [ -f /etc/mdadm.conf ] ; then
+  cp /etc/mdadm.conf $WDIR/etc
+fi</p>
+<h1 id="install-the-init-file">Install the init file</h1>
+<p>install -m0755 $DATADIR/$INITIN $WDIR/init</p>
+<p>if [  -n "$KERNEL_VERSION" ] ; then
+  if [ -x /bin/kmod ] ; then
+    binfiles="$binfiles kmod"
+  else
+    binfiles="$binfiles lsmod"
+    sbinfiles="$sbinfiles insmod"
+  fi
+fi</p>
+<h1 id="install-basic-binaries">Install basic binaries</h1>
+<p>for f in $binfiles ; do
+  if [ -e /bin/$f ]; then d="/bin"; else d="/usr/bin"; fi
+  ldd $d/$f | sed "s/\t//" | cut -d " " -f1 &gt;&gt; $unsorted
+  copy $d/$f bin
+done</p>
+<p>for f in $sbinfiles ; do
+  ldd /sbin/$f | sed "s/\t//" | cut -d " " -f1 &gt;&gt; $unsorted
+  copy $f sbin
+done</p>
+<h1 id="add-udevd-libraries-if-not-in-sbin">Add udevd libraries if not in /sbin</h1>
+<p>if [ -x /lib/udev/udevd ] ; then
+  ldd /lib/udev/udevd | sed "s/\t//" | cut -d " " -f1 &gt;&gt; $unsorted
+elif [ -x /lib/systemd/systemd-udevd ] ; then
+  ldd /lib/systemd/systemd-udevd | sed "s/\t//" | cut -d " " -f1 &gt;&gt; $unsorted
+fi</p>
+<h1 id="add-module-symlinks-if-appropriate">Add module symlinks if appropriate</h1>
+<p>if [ -n "$KERNEL_VERSION" ] &amp;&amp; [ -x /bin/kmod ] ; then
+  ln -s kmod $WDIR/bin/lsmod
+  ln -s kmod $WDIR/bin/insmod
+fi</p>
+<h1 id="add-lvm-symlinks-if-appropriate">Add lvm symlinks if appropriate</h1>
+<h1 id="also-copy-the-lvmconf-file">Also copy the lvm.conf file</h1>
+<p>if  [ -x /sbin/lvm ] ; then
+  ln -s lvm $WDIR/sbin/lvchange
+  ln -s lvm $WDIR/sbin/lvrename
+  ln -s lvm $WDIR/sbin/lvextend
+  ln -s lvm $WDIR/sbin/lvcreate
+  ln -s lvm $WDIR/sbin/lvdisplay
+  ln -s lvm $WDIR/sbin/lvscan</p>
+<p>ln -s lvm $WDIR/sbin/pvchange
+  ln -s lvm $WDIR/sbin/pvck
+  ln -s lvm $WDIR/sbin/pvcreate
+  ln -s lvm $WDIR/sbin/pvdisplay
+  ln -s lvm $WDIR/sbin/pvscan</p>
+<p>ln -s lvm $WDIR/sbin/vgchange
+  ln -s lvm $WDIR/sbin/vgcreate
+  ln -s lvm $WDIR/sbin/vgscan
+  ln -s lvm $WDIR/sbin/vgrename
+  ln -s lvm $WDIR/sbin/vgck
+  # Conf file(s)
+  cp -a /etc/lvm $WDIR/etc
+fi</p>
+<h1 id="install-libraries">Install libraries</h1>
+<p>sort $unsorted | uniq | while read library ; do</p>
+<h1 id="linux-vdso-and-linux-gate-are-pseudo-libraries-and-do-not-correspond-to-a-file">linux-vdso and linux-gate are pseudo libraries and do not correspond to a file</h1>
+<h1 id="libsystemd-shared-is-in-libsystemd-so-it-is-not-found-by-copy-and">libsystemd-shared is in /lib/systemd, so it is not found by copy, and</h1>
+<h1 id="it-is-copied-below-anyway">it is copied below anyway</h1>
+<p>if [[ "$library" == linux-vdso.so.1 ]] ||
+     [[ "$library" == linux-gate.so.1 ]] ||
+     [[ "$library" == libsystemd-shared* ]]; then
+    continue
+  fi</p>
+<p>copy $library lib
+done</p>
+<p>if [ -d /lib/udev ]; then
+  cp -a /lib/udev $WDIR/lib
+fi
+if [ -d /lib/systemd ]; then
+  cp -a /lib/systemd $WDIR/lib
+fi
+if [ -d /lib/elogind ]; then
+  cp -a /lib/elogind $WDIR/lib
+fi</p>
+<h1 id="install-the-kernel-modules-if-requested">Install the kernel modules if requested</h1>
+<p>if [ -n "$KERNEL_VERSION" ]; then
+  find                                                                        \
+     /lib/modules/$KERNEL_VERSION/kernel/{crypto,fs,lib}                      \
+     /lib/modules/$KERNEL_VERSION/kernel/drivers/{block,ata,md,firewire}      \
+     /lib/modules/$KERNEL_VERSION/kernel/drivers/{scsi,message,pcmcia,virtio} \
+     /lib/modules/$KERNEL_VERSION/kernel/drivers/usb/{host,storage}           \
+     -type f 2&gt; /dev/null | cpio --make-directories -p --quiet $WDIR</p>
+<p>cp /lib/modules/$KERNEL_VERSION/modules.{builtin,order}                     \
+            $WDIR/lib/modules/$KERNEL_VERSION</p>
+<p>depmod -b $WDIR $KERNEL_VERSION
+fi</p>
+<p>( cd $WDIR ; find . | cpio -o -H newc --quiet | gzip -9 ) &gt; $INITRAMFS_FILE</p>
+<h1 id="prepare-early-loading-of-microcode-if-available">Prepare early loading of microcode if available</h1>
+<p>if ls /lib/firmware/intel-ucode/<em> &gt;/dev/null 2&gt;&amp;1 ||
+   ls /lib/firmware/amd-ucode/</em>   &gt;/dev/null 2&gt;&1; then</p>
+<h1 id="first-empty-wdir-to-reuse-it">first empty WDIR to reuse it</h1>
+<p>rm -r $WDIR/*</p>
+<p>DSTDIR=$WDIR/kernel/x86/microcode
+  mkdir -p $DSTDIR</p>
+<p>if [ -d /lib/firmware/amd-ucode ]; then
+    cat /lib/firmware/amd-ucode/microcode_amd*.bin &gt; $DSTDIR/AuthenticAMD.bin
+  fi</p>
+<p>if [ -d /lib/firmware/intel-ucode ]; then
+    cat /lib/firmware/intel-ucode/* &gt; $DSTDIR/GenuineIntel.bin
+  fi</p>
+<p>( cd $WDIR; find . | cpio -o -H newc --quiet ) &gt; microcode.img
+  cat microcode.img $INITRAMFS_FILE &gt; tmpfile
+  mv tmpfile $INITRAMFS_FILE
+  rm microcode.img
+fi</p>
+<h1 id="remove-the-temporary-directories-and-files">Remove the temporary directories and files</h1>
+<p>rm -rf $WDIR $unsorted
+printf "done.\n"</p>
+<p>EOF</p>
+<p>chmod 0755 /sbin/mkinitramfs</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

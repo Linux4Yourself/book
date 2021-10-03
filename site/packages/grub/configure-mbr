@@ -1,0 +1,6 @@
+unset {C,CPP,CXX,LD}FLAGS
+./configure --prefix=/usr          \
+            --sbindir=/sbin        \
+            --sysconfdir=/etc      \
+            --disable-efiemu       \
+            --disable-werror

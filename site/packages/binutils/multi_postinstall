@@ -1,0 +1,1 @@
+rm -fv /usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.a

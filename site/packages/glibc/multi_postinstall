@@ -1,0 +1,2 @@
+echo "/usr/lib32" >> /etc/ld.so.conf
+ldconfig

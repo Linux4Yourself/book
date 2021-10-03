@@ -1,0 +1,1 @@
+sed -i '/test.lock/s/^/#/' gnulib-tests/gnulib.mk
