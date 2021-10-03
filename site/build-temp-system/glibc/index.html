@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Glibc - Linux для себя</title>
+  <title>glibc - Linux для себя</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Glibc";
+    var mkdocs_page_name = "glibc";
     var mkdocs_page_input_path = "build-temp-system/glibc.md";
     var mkdocs_page_url = null;
   </script>
@@ -99,6 +99,88 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-threads/">О потоках</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка кросс-компилятора</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/cross-toolchain/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/binutils/">Binutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/gcc/">GCC</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-system/linux-headers/">Заголовочные файлы ядра Linux</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка временной системы</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../tempsystem/">Введение</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">glibc</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../libstdc/">libstdc++ проход 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../m4/">m4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ncurses/">ncurses</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bash/">bash</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../coreutils/">coreutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../diffutils/">diffutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../file/">file</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../findutils/">findutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gawk/">gawk</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../grep/">grep</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gzip/">gzip</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../make/">make</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../patch/">patch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sed/">sed</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tar/">tar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../xz/">xz</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../binutils-p2/">binutils проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gcc-p2/">gcc проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../change-owner/">Смена владельца каталога $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../enter-in-chroot/">Вход в окружение chroot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../create-files/">Создание базовых файлов и ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../libstdc-p2/">libstdc++ проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gettext/">gettext</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bison/">bison</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../perl/">perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../python/">python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../texinfo/">texinfo</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../util-linux/">util-linux</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../cleanup/">Очистка и сохранение временной системы</a>
+                    </li>
                 </ul>
       </div>
     </div>
@@ -120,8 +202,12 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
+        
+          <li>Сборка временной системы &raquo;</li>
+        
+      
     
-    <li>Glibc</li>
+    <li>glibc</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -267,6 +353,15 @@ readelf -l a.out | grep '/ld-linux'
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../libstdc/" class="btn btn-neutral float-right" title="libstdc++ проход 1">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../tempsystem/" class="btn btn-neutral" title="Введение"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
@@ -289,6 +384,10 @@ readelf -l a.out | grep '/ld-linux'
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../tempsystem/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../libstdc/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

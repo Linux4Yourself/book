@@ -99,6 +99,96 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-threads/">О потоках</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка кросс-компилятора</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/cross-toolchain/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/binutils/">Binutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/gcc/">GCC</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-system/linux-headers/">Заголовочные файлы ядра Linux</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка временной системы</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../tempsystem/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../glibc/">glibc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../libstdc/">libstdc++ проход 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../m4/">m4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ncurses/">ncurses</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bash/">bash</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../coreutils/">coreutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../diffutils/">diffutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../file/">file</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../findutils/">findutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gawk/">gawk</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../grep/">grep</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gzip/">gzip</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../make/">make</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../patch/">patch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sed/">sed</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tar/">tar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../xz/">xz</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../binutils-p2/">binutils проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gcc-p2/">gcc проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../change-owner/">Смена владельца каталога $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../enter-in-chroot/">Вход в окружение chroot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../create-files/">Создание базовых файлов и ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../libstdc-p2/">libstdc++ проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../gettext/">gettext</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../bison/">bison</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../perl/">perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../python/">python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../texinfo/">texinfo</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../util-linux/">util-linux</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Очистка и сохранение временной системы</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#chroot">Выход из среды chroot</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">Удаление отладочных символов</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">Сохранение</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">Восстановление</a>
+    </li>
+    </ul>
+                    </li>
                 </ul>
       </div>
     </div>
@@ -119,6 +209,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../..">Docs</a> &raquo;</li>
     
+      
+        
+          <li>Сборка временной системы &raquo;</li>
+        
       
     
     <li>Очистка и сохранение временной системы</li>
@@ -166,6 +260,13 @@ tar -xpf $HOME/lin-temp-tools.tar.xz
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../util-linux/" class="btn btn-neutral" title="util-linux"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
@@ -187,6 +288,8 @@ tar -xpf $HOME/lin-temp-tools.tar.xz
   <div class="rst-versions" role="note" aria-label="versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../util-linux/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>

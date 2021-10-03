@@ -29,4 +29,38 @@ nav:
         - Введение: cross-toolchain/cross-toolchain.md
         - Binutils: cross-toolchain/binutils.md
         - GCC: cross-toolchain/gcc.md
-theme : readthedocs
+    - Заголовочные файлы ядра Linux: build-system/linux-headers.md
+    - Сборка временной системы:
+        - Введение: build-temp-system/tempsystem.md
+        - glibc: build-temp-system/glibc.md
+        - libstdc++ проход 1: build-temp-system/libstdc.md
+        - m4: build-temp-system/m4.md
+        - ncurses: build-temp-system/ncurses.md
+        - bash: build-temp-system/bash.md
+        - coreutils: build-temp-system/coreutils.md
+        - diffutils: build-temp-system/diffutils.md
+        - file: build-temp-system/file.md
+        - findutils: build-temp-system/findutils.md
+        - gawk: build-temp-system/gawk.md
+        - grep: build-temp-system/grep.md
+        - gzip: build-temp-system/gzip.md
+        - make: build-temp-system/make.md
+        - patch: build-temp-system/patch.md
+        - sed: build-temp-system/sed.md
+        - tar: build-temp-system/tar.md
+        - xz: build-temp-system/xz.md
+        - binutils проход 2: build-temp-system/binutils-p2.md
+        - gcc проход 2: build-temp-system/gcc-p2.md
+        - Смена владельца каталога $LIN: build-temp-system/change-owner.md
+        - Вход в окружение chroot: build-temp-system/enter-in-chroot.md
+        - Создание базовых файлов и ссылок: build-temp-system/create-files.md
+        - libstdc++ проход 2: build-temp-system/libstdc-p2.md
+        - gettext: build-temp-system/gettext.md
+        - bison: build-temp-system/bison.md
+        - perl: build-temp-system/perl.md
+        - python: build-temp-system/python.md
+        - texinfo: build-temp-system/texinfo.md
+        - util-linux: build-temp-system/util-linux.md
+        - Очистка и сохранение временной системы: build-temp-system/cleanup.md
+theme: readthedocs
+lang: ru
