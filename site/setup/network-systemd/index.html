@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Настройка сети - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u0441\u0435\u0442\u0438";
+    var mkdocs_page_input_path = "setup/network-systemd.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Настройка сети</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">Настройка сети</h1>
+<p>Начиная с версии 209, в systemd имеется служба <code>systemd-networkd</code>, которую можно использовать для настройки сети. Кроме того, начиная с версии 213, разрешение имен DNS можно обрабатывать с помощью <code>systemd-resolved</code> вместо статического файла <code>/etc/resolv.conf</code>. Обе службы включены по умолчанию.</p>
+<p>Файлы конфигурации для <code>systemd-networkd</code> (и <code>systemd-resolved</code>) можно разместить в <code>/usr/lib/systemd/network</code> или <code>/etc/systemd/network</code>. Файлы в <code>/etc/systemd/network</code> имеют более высокий приоритет, чем файлы в <code>/usr/lib/systemd/network</code>.</p>
+<p>Существует три типа файлов конфигурации: файлы <code>.link</code>, <code>.netdev</code> и <code>.network</code>.</p>
+<h2 id="_2">Именование сетевых устройств</h2>
+<p>Udev обычно назначает имена интерфейсов сетевых карт на основе физических характеристик системы, таких как <code>enp2s1</code>. Если вы не уверены, как называется ваш интерфейс, вы всегда можете запустить <code>ip link</code> после загрузки вашей системы.</p>
+<p>Для большинства систем существует только один сетевой интерфейс для каждого типа подключения. Например, классическое имя интерфейса для проводного подключения - <code>eth0</code>. Беспроводное соединение обычно имеет имя <code>wifi0</code> или <code>wlan0</code>.</p>
+<p>Если вы предпочитаете использовать классические или настраиваемые имена сетевых интерфейсов, есть три способа это сделать:</p>
+<ul>
+<li>Замаскируйте файл .link udev для политики по умолчанию:</li>
+</ul>
+<pre><code class="language-bash">ln -s /dev/null /etc/systemd/network/99-default.link
+</code></pre>
+<ul>
+<li>Создайте схему именования вручную, например, присвоив интерфейсам что-то вроде <code>internet0</code>, <code>dmz0</code> или <code>lan0</code>. Для этого создайте файлы <code>.link</code> в <code>/etc/systemd/network/</code>, которые выберут явное имя или лучшую схему именования для ваших сетевых интерфейсов. Например:</li>
+</ul>
+<pre><code class="language-bash">cat &gt; /etc/systemd/network/10-ether0.link &lt;&lt; &quot;EOF&quot;
+[Match]
+# Change the MAC address as appropriate for your network device
+MACAddress=12:34:45:78:90:AB
+
+[Link]
+Name=ether0
+EOF
+
+</code></pre>
+<ul>
+<li>В файле <code>/boot/grub/grub.cfg</code> передайте опцию <code>net.ifnames=0</code> в командной строке ядра.</li>
+</ul>
+<h2 id="dhcp">Настройка DHCP</h2>
+<p>Приведенная ниже команда создаёт файл базовой конфигурации для настройки IPv4 DHCP:</p>
+<pre><code class="language-bash">cat &gt; /etc/systemd/network/10-eth-dhcp.network &lt;&lt; &quot;EOF&quot;
+[Match]
+Name=&lt;network-device-name&gt;
+
+[Network]
+DHCP=ipv4
+
+[DHCP]
+UseDomains=true
+EOF
+
+</code></pre>
+<h2 id="ip-">Настройка статического IP-адреса</h2>
+<p>Приведенная ниже команда создает базовый файл конфигурации для настройки статического IP-адреса (с использованием как <code>systemd-networkd</code>, так и <code>systemd-resolved</code>):</p>
+<pre><code class="language-bash">cat &gt; /etc/systemd/network/10-eth-static.network &lt;&lt; &quot;EOF&quot;
+[Match]
+Name=&lt;network-device-name&gt;
+
+[Network]
+Address=192.168.0.2/24
+Gateway=192.168.0.1
+DNS=192.168.0.1
+Domains=&lt;Your Domain Name&gt;
+EOF
+</code></pre>
+<p>Если у вас несколько DNS-серверов, можно добавить несколько записей DNS. (Замените ключ DNS в команде, расположенной выше)</p>
+<pre><code class="language-bash">DNS=192.168.0.1 8.8.8.8 8.8.4.4
+</code></pre>
+<p>Не включайте записи DNS или доменов, если вы собираетесь использовать статический файл <code>/etc/resolv.conf</code>.</p>
+<h2 id="etcresolvconf">Создание файла /etc/resolv.conf</h2>
+<p>Если система будет подключена к сети Интернет, ей потребуются некоторые средства разрешения доменных имен (DNS) для преобразования доменных имён в IP-адреса и наоборот. Лучше всего это достигается помещением IP-адреса DNS-сервера, доступного у интернет-провайдера или сетевого администратора, в <code>/etc/resolv.conf</code>.</p>
+<h3 id="systemd-resolved">Настройка systemd-resolved</h3>
+<p>?&gt; При использовании методов, несовместимых с systemd-resolved для настройки сетевых интерфейсов (например, ppp и т. д.), или при использовании любого типа локального преобразователя (например, bind, dnsmasq, unbound и т. д.) или любого другого программного обеспечения, которое генерирует /etc/resolv.conf (например, программа resolvconf, отличная от той, которая предоставляется systemd), службу systemd-resolved использовать не следует.</p>
+<p>При использовании службы <code>systemd-resolved</code> для настройки DNS, будет создан файл <code>/run/systemd/resolve/resolv.conf</code>.</p>
+<p>Создайте символическую ссылку, чтобы использовать этот файл в каталоге <code>/etc</code></p>
+<pre><code class="language-bash">ln -sfv /run/systemd/resolve/resolv.conf /etc/resolv.conf
+</code></pre>
+<h3 id="resolvconf">Статическая настройка файла resolv.conf</h3>
+<p>Если требуется статический файл <code>/etc/resolv.conf</code>, создайте его, выполнив следующую команду:</p>
+<pre><code class="language-bash">cat &gt; /etc/resolv.conf &lt;&lt; &quot;EOF&quot;
+# Begin /etc/resolv.conf
+
+domain &lt;Ваше доменное имя&gt;
+nameserver &lt;IP-адрес вашего основного сервера имен&gt;
+nameserver &lt;IP-адрес вашего вторичного сервера имен&gt;
+
+# End /etc/resolv.conf
+EOF
+
+</code></pre>
+<p><code>domain</code> - можно можно опустить или заменить на <code>search</code></p>
+<p>Замените <code>&lt;Ваше доменное имя&gt;</code> IP-адресом DNS-сервера. Может присутствовать несколько записей (требования предусматривают наличия вторичных серверов для возможности восстановления). Если вам нужен только один DNS-сервер, удалите вторую строку <code>nameserver</code> из файла. IP-адрес также может быть маршрутизатором в локальной сети.</p>
+<p>В качестве DNS можно указать адреса, предложенные ниже:</p>
+<p>Yandex DNS IPv4 <code>77.88.8.8</code> и <code>77.88.8.1</code></p>
+<p>The Google Public IPv4 DNS адреса <code>8.8.8.8</code> и <code>8.8.4.4</code></p>
+<p>The Google Public IPv6 DNS адреса <code>2001:4860:4860::8888</code> и <code>2001:4860:4860::8844</code></p>
+<h2 id="etchostname">Настройка /etc/hostname</h2>
+<p>Во время процесса загрузки файл <code>/etc/hostname</code> используется для определения имени хоста системы.</p>
+<p>Создайте файл <code>/etc/hostname</code> и введите имя хоста, запустив:</p>
+<pre><code class="language-bash">echo &quot;MyHostName&quot; &gt; /etc/hostname
+</code></pre>
+<p><code>"MyHostName"</code> необходимо заменить именем, присвоенным компьютеру. Не вводите здесь полное доменное имя (FQDN). Эта информация помещается в файл <code>/etc/hosts</code>.</p>
+<h2 id="etchosts">Настройка /etc/hosts</h2>
+<p>Выберите полное доменное имя (FQDN) и возможные псевдонимы для использования в файле <code>/etc/hosts</code>. Если вы используете статические IP-адреса, вам также необходимо выбрать IP-адрес. Синтаксис записи файла hosts:</p>
+<pre><code>IP_address myhost.example.org aliases
+</code></pre>
+<p>Если компьютер не должен быть видимым для Интернета (существует зарегистрированный домен и действительный блок назначенных IP-адресов - у большинства пользователей этого нет), убедитесь, что IP-адрес находится в диапазоне IP-адресов частной сети. Допустимые диапазоны:</p>
+<pre><code>Диапазон сети                      Префикс
+10.0.0.1 - 10.255.255.254          8
+172.x.0.1 - 172.x.255.254          16
+192.168.y.1 - 192.168.y.254        24
+</code></pre>
+<p><code>x</code> - может быть любым числом в диапазоне от 16 до 31</p>
+<p><code>y</code> - может быть любым числом в диапазоне от 0 до 255</p>
+<p>Корректный локальный IP адрес может быть вида <code>192.168.1.1</code>. FQDN, напрмер <code>mylin.example.org</code>.</p>
+<p>Даже если не используется сетевая карта, всё равно требуется действительное полное доменное имя. Это необходимо для правильной работы определенных программ, таких как MTA (почтовый сервер).</p>
+<p>Создайте файл <code>/etc/hosts</code></p>
+<pre><code class="language-bash">cat &gt; /etc/hosts &lt;&lt; &quot;EOF&quot;
+# Begin /etc/hosts
+
+127.0.0.1 localhost.localdomain localhost
+127.0.1.1 &lt;FQDN&gt; &lt;HOSTNAME&gt;
+&lt;192.168.0.2&gt; &lt;FQDN&gt; &lt;HOSTNAME&gt; [alias1] [alias2] ...
+::1       localhost ip6-localhost ip6-loopback
+ff02::1   ip6-allnodes
+ff02::2   ip6-allrouters
+
+# End /etc/hosts
+EOF
+
+</code></pre>
+<p>Значения <code>&lt;192.168.0.2&gt;</code>, <code>&lt;FQDN&gt;</code> и <code>&lt;HOSTNAME&gt;</code> необходимо изменить в соответствии с потребностями (если IP-адрес назначен сетевым / системным администратором, и оборудование будет подключено к существующей сети).</p>
+<p>Необязательные псевдонимы можно опустить, а строку <code>192.168.0.2</code> можно не указывать, если вы используете соединение, настроенное с помощью DHCP или автоконфигурации IPv6.</p>
+<p>Запись <code>::1</code> является эквивалентом <code>IPv6 127.0.0.1</code> и представляет loopback <code>интерфейс IPv6</code>.</p>
+<p><code>127.0.1.1</code> - так называемый, «местный» от англ. local, или «локальный хост», по смыслу — это компьютер, зарезервированный специально для FQDN.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

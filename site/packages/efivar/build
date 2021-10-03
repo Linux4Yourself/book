@@ -1,0 +1,1 @@
+make CFLAGS="-O2 -Wno-stringop-truncation"

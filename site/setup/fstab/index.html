@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Создание файла fstab - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0421\u043e\u0437\u0434\u0430\u043d\u0438\u0435 \u0444\u0430\u0439\u043b\u0430 fstab";
+    var mkdocs_page_input_path = "setup/fstab.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Создание файла fstab</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="fstab">Создание файла fstab</h1>
+<p>При загрузке системы, исходя из данных в файле <code>/etc/fstab</code>, монтируются различные разделы и диски, в том числе - корневой раздел.</p>
+<p><code>Fstab</code> (сокр. от англ. file systems table) — один из конфигурационных файлов, который содержит информацию о различных файловых системах и устройствах хранения информации компьютера, описывает, как диск будет использоваться или как будет интегрирован в систему. Файл <code>/etc/fstab</code> делает возможным автоматическое монтирование определенных файловых систем, что особенно нужно при загрузке системы. Он содержит ряд строк, описывающих файловые системы, их точки монтирования и другие параметры.</p>
+<p>Строки содержат, по порядку:</p>
+<ul>
+<li>устройство монтируемой файловой системы;</li>
+<li>точку монтирования;</li>
+<li>тип файловой системы;</li>
+<li>параметры монтирования;</li>
+<li>флаг для dump, утилиты создания резервных копий;</li>
+<li>порядок проверки для <code>fsck</code> (File System ChecK).</li>
+</ul>
+<p>Здесь всегда есть запись о корневой файловой системе. Раздел swap является специальным, поэтому его не видно в древовидной структуре, и в поле точки монтирования для таких разделов всегда содержится ключевое слово swap.</p>
+<h2 id="systemd">Для systemd</h2>
+<p><a href="../../scripts/fstab/" title=":include">filename</a></p>
+<p>Замените <code>sdX</code> на нужное значение.</p>
+<p>Если вы используете SysVInit, выполните:</p>
+<pre><code class="language-bash">echo &quot;proc           /proc        proc     nosuid,noexec,nodev 0     0
+sysfs          /sys         sysfs    nosuid,noexec,nodev 0     0
+devpts         /dev/pts     devpts   gid=5,mode=620      0     0
+tmpfs          /run         tmpfs    defaults            0     0
+devtmpfs       /dev         devtmpfs mode=0755,nosuid    0     0&quot; &gt;&gt; /etc/fstab
+</code></pre>
+<p>Для использования UEFI выполните:</p>
+<pre><code class="language-bash">echo &quot;/dev/sdN     /boot/efi      vfat    umask=0077           0     0&quot; &gt;&gt; /etc/fstab
+</code></pre>
+<p>Заменив <code>sdN</code> на нужное значение.</p>
+<p>Для использования <code>swap</code> выполните:</p>
+<pre><code class="language-bash">echo &quot;/dev/sdY     swap         swap     pri=1               0     0&quot; &gt;&gt; /etc/fstab
+</code></pre>
+<p>Заменив <code>sdY</code> на нужное значение.</p>
+<p>При необходимости можете добавить другие разделы в данный файл, руководствуясь примером выше.</p>
+<p>Файловым системам MS-DOS или Windows (vfat, ntfs, smbfs, cifs, iso9660, udf) требуется специальный параметр utf8, чтобы символы, не входящие в ASCII, в именах файлов интерпретировались должным образом. Для языковых стандартов, отличных от UTF-8, значение iocharset должно быть установлено таким же, как набор символов языкового стандарта, настроенного таким образом, чтобы ядро его понимало. Это работает, если соответствующее определение набора символов (находится в <code>File systems -&gt; Native Language Support</code> при настройке ядра) было скомпилировано в ядро или построено как модуль. Однако, если набор символов локали - UTF-8, соответствующий параметр iocharset = utf8 сделает файловую систему чувствительной к регистру. Чтобы исправить это, используйте специальный параметр utf8 вместо iocharset = utf8 для локалей UTF-8. Параметр «codepage» также необходим для файловых систем vfat и smbfs. Он должен быть установлен на номер кодовой страницы, используемый в MS-DOS в вашей стране. Например, чтобы смонтировать USB-накопители, пользователю ru_RU.KOI8-R потребуется следующее в части параметров его строки монтирования в <code>/etc/fstab</code>:</p>
+<pre><code class="language-bash">noauto,user,quiet,showexec,codepage=866,iocharset=koi8r
+</code></pre>
+<p>Соответствующий фрагмент опций для пользователей ru_RU.UTF-8:</p>
+<pre><code class="language-bash">noauto,user,quiet,showexec,codepage=866,utf8
+</code></pre>
+<p>Обратите внимание, что использование <code>iocharset</code> является значением по умолчанию для <code>iso8859-1</code> (что делает файловую систему нечувствительной к регистру), а опция <code>utf8</code> указывает ядру преобразовать имена файлов с использованием <code>UTF-8</code>, чтобы их можно было интерпретировать в локали UTF-8.</p>
+<p>Можно сделать файловую систему ext4 надежной при сбоях питания для некоторых типов жёстких дисков. Для этого добавьте параметр монтирования <code>barrier=1</code> в соответствующую запись в <code>/etc/fstab</code>. Чтобы проверить, поддерживает ли диск этот параметр, запустите <code>hdparm</code> на соответствующем диске:</p>
+<pre><code class="language-bash">hdparm -I /dev/sda | grep NCQ
+</code></pre>
+<p>Если результат будет пустой - данная опция не поддерживается.</p>
+<p>Мы настоятельно советуем использовать вместо метки раздела диска (например, <code>/dev/sda1</code>, <code>/dev/hdc2</code>, etc.) его UUID. Если метка диска, прописанного в <code>/etc/fstab</code> изменится, то могут возникнуть проблемы с загрузкой ОС, либо же она не загрузится вообще.</p>
+<p>Узнать UUID для нужного раздела можно, выполнив:</p>
+<pre><code class="language-bash">blkid /dev/sdX
+</code></pre>
+<p>Заменив <code>sdX</code> на нужное значение, например, <code>sda2</code>.</p>
+<p>Для того чтобы использовать вместо метки UUID, запись должна иметь следующий вид:</p>
+<pre><code>UUID=93c7b617-7558-4d1b-ab4b-a56880811037 /    ext4    defaults        1   1
+</code></pre>
+<p>Т. е. вместо метки <code>/dev/sdX</code> используется UUID нужного раздела: <code>UUID="нужное_значение"</code>. Всё остальное без изменений.</p>
+<p>!&gt; После выполнения данных инструкций внимательно проверьте данный файл на наличие ошибок.</p>
+<script>
+    new Vue({ el: '#main' })
+</script>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

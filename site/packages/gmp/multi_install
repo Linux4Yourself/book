@@ -1,0 +1,4 @@
+make DESTDIR=$PWD/DESTDIR install
+cp -Rv DESTDIR/usr/lib32/* /usr/lib32
+cp -Rv DESTDIR/usr/include/m32/* /usr/include/m32/
+rm -rf DESTDIR

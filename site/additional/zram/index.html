@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Настройка zram - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 zram";
+    var mkdocs_page_input_path = "additional/zram.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Настройка zram</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="zram">Настройка zram</h1>
+<p>Если оперативной памяти вашего компьютера недостаточно (3 Гб и меньше), то наиболее быстрым способом решения проблемы является использование подкачки, так как компиляция некоторых пакетов требует мощного ПК, в том числе, большого объёма ОЗУ. Для этих целей можно использовать файл или раздел подкачки, но можно и zram.</p>
+<p><em>Действия производятся на хост-системе</em></p>
+<p>Для начала нужно загрузить модуль. В системе его может не оказаться, поэтому можно его скомпилировать. Такие дистрибутивы как Ubuntu и прочие предоставляют пакет <code>zram-config</code>, в Fedora и Calculate Linux zram активирован по умолчанию.</p>
+<p>Выполните:</p>
+<pre><code class="language-bash">modprobe zram num_devices=4
+</code></pre>
+<p>В <code>num_devices</code> задаётся количество сжатых блочных устройств, которое будет создано.
+Для наиболее оптимального использования CPU стоит учесть: сжатие каждого устройства <code>zram</code> однопоточное. Потому создавайте их по количеству ядер.
+При настройке модуля задается фиксированный размер НЕ сжатых данных в байтах.</p>
+<pre><code>SIZE=1536
+echo $(($SIZE*1024*1024)) &gt; /sys/block/zram0/disksize
+echo $(($SIZE*1024*1024)) &gt; /sys/block/zram1/disksize
+echo $(($SIZE*1024*1024)) &gt; /sys/block/zram2/disksize
+echo $(($SIZE*1024*1024)) &gt; /sys/block/zram3/disksize
+</code></pre>
+<p>В итоге будет создано устройство <code>/dev/zram0</code> заданного размера - замените значение <code>1536</code> переменной <code>$SIZE</code> на необходимое вам. Как было описано в предыдущей инструкции о выборе размера подкачки, в среднем, при компиляции ПО используется около 3-4 Гб ОЗУ. Из этого и рассчитывайте размер сжатого блочного устройства <code>zram</code>. В большинстве популярных дистрибутивов Linux уже настроен <code>zram</code>. Но, как правило, его объём равен половине объёма ОЗУ, что на слабых ПК может быть недостаточным.</p>
+<pre><code>Disk /dev/zram0: 1610 MB, 1610612736 bytes, 393216 sectors
+    Units = sectors of 1 * 4096 = 4096 bytes
+    Sector size (logical/physical): 4096 bytes / 4096 bytes
+    I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+</code></pre>
+<p>Данные, записанные на него, будут прозрачно сжаты в памяти. Что делать с ним далее — уже ваш выбор, я на этих устройствах создаю разделы подкачки.</p>
+<pre><code>mkswap /dev/zram0
+mkswap /dev/zram1
+mkswap /dev/zram2
+mkswap /dev/zram3
+
+swapon /dev/zram0 -p 10
+swapon /dev/zram1 -p 10
+swapon /dev/zram2 -p 10
+swapon /dev/zram3 -p 10
+</code></pre>
+<p>Для того чтобы проверить результат, выполните:</p>
+<pre><code>swapon -s
+</code></pre>
+<p>Далее уже ядро рассчитывает само, какие данные туда перемещать в зависимости от того, как часто вы к ним обращаетесь и как много памяти свободно.</p>
+<p>В любом случае, для регулирования отправления данных в swap, настройте <code>vm.swappiness</code>, который предоставляет очень быструю и простую конфигурацию. О настройке читайте <a href="additional/swap">здесь</a>.</p>
+<p>Так как с помощью zram подкачка находится в ОЗУ, т.е. данные в нём просто сжимаются, то такая подкачка (swap) даже быстрее обычного файла или раздела на жёстком диске.</p>
+<p><a href="https://m.habr.com/ru/post/172137/">Источник</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

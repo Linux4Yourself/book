@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Настройка SysVinit - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 SysVinit";
+    var mkdocs_page_input_path = "setup/sysvinit-conf.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Настройка SysVinit</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="sysvinit">Настройка SysVinit</h1>
+<p>При загрузке <code>init</code> читает файл <code>/etc/inittab</code>. Создайте его:</p>
+<pre><code class="language-bash">cat &gt; /etc/inittab &lt;&lt; &quot;EOF&quot;
+# Begin /etc/inittab
+
+id:3:initdefault:
+
+si::sysinit:/etc/rc.d/init.d/rc S
+
+l0:0:wait:/etc/rc.d/init.d/rc 0
+l1:S1:wait:/etc/rc.d/init.d/rc 1
+l2:2:wait:/etc/rc.d/init.d/rc 2
+l3:3:wait:/etc/rc.d/init.d/rc 3
+l4:4:wait:/etc/rc.d/init.d/rc 4
+l5:5:wait:/etc/rc.d/init.d/rc 5
+l6:6:wait:/etc/rc.d/init.d/rc 6
+
+ca:12345:ctrlaltdel:/sbin/shutdown -t1 -a -r now
+
+su:S016:once:/sbin/sulogin
+
+1:2345:respawn:/sbin/agetty --noclear tty1 9600
+2:2345:respawn:/sbin/agetty tty2 9600
+3:2345:respawn:/sbin/agetty tty3 9600
+4:2345:respawn:/sbin/agetty tty4 9600
+5:2345:respawn:/sbin/agetty tty5 9600
+6:2345:respawn:/sbin/agetty tty6 9600
+
+# End /etc/inittab
+EOF
+</code></pre>
+<h2 id="_1">Настройка системного времени</h2>
+<p>При загрузке считывается информация из аппаратных часов - CMOS. В них может стоять как местное время, так и универсальное (UTC).
+Программно нельзя определить, какой часовой пояс используют часы CMOS, однако вы можете выполнить команду <code>hwclock --localtime --show</code> и сравнить результат с местным временем. Если он не совпадает - ваши часы скорее всего используют UTC.</p>
+<p>Создайте файл, определяющий использует ли CMOS UTC (если нет - замените UTC=1 на UTC=0):</p>
+<pre><code class="language-bash">cat &gt; /etc/sysconfig/clock &lt;&lt; &quot;EOF&quot;
+# Begin /etc/sysconfig/clock
+
+UTC=1
+
+# Set this to any options you might need to give to hwclock,
+# such as machine hardware clock type for Alphas.
+CLOCKPARAMS=
+
+# End /etc/sysconfig/clock
+EOF
+</code></pre>
+<h2 id="tty">Настройка клавиатуры в TTY</h2>
+<p>Настройка клавиатуры и шрифта консоли производится в файле <code>/etc/sysconfig/console</code>. Параметры в этом файле:</p>
+<ul>
+<li><code>UNICODE</code>: при значении 1, yes или true переводит консоль в режим UTF-8, что важно для русского языка.</li>
+<li><code>KEYMAP</code>: аргументы для программы <code>loadkeys</code>, которая загружает раскладки клавиатуры. Соответственно, значение этого параметра равно имени загружаемой раскладки.</li>
+<li><code>FONT</code>: аргументы для программы <code>setfont</code>, которая устанавливает шрифт терминала. Соответственно, значение этого параметра есть имя шрифта.</li>
+</ul>
+<p>Раскладки клавиатуры содержатся в каталоге <code>/usr/share/keymaps/</code>, а шрифт - в <code>/usr/share/consolefonts</code>. Оттуда берутся нужные файлы и указываются в файле <code>/etc/sysconfig/console</code>.</p>
+<h3 id="_2">Установка раскладки клавиатуры</h3>
+<p>Для поиска нужной раскладки выполните:</p>
+<pre><code class="language-bash">find /usr/share/keymaps --type f
+</code></pre>
+<p>Для русской (на примере qwerty) это может быть:</p>
+<ul>
+<li><code>ru</code> - переключение раскладки не установлено (либо же вовсе отсутствует)</li>
+<li><code>ruwin_alt_sh-UTF-8</code> - переключение раскладки по Alt+Shift.</li>
+<li><code>ruwin_cplk-UTF-8</code> - переключение раскладки по Caps Lock.</li>
+<li><code>ruwin-ct_sh-UTF-8</code> - переключение раскладки по Ctrl+Shift.</li>
+</ul>
+<p>Выберите из списка нужную и запишите в файл <code>/etc/sysconfig/console</code> как значение переменной <code>KEYMAP</code>. Значение не должно включать в себя путь до раскладки и её расширение.</p>
+<p>Пример:</p>
+<pre><code class="language-bash">KEYMAP=&quot;ruwin_alt_sh-UTF-8&quot;
+</code></pre>
+<h3 id="_3">Установка шрифта консоли</h3>
+<p>Следующим шагом будет установка шрифта. Он должен поддерживать кириллицу. Все шрифты находятся в <code>/usr/share/consolefonts</code>. Выполните:</p>
+<pre><code class="language-bash">ls /usr/share/consolefonts
+</code></pre>
+<p>Из списка выберите нужный шрифт. Мы вам советуем <code>cyr-sun16</code>. Теперь запишите имя нужного шрифта в конфигурационный файл как значение переменной <code>FONT</code>. Оно не должно включать в себя путь до раскладки и её расширение.</p>
+<p>Пример:</p>
+<pre><code class="language-bash">FONT=&quot;cyr-sun16&quot;
+</code></pre>
+<p>Итоговый конфиг теперь выглядит так:</p>
+<pre><code class="language-bash"># Begin /etc/sysconfig/console
+
+UNICODE=&quot;1&quot;
+KEYMAP=&quot;ruwin_alt_sh-UTF-8&quot;
+FONT=&quot;cyr-sun16&quot;
+
+# End /etc/sysconfig/console
+</code></pre>
+<!-- TODO Дополнить -->
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

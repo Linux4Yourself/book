@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Строение GNU/Linux. Часть 1. - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0421\u0442\u0440\u043e\u0435\u043d\u0438\u0435 GNU/Linux. \u0427\u0430\u0441\u0442\u044c 1.";
+    var mkdocs_page_input_path = "additional/LinuxStructure1.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Строение GNU/Linux. Часть 1.</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="gnulinux-1">Строение GNU/Linux. Часть 1.</h1>
+<p>Дистрибутив по Linux for yourself собрать нельзя, не умея читать документацию, искать нужную информацию в интернете и не зная строение Linux. Именно о строении и пойдёт речь в этой статье. Первая часть даст базовые сведения, а в следующих частях структура типичного Linux-дистрибутива будет рассмотрена подробнее.</p>
+<p>Книга <em>Linux for yourself</em> старается придерживаться стандартов <code>FHS</code> и <code>LSB</code> (о них далее).</p>
+<h2 id="_1">Термины</h2>
+<ul>
+<li><code>FHS</code> (<code>Filesystem Hierarchy Standart</code>) - документ, который определяет схему директорий в UNIX-системах. FHS разработан, чтобы предоставить общую схему для упрощения независимой от дистрибутива разработки <code>программного обезпечения</code> (далее - <code>ПО</code>). Другими словами, это стандарт, унифицирующий местонахождение файлов и каталогов с общим назначением в файловой системе UNIX. Таблицу директорий и другую информацию вы сможете лицезреть <a href="additional/partition_catalogs">здесь</a>.</li>
+<li><code>LSB</code> (<code>Linux Standart Base</code>) - совместный проект дистрибутивов Linux при организации Linux Foundation, целью которого является стандартизация их внутренней инфраструктуры. Цель LSB - разработать и продвигать набор стандартов, который увеличит совместимость различных дистрибутивов Linux и даст возможность запускать приложения на любой совместимой системе; помимо этого, LSB помогает сконцентрировать усилия в привлечении разработчиков к написанию и портированию ПО. LSB сертифицирует стандартные библиотеки, пару утилит, структуру иерархии <code>файловой системы</code> (далее - <code>ФС</code>), уровни запуска и et cetera.</li>
+<li><code>конфиг</code> - сленговое. Означает "конфигурационный файл".</li>
+<li><code>юзер</code> - сленговое. Означает "пользователь".</li>
+<li><code>ФС</code> - сокращение от "файловая система".</li>
+</ul>
+<h2 id="filesystem-hierarchy-standard">Filesystem Hierarchy Standard</h2>
+<p>В данном разделе речь пойдёт про иерархию ФС Linux. Может быть применимо и к другим UNIX-Like системам и дистрибутивам, главное, чтобы они соответствовали стандарту <code>FHS</code>. Всякие NixOS и Gobo Linux не рассматриваем.</p>
+<h2 id="fhs">Независимые классификации в FHS</h2>
+<p>Спецификация FHS основывается на идее существования двух независимых классификаций файлов: разделяемых и неразделяемых, а также изменяемые и статичные. Разделяемые данные могут распространяться на несколько хостов; неразделяемые специфичны для конкретного хоста (например, конфиги). Соответственно, изменяемые файлы изменяются, а статичные - нет (за исключением установки и обслуживания системы).</p>
+<p>Резюме. 4 возможные комбинации + нужные директории.</p>
+<table>
+<thead>
+<tr>
+<th>-</th>
+<th align="center">Разделяемые</th>
+<th align="center">Неразделяемые</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>статичные</td>
+<td align="center">/usr /opt</td>
+<td align="center">/etc /boot</td>
+</tr>
+<tr>
+<td>изменяемые</td>
+<td align="center">/var/mail</td>
+<td align="center">/var/run</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">Само строение ОС</h2>
+<h3 id="_3">Процесс загрузки</h3>
+<blockquote>
+<p>В данной статье загрузка ПК, BIOS, UEFI и прочее будет пропущено, ибо это не тема этой статьи.</p>
+</blockquote>
+<p>Начнём с загрузчика. Их очень много - <code>GRUB2</code>, <code>rEFInd</code>, <code>systemd-boot</code>, <code>syslinux</code> и другие. Но самым популярным является, конечно, <code>GRUB2</code>.
+Задача загрузчика - инициализировать ядро Linux (в нашем случае). В помощь ядру загрузчик обычно использует начальный образ загрузки - <code>initrd</code> или <code>initramfs</code>, представляющий собой архив с образом файловой системы, разворачивающейся в ОЗУ в начале загрузки. В <code>initrd</code>/<code>initramfs</code> находятся нужные драйверы, скрипты и прочее, что необходимо для инициализации оборудования и прочих целей.</p>
+<hr />
+<p>После начального образа загружается ядро. Находится в <code>/boot</code>, в своём названии имеет <code>vmlinuz</code>:</p>
+<ul>
+<li><code>vm</code> - поддержка виртуальной памяти;</li>
+<li><code>linu</code> - когда-то называлось <code>linux</code>, но позже сократилось до текущего состояния, потому что необходимо указать факт сжатия ядра (следующий пункт);</li>
+<li><code>z</code> - указатель того, что файл с ядром сжат (формат сжатия обычно <code>zlib</code>. Не всегда используется именно это сжатие, иногда можно встретить <code>LZMA</code> или <code>BZIP2</code>, поэтому некоторые ядра называют просто <code>zImage</code>).</li>
+</ul>
+<p>Ядро Linux является <code>монолитным</code>.</p>
+<p><strong>Плюсы монолитного ядра</strong></p>
+<ul>
+<li>Более прямой доступ к аппаратным средствам</li>
+<li>Проще обмен данными между процессами</li>
+<li>Процессы реагируют быстрее</li>
+</ul>
+<p><strong>Минусы монолитного ядра</strong></p>
+<ul>
+<li>Большой размер</li>
+<li>Занимает много оперативной памяти</li>
+<li>Менее безопасно</li>
+</ul>
+<p>Монолитное ядро больше и несколько сложнее других видов ядер. Ну и вспомните спор Таненбаума и Торвальдса. Но у Linux есть достоинство - это <em>модули ядра</em>. Подключать нужные модули можно буквально на лету. вы можете запускать процессы сервера, подключать виртуализацию, а также полностью заменить ядро без перезагрузки. Например, команда</p>
+<pre><code>modprobe qemu-nbd
+</code></pre>
+<p>Подключит соответствующий модуль <code>qemu-nbd</code>.</p>
+<p>GNU/Linux состоит из четырёх основных частей:</p>
+<ul>
+<li><code>Ядро Linux</code> — основная интересующая нас часть; ядро создаёт абстрактный слой и является «посредником» между первыми двумя частями и hardware-частью компьютера;</li>
+<li><code>Hardware controllers</code> (контроллеры оборудования) — подсистема, охватывающая все возможные физические устройства, такие как CPU, устройства памяти, жёсткие диски, сетевые карты — все они являются частью этой подсистемы</li>
+<li><code>O/S services</code> (службы операционной системы) — службы, которые обычно считаются частью операционной системы. Например, оконные менеджеры. Ну и программный интерфейс ядра (компиляторы и прочее);</li>
+<li><code>User applications</code> (пользовательские приложения) — набор пользовательских приложений, который в разных дистрибутивах Linux может быть разным. Например, в Linux For Yourself предложен самый небольшой набор ПО, которого хватит для корректной работы операционной системы.</li>
+</ul>
+<p><img alt="kernel1" src="../pic/kernel1.jpg" /></p>
+<p>Каждая подсистема может взаимодействовать только с двумя соседними, расположенными непосредственно «выше» и «ниже» её уровня. Кроме того, зависимости между этими подсистемами направлены сверху вниз: слои, расположенные выше — зависят от частей ниже, но части, расположенные ниже — не зависят от частей выше их.</p>
+<p>Ядро Linux состоит из пяти основных подсистем:</p>
+<ul>
+<li><code>Process Scheduler</code> (<code>SCHED</code>) — планировщик процессов, отвечает за контроль над доступом процессов к CPU. Планировщик обеспечивает такое поведения ядра, при котором все процессы имеют справедливый доступ к центральному процессору;</li>
+<li><code>Memory Manager</code> (<code>MM</code>) — менеджер памяти, обеспечивает различным процессам безопасный доступ к основной памяти системы. Кроме того, MM обеспечивает работу виртуальной памяти, которая позволяет процессам использовать больше памяти, чем реально доступно в системе. Выделенная, но неиспользуемая память вытесняется на файловую систему, и при необходимости — возвращается из неё обратно в память (swapping);</li>
+<li><code>Virtual File System</code> (<code>VFS</code>) — виртуальная файловая система, создаёт абстрактный слой, скрывая детали оборудования, предоставляя общий файловый интерфейс для всех устройств. Кроме того, VFS поддерживает несколько форматов файловых систем, которые совместимы с другими операционными системами;</li>
+<li><code>Network Interface</code> (<code>NET</code>) — сетевые интерфейсы, обеспечивает работу с различными сетевыми стандартами и сетевым оборудованием;</li>
+<li><code>Inter-Process Communication</code> (<code>IPC</code>) — межпроцессная подсистема, поддерживающая несколько механизмов для process-to-process связей в единой Linux-системе.</li>
+</ul>
+<p><img alt="kernel2" src="../pic/kernel2.gif" />
+<img alt="kernel3" src="../pic/kernel3.png" /></p>
+<p>Символом ядра Linux является Tux, отличающийся от «обычных» пингвинов жёлтым цветом клюва и лап. Однако, в качестве символа Linux 2.6.29 был принят Tuz (тасманский дьявол), изображение которого ранее служило талисманом конференции linux.conf.au 2009. В следующих версиях ядра используется предыдущий пингвин Tux. Его можно наблюдать и поныне.</p>
+<p><img alt="Tux" src="../pic/Tux.png" />
+<em>Tux</em></p>
+<p><img alt="Tuz" src="../pic/Tuz.png" />
+<em>Tuz</em></p>
+<hr />
+<p>После ядра стартует <code>init</code> - подсистема инициализации в UNIX-ах, которая запускает все остальные процессы. Имеет <code>PID</code>=1. Раньше, де-факто стандартным инитом в GNU/Linux был SysVinit. Однако, в самом начале 10-ых были попытки заменить SysVinit на другую систему инициализации. Например, в Ubuntu первое время использовался <code>upstart</code> от Canonical, а в Gentoo Linux используется OpenRC. Также был создан <code>systemd</code>, на который в данный момент перешло большинство дистрибутивов Linux.</p>
+<p><strong>Достоинства <code>systemd</code></strong></p>
+<ul>
+<li><em>Агрессивная параллелизация</em> и прочее, что позволяет существенно ускорить загрузку ОС</li>
+<li>Запуск сервисов по расписанию (вместо <code>cron</code>)</li>
+<li>Смена корня (вместо <code>chroot</code>)</li>
+<li>Простой и лаконичный синтаксис служб</li>
+</ul>
+<p><strong>Недостатки <code>systemd</code></strong></p>
+<ul>
+<li>Не <em>Unix Way</em>. systemd - монолитная и сложная система, заменяющая собой не только инит, но и планировщик, менеджер сети, утилиту по смене корня системы, просмотрщик логов и пр, что не особо нужно многим пользователям</li>
+<li>systemd требуется несколько больше ресурсов, чем его менее прожорливым товарищам, из-за чего на старом железе лучше использовать дистрибутив с другой системой инициализации, например, классическим <code>SysVinit</code></li>
+</ul>
+<p>И теперь про <code>SysVinit</code>.</p>
+<p><strong>Достоинства <code>SysVinit</code></strong></p>
+<ul>
+<li>Устоявшаяся и хорошо понятная система</li>
+<li>Простая настройка</li>
+<li>Стабильная и надёжная работа</li>
+</ul>
+<p><strong>Недостатки <code>SysVinit</code></strong></p>
+<ul>
+<li>Неудобная (а для некоторых ещё и сложная) работа с сервисами</li>
+<li>Последовательная обработка задач загрузки, что может в некоторых случаях замедлить скорость старта ОС</li>
+</ul>
+<hr />
+<p>После инита загружается <code>командная оболочка</code>, коих так же довольно много:</p>
+<ul>
+<li><code>bourne shell</code> (sh) - "тот самый";</li>
+<li><code>bourne again shell</code> (bash) - ставшая классической в Linux оболочка, которая используется во многих дистрибутивах по умолчанию. В Linux for yourself <code>/bin/sh</code> является символической ссылкой на <code>/bin/bash</code>;</li>
+<li><code>BusyBox</code> - представляет собой целое пользовательское окружение, в том числе, командную оболочку (вызов: <code>busybox sh</code>). Достоинство: малый размер и небольшие требования к аппаратуре;</li>
+<li><code>Z shell</code> (zsh) - мощная современная оболочка. Она почти полностью совместима с bash, но имеет преимущества, такие как улучшенное завершение на клавишу Tab (англ. tab completion), автоматическое исправление опечаток и огромное количество разработанных сообществом плагинов. К слову, именно она по умолчанию используется в macOS.</li>
+<li><code>friendly interactive shell</code> (fish) - удобная оболочка, которая "из коробки" имеет подсветку синтаксиса, автодополнения, генерируемые из мануалов, и т. п. Из минусов нужно выделить несовместимость со спецификацией POSIX sh;</li>
+<li>et cetera.</li>
+</ul>
+<p>Командная оболочка прописана в стандарте POSIX и необходима для работы системы.
+В Linux for yourself список оболочек содержится в файле <code>/etc/shells</code>.</p>
+<hr />
+<p>Далее идёт графика. О ней можно говорить очень много, ибо тема довольно объёмная, но я опишу всё вкратце.</p>
+<p>Состоит из следующих компонентов:</p>
+<ul>
+<li><code>Display Server</code> - дисплейный сервер;</li>
+<li><code>Display Manager</code> (DM) - дисплейный менеджер;</li>
+<li><code>Desktop Manager</code> (DE) - рабочее окружение.</li>
+</ul>
+<p>Рабочее окружение (DE) можно разделить на следующее:</p>
+<ul>
+<li><code>WM</code> (Window Manager) - программа, которая управляет отображением окон в системе GUI (Graphic User Interface) - графическом интерфейсе пользователя;</li>
+<li>Средство запуска ПО;</li>
+<li>Панель, на которой располагаются апплеты/виджеты:</li>
+<li>средство запуска приложений;</li>
+<li>апплет переключения между открытыми окнами;</li>
+<li>апплет системного трея;</li>
+<li>другие апплеты/виджеты по усмотрению пользователя.</li>
+<li>Файловый менеджер, задача которого - не только работа с файлами, но и управление иконками на рабочем столе;</li>
+<li>Менеджер обоев рабочего стола;</li>
+<li>Приложения по умолчанию (эмулятор терминала, файловый менеджер (см. по списку выше), настройки системы и рабочего окружения, et cetera);</li>
+<li>et cetera.</li>
+</ul>
+<blockquote>
+<p>Хочу заострить ваше внимание на том, что оконный менеджер, панель и некоторые другие компоненты можно использовать и отдельно от рабочего окружения. Например, оконные менеджеры Fluxbox, Openbox, i3-wm, Awesome, Sway и др. используются отдельно от DE. Также существуют отдельные файловые менеджеры, которые так же поставляются отдельно от рабочего окружения.</p>
+</blockquote>
+<p>!&gt; Не путайте понятия "рабочий стол" и "рабочее окружение". Хотя эти два термина похожи, но значения немного разные.</p>
+<hr />
+<p>Теперь описание компонентов графики.</p>
+<h3 id="display-server">Display server</h3>
+<p>Дисплейный сервер - программа, отвечающая за координацию ввода и вывода своих клиентов с ОС, а также между оборудованием и ОС. Именно благодаря Display Server вы используете Linux в графическом режиме, а не в TTY. Когда говорят "дисплейный сервер", нередко имеют ввиду <code>Xorg</code>, <code>Wayland</code>, <code>Mir</code> и прочие.</p>
+<h3 id="display-manager">Display Manager</h3>
+<p>Первая программа, которая запускается при старте графики. Её основные задачи:</p>
+<ul>
+<li>запросить аутентификационные данные нужного пользователя (имя, пароль или отпечаток пальца);</li>
+<li>выбрать, какую среду рабочего стола запустить.</li>
+</ul>
+<p>Примеры DM:</p>
+<ul>
+<li>LightDM;</li>
+<li>XDM;</li>
+<li>GDM (из состава GNOME);</li>
+<li>SDDM (из состава KDE);</li>
+<li>TDM (из состава Trinity);</li>
+<li>WDM (из состава Window Maker).</li>
+</ul>
+<p>Как и упоминалось ранее, дисплейные менеджеры можно использовать и отдельно от DE.</p>
+<h3 id="window-manager">Window Manager</h3>
+<p>Я не случайно начал именно с WM. Во-первых, про DE было сказано выше, а во-вторых, оконный менеджер можно использовать отдельно от всего громоздкого рабочего окружения.
+Что такое <code>WM</code> было так же сказано выше. Можно выделить три вида оконных менеджеров:</p>
+<ul>
+<li><code>Стековые</code> (<code>плавающие</code>, англ. <code>stacking</code>, <code>floating</code>) следуют классической метафоре, которая на данный момент самая удобная и популярная. Классическое расположение окон, которые могут накладываться и перекрывать друг друга;</li>
+<li><code>Фреймовые</code> (англ. <code>tiling</code>) WM располагают окна в виде <code>фреймов</code> (<code>плиток</code>), эти фреймы не способны перекрывать друг друга, подобное поведение встречается в графическом интерфейсе <em>Windows</em> 1.x. Наиболее удобно использовать такие оконные менеджеры посредством клавиатуры, хотя поддержка мыши во многих из них также присутствует;</li>
+<li><code>Динамические</code> (например, i3wm) - динамически переключаются между двумя режимами, описанными выше (<code>стековый</code> и <code>фреймовый</code> режимы). Поддержка мыши есть в большинстве из них.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

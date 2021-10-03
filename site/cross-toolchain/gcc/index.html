@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Gcc - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Gcc";
+    var mkdocs_page_input_path = "cross-toolchain/gcc.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Gcc</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><package-info :package="package" showsbu></package-info></p>
+<script>
+        new Vue({
+        el: '#main',
+        data: { package: {}, mpc: {}, mpfr: {}, gmp : {}, isl: {} },
+        mounted: function () {
+                this.getPackage('gcc');
+                this.getMpc();
+                this.getMpfr();
+                this.getGmp();
+                this.getIsl();
+        },
+        methods: {
+            getPackage: function(name) {
+                    getPackage(name)
+                    .then(response => this.package = response);
+            },
+            getMpc: function() {
+                    getPackage('mpc')
+                    .then(response => this.mpc = response);
+            },
+            getMpfr: function() {
+                    getPackage('mpfr')
+                    .then(response => this.mpfr = response);
+            },
+            getGmp: function() {
+                    getPackage('gmp')
+                    .then(response => this.gmp = response);
+            },
+            getIsl: function() {
+                    getPackage('isl')
+                    .then(response => this.isl = response);
+            },
+        }
+  })
+</script>
+
+<h2 id="_1">Подготовка</h2>
+<h3 id="_2">Дополнительные необходимые файлы</h3>
+<p><a :href="mpc.url">{{ mpc.url}}</a></p>
+<p><a :href="gmp.url">{{ gmp.url}}</a></p>
+<p><a :href="mpfr.url">{{ mpfr.url}}</a></p>
+<p><a :href="isl.url">{{ isl.url}}</a></p>
+<p>Распакуйте дополнительные пакеты:</p>
+<pre>
+tar -xf ../{{ mpfr.fileName }}
+mv -v {{ mpfr.name }}-{{ mpfr.version }} {{ mpfr.name }}
+tar -xf ../{{ gmp.fileName }}
+mv -v {{ gmp.name }}-{{ gmp.version }} {{ gmp.name }}
+tar -xf ../{{ mpc.fileName }}
+mv -v {{ mpc.name }}-{{ mpc.version }} {{ mpc.name }}
+tar -xf ../{{ isl.fileName }}
+mv -v {{ isl.name }}-{{ isl.version }} {{ isl.name }}
+</pre>
+
+<p>!&gt; Обратите внимание, что распаковка указанных пакетов должна производиться из каталога пакета GCC.</p>
+<p>Смените пути установки библиотек:</p>
+<pre><code class="language-bash">sed -e '/m64=/s/lib64/lib/' \
+    -e '/m32=/s/m32=.*/m32=..\/lib32$(call if_multiarch,:i386-linux-gnu)/' \
+    -i.orig gcc/config/i386/t-linux64
+</code></pre>
+<p>Пакет GCC требует использовать отдельную директорию для сборки. Создайте её:</p>
+<pre><code class="language-bash">mkdir -v build
+cd       build
+</code></pre>
+<h2 id="_3">Настройка</h2>
+<pre><code class="language-bash">../configure                  \
+    --target=$LIN_TGT         \
+    --prefix=$LIN/tools       \
+    --with-glibc-version=2.11 \
+    --with-sysroot=$LIN       \
+    --with-newlib             \
+    --without-headers         \
+    --enable-initfini-array   \
+    --disable-nls             \
+    --disable-shared          \
+    --disable-decimal-float   \
+    --disable-threads         \
+    --disable-libatomic       \
+    --disable-libgomp         \
+    --disable-libquadmath     \
+    --disable-libssp          \
+    --disable-libvtv          \
+    --disable-libstdcxx       \
+    --enable-languages=c,c++  \
+    --disable-multilib
+</code></pre>
+<h3 id="multilib">Для multilib</h3>
+<p>замените параметр <code>--disable-multilib</code> на <code>--enable-multilib --with-multilib-list=m64,m32</code></p>
+<h3 id="_4">Значения параметров</h3>
+<p><code>--with-glibc-version = 2.11</code> Эта опция гарантирует, что пакет будет совместим с версией glibc на хосте. Для него установлено минимальное требование glibc, указанное в Требованиях к хост-системе.</p>
+<p><code>--with-newlib</code> Поскольку рабочая библиотека C еще недоступна, это гарантирует, что константа <code>ignit_libc</code> определена при сборке libgcc. Это предотвращает компиляцию любого кода, требующего поддержки libc.</p>
+<p><code>--without-headers</code> При создании полного кросс-компилятора GCC требует стандартных заголовков, совместимых с целевой системой. Для наших целей эти заголовки не понадобятся. Этот переключатель предотвращает их поиск GCC.</p>
+<p><code>--enable-initfini-array</code> Этот переключатель заставляет использовать некоторые внутренние структуры данных, которые необходимы, но не могут быть обнаружены при построении кросс-компилятора.</p>
+<p><code>--disable-shared</code> Этот переключатель заставляет GCC связывать свои внутренние библиотеки статически. Нам это нужно, потому что общие библиотеки требуют glibc, которая ещё не установлена ​​в целевой системе.</p>
+<p><code>--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx</code> Эти переключатели отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp, libvtv и стандартной библиотеки C++ соответственно. Эти функции не будут скомпилированы при сборке кросс-компилятора и не являются необходимыми для кросс-компиляции временной libc.</p>
+<p><code>--enable-languages​​=c,c++</code> Эта опция гарантирует, что будут построены только компиляторы C и C++. Это единственные языки, которые нужны сейчас.</p>
+<h2 id="_5">Сборка</h2>
+<pre><code class="language-bash">make
+</code></pre>
+<h2 id="_6">Установка</h2>
+<pre><code class="language-bash">make install
+</code></pre>
+<p>Создадим полную версию <code>limits.h</code> - заголовочного файла, в котором записаны лимиты:</p>
+<pre><code class="language-bash">cd ..
+cat gcc/limitx.h gcc/glimits.h gcc/limity.h &gt; \
+  `dirname $($LIN_TGT-gcc -print-libgcc-file-name)`/install-tools/include/limits.h
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

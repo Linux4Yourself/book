@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Установка программ из исходного кода в Linux - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c \u0438\u0437 \u0438\u0441\u0445\u043e\u0434\u043d\u043e\u0433\u043e \u043a\u043e\u0434\u0430 \u0432 Linux";
+    var mkdocs_page_input_path = "additional/src-compiling.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Установка программ из исходного кода в Linux</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="linux">Установка программ из исходного кода в Linux</h1>
+<p>Linux-системы неразрывно связаны с концепцией GNU – проекта, поддерживающего и развивающего философию свободно распространяемого программного обеспечения (ПО), в том числе и в виде исходного кода. А поскольку систем на базе ядра Linux существует великое множество и разработчики дистрибутивов всегда для своих систем используют исходный код ПО при сборке комплектов утилит, пакетов, да и самого ядра, то, очевидно, что использование исходных кодов ПО — это неотъемлемый аспект в эксплуатации Linux-систем. По крайней мере, любому пользователю, достаточно хорошо освоившему UNIX-подобные системы, рано или поздно приходится сталкиваться со сборкой ПО из исходного кода.</p>
+<p>Но поскольку системы Linux, как правило, снабжены хранилищами пакетов (репозиториями), из которых происходит загрузка, установка и обновление ПО, то часто бывает так, что разработчики дистрибутива, которые и поддерживают репозитории, ещё не успели сформировать новые пакеты ПО, для которых уже выпущено обновление. В этом случае можно прибегнуть к самостоятельной сборке требуемых пакетов.</p>
+<h2 id="make">Общий порядок сборки пакетов — утилита make</h2>
+<p>Для облегчения сборки ПО из исходных кодов существует свободная утилита make. Она применяется во всех UNIX-подобных системах для подавляющего большинства утилит. При сборке пакета очень полезно изучать информацию, содержащуюся, как правило, в файлах README или INSTALL, входящих в пакет. В этих файлах разработчики ПО указывают инструкции и специфические мероприятия для успешной сборки пакетов. Здесь также можно найти и системные требования для работы ПО и описания необходимых зависимостей, без которых собрать пакет будет невозможно.</p>
+<h3 id="_1">Порядок сборки выглядит так:</h3>
+<ul>
+<li>
+<p>Распаковка архива, содержащего файлы исходного кода (обычно именно так «исходники» и распространяются);</p>
+</li>
+<li>
+<p>Переход в директорию с распакованными исходными текстами;</p>
+</li>
+<li>
+<p>Подготовка (конфигурирование) предстоящей сборки (указание директорий установки, сторонних библиотек, архитектуры, дополнительных компонентов и т.д.). Для этого обычно используются служебные скрипты;</p>
+</li>
+<li>
+<p>Непосредственно, сама сборка — команда make;</p>
+</li>
+<li>
+<p>Установка (распространение) построенного ПО — например, командой <code>make install</code>.</p>
+</li>
+</ul>
+<p>Ниже будет приведена эта процедура на примере пакета Zlib.</p>
+<p>Скачаем архив пакета:</p>
+<pre><code class="language-bash">wget https://zlib.net/zlib-1.2.11.tar.xz
+</code></pre>
+<p>Распакуем архив:</p>
+<pre><code class="language-bash">tar -xvf zlib-1.2.11.tar.xz
+</code></pre>
+<p>В результате в текущем каталоге появится еще один каталог, с распакованным пакетом. Перейдём в него:</p>
+<pre><code class="language-bash">cd zlib-1.2.11
+</code></pre>
+<p>Для успешной сборки и работы пакета необходимо проверить существующую конфигурацию системы на наличие требуемых зависимостей, библиотек и настроек, а также сконфигурировать сборку, запустив соответствующий скрипт configure:</p>
+<pre><code class="language-bash">./configure
+</code></pre>
+<p>Подобные скрипты создаются разработчиками для облегчения процесса сборки/установки.</p>
+<p>Вывод этого скрипта показывает, готов ли данный пакет к сборке:</p>
+<pre><code class="language-bash">Checking for gcc...
+Checking for shared library support...
+Building shared library libz.so.1.2.11 with gcc.
+Checking for size_t... Yes.
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+Checking for strerror... Yes.
+Checking for unistd.h... Yes.
+Checking for stdarg.h... Yes.
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+Checking for vsnprintf() in stdio.h... Yes.
+Checking for return value of vsnprintf()... Yes.
+Checking for attribute(visibility) support... Yes.
+</code></pre>
+<p>Если вы хотите изменить место, куда должен впоследствии установиться пакет, то используйте ключ <code>--prefix=ДИРЕКТОРИЯ</code>:</p>
+<pre><code class="language-bash">./configure --prefix=/usr
+</code></pre>
+<p>Это означает, что пакет впоследствии будет установлен в <code>/usr</code>.</p>
+<p>Также по мере компиляции пакетов ключи у <code>configure</code> будут меняться. Для новых опций будет краткое описание.</p>
+<p>Для просмотра всех доступных ключей и опций, выполните:</p>
+<pre><code class="language-bash">./configure --help
+</code></pre>
+<p>Изучив вывод скрипта configure, можно сделать вывод о том, стоит ли далее приступать к сборке пакета. Обычно о критических ошибках сообщается фразами «configure: error». Убедившись, что всё нормально, можно приступать к построению:</p>
+<pre><code class="language-bash">make
+</code></pre>
+<p>Далее в консоль будет направлен вывод, отображающий ход сборки:</p>
+<pre><code class="language-bash">gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o example.o test/example.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o adler32.o adler32.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o crc32.o crc32.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o deflate.o deflate.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o infback.o infback.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inffast.o inffast.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inflate.o inflate.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inftrees.o inftrees.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o trees.o trees.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o zutil.o zutil.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o compress.o compress.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o uncompr.o uncompr.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzclose.o gzclose.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzlib.o gzlib.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzread.o gzread.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzwrite.o gzwrite.c
+ar rc libz.a adler32.o crc32.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o zutil.o compress.o uncompr.o gzclose.o gzlib.o gzread.o gzwrite.o
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o example example.o -L. libz.a
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o minigzip.o test/minigzip.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzip minigzip.o -L. libz.a
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/adler32.o adler32.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/crc32.o crc32.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/deflate.o deflate.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/infback.o infback.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/inffast.o inffast.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/inflate.o inflate.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/inftrees.o inftrees.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/trees.o trees.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/zutil.o zutil.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/compress.o compress.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/uncompr.o uncompr.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/gzclose.o gzclose.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/gzlib.o gzlib.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/gzread.o gzread.c
+gcc -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -DPIC -c -o objs/gzwrite.o gzwrite.c
+gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -O3 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o libz.so.1.2.11 adler32.lo crc32.lo deflate.lo infback.lo inffast.lo inflate.lo inftrees.lo trees.lo zutil.lo compress.lo uncompr.lo gzclose.lo gzlib.lo gzread.lo gzwrite.lo  -lc
+rm -f libz.so libz.so.1
+ln -s libz.so.1.2.11 libz.so
+ln -s libz.so.1.2.11 libz.so.1
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o examplesh example.o -L. libz.so.1.2.11
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzipsh minigzip.o -L. libz.so.1.2.11
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o example64.o test/example.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o example64 example64.o -L. libz.a
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o minigzip64.o test/minigzip.c
+gcc -O3 -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -o minigzip64 minigzip64.o -L. libz.a
+</code></pre>
+<p>После успешного окончания которого можно произвести установку пакета (от пользователя root):</p>
+<pre><code class="language-bash">make install
+</code></pre>
+<p>Или вместе с командой sudo (если этот пакет установлен; выполняется эта команда от имени обычного пользователя):</p>
+<pre><code class="language-bash">sudo make install
+</code></pre>
+<p>В том случае, если вы собираете бинарный пакет для какого-либо пакетного менеджера (например, если вы написали его сами), то пакет нужно установить в отдельную директорию, а не в тот путь, который указан скриптом <code>configure</code>. Тогда укажите make переменную <code>DESTDIR</code>:</p>
+<pre><code class="language-bash">make DESTDIR=/путь/до/места/установки install
+</code></pre>
+<p>Пакет будет установлен в <code>$DESTDIR</code> (где DESTDIR - путь до нужной папки). Если в <code>configure</code> был указан, например, <code>--prefix-/usr</code>, то пакет будет установлен в <code>$DESTDIR/usr</code>. К примеру, создадим в директории сборки папку <code>PKG</code> и установим пакет туда:</p>
+<pre><code class="language-bash">mkdir PKG
+make DESTDIR=$PWD/PKG install
+</code></pre>
+<p>?&gt; Указание переменной <code>$PWD</code> в таком случае желательно, если директория для установки находится в папке с исходным кодом, в которой выполняется сборка.</p>
+<p>Некоторые системы сборки не поддерживают переменную DESTDIR, но поддерживают что-то аналогичное, например <code>INSTALL_DIR</code>. Либо <code>prefix</code>. Программы, собранные через qmake, устанавливаются через переменную <code>INSTALL_ROOT</code>:</p>
+<pre><code class="language-bash">make install INSTALL_ROOT=&quot;/путь/до/места/установки&quot;
+</code></pre>
+<p>Некоторые системы сборки вообще не поддерживают такие переменные окружения, в этом случае файлы придётся копировать самому. Помните, что в той отдельной директории должна располагаться зеркальная иерархия корня системы, то есть так, как эти файлы должны лежать в системе со всеми подкаталогами. Например:</p>
+<pre><code class="language-bash">$ find PKG
+
+PKG
+PKG/usr
+PKG/usr/include
+PKG/usr/include/zconf.h
+PKG/usr/include/zlib.h
+PKG/usr/lib
+PKG/usr/lib/libz.so
+PKG/usr/lib/libz.so.1.2.11
+PKG/usr/lib/libz.so.1
+PKG/usr/lib/pkgconfig
+PKG/usr/lib/pkgconfig/zlib.pc
+PKG/usr/lib/libz.a
+PKG/usr/share
+PKG/usr/share/man
+PKG/usr/share/man/man3
+PKG/usr/share/man/man3/zlib.3
+</code></pre>
+<p>На этом сборка из исходных кодов и установка пакета zlib успешно завершена.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+./configure --prefix=/usr           \
+            --sysconfdir=/etc       \
+            --enable-manpages       \
+            --disable-static        \
+            --sbindir=/usr/bin 

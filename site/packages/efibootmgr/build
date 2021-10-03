@@ -1,0 +1,1 @@
+make EFIDIR=LIN EFI_LOADER=grubx64.efi

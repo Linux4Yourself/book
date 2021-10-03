@@ -1,0 +1,1 @@
+systemctl enable update-pki.timer

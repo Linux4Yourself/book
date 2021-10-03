@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Gcc - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Gcc";
+    var mkdocs_page_input_path = "build-system/gcc.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Gcc</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><pkg :name="'gcc'" instsize showsbu2></pkg></p>
+<script>
+        new Vue({
+        el: '#main',
+        data: { package: {} },
+        mounted: function () {
+                this.getPackage('gcc');
+        },
+        methods: {
+            getPackage: function(name) {
+                    getPackage(name)
+                    .then(response => this.package = response);
+            },
+        }
+  })
+</script>
+
+<h2 id="_1">Подготовка</h2>
+<p>Примените патч, исправляющий несколько проблем:</p>
+<p><a href="../packages/gcc/patch" title=":include">filename</a></p>
+<p>Исправьте пути установки библиотек:</p>
+<p><a href="../packages/gcc/prepare" title=":include">filename</a></p>
+<h2 id="_2">Настройка</h2>
+<p>?&gt; На данном этапе необходимы только компиляторы для C и C++, однако вы можете собрать компиляторы для любых поддерживаемых GCC языков программирования, перечислив их через запятые в опции configure <code>--enable-languages=c,c++</code>. GCC поддерживает следующие языки - <code>c,c++,d,fortran,go,objc,obj-c++</code>. вы можете собрать все доступные компиляторы, добавив параметр <code>--enable-languages=c,c++,d,fortran,go,objc,obj-c++</code>. Если позднее вам потребуется компилятор для какого либо языка из этого списка - пересоберите GCC с его поддержкой.</p>
+<p><a href="../packages/gcc/configure" title=":include">filename</a></p>
+<h3 id="multilib">Для multilib</h3>
+<p><a href="../packages/gcc/multi_configure" title=":include">filename</a></p>
+<h3 id="_3">Значения параметров</h3>
+<p><code>--disable-bootstrap</code> - предотвращает многократную пересборку GCC</p>
+<p><code>LD=ld</code> - сообщает GCC использовать ранее установленную версию компоновщика</p>
+<h2 id="_4">Сборка</h2>
+<p><a href="../packages/gcc/build" title=":include">filename</a></p>
+<h2 id="_5">Тестирование</h2>
+<ul>
+<li>Увеличьте размер стека по умолчанию</li>
+<li>Произведите тестирование от непривилегированного пользователя во избежание непредвиденных ситуаций с системой.</li>
+</ul>
+<p><a href="../packages/gcc/test" title=":include">filename</a></p>
+<blockquote>
+<p>Тестирование занимает достаточно много времени.</p>
+</blockquote>
+<p>Для просмотра итогов теста выполните:</p>
+<pre><code class="language-bash">../contrib/test_summary
+</code></pre>
+<p>?&gt; Известно, что 6 тестов, связанных с <code>get_time</code>, дают сбои. По видимому, это связано с локалью <code>en_HK</code>. Кроме того, тест <code>COSTEXPR-52830</code> не удается.</p>
+<h2 id="_6">Установка</h2>
+<p><a href="../packages/gcc/install" title=":include">filename</a></p>
+<ul>
+<li>Удалите ненужную директорию,</li>
+<li>Убедитесь, что владелец установленных заголовков корректный,</li>
+<li>По историческим причинам некоторые программы могут пытаться найти <code>cpp</code> в директории <code>/lib</code>. Создайте ссылку,</li>
+<li>Для поддержки LTO требуется следующая символическая ссылка,</li>
+<li>Переместите файлы в правильное место:</li>
+</ul>
+<p><a href="../packages/gcc/postinstall" title=":include">filename</a></p>
+<h2 id="_7">При использовании раздельных каталогов:</h2>
+<ul>
+<li>Замените <code>ln -svr /usr/bin/cpp /usr/lib</code> из предыдущей команды на корректную для раздельной структуры.</li>
+</ul>
+<h2 id="_8">Проверка работоспособности</h2>
+<p>Выполните набор команд:</p>
+<pre><code class="language-bash">echo 'int main(){}' &gt; dummy.c
+cc dummy.c -v -Wl,--verbose &amp;&gt; dummy.log
+readelf -l a.out | grep ': /lib'
+</code></pre>
+<p>Ошибок быть не должно, а результат команды (учитывая различия в имени динамического компоновщика, зависящие от платформы) будет следующий:</p>
+<pre><code>Requesting program interpreter: /lib64/ld-linux-x86-64.so.2]
+</code></pre>
+<p>Проверим что задействованы правильные стартовые файлы. Выполните команду:</p>
+<pre><code class="language-bash">grep -o '/usr/lib.*/crt[1in].*succeeded' dummy.log
+</code></pre>
+<p>Результат выполнения:</p>
+<pre><code>/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crt1.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crti.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crtn.o succeeded
+</code></pre>
+<p>В зависимости от архитектуры, приведенное выше может немного отличаться. Разница будет в названии каталога после <code>/usr/lib/gcc</code>. Здесь важно обратить внимание на то, что <code>gcc</code> обнаружил все три файла <code>crt * .o</code> в каталоге <code>/usr/lib</code>.</p>
+<p>Проверим то, что компилятор выполняет поиск корректных заголовочных файлов:</p>
+<pre><code class="language-bash">grep -B4 '^ /usr/include' dummy.log
+</code></pre>
+<p>Результат выполнения:</p>
+<pre><code>#include &lt;...&gt; search starts here:
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+</code></pre>
+<p>Проверим, что компоновщик использует корректные пути поиска:</p>
+<pre><code class="language-bash">grep 'SEARCH.*/usr/lib' dummy.log |sed 's|; |\n|g'
+</code></pre>
+<p>Результат выполнения:</p>
+<pre><code>SEARCH_DIR(&quot;/usr/x86_64-pc-linux-gnu/lib64&quot;)
+SEARCH_DIR(&quot;/usr/local/lib64&quot;)
+SEARCH_DIR(&quot;/lib64&quot;)
+SEARCH_DIR(&quot;/usr/lib64&quot;)
+SEARCH_DIR(&quot;/usr/x86_64-pc-linux-gnu/lib&quot;)
+SEARCH_DIR(&quot;/usr/local/lib&quot;)
+SEARCH_DIR(&quot;/lib&quot;)
+SEARCH_DIR(&quot;/usr/lib&quot;);
+
+</code></pre>
+<p>Проверим, что используется корректная стандартная библиотека</p>
+<pre><code class="language-bash">grep &quot;/lib.*/libc.so.6 &quot; dummy.log
+</code></pre>
+<p>Результат выполнения:</p>
+<pre><code>attempt to open /usr/lib/libc.so.6 succeeded
+</code></pre>
+<p>Проверим, что используется корректный динамический компоновщик:</p>
+<pre><code class="language-bash">grep &quot;found ld-linux*&quot; dummy.log
+</code></pre>
+<p>Результат выполнения должен быть (учитывая различия в имени динамического компоновщика, зависящие от платформы):</p>
+<pre><code>found ld-linux-x86-64.so.2 at /usr/lib/ld-linux-x86-64.so.2
+</code></pre>
+<p>!&gt; Если вывод не соответствует вышеуказанному, или вообще не получен, значит, что-то не так. Изучите и повторите шаги, чтобы выяснить, в чем проблема. Перед продолжением процесса необходимо решить любые проблемы.</p>
+<p>Удалите тестовые файлы:</p>
+<pre><code class="language-bash">rm -v dummy.c a.out dummy.log
+</code></pre>
+<h2 id="_9">Установленные файлы</h2>
+<p>Программы: c++ (ссылка на g++), cc (ссылка на gcc), cpp, g++, gcc, gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump и gcov-tool</p>
+<p>Библиотеки: libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so}, liblsan.{a,so}, liblto_plugin.so, libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a, libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so} и libubsan.{a,so}</p>
+<p>Директории: /usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc и /usr/share/gcc-11.2.0</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

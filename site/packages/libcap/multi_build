@@ -1,0 +1,1 @@
+make CC="gcc -m32 -march=i686"

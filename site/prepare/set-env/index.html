@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Настройка окружения - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f";
+    var mkdocs_page_input_path = "prepare/set-env.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Настройка окружения</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#cflags-cxxflags">CFLAGS и CXXFLAGS</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bash-completion">Bash-completion</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#makeflags">MAKEFLAGS</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#multilib">Для multilib</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">Применение изменений</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bashrc">Значения параметров базового bashrc</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Подготовительные работы &raquo;</li>
+        
+      
+    
+    <li>Настройка окружения</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">Настройка окружения</h1>
+<p>Необходимо настроить окружение для недавно созданного пользователя.
+Создадим <code>.bash_profile</code>:</p>
+<pre><code class="language-bash">cat &gt; ~/.bash_profile &lt;&lt; &quot;EOF&quot;
+exec env -i HOME=$HOME TERM=$TERM PS1='\u:\w\$ ' /bin/bash
+EOF
+</code></pre>
+<p>Создадим базовый <code>.bashrc</code>:</p>
+<pre><code class="language-bash">cat &gt; ~/.bashrc &lt;&lt; &quot;EOF&quot;
+set +h
+umask 022
+LIN=/mnt/lin
+LC_ALL=C
+LIN_TGT=$(uname -m)-lin-linux-gnu
+PATH=/usr/bin
+if [ ! -L /bin ]; then PATH=/bin:$PATH; fi
+PATH=$LIN/tools/bin:$PATH
+export LIN LC_ALL LIN_TGT PATH CONFIG_SITE
+EOF
+</code></pre>
+<h2 id="cflags-cxxflags">CFLAGS и CXXFLAGS</h2>
+<p>Использовать оптимизацию на данном этапе не стоит, однако вы можете добавить флаг <code>-s</code>, чтобы сразу после сборки автоматически удалялись ненужные и отладочные символы, а также <code>-O2</code> во избежание ошибки сборки glibc:</p>
+<pre><code class="language-bash">echo &quot;export CFLAGS=\&quot;-s -O2\&quot; &quot; &gt;&gt; ~/.bashrc
+echo &quot;export CXXFLAGS=\&quot;-s -O2\&quot; &quot; &gt;&gt; ~/.bashrc
+</code></pre>
+<p>Это может сэкономить несколько гигабайт места на диске.</p>
+<h2 id="bash-completion">Bash-completion</h2>
+<p>Если вы используете программу <code>bash-completion</code>, то можете добавить её поддержку для пользователя <code>lin</code>:</p>
+<pre><code class="language-bash">echo &quot; . /etc/bash_completion&quot; &gt;&gt; ~/.bashrc
+</code></pre>
+<h2 id="makeflags">MAKEFLAGS</h2>
+<p>Для экономии времени на многоядерном процессоре используйте параллельную сборку. Чтобы её включить, надо добавить для <code>make</code> переменную <code>-jN</code>, где <code>N</code> - число потоков вашего процессора.
+Это можно сделать двумя способами:</p>
+<ul>
+<li>Указывать при каждом вызове <code>make</code> аргумент <code>-jN</code></li>
+<li>Добавить переменную окружения <code>MAKEFLAGS</code></li>
+</ul>
+<p>Замените <code>N</code> на число потоков вашего процессора.</p>
+<p>О дополнительной информации о потоках процессора читайте <a href="prepare/about-threads">здесь</a>.</p>
+<h2 id="multilib">Для multilib</h2>
+<p>Для multilib выполните:</p>
+<pre><code class="language-bash">echo &quot;export LIN_TGT32=i686-lin-linux-gnu&quot; &gt;&gt; ~/.bashrc
+</code></pre>
+<p>Эта переменная используется для сборки i386 библиотек.</p>
+<h2 id="_2">Применение изменений</h2>
+<p>Для того чтобы применить изменения, выполните:</p>
+<pre><code class="language-bash">source ~/.bash_profile
+</code></pre>
+<h2 id="bashrc">Значения параметров базового bashrc</h2>
+<p><code>set +h</code> - Данный параметр отключает сохранение путей к исполняемым файлам в памяти bash. Это необходимо для того чтобы новые исполняемые файлы становились доступны немедленно.</p>
+<p><code>umask 022</code> - Гарантирует, что для новых файлов будут установлены права 644.</p>
+<p><code>LIN=/mnt/lin</code> - Задает путь к корню собираемый системы. <code>mnt/lin</code> взят в качестве образца.</p>
+<p><code>LC_ALL=C</code> - Исключает связанные с локализацией ошибки.</p>
+<p><code>PATH=/usr/bin if [ ! -L /bin ]; then PATH=/bin:$PATH; fi</code> - Задаёт пути поиска исполняемых файлов в хост-системе.</p>
+<p><code>PATH=$LIN/tools/bin:$PATH</code> - Необходимо для обнаружения исполняемых файлов кросс-компилятора.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../about-tests/" class="btn btn-neutral float-right" title="О тестах">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../add-user/" class="btn btn-neutral" title="Создание пользователя"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../add-user/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../about-tests/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

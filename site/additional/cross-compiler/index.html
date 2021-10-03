@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Кросс-компилятор - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u041a\u0440\u043e\u0441\u0441-\u043a\u043e\u043c\u043f\u0438\u043b\u044f\u0442\u043e\u0440";
+    var mkdocs_page_input_path = "additional/cross-compiler.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Кросс-компилятор</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="-">Кросс-компилятор</h1>
+<p>Кросс-компилятор (англ. <code>cross compiler</code>) - компилятор, производящий исполняемый код для платформы, отличной от той, на которой исполняется сам кросс-компилятор. Такой инструмент бывает полезен, когда нужно получить код для платформы, экземпляров которой нет в наличии, или в случаях когда компиляция на целевой платформе невозможна или нецелесообразна (например, это касается мобильных систем или микроконтроллеров с минимальным объёмом памяти). Например, компилятор, который работает на компьютере Windows 7, но и генерирует код, который работает на Android.</p>
+<h2 id="-_1">Применение кросс-компиляторов</h2>
+<ul>
+<li>Встроенные компьютеры, на которых ресурсы устройства крайне ограничены.</li>
+<li>Компиляция для нескольких машин. Например, компания может пожелать поддерживать несколько разных версий операционной системы или поддерживать несколько разных операционных систем. Используя кросс-компилятор, можно настроить единую среду сборки для компиляции для каждой из этих целей.</li>
+<li>Компиляции на ферме серверов. Подобно компиляции для нескольких машин, сложная сборка, которая включает в себя множество операций компиляции, может быть выполнена на любой свободной машине.</li>
+<li>Самонастройка на новую платформу. При разработке программного обеспечения для новой платформы или эмулятора будущей платформы используется кросс-компилятор, чтобы скомпилировать необходимые инструменты.</li>
+<li>Компиляция машинного кода для эмуляторов для уже устаревших платформ, таких как Commodore 64 или Apple II.</li>
+</ul>
+<h2 id="_1">Канадский крест</h2>
+<p>Канадский крест - это техника построения кросс-компиляторов для других машин. Система конфигурирования и сборки GNU позволяет собирать программы, которые запускаются на системе, отличной от той, на которой собирались необходимые средства. Иными словами, она поддерживает сборку программ с помощью кросс-компилятора.</p>
+<p><strong>При использовании канадского креста c GCC могут быть четыре вида:</strong></p>
+<ul>
+<li>Фирменный родной компилятор для машины (1) (например, компилятор из Visual Studio) используется для построения собственного компилятора GCC для машины (2).</li>
+<li>Родной компилятор GCC для машины (2) используется для сборки кросс-компилятора GCC с компьютера А на компьютер Б (3)</li>
+<li>GCC кросс-компилятор с компьютера A на компьютер Б (3) используется для построения компилятора GCC кросс-компилятор из машины в машину C (4)</li>
+</ul>
+<p><img alt="" src="https://commons.bmstu.wiki/images/8/89/Example_of_Canadian_Cross.png" /></p>
+<p><strong>Схема</strong></p>
+<p>Конечный кросс-компилятор (4) не сможет работать на машине сборки A; вместо этого он будет работать на машине B, чтобы скомпилировать приложение в исполняемый код, который затем будет скопирован на машину C и выполнен на машине C.</p>
+<p>Термин «канадский крест» возник потому, что в то время, когда эти проблемы обсуждались, в Канаде было три национальные политические партии.</p>
+<h2 id="-gcc">Кросс-компиляция с GCC</h2>
+<p>GCC, коллекция свободно распространяемых компиляторов, может быть настроена для кросс-компиляции. Она поддерживает множество платформ и языков.</p>
+<p>Для кросс-компиляции с GCC необходимо, чтобы была доступна скомпилированная для целевой платформы версия binutils. Особенно важно наличие GNU Assembler. Поэтому binutils должны быть предварительно скомпилированы с ключом --target=some-target, указанным скрипту конфигурирования (англ.). GCC также должна быть указана опция --target с аналогичным содержанием. После этого, чтобы GCC могла использовать полученные binutils, надо поместить путь к ним в переменную окружения path, например:</p>
+<pre><code>PATH=/path/to/binutils/bin:${PATH} make
+</code></pre>
+<p>Кросс-компиляция GCC требует, чтобы часть стандартной библиотеки целевой платформы была доступна на хост-платформе. Программист может решить скомпилировать полную библиотеку C, но этот выбор может быть ненадежным. Альтернативой является использование файла, который представляет собой небольшую библиотеку C, содержащий только самые важные компоненты, необходимые для компиляции исходного кода C.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

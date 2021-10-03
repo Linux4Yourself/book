@@ -1,0 +1,1 @@
+install -v -Dm644 doc/I18N-HOWTO /usr/share/doc/intltool/I18N-HOWTO

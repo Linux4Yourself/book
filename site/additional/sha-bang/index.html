@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>О шебангах в скриптах Linux - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u041e \u0448\u0435\u0431\u0430\u043d\u0433\u0430\u0445 \u0432 \u0441\u043a\u0440\u0438\u043f\u0442\u0430\u0445 Linux";
+    var mkdocs_page_input_path = "additional/sha-bang.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>О шебангах в скриптах Linux</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="linux">О шебангах в скриптах Linux</h1>
+<p>Все скрипты, которые создаёт пользователь, исполняемыми не являются. Для того чтобы дать право исполнения определённому файлу, нужно выполнить:</p>
+<pre><code class="language-bash">chmod +x $FILE
+</code></pre>
+<p>Где <code>$FILE</code> - имя файла</p>
+<p>Конечно, скрипт можно запустить и без права исполнения, для этого нужно запустить его в определённом интерпретаторе (bash, perl, python, et cetera):</p>
+<pre><code class="language-bash">bash $FILE
+</code></pre>
+<p>Или</p>
+<pre><code class="language-python">python $FILE
+</code></pre>
+<p>Но это не очень удобно, да и замедляет пользователя. А как быть, если скрипт нужно поместить, скажем, в <code>/usr/bin</code> или в любом другом каталоге из переменной <code>PATH</code>? Например, пакетный менеджер <code>slackpkg</code> из состава Slackware Linux или <code>urpmi</code> из Mandriva/Rosa/Mageia - те же самые скрипты на Bash и Perl соответственно.</p>
+<p>Поэтому, лучшим решением будет вставка определёной строки с указанием нужного интерпретатора. Эта строка называется <em>sha-bang</em> (<em>шебанг</em>). И потом сделать скрипт исполняемым.</p>
+<p>Например, для Bash-скриптов шебанг выглядит так:</p>
+<pre><code class="language-bash">#!/bin/bash
+</code></pre>
+<p>Или так:</p>
+<pre><code class="language-bash">#!/bin/env bash
+</code></pre>
+<p><code>env</code> - UNIX-утилита, позволяющая модифицировать список переменных окружения перед исполнением пользовательской команды с изменением окружения.</p>
+<p>Но также эту команду используют и для улучшения переносимости скриптов, так как в разных дистрибутивах нужные интерпретаторы могут находиться в разных местах, а вот путь к <code>env</code> одинаковый везде.</p>
+<p>Например, в одних дистрибутивах путь к bash <code>/bin/bash</code>, а в других: <code>/usr/bin/bash</code>. И при компиляции этого интерпретатора он ставится именно в <code>/usr</code>, а уже позже его можно перенести в <code>/bin</code> (что и реализовано в этом руководстве, поэтому в вашем дистрибутиве путь классический: <code>/bin/bash</code>).</p>
+<p>А, например, во FreeBSD <code>bash</code> находится по пути <code>/usr/local/bin/bash</code>, поэтому использование <code>env</code> будет таким:</p>
+<pre><code class="language-bash">#!/usr/bin/env bash
+</code></pre>
+<p>Но тут ещё одна загвоздка: иногда различаются ещё и имена интерпретаторов.
+Например, Python3 в системе Windows (через MinGW, например) называется <code>python</code>, а не <code>python3</code>, как, например, в Linux.</p>
+<p>Поэтому, перед созданием скриптов (или при переноса таковых из Linux for yourself в другие системы) будьте внимательны в правильности шебанга. А лучше, проверьте его или тестовым скриптом (самый простейший "Hello, world!"), либо же воспользуйтесь утилитой <code>which</code> (или её аналогом), для того чтобы узнать нахождение нужного интерпретатора.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

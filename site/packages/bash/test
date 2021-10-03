@@ -1,0 +1,4 @@
+chown -Rv tester .
+su tester << EOF
+PATH=$PATH make tests < $(tty)
+EOF

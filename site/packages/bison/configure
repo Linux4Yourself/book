@@ -1,0 +1,1 @@
+./configure --prefix=/usr --docdir=/usr/share/doc/bison

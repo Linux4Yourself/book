@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Glibc - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Glibc";
+    var mkdocs_page_input_path = "build-system/glibc.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Glibc</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><package-info :package="package" instsize showsbu2></package-info></p>
+<script>
+    new Vue({
+        el: '#main',
+        data: {
+            package: {},
+            tzdata: {},
+            glibcPatch: {},
+        },
+        mounted: function () {
+                this.getPackage('glibc');
+                this.getTzdata();
+                this.getGlibcPatch();
+        },
+        methods: {
+            getPackage: function(name) {
+                    getPackage(name)
+                    .then(response => this.package = response);
+            },
+            getTzdata: function() {
+                    getPackage('tzdata')
+                    .then(response => this.tzdata = response);
+            },
+            getGlibcPatch: function() {
+                    getPackage('glibc-patch')
+                    .then(response => this.glibcPatch = response);
+            },
+        }
+  })
+</script>
+
+<h2 id="_1">Дополнительные необходимые файлы</h2>
+<p><a :href="glibcPatch.url">{{ glibcPatch.url}}</a></p>
+<p><a :href="tzdata.url">{{ tzdata.url}}</a></p>
+<h2 id="_2">Подготовка</h2>
+<p>Исправьте обнаруженную проблему безопасности:</p>
+<pre><code class="language-bash">sed -e '/NOTIFY_REMOVED)/s/)/ \&amp;\&amp; data.attr != NULL)/' \
+    -i sysdeps/unix/sysv/linux/mq_notify.c
+</code></pre>
+<p>Glibc по умолчанию использует несоответствующую стандарту FHS директорию <code>/var/db</code>. Для соответствия с FHS примените патч:</p>
+<pre><code class="language-bash">patch -Np1 -i ../glibc-2.33-fhs-1.patch
+</code></pre>
+<p>Исправьте ошибку:</p>
+<pre><code class="language-bash">sed -e '402a\      *result = local-&gt;data.services[database_index];' \
+    -i nss/nss_database.c
+</code></pre>
+<p>Пакет Glibc требует использовать отдельную директорию для сборки. Создайте её:</p>
+<pre><code class="language-bash">mkdir -v build
+cd       build
+</code></pre>
+<h2 id="_3">Настройка</h2>
+<pre><code class="language-bash">../configure                             \
+      --prefix=/usr                      \
+      --disable-werror                   \
+      --enable-kernel=3.2                \
+      --with-headers=/usr/include        \
+      --libexecdir=/usr/lib              \
+      libc_cv_slibdir=/usr/lib           \
+      libc_cv_include_x86_isa_level=no
+</code></pre>
+<blockquote>
+<p>Если вы используете раздельную структуру каталогов, то измените значение параметра <code>libc_cv_slibdir</code> на <code>/lib</code>: <code>libc_cv_slibdir=/lib</code>, и удалите параметр <code>--libexecdir=/usr/lib</code>.</p>
+</blockquote>
+<h3 id="multilib">Для multilib</h3>
+<p>Добавьте параметр <code>--enable-multi-arch</code></p>
+<h3 id="_4">Значения параметров</h3>
+<p><code>--enable-kernel=3.2</code> - оптимизирует glibc для использования с ядрами новее 3.2.</p>
+<p><code>--with-headers=/usr/include</code> - задаёт путь к заголовкам ядра.</p>
+<p><code>libc_cv_include_x86_isa_level=no</code> - исключает возможную ошибку.</p>
+<h2 id="_5">Сборка</h2>
+<pre><code class="language-bash">make
+</code></pre>
+<h2 id="_6">Тестирование</h2>
+<p>Создайте необходимую для тестирования ссылку (<strong>только если вы собираете систему с раздельными каталогами!</strong>):</p>
+<pre><code class="language-bash">ln -sfnv $PWD/elf/ld-linux-x86-64.so.2 /lib
+</code></pre>
+<p>Вы можете запустить тесты, выполнив:</p>
+<pre><code class="language-bash">make check
+</code></pre>
+<p>Известно, что следующие тесты могут дать сбой:</p>
+<ul>
+<li><code>io/tst-lchmod</code>, <code>misc/tst-ttyname</code> выдают ошибку в среде LX4;</li>
+<li><code>elf/tst-cpu-features-cpuinfo</code> может дать сбой на некоторых архитектурах;</li>
+<li><code>nss/tst-nss-files-hosts-multi</code> может потерпеть неудачу по пока неизвестным причинам;</li>
+<li><code>rt/tst-cputimer{1,2,3}</code> сильно зависит от версии ядра. На старых ядрах (4.14.91–4.14.96, 4.19.13–4.19.18, и 4.20.0–4.20.5) известно, что тесты выдают ошибку;</li>
+<li>Математические тесты иногда терпят неудачу при работе на системах, где ЦП не является относительно новым процессором Intel или AMD.</li>
+</ul>
+<h2 id="_7">Установка</h2>
+<p>Удалите предупреждение при установке и отключите запуск ненужных проверок:</p>
+<pre><code class="language-bash">touch /etc/ld.so.conf
+sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
+</code></pre>
+<p>Установите пакет и файлы конфигурации для демона <code>nscd</code></p>
+<pre><code class="language-bash">make install
+cp -v ../nscd/nscd.conf /etc/nscd.conf
+mkdir -pv /var/cache/nscd
+</code></pre>
+<p>Если вы собираетесь использовать <code>systemd</code>, установите соответствующие файлы для демона <code>nscd</code>:</p>
+<pre><code class="language-bash">install -v -Dm644 ../nscd/nscd.tmpfiles /usr/lib/tmpfiles.d/nscd.conf
+install -v -Dm644 ../nscd/nscd.service /lib/systemd/system/nscd.service
+</code></pre>
+<h3 id="_8">Установка локали</h3>
+<p>Разные страны и культуры имеют различные соглашения для коммуникаций. Эти соглашения состоят как из очень простых, таких как форматы даты и времени, так и из более сложных, таких как разговорный язык. "Интернационализация" программ GNU работает с помощью локалей (locales).</p>
+<p>Чтобы установить локали, выполните:</p>
+<pre><code class="language-bash">mkdir -pv /usr/lib/locale
+localedef -i POSIX -f UTF-8 C.UTF-8 2&gt; /dev/null || true
+localedef -i en_US -f UTF-8 en_US.UTF-8
+</code></pre>
+<p>Чтобы установить локаль для языка, на котором вы планируете использовать систему, выберите из списка необходимую и выполните команду:</p>
+<pre><code class="language-bash">localedef -i cs_CZ -f UTF-8 cs_CZ.UTF-8
+localedef -i de_DE -f ISO-8859-1 de_DE
+localedef -i de_DE@euro -f ISO-8859-15 de_DE@euro
+localedef -i de_DE -f UTF-8 de_DE.UTF-8
+localedef -i el_GR -f ISO-8859-7 el_GR
+localedef -i en_GB -f ISO-8859-1 en_GB
+localedef -i en_GB -f UTF-8 en_GB.UTF-8
+localedef -i en_HK -f ISO-8859-1 en_HK
+localedef -i en_PH -f ISO-8859-1 en_PH
+localedef -i en_US -f ISO-8859-1 en_US
+localedef -i en_US -f UTF-8 en_US.UTF-8
+localedef -i es_ES -f ISO-8859-15 es_ES@euro
+localedef -i es_MX -f ISO-8859-1 es_MX
+localedef -i fa_IR -f UTF-8 fa_IR
+localedef -i fr_FR -f ISO-8859-1 fr_FR
+localedef -i fr_FR@euro -f ISO-8859-15 fr_FR@euro
+localedef -i fr_FR -f UTF-8 fr_FR.UTF-8
+localedef -i is_IS -f ISO-8859-1 is_IS
+localedef -i is_IS -f UTF-8 is_IS.UTF-8
+localedef -i it_IT -f ISO-8859-1 it_IT
+localedef -i it_IT -f ISO-8859-15 it_IT@euro
+localedef -i it_IT -f UTF-8 it_IT.UTF-8
+localedef -i ja_JP -f EUC-JP ja_JP
+localedef -i ja_JP -f SHIFT_JIS ja_JP.SIJS 2&gt; /dev/null || true
+localedef -i ja_JP -f UTF-8 ja_JP.UTF-8
+localedef -i nl_NL@euro -f ISO-8859-15 nl_NL@euro
+localedef -i ru_RU -f KOI8-R ru_RU.KOI8-R
+localedef -i ru_RU -f UTF-8 ru_RU.UTF-8
+localedef -i se_NO -f UTF-8 se_NO.UTF-8
+localedef -i ta_IN -f UTF-8 ta_IN.UTF-8
+localedef -i tr_TR -f UTF-8 tr_TR.UTF-8
+localedef -i zh_CN -f GB18030 zh_CN.GB18030
+localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
+localedef -i zh_TW -f UTF-8 zh_TW.UTF-8
+</code></pre>
+<p>вы можете установить все локали, которые содержатся в файле <code>{{ package.fileName }}/localedata/SUPPORTED</code>.
+Выполните следующую команду:</p>
+<pre><code class="language-bash">make localedata/install-locales
+</code></pre>
+<h2 id="_9">Настройка</h2>
+<h3 id="nsswitchconf">nsswitch.conf</h3>
+<p>Создайте <code>nsswitch.conf</code>:</p>
+<pre><code class="language-bash">cat &gt; /etc/nsswitch.conf &lt;&lt; &quot;EOF&quot;
+# Begin /etc/nsswitch.conf
+
+passwd: files
+group: files
+shadow: files
+
+hosts: files dns
+networks: files
+
+protocols: files
+services: files
+ethers: files
+rpc: files
+
+# End /etc/nsswitch.conf
+EOF
+</code></pre>
+<h3 id="tzdata">Установка tzdata</h3>
+<p>Установите информацию о часовых поясах:</p>
+<pre class="pre">
+tar -xf ../../{{tzdata.fileName}}
+
+ZONEINFO=/usr/share/zoneinfo
+mkdir -pv $ZONEINFO/{posix,right}
+
+for tz in etcetera southamerica northamerica europe africa antarctica  \
+          asia australasia backward; do
+    zic -L /dev/null   -d $ZONEINFO       ${tz}
+    zic -L /dev/null   -d $ZONEINFO/posix ${tz}
+    zic -L leapseconds -d $ZONEINFO/right ${tz}
+done
+
+cp -v zone.tab zone1970.tab iso3166.tab $ZONEINFO
+zic -d $ZONEINFO -p America/New_York
+unset ZONEINFO
+</pre>
+
+<p>Для выбора часового пояса запустите скрипт:</p>
+<pre><code class="language-bash">tzselect
+</code></pre>
+<p>Для сохранения выбранного часового пояса выполните:</p>
+<pre><code class="language-bash">ln -sfv /usr/share/zoneinfo/&lt; xxx&gt; /etc/localtime
+</code></pre>
+<p>Где &lt; xxx&gt; - путь к вашему часовому поясу.</p>
+<h3 id="ldsoconf">ld.so.conf</h3>
+<p>Создайте файл <code>/etc/ld.so.conf</code>:</p>
+<pre><code class="language-bash">cat &gt; /etc/ld.so.conf &lt;&lt; &quot;EOF&quot;
+# Begin /etc/ld.so.conf
+/usr/local/lib
+/opt/lib
+include /etc/ld.so.conf.d/*.conf
+
+EOF
+mkdir -pv /etc/ld.so.conf.d
+</code></pre>
+<p>Обновите кэш библиотек:</p>
+<pre><code class="language-bash">ldconfig
+</code></pre>
+<h2 id="multilib_1">Для multilib</h2>
+<h3 id="_10">Подготовка</h3>
+<p>Для multilib требуется установить 32-битную версию glibc.
+Удалите оставшиеся от 64-битной сборки glibc файлы:</p>
+<pre><code class="language-bash">rm -rf ./*
+find .. -name &quot;*.a&quot; -delete
+</code></pre>
+<h3 id="_11">Настройка</h3>
+<pre><code class="language-bash">CC=&quot;gcc -m32&quot; CXX=&quot;g++ -m32&quot; \
+../configure                             \
+      --prefix=/usr                      \
+      --host=i686-pc-linux-gnu           \
+      --build=$(../scripts/config.guess) \
+      --enable-kernel=3.2                \
+      --with-headers=/usr/include        \
+      --enable-multi-arch                \
+      --libdir=/usr/lib32                \
+      --libexecdir=/usr/lib32            \
+      libc_cv_slibdir=/usr/lib32
+</code></pre>
+<h2 id="_12">Сборка</h2>
+<pre><code class="language-bash">make
+</code></pre>
+<h2 id="_13">Установка</h2>
+<pre><code class="language-bash">make DESTDIR=$PWD/DESTDIR install
+cp -a DESTDIR/lib32/*     /lib32/
+cp -a DESTDIR/usr/lib32/* /usr/lib32/
+install -vm644 DESTDIR/usr/include/gnu/{lib-names,stubs}-32.h \
+               /usr/include/gnu/
+ln -svf ../lib32/ld-linux.so.2 /lib/ld-linux.so.2
+</code></pre>
+<p>Добавьте запись в <code>ld.so.conf</code>:</p>
+<pre><code class="language-bash">echo &quot;/usr/lib32&quot; &gt;&gt; /etc/ld.so.conf
+</code></pre>
+<p>Обновите кеш библиотек:</p>
+<pre><code class="language-bash">ldconfig
+</code></pre>
+<h2 id="_14">Установленные файлы</h2>
+<p>Программы: <code>catchsegv, gencat, getconf, getent, iconv, iconvconfig, ldconfig, ldd, lddlibc4, locale, localedef, makedb, mtrace, nscd, pcprofiledump, pldd, sln, sotruss, sprof, tzselect, xtrace, zdump, zic</code></p>
+<p>Библиотеки: <code>ld-2.33.so, libBrokenLocale.{a,so}, libSegFault.so, libanl.{a,so}, libc.{a,so}, libc_nonshared.a, libcrypt.{a,so}, libdl.{a,so}, libg.a, libm.{a,so}, libmcheck.a, libmemusage.so, libmvec.{a,so}, libnsl.{a,so}, libnss_compat.so, libnss_dns.so, libnss_files.so, libnss_hesiod.so, libpcprofile.so, libpthread.{a,so}, libpthread_nonshared.a, libresolv.{a,so}, librt.{a,so}, libthread_db.so, libutil.{a,so}</code></p>
+<p>Директории: <code>/usr/include/arpa, /usr/include/bits, /usr/include/gnu, /usr/include/net, /usr/include/netash, /usr/include/netatalk, /usr/include/netax25, /usr/include/neteconet, /usr/include/netinet, /usr/include/netipx, /usr/include/netiucv, /usr/include/netpacket, /usr/include/netrom, /usr/include/netrose, /usr/include/nfs, /usr/include/protocols, /usr/include/rpc, /usr/include/sys, /usr/lib/audit, /usr/lib/gconv, /usr/lib/locale, /usr/libexec/getconf, /usr/share/i18n, /usr/share/zoneinfo, /var/cache/nscd, /var/lib/nss_db</code></p>
+<h3 id="_15">Краткое описание</h3>
+<p><code>catchsegv</code> - Может использоваться для создания трассировки стека, когда программа завершается с ошибкой сегментации.</p>
+<p><code>gencat</code> - Создаёт каталоги сообщений.</p>
+<p><code>getconf</code> - Отображает значения конфигурации системы для специфичных переменных файловой системы.</p>
+<p><code>getent</code> - Получает записи из административной базы данных.</p>
+<p><code>iconv</code> - Выполняет преобразование набора символов в другую кодировку.</p>
+<p><code>iconvconfig</code> - Создает ускоренную загрузку iconv модулей файлов конфигурации.</p>
+<p><code>ldconfig</code> - Настраивает привязки динамического компоновщика.</p>
+<p><code>ldd</code> - помогает определить список разделяемых библиотек (shared libraries), от которых зависит программа.</p>
+<p><code>lddlibc4</code> - Помогает ldd с объектными файлами.</p>
+<p><code>locale</code> - Отображает всевозможную информацию о текущей локали.</p>
+<p><code>localedef</code> - Компилирует спецификации локали.</p>
+<p><code>makedb</code> - Создает простую базу данных из текстового ввода.</p>
+<p><code>mtrace</code> - Читает и интерпретирует файл трассировки памяти и отображает сводку в удобочитаемом формате.</p>
+<p><code>nscd</code> - Служба (демон), которая предоставляет кэш для наиболее общих запросов службы имен.</p>
+<p><code>pldd</code> - Список динамических общих объектов, используемых запущенными процессами.</p>
+<p><code>sln</code> - Статически слинкованная программа <code>ln</code>.</p>
+<p><code>sotruss</code> - Выполняет трассировку вызовов процедуры разделяемой библиотеки для указанной команды.</p>
+<p><code>sprof</code> - Считывает и отображает данные профилирования общих объектов.</p>
+<p><code>tzselect</code> - Выясняет у пользователя его текущее местоположение и выводит описание часового пояса на устройство стандартного вывода.</p>
+<p><code>xtrace</code> - Трассировка выполняемой программы, и выводит в реальном времени на устройство стандартного вывода выполняемые функции.</p>
+<p><code>zdump</code> Распечатывает текущее время для каждого часового пояса, указанного в командной строке.</p>
+<p><code>zic</code> - Компилятор часовых поясов.</p>
+<p><code>ld.so</code> - Программа выполняет поиск и загружает динамические библиотеки, необходимые программам, а также подготавливает программы к запуску и запускают их.</p>
+<p><code>libBrokenLocale</code> - Используется внутри Glibc как грубый хак, чтобы обработать запущенную сломанную программу (например некоторые приложения Motif). Изучите комментарии в файле <code>locale/broken_cur_max.c</code> для получения более подробной информации.</p>
+<p><code>libSegFault</code> - Обработчик сигнала ошибки сегментации, используемый catchsegv.</p>
+<p><code>libanl</code> - Асинхронная библиотека поиска имен.</p>
+<p><code>libc</code> - Стандартная библиотека языка Си.</p>
+<p><code>libcrypt</code> - Криптографическая библиотека.</p>
+<p><code>libdl</code> - Интерфейс библиотеки динамической линковки.</p>
+<p><code>libg</code> - библиотека-заглушка, не содержащая функций. Раньше была библиотекой выполнения для g++.</p>
+<p><code>libm</code> - Математическая библиотека.</p>
+<p><code>libmcheck</code> - включает проверку распределения памяти при линковке.</p>
+<p><code>libmemusage</code> - Используется программой memusage чтобы помочь собрать информацию об использовании памяти в программе.</p>
+<p><code>libnsl</code> - библиотека сетевых сервисов.</p>
+<p><code>libnss</code> - Библиотеки коммутаторов имен, содержащие функции для разрешение имен хостов, имен пользователей, имен групп, псевдонимов, служб, протоколов и т.д.</p>
+<p><code>libpthread</code> - POSIX библиотека потоков.</p>
+<p><code>libresolv</code> - Содержит функции для создания, отправки и интерпретации пакетов на серверы доменных имен в Интернете.</p>
+<p><code>librt</code> - Содержит функции, обеспечивающие большую часть указанных интерфейсов в POSIX.1b расширении.</p>
+<p><code>libthread_db</code> - Содержит функции, полезные для построения отладчиков для многопоточных программ.</p>
+<p><code>libutil</code> - Содержит ключи для «стандартных» функций, используемых в большинстве различных утилит Unix.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

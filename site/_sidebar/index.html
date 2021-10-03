@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title> sidebar - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = " sidebar";
+    var mkdocs_page_input_path = "_sidebar.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li> sidebar</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <ul>
+<li><a href="changelog">Журнал изменений</a></li>
+<li><a href="prologue/foreword"><strong>Предисловие</strong></a></li>
+<li><a href="prologue/from-authors">От авторов</a></li>
+<li><a href="prologue/benefits">Преимущества</a></li>
+<li><a href="prologue/before-start">Прежде чем начать</a></li>
+<li><a href="prologue/typography">Принятые обозначения</a></li>
+<li><a href="prologue/packages">Информация об используемых пакетах</a></li>
+<li>
+<p><a href="prologue/inaccuracies">Опечатки и неточности</a></p>
+</li>
+<li>
+<p><strong>Подготовительные работы</strong></p>
+</li>
+<li><a href="prepare/arch">Целевые архитектуры</a></li>
+<li><a href="prepare/requrements">Требования</a></li>
+<li><a href="prepare/about-sbu">О времени сборки пакетов</a></li>
+<li><a href="prepare/create-partition">Создание разделов</a></li>
+<li><a href="prepare/set-lin">Установка переменной $LIN</a></li>
+<li><a href="prepare/mount-partition">Монтирование разделов</a></li>
+<li><a href="prepare/create-dirs">Создание основных каталогов и символических ссылок</a></li>
+<li><a href="prepare/download">Требуемые пакеты и патчи</a></li>
+<li><a href="prepare/add-user">Создание пользователя</a></li>
+<li><a href="prepare/set-env">Настройка окружения</a></li>
+<li><a href="prepare/about-tests">О тестах</a></li>
+<li><a href="prepare/about-priority">О приоритете пакетов</a></li>
+<li><a href="prepare/general-build-instruction">Общая инструкция по сборке пакетов</a></li>
+<li><a href="prepare/about-threads">О потоках</a></li>
+<li><a href="cross-toolchain/cross-toolchain"><strong>Сборка кросс компилятора</strong></a></li>
+<li><a href="cross-toolchain/binutils">Binutils</a></li>
+<li><a href="cross-toolchain/gcc">GCC</a></li>
+<li>
+<p><a href="build-system/linux-headers"><strong>Заголовочные файлы ядра Linux</strong></a></p>
+</li>
+<li>
+<p><a href="build-temp-system/tempsystem"><strong>Сборка временной системы</strong></a></p>
+</li>
+<li>
+<p><a href="build-temp-system/glibc">Glibc</a></p>
+</li>
+<li><a href="build-temp-system/libstdc">LibstdC++ проход 1</a></li>
+<li><a href="build-temp-system/m4">M4</a></li>
+<li><a href="build-temp-system/ncurses">Ncurses</a></li>
+<li><a href="build-temp-system/bash">Bash</a></li>
+<li><a href="build-temp-system/coreutils">Coreutils</a></li>
+<li><a href="build-temp-system/diffutils">Diffutils</a></li>
+<li><a href="build-temp-system/file">File</a></li>
+<li><a href="build-temp-system/findutils">Findutils</a></li>
+<li><a href="build-temp-system/gawk">Gawk</a></li>
+<li><a href="build-temp-system/grep">Grep</a></li>
+<li><a href="build-temp-system/gzip">Gzip</a></li>
+<li><a href="build-temp-system/make">Make</a></li>
+<li><a href="build-temp-system/patch">Patch</a></li>
+<li><a href="build-temp-system/sed">Sed</a></li>
+<li><a href="build-temp-system/tar">Tar</a></li>
+<li><a href="build-temp-system/xz">Xz</a></li>
+<li><a href="build-temp-system/binutils-p2">Binutils проход 2</a></li>
+<li><a href="build-temp-system/gcc-p2">GCC проход 2</a></li>
+<li><a href="build-temp-system/change-owner">Смена владельца для каталога $LIN</a></li>
+<li><a href="build-temp-system/enter-in-chroot">Вход в окружение chroot</a></li>
+<li><a href="build-temp-system/create-files">Создание базовых файлов и ссылок</a></li>
+<li><a href="build-temp-system/libstdc-p2">LibstdC++ проход 2</a></li>
+<li><a href="build-temp-system/gettext">Gettext</a></li>
+<li><a href="build-temp-system/bison">Bison</a></li>
+<li><a href="build-temp-system/perl">Perl</a></li>
+<li><a href="build-temp-system/python">Python</a></li>
+<li><a href="build-temp-system/texinfo">Texinfo</a></li>
+<li><a href="build-temp-system/util-linux">Util-linux</a></li>
+<li>
+<p><a href="build-temp-system/cleanup">Очистка и сохранение временной системы</a></p>
+</li>
+<li>
+<p><a href="build-system/build-system"><strong>Сборка Linux системы</strong></a></p>
+</li>
+<li>
+<p><a href="build-system/set-profile">Настройка окружения bash</a></p>
+</li>
+<li><a href="build-system/iana-etc">Iana-etc</a></li>
+<li><a href="build-system/glibc">Glibc</a></li>
+<li><a href="build-system/zlib">Zlib-ng</a></li>
+<li><a href="build-system/bz2">Bzip2</a></li>
+<li><a href="build-system/xz">Xz</a></li>
+<li><a href="build-system/zstd">Zstd</a></li>
+<li><a href="build-system/file">File</a></li>
+<li><a href="build-system/readline">Readline</a></li>
+<li><a href="build-system/m4">M4</a></li>
+<li><a href="build-system/bc">Bc</a></li>
+<li><a href="build-system/flex">Flex</a></li>
+<li><a href="build-system/tcl">Tcl</a></li>
+<li><a href="build-system/expect">Expect</a></li>
+<li><a href="build-system/dejagnu">DejaGNU</a></li>
+<li><a href="build-system/binutils">Binutils</a></li>
+<li><a href="build-system/gmp">GMP</a></li>
+<li><a href="build-system/mpfr">MPFR</a></li>
+<li><a href="build-system/mpc">MPC</a></li>
+<li><a href="build-system/isl">ISL</a></li>
+<li><a href="build-system/attr">Attr</a></li>
+<li><a href="build-system/acl">Acl</a></li>
+<li><a href="build-system/libcap">Libcap</a></li>
+<li><a href="build-system/shadow">Shadow</a></li>
+<li><a href="build-system/gcc">GCC</a></li>
+<li><a href="build-system/pkg-config">Pkg-config</a></li>
+<li><a href="build-system/ncurses">Ncurses</a></li>
+<li><a href="build-system/sed">Sed</a></li>
+<li><a href="build-system/psmisc">Psmisc</a></li>
+<li><a href="build-system/gettext">Gettext</a></li>
+<li><a href="build-system/bison">Bison</a></li>
+<li><a href="build-system/grep">Grep</a></li>
+<li><a href="build-system/bash">Bash</a></li>
+<li><a href="build-system/libtool">Libtool</a></li>
+<li><a href="build-system/gdbm">GDBM</a></li>
+<li><a href="build-system/gperf">Gperf</a></li>
+<li><a href="build-system/expat">Expat</a></li>
+<li><a href="build-system/inetutils">Inetutils</a></li>
+<li><a href="build-system/perl">Perl</a></li>
+<li><a href="build-system/xml-parser">XML::Parser</a></li>
+<li><a href="build-system/intltool">Intltool</a></li>
+<li><a href="build-system/autoconf">Autoconf</a></li>
+<li><a href="build-system/automake">Automake</a></li>
+<li><a href="build-system/kmod">Kmod</a></li>
+<li><a href="build-system/libelf">Libelf</a></li>
+<li><a href="build-system/libffi">Libffi</a></li>
+<li><a href="build-system/openssl">Openssl</a></li>
+<li><a href="build-system/python">Python</a></li>
+<li><a href="build-system/ninja">Ninja</a></li>
+<li><a href="build-system/meson">Meson</a></li>
+<li><a href="build-system/coreutils">Coreutils</a></li>
+<li><a href="build-system/check">Check</a></li>
+<li><a href="build-system/diffutils">Diffutils</a></li>
+<li><a href="build-system/gawk">Gawk</a></li>
+<li><a href="build-system/findutils">Findutils</a></li>
+<li><a href="build-system/groff">Groff</a></li>
+<li><a href="build-system/less">Less</a></li>
+<li><a href="build-system/gzip">Gzip</a></li>
+<li><a href="build-system/iproute">Iproute2</a></li>
+<li><a href="build-system/kbd">Kbd</a></li>
+<li><a href="build-system/libpipeline">Libpipeline</a></li>
+<li><a href="build-system/make">Make</a></li>
+<li><a href="build-system/patch">Patch</a></li>
+<li><a href="build-system/tar">Tar</a></li>
+<li><a href="build-system/mandb">Man-DB</a></li>
+<li><a href="build-system/texinfo">Texinfo</a></li>
+<li><a href="build-system/popt">Popt</a></li>
+<li><a href="build-system/freetype">Freetype</a></li>
+<li><a href="build-system/dosfstools">Dosfstools</a></li>
+<li><a href="build-system/wget">Wget</a></li>
+<li><a href="build-system/libtasn1">libtasn1</a></li>
+<li><a href="build-system/p11-kit">p11-kit</a></li>
+<li><a href="build-system/make-ca">Make-ca</a></li>
+<li><a href="build-system/markupsafe">MarkupSafe</a></li>
+<li>
+<p><a href="build-system/jinja2">Jinja2</a></p>
+</li>
+<li>
+<p><a href="build-system/text-editor"><strong>Выбор текстового редактора</strong></a></p>
+<ul>
+<li><a href="build-system/vim">Vim</a></li>
+<li><a href="build-system/emacs">Emacs</a></li>
+<li><a href="build-system/nano">Nano</a></li>
+</ul>
+</li>
+<li>
+<p><a href="build-system/init-system"><strong>Выбор системы инициализации</strong></a></p>
+<ul>
+<li><a href="build-system/init/sysvinit-page"><strong>SysVinit</strong></a></li>
+<li><a href="build-system/init/eudev-sysv">Eudev</a></li>
+<li><a href="build-system/init/procps-ng-sysv">Procps-ng</a></li>
+<li><a href="build-system/init/util-linux-sysv">Util-linux</a></li>
+<li><a href="build-system/init/sysklogd-sysv">Sysklogd</a></li>
+<li><a href="build-system/init/sysvinit">SysVinit</a></li>
+<li>
+<p><a href="build-system/init/bootscripts">Bootscripts</a></p>
+</li>
+<li>
+<p><a href="../build-system/init/systemd-page/"><strong>Systemd</strong></a></p>
+</li>
+<li>
+<p><a href="build-system/init/systemd-users">Создание пользователей и групп для systemd</a></p>
+</li>
+<li>
+<p><a href="build-system/init/systemd">Systemd</a></p>
+</li>
+<li><a href="build-system/init/dbus-sysd">D-Bus</a></li>
+<li><a href="build-system/init/procps-ng-sysd">Procps-ng</a></li>
+<li><a href="build-system/init/util-linux-sysd">Util-linux</a></li>
+</ul>
+</li>
+<li>
+<p><a href="build-system/e2fsprogs">E2fsprogs</a></p>
+</li>
+<li>
+<p><a href="build-system/boot/about-grub"><strong>GRUB</strong></a></p>
+<ul>
+<li><a href="build-system/boot/efi"><strong>EFI</strong></a></li>
+<li><a href="build-system/boot/efivar">Efivar</a></li>
+<li><a href="build-system/boot/efibootmgr">Efibootmgr</a></li>
+<li>
+<p><a href="build-system/boot/grub-efi">GRUB</a></p>
+</li>
+<li>
+<p><a href="build-system/boot/bios"><strong>BIOS/Legacy boot</strong></a></p>
+</li>
+<li><a href="build-system/boot/grub-mbr">GRUB</a></li>
+</ul>
+</li>
+<li>
+<p><a href="build-system/cleanup">Очистка</a></p>
+</li>
+<li>
+<p><a href="setup/setup"><strong>Настройка системы</strong></a></p>
+</li>
+<li>
+<p><a href="setup/fstab">Создание файла /etc/fstab</a></p>
+</li>
+<li>
+<p><a href="setup/shells">Создание файла /etc/shells</a></p>
+</li>
+<li>
+<p><strong>systemd</strong></p>
+<ul>
+<li><a href="setup/hw-clock">Настройка аппаратных часов</a></li>
+<li><a href="setup/network-systemd">Настройка сети</a></li>
+</ul>
+</li>
+<li>
+<p><strong>SysVinit</strong></p>
+<ul>
+<li><a href="setup/sysvinit-conf">Настройка SysVinit</a></li>
+</ul>
+</li>
+<li>
+<p><a href="kernel/kernel-setup-intro"><strong>Настройка и установка ядра</strong></a></p>
+</li>
+<li>
+<p><a href="kernel/kernel-setup">Настройка</a></p>
+</li>
+<li>
+<p><a href="kernel/about-fw">О прошивках</a></p>
+</li>
+<li>
+<p><a href="boot/boot"><strong>Делаем систему загрузочной</strong></a></p>
+</li>
+<li><a href="boot/uefi"><strong>Создание загрузочной системы EFI</strong></a></li>
+<li>
+<p><a href="boot/mbr"><strong>Создание загрузочной системы Legacy Boot MBR</strong></a></p>
+</li>
+<li>
+<p><a href="final/final"><strong>Заключительная часть</strong></a></p>
+</li>
+<li>
+<p><a href="additional/additional"><strong>Вспомогательные материалы</strong></a></p>
+</li>
+<li><strong>Строение GNU/Linux</strong><ul>
+<li><a href="additional/LinuxStructure1">Строение GNU/Linux. Часть 1</a></li>
+<li><a href="additional/LinuxStructure2">Строение GNU/Linux. Часть 2</a></li>
+<li><a href="additional/LinuxStructure3">Строение GNU/Linux. Часть 3</a></li>
+<li><a href="additional/LinuxStructure4">Строение GNU/Linux. Часть 4</a></li>
+</ul>
+</li>
+<li><a href="additional/src-compiling">Установка программ из исходных кодов в Linux</a></li>
+<li><a href="additional/error-fix">Решение ошибок сборки</a></li>
+<li><a href="additional/partitions_calalogs">Типы и разделов и каталогов</a></li>
+<li><a href="additional/swap">Выбор размера файла подкачки</a></li>
+<li><a href="additional/zram">Настройка zram</a></li>
+<li><a href="additional/cross-compiler">Кросс-компилятор</a></li>
+<li><a href="additional/cpu-arch">Виды популярных архитектур процессоров</a></li>
+<li><a href="additional/sha-bang">О шебангах в скриптах Linux</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Vim - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Vim";
+    var mkdocs_page_input_path = "build-system/vim.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Vim</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><pkg :name="'vim'" instsize showsbu2></pkg></p>
+<h2 id="_1">Настройка</h2>
+<p>Измените расположение файла <code>vimrc</code> на <code>/etc</code>:</p>
+<p><package-script :package="'vim'" :type="'prepare'"></package-script></p>
+<p>И сконфигурируйте пакет:</p>
+<p><package-script :package="'vim'" :type="'configure'"></package-script></p>
+<h2 id="_2">Сборка</h2>
+<p><package-script :package="'vim'" :type="'build'"></package-script></p>
+<h2 id="_3">Тестирование</h2>
+<p><package-script :package="'vim'" :type="'test'"></package-script></p>
+<p>?&gt; Так как тестирование выводит на экран большое кол-во двоичных данных, это может вызвать проблемы с настройками текущего терминала. Именно поэтому используется перенаправление вывода в файл.</p>
+<h2 id="_4">Установка</h2>
+<p><package-script :package="'vim'" :type="'install'"></package-script></p>
+<h2 id="vim">Настройка Vim</h2>
+<ul>
+<li>Многие пользователи привыкли использовать <code>vi</code> вместо <code>vim</code>. Чтобы выполнять <code>vim</code>, когда пользователь обычно ввёл <code>vi</code>, создайте символическую ссылку как для бинарного файла, так и для страницы руководства;</li>
+<li>Документация Vim устанавливается в <code>/usr/share/vim</code>. Для совместимости с другими пакетами, создайте символическую ссылку;</li>
+<li>По умолчанию Vim работает в режиме, несовместимом с Vi. Это может быть неприятным для тех пользователей, которые использовали другие редакторы в прошлом. Параметр несовместимости включен, чтобы подчеркнуть факт о том, что используется новое поведение. Также он напоминает тем, кто перейдёт в совместимый режим, что это должен быть первый параметр в файле конфигурации (это необходимо, потому что при этом изменяются другие параметры; предопределения должны выполняться после этого параметра):</li>
+</ul>
+<p><package-script :package="'vim'" :type="'postinstall'"></package-script></p>
+<ul>
+<li><code>set nocompatible</code>-  указывает Vim'y вести себя более удобным образом (по умолчанию), чем vi-совместимый. Удалите <code>no</code>, чтобы сохранить старое поведение vi.</li>
+<li><code>set backspace=2</code> - позволяет делать обратный интервал при переносе строк, автоотступах и начале вставки. Синтаксис параметра включает подсветку синтаксиса vim.</li>
+<li><code>set lbr</code> - включает перенос текста по словам.</li>
+<li><code>set mouse=a</code> - позволяет правильно вставлять текст с помощью мыши при работе в chroot или через удаленное соединение.</li>
+<li>Оператор <code>if</code> с параметром <code>set background=dark</code> исправляет предположение vim о цвете фона некоторых эмуляторов терминала. Это даёт лучшую цветовую схему выделения для использования на чёрном фоне этих программ.</li>
+</ul>
+<h2 id="_5">Установленные файлы</h2>
+<ul>
+<li><strong>Установленные программы:</strong> <code>ex</code> (ссылка на <code>vim</code>), <code>rview</code> (ссылка на <code>vim</code>), <code>rvim</code> (ссылка на <code>vim</code>), <code>vi</code> (ссылка на <code>vim</code>), <code>view</code> (ссылка на <code>vim</code>), <code>vim</code>, <code>vimdiff</code> (ссылка на <code>vim</code>), <code>vimtutor</code> и <code>xxd</code></li>
+<li><strong>Установленные библиотеки:</strong> нет</li>
+<li><strong>Установленные директории:</strong> <code>/usr/share/vim</code></li>
+</ul>
+<script>
+    new Vue({ el: '#main' })
+</script>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

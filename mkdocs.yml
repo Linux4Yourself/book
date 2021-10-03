@@ -1,0 +1,32 @@
+site_name: Linux для себя
+nav:
+    - Linux для себя: index.md
+    - Журнал изменений: changelog.md
+    - Предисловие:
+       - Введение: prologue/foreword.md
+       - От авторов: prologue/from-authors.md
+       - Преимущества: prologue/benefits.md
+       - Прежде чем начать: prologue/before-start.md
+       - Принятые обозначения: prologue/typography.md
+       - Информация об используемых пакетах: prologue/packages.md
+       - Опечатки и неточности: prologue/inaccuracies.md
+    - Подготовительные работы:
+        - Целевые архитектуры: prepare/arch.md
+        - Требования: prepare/requrements.md
+        - О времени сборки пакетов: prepare/about-sbu.md
+        - Создание разделов: prepare/create-partitions.md
+        - Установка переменной $LIN: prepare/set-lin.md
+        - Монтирование разделов: prepare/mount-partitions.md
+        - Создание основных каталогов и символических ссылок: prepare/create-dirs.md
+        - Требуемые пакеты и патчи: prepare/download.md
+        - Создание пользователя: prepare/add-user.md
+        - Настройка окружения: prepare/set-env.md
+        - О тестах: prepare/about-tests.md
+        - О приоритете пакетов: prepare/about-priority.md
+        - Общая инструкция по сборке пакетов: prepare/general-build-instruction.md
+        - О потоках: prepare/about-threads.md
+    - Сборка кросс-компилятора:
+        - Введение: cross-toolchain/cross-toolchain.md
+        - Binutils: cross-toolchain/binutils.md
+        - GCC: cross-toolchain/gcc.md
+theme : readthedocs

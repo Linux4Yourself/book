@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Заключительная часть - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0417\u0430\u043a\u043b\u044e\u0447\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0447\u0430\u0441\u0442\u044c";
+    var mkdocs_page_input_path = "final/final.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Заключительная часть</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">Заключительная часть</h1>
+<p>Примите поздравления! Ваша базовая Linux система настроена и готова к работе! Прежде чем выполнить загрузку, выполните некоторые заключительные шаги.</p>
+<h2 id="etcos-release">Создание файла /etc/os-release</h2>
+<p>Файл необходим для идентификации операционной системы. Он необходим при использовании systemd, а также для некоторых графических оболочек.</p>
+<p>Базовый формат файла <code>os-release</code> - это список назначений переменных, совместимых с оболочкой, разделенных новой строкой. Можно получить конфигурацию из сценариев оболочки, однако, помимо простого назначения переменных, функции оболочки не поддерживаются (это означает, что расширение переменных явно не поддерживается), что позволяет приложениям читать файл без реализации механизма выполнения, совместимого с оболочкой. Значения присвоения переменных должны быть заключены в двойные или одинарные кавычки, если они включают пробелы, точки с запятой или другие специальные символы за пределами A – Z, a – z, 0–9. Специальные символы оболочки («$», кавычки, обратная косая черта) должны быть экранированы обратной косой чертой в соответствии со стилем оболочки. Все строки должны быть в формате UTF-8, и нельзя использовать непечатаемые символы. Объединение нескольких строк в индивидуальных кавычках не поддерживается. Строки, начинающиеся с "#", игнорируются как комментарии. Пустые строки разрешены и игнорируются.</p>
+<p>Создайте файл, выполнив команду:</p>
+<pre class="pre">
+cat > /etc/os-release << "EOF"
+NAME="MyLinux"
+VERSION="{{ book.revision }}"
+ID=mylinux
+PRETTY_NAME="MyLinux {{ book.revision }}"
+VERSION_CODENAME="MyLinuxCodeName"
+EOF
+</pre>
+
+<h3 id="_2">Параметры идентификации</h3>
+<p><strong>NAME</strong></p>
+<p>Строка, идентифицирующая операционную систему, без компонента версии и подходящая для представления пользователю. Если не установлен, по умолчанию используется «NAME = Linux». Пример: <code>NAME=Fedora</code> или <code>NAME="Debian GNU/Linux"</code>.</p>
+<p><strong>VERSION</strong></p>
+<p>Строка, идентифицирующая версию операционной системы, исключая любую информацию об имени ОС, возможно, включая кодовое имя выпуска, и подходящая для представления пользователю. Это поле не является обязательным. Пример: <code>VERSION=17</code> или <code>VERSION=17 (Muscular miracle)</code>.</p>
+<p><strong>ID</strong></p>
+<p>Строка в нижнем регистре (без пробелов и других символов, кроме 0–9, a – z, «.», «_» И «-»), идентифицирующая операционную систему, исключая любую информацию о версии и подходящая для обработки скриптами или использования в сгенерированных именах файлов. Если не установлен, по умолчанию используется <code>ID=linux</code>.</p>
+<p>?&gt; Пример: <code>ID = fedora</code> или <code>ID = debian</code>.</p>
+<p><strong>ID_LIKE</strong></p>
+<p>Список идентификаторов операционных систем, разделенных пробелами, в том же синтаксисе, что и параметр ID =. В нем должны быть перечислены идентификаторы операционных систем, которые тесно связаны с локальной операционной системой в отношении упаковки и программных интерфейсов, например, перечисление одного или нескольких идентификаторов ОС, производными от которых является локальная ОС. Обычно операционная система должна перечислять только другие идентификаторы ОС, производными от которых она сама является, а не какие-либо производные от нее операционные системы, хотя возможны симметричные отношения. Скрипты сборки и т.п. должны проверять эту переменную, если им нужно идентифицировать локальную операционную систему, а значение ID = не распознается. Операционные системы следует перечислять в порядке близости локальной операционной системы к перечисленным, начиная с ближайшей. Это поле не является обязательным. Пример: для операционной системы с <code>ID = centos</code> подходящим будет присвоение <code>ID_LIKE="rhel fedora"</code>. Для операционной системы с <code>ID = ubuntu</code> подходит значение <code>ID_LIKE = debian</code>.</p>
+<p><strong>VERSION_CODENAME</strong></p>
+<p>Строка в нижнем регистре (без пробелов и других символов, кроме 0–9, a – z, «.», «_» И «-»), идентифицирующая кодовое имя выпуска операционной системы, исключая любую информацию об имени ОС или версию выпуска, и подходящая для обработки скриптами или использования в сгенерированных именах файлов. Это поле является необязательным и может быть реализовано не во всех системах.</p>
+<p>?&gt; Примеры: <code>VERSION_CODENAME = buster</code>, <code>VERSION_CODENAME = xenial</code>.</p>
+<p><strong>VERSION_ID</strong></p>
+<p>Строка в нижнем регистре (в основном числовая, без пробелов и других символов, кроме 0–9, a – z, «.», «_» И «-»), идентифицирующая версию операционной системы, исключая любую информацию об имени ОС или код выпуска. Подходит для обработки скриптами или использования в сгенерированных именах файлов. Это поле не является обязательным.</p>
+<p>?&gt; Пример: <code>VERSION_ID = 34</code> или <code>VERSION_ID = 21.04</code>.</p>
+<p><strong>PRETTY_NAME</strong></p>
+<p>Красивое название операционной системы в формате, удобном для представления пользователю. Может содержать или не содержать кодовое название выпуска или версию ОС, в зависимости от обстоятельств. Если не установлен, по умолчанию используется <code>PRETTY_NAME =" Linux "</code>.</p>
+<p>?&gt; Пример: <code>PRETTY_NAME =" Fedora 34 (Workstation Edition) "</code>.</p>
+<p><strong>ANSI_COLOR</strong></p>
+<p>Предлагаемый цвет презентации при отображении названия ОС в консоли. Это должно быть указано как строка, подходящая для включения в escape-код ESC [m ANSI / ECMA-48 для установки графического представления. Это поле не является обязательным. Пример: "ANSI_COLOR =" 0; 31 "" для красного, "ANSI_COLOR =" 1; 34 "" для голубого или "ANSI_COLOR =" 0; 38; 2; 60; 110; 180 "" для синего цвета Fedora.</p>
+<p><strong>CPE_NAME</strong></p>
+<p>Имя CPE для операционной системы в синтаксисе привязки URI в соответствии со спецификацией перечисления Common Platform, предложенной NIST. Это поле не является обязательным.</p>
+<p>?&gt; Пример: <code>CPE_NAME =" cpe: / o: fedoraproject: fedora: 34 "</code>.</p>
+<p><strong>HOME_URL, DOCUMENTATION_URL, SUPPORT_URL, BUG_REPORT_URL, PRIVACY_POLICY_URL</strong></p>
+<p>Ссылки на ресурсы в Интернете, связанные с операционной системой. <code>HOME_URL =</code> должен ссылаться на домашнюю страницу операционной системы или, альтернативно, на домашнюю страницу конкретной версии операционной системы. <code>DOCUMENTATION_URL =</code> следует ссылаться на главную страницу документации для этой операционной системы. SUPPORT_URL = следует ссылаться на главную страницу поддержки операционной системы, если таковая имеется. Это в первую очередь предназначено для операционных систем, для которых поставщики предоставляют поддержку. <code>BUG_REPORT_URL =</code> должен ссылаться на главную страницу отчетов об ошибках для операционной системы, если таковые имеются. Это в первую очередь предназначено для операционных систем, которые полагаются на обеспечение качества сообщества. <code>PRIVACY_POLICY_URL =</code> должен ссылаться на главную страницу политики конфиденциальности для операционной системы, если таковая имеется. Эти параметры являются необязательными, и обычно предоставляется только некоторые из этих параметров. Эти URL-адреса предназначены для отображения в пользовательских интерфейсах «Об этой системе» за ссылками с такими заголовками, как «Об этой операционной системе», «Получить поддержку», «Сообщить об ошибке» или «Политика конфиденциальности». Значения должны быть в формате RFC3986 и должны быть URL-адресами «http:» или «https:» и, возможно, «mailto:» или «tel:». В каждой настройке должен быть указан только один URL. Если необходимо указать несколько ресурсов, рекомендуется предоставить целевую страницу в Интернете, связывающую все доступные ресурсы.</p>
+<p>?&gt; Пример: <code>HOME_URL =" https://fedoraproject.org/ "</code>.</p>
+<p><strong>BUILD_ID</strong></p>
+<p>Строка, однозначно определяющая образ системы, используемый в качестве источника для распределения (он не обновляется с обновлениями системы). Поле может быть идентичным для разных VERSION_ID, поскольку BUILD_ID - это только уникальный идентификатор для конкретной версии. В дистрибутивах, которые выпускают каждое обновление как новую версию, потребуется использовать только VERSION_ID, поскольку каждая сборка уже отличается на основе VERSION_ID. Это поле не является обязательным.</p>
+<p>?&gt; Пример: <code>BUILD_ID =« 2013-03-20.3 »</code> или <code>BUILD_ID = 201303203</code>.</p>
+<p><strong>VARIANT</strong></p>
+<p>Строка, идентифицирующая конкретный вариант или редакцию операционной системы, подходящую для представления пользователю. Это поле может использоваться для информирования пользователя о том, что конфигурация этой системы подчиняется определённому расходящемуся набору правил или настройкам конфигурации по умолчанию. Это поле является необязательным и может быть реализовано не во всех системах. Примеры: <code>VARIANT =" Server Edition "</code>, <code>VARIANT =" Smart Refrigerator Edition "</code></p>
+<p>!&gt; Примечание: это поле предназначено только для отображения. Поле <code>VARIANT_ID</code> следует использовать для принятия программных решений.</p>
+<p><strong>VARIANT_ID</strong></p>
+<p>Строка в нижнем регистре (без пробелов и других символов, кроме 0–9, a – z, «.», «_» И «-»), определяющая конкретный вариант или выпуск операционной системы. Это может быть интерпретировано другими пакетами для определения расходящейся конфигурации по умолчанию. Это поле является необязательным и может быть реализовано не во всех системах.</p>
+<p>?&gt; Примеры: <code>VARIANT_ID = server</code>, <code>VARIANT_ID = embedded</code>.</p>
+<p><strong>LOGO</strong></p>
+<p>Строка, определяющая имя значка, как определено в Спецификации темы значков freedesktop.org. Это может использоваться графическими приложениями для отображения логотипа операционной системы или дистрибьютора. Это поле является необязательным и может быть реализовано не во всех системах.</p>
+<p>?&gt; Пример: <code>LOGO=fedora-logo-icon</code>.</p>
+<p><strong>DEFAULT_HOSTNAME</strong></p>
+<p>Строка, определяющая имя хоста, если имя хоста отсутствует и никакой другой источник конфигурации не указывает имя хоста. Должна быть либо одна метка DNS (строка, состоящая из 7-битных символов нижнего регистра ASCII и без пробелов и точек, ограниченная форматом, разрешённым для меток имен доменов DNS), либо последовательность таких меток, разделённых одиночными точками, которые образуют действительное полное доменное имя DNS. Имя хоста должно состоять не более чем из 64 символов, что является ограничением Linux (DNS допускает более длинные имена).</p>
+<p><strong>SYSEXT_LEVEL</strong></p>
+<p>Строка в нижнем регистре (в основном числовая, без пробелов и других символов, кроме 0–9, a – z, «.», «_» И «-»), определяющая уровень поддержки расширений операционной системы, чтобы указать, какие образы расширений поддерживается.</p>
+<p>?&gt; Пример: <code>SYSEXT_LEVEL = 2</code> или <code>SYSEXT_LEVEL = 15,14</code>.</p>
+<h2 id="etclsb-release">Создание файла /etc/lsb-release</h2>
+<p>Это файл, в который некоторые дистрибутивы Linux помещают информацию для использования старыми программами. Однако, этот файл не является частью стандарта LSB.</p>
+<p>Создайте файл, выполнив команду:</p>
+<pre class="pre">
+cat > /etc/lsb-release << "EOF"
+DISTRIB_ID="MyLinux"
+DISTRIB_RELEASE="{{ book.revision }}"
+DISTRIB_CODENAME="mylinux"
+DISTRIB_DESCRIPTION="MyLinux"
+EOF
+</pre>
+
+<p>Если система совместима с LSB, файл <code>/etc/lsb-release</code> должен содержать поле <code>LSB_VERSION</code>. Значение поля должно представлять собой список поддерживаемых версий модулей, разделённых двоеточиями, с указанием модулей спецификации LSB, которым соответствует установка. Если установка не соответствует требованиям, вышеуказанное поле должно отсутствовать.</p>
+<p>!&gt; Замените значения переменных в этом файле на нужные вам. Например, значение <code>MyLinux</code> переменной <code>DISTRIB_ID</code> заменине на ваше уникальное название дистрибутива.</p>
+<h2 id="_3">Перезагрузка</h2>
+<p>Теперь, когда всё программное обеспечение установлено, можно перезагрузить компьютер. Однако вам следует знать о нескольких вещах. Система, которую вы создали, весьма минимальна. Скорее всего потребуется множество других программ, например, графическое окружение, и <a :href="exrtraUrl">в следующей части</a> будут предоставлены инструкции по их сборке.</p>
+<p>На этом этапе также уместно проверить следующие файлы конфигурации:</p>
+<pre><code>/etc/bashrc
+/etc/dircolors
+/etc/fstab
+/etc/hosts
+/etc/inputrc
+/etc/profile
+/etc/resolv.conf
+/etc/vimrc
+/root/.bash_profile
+/root/.bashrc
+</code></pre>
+<p>?&gt; Файлы <code>/root/.bash_profile</code> и <code>/root/.bashrc</code> можете скопировать в каталог <code>/etc/skel</code> - из него файлы копируются в домашние директории пользователей, которых вы создадите в будущем.</p>
+<p>Выполните выход из среды chroot:</p>
+<pre><code class="language-bash">logout
+</code></pre>
+<p>Отключим виртуальные файловые системы:</p>
+<pre><code class="language-bash">umount $LIN/dev{/pts,}
+umount $LIN/{sys,proc,run}
+</code></pre>
+<p>Размонтируем иерархию каталогов созданной Linux системы:</p>
+<pre><code class="language-bash">umount -Rv $LIN
+</code></pre>
+<p>Выполните перезагрузку</p>
+<pre><code>shutdown -r now
+</code></pre>
+<p>После перезагрузки система будет готова к использованию.</p>
+<script>
+    new Vue({ el: '#main'})
+</script>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
