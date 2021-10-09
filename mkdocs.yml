@@ -62,5 +62,26 @@ nav:
         - texinfo: build-temp-system/texinfo.md
         - util-linux: build-temp-system/util-linux.md
         - Очистка и сохранение временной системы: build-temp-system/cleanup.md
+    - Сборка Linux системы:
+        - Введение: build-system/build-system.md
+        - Настройка окружения bash: build-system/set-profile.md
+        - iana-etc: build-system/iana-etc.md
+        - glibc: build-system/glibc.md
+        - zlib-ng: build-system/zlib.md
+        - bzip2: build-system/bz2.md
+        - xz: build-system/xz.md
+        - zstd: build-system/zstd.md
+        - file: build-system/file.md
+        - readline: build-system/readline.md
+        - m4: build-system/m4.md
+        - bc: build-system/bc.md
+        - flex: build-system/flex.md
+        - tcl: build-system/tcl.md
+        - expect: build-system/expect.md
+        - dejagnu: build-system/dejagnu.md
+        - binutils: build-system/binutils.md
+        - gmp: build-system/gmp.md
+        - mpfr: build-system/mpfr.md
+        - mpc: build-system/mpc.md
 theme: readthedocs
 lang: ru
