@@ -1,0 +1,2 @@
+./configure --prefix=/usr        \
+            --disable-static     

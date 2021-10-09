@@ -1,0 +1,15 @@
+CC="gcc -m32" \
+./configure ADJTIME_PATH=/var/lib/hwclock/adjtime   \
+            --host=i686-pc-linux-gnu \
+            --libdir=/usr/lib32      \
+            --disable-chfn-chsh      \
+            --disable-login          \
+            --disable-nologin        \
+            --disable-su             \
+            --disable-setpriv        \
+            --disable-runuser        \
+            --disable-pylibmount     \
+            --disable-static         \
+            --without-python         \
+            --enable-libmount-force-mountinfo \
+            runstatedir=/run --disable-fdisks  --disable-mount  --disable-fsck   

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Строение ELF-файлов - Linux для себя</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u0421\u0442\u0440\u043e\u0435\u043d\u0438\u0435 ELF-\u0444\u0430\u0439\u043b\u043e\u0432";
+    var mkdocs_page_input_path = "additional/LinuxStructure4.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Linux для себя</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Linux для себя</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelog/">Журнал изменений</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Предисловие</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/foreword/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/from-authors/">От авторов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/benefits/">Преимущества</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/before-start/">Прежде чем начать</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/typography/">Принятые обозначения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/packages/">Информация об используемых пакетах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prologue/inaccuracies/">Опечатки и неточности</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Подготовительные работы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/arch/">Целевые архитектуры</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/requrements/">Требования</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-sbu/">О времени сборки пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/create-partitions.md">Создание разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-lin/">Установка переменной $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../../prepare/mount-partitions.md">Монтирование разделов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/create-dirs/">Создание основных каталогов и символических ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/download/">Требуемые пакеты и патчи</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/add-user/">Создание пользователя</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/set-env/">Настройка окружения</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-tests/">О тестах</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-priority/">О приоритете пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/general-build-instruction/">Общая инструкция по сборке пакетов</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../prepare/about-threads/">О потоках</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка кросс-компилятора</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/cross-toolchain/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/binutils/">Binutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cross-toolchain/gcc/">GCC</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-system/linux-headers/">Заголовочные файлы ядра Linux</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Сборка временной системы</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tempsystem/">Введение</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/glibc/">glibc</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc/">libstdc++ проход 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/m4/">m4</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/ncurses/">ncurses</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bash/">bash</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/coreutils/">coreutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/diffutils/">diffutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/file/">file</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/findutils/">findutils</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gawk/">gawk</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/grep/">grep</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gzip/">gzip</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/make/">make</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/patch/">patch</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/sed/">sed</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/tar/">tar</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/xz/">xz</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/binutils-p2/">binutils проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gcc-p2/">gcc проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/change-owner/">Смена владельца каталога $LIN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/enter-in-chroot/">Вход в окружение chroot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/create-files/">Создание базовых файлов и ссылок</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/libstdc-p2/">libstdc++ проход 2</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/gettext/">gettext</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/bison/">bison</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/perl/">perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/python/">python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/texinfo/">texinfo</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/util-linux/">util-linux</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../build-temp-system/cleanup/">Очистка и сохранение временной системы</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Linux для себя</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Строение ELF-файлов</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="elf-">Строение ELF-файлов</h1>
+<p><img alt="INTRODUCTION" src="../pic/LinuxStr4/intro.png" /></p>
+<h2 id="_1">Теория</h2>
+<p>ELF - сокращение от "Executable and Lincable Format" - формат исполняемых и связываемых файлов. ELF определяет их структуру. Данная спецификация позволяет UNIX-подобным(/образным) системам правильно интерпретировать содержащиеся в файле машинные команды. Используется во многих операционных системах: GNU/Linux, FreeBSD, Solaris, etc.</p>
+<p>Понимание строения ELF файла может редко пригодиться, но, тем не менее, оно будет полезно для понимания процесса разработки программного обеспечения, поиска дыр в безопасности и обнаружения подозрительных программ или файлов.</p>
+<h2 id="_2">Начальное строение</h2>
+<p><img alt="ELF файл" src="../pic/LinuxStr4/ELF.png" /></p>
+<p>Для начала создадим директорию, в которой будут расположены тестовые программы, на которых будем "упражняться":</p>
+<pre><code class="language-bash">mkdir ~/LinuxPrograms
+cd ~/LinuxPrograms
+</code></pre>
+<h3 id="_3">Типы</h3>
+<p>Есть несколько типов ELF файлов (см. таблицы в конце статьи):
+* <strong>Перемещаемый файл</strong> - хранит инструкции (и данные), которые могут быть связаны с другими объектными файлами. Результатом может быть объектный или исполняемый файл. Так же к этому типу относятся объектные файлы статических библиотек.
+* <strong>Разделяемый объектный файл</strong> - также как и первый тип, содержит инструкции и данные, может быть связан с другими перемещаемыми и разделяемыми объектными файлами, в результате чего будет создан новый объектный файл, либо же при запуске программы ОС может динамически связывать его с исполняемым файлом программы , в результате чего будет создан исполняемый образ программы (в посл. случае речь идёт о разделяемых библиотеках).
+* <strong>Исполняемый файл</strong> - содержит полное описание, позволяющее ОС создать образ процесса. В т.ч.: <em>инструкции</em>, <em>данные</em>, <em>описания необходимых разделяемых объектных файлов</em> и др.</p>
+<p>Для того, чтобы вывод всех команд, приведённых ниже, был краток, прост и понятен, напишите какую-нибудь простейшую программу, в которой нет <strong>ничего</strong> лишнего, что затраднит чтение:</p>
+<pre><code class="language-c">vim simple.c
+
+int main() {
+    return(0);
+}
+</code></pre>
+<p>И скомпилируйте её:</p>
+<pre><code class="language-bash">gcc -o simple simple.c
+</code></pre>
+<p>Убедитесь в том, что это ELF файл:</p>
+<pre><code class="language-bash">file simple
+</code></pre>
+<p>Структура у каждого файла может различаться. Грубо говоря, ELF файл состоит из:
+* Заголовка
+* Данных</p>
+<p>Подробнее:
+* <strong>Таблица заголовков программы</strong>: 0 или более сегментов памяти (только в исполняемом файле). Сообщает, как исполняемый файл должен быть помещён в виртуальную память процесса. Это необходимо для образа процесса, исполняемых файлов и общих объектов. Для перемещаемых объектных файлов это не требуется.
+* <strong>Таблица заголовков разделов</strong>: 0 или более разделов. Сообщает, как и куда нужно загрузить раздел. Каждая запись раздела в таблице содержит название и размер раздела. Таблица заголовков раздела должна использоваться для файлов, используемых при редактировании ссылок.
+* <strong>Данные:</strong> тпблицы заголовка программы или раздела
+* <strong>Заголовок ELF</strong> <em>(54/64 байта для 32/64 бит)</em>: определяет использование 32/64 бит (смотреть <code>struct Elf32_Ehdr</code>/<code>struct Elf64_Ehdr</code> в <code>/usr/include/elf.h</code>)
+* <strong>Заголовок программы:</strong> как создать образ процесса. Используются во время выполнения. Сообщают ядру или компоновщику время выполнения <code>ld.so</code>, что загружать в память и как найти информацию о динамической компоновке.
+* <strong>Заголовок разделов:</strong> используются во время компоновки или компиляции. Сообщают редактору ссылок <code>ld</code>, как разрашать символы и как группировать похожие потоки байтов из разных двоичных объектов ELF.</p>
+<p>--<em> </em>--</p>
+<ul>
+<li><em>Разделы</em> - самые мелкие неделимые единицы в ELF файле, которые могут быть обработаны. Разделы содержат основную часть информации об объектных файлах для представления связывания. Эти данные включают инструкции, таблицу символов и информацию о перемещении. (просмотр ссылок)</li>
+<li><em>Сегменты</em> - наименьшие отдельные единицы, которые могут быть отображены в памяти с помощью <code>exec</code> или компоновщика. (исполняемые)</li>
+</ul>
+<blockquote>
+<p>Разделы и сегменты не имеют определённого порядка в ELF. Только заголовок имеет фиксированную позицию.</p>
+</blockquote>
+<p>При помощи утилиты <code>readelf</code> можно просмотреть основную информацию о файле.</p>
+<blockquote>
+<p>Эта утилита входит в состав пакета <code>binutils</code>, поэтому ничего доустанавливать не надо.</p>
+</blockquote>
+<p><strong>Основные возможности <code>readelf</code>:</strong></p>
+<ul>
+<li>Просмотр заголовка файла:</li>
+</ul>
+<pre><code class="language-bash">readelf -h simple
+</code></pre>
+<ul>
+<li>Просмотр информации о сегментах и сейкиях:</li>
+</ul>
+<pre><code class="language-bash">readelf -S -W simple
+</code></pre>
+<ul>
+<li>Чтение информации о символах:</li>
+</ul>
+<pre><code class="language-bash">readelf -s -W simple
+</code></pre>
+<h3 id="_4">Заголовок</h3>
+<p>Введите:</p>
+<pre><code class="language-bash">readelf -h simple
+</code></pre>
+<p><img alt="Заголовок" src="../pic/LinuxStr4/header.png" /></p>
+<blockquote>
+<p>Заголовок является обязательным - он служит для того, чтобы данные корректно интерпретировались при линковке и исполнении.</p>
+</blockquote>
+<p>Из вывода утилиты <code>readelf</code> следует, что заголовок начинается с т.н. <em>магического числа</em> (magic number). Это число содержит информацию о файле. Первые 4 байта определяют, что это ELF: <code>45 4c 46</code>.</p>
+<p>После типа файла следует поле класса (архитектура, для которой предназначен бинарник).</p>
+<p><strong>Значения:</strong>
+* 0 - некорректный класс
+* 1 - 32 бит
+* 2 - 64 бит</p>
+<p>Ниже находится поле данных. Это зависимый от процессора метод кодирования данных.</p>
+<p><strong>Значения:</strong>
+* 0 - некорректный тип
+* 1 - Little Endian (LSB)
+* 2 - Big Endian (MSB)</p>
+<p>Разные типы процессоров по разному обрабатывают структуры данных, а эти значения помогают правильно интерпретировать объекты в файле.</p>
+<blockquote>
+<p>Эффект LSB становится видимым при использовании утилиты hexdump на бинарном файле. Просмотрите заголовок ELF у нашего файла <code>simple</code>:</p>
+</blockquote>
+<pre><code class="language-bash">hexdump -n 16 simple
+</code></pre>
+<p>Получите такой вывод:</p>
+<pre><code>0000000 457f 464c 0102 0001 0000 0000 0000 0000
+0000010
+</code></pre>
+<p>Пары значений другие из-за интерпретации порядка данных.</p>
+<p>Затем следует поле "Версия". На данный момент, используется только версия 01.</p>
+<p>Каждая ОС имеет свой способ вызова функций. Что-то похоже, а что-то различается. В поле OS/ABI описываются специфичные для операционной системы или ABI расширения, используемые в файле. В некоторых других структурах ELF файла имеются флаги и поля, значения которых зависят от ОС или ABI, интерпретация этих полей определяется значением данного байта. В таблице ниже представлена таблица значений:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Значение</th>
+<th align="left">Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">UNIX System V</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">HP-UX</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">NetBSD</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">GNU ELF (GNU/Linux)</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Solaris</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">AIX</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">IRIX</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">FreeBSD</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Tru64 UNIX</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">Modesto</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">OpenBSD</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">OpenVMS</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">Amiga Research OS</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">OpenVOS</td>
+</tr>
+</tbody>
+</table>
+<p>При необходимости, так же может быть указана версия ABI.</p>
+<p>В поле "Машина" указывается архитектура аппаратной платформы, для которой предназначен файл. В таблице ниже представлены некоторые из них:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Значение</th>
+<th align="left">Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">Не определено</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Intel 80386</td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left">PowerPC</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">PowerPC (64 бит)</td>
+</tr>
+<tr>
+<td align="left">62</td>
+<td align="left">x86_64</td>
+</tr>
+</tbody>
+</table>
+<p>В поле "Тип" указывается предназначение файла. В таблице ниже они приведены:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Значение</th>
+<th align="left">Описание</th>
+<th align="left">Значение поля</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left">Некорректный тип</td>
+<td align="left">---</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Перемещаемый файл (файл до линковки)</td>
+<td align="left">REL</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Исполняемый файл</td>
+<td align="left">EXEC</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Разделяемый объектный файл (библиотека)</td>
+<td align="left">DYN</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Core file</td>
+<td align="left">CORE</td>
+</tr>
+</tbody>
+</table>
+<p>(смотрите блок "Типы" этой статьи, чтобы узнать больше информации).</p>
+<h2 id="_5">Продолжение</h2>
+<p>Помимо заголовка, есть данные. Оно, в свою очередь, подразделяется ещё на несколько:
+* программные заголовки (сегменты)
+* заголовки секций/секции
+* данные</p>
+<p>О первых двух пунктах было уже говорено в пункте "Типы".</p>
+<blockquote>
+<p><strong>Для начала</strong>. Файл ELF имеет два различных «вида». Один из них предназначен для линкера и разрешает исполнение кода (сегменты). Другой предназначен для команд и данных (секции). В зависимости от цели, используется соответствующий тип заголовка. Начнём с заголовка программы, который находится в исполняемых файлах ELF.</p>
+</blockquote>
+<h2 id="_6">Продолжение про заголовки программы</h2>
+<p>ELF файл состоит из нуля и более сегментов. И описывает, как создать процесс, образ памяти для исполнения в рантайме. Когда ядро видит эти сегменты, оно размещает их в виртуальном адресном пространстве, используя системный вызов <code>mmap</code>...</p>
+<blockquote>
+<p><strong>Смотрите также:</strong></p>
+<p><code>man 2 mmap</code></p>
+</blockquote>
+<p>... Т.е., конвертирует заранее подготовленные инструкции в образ памяти. Для разделяемых библиотек (<em>shared libs</em>) процесс схож.</p>
+<p>И примеры заголовков:</p>
+<h3 id="gnu_eh_frame"><code>GNU_EH_FRAME</code></h3>
+<p>Сортированная очередь, используемая компилятором GCC. В неё хранятся обработчики исключений. Они используются для того, чтобы корректно обработать ситуацию, если что-то пошло не так.</p>
+<h3 id="gnu_stack"><code>GNU_STACK</code></h3>
+<p>Используется для сохранения информации о стеке. Он не должен быть исполняемым, так как это может быть очень небезопасным.</p>
+<p>Если сегмент <code>GNU_STACK</code> отсутствует, то используется исполняемый стек. Для того, чтобы показать детали устр-ва стека, используйте утилиты <code>scanelf</code> и <code>execstack</code>.</p>
+<blockquote>
+<p><strong>Смотрите также:</strong></p>
+<p><code>man scanelf</code></p>
+<p><code>man execstack</code></p>
+</blockquote>
+<h2 id="_7">Секции</h2>
+<p>Секции появляются в файле после преобразования компилятором GNU C кода С в ассемблер (и ассемблер GNU создаёт объекты).</p>
+<p><img alt="Sections" src="../pic/LinuxStr4/sections.png" /></p>
+<h3 id="text"><code>.text</code></h3>
+<p>Содержит исполняемый код, упакованный в сегмент с правами на чтение и исполнение (но не редактирование).</p>
+<h3 id="data"><code>.data</code></h3>
+<p>Инициализированные данные с правами на чтение и запись.</p>
+<h3 id="bss"><code>.bss</code></h3>
+<p>Неинициализированные данные с правами на чтение/запись</p>
+<h2 id="_8">Ещё немного о секциях</h2>
+<p>Также, некоторую информацию о секциях можно просмотреть, написав скрипт на Python с применением библиотеки <code>lief</code>:</p>
+<pre><code class="language-python">#!/bin/python
+import lief
+
+binary = lief.parse(&quot;simple&quot;)
+header = binary.header
+print(&quot;Entry point: %08x&quot; % header.entrypoint)
+print(&quot;Architecture: &quot;, header.machine_type)
+
+for section in binary.sections:
+    print(&quot;Section %s - size: %s bytes&quot; % (section.name, section.size))
+</code></pre>
+<p>Запуск:</p>
+<pre><code>chmod +x elf.py
+./elf.py
+</code></pre>
+<blockquote>
+<p>Название <code>elf.py</code> замените на нужное.</p>
+</blockquote>
+<p>Вывод такой:</p>
+<p><img alt="Lief" src="../pic/LinuxStr4/lief.png" /></p>
+<h2 id="_9">Смотрите также:</h2>
+<pre><code class="language-bash">man readelf
+man objdump
+man mmap
+man hexdump
+man file
+man gcc
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

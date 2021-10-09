@@ -10,6 +10,7 @@
 
 - [Исправлено #870](https://github.com/Linux4Yourself/book/issues/870)
 - [Исправлено #891](https://github.com/Linux4Yourself/book/issues/891)
+- Миграция на mkdocs
 - [Исправлено #877](https://github.com/Linux4Yourself/book/issues/877)
 - [Исправлено #863](https://github.com/Linux4Yourself/book/pull/863)
 - [Исправлено #849](https://github.com/Linux4Yourself/book/issues/849)
