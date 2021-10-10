@@ -83,5 +83,129 @@ nav:
         - gmp: build-system/gmp.md
         - mpfr: build-system/mpfr.md
         - mpc: build-system/mpc.md
+        - isl: build-system/isl.md
+        - attr: build-system/attr.md
+        - acl: build-system/acl.md
+        - libcap: build-system/libcap.md
+        - shadow: build-system/shadow.md
+        - gcc: build-system/gcc.md
+        - pkg-config: build-system/pkg-config.md
+        - ncurses: build-system/ncurses.md
+        - sed: build-system/sed.md
+        - psmisc: build-system/psmisc.md
+        - gettext: build-system/gettext.md
+        - bison: build-system/bison.md
+        - grep: build-system/grep.md
+        - bash: build-system/bash.md
+        - libtool: build-system/libtool.md
+        - gdbm: build-system/gdbm.md
+        - gperf: build-system/gperf.md
+        - expat: build-system/expat.md
+        - inetutils: build-system/inetutils.md
+        - perl: build-system/perl.md
+        - XML::Parser: build-system/xml-parser.md
+        - intltool: build-system/intltool.md
+        - autoconf: build-system/autoconf.md
+        - automake: build-system/automake.md
+        - kmod: build-system/kmod.md
+        - libelf: build-system/libelf.md
+        - libffi: build-system/libffi.md
+        - openssl: build-system/openssl.md
+        - python: build-system/python.md
+        - ninja: build-system/ninja.md
+        - meson: build-system/meson.md
+        - coreutils: build-system/coreutils.md
+        - check: build-system/check.md
+        - diffutils: build-system/diffutils.md
+        - gawk: build-system/gawk.md
+        - findutils: build-system/findutils.md
+        - groff: build-system/groff.md
+        - less: build-system/less.md
+        - gzip: build-system/gzip.md
+        - iproute2: build-system/iproute.md
+        - kbd: build-system/kbd.md
+        - libpipeline: build-system/libpipeline.md
+        - make: build-system/make.md
+        - patch: build-system/patch.md
+        - tar: build-system/tar.md
+        - man-db: build-system/mandb.md
+        - texinfo: build-system/texinfo.md
+        - popt: build-system/popt.md
+        - freetype: build-system/freetype.md
+        - dosfstools: build-system/dosfstools.md
+        - wget: build-system/wget.md
+        - libtasn1: build-system/libtasn1.md
+        - p11-kit: build-system/p11-kit.md
+        - make-ca: build-system/make-ca.md
+        - MarkupSafe: build-system/markupsafe.md
+        - Jinja2: build-system/jinja2.md
+        - Выбор текстового редактора:
+            - Введение: build-system/text-editor.md
+            - vim: build-system/vim.md
+            - emacs: build-system/emacs.md
+            - nano: build-system/nano.md
+        - Выбор системы инициализации:
+            - Введение: build-system/init-system.md
+            - SysVInit:
+                - Введение: build-system/init/sysvinit-page.md
+                - eudev: build-system/init/eudev-sysv.md
+                - procps-ng: build-system/init/procps-ng-sysv.md
+                - util-linux: build-system/init/util-linux-sysv.md
+                - sysklogd: build-system/init/sysklogd-sysv.md
+                - sysvinit: build-system/init/sysvinit.md
+                - bootscripts: build-system/init/bootscripts.md
+            - SystemD:
+                - Введение: build-system/init/systemd-page.md
+                - Создание пользователей и групп для systemd: build-system/init/systemd-users.md
+                - systemd: build-system/init/systemd.md
+                - d-bus: build-system/init/dbus-sysd.md
+                - procps-ng: build-system/init/procps-ng-sysd.md
+                - util-linux: build-system/init/util-linux-sysd.md
+        - e2fsprogs: build-system/e2fsprogs.md
+        - GRUB:
+            - Введение: build-system/boot/about-grub.md
+            - EFI:
+                - Введение: build-system/boot/efi.md
+                - efivar: build-system/boot/efivar.md
+                - efibootmgr: build-system/boot/efibootmgr.md
+                - GRUB: build-system/boot/grub-efi.md
+            - BIOS/Legacy:
+                - Введение: build-system/boot/bios.md
+                - GRUB: build-system/boot/grub-mbr.md
+        - Очистка: build-system/cleanup.md
+    - Настройка системы:
+        - Введение: setup/setup.md
+        - Создание файла /etc/fstab: setup/fstab.md
+        - Создание файла /etc/shells: setup/shells.md
+        - systemd:
+            - Настройка аппаратных часов: setup/hw-clock.md
+            - Настройка сети: setup/network-systemd.md
+        - SysVInit:
+            - Настройка SysVInit: setup/sysvinit-conf.md
+    - Настройка и установка ядра:
+        - Введение: kernel/kernel-setup-intro.md
+        - Настройка: kernel/kernel-setup.md
+        - О прошивках: kernel/about-fw.md
+    - Делаем систему загрузочной:
+        - Введение: boot/boot.md
+        - Создание загрузочной системы EFI: boot/uefi.md
+        - Создание загрузочной системы Legacy Boot MBR: boot/mbr.md
+    - Заключительная часть:
+        - Заключительная часть: final/final.md
+    - Вспомогательные материалы:
+        - Введение: additional/additional.md
+        - Строение GNU/Linux:
+            - Строение GNU/Linux. Часть 1: additional/LinuxStructure1.md
+            - Строение GNU/Linux. Часть 2: additional/LinuxStructure2.md
+            - Строение GNU/Linux. Часть 3: additional/LinuxStructure3.md
+            - Строение GNU/Linux. Часть 4: additional/LinuxStructure4.md
+        - Сборка ПО из исходного кода: additional/src-compiling.md
+        - Решение ошибок сборки: additional/error-fix.md
+        - Кросс-компилятор: additional/cross-compiler.md
+        - Виды популярных архитектур процессора: cpu-arch.md
+        - Типы разделов и каталогов: additional/partitions_catalogs.md
+        - Выбор размера файла подкачки: additional/swap.md
+        - Настройка zram: additional/zram.md
+        - О шебангах в скриптах Linux: additional/sha-bang.md
 theme: readthedocs
 lang: ru
