@@ -51,6 +51,12 @@ mkdir  build
 cd     build
 ```
 
+!> Если вы используете раздельную структуру директорий, то выполните команду ниже:
+
+```bash
+echo "rootsbindir=/usr/sbin" > configparms
+```
+
 Запустите скрипт `configure`:
 
 ```bash
@@ -92,6 +98,12 @@ make
 
 ```bash
 make DESTDIR=$LIN install
+```
+
+Исправьте жестко заданный путь к исполняемому загрузчику в скрипте ldd:
+
+```bash
+sed '/RTLDLIST=/s@/usr@@g' -i $LFS/usr/bin/ldd
 ```
 
 Завершите установку файла `limits.h`, запустив скрипт из состава GCC:
