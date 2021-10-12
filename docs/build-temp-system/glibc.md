@@ -103,7 +103,7 @@ make DESTDIR=$LIN install
 Исправьте жестко заданный путь к исполняемому загрузчику в скрипте ldd:
 
 ```bash
-sed '/RTLDLIST=/s@/usr@@g' -i $LFS/usr/bin/ldd
+sed '/RTLDLIST=/s@/usr@@g' -i $LIN/usr/bin/ldd
 ```
 
 Завершите установку файла `limits.h`, запустив скрипт из состава GCC:
