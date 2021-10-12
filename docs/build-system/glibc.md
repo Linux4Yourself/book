@@ -67,6 +67,14 @@ cd       build
 
 ## Настройка
 
+Убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
+
+```bash
+echo "rootsbindir=/usr/sbin" > configparms
+```
+
+Запустите скрипт `configure`:
+
 ```bash
 ../configure                             \
       --prefix=/usr                      \
@@ -133,6 +141,17 @@ sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
 ```bash
 make install
+```
+
+Исправьте жестко заданный путь к исполняемому загрузчику в скрипте ldd:
+
+```bash
+sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd
+```
+
+Установите нужные файлы для nscd:
+
+```bash
 cp -v ../nscd/nscd.conf /etc/nscd.conf
 mkdir -pv /var/cache/nscd
 ```
