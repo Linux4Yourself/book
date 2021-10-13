@@ -48,10 +48,10 @@ ln -sf bash /bin/sh
 pacman -S base-devel
 ```
 
-### Для Rosa
+### Для Fedora, Redhat
 
 ```bash
-urpmi bison gawk texinfo make gcc-c++
+dnf install bison gawk texinfo make gcc-c++
 ```
 
 
