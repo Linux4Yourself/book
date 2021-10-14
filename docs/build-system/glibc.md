@@ -67,7 +67,7 @@ cd       build
 
 ## Настройка
 
-Убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
+Если вы собираете систему с раздельной структурой директорий, убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
 
 ```bash
 echo "rootsbindir=/usr/sbin" > configparms
