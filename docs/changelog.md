@@ -28,13 +28,10 @@
 
 ## Обновления пакетов
 
-- tzdata-2021b
-- meson-0.59.2
-- linux-5.14.9
+- automake-1.16.5
+- bc-5.1.1
 - bison-3.8.2
 - coreutils-9.0
-- automake-1.16.4
-- bc-5.0.1
 - dbus-1.13.18
 - diffutils-3.8
 - e2fsprogs-1.46.4
@@ -43,12 +40,20 @@
 - glibc-2.34
 - grep-3.7
 - gzip-1.11
+- iana-etc-20211004 
 - inetutils-2.2
 - iproute2-5.14.0
-- libcap-2.53
+- jinja-3.0.2
+- libcap-2.58
+- linux-5.14.12
+- meson-0.59.2
+- nano-5.9
 - openssl-3.0.0
+- python-3.10
 - shadow-4.9
-- systemd-249.4
+- systemd-249.5
+- sysvinit-3.0
+- tzdata-2021c
 - util-linux-2.37.2
 - vim-8.2.3455
 - wget-1.21.2
