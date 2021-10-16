@@ -1655,7 +1655,7 @@
 	},
 	{
 		"name": "shadow",
-		"fileName": "shadow-4.9.tar.xz",
+		"fileName": "shadow-4.9.tar.gz",
 		"description": "Пакет Shadow содержит программы для работы с паролями безопасным способом.",
 		"url": "https://github.com/shadow-maint/shadow/releases/download/v4.9/shadow-4.9.tar.gz",
 		"homeUrl": "https://shadow-maint.github.io/shadow/",
@@ -1676,7 +1676,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/shadow-4.9.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/shadow-4.9.tar.gz"
 	},
 	{
 		"name": "sysklogd",

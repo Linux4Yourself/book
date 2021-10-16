@@ -9,7 +9,7 @@ c28f119f405a2304ff0a7ccdcc629713 bison-3.8.2.tar.xz
 67e051268d0c475ea773822f7500d0e5 bzip2-1.0.8.tar.gz
 50fcafcecde5a380415b12e9c574e0b2 check-0.15.2.tar.gz
 0d79ae8a6124546e3b94171375e5e5d0 coreutils-9.0.tar.xz
-b25e4fcfbfd4889bef76f7241dfa1a04 dbus-1.13.18.tar.gz
+b25e4fcfbfd4889bef76f7241dfa1a04 dbus-1.13.18.tar.xz
 68c5208c58236eba447d7d6d1326b821 dejagnu-1.6.3.tar.gz
 6a6b0fdc72acfe3f2829aab477876fbc diffutils-3.8.tar.xz
 bdd1034f33b10eebcf2aa2a9298dca33 e2fsprogs-1.46.4.tar.gz
@@ -64,7 +64,7 @@ d60613e88c2f442ebd462b5a75313d56 procps-ng-3.3.17.tar.xz
 3e7035d272680f80e3ce4e8eb492d580 Python-3.10.0.tar.xz
 e9557dd5b1409f5d7b37ef717c64518e readline-8.1.tar.gz
 6d906edfdb3202304059233f51f9a71d sed-4.8.tar.xz
-b3c150ebef96d46afd51ef244ef506c8 shadow-4.9.tar.xz
+b3c150ebef96d46afd51ef244ef506c8 shadow-4.9.tar.gz
 c70599ab0d037fde724f7210c2c8d7f8 sysklogd-1.5.1.tar.gz
 892e0fefa3c488387e5cc0cad2daa523 MarkupSafe-2.0.1.tar.gz
 059f89375d7ea60eb7013f341f0b89e7 Jinja2-3.0.2.tar.gz
