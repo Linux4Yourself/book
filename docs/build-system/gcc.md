@@ -18,10 +18,6 @@
 
 ## Подготовка
 
-Примените патч, исправляющий несколько проблем:
-
-[filename](../packages/gcc/patch ':include')
-
 Исправьте пути установки библиотек:
 
 [filename](../packages/gcc/prepare ':include')
