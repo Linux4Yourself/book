@@ -20,7 +20,7 @@ find -name \*.1 -delete
 
 ### Для multilib
 
-[filename](../packages/binutils/multi_prepare ':include')
+[filename](../packages/binutils/multi_configure ':include')
 
 ### Значения параметров
 
