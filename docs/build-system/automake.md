@@ -3,7 +3,9 @@
 ## Настройка
 
 Внесите исправление для некорректного теста:
+
 [filename](../packages/automake/prepare ':include')
+
 [filename](../packages/automake/configure ':include')
 
 ## Сборка
