@@ -18,6 +18,10 @@
 
 ## Обновления пакетов
 
+- file-5.41
+- gdbm-1.22
+- tzdata-2021d
+- iana-etc-20211012
 - bison-5.8.1
 - sysvinit-3.00
 - systemd-249.4

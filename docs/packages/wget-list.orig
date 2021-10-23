@@ -18,12 +18,12 @@ https://sourceware.org/ftp/elfutils/0.185/elfutils-0.185.tar.bz2
 https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz
 https://prdownloads.sourceforge.net/expat/expat-2.4.1.tar.xz
 https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz
-https://astron.com/pub/file/file-5.40.tar.gz
+https://astron.com/pub/file/file-5.41.tar.gz
 https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
 https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
 https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz
-https://ftp.gnu.org/gnu/gdbm/gdbm-1.21.tar.gz
+https://ftp.gnu.org/gnu/gdbm/gdbm-1.22.tar.gz
 https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.xz
 https://ftp.gnu.org/gnu/glibc/glibc-2.34.tar.xz
 https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz
@@ -32,7 +32,7 @@ https://ftp.gnu.org/gnu/grep/grep-3.7.tar.xz
 https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
 https://ftp.gnu.org/gnu/gzip/gzip-1.11.tar.xz
-https://github.com/Mic92/iana-etc/releases/download/20211004/iana-etc-20211004.tar.gz
+https://github.com/Mic92/iana-etc/releases/download/20211012/iana-etc-20211012.tar.gz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.2.tar.xz
 https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.14.0.tar.xz
@@ -45,7 +45,7 @@ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.58.t
 https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz
 https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz
 https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
-https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.14.12.tar.xz
+https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.14.14.tar.xz
 https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
 https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
 https://download.savannah.gnu.org/releases/man-db/man-db-2.9.4.tar.xz
@@ -73,7 +73,7 @@ https://download.savannah.gnu.org/releases/sysvinit/sysvinit-3.00.tar.xz
 https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz
 https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz
 https://ftp.gnu.org/gnu/texinfo/texinfo-6.8.tar.xz
-https://www.iana.org/time-zones/repository/releases/tzdata2021c.tar.gz
+https://www.iana.org/time-zones/repository/releases/tzdata2021d.tar.gz
 https://github.com/Linux4Yourself/Linux4Yourself.Udev/releases/download/0.1/udev.tar.xz
 https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz
 https://github.com/vim/vim/archive/refs/tags/v8.2.3455.tar.gz
