@@ -81,12 +81,9 @@ echo "rootsbindir=/usr/sbin" > configparms
       --disable-werror                   \
       --enable-kernel=3.2                \
       --with-headers=/usr/include        \
-      --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/usr/lib           \
+      libc_cv_slibdir=/lib           \
       libc_cv_include_x86_isa_level=no
 ```
-
-> Если вы используете раздельную структуру каталогов, то измените значение параметра `libc_cv_slibdir` на `/lib`: `libc_cv_slibdir=/lib`, и удалите параметр `--libexecdir=/usr/lib`.
 
 ### Для multilib
 
@@ -328,8 +325,7 @@ CC="gcc -m32" CXX="g++ -m32" \
       --with-headers=/usr/include        \
       --enable-multi-arch                \
       --libdir=/usr/lib32                \
-      --libexecdir=/usr/lib32            \
-      libc_cv_slibdir=/usr/lib32
+      libc_cv_slibdir=/lib32
 ```
 
 ## Сборка
