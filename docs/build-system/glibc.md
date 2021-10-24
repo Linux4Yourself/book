@@ -51,13 +51,6 @@ Glibc по умолчанию использует несоответствую�
 patch -Np1 -i ../glibc-2.33-fhs-1.patch
 ```
 
-Исправьте ошибку:
-
-```bash
-sed -e '402a\      *result = local->data.services[database_index];' \
-    -i nss/nss_database.c
-```
-
 Пакет Glibc требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
@@ -81,8 +74,7 @@ echo "rootsbindir=/usr/sbin" > configparms
       --disable-werror                   \
       --enable-kernel=3.2                \
       --with-headers=/usr/include        \
-      libc_cv_slibdir=/lib           \
-      libc_cv_include_x86_isa_level=no
+      libc_cv_slibdir=/lib           
 ```
 
 ### Для multilib
@@ -94,8 +86,6 @@ echo "rootsbindir=/usr/sbin" > configparms
 `--enable-kernel=3.2` - оптимизирует glibc для использования с ядрами новее 3.2.
 
 `--with-headers=/usr/include` - задаёт путь к заголовкам ядра.
-
-`libc_cv_include_x86_isa_level=no` - исключает возможную ошибку.
 
 ## Сборка
 
