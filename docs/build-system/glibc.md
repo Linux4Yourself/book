@@ -51,13 +51,6 @@ Glibc по умолчанию использует несоответствую�
 patch -Np1 -i ../glibc-2.33-fhs-1.patch
 ```
 
-Исправьте ошибку:
-
-```bash
-sed -e '402a\      *result = local->data.services[database_index];' \
-    -i nss/nss_database.c
-```
-
 Пакет Glibc требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
@@ -81,12 +74,8 @@ echo "rootsbindir=/usr/sbin" > configparms
       --disable-werror                   \
       --enable-kernel=3.2                \
       --with-headers=/usr/include        \
-      --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/usr/lib           \
-      libc_cv_include_x86_isa_level=no
+      libc_cv_slibdir=/lib           
 ```
-
-> Если вы используете раздельную структуру каталогов, то измените значение параметра `libc_cv_slibdir` на `/lib`: `libc_cv_slibdir=/lib`, и удалите параметр `--libexecdir=/usr/lib`.
 
 ### Для multilib
 
@@ -97,8 +86,6 @@ echo "rootsbindir=/usr/sbin" > configparms
 `--enable-kernel=3.2` - оптимизирует glibc для использования с ядрами новее 3.2.
 
 `--with-headers=/usr/include` - задаёт путь к заголовкам ядра.
-
-`libc_cv_include_x86_isa_level=no` - исключает возможную ошибку.
 
 ## Сборка
 
@@ -328,8 +315,7 @@ CC="gcc -m32" CXX="g++ -m32" \
       --with-headers=/usr/include        \
       --enable-multi-arch                \
       --libdir=/usr/lib32                \
-      --libexecdir=/usr/lib32            \
-      libc_cv_slibdir=/usr/lib32
+      libc_cv_slibdir=/lib32
 ```
 
 ## Сборка
