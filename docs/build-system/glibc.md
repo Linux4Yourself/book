@@ -221,10 +221,9 @@ localedef -i zh_TW -f UTF-8 zh_TW.UTF-8
 make localedata/install-locales
 ```
 
-Для некоторых тестов могут понадобиться следующие локали. В случае необходимости, создайте их:
+Для некоторых тестов могут понадобиться следующая локаль. В случае необходимости, создайте её:
 
 ```bash
-localedef -i POSIX -f UTF-8 C.UTF-8 2> /dev/null || true
 localedef -i ja_JP -f SHIFT_JIS ja_JP.SIJS 2> /dev/null || true
 ```
 
@@ -285,10 +284,10 @@ tzselect
 Для сохранения выбранного часового пояса выполните:
 
 ```bash
-ln -sfv /usr/share/zoneinfo/<xxx> /etc/localtime
+ln -sfv /usr/share/zoneinfo/< xxx> /etc/localtime
 ```
 
-Где `<xxx>` - путь к вашему часовому поясу.
+Где `< xxx>` - путь к вашему часовому поясу.
 
 ### ld.so.conf
 
