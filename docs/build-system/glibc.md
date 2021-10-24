@@ -214,11 +214,18 @@ localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 localedef -i zh_TW -f UTF-8 zh_TW.UTF-8
 ```
 
-вы можете установить все локали, которые содержатся в файле `{{ package.fileName }}/localedata/SUPPORTED`.
+Вы можете установить все локали, которые содержатся в файле `{{ package.fileName }}/localedata/SUPPORTED`.
 Выполните следующую команду:
 
 ```bash
 make localedata/install-locales
+```
+
+Для некоторых тестов можгут понадобиться следующие локали:
+
+```bash
+localedef -i POSIX -f UTF-8 C.UTF-8 2> /dev/null || true
+localedef -i ja_JP -f SHIFT_JIS ja_JP.SIJS 2> /dev/null || true
 ```
 
 ## Настройка
