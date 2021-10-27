@@ -1097,14 +1097,14 @@
 	},
 	{
 		"name": "libcap",
-		"fileName": "libcap-2.58.tar.xz",
+		"fileName": "libcap-2.60.tar.xz",
 		"description": "Пакет Libcap реализует интерфейсы пользовательского пространства для возможностей POSIX 1003.1 e, доступных в ядрах Linux. Эти возможности представляют собой разделение привилегий All powerful root на набор различных привилегий.",
-		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.58.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.60.tar.xz",
 		"homeUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
-		"version": "2.58",
+		"version": "2.60",
 		"releasesUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
 		"priority": "important",
-		"md5": "09b7b62c7b69f9a58098efa7b1d34f64",
+		"md5": "1eaaf6af4e0ebd638cd876644c8c68c4",
 		"size": "0.16",
 		"installedSize": 0.19,
 		"sbu": 0,
@@ -1121,7 +1121,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.58.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.60.tar.xz"
 	},
 	{
 		"name": "libffi",
@@ -1310,15 +1310,15 @@
 	},
 	{
 		"name": "meson",
-		"fileName": "meson-0.59.2.tar.gz",
+		"fileName": "meson-0.60.0.tar.gz",
 		"description": "Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.",
-		"url": "https://github.com/mesonbuild/meson/releases/download/0.59.2/meson-0.59.2.tar.gz",
+		"url": "https://github.com/mesonbuild/meson/releases/download/0.60.0/meson-0.60.0.tar.gz",
 		"homeUrl": "https://mesonbuild.com",
-		"version": "0.59.2",
+		"version": "0.60.0",
 		"releasesUrl": "https://github.com/mesonbuild/meson/releases/",
 		"priority": "important",
-		"md5": "9d65e09b53b1dfab6339a0982176935d",
-		"size": "1.86",
+		"md5": "a810ef49822de717d579413d30629648",
+		"size": "1.90",
 		"installedSize": 5.3,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -1328,7 +1328,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.59.2.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.60.0.tar.gz"
 	},
 	{
 		"name": "mpc",
@@ -1942,15 +1942,15 @@
 	},
 	{
 		"name": "vim",
-		"fileName": "vim-8.2.3455.tar.gz",
+		"fileName": "vim-8.2.3565.tar.gz",
 		"description": "Один из мощнейших текстовых редакторов с полной свободой настройки и автоматизации, возможными благодаря расширениям и надстройкам.",
-		"url": "https://github.com/vim/vim/archive/refs/tags/v8.2.3455.tar.gz",
+		"url": "https://github.com/vim/vim/archive/refs/tags/v8.2.3565.tar.gz",
 		"homeUrl": "https://www.vim.org/",
-		"version": "8.2.3455",
+		"version": "8.2.3565",
 		"releasesUrl": "https://github.com/vim/vim/releases",
 		"priority": "optional",
-		"md5": "663a47d7c14bcdc9db4b6438d0dbd1b9",
-		"size": "15.00",
+		"md5": "79feec1ac9c4d1b65968247aca16475e",
+		"size": "15.04",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 2.1,
@@ -1963,7 +1963,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.3455.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.3565.tar.gz"
 	},
 	{
 		"name": "nano",
@@ -2292,18 +2292,18 @@
 	},
 	{
 		"name": "make-ca",
-		"fileName": "make-ca-1.7.tar.xz",
+		"fileName": "make-ca-1.9.tar.xz",
 		"description": "Утилита для доставки и управления полной конфигурацией PKI, использующие только стандартные утилиты Unix, OpenSSL и p11-kit, используя в качестве источника доверия файл Mozilla cacerts.txt или аналогичный.",
-		"url": "https://github.com/djlucas/make-ca/releases/download/v1.7/make-ca-1.7.tar.xz",
-		"homeUrl": "https://github.com/djlucas/make-ca",
-		"version": "1.7",
+		"url": "https://github.com/lfs-book/make-ca/releases/download/v1.9/make-ca-1.9.tar.xz",
+		"homeUrl": "https://github.com/lfs-book/make-ca/",
+		"version": "1.9",
 		"priority": "optional",
-		"md5": "e0356f5ae5623f227a3f69b5e8848ec6",
+		"md5": "68c8625c9456815ed17e4f2219c79372",
 		"size": "0.03",
 		"installedSize": "0",
 		"sbu": "0",
 		"sbu2": 0.2,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/make-ca-1.7.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/make-ca-1.9.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
 			"install",

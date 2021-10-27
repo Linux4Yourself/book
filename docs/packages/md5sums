@@ -41,7 +41,7 @@ fae030f604a9537adc2502990a8ab4d1 isl-0.24.tar.xz
 e81e63acd80697d001c8d85c1acb38a0 kmod-29.tar.xz
 f029087448357812fba450091a1172ab less-590.tar.gz
 4f2a2b6159a437d1e89961b0231eaab0 bootscripts.tar.xz
-09b7b62c7b69f9a58098efa7b1d34f64 libcap-2.58.tar.xz
+1eaaf6af4e0ebd638cd876644c8c68c4 libcap-2.60.tar.xz
 294b921e6cf9ab0fbaea4b639f8fdbe8 libffi-3.4.2.tar.gz
 dad443d0911cf9f0f1bd90a334bc9004 libpipeline-1.5.3.tar.gz
 1bfb9b923f2c1339b4d2ce1807064aa5 libtool-2.4.6.tar.xz
@@ -50,7 +50,7 @@ dad443d0911cf9f0f1bd90a334bc9004 libpipeline-1.5.3.tar.gz
 fc7a67ea86ace13195b0bce683fd4469 make-4.3.tar.gz
 6e233a555f7b9ae91ce7cd0faa322bce man-db-2.9.4.tar.xz
 3ac24e8c6fae26b801cb87ceb63c0a30 man-pages-5.13.tar.xz
-9d65e09b53b1dfab6339a0982176935d meson-0.59.2.tar.gz
+a810ef49822de717d579413d30629648 meson-0.60.0.tar.gz
 9f16c976c25bb0f76b50be749cd7a3a8 mpc-1.2.1.tar.gz
 bdd3d5efba9c17da8d83a35ec552baef mpfr-4.1.0.tar.xz
 e812da327b1c2214ac1aed440ea3ae8d ncurses-6.2.tar.gz
@@ -76,7 +76,7 @@ a91b404e30561a5df803e6eb3a53be71 texinfo-6.8.tar.xz
 b68bf6c432102bea49fac1c6025e58c7 tzdata2021d.tar.gz
 227cc8ccdd95487804ce1ca7dd817b5a udev.tar.xz
 d659bf7cd417d93dc609872f6334b019 util-linux-2.37.2.tar.xz
-663a47d7c14bcdc9db4b6438d0dbd1b9 vim-8.2.3455.tar.gz
+79feec1ac9c4d1b65968247aca16475e vim-8.2.3565.tar.gz
 24b67a7a2e731d3a5ec6d154b4521d08 nano-5.9.tar.xz
 80bb18a8e6240fcf7ec2f7b57601c170 XML-Parser-2.46.tar.gz
 aa1621ec7013a19abab52a8aff04fe5b xz-5.2.5.tar.xz
@@ -90,7 +90,7 @@ f931582653774e310ed3a7e49b7167a3 freetype-2.11.0.tar.xz
 6321d4c2b820394cf2392985d8f8c563 wget-1.21.2.tar.gz
 c46f6eb3bd1287031ae5d36465094402 libtasn1-4.17.0.tar.gz
 8ccf11c4a2e2e505b8e516d8549e64a5 p11-kit-0.24.0.tar.xz
-e0356f5ae5623f227a3f69b5e8848ec6 make-ca-1.7.tar.xz
+68c8625c9456815ed17e4f2219c79372 make-ca-1.9.tar.xz
 b45d3bea4ddb7f64b6e56033ecc0fb11 bzip2-1.0.8-install_docs-1.patch
 cd8ebed2a67fff2e231026df91af6776 coreutils-8.32-i18n-1.patch
 9a5997c3452909b1769918c759eff8a2 glibc-2.33-fhs-1.patch

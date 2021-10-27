@@ -47,9 +47,9 @@
 - inetutils-2.2
 - iproute2-5.14.0
 - jinja-3.0.2
-- libcap-2.58
+- libcap-2.60
 - linux-5.14.12
-- meson-0.59.2
+- meson-0.60.0
 - nano-5.9
 - openssl-3.0.0
 - python-3.10
@@ -58,7 +58,7 @@
 - sysvinit-3.0
 - tzdata-2021c
 - util-linux-2.37.2
-- vim-8.2.3455
+- vim-8.2.3565
 - wget-1.21.2
 - zlib-ng-2.0.5
 

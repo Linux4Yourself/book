@@ -41,7 +41,7 @@ kbd-2.4.0.tar.xz
 kmod-29.tar.xz
 less-590.tar.gz
 bootscripts.tar.xz
-libcap-2.58.tar.xz
+libcap-2.60.tar.xz
 libffi-3.4.2.tar.gz
 libpipeline-1.5.3.tar.gz
 libtool-2.4.6.tar.xz
@@ -50,7 +50,7 @@ m4-1.4.19.tar.xz
 make-4.3.tar.gz
 man-db-2.9.4.tar.xz
 man-pages-5.13.tar.xz
-meson-0.59.2.tar.gz
+meson-0.60.0.tar.gz
 mpc-1.2.1.tar.gz
 mpfr-4.1.0.tar.xz
 ncurses-6.2.tar.gz
@@ -76,7 +76,7 @@ texinfo-6.8.tar.xz
 tzdata2021d.tar.gz
 udev.tar.xz
 util-linux-2.37.2.tar.xz
-vim-8.2.3455.tar.gz
+vim-8.2.3565.tar.gz
 nano-5.9.tar.xz
 XML-Parser-2.46.tar.gz
 xz-5.2.5.tar.xz
@@ -90,7 +90,7 @@ dosfstools-4.2.tar.gz
 wget-1.21.2.tar.gz
 libtasn1-4.17.0.tar.gz
 p11-kit-0.24.0.tar.xz
-make-ca-1.7.tar.xz
+make-ca-1.9.tar.xz
 bzip2-1.0.8-install_docs-1.patch
 coreutils-8.32-i18n-1.patch
 glibc-2.33-fhs-1.patch
