@@ -24,7 +24,7 @@
 
 ### Очистка
 
-[filename](../../packages/util-linux/multi-prepare ':include')
+[filename](../../packages/util-linux/multi_prepare ':include')
 
 ### Настройка
 
