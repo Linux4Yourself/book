@@ -20,18 +20,20 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - toc.integrate
+    - navigation.top
   palette:
     - scheme: default
       primary: black
       accent: blue
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/eye-outline
         name: Переключиться в тёмный режим
     - scheme: slate
       primary: black
       accent: blue
       toggle:
-        icon: material/toggle-switch
+        icon: material/eye
         name: Переключиться в светлый режим
   font:
     text: 'Open Sans'
@@ -45,7 +47,7 @@ extra:
       link: 'https://t.me/Linux4Yourself'
 
 extra_javascript:
-  - js/config.js
+  - https://raw.githubusercontent.com/Linux4Yourself/book/feature/mkdocs/js/config.js
 
 markdown_extensions:
   - admonition
@@ -53,7 +55,6 @@ markdown_extensions:
   - def_list
   - md_in_html
   - codehilite
-  - admonition
   - meta
   - attr_list
   - footnotes
