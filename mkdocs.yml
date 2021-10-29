@@ -84,6 +84,7 @@ markdown_extensions:
       linenums_style: pymdownx-inline
 
 plugins:
+  - with-pdf
   - search
   
 nav:
