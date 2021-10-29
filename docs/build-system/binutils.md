@@ -43,7 +43,9 @@ find -name \*.1 -delete
 [filename](../packages/binutils/test ':include')
 <package-script :package="'binutils'" :type="'test'"></package-script>
 
-?> Известно, что четыре теста с меткой `Run property ...` могут дать сбои.
+???+ warning
+	
+	Известно, что четыре теста с меткой `Run property ...` могут дать сбои.
 
 ## Установка
 

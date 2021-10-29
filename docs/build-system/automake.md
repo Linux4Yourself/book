@@ -14,7 +14,9 @@
 
 [filename](../packages/automake/test ':include')
 
-?> Известно, что тесты `t/subobj.sh`, `t/deprecated-acinit.sh` и `t/init.sh` не проходят в LX4.
+???+ warning
+	
+	Известно, что тесты `t/subobj.sh`, `t/deprecated-acinit.sh` и `t/init.sh` не проходят в LX4.
 
 ## Установка
 

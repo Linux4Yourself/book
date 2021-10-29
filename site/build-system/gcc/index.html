@@ -4205,7 +4205,8 @@
 <p>Исправьте пути установки библиотек:</p>
 <p><a href="../packages/gcc/prepare" title=":include">filename</a></p>
 <h2 id="_2">Настройка<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>?&gt; На данном этапе необходимы только компиляторы для C и C++, однако вы можете собрать компиляторы для любых поддерживаемых GCC языков программирования, перечислив их через запятые в опции configure <code>--enable-languages=c,c++</code>. GCC поддерживает следующие языки - <code>c,c++,d,fortran,go,objc,obj-c++</code>. вы можете собрать все доступные компиляторы, добавив параметр <code>--enable-languages=c,c++,d,fortran,go,objc,obj-c++</code>. Если позднее вам потребуется компилятор для какого либо языка из этого списка - пересоберите GCC с его поддержкой.</p>
+<details class="note" open="open"><summary>Note</summary><p>На данном этапе необходимы только компиляторы для C и C++, однако вы можете собрать компиляторы для любых поддерживаемых GCC языков программирования, перечислив их через запятые в опции configure <code>--enable-languages=c,c++</code>. GCC поддерживает следующие языки - <code>c,c++,d,fortran,go,objc,obj-c++</code>. вы можете собрать все доступные компиляторы, добавив параметр <code>--enable-languages=c,c++,d,fortran,go,objc,obj-c++</code>. Если позднее вам потребуется компилятор для какого либо языка из этого списка - пересоберите GCC с его поддержкой.</p>
+</details>
 <p><a href="../packages/gcc/configure" title=":include">filename</a></p>
 <h3 id="multilib">Для multilib<a class="headerlink" href="#multilib" title="Permanent link">&para;</a></h3>
 <p><a href="../packages/gcc/multi_configure" title=":include">filename</a></p>
@@ -4242,6 +4243,8 @@
 <li>Замените <code>ln -svr /usr/bin/cpp /usr/lib</code> из предыдущей команды на корректную для раздельной структуры.</li>
 </ul>
 <h2 id="_8">Проверка работоспособности<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<details class="danger" open="open"><summary>Danger</summary><p>Сейчас необходимо проверить работу <code>gcc</code>. Если всё нормально, то продолжайте сборку.</p>
+</details>
 <p>Выполните набор команд:</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="nb">echo</span> <span class="s1">&#39;int main(){}&#39;</span> &gt; dummy.c
 <span class="linenos" data-linenos="2 "></span>cc dummy.c -v -Wl,--verbose <span class="p">&amp;</span>&gt; dummy.log
@@ -4293,7 +4296,8 @@
 <p>Результат выполнения должен быть (учитывая различия в имени динамического компоновщика, зависящие от платформы):
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>found ld-linux-x86-64.so.2 at /usr/lib/ld-linux-x86-64.so.2
 </code></pre></div></p>
-<p>!&gt; Если вывод не соответствует вышеуказанному, или вообще не получен, значит, что-то не так. Изучите и повторите шаги, чтобы выяснить, в чем проблема. Перед продолжением процесса необходимо решить любые проблемы.</p>
+<details class="warning" open="open"><summary>Warning</summary><p>Если вывод не соответствует вышеуказанному, или вообще не получен, значит, что-то не так. Изучите и повторите шаги, чтобы выяснить, в чем проблема. Перед продолжением процесса необходимо решить любые проблемы.</p>
+</details>
 <p>Удалите тестовые файлы:</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>rm -v dummy.c a.out dummy.log
 </code></pre></div>
