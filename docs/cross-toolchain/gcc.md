@@ -61,7 +61,9 @@ tar -xf ../{{ isl.fileName }}
 mv -v {{ isl.name }}-{{ isl.version }} {{ isl.name }}
 </pre>
 
-!> Обратите внимание, что распаковка указанных пакетов должна производиться из каталога пакета GCC.
+???+ warning
+
+	Обратите внимание, что распаковка указанных пакетов должна производиться из каталога пакета GCC.
 
 Смените пути установки библиотек:
 
@@ -105,7 +107,7 @@ cd       build
 
 ### Для multilib
 
-замените параметр `--disable-multilib` на `--enable-multilib --with-multilib-list=m64,m32`
+Замените параметр `--disable-multilib` на `--enable-multilib --with-multilib-list=m64,m32`
 
 ### Значения параметров
 

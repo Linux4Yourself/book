@@ -1458,8 +1458,10 @@
 <p>А также символическую ссылку на неё:</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>ln -sv usr/lib32 <span class="nv">$LIN</span>/lib32
 </code></pre></div>
-<p>?&gt; В случае если вы используете классическую иерархию каталогов, разделение /lib32 и /usr/lib32 не имеет смысла так как 32-битные библиотеки не требуются для запуска системы.</p>
-<p>?&gt; Обратите внимание, что указанная символическая ссылка правильная. Если указать <code>$LIN/usr/lib32</code>, то при входе в среду <code>chroot</code>, ссылка будет некорректная.</p>
+<details class="tip" open="open"><summary>Tip</summary><p>В случае если вы используете классическую иерархию каталогов, разделение /lib32 и /usr/lib32 не имеет смысла так как 32-битные библиотеки не требуются для запуска системы.</p>
+</details>
+<details class="warning" open="open"><summary>Warning</summary><p>Обратите внимание, что указанная символическая ссылка правильная. Если указать <code>$LIN/usr/lib32</code>, то при входе в среду <code>chroot</code>, ссылка будет некорректная.</p>
+</details>
 <script>
     new Vue({ el: '#main' })
 </script>

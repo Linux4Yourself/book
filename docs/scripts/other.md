@@ -12,6 +12,8 @@ fi
 
 # End ~/.bash_profile
 EOF
+
+
 cat > ~/.profile << "EOF"
 # Begin ~/.profile
 # Personal environment variables and startup programs.
