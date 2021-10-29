@@ -15,6 +15,6 @@ Lx4U или “Linux для себя” - русскоязычное подро�
 ## Запустите руководство локально:
 
 ```bash
-pip install mkdocs
+pip install mkdocs-material mkdocs
 mkdocs build && mkdocs serve
 ```
