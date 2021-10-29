@@ -1,1108 +1,1113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/_404/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/_navbar/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/_sidebar/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/changelog/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/LinuxStructure1/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/LinuxStructure2/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/LinuxStructure3/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/LinuxStructure4/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/additional/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/cpu-arch/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/cross-compiler/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/error-fix/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/partitions_calalogs/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/sha-bang/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/src-compiling/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/swap/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/zram/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/additional/pic/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/boot/boot/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/boot/mbr/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/boot/uefi/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/acl/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/attr/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/autoconf/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/automake/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/bash/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/bc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/binutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/bison/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/build-system/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/bz2/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/check/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/cleanup/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/coreutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/dejagnu/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/diffutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/dosfstools/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/e2fsprogs/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/emacs/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/expat/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/expect/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/file/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/findutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/flex/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/freetype/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/gawk/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/gcc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/gdbm/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/gettext/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/glibc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/gmp/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/gperf/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/grep/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/groff/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/gzip/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/iana-etc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/inetutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init-system/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/intltool/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/iproute/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/isl/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/jinja2/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/kbd/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/kmod/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/less/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/libcap/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/libelf/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/libffi/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/libpipeline/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/libtasn1/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/libtool/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/linux-headers/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/m4/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/make-ca/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/make/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/man-pages/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/mandb/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/markupsafe/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/meson/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/mpc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/mpfr/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/nano/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/ncurses/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/ninja/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/openssl/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/p11-kit/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/patch/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/perl/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/pkg-config/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/popt/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/psmisc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/python/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/readline/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/sed/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/set-profile/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/shadow/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/tar/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/tcl/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/texinfo/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/text-editor/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/vim/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/wget/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/xml-parser/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/xz/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/zlib/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/zstd/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/boot/about-grub/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/boot/bios/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/boot/efi/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/boot/efibootmgr/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/boot/efivar/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/boot/grub-efi/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/boot/grub-mbr/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/bootscripts/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/dbus-sysd/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/eudev-sysv/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/procps-ng-sysd/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/procps-ng-sysv/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/sysklogd-sysv/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/systemd-page/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/systemd-users/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/systemd/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/sysvinit-page/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/sysvinit/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/util-linux-sysd/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-system/init/util-linux-sysv/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/bash/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/binutils-p2/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/bison/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/change-owner/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/cleanup/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/coreutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/create-files/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/diffutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/enter-in-chroot/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/file/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/findutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/gawk/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/gcc-p2/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/gettext/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/glibc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/grep/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/gzip/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/libstdc-p2/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/libstdc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/m4/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/make/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/ncurses/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/patch/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/perl/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/python/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/sed/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/tar/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/tempsystem/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/texinfo/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/util-linux/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/build-temp-system/xz/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/cross-toolchain/binutils/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/cross-toolchain/cross-toolchain/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/cross-toolchain/gcc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/embeded/fs/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/embeded/introduction/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/embeded/prepare/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/final/final/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/kernel/about-fw/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/kernel/kernel-setup-intro/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/kernel/kernel-setup/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/misc/_template-package/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/packages/_dummy/_README/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/about-priority/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/about-sbu/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/about-tests/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/about-threads/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/add-user/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/arch/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/create-dirs/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/create-partition/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/download/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/general-build-instruction/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/mount-partition/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/requrements/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/set-env/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prepare/set-lin/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prologue/before-start/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prologue/benefits/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prologue/changelog/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prologue/foreword/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prologue/from-authors/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prologue/inaccuracies/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prologue/packages/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/prologue/typography/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/bashrc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/chroot-exit/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/chroot/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/classic-file-system/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/completion/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/dircolors/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/etc-inputrc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/file-system/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/fstab/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/inputrc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/mkinitramfs/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/mkiso/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/modprobe/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/other/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/profile/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/systemd-users/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/umask/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/scripts/version-check/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/setup/fstab/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/setup/hw-clock/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/setup/inputrc/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/setup/network-systemd/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/setup/setup/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/setup/shells/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/setup/sysvinit-conf/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/shared/exit-chroot/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/shared/systemd-extra-warn/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/shared/test-pkgs/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2021-10-10</lastmod>
+         <loc>https://lx4u.ru/mkdocs/test/alert-wrapper/</loc>
+         <lastmod>2021-10-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lx4u.ru/mkdocs/test/pkg/</loc>
+         <lastmod>2021-10-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

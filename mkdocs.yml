@@ -1,4 +1,91 @@
 site_name: Linux для себя
+site_description: 'Книга обеспечит вас необходимыми знаниями чтобы создать свою собственную Linux систему с нуля.'
+site_url: https://lx4u.ru/mkdocs/#
+
+repo_name: book
+repo_url: https://github.com/Linux4Yourself/book
+edit_url: edit/develop/docs/
+
+theme:
+  name: 'material'
+  logo: https://raw.githubusercontent.com/Linux4Yourself/design/main/logo/logo.svg
+  language: ru
+  include_sidebar: true
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    #- header.autohide
+    - navigation.expand
+    - navigation.indexes
+    #- navigation.tabs.sticky
+    #- navigation.top
+    #- navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Переключиться в тёмный режим
+    - scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Переключиться в светлый режим
+  font:
+    text: 'Open Sans'
+    code: 'Droid Sans Mono'
+
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/Linux4Yourself/book'
+    - icon: 'fontawesome/brands/telegram'
+      link: 'https://t.me/Linux4Yourself'
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - def_list
+  - md_in_html
+  - codehilite
+  - admonition
+  - meta
+  - attr_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - markdown.extensions.tables
+  - pymdownx.arithmatex
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      provider: "github"
+      user: "facelessuser"
+      repo: "pymdown-extensions"
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx-inline
+
+plugins:
+  - search
+  
 nav:
     - Linux для себя: index.md
     - Журнал изменений: changelog.md
@@ -207,5 +294,4 @@ nav:
         - Выбор размера файла подкачки: additional/swap.md
         - Настройка zram: additional/zram.md
         - О шебангах в скриптах Linux: additional/sha-bang.md
-theme: readthedocs
 lang: ru
