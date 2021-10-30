@@ -1,3 +1,0 @@
-for target in depmod insmod lsmod modinfo modprobe rmmod; do
-  ln -sfv kmod /usr/bin/$target
-done

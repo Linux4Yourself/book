@@ -1,1 +1,0 @@
-sed -i '/install -m.*STA/d' libcap/Makefile

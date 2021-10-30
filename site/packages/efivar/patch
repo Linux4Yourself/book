@@ -1,1 +1,0 @@
-patch -Np1 -i ../efivar-37-gcc_9-1.patch

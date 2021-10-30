@@ -1,3 +1,0 @@
-./configure --prefix=/usr                \
-            --disable-debuginfod         \
-            --enable-libdebuginfod=dummy

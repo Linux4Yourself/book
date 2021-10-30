@@ -1,1 +1,0 @@
-make tooldir=/usr install -j1

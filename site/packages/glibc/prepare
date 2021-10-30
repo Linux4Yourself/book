@@ -1,2 +1,0 @@
-sed -e '402a\      *result = local->data.services[database_index];' \
-    -i nss/nss_database.c

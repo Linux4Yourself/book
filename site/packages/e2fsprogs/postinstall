@@ -1,2 +1,0 @@
-gunzip -v /usr/share/info/libext2fs.info.gz
-install-info --dir-file=/usr/share/info/dir /usr/share/info/libext2fs.info

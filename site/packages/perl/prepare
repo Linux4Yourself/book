@@ -1,2 +1,0 @@
-export BUILD_ZLIB=False
-export BUILD_BZIP2=0

@@ -1,3 +1,0 @@
-./configure --prefix=/usr     \
-            --sysconfdir=/etc \
-            --enable-utf8     

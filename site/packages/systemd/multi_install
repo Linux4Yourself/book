@@ -1,3 +1,0 @@
-DESTDIR=$PWD/DESTDIR ninja install
-cp -Rv DESTDIR/usr/lib32/* /usr/lib32
-rm -rf DESTDIR

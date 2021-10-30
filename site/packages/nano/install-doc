@@ -1,1 +1,0 @@
-install -v -m644 doc/{nano.html,sample.nanorc} /usr/share/doc/nano

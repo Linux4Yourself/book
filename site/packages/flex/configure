@@ -1,3 +1,0 @@
-./configure --prefix=/usr \
-            --docdir=/usr/share/doc/flex \
-            --disable-static

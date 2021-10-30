@@ -1,1 +1,0 @@
-sed -i '/@\tincremental_copy/d' gold/testsuite/Makefile.in
