@@ -16,7 +16,9 @@
 
 [filename](../packages/inetutils/test ':include')
 
-?> Тест `libls.sh` даёт сбой, когда система LX4 находится в среде chroot, а тест `ping-localhost.sh` не проходит, если в хост-системе нет поддержки IPv6.
+???+ warning
+
+    Тест `libls.sh` даёт сбой, когда система LX4 находится в среде chroot, а тест `ping-localhost.sh` не проходит, если в хост-системе нет поддержки IPv6.
 
 ## Установка
 

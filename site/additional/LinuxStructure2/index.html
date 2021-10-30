@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://lx4u.ru/mkdocs/additional/LinuxStructure2/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.5">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cdeb8541.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -116,7 +116,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Переключиться в тёмный режим"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Переключиться в тёмный режим" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0 9.821 9.821 0 0 0-17.64 0z"/></svg>
             </label>
           
         
@@ -125,7 +125,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Переключиться в светлый режим"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Переключиться в светлый режим" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/></svg>
             </label>
           
         
@@ -4130,7 +4130,7 @@
                   </a>
                 
                 
-                <h1 id="linux-2">Строение Linux - часть 2. Принцип "всё есть файл", виды файлов.<a class="headerlink" href="#linux-2" title="Permanent link">&para;</a></h1>
+                <h1 id="linux-2">Строение Linux - часть 2. Принцип "всё есть файл", виды файлов.<a class="headerlink" href="#linux-2" title="Permanent link">⚓︎</a></h1>
 <p>В первой части статьи речь была об общем строении системы. Так сказать, галопом по европам. А в следующих частях строение Linux будет описано подробнее. Каждая статья описывает только одну тему.</p>
 <p>Для начала стоит написать о концепции "всё есть файл". Концепция была перенята разработчиками Linux из Unix. Это было сделано для предоставления простого доступа ко всем возможностям ОС, не разрабатывая отдельных костылей. Т.е., преимущество такого принципа в том, что не надо реализовывать отдельный API для каждого устр-ва, в результате чего с ним (с файлом) могут работать все стандартные программы и API-интерфейсы. В Linux есть <code>корневая ФС</code> (корневая файловая система), куда монтируются раздел жёсткого диска, где установлена система, другие разделы, флешки, диски, псевдо-ФС и пр. Посмотрите на файл <code>/etc/os-release</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>file /etc/os-release
@@ -4147,7 +4147,7 @@
 <p>В этом файле находятся двоичные данные, поэтому открыть его в каком-то текстовом редакторе бесмыссленно.</p>
 <p>Однако, самое главное достоинство Linux в том, что и в обычном файле можно создать файловую систему заместо содержимого файла. Например, тот же файл подкачки <code>/swapfile</code>. Это файл, но с ФС <code>swap</code>.</p>
 <p>Все конфиги, находящиеся в директориях <code>/etc</code>, <code>~/.local</code>, <code>~/.config</code> - тоже файлы.</p>
-<h2 id="_1">Типы файлов<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">Типы файлов<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <p>Есть 3 типа файлов:</p>
 <ul>
 <li><strong>Обыкновенные</strong>, которые используются для хранения информации;</li>
@@ -4160,7 +4160,7 @@
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>ls -l /etc <span class="p">|</span>grep <span class="s2">&quot;^-&quot;</span>
 </code></pre></div>
 <p><img alt="Обычные файлы" src="../pic/file1.png" /></p>
-<h3 id="_2">Значение команды<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="_2">Значение команды<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><code>ls</code> - просматривает каталог, а ключ <code>-l</code> добавляет отображение прав на файл. <code>/etc</code> замените на нужную директорию.</li>
 <li><code>grep "^-"</code> - так как "обычные" файлы обозначаются чертой (в первой колонке вывода <code>ls</code>, где отображаются права на файл), то эта команда выведет только эти файлы по маске <code>^-</code>.</li>
@@ -4181,8 +4181,8 @@
 <p><strong>Туннели</strong> (каналы/именованные каналы) - очень похожи на туннели из <code>Shell</code>, но разница в том, что именованные каналы имеют название. Они очень редки. Обозначены символом <code>p</code>.</p>
 </li>
 </ul>
-<h2 id="_3">Информация о файлах<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="lsof">LSOF<a class="headerlink" href="#lsof" title="Permanent link">&para;</a></h3>
+<h2 id="_3">Информация о файлах<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<h3 id="lsof">LSOF<a class="headerlink" href="#lsof" title="Permanent link">⚓︎</a></h3>
 <p>Список всех открытых файлов можно просмотреть с помощью команды <code>lsof</code> - ListOpenFiles. Эта информация поможет узнать о многом происходящем в системе, об устройстве и работе Linux, а также решить проблемы, например, когда вы не можете размонтировать диск из-за того, что устройство используется, но вы не можете найти, какой именно программой.</p>
 <p><img alt="lsof" src="../pic/lsof.png" /></p>
 <p>Вывод <code>lsof</code> состоит из нескольких колонок с информацией:</p>
@@ -4199,7 +4199,7 @@
 <li><code>NODE</code> - показывает номер узла локального файла или номер узла NFS-файла на хосте сервера или тип интернет-протокола. Может отображаться STR для потока, IRQ или номер инода устройства с сокетом Linux AX.25;</li>
 <li><code>NAME</code> - имя точки монтирования и файловой системы, в которой находится файл;</li>
 </ul>
-<h3 id="lsof_1">Опции lsof<a class="headerlink" href="#lsof_1" title="Permanent link">&para;</a></h3>
+<h3 id="lsof_1">Опции lsof<a class="headerlink" href="#lsof_1" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><code>-u</code> - список файлов, открытых конкретным пользователем. Например, список открытых фалов пользователем <code>liveuser</code>:</li>
 </ul>
@@ -4236,6 +4236,11 @@
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
         
       </main>
       
@@ -4320,12 +4325,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "navigation.top"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
-        <script src="../../js/config.js"></script>
+        <script src="https://raw.githubusercontent.com/Linux4Yourself/book/feature/mkdocs/js/config.js"></script>
       
     
   </body>

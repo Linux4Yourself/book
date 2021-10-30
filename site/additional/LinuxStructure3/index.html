@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://lx4u.ru/mkdocs/additional/LinuxStructure3/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.5">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cdeb8541.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -116,7 +116,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Переключиться в тёмный режим"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Переключиться в тёмный режим" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0 9.821 9.821 0 0 0-17.64 0z"/></svg>
             </label>
           
         
@@ -125,7 +125,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Переключиться в светлый режим"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Переключиться в светлый режим" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/></svg>
             </label>
           
         
@@ -4390,11 +4390,11 @@
                   </a>
                 
                 
-                <h1 id="linux-3">Строение Linux - часть 3. Права доступа.<a class="headerlink" href="#linux-3" title="Permanent link">&para;</a></h1>
+                <h1 id="linux-3">Строение Linux - часть 3. Права доступа.<a class="headerlink" href="#linux-3" title="Permanent link">⚓︎</a></h1>
 <p>Во второй части речь была про концепцию "всё есть файл" и типы файлов, поэтому в этой части статьи будет рассказано про права доступа к файлам.</p>
-<h2 id="_1">История<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">История<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <p>В отличии от DOS и подобных систем, Unix проектировался как многопользовательская ОС. Поэтому в Unix должна быть хорошая система управления доступа к файлам. А Linux - <em>Unix-подобное</em> ядро, поэтому и управление доступом было взято именно из Unix.</p>
-<h2 id="_2">Теория<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">Теория<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <p>Чтобы получить доступ к определённому файлу в Linux, используются разрешения, которые назначаются трём объектам: <em>файлу</em>, <em>группе</em> и другому объекту (т.е. всем остальным). Но перед этим нужно знать про владельца файла (директории не упоминаются специально, так как это тоже файл - концепция "Всё есть файл" в UNIX-подобных/образных).</p>
 <p>В Linux у каждого файла есть два владельца: пользователь и группа. Они устанавливаются при создании файла. Каждый файл имеет три категории пользователей, для которых можно устанавливать различные сочетания прав доступа:
 * <strong>Владелец</strong> - набор прав для владельца файла - пользователя, который создал его или сейчас установлен его владельцем. Обычно владелец имеет все права: <code>чтение</code>, <code>запись</code> и <code>исполнение</code>
@@ -4417,12 +4417,12 @@
 </code></pre></div></p>
 <p><code>FILE</code> замените на нужный файл.</p>
 <p><img alt="ls" src="../pic/LinuxStr3/LinuxStr1.png" /></p>
-<h2 id="_3">Изменение владельца файла<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">Изменение владельца файла<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
 <p>Иногда нужно изменить владельца файла. Например, я это часто делал при компиляции LFS. Особенно при выполнении некоторых тестов сборки пакетов, которые выполнять от имени <code>root</code> опасно, а от имени менее привилегированного пользователя очень даже кстати.</p>
 <p>Для смены владельца используется <code>chown</code> - change owner. Синтаксис этой команды очень прост:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>chown пользователь опции /путь/к/файлу
 </code></pre></div></p>
-<h3 id="chown">Ключи и опции chown<a class="headerlink" href="#chown" title="Permanent link">&para;</a></h3>
+<h3 id="chown">Ключи и опции chown<a class="headerlink" href="#chown" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><code>-c</code> <code>--changes</code> - подробный вывод всех выполняемых операций</li>
 <li><code>-v</code> <code>--verbose</code> - описание действий и вывод подробных данных о каждом обработанном файле</li>
@@ -4434,7 +4434,7 @@
 <li><code>-H</code> - если передан симлинк на каталог, перейти по нему</li>
 <li><code>-P</code> - не переходить по символическим ссылкам на каталоги (<em>по умолчанию</em>)</li>
 </ul>
-<h2 id="chown_1">Примеры использования chown<a class="headerlink" href="#chown_1" title="Permanent link">&para;</a></h2>
+<h2 id="chown_1">Примеры использования chown<a class="headerlink" href="#chown_1" title="Permanent link">⚓︎</a></h2>
 <p><img alt="ls2" src="../pic/LinuxStr3/LinuxStr2.png" /></p>
 <p>Допустим, есть два пользователя: <code>root</code> и <code>liveuser</code>. В директории <code>/root</code> создана поддиректория <code>/root/liveuser</code>. Там ещё несколько файлов. Эта поддиректория принадлежит пользователю root, как и все файлы в ней. А надо сделать так, чтобы принадлежала пользователю <code>liveuser</code>. Выполнить в терминале:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>sudo chown liveuser /root/liveuser
@@ -4456,14 +4456,14 @@
 <p>Теперь измените группу и владельца на <code>liveuser</code> только для тех файлов, у которых владелец и группа <code>root</code> в каталоге <code>/root/liveuser/</code>:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>sudo chown --from<span class="o">=</span>root:root liveuser:liveuser ./
 </code></pre></div></p>
-<h2 id="_4">Изменение группы файла<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_4">Изменение группы файла<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
 <p>Для изменения группы файла используется команда <code>chgrp</code> (<em>change group</em>). В отличии от предыдущей описанной команды <code>chown</code>, для <code>chgrp</code> требуется только имя группы, имя пользователя не нужно.</p>
 <p>Синтаксис этой команды очень прост:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>chgrp опции имя_группы /путь/к/директории
 </code></pre></div></p>
 <details class="note" open="open"><summary>Note</summary><p>Вместо имени группы можно указать её <code>GID</code> (идентификатор группы)</p>
 </details>
-<h3 id="chgrp">Ключи и опции chgrp<a class="headerlink" href="#chgrp" title="Permanent link">&para;</a></h3>
+<h3 id="chgrp">Ключи и опции chgrp<a class="headerlink" href="#chgrp" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><code>-c</code> <code>--changes</code> - подробно описывать действия для каждого файла, чья группа изменяется</li>
 <li><code>-f</code> <code>--silent</code> <code>--quiet</code> - не выдавать сообщения об ошибке для файлов, чья группа не может быть изменена</li>
@@ -4474,7 +4474,7 @@
 <li><code>-h</code> - для каждого файла, являющегося символической ссылкой, изменить группу самой этой ссылки, а не объекта, на который она указывает, а если система не поддерживает группы для симлинков, то ничего не делать.</li>
 <li><code>--</code> - завершение списка опций</li>
 </ul>
-<h2 id="chgrp_1">Примеры использования chgrp<a class="headerlink" href="#chgrp_1" title="Permanent link">&para;</a></h2>
+<h2 id="chgrp_1">Примеры использования chgrp<a class="headerlink" href="#chgrp_1" title="Permanent link">⚓︎</a></h2>
 <p>Опять же, перед изменением группы-владельца файла, проверьте с помощью <code>ls</code> текущую группу:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>ls -l <span class="s1">&#39;ИМЯ_ФАЙЛА&#39;</span>
 </code></pre></div></p>
@@ -4493,13 +4493,13 @@
 <p>Для того, чтобы скопировать группу владельцев директории, воспользуйтесь ключом <code>--reference</code>:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>sudo chgrp --reference /home/liveuser /root/liveuser
 </code></pre></div></p>
-<h2 id="_5">Специальные права доступа к файлам<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_5">Специальные права доступа к файлам<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h2>
 <p>Для того, чтобы позволить <em>обычным</em> пользователям выполнять программы от имени суперпользователя, не зная его пароль, были созданы биты <code>SUID</code> и <code>SGIG</code>.
 * Если установлен бит <code>SUID</code>, то при выполнении программы, ID пользователя меняется на ID владельца файла. <em>Фактически</em>, это позволяет обычным пользователям запускать программы от имени суперюзера.
 * <code>SGID</code> работает аналогичным способом, но разница в том, что юзер считается членом группы, с которой связан этот файл, а не групп, которым он действительно принадлежит. Если флаг <code>SGID</code> установлен на каталог, все файлы, созданные в нём, будут связаны с группой каталога, а не пользователя. Такое поведение используется для организации общих папок.
 * Бит <code>Sticky-bit</code> так же используется для создания общих директорий. Когда он установлен, пользователь может только создавать, читать и выполнять файлы, но не может удалять их, если они принадлежат другим пользователям.</p>
 <p>Так, например, с помощью специальных прав доступа к файоам вы можете выполнять некоторые команды из <code>/sbin</code> и <code>/usr/sbin</code> от имени обычного пользователя.</p>
-<h2 id="-">Права на файлы - условные обозначения.<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+<h2 id="-">Права на файлы - условные обозначения.<a class="headerlink" href="#-" title="Permanent link">⚓︎</a></h2>
 <p>Опять же, чтобы узнать права на каждый файл, выполните:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>ls -l
 </code></pre></div>
@@ -4555,11 +4555,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="chmod">Примеры использования chmod<a class="headerlink" href="#chmod" title="Permanent link">&para;</a></h2>
+<h2 id="chmod">Примеры использования chmod<a class="headerlink" href="#chmod" title="Permanent link">⚓︎</a></h2>
 <p>Для изменения прав на файл используется <code>chmod</code>. Работа с ней такая же простая, как и с предыдущими утилитами. Вот её синтаксис:</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>chmod опции &lt;категория&gt;&lt;действие&gt;&lt;флаг&gt; файл
 </code></pre></div>
-<h3 id="_6">Права доступа<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_6">Права доступа<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
 <p>В предыдущем разделе написал про права. Продублирую это и здесь, но покороче. Подобная таблица показывает "сокращения", которые используются для <code>chmod</code>, отображаются в выводе <code>ls</code> или <code>exa</code>, etc.</p>
 <table>
 <thead>
@@ -4721,7 +4721,7 @@
 </tbody>
 </table>
 <p>!&gt; И тут очень большая опасность. Будьте осторожны при выполнении <code>chmod</code> и <code>chown</code>. Например, при выполнении <code>sudo chmod 777 /</code> вы, по сути, сломаете систему. Ошибка в вводе аргументов команды может привести к очень неожиданным последствиям.</p>
-<h3 id="chmod_1">Опции и ключи chmod<a class="headerlink" href="#chmod_1" title="Permanent link">&para;</a></h3>
+<h3 id="chmod_1">Опции и ключи chmod<a class="headerlink" href="#chmod_1" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li><code>-c</code> - выводить информацию обо всех изменениях</li>
 <li><code>-f</code> - не выводить сообщения об ошибках</li>
@@ -4730,7 +4730,7 @@
 <li><code>--reference</code> - взять маску прав из указанного файла</li>
 <li><code>--preserve-root</code> - не выполнять рекурсивные операции для корня файловой системы</li>
 </ul>
-<h2 id="chmod_2">Примеры работы с chmod<a class="headerlink" href="#chmod_2" title="Permanent link">&para;</a></h2>
+<h2 id="chmod_2">Примеры работы с chmod<a class="headerlink" href="#chmod_2" title="Permanent link">⚓︎</a></h2>
 <p>Разрешить выполнение определённого скрипта или бинарника пользователю. Допустим, у нас есть некий ELF файл, который называется <code>binary</code>. И его надо сделать исполняемым. Для начала выполните <code>ls -l |grep binary</code>, дабы просмотреть его текущие права.
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>chmod u+x binary
 </code></pre></div></p>
@@ -4756,7 +4756,7 @@
 <span class="linenos" data-linenos="2 "></span>sudo chmod <span class="m">2755</span> binary.d
 </code></pre></div>
 Эта команда добавит разрешение <code>SGID</code> на каталог <code>binary.d</code>.</p>
-<h3 id="suid-sgid-sticky-bit">Числовые значение SUID, SGID и Sticky bit<a class="headerlink" href="#suid-sgid-sticky-bit" title="Permanent link">&para;</a></h3>
+<h3 id="suid-sgid-sticky-bit">Числовые значение SUID, SGID и Sticky bit<a class="headerlink" href="#suid-sgid-sticky-bit" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li>SUID - <code>4</code></li>
 <li>SGID - <code>2</code></li>
@@ -4766,17 +4766,17 @@
 * SUID - <code>chmod u+s</code>
 * SGID - <code>chmod g+s</code>
 * Sticky bit - <code>chmod +t</code></p>
-<h2 id="suid-guid">Ещё немного про SUID, GUID. Понимание важного.<a class="headerlink" href="#suid-guid" title="Permanent link">&para;</a></h2>
-<h3 id="suid">SUID<a class="headerlink" href="#suid" title="Permanent link">&para;</a></h3>
+<h2 id="suid-guid">Ещё немного про SUID, GUID. Понимание важного.<a class="headerlink" href="#suid-guid" title="Permanent link">⚓︎</a></h2>
+<h3 id="suid">SUID<a class="headerlink" href="#suid" title="Permanent link">⚓︎</a></h3>
 <p>Рассмотрим простой пример. Нужно поменять пароль своей учётной записи. Для этого нужно отредактирвоать файл <code>/etc/shadow</code>. Но он доступен только суперпользователю. Однако, в утилите <code>/usr/bin/passwd</code> разрешение SUID применяется по умолчанию. В этом можно убедиться, просмотрев на этот самый <code>/usr/bin/passwd</code>:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>ls -l /usr/bin/passwd
 </code></pre></div></p>
 <p>При смене пароля пользователь <strong>ВРЕМЕННО</strong> получает права root, что позволяет ему редактировать <code>/etc/shadow</code>, ибо есть разрешение <code>SUID</code>. Так ведь, если <code>passwd</code> именно это и делает? - редактирует нужный файл. Вот в этом и опасность разрешения SUID: с одной стороны, оно, однозначно, полезно и удобно, но довольно опасно. Поэтому пользуйтесь им <strong>с осторожностью</strong>.</p>
-<h3 id="sgid">SGID<a class="headerlink" href="#sgid" title="Permanent link">&para;</a></h3>
+<h3 id="sgid">SGID<a class="headerlink" href="#sgid" title="Permanent link">⚓︎</a></h3>
 <p>А теперь второе.</p>
 <p><code>SGID</code> - идентификатор группы. SGID даёт пользователю, который исполняет определённый файл, разрешения владельца группы этого файла, что означает, что SGID позволяет выполнить примерно тоже самое, что и SUID. Но, как ни странно, SGID для этой цели если используется, то очень редко, но как в случае с SUID, он применяется к некоторым системным файлам по умолчанию.</p>
 <p>Однако, SGID может быть полезен тогда, когда он применяется к каталогу: вы можете использовать его для установки владельца группы по умолчанию для файлов и подкаталогов, созданных в этом каталоге. По умолчанию, когда пользователь создает файл, его эффективная первичная группа устанавливается как владелец группы для этого файла.</p>
-<h3 id="sticky-bit">Sticky-bit<a class="headerlink" href="#sticky-bit" title="Permanent link">&para;</a></h3>
+<h3 id="sticky-bit">Sticky-bit<a class="headerlink" href="#sticky-bit" title="Permanent link">⚓︎</a></h3>
 <p>И, наконец, третье - <code>Sticky-bit</code>. Это разрешение полезно для защиты файлов от <em>случайного</em> удаления в среде, где несколько пользователей имеют права на запись в одну и ту же директорию; если применяется закреплённый sticky-bit, пользователь может удалить файл, только если он является пользователем-владельцем файла/каталога, в котором содержится файл. Именно поэтому он применяется, скажем, в <code>/tmp</code>.</p>
 <p>Без sticky bit, если пользователь может создавать файлы в каталоге, он также может удалять файлы из этого каталога. В общедоступной групповой среде это может раздражать. Представьте себе пользователей linda и lori, которые оба имеют права на запись в каталог /data/account и получают эти разрешения благодаря участию в группе account. Поэтому linda может удалять файлы, созданные lori, и наоборот.</p>
 <p>Когда вы применяете sticky bit, пользователь может удалять файлы, только если выполняется одно из следующих условий:
@@ -4786,7 +4786,7 @@
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>ls -ld
 </code></pre></div></p>
 <p>Увидите букву <code>t</code> в той позиции, где вы обычно видите разрешение на выполнение для других.</p>
-<h2 id="_7">Практика<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h2 id="_7">Практика<a class="headerlink" href="#_7" title="Permanent link">⚓︎</a></h2>
 <p>Введите в терминале:
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>sudo chmod -x /usr/bin/chmod
 </code></pre></div></p>
@@ -4798,7 +4798,7 @@
 </code></pre></div></p>
 <p>Так вы вернули бит исполнения программе <code>chmod</code>.</p>
 <p>!&gt; Настоятельно не рекомендуем производить подобные эксперименты с другими системными файлами!</p>
-<h2 id="_8">Смотрите также:<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h2 id="_8">Смотрите также:<a class="headerlink" href="#_8" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li><code>man chmod</code></li>
 <li><code>man chown</code></li>
@@ -4815,6 +4815,11 @@
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
         
       </main>
       
@@ -4899,12 +4904,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "navigation.top"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
-        <script src="../../js/config.js"></script>
+        <script src="https://raw.githubusercontent.com/Linux4Yourself/book/feature/mkdocs/js/config.js"></script>
       
     
   </body>

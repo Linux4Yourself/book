@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://lx4u.ru/mkdocs/boot/uefi/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.5">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cdeb8541.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -116,7 +116,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Переключиться в тёмный режим"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Переключиться в тёмный режим" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0 9.821 9.821 0 0 0-17.64 0z"/></svg>
             </label>
           
         
@@ -125,7 +125,7 @@
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Переключиться в светлый режим"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Переключиться в светлый режим" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/></svg>
             </label>
           
         
@@ -4076,11 +4076,11 @@
                   </a>
                 
                 
-                <h1 id="efi">Создание загрузочной системы EFI<a class="headerlink" href="#efi" title="Permanent link">&para;</a></h1>
+                <h1 id="efi">Создание загрузочной системы EFI<a class="headerlink" href="#efi" title="Permanent link">⚓︎</a></h1>
 <details class="warning" open="open"><summary>Warning</summary><p>Отключите <code>secure boot</code>! На данный момент эта технология не поддерживается. Чтобы настроить процесс загрузки с помощью GRUB для UEFI, необходимо отключить её в интерфейсе конфигурации прошивки. Прочтите документацию, предоставленную производителем вашей системы, чтобы узнать, как это сделать.</p>
 </details>
 <p>Убедитесь, что вы не пропустили раздел по настройке ядра, для поддержки <a href="#/kernel/kernel-setup?id=efi">EFI</a>.</p>
-<h2 id="efi_1">Поиск, или создание системного раздела EFI<a class="headerlink" href="#efi_1" title="Permanent link">&para;</a></h2>
+<h2 id="efi_1">Поиск, или создание системного раздела EFI<a class="headerlink" href="#efi_1" title="Permanent link">⚓︎</a></h2>
 <p>В системе на основе EFI загрузчики устанавливаются в специальный раздел FAT32, называемый системным разделом EFI (ESP). Если ваша система поддерживает EFI и предустановлен дистрибутив Linux и (или) Windows, скорее всего, ESP уже создан. Посмотрите все разделы на вашем жёстком диске (замените <code>sda</code> на нужное устройство):</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>fdisk -l /dev/sda
 </code></pre></div>
@@ -4102,7 +4102,7 @@
 <span class="linenos" data-linenos="2 "></span><span class="s">/dev/sda1 /boot/efi vfat defaults 0 1</span>
 <span class="linenos" data-linenos="3 "></span><span class="s">EOF</span>
 </code></pre></div>
-<h2 id="efi-variable-file-system">Монтирование EFI Variable File System<a class="headerlink" href="#efi-variable-file-system" title="Permanent link">&para;</a></h2>
+<h2 id="efi-variable-file-system">Монтирование EFI Variable File System<a class="headerlink" href="#efi-variable-file-system" title="Permanent link">⚓︎</a></h2>
 <p>Для установки GRUB на UEFI необходимо смонтировать файловую систему EFI Variable, <code>efivarfs</code>. Если она еще не была смонтирована ранее, выполните команду:</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>mountpoint /sys/firmware/efi/efivars <span class="o">||</span> mount -v -t efivarfs efivarfs /sys/firmware/efi/efivars
 </code></pre></div>
@@ -4113,7 +4113,7 @@
 </code></pre></div>
 <details class="note" open="open"><summary>Note</summary><p>Если система не загружается с UEFI, каталог <code>/sys/firmware/efi</code> будет отсутствовать. В этом случае вы должны загрузить систему в режиме <code>UEFI</code> с аварийным загрузочным диском.</p>
 </details>
-<h2 id="_1">Настройка<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">Настройка<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <p>В системах на основе UEFI GRUB работает устанавливая приложение EFI (особый вид исполняемого файла) в <code>/boot/efi/EFI/[id sizes/grubx64.efi</code>, где <code>/boot/efi</code> - точка монтирования <code>ESP</code>, а <code>[id]</code> заменяется идентификатором, указанным в командной строке <code>grub-install</code>. <code>GRUB</code> создаст запись в переменных <code>EFI</code>, содержащую путь <code>EFI/[id]/grubx64.efi</code>, чтобы прошивка <code>EFI</code> могла найти <code>grubx64.efi</code> и загрузить его.</p>
 <p><code>grubx64.efi</code> очень легкий (136 Кб), поэтому он не будет занимать много места в ESP. Типичный размер ESP составляет 100 Мб (для диспетчера загрузки Windows, который использует около 50 Мб в ESP). Как только grubx64.efi загружен прошивкой, он загрузит модули GRUB в загрузочный раздел. Расположение по умолчанию - <code>/boot/grub</code>.</p>
 <p>Установите файлы GRUB в <code>/boot/efi/EFI/LFS/grubx64.efi</code> и <code>/boot/grub</code>. Затем настройте загрузочную запись в переменных EFI:</p>
@@ -4138,7 +4138,7 @@
 <span class="linenos" data-linenos="9 "></span>Boot0005* LIN
 </code></pre></div>
 <p>Обратите внимание, что <code>0005</code> является первым в <code>BootOrder</code>, а <code>Boot0005</code> - это <code>LIN</code>. Это означает, что при следующей загрузке системы будет использоваться версия <code>GRUB</code>, установленная в <code>LIN</code>.</p>
-<h1 id="grub">Создание файла конфигурации GRUB<a class="headerlink" href="#grub" title="Permanent link">&para;</a></h1>
+<h1 id="grub">Создание файла конфигурации GRUB<a class="headerlink" href="#grub" title="Permanent link">⚓︎</a></h1>
 <p>Создайте <code>/boot/grub/grub.cfg</code> для настройки меню загрузки GRUB:</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>cat &gt; /boot/grub/grub.cfg <span class="s">&lt;&lt; EOF</span>
 <span class="linenos" data-linenos=" 2 "></span><span class="s"># Begin /boot/grub/grub.cfg</span>
@@ -4167,7 +4167,7 @@
 <p><code>(hd0,2)</code>, <code>sda2</code> следует заменить в соответствии с вашей конфигурацией.</p>
 <details class="note" open="open"><summary>Note</summary><p>Для GRUB файлы используются относительно раздела. Если вы использовали отдельный раздел <code>/boot</code>, удалите <code>/boot</code> из указанных выше путей (к ядру и к unicode.pf2). Вам также нужно будет изменить строку корневого раздела, чтобы она указывала на загрузочный раздел.</p>
 </details>
-<h2 id="windows">Загрузка вместе с Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
+<h2 id="windows">Загрузка вместе с Windows<a class="headerlink" href="#windows" title="Permanent link">⚓︎</a></h2>
 <p>Добавьте запись в файл конфигурации <code>grub.cfg</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>cat &gt;&gt; /boot/grub/grub.cfg <span class="s">&lt;&lt; EOF</span>
 <span class="linenos" data-linenos=" 2 "></span><span class="s"># Begin Windows addition</span>
@@ -4191,6 +4191,11 @@
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
         
       </main>
       
@@ -4275,12 +4280,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.indexes", "search.highlight", "search.share", "search.suggest", "navigation.top"], "translations": {"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0438\u0441\u043a", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
-        <script src="../../js/config.js"></script>
+        <script src="https://raw.githubusercontent.com/Linux4Yourself/book/feature/mkdocs/js/config.js"></script>
       
     
   </body>
