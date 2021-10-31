@@ -153,7 +153,7 @@ nav:
         - texinfo: build-temp-system/texinfo.md
         - util-linux: build-temp-system/util-linux.md
         - Очистка и сохранение временной системы: build-temp-system/cleanup.md
-    - Сборка Linux системы:
+    - Сборка системы:
         - Введение: build-system/build-system.md
         - Настройка окружения bash: build-system/set-profile.md
         - iana-etc: build-system/iana-etc.md
