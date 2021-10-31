@@ -4,13 +4,19 @@
 
 Примените необходимый патч:
 
-<package-script :package="'sysvinit'" :type="'patch'"></package-script>
+```bash 
+{{ include('../packages/sysvinit/patch') }}
+```
 
 ## Сборка
 
-<package-script :package="'sysvinit'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/sysvinit/build') }}
+```
 
 ## Установка
 
-<package-script :package="'sysvinit'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/sysvinit/install') }}
+```
 

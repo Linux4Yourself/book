@@ -1,8 +1,12 @@
 # Заголовочные файлы ядра Linux 
 
-Ссылка для скачивания: {{ include('../packages/linux/.url') }}
+Ссылка для скачивания: ```bash 
+{{ include('../packages/linux/.url') }}
+```
 <br />
-Текущая версия: <b>{{ include('../packages/linux/.version') }}</b>
+Текущая версия: <b>```bash 
+{{ include('../packages/linux/.version') }}
+```</b>
 <br />
 Важность: <b>Необходимый</b>
 

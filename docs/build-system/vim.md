@@ -4,19 +4,27 @@
 
 Измените расположение файла `vimrc` на `/etc`:
 
-<package-script :package="'vim'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/vim/prepare') }}
+```
 
 И сконфигурируйте пакет:
 
-<package-script :package="'vim'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/vim/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'vim'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/vim/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'vim'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/vim/test') }}
+```
 
 ???+ note "Обратите внимание"
 
@@ -24,7 +32,9 @@
 
 ## Установка
 
-<package-script :package="'vim'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/vim/install') }}
+```
 
 ## Настройка Vim
 
@@ -32,7 +42,9 @@
 - Документация Vim устанавливается в `/usr/share/vim`. Для совместимости с другими пакетами, создайте символическую ссылку;
 - По умолчанию Vim работает в режиме, несовместимом с Vi. Это может быть неприятным для тех пользователей, которые использовали другие редакторы в прошлом. Параметр несовместимости включен, чтобы подчеркнуть факт о том, что используется новое поведение. Также он напоминает тем, кто перейдёт в совместимый режим, что это должен быть первый параметр в файле конфигурации (это необходимо, потому что при этом изменяются другие параметры; предопределения должны выполняться после этого параметра):
 
-<package-script :package="'vim'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/vim/postinstall') }}
+```
 
 - `set nocompatible`-  указывает Vim'y вести себя более удобным образом (по умолчанию), чем vi-совместимый. Удалите `no`, чтобы сохранить старое поведение vi.
 - `set backspace=2` - позволяет делать обратный интервал при переносе строк, автоотступах и начале вставки. Синтаксис параметра включает подсветку синтаксиса vim.

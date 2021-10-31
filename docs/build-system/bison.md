@@ -2,20 +2,28 @@
 
 ## Настройка
 
+```bash 
 {{ include('../packages/bison/configure') }}
+```
 
 ## Сборка
 
+```bash 
 {{ include('../packages/bison/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/bison/test') }}
+```
 
 > Добавляет примерно 5,5 SBU к общему времени установки пакета
 
 ## Установка
 
+```bash 
 {{ include('../packages/bison/install') }}
+```
 
 

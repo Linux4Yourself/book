@@ -2,7 +2,9 @@
 
 ## Настройка
 
+```bash 
 {{ include('../packages/inetutils/configure') }}
+```
 
 ### Значения параметров
 
@@ -10,11 +12,15 @@
 
 ## Сборка
 
+```bash 
 {{ include('../packages/inetutils/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/inetutils/test') }}
+```
 
 ???+ warning "Предупреждение"
 
@@ -22,11 +28,15 @@
 
 ## Установка
 
+```bash 
 {{ include('../packages/inetutils/install') }}
+```
 
 ## При раздельной структуре каталогов
 
+```bash 
 {{ include('../packages/inetutils/cldirs') }}
+```
 
 ## Установленные файлы
 

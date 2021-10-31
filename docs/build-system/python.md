@@ -2,19 +2,27 @@
 
 ## Настройка
 
-<package-script :package="'python'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/python/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'python'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/python/build') }}
+```
 
 ## Установка
 
-<package-script :package="'python'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/python/install') }}
+```
 
 ## Тестирование
 
-<package-script :package="'python'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/python/test') }}
+```
 
 ???+ danger "Важно"
 

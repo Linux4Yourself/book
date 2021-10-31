@@ -4,5 +4,7 @@
 
 Создайте данный файл:
 
+```bash 
 {{ include('../scripts/etc-inputrc.md') }}
+```
 

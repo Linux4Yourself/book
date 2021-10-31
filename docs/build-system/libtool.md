@@ -2,15 +2,21 @@
 
 ## Настройка
 
-<package-script :package="'libtool'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/libtool/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'libtool'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/libtool/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'libtool'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/libtool/test') }}
+```
 
 ???+ note "Обратите внимание"
 
@@ -22,28 +28,40 @@
 
 ## Установка
 
-<package-script :package="'libtool'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/libtool/install') }}
+```
 
 Удалите ненужную статическую библиотеку
 
-<package-script :package="'libtool'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/libtool/postinstall') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'libtool'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/libtool/multi_prepare') }}
+```
 
 ### Настройка
 
-<package-script :package="'libtool'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/libtool/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'libtool'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/libtool/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'libtool'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/libtool/multi_install') }}
+```
 
 

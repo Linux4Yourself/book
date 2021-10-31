@@ -2,15 +2,21 @@
 
 ## Настройка
 
+```bash 
 {{ include('../packages/autoconf/configure') }}
+```
 
 ## Сборка
 
+```bash 
 {{ include('../packages/autoconf/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/autoconf/test') }}
+```
 
 ???+ note "Обратите внимание"
 	
@@ -18,6 +24,8 @@
 
 ## Установка
 
+```bash 
 {{ include('../packages/autoconf/install') }}
+```
 
 

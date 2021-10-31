@@ -13,7 +13,9 @@ cp -v configfsf.sub config.sub
 
 ## Настройка
 
-<package-script :package="'gmp'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/gmp/configure') }}
+```
 
 ### Значения параметров
 
@@ -21,33 +23,47 @@ cp -v configfsf.sub config.sub
 
 ## Сборка
 
-<package-script :package="'gmp'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/gmp/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'gmp'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/gmp/test') }}
+```
 
 ## Установка
 
-<package-script :package="'gmp'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/gmp/install') }}
+```
 
 ## Для multilib
 
 ### Очистка и подготовка
 
-<package-script :package="'gmp'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/gmp/multi_prepare') }}
+```
 
 ### Настройка
 
-<package-script :package="'gmp'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/gmp/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'gmp'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/gmp/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'gmp'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/gmp/multi_install') }}
+```
 
 ---
 

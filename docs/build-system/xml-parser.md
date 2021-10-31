@@ -2,19 +2,27 @@
 
 ## Настройка
 
-<package-script :package="'xml-parser'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/xml-parser/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'xml-parser'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/xml-parser/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'xml-parser'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/xml-parser/test') }}
+```
 
 ## Установка
 
-<package-script :package="'xml-parser'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/xml-parser/install') }}
+```
 
 ## Установленные файлы
 

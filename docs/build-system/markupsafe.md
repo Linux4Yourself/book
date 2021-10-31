@@ -1,13 +1,19 @@
 {{ include('../packages/markupsafe/README.md') }}
 
+```bash 
 {{ include('../shared/systemd-extra-warn.md') }}
+```
 
 ## Сборка
 
-<package-script :package="'markupsafe'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/markupsafe/build') }}
+```
 
 ## Установка
 
-<package-script :package="'markupsafe'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/markupsafe/install') }}
+```
 
 

@@ -4,29 +4,61 @@
 
 ### Дополнительные необходимые файлы
 
+```bash 
 {{ include('../packages/mpc/.url') }}
+```
 
+```bash 
 {{ include('../packages/gmp/.url') }}
+```
 
+```bash 
 {{ include('../packages/mpfr/.url') }}
+```
 
+```bash 
 {{ include('../packages/isl/.url') }}
+```
 
 Распакуйте дополнительные пакеты:
 
 <pre>
-tar -xf ../{{ include('../packages/mpfr/.filename') }}
-mv -v {{ include('../packages/mpfr/.filename') }} {{ include('../packages/mpfr/.name') }}
+tar -xf ../```bash 
+{{ include('../packages/mpfr/.filename') }}
+```
+mv -v ```bash 
+{{ include('../packages/mpfr/.filename') }}
+``` ```bash 
+{{ include('../packages/mpfr/.name') }}
+```
 
-tar -xf ../{{ include('../packages/gmp/.filename') }}
-mv -v {{ include('../packages/gmp/.filename') }} {{ include('../packages/gmp/.name') }}
+tar -xf ../```bash 
+{{ include('../packages/gmp/.filename') }}
+```
+mv -v ```bash 
+{{ include('../packages/gmp/.filename') }}
+``` ```bash 
+{{ include('../packages/gmp/.name') }}
+```
 
-tar -xf ../{{ include('../packages/mpc/.filename') }}
-mv -v {{ include('../packages/mpc/.filename') }} {{ include('../packages/mpc/.name') }}
+tar -xf ../```bash 
+{{ include('../packages/mpc/.filename') }}
+```
+mv -v ```bash 
+{{ include('../packages/mpc/.filename') }}
+``` ```bash 
+{{ include('../packages/mpc/.name') }}
+```
 
 
-tar -xf ../{{ include('../packages/isl/.filename') }}
-mv -v {{ include('../packages/isl/.filename') }} {{ include('../packages/isl/.name') }}
+tar -xf ../```bash 
+{{ include('../packages/isl/.filename') }}
+```
+mv -v ```bash 
+{{ include('../packages/isl/.filename') }}
+``` ```bash 
+{{ include('../packages/isl/.name') }}
+```
 
 </pre>
 

@@ -1,21 +1,31 @@
 {{ include('../packages/expect/README.md') }}
 
+```bash 
 {{ include('../shared/test-pkgs.md') }}
+```
 
 ## Настройка
 
+```bash 
 {{ include('../packages/expect/configure') }}
+```
 
 ## Сборка
 
+```bash 
 {{ include('../packages/expect/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/expect/test') }}
+```
 
 ## Установка
 
+```bash 
 {{ include('../packages/expect/install') }}
+```
 
 

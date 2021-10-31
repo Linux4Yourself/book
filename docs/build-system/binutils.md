@@ -4,7 +4,9 @@
 
 Удалите проблемный тест:
 
+```bash 
 {{ include('../packages/binutils/prepare') }}
+```
 
 <!-- temp solution TODO: Remove in next versions -->
 Ошибка в системе сборки приводит к тому, что страницы руководства становятся пустыми. Можно обойти проблему, чтобы страницы руководства были созданы правильно:
@@ -16,11 +18,15 @@ find -name \*.1 -delete
 
 ## Настройка
 
+```bash 
 {{ include('../packages/binutils/configure') }}
+```
 
 ### Для multilib
 
+```bash 
 {{ include('../packages/binutils/multi_configure') }}
+```
 
 ### Значения параметров
 
@@ -36,12 +42,15 @@ find -name \*.1 -delete
 
 ## Сборка
 
+```bash 
 {{ include('../packages/binutils/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/binutils/test') }}
-<package-script :package="'binutils'" :type="'test'"></package-script>
+```
 
 ???+ warning "Предупреждение"
 	
@@ -49,11 +58,15 @@ find -name \*.1 -delete
 
 ## Установка
 
+```bash 
 {{ include('../packages/binutils/install') }}
+```
 
 Удалите бесполезные статические библиотеки:
 
+```bash 
 {{ include('../packages/binutils/postinstall') }}
+```
 
 ## Установленные файлы
 

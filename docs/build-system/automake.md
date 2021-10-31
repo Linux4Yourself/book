@@ -3,16 +3,24 @@
 ## Настройка
 
 Внесите исправление для некорректного теста:
+```bash 
 {{ include('../packages/automake/prepare') }}
+```
+```bash 
 {{ include('../packages/automake/configure') }}
+```
 
 ## Сборка
 
+```bash 
 {{ include('../packages/automake/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/automake/test') }}
+```
 
 ???+ warning "Предупреждение"
 	
@@ -20,6 +28,8 @@
 
 ## Установка
 
+```bash 
 {{ include('../packages/automake/install') }}
+```
 
 

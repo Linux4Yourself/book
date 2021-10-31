@@ -18,4 +18,6 @@
 
 ## Установка
 
-<package-script :package="'man-pages'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/man-pages/install') }}
+```

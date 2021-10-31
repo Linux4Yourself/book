@@ -4,12 +4,18 @@
 
 Примените патч, исправляющий ошибку сборки новыми версиями GCC:
 
-<package-script :package="'efivar'" :type="'patch'"></package-script>
+```bash 
+{{ include('../packages/efivar/patch') }}
+```
 
 ## Сборка
 
-<package-script :package="'efivar'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/efivar/build') }}
+```
 
 ## Установка
 
-<package-script :package="'efivar'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/efivar/install') }}
+```

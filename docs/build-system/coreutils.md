@@ -5,7 +5,9 @@
 
 Примените необязательный патч для поддержки локализации:
 
+```bash 
 {{ include('../packages/coreutils/patch') }}
+```
 
 ???+ bug
 
@@ -13,11 +15,15 @@
 
 Удалите проблемный тест:
 
+```bash 
 {{ include('../packages/coreutils/prepare') }}
+```
 
 ## Настройка
 
+```bash 
 {{ include('../packages/coreutils/configure') }}
+```
 
 ### Значения параметров
 
@@ -27,11 +33,15 @@
 
 ## Сборка
 
+```bash 
 {{ include('../packages/coreutils/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/coreutils/test') }}
+```
 
 ???+ warning "Предупреждение"
 
@@ -39,11 +49,15 @@
 
 ## Установка
 
+```bash 
 {{ include('../packages/coreutils/install') }}
+```
 
 ## При раздельной структуре каталогов
 
+```bash 
 {{ include('../packages/coreutils/cldirs') }}
+```
 
 ## Установленные файлы
 

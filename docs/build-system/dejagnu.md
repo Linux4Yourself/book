@@ -1,18 +1,28 @@
 {{ include('../packages/dejagnu/README.md') }}
 
+```bash 
 {{ include('../shared/test-pkgs.md') }}
+```
 
 ## Настройка
 
+```bash 
 {{ include('../packages/dejagnu/configure') }}
+```
 
 ## Сборка и установка
 
+```bash 
 {{ include('../packages/dejagnu/install') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/dejagnu/test') }}
-<package-script :package="'dejagnu'" :type="'test'"></package-script>
+```
+```bash 
+{{ include('../packages/dejagnu/test') }}
+```
 
 

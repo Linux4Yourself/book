@@ -2,7 +2,9 @@
 
 ## Дополнительные необходимые файлы
 
+```bash 
 {{ include('../packages/tzdata/.url') }}
+```
 
 ## Подготовка
 
@@ -201,7 +203,9 @@ EOF
 Установите информацию о часовых поясах:
 
 <pre class="pre">
-tar -xf ../../{{ include('../packages/tzdata/.filename') }}
+tar -xf ../../```bash 
+{{ include('../packages/tzdata/.filename') }}
+```
 
 ZONEINFO=/usr/share/zoneinfo
 mkdir -pv $ZONEINFO/{posix,right}

@@ -2,15 +2,21 @@
 
 ## Настройка
 
+```bash 
 {{ include('../packages/tar/configure') }}
+```
 
 ## Сборка
 
+```bash 
 {{ include('../packages/tar/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/tar/test') }}
+```
 
 > Тестирование добавляет 3 SBU ко всему времени установки пакета
 
@@ -20,6 +26,8 @@
 
 ## Установка
 
+```bash 
 {{ include('../packages/tar/install') }}
+```
 
 

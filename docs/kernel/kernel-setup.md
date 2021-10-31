@@ -236,7 +236,9 @@ make modules_install
 архитектура x86:
 
 <pre class="pre">
-cp -iv arch/x86/boot/bzImage /boot/vmlinuz-{{ include('../packages/linux/.version') }}-my-kernel
+cp -iv arch/x86/boot/bzImage /boot/vmlinuz-```bash 
+{{ include('../packages/linux/.version') }}
+```-my-kernel
 </pre>
 
 `System.map` файл, внутри которого находится символьная таблица адресов функций и
@@ -246,7 +248,9 @@ cp -iv arch/x86/boot/bzImage /boot/vmlinuz-{{ include('../packages/linux/.versio
 ядра. Выполните следующую команду для установки файла System.map :
 
 <pre class="pre">
-cp -iv System.map /boot/System.map-{{ include('../packages/linux/.version') }}
+cp -iv System.map /boot/System.map-```bash 
+{{ include('../packages/linux/.version') }}
+```
 </pre>
 
 Файл конфигурации ядра `.config`, полученный в результате настройки `make menuconfig`
@@ -254,13 +258,17 @@ cp -iv System.map /boot/System.map-{{ include('../packages/linux/.version') }}
 оставить этот файл для будующей работы:
 
 <pre class="pre">
-cp -iv .config /boot/config-{{ include('../packages/linux/.version') }}
+cp -iv .config /boot/config-```bash 
+{{ include('../packages/linux/.version') }}
+```
 </pre>
 
 Для облегчения обновления ядра создайте символическую ссылку:
 
 <pre class="pre">
-ln -svf vmlinuz-{{ include('../packages/linux/.version') }}-my-kernel /boot/vmlinuz
+ln -svf vmlinuz-```bash 
+{{ include('../packages/linux/.version') }}
+```-my-kernel /boot/vmlinuz
 </pre>
 
 При обновлении ядра будет достаточно установить новую версию и обновить символическую ссылку.
@@ -270,8 +278,12 @@ ln -svf vmlinuz-{{ include('../packages/linux/.version') }}-my-kernel /boot/vmli
 Установите документацию, если она необходима
 
 <pre class="pre">
-install -d /usr/share/doc/linux-{{ include('../packages/linux/.version') }}
-cp -rv Documentation/* /usr/share/doc/linux-{{ include('../packages/linux/.version') }}
+install -d /usr/share/doc/linux-```bash 
+{{ include('../packages/linux/.version') }}
+```
+cp -rv Documentation/* /usr/share/doc/linux-```bash 
+{{ include('../packages/linux/.version') }}
+```
 </pre>
 
 ## Настройка каталога с исходным кодом
@@ -294,7 +306,9 @@ cp -rv Documentation/* /usr/share/doc/linux-{{ include('../packages/linux/.versi
 Если вы планируете оставить каталог с исходным кодом ядра, выполните команду:
 
 <pre class="pre">
-chown -R 0:0 /usr/src/linux-{{ include('../packages/linux/.version') }}
+chown -R 0:0 /usr/src/linux-```bash 
+{{ include('../packages/linux/.version') }}
+```
 </pre>
 
 ???+ danger "Важно"
@@ -313,4 +327,6 @@ chown -R 0:0 /usr/src/linux-{{ include('../packages/linux/.version') }}
 
 Создайте новый файл `/etc/modprobe.d/usb.conf`, выполнив следующую команду:
 
+```bash 
 {{ include('../scripts/modprobe.md') }}
+```

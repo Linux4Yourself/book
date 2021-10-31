@@ -2,19 +2,27 @@
 
 ## Настройка
 
-<package-script :package="'file'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/file/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'file'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/file/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'file'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/file/test') }}
+```
 
 ## Установка
 
-<package-script :package="'file'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/file/install') }}
+```
 
 ## Установленные файлы
 

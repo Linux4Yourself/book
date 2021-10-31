@@ -2,41 +2,59 @@
 
 ## Настройка
 
+```bash 
 {{ include('../packages/xz/configure') }}
+```
 
 ## Сборка
 
+```bash 
 {{ include('../packages/xz/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/xz/test') }}
+```
 
 ## Установка
 
+```bash 
 {{ include('../packages/xz/install') }}
+```
 
 ## При раздельной структуре каталогов
 
+```bash 
 {{ include('../packages/xz/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
+```bash 
 {{ include('../packages/xz/multi_prepare') }}
+```
 
 ### Настройка
 
+```bash 
 {{ include('../packages/xz/multi_configure') }}
+```
 
 ### Сборка
 
+```bash 
 {{ include('../packages/xz/multi_build') }}
+```
 
 ### Установка
 
+```bash 
 {{ include('../packages/xz/multi_install') }}
+```
 
 ## Установленные файлы
 
