@@ -1015,11 +1015,11 @@ diff -Naurp coreutils-8.32.orig/src/expand.c coreutils-8.32/src/expand.c
                    /* Column the next input tab stop is on.  */
                    uintmax_t next_tab_column;
 @@ -149,32 +205,34 @@ expand (void)
-                     if (putchar (' ') < 0)
+                     if (putchar ('') < 0)
                        die (EXIT_FAILURE, errno, _("write error"));
  
 -                  c = ' ';
-+                  mb_setascii (&c, ' ');
++                  mb_setascii (&c, '');
                  }
 -              else if (c == '\b')
 +              else if (mb_iseq (c, '\b'))
@@ -2007,7 +2007,7 @@ diff -Naurp coreutils-8.32.orig/src/join.c coreutils-8.32/src/join.c
 +  do									\
 +    {									\
 +      (tab != NULL) ?							\
-+	fwrite(tab, sizeof(char), tablen, stdout) : putchar (' ');	\
++	fwrite(tab, sizeof(char), tablen, stdout) : putchar ('');	\
 +    }									\
 +  while (0)
 +
@@ -2480,7 +2480,7 @@ diff -Naurp coreutils-8.32.orig/src/pr.c coreutils-8.32/src/pr.c
          {
            i = number_width - chars_per_number;
            while (i-- > 0)
-             (p->char_func) (' ');
+             (p->char_func) ('');
          }
        else
 -        (p->char_func) (number_separator);
@@ -2593,7 +2593,7 @@ diff -Naurp coreutils-8.32.orig/src/pr.c coreutils-8.32/src/pr.c
 +              mblength = 1;
 +
 +            default:
-+              if (wc == L' ')
++              if (wc == L'')
 +                {
 +                  memmove (mbc, mbc + mblength, MB_CUR_MAX - mblength);
 +                  --mbc_pos;

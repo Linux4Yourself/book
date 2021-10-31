@@ -4,11 +4,11 @@
 
 Переустановка Readline приведет к переименованию старых библиотек в `<имя библиотеки>.old`. Хотя обычно это не проблема, в некоторых случаях это может вызвать ошибку в ldconfig. Этого можно избежать, выполнив следующие команды:
 
-[filename](../packages/readline/prepare ':include')
+{{ include('../packages/readline/prepare') }}
 
 ## Настройка
 
-[filename](../packages/readline/configure ':include')
+{{ include('../packages/readline/configure') }}
 
 ### Значения параметров
 
@@ -16,33 +16,33 @@
 
 ## Сборка
 
-[filename](../packages/readline/build ':include')
+{{ include('../packages/readline/build') }}
 
 ## Установка
 
-[filename](../packages/readline/install ':include')
+{{ include('../packages/readline/install') }}
 
 ## При использовании раздельной структуры каталогов
 
-[filename](../packages/readline/cldirs ':include')
+{{ include('../packages/readline/cldirs') }}
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/readline/multi_prepare ':include')
+{{ include('../packages/readline/multi_prepare') }}
 
 ### Настройка
 
-[filename](../packages/readline/multi_configure ':include')
+{{ include('../packages/readline/multi_configure') }}
 
 ### Сборка
 
-[filename](../packages/readline/multi_build ':include')
+{{ include('../packages/readline/multi_build') }}
 
 ### Установка
 
-[filename](../packages/readline/multi_install ':include')
+{{ include('../packages/readline/multi_install') }}
 
 ## Установленные файлы
 

@@ -4,7 +4,7 @@
 
 Создайте данный файл:
 
-[filename](../../scripts/etc-inputrc.md ':include')
+{{ include('../scripts/etc-inputrc.md') }}
 <script>
 	new Vue({ el: '#main' })
 </script>

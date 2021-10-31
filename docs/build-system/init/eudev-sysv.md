@@ -1,52 +1,48 @@
-<pkg :name="'eudev'" instsize showsbu2></pkg>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
+{{ include('../packages/eudev/README.md') }}
 
 ## Настройка
 
 > Если вы собираете систему с раздельной структурой каталогов, то пропустите этот шаг и приступите к следующему.
 
-[filename](../../packages/eudev/configure ':include')
+{{ include('../packages/eudev/configure') }}
 
 ## При раздельной структуре каталогов
 
-[filename](../../packages/eudev/cldirs ':include')
+{{ include('../packages/eudev/cldirs') }}
 
 ## Сборка
 
-[filename](../../packages/eudev/build ':include')
+{{ include('../packages/eudev/build') }}
 
 ## Тестирование
 
-[filename](../../packages/eudev/test ':include')
+{{ include('../packages/eudev/test') }}
 
 ## Установка
 
-[filename](../../packages/eudev/install ':include')
+{{ include('../packages/eudev/install') }}
 
 Установите необходимые файлы:
 
-[filename](../../packages/eudev/postinstall ':include')
+{{ include('../packages/eudev/postinstall') }}
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../../packages/eudev/multi_prepare ':include')
+{{ include('../packages/eudev/multi_prepare') }}
 
 ### Настройка
 
-[filename](../../packages/eudev/multi_configure ':include')
+{{ include('../packages/eudev/multi_configure') }}
 
 ### Сборка
 
-[filename](../../packages/eudev/multi_build ':include')
+{{ include('../packages/eudev/multi_build') }}
 
 ### Установка
 
-[filename](../../packages/eudev/multi_install ':include')
+{{ include('../packages/eudev/multi_install') }}
 
 <script>
 		new Vue({

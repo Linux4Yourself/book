@@ -14,11 +14,11 @@
 
 ## Сборка
 
-[filename](../packages/ncurses/build ':include')
+{{ include('../packages/ncurses/build') }}
 
 ## Установка
 
-[filename](../packages/ncurses/install ':include')
+{{ include('../packages/ncurses/install') }}
 
 Многие пакеты при компоновке ищут библиотеки без широких символов. Для компоновки с библиотеками содержащими широкие символы выполните:
 
@@ -62,7 +62,7 @@ cp -av lib/lib*.so.5* /usr/lib
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/ncurses/cldirs ':include')
+{{ include('../packages/ncurses/cldirs') }}
 
 ## Для multilib
 
@@ -74,15 +74,15 @@ make distclean
 
 ### Настройка
 
-[filename](../packages/ncurses/multi_configure ':include')
+{{ include('../packages/ncurses/multi_configure') }}
 
 ### Сборка
 
-[filename](../packages/ncurses/multi_build ':include')
+{{ include('../packages/ncurses/multi_build') }}
 
 ### Установка
 
-[filename](../packages/ncurses/multi_install ':include')
+{{ include('../packages/ncurses/multi_install') }}
 
 ???+ note
 

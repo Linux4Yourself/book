@@ -3,4 +3,5 @@ configure
 install
 postinstall
 prepare
+README.md
 test

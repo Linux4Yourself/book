@@ -4,4 +4,5 @@ install
 multi_configure
 postinstall
 prepare
+README.md
 test

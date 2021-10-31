@@ -1,8 +1,5 @@
-<pkg :name="'kbd'" instsize showsbu2></pkg>
 
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
+{{ include('../packages/kbd/README.md') }}
 
 ## Подготовка
 
@@ -31,23 +28,3 @@
 ## Установка
 
 <package-script :package="'kbd'" :type="'install'"></package-script>
-
-???+ warning
-
-    Пакет `kbd` не предоставляет некоторых рабочих раскладок клавиатуры (например, для белорусского языка). Загрузите (при необходимости) эти раскладки отдельно.
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPatch();
-		},
-		methods: {
-			getPatch: function() {
-					getPackage('kbd-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>

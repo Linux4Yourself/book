@@ -7,4 +7,5 @@ CXX="g++ -m32 -march=i686" \
     --openssldir=/etc/ssl  \
     --libdir=lib32         \
     shared                 \
-    zlib-dynamic
+    zlib-dynamic           \
+    linux-x86

@@ -2,7 +2,7 @@
 
 ## Настройка
 
-[filename](../packages/inetutils/configure ':include')
+{{ include('../packages/inetutils/configure') }}
 
 ### Значения параметров
 
@@ -10,11 +10,11 @@
 
 ## Сборка
 
-[filename](../packages/inetutils/build ':include')
+{{ include('../packages/inetutils/build') }}
 
 ## Тестирование
 
-[filename](../packages/inetutils/test ':include')
+{{ include('../packages/inetutils/test') }}
 
 ???+ warning
 
@@ -22,11 +22,11 @@
 
 ## Установка
 
-[filename](../packages/inetutils/install ':include')
+{{ include('../packages/inetutils/install') }}
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/inetutils/cldirs ':include')
+{{ include('../packages/inetutils/cldirs') }}
 
 ## Установленные файлы
 

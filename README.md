@@ -16,5 +16,6 @@ Lx4U или “Linux для себя” - русскоязычное подро�
 
 ```bash
 pip install mkdocs-material mkdocs
+pip install git+https://github.com/RedisLabs/mkdocs-include.git
 mkdocs build && mkdocs serve
 ```

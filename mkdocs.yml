@@ -84,13 +84,12 @@ markdown_extensions:
       linenums_style: pymdownx-inline
 
 plugins:
-  #- with-pdf # TODO:включить в случае, если нужно сгенерировать PDF
   - search:
       lang: ru
       lang: en
-#  - include:
-      #src_path: docs/
-  
+
+  - include:
+        src_path: docs/packages
 nav:
     - Linux для себя: index.md
     - Журнал изменений: changelog.md

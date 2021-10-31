@@ -2,21 +2,21 @@
 
 ## Настройка
 
-[filename](../packages/bison/configure ':include')
+{{ include('../packages/bison/configure') }}
 
 ## Сборка
 
-[filename](../packages/bison/build ':include')
+{{ include('../packages/bison/build') }}
 
 ## Тестирование
 
-[filename](../packages/bison/test ':include')
+{{ include('../packages/bison/test') }}
 
 > Добавляет примерно 5,5 SBU к общему времени установки пакета
 
 ## Установка
 
-[filename](../packages/bison/install ':include')
+{{ include('../packages/bison/install') }}
 
 <script>
 	new Vue({ el: '#main' })

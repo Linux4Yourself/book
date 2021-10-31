@@ -4,31 +4,31 @@
 
 Исправьте ошибку, приводящую к краху программы:
 
-[filename](../../packages/sysklogd/prepare ':include')
+{{ include('../packages/sysklogd/prepare') }}
 
 ## Сборка
 
-[filename](../../packages/sysklogd/build ':include')
+{{ include('../packages/sysklogd/build') }}
 
 ## Тестирование
 
-[filename](../../packages/sysklogd/test ':include')
+{{ include('../packages/sysklogd/test') }}
 
 ## Установка
 
-[filename](../../packages/sysklogd/install ':include')
+{{ include('../packages/sysklogd/install') }}
 
 > Если вы собираете систему с раздельной структурой каталогов, то пропустите шаг с установкой, перейдя к следующему
 
 ## При раздельной структуре каталогов
 
-[filename](../../packages/sysklogd/cldirs ':include')
+{{ include('../packages/sysklogd/cldirs') }}
 
 ## Настройка
 
 Создайте конфигурационный файл:
 
-[filename](../../packages/sysklogd/postinstall ':include')
+{{ include('../packages/sysklogd/postinstall') }}
 
 <script>
 	new Vue({ el: '#main' })

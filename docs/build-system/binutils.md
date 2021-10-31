@@ -1,10 +1,10 @@
-<pkg :name="'binutils'" instsize showsbu2></pkg>
+{{ include('../packages/binutils/README.md') }}
 
 ## Подготовка
 
 Удалите проблемный тест:
 
-[filename](../packages/binutils/prepare ':include')
+{{ include('../packages/binutils/prepare') }}
 
 <!-- temp solution TODO: Remove in next versions -->
 Ошибка в системе сборки приводит к тому, что страницы руководства становятся пустыми. Можно обойти проблему, чтобы страницы руководства были созданы правильно:
@@ -16,11 +16,11 @@ find -name \*.1 -delete
 
 ## Настройка
 
-[filename](../packages/binutils/configure ':include')
+{{ include('../packages/binutils/configure') }}
 
 ### Для multilib
 
-[filename](../packages/binutils/multi_prepare ':include')
+{{ include('../packages/binutils/multi_configure') }}
 
 ### Значения параметров
 
@@ -36,11 +36,11 @@ find -name \*.1 -delete
 
 ## Сборка
 
-[filename](../packages/binutils/build ':include')
+{{ include('../packages/binutils/build') }}
 
 ## Тестирование
 
-[filename](../packages/binutils/test ':include')
+{{ include('../packages/binutils/test') }}
 <package-script :package="'binutils'" :type="'test'"></package-script>
 
 ???+ warning
@@ -49,11 +49,11 @@ find -name \*.1 -delete
 
 ## Установка
 
-[filename](../packages/binutils/install ':include')
+{{ include('../packages/binutils/install') }}
 
 Удалите бесполезные статические библиотеки:
 
-[filename](../packages/binutils/postinstall ':include')
+{{ include('../packages/binutils/postinstall') }}
 
 ## Установленные файлы
 
@@ -62,7 +62,3 @@ find -name \*.1 -delete
 Библиотеки: libbfd.so, libctf.so, libctf-nobfd.so и libopcodes.so
 
 Директории: /usr/lib/ldscripts
-
-<script>
-	new Vue({ el: '#main' })
-</script>

@@ -2,15 +2,15 @@
 
 ## Настройка
 
-[filename](../../packages/procps-ng/configure ':include')
+{{ include('../packages/procps-ng/configure') }}
 
 ## Сборка
 
-[filename](../../packages/procps-ng/build ':include')
+{{ include('../packages/procps-ng/build') }}
 
 ## Тестирование
 
-[filename](../../packages/procps-ng/test ':include')
+{{ include('../packages/procps-ng/test') }}
 
 ???+ warning
 
@@ -18,11 +18,11 @@
 
 ## Установка
 
-[filename](../../packages/procps-ng/install ':include')
+{{ include('../packages/procps-ng/install') }}
 
 ## При раздельной структуре каталогов
 
-[filename](../../packages/procps-ng/cldirs ':include')
+{{ include('../packages/procps-ng/cldirs') }}
 
 <script>
 	new Vue({ el: '#main' })

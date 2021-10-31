@@ -2,33 +2,33 @@
 
 ## Сборка
 
-[filename](../packages/zstd/build ':include')
+{{ include('../packages/zstd/build') }}
 
 ## Тестирование
 
-[filename](../packages/zstd/test ':include')
+{{ include('../packages/zstd/test') }}
 
 ## Установка
 
-[filename](../packages/zstd/install ':include')
+{{ include('../packages/zstd/install') }}
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/zstd/cldirs ':include')
+{{ include('../packages/zstd/cldirs') }}
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/zstd/multi_prepare ':include')
+{{ include('../packages/zstd/multi_prepare') }}
 
 ### Сборка
 
-[filename](../packages/zstd/multi_build ':include')
+{{ include('../packages/zstd/multi_build') }}
 
 ### Установка
 
-[filename](../packages/zstd/multi_install ':include')
+{{ include('../packages/zstd/multi_install') }}
 
 ## Установленные файлы
 

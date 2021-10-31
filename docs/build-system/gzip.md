@@ -2,23 +2,23 @@
 
 ## Настройка
 
-[filename](../packages/gzip/configure ':include')
+{{ include('../packages/gzip/configure') }}
 
 ## Сборка
 
-[filename](../packages/gzip/build ':include')
+{{ include('../packages/gzip/build') }}
 
 ## Тестирование
 
-[filename](../packages/gzip/test ':include')
+{{ include('../packages/gzip/test') }}
 
 ## Установка
 
-[filename](../packages/gzip/install ':include')
+{{ include('../packages/gzip/install') }}
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/gzip/cldirs ':include')
+{{ include('../packages/gzip/cldirs') }}
 
 <script>
 	new Vue({ el: '#main' })

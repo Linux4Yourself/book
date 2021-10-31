@@ -1,8 +1,4 @@
-<pkg :name="'sysvinit'" instsize showsbu2></pkg>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
+{{ include('../packages/sysvinit/README.md') }}
 
 ## Подготовка
 
@@ -18,18 +14,3 @@
 
 <package-script :package="'sysvinit'" :type="'install'"></package-script>
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPatch();
-		},
-		methods: {
-			getPatch: function() {
-					getPackage('sysvinit-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>

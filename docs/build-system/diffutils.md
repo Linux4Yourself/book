@@ -2,19 +2,19 @@
 
 ## Настройка
 
-[filename](../packages/diffutils/configure ':include')
+{{ include('../packages/diffutils/configure') }}
 
 ## Сборка
 
-[filename](../packages/diffutils/build ':include')
+{{ include('../packages/diffutils/build') }}
 
 ## Тестирование
 
-[filename](../packages/diffutils/test ':include')
+{{ include('../packages/diffutils/test') }}
 
 ## Установка
 
-[filename](../packages/diffutils/install ':include')
+{{ include('../packages/diffutils/install') }}
 
 <script>
 	new Vue({ el: '#main' })

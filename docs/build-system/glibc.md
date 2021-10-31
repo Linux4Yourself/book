@@ -1,40 +1,8 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-	new Vue({
-		el: '#main',
-		data: {
-			package: {},
-			tzdata: {},
-			glibcPatch: {},
-		},
-		mounted: function () {
-				this.getPackage('glibc');
-				this.getTzdata();
-				this.getGlibcPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getTzdata: function() {
-					getPackage('tzdata')
-					.then(response => this.tzdata = response);
-			},
-			getGlibcPatch: function() {
-					getPackage('glibc-patch')
-					.then(response => this.glibcPatch = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/glibc/README.md') }}
 
 ## Дополнительные необходимые файлы
 
-<a :href="glibcPatch.url">{{ glibcPatch.url}}</a>
-
-<a :href="tzdata.url">{{ tzdata.url}}</a>
+{{ include('../packages/tzdata/.url') }}
 
 ## Подготовка
 
@@ -195,7 +163,7 @@ localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 localedef -i zh_TW -f UTF-8 zh_TW.UTF-8
 ```
 
-вы можете установить все локали, которые содержатся в файле `{{ package.fileName }}/localedata/SUPPORTED`.
+вы можете установить все локали, которые содержатся в файле `localedata/SUPPORTED`.
 Выполните следующую команду:
 
 ```bash
@@ -233,7 +201,7 @@ EOF
 Установите информацию о часовых поясах:
 
 <pre class="pre">
-tar -xf ../../{{tzdata.fileName}}
+tar -xf ../../{{ include('../packages/tzdata/.filename') }}
 
 ZONEINFO=/usr/share/zoneinfo
 mkdir -pv $ZONEINFO/{posix,right}

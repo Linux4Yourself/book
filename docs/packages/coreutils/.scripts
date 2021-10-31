@@ -1,6 +1,8 @@
 build
+cldirs
 configure
 install
 patch
 prepare
+README.md
 test

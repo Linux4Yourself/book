@@ -2,45 +2,45 @@
 
 ## Настройка
 
-[filename](../packages/elfutils/configure ':include')
+{{ include('../packages/elfutils/configure') }}
 
 ## Сборка
 
-[filename](../packages/elfutils/build ':include')
+{{ include('../packages/elfutils/build') }}
 
 ## Тестирование
 
-[filename](../packages/elfutils/test ':include')
+{{ include('../packages/elfutils/test') }}
 
 ## Установка
 
 Потребуется только установка библиотеки `libelf`.
 
-[filename](../packages/elfutils/install ':include')
+{{ include('../packages/elfutils/install') }}
 
 ## При раздельной структуре каталогов
 
 Добавьте к скрипту `configure` опцию `--libdir=/lib`.
 
-[filename](../packages/elfutils/cldirs ':include')
+{{ include('../packages/elfutils/cldirs') }}
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/elfutils/multi_prepare ':include')
+{{ include('../packages/elfutils/multi_prepare') }}
 
 ### Подготовка
 
-[filename](../packages/elfutils/multi_configure ':include')
+{{ include('../packages/elfutils/multi_configure') }}
 
 ### Сборка
 
-[filename](../packages/elfutils/multi_build ':include')
+{{ include('../packages/elfutils/multi_build') }}
 
 ### Установка
 
-[filename](../packages/elfutils/multi_install ':include')
+{{ include('../packages/elfutils/multi_install') }}
 
 <script>
 	new Vue({ el: '#main' })

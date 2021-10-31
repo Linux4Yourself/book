@@ -4,3 +4,4 @@ configure-mbr
 install
 install-mbr
 prepare
+README.md

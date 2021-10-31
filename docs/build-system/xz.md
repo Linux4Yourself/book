@@ -2,41 +2,41 @@
 
 ## Настройка
 
-[filename](../packages/xz/configure ':include')
+{{ include('../packages/xz/configure') }}
 
 ## Сборка
 
-[filename](../packages/xz/build ':include')
+{{ include('../packages/xz/build') }}
 
 ## Тестирование
 
-[filename](../packages/xz/test ':include')
+{{ include('../packages/xz/test') }}
 
 ## Установка
 
-[filename](../packages/xz/install ':include')
+{{ include('../packages/xz/install') }}
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/xz/cldirs ':include')
+{{ include('../packages/xz/cldirs') }}
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/xz/multi_prepare ':include')
+{{ include('../packages/xz/multi_prepare') }}
 
 ### Настройка
 
-[filename](../packages/xz/multi_configure ':include')
+{{ include('../packages/xz/multi_configure') }}
 
 ### Сборка
 
-[filename](../packages/xz/multi_build ':include')
+{{ include('../packages/xz/multi_build') }}
 
 ### Установка
 
-[filename](../packages/xz/multi_install ':include')
+{{ include('../packages/xz/multi_install') }}
 
 ## Установленные файлы
 

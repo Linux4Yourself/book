@@ -2,7 +2,7 @@
 
 ## Подготовка
 
-[filename](../shared/systemd-extra-warn.md ':include')
+{{ include('../shared/systemd-extra-warn.md') }}
 
 ???+ danger
 

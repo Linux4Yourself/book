@@ -17,7 +17,7 @@
 
 ## Для systemd
 
-[filename](../scripts/fstab.md ':include')
+{{ include('../scripts/fstab.md') }}
 
 Замените `sdX` на нужное значение.
 

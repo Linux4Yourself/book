@@ -2,7 +2,7 @@
 
 ## Настройка
 
-[filename](../packages/kmod/configure ':include')
+{{ include('../packages/kmod/configure') }}
 
 ### Значения параметров
 
@@ -12,7 +12,7 @@
 
 ## Сборка
 
-[filename](../packages/kmod/build ':include')
+{{ include('../packages/kmod/build') }}
 
 ## Тестирование
 
@@ -20,11 +20,11 @@
 
 ## Установка
 
-[filename](../packages/kmod/install ':include')
+{{ include('../packages/kmod/install') }}
 
 Необходимо создать символические ссылки (симлинки) для совместимости с `Module-Init-Tools` (предыдущая реализация программы обработки модулей ядра).
 
-[filename](../packages/kmod/postinstall ':include')
+{{ include('../packages/kmod/postinstall') }}
 
 > Заметьте, что эту команду не следует вводить, если вы используете систему с раздельной структурой каталогов, в таком случае перейдите к следующему шагу.
 
@@ -34,7 +34,7 @@
 
 Измените предыдущую команду (создающую симлинки для совместимости с `Module-Init-Tools`) и создайте необходимую ссылку в `/bin`:
 
-[filename](../packages/kmod/cldirs ':include')
+{{ include('../packages/kmod/cldirs') }}
 
 ## Для multilib
 
@@ -42,19 +42,19 @@
 
 Очистите предыдущую сборку, но сохраните страницы руководства, так как они не могут быть воссозданы, поскольку пакет `xsltproc` не установлен:
 
-[filename](../packages/kmod/multi_prepare ':include')
+{{ include('../packages/kmod/multi_prepare') }}
 
 ### Подготовка
 
-[filename](../packages/kmod/multi_configure ':include')
+{{ include('../packages/kmod/multi_configure') }}
 
 ### Сборка
 
-[filename](../packages/kmod/multi_build ':include')
+{{ include('../packages/kmod/multi_build') }}
 
 ### Установка
 
-[filename](../packages/kmod/multi_install ':include')
+{{ include('../packages/kmod/multi_install') }}
 
 <script>
 	new Vue({ el: '#main' })

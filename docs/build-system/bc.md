@@ -2,19 +2,19 @@
 
 ## Настройка
 
-[filename](../packages/bc/configure ':include')
+{{ include('../packages/bc/configure') }}
 
 ## Сборка
 
-[filename](../packages/bc/build ':include')
+{{ include('../packages/bc/build') }}
 
 ## Тестирование
 
-[filename](../packages/bc/test ':include')
+{{ include('../packages/bc/test') }}
 
 ## Установка
 
-[filename](../packages/bc/install ':include')
+{{ include('../packages/bc/install') }}
 
 ## Установленные файлы
 

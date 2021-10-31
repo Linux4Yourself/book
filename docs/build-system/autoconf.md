@@ -2,15 +2,15 @@
 
 ## Настройка
 
-[filename](../packages/autoconf/configure ':include')
+{{ include('../packages/autoconf/configure') }}
 
 ## Сборка
 
-[filename](../packages/autoconf/build ':include')
+{{ include('../packages/autoconf/build') }}
 
 ## Тестирование
 
-[filename](../packages/autoconf/test ':include')
+{{ include('../packages/autoconf/test') }}
 
 ???+ note
 	
@@ -18,7 +18,7 @@
 
 ## Установка
 
-[filename](../packages/autoconf/install ':include')
+{{ include('../packages/autoconf/install') }}
 
 <script>
 	new Vue({ el: '#main' })

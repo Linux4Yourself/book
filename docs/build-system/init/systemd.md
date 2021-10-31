@@ -4,11 +4,11 @@
 
 Удалите ненужную группу `render` из правил `udev`:
 
-[filename](../../packages/systemd/prepare ':include')
+{{ include('../packages/systemd/prepare') }}
 
 ## Настройка
 
-[filename](../../packages/systemd/configure ':include')
+{{ include('../packages/systemd/configure') }}
 
 ## При раздельной структуре каталогов
 
@@ -24,36 +24,36 @@
 
 ## Сборка
 
-[filename](../../packages/systemd/build ':include')
+{{ include('../packages/systemd/build') }}
 
 ## Установка
 
-[filename](../../packages/systemd/install ':include')
+{{ include('../packages/systemd/install') }}
 
 - Удалите ненужный каталог;
 - Создайте файл `/etc/machine-id`, необходимый для `systemd-journald`;
 - Настройте базовую целевую структуру;
 - Отключите службу, которая, как известно, вызывает проблемы с системами, использующими конфигурацию сети, отличную от той, которая предоставляется systemd-networkd:
 
-[filename](../../packages/systemd/postinstall ':include')
+{{ include('../packages/systemd/postinstall') }}
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../../packages/systemd/multi_prepare ':include')
+{{ include('../packages/systemd/multi_prepare') }}
 
 ### Настройка
 
-[filename](../../packages/systemd/multi_configure ':include')
+{{ include('../packages/systemd/multi_configure') }}
 
 ### Сборка
 
-[filename](../../packages/systemd/multi_build ':include')
+{{ include('../packages/systemd/multi_build') }}
 
 ### Установка
 
-[filename](../../packages/systemd/multi_install ':include')
+{{ include('../packages/systemd/multi_install') }}
 
 <script>
 	new Vue({ el: '#main' })

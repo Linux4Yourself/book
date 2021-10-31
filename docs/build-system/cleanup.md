@@ -12,7 +12,7 @@ rm -rf /tmp/*
 logout
 ```
 
-[filename](../scripts/chroot.md ':include')
+{{ include('../scripts/chroot.md') }}
 
 
 Файлы `.la` потеряли свою актуальность и могут вызвать проблемы при обновлении. Удалите их:
