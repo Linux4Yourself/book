@@ -1,20 +1,5 @@
-<package-info :package="package" showsbu></package-info>
+{{ include('../packages/gettext/README.md') }}
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gettext');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
 
 ## Настройка
 
