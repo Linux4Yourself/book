@@ -50,7 +50,7 @@ allPackages.forEach(pkg => {
 
 	fs.writeFileSync(`${dir}/README.md`, readmeText, 'utf-8');
 
-	readmeAll.push(`${readmeText}${breakLine()}`);
+	readmeAll.push(`${readmeText}${breakLine()}---`);
 
 	const scripts = [];
 	
