@@ -55,6 +55,4 @@
 
 {{ include('../packages/systemd/multi_install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

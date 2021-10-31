@@ -20,6 +20,4 @@
 
 Программы: `bc` и `dc`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -16,7 +16,7 @@
 
 <package-script :package="'python'" :type="'test'"></package-script>
 
-???+ danger
+???+ danger "Важно"
 
     Тесты запускать не рекомендуется. Они могут зависнуть. При желании выполните тесты при переустановке Python, но уже в руководстве `Extra`.
 
@@ -28,6 +28,4 @@
 
 Директории: /usr/include/python3.9 и /usr/lib/python3
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

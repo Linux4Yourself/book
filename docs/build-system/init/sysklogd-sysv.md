@@ -30,6 +30,4 @@
 
 {{ include('../packages/sysklogd/postinstall') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

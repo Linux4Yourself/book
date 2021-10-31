@@ -26,6 +26,4 @@
 
 - **Установленные программы:** `wget`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

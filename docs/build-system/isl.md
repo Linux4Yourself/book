@@ -20,6 +20,4 @@
 
 <package-script :package="'isl'" :type="'postinstall'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

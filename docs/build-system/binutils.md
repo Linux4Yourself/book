@@ -43,7 +43,7 @@ find -name \*.1 -delete
 {{ include('../packages/binutils/test') }}
 <package-script :package="'binutils'" :type="'test'"></package-script>
 
-???+ warning
+???+ warning "Предупреждение"
 	
 	Известно, что четыре теста с меткой `Run property ...` могут дать сбои.
 

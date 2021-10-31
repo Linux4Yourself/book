@@ -4,6 +4,4 @@
 
 {{ include('../scripts/systemd-users.md') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

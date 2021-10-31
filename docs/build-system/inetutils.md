@@ -16,7 +16,7 @@
 
 {{ include('../packages/inetutils/test') }}
 
-???+ warning
+???+ warning "Предупреждение"
 
     Тест `libls.sh` даёт сбой, когда система LX4 находится в среде chroot, а тест `ping-localhost.sh` не проходит, если в хост-системе нет поддержки IPv6.
 
@@ -32,6 +32,4 @@
 
 Программы: `dnsdomainname`, `ftp`, `ifconfig`, `hostname`, `ping`, `ping6`, `talk`, `telnet`, `tftp` и `traceroute`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

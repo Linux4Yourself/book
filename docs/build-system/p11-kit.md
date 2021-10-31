@@ -40,6 +40,4 @@
 
 <package-script :package="'p11-kit'" :type="'multi_install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -16,7 +16,7 @@
 
 <package-script :package="'gdbm'" :type="'test'"></package-script>
 
-???+ warning
+???+ warning "Предупреждение"
 
     Известно, что один тест (`version`) может дать сбой.
 
@@ -24,6 +24,4 @@
 
 <package-script :package="'gdbm'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

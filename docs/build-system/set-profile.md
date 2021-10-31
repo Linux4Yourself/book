@@ -65,6 +65,4 @@ bash-completion расширяет существующие возможност
 bash --login +h
 ```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

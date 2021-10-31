@@ -18,6 +18,4 @@
 
 {{ include('../packages/check/install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

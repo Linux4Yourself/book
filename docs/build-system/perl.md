@@ -42,6 +42,4 @@
 
 Директории: `/usr/lib/perl5`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

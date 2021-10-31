@@ -16,6 +16,4 @@
 
 {{ include('../packages/diffutils/install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

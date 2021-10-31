@@ -18,6 +18,4 @@
 
 {{ include('../packages/bison/install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

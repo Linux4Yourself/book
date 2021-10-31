@@ -12,7 +12,7 @@
 
 {{ include('../packages/procps-ng/test') }}
 
-???+ warning
+???+ warning "Предупреждение"
 
     Пять тестов, связанных с `pkill` дают сбои, так как они (тесты) не были обновлены.
 
@@ -24,6 +24,4 @@
 
 {{ include('../packages/procps-ng/cldirs') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

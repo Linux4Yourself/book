@@ -75,10 +75,8 @@
 | Ukrainian (uk)                         |   KOI8-U    |
 | Vietnamese (vi)                        | TCVN5712-1  |
 
-???+ note
+???+ note "Обратите внимание"
 
     Страницы на других языках не поддерживаются.
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

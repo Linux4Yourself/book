@@ -12,7 +12,7 @@
 
 <package-script :package="'openssl'" :type="'test'"></package-script>
 
-???+ warning
+???+ warning "Предупреждение"
 
     Известно, что один тест `30-test_afalg.t` даст сбой в некоторых конфигурациях ядра (по-видимому, предполагает, что некоторые неопределенные параметры `Crypto` были выбраны).
 
@@ -46,6 +46,4 @@
 
 Директории: /etc/ssl, /usr/include/openssl и /usr/lib/engines
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

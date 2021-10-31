@@ -10,6 +10,4 @@
 
 <package-script :package="'markupsafe'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

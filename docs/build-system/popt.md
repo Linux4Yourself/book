@@ -16,6 +16,4 @@
 
 <package-script :package="'popt'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

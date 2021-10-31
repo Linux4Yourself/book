@@ -23,6 +23,4 @@
 
 <package-script :package="'intltool'" :type="'install-doc'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

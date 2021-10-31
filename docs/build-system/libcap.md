@@ -48,6 +48,4 @@
 
 Библиотеки: `libcap.so` и `libpsx.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

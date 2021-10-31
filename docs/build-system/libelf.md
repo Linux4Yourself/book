@@ -42,6 +42,4 @@
 
 {{ include('../packages/elfutils/multi_install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

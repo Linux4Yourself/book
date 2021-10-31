@@ -22,6 +22,4 @@
 
 Программы: bridge, ctstat (ссылка на lnstat), genl, ifcfg, ifstat, ip, lnstat, nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (ссылка на lnstat), ss, and tc
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

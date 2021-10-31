@@ -38,6 +38,4 @@
 
 <package-script :package="'expat'" :type="'multi_install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

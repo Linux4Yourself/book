@@ -30,7 +30,7 @@ mv -v {{ include('../packages/isl/.filename') }} {{ include('../packages/isl/.na
 
 </pre>
 
-???+ warning
+???+ warning "Предупреждение"
 
 	Обратите внимание, что распаковка указанных пакетов должна производиться из каталога пакета GCC.
 

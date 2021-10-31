@@ -44,7 +44,7 @@ ln -sfv libncurses.so      /usr/lib/libcurses.so
 rm -fv /usr/lib/libncurses++w.a
 ```
 
-???+ note
+???+ note "Обратите внимание"
 
     Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
 
@@ -84,7 +84,7 @@ make distclean
 
 {{ include('../packages/ncurses/multi_install') }}
 
-???+ note
+???+ note "Обратите внимание"
 
     Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
 
@@ -108,6 +108,4 @@ cp -av lib/lib*.so.5* /usr/lib
 
 Директории: /usr/share/tabset /usr/share/terminfo
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

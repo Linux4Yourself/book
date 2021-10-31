@@ -12,6 +12,4 @@
 
 <package-script :package="'dosfstools'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

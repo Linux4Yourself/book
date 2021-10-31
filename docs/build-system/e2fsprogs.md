@@ -28,7 +28,7 @@
 
 > Тесты могут занять довольно продолжительное время на HDD (около 4 SBU). На SSD же это будет быстрее - 1,5 SBU.
 
-???+ warning
+???+ warning "Предупреждение"
 
     Тест `m_rootdir_acl` может дать сбой.
 
@@ -44,6 +44,4 @@
 
 {{ include('../packages/e2fsprogs/install-doc') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

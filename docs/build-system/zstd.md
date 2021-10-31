@@ -42,6 +42,4 @@
 
 `libzstd` - библиотека для формата сжатия ZSTD
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

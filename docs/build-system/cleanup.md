@@ -52,6 +52,4 @@ find /{bin,sbin} /usr/{bin,sbin,libexec} -type f \
     -exec strip --strip-all {} ';'
 ```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

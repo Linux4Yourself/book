@@ -14,7 +14,7 @@
 
 {{ include('../packages/automake/test') }}
 
-???+ warning
+???+ warning "Предупреждение"
 	
 	Известно, что тесты `t/subobj.sh`, `t/deprecated-acinit.sh` и `t/init.sh` не проходят в LX4.
 
@@ -22,6 +22,4 @@
 
 {{ include('../packages/automake/install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

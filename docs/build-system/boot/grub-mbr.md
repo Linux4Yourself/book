@@ -16,6 +16,4 @@
 
 <package-script :package="'grub'" :type="'install-mbr'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

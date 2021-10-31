@@ -24,6 +24,4 @@
 
 {{ include('../packages/findutils/cldirs') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

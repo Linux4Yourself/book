@@ -22,6 +22,4 @@
 
 Библиотеки: libmagic.so
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

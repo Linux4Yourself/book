@@ -25,6 +25,4 @@
 
 Программы: `meson`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

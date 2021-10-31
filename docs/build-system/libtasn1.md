@@ -35,6 +35,4 @@
 
 <package-script :package="'libtasn1'" :type="'multi_install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

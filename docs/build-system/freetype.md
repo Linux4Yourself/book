@@ -2,7 +2,7 @@
 
 ## Настройка
 
-???+ note
+???+ note "Обратите внимание"
 
 	В руководстве extra, данный пакет следует переустановить после установки `harfbuzz` из-за циклической зависимости.
 
@@ -34,6 +34,4 @@
 
 <package-script :package="'freetype'" :type="'multi_install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

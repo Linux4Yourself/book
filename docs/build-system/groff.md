@@ -21,6 +21,4 @@ Groff ожидает переменную окружения `PAGE`, значе�
 
 <package-script :package="'groff'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

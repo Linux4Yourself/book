@@ -16,6 +16,4 @@
 
 {{ include('../packages/psmisc/cldirs') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

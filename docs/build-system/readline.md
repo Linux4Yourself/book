@@ -48,6 +48,4 @@
 
 Библиотеки: `libhistory.so` и `libreadline.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -14,7 +14,7 @@
 
 > Тестирование добавляет 3 SBU ко всему времени установки пакета
 
-???+ warning
+???+ warning "Предупреждение"
 
     Известно, что тест `store/restore` даёт сбой.
 
@@ -22,6 +22,4 @@
 
 {{ include('../packages/tar/install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -6,6 +6,4 @@
 
 <package-script :package="'jinja2'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

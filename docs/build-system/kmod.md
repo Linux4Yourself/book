@@ -56,6 +56,4 @@
 
 {{ include('../packages/kmod/multi_install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

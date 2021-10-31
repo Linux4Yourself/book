@@ -20,6 +20,4 @@
 
 {{ include('../packages/gzip/cldirs') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

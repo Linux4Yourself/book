@@ -16,6 +16,4 @@
 
 {{ include('../packages/grep/install') }}
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

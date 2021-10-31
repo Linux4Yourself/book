@@ -15,6 +15,4 @@
 {{ include('../packages/dejagnu/test') }}
 <package-script :package="'dejagnu'" :type="'test'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

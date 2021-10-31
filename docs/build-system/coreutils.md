@@ -33,7 +33,7 @@
 
 {{ include('../packages/coreutils/test') }}
 
-???+ warning
+???+ warning "Предупреждение"
 
 	Известно, что тест `test-getlogin` не проходит в LX4.
 

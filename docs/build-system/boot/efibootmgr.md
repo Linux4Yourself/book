@@ -19,6 +19,4 @@
 - `EFI_LOADER=grubx64.efi`- указывает имя загрузчика EFI по умолчанию.
 - `sbindir=/usr/bin` - установить `efibootmgr` в /usr/bin.
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

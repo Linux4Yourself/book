@@ -5,6 +5,4 @@
 Создайте данный файл:
 
 {{ include('../scripts/etc-inputrc.md') }}
-<script>
-	new Vue({ el: '#main' })
-</script>
+

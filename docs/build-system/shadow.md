@@ -41,6 +41,4 @@ passwd root
 
 Директории: `/etc/default`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

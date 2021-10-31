@@ -14,7 +14,7 @@
 
 <package-script :package="'tcl'" :type="'test'"></package-script>
 
-???+ warning
+???+ warning "Предупреждение"
 
     В результатах теста есть несколько мест, связанных с `clock.test`, которые указывают на сбой, но сводка в конце указывает никаких ошибок. `clock.test` проходит на полной системе LX4.
 
@@ -32,6 +32,4 @@
 ln -sfv tclsh8.6 /usr/bin/tclsh
 ```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

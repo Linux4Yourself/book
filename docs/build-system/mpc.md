@@ -20,6 +20,4 @@
 
 Библиотеки: libmpc.so
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

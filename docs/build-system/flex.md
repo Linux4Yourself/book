@@ -26,6 +26,4 @@
 
 Библиотеки: `libfl.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

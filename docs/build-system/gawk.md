@@ -26,6 +26,4 @@
 
 <package-script :package="'gawk'" :type="'install-doc'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -30,6 +30,4 @@ https://unifoundry.com/pub/unifont/unifont-13.0.06/font-builds/unifont-13.0.06.p
 
 <package-script :package="'grub'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

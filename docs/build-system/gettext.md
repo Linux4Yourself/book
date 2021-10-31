@@ -18,6 +18,4 @@
 
 <package-script :package="'gettext'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

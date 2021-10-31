@@ -42,6 +42,4 @@
 
 Библиотеки: `libacl.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

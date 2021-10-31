@@ -25,6 +25,4 @@
 {{ include('../packages/sed/install-doc') }}
 <package-script :package="'sed'" :type="'install-doc'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

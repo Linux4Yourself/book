@@ -46,6 +46,4 @@
 
 <package-script :package="'mpc'" :type="'files'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

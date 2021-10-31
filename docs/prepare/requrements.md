@@ -61,7 +61,8 @@ urpmi bison gawk texinfo make gcc-c++
 
 {{ include('../scripts/version-check.md') }}
 
-!> Внимательно изучите результат выполнения. В нём не должно встречаться строк, содержащих `ERROR`, `command not found`, `failed`.
+???+ warning "Предупреждение"
+	 Внимательно изучите результат выполнения. В нём не должно встречаться строк, содержащих `ERROR`, `command not found`, `failed`.
 
 **Ошибочный результат**
 
@@ -128,6 +129,4 @@ xz (XZ Utils) 5.2.4
 g++ compilation OK
 ```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

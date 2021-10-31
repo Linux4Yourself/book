@@ -20,6 +20,4 @@
 
 Программы: `pkg-config`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

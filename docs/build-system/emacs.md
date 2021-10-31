@@ -24,6 +24,4 @@
 - **Установленные библиотеки:** нет
 - **Установленные директории:** `/usr/libexec/emacs`, `/usr/share/emacs` и `/var/games/emacs`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -4,6 +4,4 @@
 
 <package-script :package="'bootscripts'" :type="'install'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+
