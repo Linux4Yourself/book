@@ -1,20 +1,4 @@
-<package-info :package="package"></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('linux');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/linux/README.md') }}
 
 # Настройка
 
@@ -252,7 +236,7 @@ make modules_install
 архитектура x86:
 
 <pre class="pre">
-cp -iv arch/x86/boot/bzImage /boot/vmlinuz-{{ package.version }}-my-kernel
+cp -iv arch/x86/boot/bzImage /boot/vmlinuz-{{ include('../packages/linux/.version') }}-my-kernel
 </pre>
 
 `System.map` файл, внутри которого находится символьная таблица адресов функций и
@@ -262,7 +246,7 @@ cp -iv arch/x86/boot/bzImage /boot/vmlinuz-{{ package.version }}-my-kernel
 ядра. Выполните следующую команду для установки файла System.map :
 
 <pre class="pre">
-cp -iv System.map /boot/System.map-{{ package.version }}
+cp -iv System.map /boot/System.map-{{ include('../packages/linux/.version') }}
 </pre>
 
 Файл конфигурации ядра `.config`, полученный в результате настройки `make menuconfig`
@@ -270,13 +254,13 @@ cp -iv System.map /boot/System.map-{{ package.version }}
 оставить этот файл для будующей работы:
 
 <pre class="pre">
-cp -iv .config /boot/config-{{ package.version }}
+cp -iv .config /boot/config-{{ include('../packages/linux/.version') }}
 </pre>
 
 Для облегчения обновления ядра создайте символическую ссылку:
 
 <pre class="pre">
-ln -svf vmlinuz-{{ package.version }}-my-kernel /boot/vmlinuz
+ln -svf vmlinuz-{{ include('../packages/linux/.version') }}-my-kernel /boot/vmlinuz
 </pre>
 
 При обновлении ядра будет достаточно установить новую версию и обновить символическую ссылку.
@@ -286,8 +270,8 @@ ln -svf vmlinuz-{{ package.version }}-my-kernel /boot/vmlinuz
 Установите документацию, если она необходима
 
 <pre class="pre">
-install -d /usr/share/doc/linux-{{ package.version }}
-cp -rv Documentation/* /usr/share/doc/linux-{{ package.version }}
+install -d /usr/share/doc/linux-{{ include('../packages/linux/.version') }}
+cp -rv Documentation/* /usr/share/doc/linux-{{ include('../packages/linux/.version') }}
 </pre>
 
 ## Настройка каталога с исходным кодом
@@ -310,7 +294,7 @@ cp -rv Documentation/* /usr/share/doc/linux-{{ package.version }}
 Если вы планируете оставить каталог с исходным кодом ядра, выполните команду:
 
 <pre class="pre">
-chown -R 0:0 /usr/src/linux-{{ package.version }}
+chown -R 0:0 /usr/src/linux-{{ include('../packages/linux/.version') }}
 </pre>
 
 ???+ danger
@@ -330,7 +314,3 @@ chown -R 0:0 /usr/src/linux-{{ package.version }}
 Создайте новый файл `/etc/modprobe.d/usb.conf`, выполнив следующую команду:
 
 [filename](../scripts/modprobe.md ':include')
-
-<script>
-	new Vue({ el: '#main' })
-</script>

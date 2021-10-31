@@ -1,4 +1,5 @@
 build
+cldirs
 configure
 install
 multi_build
@@ -7,4 +8,5 @@ multi_install
 multi_postinstall
 multi_prepare
 postinstall
+README.md
 test

@@ -8,4 +8,5 @@ multi_postinstall
 multi_test
 postinstall
 prepare
+README.md
 test

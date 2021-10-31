@@ -1,31 +1,4 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPackage();
-				this.getPatch();
-		},
-		methods: {
-			getPackage: function() {
-					getPackage('glibc')
-					.then(response => this.package = response);
-			},
-			getPatch: function() {
-					getPackage('glibc-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">
-{{ patch.url }}
-</a>
+{{ include('../packages/glibc/README.md') }}
 
 ## Настройка
 

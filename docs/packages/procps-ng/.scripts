@@ -1,5 +1,7 @@
 build
+cldirs
 configure
 configure-systemd
 install
+README.md
 test

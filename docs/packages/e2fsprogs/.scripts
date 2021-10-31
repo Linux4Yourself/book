@@ -4,4 +4,5 @@ install
 install-doc
 postinstall
 prepare
+README.md
 test

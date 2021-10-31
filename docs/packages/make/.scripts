@@ -1,4 +1,5 @@
 build
 configure
 install
+README.md
 test

@@ -1,30 +1,10 @@
 # Заголовочные файлы ядра Linux 
 
-Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
+Ссылка для скачивания: {{ include('../packages/linux/.url') }}
 <br />
-Текущая версия: <b>{{ package.version }}</b>
-<br />
-Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
+Текущая версия: <b>{{ include('../packages/linux/.version') }}</b>
 <br />
 Важность: <b>Необходимый</b>
-<br />
-Размер архива: <b>{{ package.size }} Mb</b>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('linux');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			}
-		}
-  })
-</script>
 
 Файлы заголовков определяют способ определения функций в исходном файле. Они используются таким образом, чтобы компилятор мог проверить правильность использования функции в качестве сигнатуры функции (возвращаемое значение и параметры) в файле заголовка. Для этой задачи фактическая реализация функции не требуется.
 

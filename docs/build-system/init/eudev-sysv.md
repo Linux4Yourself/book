@@ -1,8 +1,4 @@
-<pkg :name="'eudev'" instsize showsbu2></pkg>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
+{{ include('../packages/eudev/README.md') }}
 
 ## Настройка
 

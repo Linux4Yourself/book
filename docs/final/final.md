@@ -13,9 +13,9 @@
 <pre class="pre">
 cat > /etc/os-release << "EOF"
 NAME="MyLinux"
-VERSION="{{ book.revision }}"
+VERSION="1.0"
 ID=mylinux
-PRETTY_NAME="MyLinux {{ book.revision }}"
+PRETTY_NAME="MyLinux 1.0"
 VERSION_CODENAME="MyLinuxCodeName"
 EOF
 </pre>
@@ -139,7 +139,7 @@ EOF
 <pre class="pre">
 cat > /etc/lsb-release << "EOF"
 DISTRIB_ID="MyLinux"
-DISTRIB_RELEASE="{{ book.revision }}"
+DISTRIB_RELEASE="1.0"
 DISTRIB_CODENAME="mylinux"
 DISTRIB_DESCRIPTION="MyLinux"
 EOF

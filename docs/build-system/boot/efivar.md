@@ -1,8 +1,4 @@
-<pkg :name="'efivar'" instsize showsbu2></pkg>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
+{{ include('../packages/efivar/README.md') }}
 
 ## Подготовка
 
@@ -17,19 +13,3 @@
 ## Установка
 
 <package-script :package="'efivar'" :type="'install'"></package-script>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPatch();
-		},
-		methods: {
-			getPatch: function() {
-					getPackage('efivar-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>

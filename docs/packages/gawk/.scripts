@@ -3,4 +3,5 @@ configure
 install
 install-doc
 prepare
+README.md
 test

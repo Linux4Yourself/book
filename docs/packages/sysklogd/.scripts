@@ -1,6 +1,8 @@
 build
+cldirs
 configure
 install
 postinstall
 prepare
+README.md
 test

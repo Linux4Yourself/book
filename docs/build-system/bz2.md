@@ -1,8 +1,5 @@
-<pkg :name="'bzip2'" instsize showsbu2></pkg>
+{{ include('../packages/bzip2/README.md') }}
 
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
 
 ## Подготовка
 
@@ -79,24 +76,3 @@
 `bzmore` - работает больше с файлами, сжатыми с помощью bzip
 
 `libbz2` - библиотека, реализующая сжатие данных без потерь с сортировкой по блокам с использованием алгоритма Берроуза-Уиллера.
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPackage('bzip2');
-				this.getPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getPatch: function() {
-					getPackage('bzip2-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>

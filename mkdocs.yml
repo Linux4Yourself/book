@@ -87,7 +87,9 @@ markdown_extensions:
 plugins:
   #- with-pdf
   - search
-  
+  - include:
+        src_path: docs/packages
+
 nav:
     - Linux для себя: index.md
     - Журнал изменений: changelog.md
