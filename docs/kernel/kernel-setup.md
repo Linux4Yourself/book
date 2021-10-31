@@ -313,4 +313,4 @@ chown -R 0:0 /usr/src/linux-{{ include('../packages/linux/.version') }}
 
 Создайте новый файл `/etc/modprobe.d/usb.conf`, выполнив следующую команду:
 
-[filename](../scripts/modprobe.md ':include')
+{{ include('../scripts/modprobe.md') }}

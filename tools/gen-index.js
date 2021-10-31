@@ -21,6 +21,10 @@ function getPriorityText( priority) {
 	return '';
 }
 
+function breakLine() {
+	return '\r\n\r\n';
+}
+
 allPackages.forEach(pkg => {
 	const url = (pkg.downloadUrl ? pkg.downloadUrl: pkg.url).trim();
 	const dir = `docs/packages/${pkg.name}`;
@@ -34,19 +38,19 @@ allPackages.forEach(pkg => {
 	fs.writeFileSync(`${dir}/.filename`, pkg.fileName, 'utf-8');
 	fs.writeFileSync(`${dir}/.name`, `${pkg.name}-${pkg.version}`, 'utf-8');
 
-	const downloadLink = `Оригинальное расположение[:${pkg.url}](${pkg.url})`;
-	const downloadLinkMirror = `Ссылка для загрузки[:${pkg.downloadUrl}](${pkg.downloadUrl})`;
+	const downloadLink = `Оригинальное расположение: [${pkg.url}](${pkg.url})`;
+	const downloadLinkMirror = `Ссылка для загрузки: [${pkg.downloadUrl}](${pkg.downloadUrl})`;
 	const version = `Версия: **${pkg.version}**`;
 	const size = `Размер: **${pkg.size}Mb**`;
 	const md5 = `MD5: **${pkg.md5}**`;
 	const priority = `Приоритет: **${getPriorityText(pkg.priority)}**`;
-	const homepage = `Домашняя страница[:${pkg.homeUrl}](${pkg.homeUrl})`;
+	const homepage = `Домашняя страница: [${pkg.homeUrl}](${pkg.homeUrl})`;
 
-	const readmeText = `# ${ pkg.name }\r\n${ pkg.description }\r\n${ version }\r\n${ size }\r\n${ priority }\r\n${ downloadLink }\r\n${ downloadLinkMirror }\r\n${ md5 }\r\n${ homepage }`.trim();
+	const readmeText = `# ${ pkg.name }${breakLine()}${ pkg.description }${breakLine()}${ version }${breakLine()}${ size }${breakLine()}${ priority }${breakLine()}${ downloadLink }${breakLine()}${ downloadLinkMirror }${breakLine()}${ md5 }${breakLine()}${ homepage }`.trim();
 
 	fs.writeFileSync(`${dir}/README.md`, readmeText, 'utf-8');
 
-	readmeAll.push(`${readmeText}---`);
+	readmeAll.push(`${readmeText}${breakLine()}`);
 
 	const scripts = [];
 	

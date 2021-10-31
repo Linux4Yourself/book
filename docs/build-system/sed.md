@@ -2,27 +2,27 @@
 
 ## Настройка
 
-[filename](../packages/sed/configure ':include')
+{{ include('../packages/sed/configure') }}
 
 ## Сборка
 
-[filename](../packages/sed/build ':include')
+{{ include('../packages/sed/build') }}
 
 ## Сборка документации
 
-[filename](../packages/sed/build-doc ':include')
+{{ include('../packages/sed/build-doc') }}
 
 ## Тестирование
 
-[filename](../packages/sed/test ':include')
+{{ include('../packages/sed/test') }}
 
 ## Установка
 
-[filename](../packages/sed/install ':include')
+{{ include('../packages/sed/install') }}
 
 ## Установка документации
 
-[filename](../packages/sed/install-doc ':include')
+{{ include('../packages/sed/install-doc') }}
 <package-script :package="'sed'" :type="'install-doc'"></package-script>
 
 <script>

@@ -1,6 +1,6 @@
 <pkg :name="'markupsafe'" instsize showsbu2></pkg>
 
-[filename](../shared/systemd-extra-warn.md ':include')
+{{ include('../shared/systemd-extra-warn.md') }}
 
 ## Сборка
 

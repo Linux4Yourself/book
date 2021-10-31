@@ -18,13 +18,9 @@
 
 ## Подготовка
 
-Примените патч, исправляющий несколько проблем:
-
-[filename](../packages/gcc/patch ':include')
-
 Исправьте пути установки библиотек:
 
-[filename](../packages/gcc/prepare ':include')
+{{ include('../packages/gcc/prepare') }}
 
 ## Настройка
 
@@ -32,11 +28,11 @@
 
 	На данном этапе необходимы только компиляторы для C и C++, однако вы можете собрать компиляторы для любых поддерживаемых GCC языков программирования, перечислив их через запятые в опции configure `--enable-languages=c,c++`. GCC поддерживает следующие языки - `c,c++,d,fortran,go,objc,obj-c++`. вы можете собрать все доступные компиляторы, добавив параметр `--enable-languages=c,c++,d,fortran,go,objc,obj-c++`. Если позднее вам потребуется компилятор для какого либо языка из этого списка - пересоберите GCC с его поддержкой.
 
-[filename](../packages/gcc/configure ':include')
+{{ include('../packages/gcc/configure') }}
 
 ### Для multilib
 
-[filename](../packages/gcc/multi_configure ':include')
+{{ include('../packages/gcc/multi_configure') }}
 
 ### Значения параметров
 
@@ -46,14 +42,14 @@
 
 ## Сборка
 
-[filename](../packages/gcc/build ':include')
+{{ include('../packages/gcc/build') }}
 
 ## Тестирование
 
 - Увеличьте размер стека по умолчанию
 - Произведите тестирование от непривилегированного пользователя во избежание непредвиденных ситуаций с системой.
 
-[filename](../packages/gcc/test ':include')
+{{ include('../packages/gcc/test') }}
 
 > Тестирование занимает достаточно много времени.
 
@@ -67,7 +63,7 @@
 
 ## Установка
 
-[filename](../packages/gcc/install ':include')
+{{ include('../packages/gcc/install') }}
 
 - Удалите ненужную директорию,
 - Убедитесь, что владелец установленных заголовков корректный,
@@ -75,7 +71,7 @@
 - Для поддержки LTO требуется следующая символическая ссылка,
 - Переместите файлы в правильное место:
 
-[filename](../packages/gcc/postinstall ':include')
+{{ include('../packages/gcc/postinstall') }}
 
 ## При использовании раздельных каталогов:
 - Замените `ln -svr /usr/bin/cpp /usr/lib` из предыдущей команды на корректную для раздельной структуры.

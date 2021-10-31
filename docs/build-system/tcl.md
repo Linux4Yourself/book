@@ -1,6 +1,6 @@
 <pkg :name="'tcl'" instsize showsbu2></pkg>
 
-[filename](../shared/test-pkgs.md ':include')
+{{ include('../shared/test-pkgs.md') }}
 
 ## Настройка
 

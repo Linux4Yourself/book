@@ -1,6 +1,6 @@
 <pkg :name="'jinja2'" instsize showsbu2></pkg>
 
-[filename](../shared/systemd-extra-warn.md ':include')
+{{ include('../shared/systemd-extra-warn.md') }}
 
 ## Установка
 

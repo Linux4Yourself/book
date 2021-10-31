@@ -3,16 +3,16 @@
 ## Настройка
 
 Внесите исправление для некорректного теста:
-[filename](../packages/automake/prepare ':include')
-[filename](../packages/automake/configure ':include')
+{{ include('../packages/automake/prepare') }}
+{{ include('../packages/automake/configure') }}
 
 ## Сборка
 
-[filename](../packages/automake/build ':include')
+{{ include('../packages/automake/build') }}
 
 ## Тестирование
 
-[filename](../packages/automake/test ':include')
+{{ include('../packages/automake/test') }}
 
 ???+ warning
 	
@@ -20,7 +20,7 @@
 
 ## Установка
 
-[filename](../packages/automake/install ':include')
+{{ include('../packages/automake/install') }}
 
 <script>
 	new Vue({ el: '#main' })

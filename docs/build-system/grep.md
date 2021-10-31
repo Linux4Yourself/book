@@ -2,19 +2,19 @@
 
 ## Настройка
 
-[filename](../packages/grep/configure ':include')
+{{ include('../packages/grep/configure') }}
 
 ## Сборка
 
-[filename](../packages/grep/build ':include')
+{{ include('../packages/grep/build') }}
 
 ## Тестирование
 
-[filename](../packages/grep/test ':include')
+{{ include('../packages/grep/test') }}
 
 ## Установка
 
-[filename](../packages/grep/install ':include')
+{{ include('../packages/grep/install') }}
 
 <script>
 	new Vue({ el: '#main' })

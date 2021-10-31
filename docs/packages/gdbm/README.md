@@ -1,9 +1,17 @@
 # gdbm
+
 Библиотека функций базы данных, которая использует расширяемое хэширование и работает аналогично стандартным функциям dbm UNIX. Эти процедуры предоставляются программисту, которому необходимо создать и обработать хешированную базу данных. Основное предназначение gdbm — хранение пары ключ/данные в файле данных. Каждый ключ должен быть уникальным и сопряженным только с одним элементом данных. Ключи не могут быть напрямую доступны в отсортированном порядке.
+
 Версия: **1.22**
+
 Размер: **1.04Mb**
+
 Приоритет: **Важный**
-Оригинальное расположение[:https://ftp.gnu.org/gnu/gdbm/gdbm-1.22.tar.gz](https://ftp.gnu.org/gnu/gdbm/gdbm-1.22.tar.gz)
-Ссылка для загрузки[:https://lx4u.ru/downloads/packages/gdbm-1.22.tar.gz](https://lx4u.ru/downloads/packages/gdbm-1.22.tar.gz)
+
+Оригинальное расположение: [https://ftp.gnu.org/gnu/gdbm/gdbm-1.22.tar.gz](https://ftp.gnu.org/gnu/gdbm/gdbm-1.22.tar.gz)
+
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/gdbm-1.22.tar.gz](https://lx4u.ru/downloads/packages/gdbm-1.22.tar.gz)
+
 MD5: **0bbd38f12656e4728e2f7c4708aec014**
-Домашняя страница[:https://gnu.org/software/gdbm](https://gnu.org/software/gdbm)
+
+Домашняя страница: [https://gnu.org/software/gdbm](https://gnu.org/software/gdbm)

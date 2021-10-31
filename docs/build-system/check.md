@@ -2,21 +2,21 @@
 
 ## Настройка
 
-[filename](../packages/check/configure ':include')
+{{ include('../packages/check/configure') }}
 
 ## Сборка
 
-[filename](../packages/check/build ':include')
+{{ include('../packages/check/build') }}
 
 ## Тестирование
 
-[filename](../packages/check/test ':include')
+{{ include('../packages/check/test') }}
 
 > Тесты добавляют 4 SBU ко всему времени установки пакета.
 
 ## Установка
 
-[filename](../packages/check/install ':include')
+{{ include('../packages/check/install') }}
 
 <script>
 	new Vue({ el: '#main' })

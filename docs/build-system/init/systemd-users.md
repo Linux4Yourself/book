@@ -2,7 +2,7 @@
 
 `systemd` требует множество пользователей и групп для своей работы. Создайте их:
 
-[filename](../../scripts/systemd-users.md ':include')
+{{ include('../scripts/systemd-users.md') }}
 
 <script>
 	new Vue({ el: '#main' })

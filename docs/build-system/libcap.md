@@ -4,43 +4,43 @@
 
 Отключите установку статических библиотек:
 
-[filename](../packages/libcap/prepare ':include')
+{{ include('../packages/libcap/prepare') }}
 
 ## Сборка
 
-[filename](../packages/libcap/build ':include')
+{{ include('../packages/libcap/build') }}
 
 ## Тестирование
 
-[filename](../packages/libcap/test ':include')
+{{ include('../packages/libcap/test') }}
 
 ## Установка
 
-[filename](../packages/libcap/install ':include')
+{{ include('../packages/libcap/install') }}
 
 Установите корректные права для библиотек:
 
-[filename](../packages/libcap/postinstall ':include')
+{{ include('../packages/libcap/postinstall') }}
 
 ## При раздельной структуре каталогов
 
 Уберите `prefix=/usr` в сборке и установке.
 
-[filename](../packages/libcap/cldirs ':include')
+{{ include('../packages/libcap/cldirs') }}
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/libcap/multi_prepare ':include')
+{{ include('../packages/libcap/multi_prepare') }}
 
 ### Сборка
 
-[filename](../packages/libcap/multi_build ':include')
+{{ include('../packages/libcap/multi_build') }}
 
 ### Установка
 
-[filename](../packages/libcap/multi_install ':include')
+{{ include('../packages/libcap/multi_install') }}
 
 ## Установленные файлы
 

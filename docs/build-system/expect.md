@@ -1,22 +1,22 @@
 <pkg :name="'expect'" instsize showsbu2></pkg>
 
-[filename](../shared/test-pkgs.md ':include')
+{{ include('../shared/test-pkgs.md') }}
 
 ## Настройка
 
-[filename](../packages/expeсt/configure ':include')
+{{ include('../packages/expect/configure') }}
 
 ## Сборка
 
-[filename](../packages/expect/build ':include')
+{{ include('../packages/expect/build') }}
 
 ## Тестирование
 
-[filename](../packages/expect/test ':include')
+{{ include('../packages/expect/test') }}
 
 ## Установка
 
-[filename](../packages/expect/install ':include')
+{{ include('../packages/expect/install') }}
 
 <script>
 	new Vue({ el: '#main' })

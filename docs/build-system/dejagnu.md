@@ -1,18 +1,18 @@
 <pkg :name="'dejagnu'" instsize showsbu2></pkg>
 
-[filename](../shared/test-pkgs.md ':include')
+{{ include('../shared/test-pkgs.md') }}
 
 ## Настройка
 
-[filename](../packages/dejagnu/configure ':include')
+{{ include('../packages/dejagnu/configure') }}
 
 ## Сборка и установка
 
-[filename](../packages/dejagnu/install ':include')
+{{ include('../packages/dejagnu/install') }}
 
 ## Тестирование
 
-[filename](../packages/dejagnu/test ':include')
+{{ include('../packages/dejagnu/test') }}
 <package-script :package="'dejagnu'" :type="'test'"></package-script>
 
 <script>

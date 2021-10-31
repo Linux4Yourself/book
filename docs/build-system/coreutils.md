@@ -5,7 +5,7 @@
 
 Примените необязательный патч для поддержки локализации:
 
-[filename](../packages/coreutils/patch ':include')
+{{ include('../packages/coreutils/patch') }}
 
 ???+ bug
 
@@ -13,11 +13,11 @@
 
 Удалите проблемный тест:
 
-[filename](../packages/coreutils/prepare ':include')
+{{ include('../packages/coreutils/prepare') }}
 
 ## Настройка
 
-[filename](../packages/coreutils/configure ':include')
+{{ include('../packages/coreutils/configure') }}
 
 ### Значения параметров
 
@@ -27,11 +27,11 @@
 
 ## Сборка
 
-[filename](../packages/coreutils/build ':include')
+{{ include('../packages/coreutils/build') }}
 
 ## Тестирование
 
-[filename](../packages/coreutils/test ':include')
+{{ include('../packages/coreutils/test') }}
 
 ???+ warning
 
@@ -39,11 +39,11 @@
 
 ## Установка
 
-[filename](../packages/coreutils/install ':include')
+{{ include('../packages/coreutils/install') }}
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/coreutils/cldirs ':include')
+{{ include('../packages/coreutils/cldirs') }}
 
 ## Установленные файлы
 
