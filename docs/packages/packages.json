@@ -333,7 +333,7 @@
 	{
 		"name": "dejagnu",
 		"fileName": "dejagnu-1.6.3.tar.gz",
-		"description": "Платформа для тестирования, в книге используется для тестирования gcc и binutils.",
+		"description": "Платформа для тестирования, в руководстве используется для тестирования gcc и binutils.",
 		"url": "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz",
 		"homeUrl": "https://www.gnu.org/software/dejagnu",
 		"version": "1.6.2",

@@ -1,6 +1,6 @@
 site_name: Linux для себя
 site_author: Linux4Yourself community
-site_description: 'Книга обеспечит вас необходимыми знаниями чтобы создать свою собственную Linux систему с нуля.'
+site_description: 'Подробное руководство по созданию собственной Linux-системы из исходного кода'
 site_url: https://lx4u.ru/mkdocs/#
 
 repo_name: book
