@@ -20,7 +20,6 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-    - toc.integrate
     - navigation.top
   palette:
     - scheme: default
@@ -60,7 +59,7 @@ markdown_extensions:
   - footnotes
   - tables
   - toc:
-      permalink: true
+      permalink: ⚓︎
   - markdown.extensions.tables
   - pymdownx.arithmatex
   - pymdownx.betterem
@@ -85,11 +84,12 @@ markdown_extensions:
       linenums_style: pymdownx-inline
 
 plugins:
-  #- with-pdf
-  - search
+  - search:
+      lang: ru
+      lang: en
+
   - include:
         src_path: docs/packages
-
 nav:
     - Linux для себя: index.md
     - Журнал изменений: changelog.md

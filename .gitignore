@@ -106,4 +106,8 @@ dist
 # TernJS port file
 .tern-port
 
+# Editor settings
 .vscode
+
+# mkdocs files
+site

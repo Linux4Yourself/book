@@ -16,7 +16,9 @@
 
 <package-script :package="'gdbm'" :type="'test'"></package-script>
 
-?> Известно, что один тест (`version`) может дать сбой.
+???+ warning
+
+    Известно, что один тест (`version`) может дать сбой.
 
 ## Установка
 
