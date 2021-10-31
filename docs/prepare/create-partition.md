@@ -49,4 +49,4 @@ mkswap /dev/sdY
 
 ???+ note "Обратите внимание"
 
-    [Подробнее про разделы](additional/partitions_calalogs?id=Типы-разделов)
+    [Подробнее о разделах](additional/partitions_calalogs?id=Типы-разделов).
