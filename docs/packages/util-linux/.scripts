@@ -1,3 +1,4 @@
+README.md
 build
 build-systemd
 configure
@@ -12,6 +13,5 @@ multi_install
 multi_install-systemd
 multi_prepare
 multi_prepare-systemd
-README.md
 test
 test-systemd

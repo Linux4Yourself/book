@@ -1,3 +1,4 @@
+README.md
 build
 cldirs
 configure
@@ -7,5 +8,4 @@ multi_configure
 multi_install
 multi_prepare
 postinstall
-README.md
 test
