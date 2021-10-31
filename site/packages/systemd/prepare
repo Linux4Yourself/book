@@ -1,1 +1,0 @@
-sed -i 's/GROUP="render"/GROUP="video"/' rules.d/50-udev-default.rules.in

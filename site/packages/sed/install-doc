@@ -1,2 +1,0 @@
-install -d -m755           /usr/share/doc/sed
-install -m644 doc/sed.html /usr/share/doc/sed

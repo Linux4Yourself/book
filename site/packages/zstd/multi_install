@@ -1,5 +1,0 @@
-CC="gcc -m32" make prefix=/usr DESTDIR=$PWD/DESTDIR install
-cp -Rv DESTDIR/usr/lib/* /usr/lib32/
-sed -e "/^libdir/s/lib$/lib32/" -i /usr/lib32/pkgconfig/libzstd.pc
-rm -rf DESTDIR
-rm -v /usr/lib32/libzstd.a

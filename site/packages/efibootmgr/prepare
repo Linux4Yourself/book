@@ -1,1 +1,0 @@
-sed -e '/extern int efi_set_verbose/d' -i src/efibootmgr.c

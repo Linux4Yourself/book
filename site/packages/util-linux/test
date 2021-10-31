@@ -1,2 +1,0 @@
-chown -Rv tester .
-su tester -c "make -k check"

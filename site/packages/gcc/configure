@@ -1,7 +1,0 @@
-mkdir -v build
-cd       build
-../configure --prefix=/usr               \
-             LD=ld                       \
-             --disable-bootstrap         \
-             --with-system-zlib          \
-             --enable-languages=c,c++  --disable-multilib          

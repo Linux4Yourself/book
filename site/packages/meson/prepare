@@ -1,1 +1,0 @@
-sed -i "s/return 'lib64'/return 'lib'/g" mesonbuild/mesonlib/universal.py

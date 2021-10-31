@@ -1,2 +1,0 @@
-mkdir -pv /usr/share/fonts/unifont &&
-gunzip -c unifont-13.0.06.pcf.gz > /usr/share/fonts/unifont/unifont.pcf

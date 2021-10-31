@@ -1,3 +1,0 @@
-./configure --prefix=/usr              \
-            --with-internal-glib       \
-            --disable-host-tool    

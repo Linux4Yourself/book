@@ -1,2 +1,0 @@
-sed -i 's/$(exec_prefix)\/include/$\(includedir\)/' Makefile
-make

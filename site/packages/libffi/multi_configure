@@ -1,6 +1,0 @@
-CC="gcc -m32" CXX="g++ -m32" ./configure \
-    --prefix=/usr            \
-    --disable-static         \
-    --libdir=/usr/lib32     \
-    --with-gcc-arch=i686     \
-    --host=i686-pc-linux-gnu
