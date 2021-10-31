@@ -105,7 +105,7 @@ nav:
         - Целевые архитектуры: prepare/arch.md
         - Требования: prepare/requrements.md
         - О времени сборки пакетов: prepare/about-sbu.md
-        - Создание разделов: prepare/create-partitions.md
+        - Создание разделов: prepare/create-partition.md
         - Установка переменной $LIN: prepare/set-lin.md
         - Монтирование разделов: prepare/mount-partitions.md
         - Создание основных каталогов и символических ссылок: prepare/create-dirs.md
