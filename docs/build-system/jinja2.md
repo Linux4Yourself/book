@@ -1,9 +1,13 @@
 {{ include('../packages/jinja2/README.md') }}
 
+```bash 
 {{ include('../shared/systemd-extra-warn.md') }}
+```
 
 ## Установка
 
-<package-script :package="'jinja2'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/jinja2/install') }}
+```
 
 

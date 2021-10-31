@@ -2,15 +2,21 @@
 
 ## Настройка
 
-<package-script :package="'openssl'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/openssl/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'openssl'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/openssl/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'openssl'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/openssl/test') }}
+```
 
 ???+ warning "Предупреждение"
 
@@ -18,25 +24,35 @@
 
 ## Установка
 
-<package-script :package="'openssl'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/openssl/install') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'openssl'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/openssl/multi_prepare') }}
+```
 
 ### Подготовка
 
-<package-script :package="'openssl'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/openssl/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'openssl'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/openssl/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'openssl'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/openssl/multi_install') }}
+```
 
 ## Установленные файлы
 

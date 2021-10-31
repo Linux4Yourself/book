@@ -2,27 +2,41 @@
 
 ## Настройка
 
+```bash 
 {{ include('../packages/sed/configure') }}
+```
 
 ## Сборка
 
+```bash 
 {{ include('../packages/sed/build') }}
+```
 
 ## Сборка документации
 
+```bash 
 {{ include('../packages/sed/build-doc') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/sed/test') }}
+```
 
 ## Установка
 
+```bash 
 {{ include('../packages/sed/install') }}
+```
 
 ## Установка документации
 
+```bash 
 {{ include('../packages/sed/install-doc') }}
-<package-script :package="'sed'" :type="'install-doc'"></package-script>
+```
+```bash 
+{{ include('../packages/sed/install-doc') }}
+```
 
 

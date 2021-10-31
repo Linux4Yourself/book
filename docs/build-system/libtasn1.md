@@ -2,37 +2,53 @@
 
 ## Настройка
 
-<package-script :package="'libtasn1'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/libtasn1/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'libtasn1'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/libtasn1/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'libtasn1'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/libtasn1/test') }}
+```
 
 ## Установка
 
-<package-script :package="'libtasn1'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/libtasn1/install') }}
+```
 
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'libtasn1'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/libtasn1/multi_prepare') }}
+```
 
 ## Настройка
 
-<package-script :package="'libtasn1'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/libtasn1/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'libtasn1'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/libtasn1/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'libtasn1'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/libtasn1/multi_install') }}
+```
 
 

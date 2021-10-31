@@ -2,7 +2,9 @@
 
 ## Подготовка
 
+```bash 
 {{ include('../shared/systemd-extra-warn.md') }}
+```
 
 ???+ danger "Важно"
 
@@ -18,11 +20,15 @@ export NINJAJOBS=4
 
 Для того чтобы задействовать значение переменной `NINJAJOBS`, выполните корректировку:
 
-<package-script :package="'ninja'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/ninja/prepare') }}
+```
 
 ## Сборка
 
-<package-script :package="'ninja'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/ninja/build') }}
+```
 
 ### Значения параметров
 
@@ -30,11 +36,15 @@ export NINJAJOBS=4
 
 ## Тестирование
 
-<package-script :package="'ninja'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/ninja/test') }}
+```
 
 ## Установка
 
-<package-script :package="'ninja'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/ninja/install') }}
+```
 
 ## Установленные файлы
 

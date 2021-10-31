@@ -5,45 +5,63 @@
 
 Примените патч для правильной установки документации:
 
+```bash 
 {{ include('../packages/bzip2/patch') }}
+```
 
 Убедитесь, что будут созданы относительные символические ссылки, и исправьте путь установки man-страниц:
 
+```bash 
 {{ include('../packages/bzip2/prepare') }}
+```
 
 ## Сборка
 
 Для сборки динамической библиотеки `libbz2.so` и самого пакета:
 
+```bash 
 {{ include('../packages/bzip2/build') }}
+```
 
 ## Установка
 
+```bash 
 {{ include('../packages/bzip2/install') }}
+```
 
 Создайте необходимые символические ссылки:
 
+```bash 
 {{ include('../packages/bzip2/postinstall') }}
+```
 
 > Если вы собираете систему с раздельной структурой каталогов, то пропустите шаг с созданием ссылок, перейдя к следующему.
 
 ## При раздельной структуре каталогов
 
+```bash 
 {{ include('../packages/bzip2/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
+```bash 
 {{ include('../packages/bzip2/multi_prepare') }}
+```
 
 ### Сборка
 
+```bash 
 {{ include('../packages/bzip2/multi_build') }}
+```
 
 ### Установка
 
+```bash 
 {{ include('../packages/bzip2/multi_install') }}
+```
 
 ## Установленные файлы
 

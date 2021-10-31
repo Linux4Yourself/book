@@ -2,7 +2,9 @@
 
 ## Настройка
 
-<package-script :package="'man-db'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/man-db/configure') }}
+```
 
 ## Значения параметров
 
@@ -14,15 +16,21 @@
 
 ## Сборка
 
-<package-script :package="'man-db'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/man-db/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'man-db'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/man-db/test') }}
+```
 
 ## Установка
 
-<package-script :package="'man-db'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/man-db/install') }}
+```
 
 ## Страницы руководств на других языках
 

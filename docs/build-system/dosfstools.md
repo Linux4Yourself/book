@@ -2,14 +2,20 @@
 
 ## Настройка
 
-<package-script :package="'dosfstools'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/dosfstools/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'dosfstools'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/dosfstools/build') }}
+```
 
 ## Установка
 
-<package-script :package="'dosfstools'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/dosfstools/install') }}
+```
 
 

@@ -2,6 +2,8 @@
 
 ## Установка
 
-<package-script :package="'bootscripts'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/bootscripts/install') }}
+```
 
 

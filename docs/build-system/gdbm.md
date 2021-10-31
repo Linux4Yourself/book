@@ -2,7 +2,9 @@
 
 ## Настройка
 
-<package-script :package="'gdbm'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/gdbm/configure') }}
+```
 
 ### Значения параметров
 
@@ -10,11 +12,15 @@
 
 ## Сборка
 
-<package-script :package="'gdbm'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/gdbm/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'gdbm'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/gdbm/test') }}
+```
 
 ???+ warning "Предупреждение"
 
@@ -22,6 +28,8 @@
 
 ## Установка
 
-<package-script :package="'gdbm'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/gdbm/install') }}
+```
 
 

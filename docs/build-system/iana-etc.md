@@ -2,7 +2,9 @@
 
 ## Установка
 
-<package-script :package="'iana-etc'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/iana-etc/install') }}
+```
 
 ### Установленные файлы
 

@@ -2,22 +2,32 @@
 
 ## Настройка
 
-<package-script :package="'isl'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/isl/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'isl'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/isl/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'isl'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/isl/test') }}
+```
 
 ## Установка
 
-<package-script :package="'isl'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/isl/install') }}
+```
 
 Переместите неправильно установленные файлы:
 
-<package-script :package="'isl'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/isl/postinstall') }}
+```
 
 

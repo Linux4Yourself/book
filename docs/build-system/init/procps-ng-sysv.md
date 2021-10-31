@@ -2,15 +2,21 @@
 
 ## Настройка
 
+```bash 
 {{ include('../packages/procps-ng/configure') }}
+```
 
 ## Сборка
 
+```bash 
 {{ include('../packages/procps-ng/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/procps-ng/test') }}
+```
 
 ???+ warning "Предупреждение"
 
@@ -18,10 +24,14 @@
 
 ## Установка
 
+```bash 
 {{ include('../packages/procps-ng/install') }}
+```
 
 ## При раздельной структуре каталогов
 
+```bash 
 {{ include('../packages/procps-ng/cldirs') }}
+```
 
 

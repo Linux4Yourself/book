@@ -2,18 +2,26 @@
 
 ## Настройка
 
-<package-script :package="'patch'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/patch/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'patch'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/patch/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'patch'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/patch/test') }}
+```
 
 ## Установка
 
-<package-script :package="'patch'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/patch/install') }}
+```
 
 

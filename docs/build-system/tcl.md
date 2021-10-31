@@ -1,18 +1,26 @@
 {{ include('../packages/tcl/README.md') }}
 
+```bash 
 {{ include('../shared/test-pkgs.md') }}
+```
 
 ## Настройка
 
-<package-script :package="'tcl'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/tcl/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'tcl'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/tcl/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'tcl'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/tcl/test') }}
+```
 
 ???+ warning "Предупреждение"
 
@@ -20,11 +28,15 @@
 
 ## Установка
 
-<package-script :package="'tcl'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/tcl/install') }}
+```
 
 Сделайте установленную библиотеку доступной для записи, чтобы отладочные символы можно было удалить позже, сделайте необходимую символическую ссылку и переименуйте страницу руководства, которая конфликтует со страницей руководства Perl:
 
-<package-script :package="'tcl'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/tcl/postinstall') }}
+```
 
 Сделайте необходимую ссылку:
 

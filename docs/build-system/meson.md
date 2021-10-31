@@ -7,15 +7,21 @@
 ## Подготовка
 
 Убедитесь, что директория для библиотек по умолчанию корректна:
-<package-script :package="'meson'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/meson/prepare') }}
+```
 
 ## Сборка
 
-<package-script :package="'meson'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/meson/build') }}
+```
 
 ## Установка
 
-<package-script :package="'meson'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/meson/install') }}
+```
 
 ### Значения параметров
 

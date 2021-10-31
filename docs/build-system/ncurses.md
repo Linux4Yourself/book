@@ -2,7 +2,9 @@
 
 ## Настройка
 
-<package-script :package="'ncurses'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/ncurses/configure') }}
+```
 
 ### Значения параметров
 
@@ -14,11 +16,15 @@
 
 ## Сборка
 
+```bash 
 {{ include('../packages/ncurses/build') }}
+```
 
 ## Установка
 
+```bash 
 {{ include('../packages/ncurses/install') }}
+```
 
 Многие пакеты при компоновке ищут библиотеки без широких символов. Для компоновки с библиотеками содержащими широкие символы выполните:
 
@@ -62,7 +68,9 @@ cp -av lib/lib*.so.5* /usr/lib
 
 ## При раздельной структуре каталогов
 
+```bash 
 {{ include('../packages/ncurses/cldirs') }}
+```
 
 ## Для multilib
 
@@ -74,15 +82,21 @@ make distclean
 
 ### Настройка
 
+```bash 
 {{ include('../packages/ncurses/multi_configure') }}
+```
 
 ### Сборка
 
+```bash 
 {{ include('../packages/ncurses/multi_build') }}
+```
 
 ### Установка
 
+```bash 
 {{ include('../packages/ncurses/multi_install') }}
+```
 
 ???+ note "Обратите внимание"
 

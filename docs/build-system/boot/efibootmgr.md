@@ -3,15 +3,21 @@
 ## Подготовка
 
 Исправьте ошибку сборки:
-<package-script :package="'efibootmgr'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/efibootmgr/prepare') }}
+```
 
 ## Сборка
 
-<package-script :package="'efibootmgr'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/efibootmgr/build') }}
+```
 
 ## Установка
 
-<package-script :package="'efibootmgr'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/efibootmgr/install') }}
+```
 
 ## Значения новых команд
 

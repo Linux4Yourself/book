@@ -2,18 +2,26 @@
 
 ## Настройка
 
-<package-script :package="'libpipeline'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/libpipeline/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'libpipeline'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/libpipeline/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'libpipeline'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/libpipeline/test') }}
+```
 
 ## Установка
 
-<package-script :package="'libpipeline'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/libpipeline/install') }}
+```
 
 

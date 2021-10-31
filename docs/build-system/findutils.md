@@ -2,7 +2,9 @@
 
 ## Настройка
 
+```bash 
 {{ include('../packages/findutils/configure') }}
+```
 
 ### Значения параметров
 
@@ -10,18 +12,26 @@
 
 ## Сборка
 
+```bash 
 {{ include('../packages/findutils/build') }}
+```
 
 ## Тестирование
 
+```bash 
 {{ include('../packages/findutils/test') }}
+```
 
 ## Установка
 
+```bash 
 {{ include('../packages/findutils/install') }}
+```
 
 ## При раздельной структуре каталогов
 
+```bash 
 {{ include('../packages/findutils/cldirs') }}
+```
 
 

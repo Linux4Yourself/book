@@ -17,7 +17,9 @@
 
 ## Для systemd
 
+```bash 
 {{ include('../scripts/fstab.md') }}
+```
 
 Замените `sdX` на нужное значение.
 
