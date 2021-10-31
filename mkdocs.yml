@@ -10,6 +10,7 @@ edit_url: edit/develop/docs/
 theme:
   name: 'material'
   logo: https://raw.githubusercontent.com/Linux4Yourself/design/main/logo/logo.svg
+  favicon: https://raw.githubusercontent.com/Linux4Yourself/design/main/favicon/favicon.ico
   language: ru
   include_sidebar: true
   features:
