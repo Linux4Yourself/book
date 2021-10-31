@@ -1,4 +1,4 @@
-<pkg :name="'expat'" instsize showsbu2></pkg>
+{{ include('../packages/expat/README.md') }}
 
 ## Настройка
 

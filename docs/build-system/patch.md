@@ -1,4 +1,4 @@
-<pkg :name="'patch'" instsize showsbu2></pkg>
+{{ include('../packages/patch/README.md') }}
 
 ## Настройка
 

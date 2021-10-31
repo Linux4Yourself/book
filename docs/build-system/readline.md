@@ -1,4 +1,4 @@
-<pkg :name="'readline'" instsize showsbu2></pkg>
+{{ include('../packages/readline/README.md') }}
 
 ## Подготовка
 

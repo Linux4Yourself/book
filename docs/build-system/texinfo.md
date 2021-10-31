@@ -1,4 +1,4 @@
-<pkg :name="'texinfo'" instsize showsbu2></pkg>
+{{ include('../packages/texinfo/README.md') }}
 
 ## Настройка
 

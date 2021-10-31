@@ -1,4 +1,4 @@
-<pkg :name="'gcc'" instsize showsbu2></pkg>
+{{ include('../packages/gcc/README.md') }}
 
 <script>
 		new Vue({

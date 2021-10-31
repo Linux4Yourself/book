@@ -1,4 +1,4 @@
-<pkg :name="'tar'" instsize showsbu2></pkg>
+{{ include('../packages/tar/README.md') }}
 
 ## Настройка
 

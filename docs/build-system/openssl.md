@@ -1,4 +1,4 @@
-<pkg :name="'openssl'" instsize showsbu2></pkg>
+{{ include('../packages/openssl/README.md') }}
 
 ## Настройка
 

@@ -1,4 +1,4 @@
-<pkg :name="'freetype'" instsize showsbu2></pkg>
+{{ include('../packages/freetype/README.md') }}
 
 ## Настройка
 

@@ -1,4 +1,4 @@
-<pkg :name="'libtool'" instsize showsbu2></pkg>
+{{ include('../packages/libtool/README.md') }}
 
 ## Настройка
 

@@ -1,4 +1,4 @@
-<pkg :name="'inetutils'" instsize showsbu2></pkg>
+{{ include('../packages/inetutils/README.md') }}
 
 ## Настройка
 

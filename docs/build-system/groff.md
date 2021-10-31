@@ -1,4 +1,4 @@
-<pkg :name="'groff'" instsize showsbu2></pkg>
+{{ include('../packages/groff/README.md') }}
 
 ## Подготовка
 

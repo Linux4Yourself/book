@@ -1,4 +1,4 @@
-<pkg :name="'meson'" instsize showsbu2></pkg>
+{{ include('../packages/meson/README.md') }}
 
 ???+ note "Обратите внимание"
 

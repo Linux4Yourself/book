@@ -1,4 +1,4 @@
-<pkg :name="'make'" instsize showsbu2></pkg>
+{{ include('../packages/make/README.md') }}
 
 ## Настройка
 

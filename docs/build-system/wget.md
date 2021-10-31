@@ -1,4 +1,4 @@
-<pkg :name="'wget'" instsize showsbu2></pkg>
+{{ include('../packages/wget/README.md') }}
 
 ## Настройка
 

@@ -1,4 +1,4 @@
-<pkg :name="'vim'" instsize showsbu2></pkg>
+{{ include('../packages/vim/README.md') }}
 
 ## Настройка
 

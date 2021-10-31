@@ -1,4 +1,4 @@
-<pkg :name="'diffutils'" instsize showsbu2></pkg>
+{{ include('../packages/diffutils/README.md') }}
 
 ## Настройка
 

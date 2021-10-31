@@ -1,4 +1,4 @@
-<pkg :name="'zlib-ng'" instsize showsbu2></pkg>
+{{ include('../packages/zlib-ng/README.md') }}
 
 ## Настройка
 

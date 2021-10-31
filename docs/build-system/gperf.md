@@ -1,4 +1,4 @@
-<pkg :name="'gperf'" instsize showsbu2></pkg>
+{{ include('../packages/gperf/README.md') }}
 
 ## Настройка
 

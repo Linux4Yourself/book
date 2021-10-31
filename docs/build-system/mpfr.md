@@ -1,4 +1,4 @@
-<pkg :name="'mpfr'" instsize showsbu2></pkg>
+{{ include('../packages/mpfr/README.md') }}
 
 ## Настройка
 

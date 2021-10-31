@@ -1,4 +1,4 @@
-<pkg :name="'check'" instsize showsbu2></pkg>
+{{ include('../packages/check/README.md') }}
 
 ## Настройка
 

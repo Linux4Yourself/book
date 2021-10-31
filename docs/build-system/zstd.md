@@ -1,4 +1,4 @@
-<pkg :name="'zstd'" instsize showsbu2></pkg>
+{{ include('../packages/zstd/README.md') }}
 
 ## Сборка
 

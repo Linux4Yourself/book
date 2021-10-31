@@ -1,4 +1,4 @@
-<pkg :name="'gmp'" instsize showsbu2></pkg>
+{{ include('../packages/gmp/README.md') }}
 
 ## Подготовка
 

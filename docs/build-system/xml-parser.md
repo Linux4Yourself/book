@@ -1,4 +1,4 @@
-<pkg :name="'xml-parser'" instsize showsbu2></pkg>
+{{ include('../packages/xml-parser/README.md') }}
 
 ## Настройка
 

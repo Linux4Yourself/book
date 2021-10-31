@@ -1,4 +1,4 @@
-<pkg :name="'procps-ng'" instsize showsbu2></pkg>
+{{ include('../packages/procps-ng/README.md') }}
 
 ## Настройка
 

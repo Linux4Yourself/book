@@ -1,4 +1,4 @@
-<pkg :name="'flex'" instsize showsbu2></pkg>
+{{ include('../packages/flex/README.md') }}
 
 ## Настройка
 

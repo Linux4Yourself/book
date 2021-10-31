@@ -1,4 +1,4 @@
-<pkg :name="'popt'" instsize showsbu2></pkg>
+{{ include('../packages/popt/README.md') }}
 
 ## Настройка
 

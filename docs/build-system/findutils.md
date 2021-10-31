@@ -1,4 +1,4 @@
-<pkg :name="'findutils'" instsize showsbu2></pkg>
+{{ include('../packages/findutils/README.md') }}
 
 ## Настройка
 

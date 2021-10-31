@@ -1,4 +1,4 @@
-<pkg :name="'gettext'" instsize showsbu2></pkg>
+{{ include('../packages/gettext/README.md') }}
 
 ## Настройка
 

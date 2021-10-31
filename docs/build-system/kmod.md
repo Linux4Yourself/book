@@ -1,4 +1,4 @@
-<pkg :name="'kmod'" instsize showsbu2></pkg>
+{{ include('../packages/kmod/README.md') }}
 
 ## Настройка
 

@@ -1,4 +1,4 @@
-<pkg :name="'iana-etc'" instsize></pkg>
+{{ include('../packages/iana-etc/README.md') }}
 
 ## Установка
 

@@ -1,4 +1,4 @@
-<pkg :name="'p11-kit'" instsize showsbu2></pkg>
+{{ include('../packages/p11-kit/README.md') }}
 
 ## Подготовка
 

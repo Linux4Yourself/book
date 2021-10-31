@@ -1,4 +1,4 @@
-<pkg :name="'bison'" instsize showsbu2></pkg>
+{{ include('../packages/bison/README.md') }}
 
 ## Настройка
 

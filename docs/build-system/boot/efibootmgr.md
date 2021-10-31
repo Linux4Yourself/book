@@ -1,4 +1,4 @@
-<pkg :name="'efibootmgr'" instsize showsbu2></pkg>
+{{ include('../packages/efibootmgr/README.md') }}
 
 ## Подготовка
 

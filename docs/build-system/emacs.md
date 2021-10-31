@@ -1,4 +1,4 @@
-<pkg :name="'emacs'" instsize showsbu2></pkg>
+{{ include('../packages/emacs/README.md') }}
 
 ## Настройка
 

@@ -1,4 +1,4 @@
-<pkg :name="'elfutils'" instsize showsbu2></pkg>
+{{ include('../packages/elfutils/README.md') }}
 
 ## Настройка
 

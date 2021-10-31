@@ -1,4 +1,4 @@
-<pkg :name="'jinja2'" instsize showsbu2></pkg>
+{{ include('../packages/jinja2/README.md') }}
 
 {{ include('../shared/systemd-extra-warn.md') }}
 

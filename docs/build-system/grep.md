@@ -1,4 +1,4 @@
-<pkg :name="'grep'" instsize showsbu2></pkg>
+{{ include('../packages/grep/README.md') }}
 
 ## Настройка
 

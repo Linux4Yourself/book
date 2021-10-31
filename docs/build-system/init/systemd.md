@@ -1,4 +1,4 @@
-<pkg :name="'systemd'" instsize showsbu2></pkg>
+{{ include('../packages/systemd/README.md') }}
 
 ## Подготовка
 

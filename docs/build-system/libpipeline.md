@@ -1,4 +1,4 @@
-<pkg :name="'libpipeline'" instsize showsbu2></pkg>
+{{ include('../packages/libpipeline/README.md') }}
 
 ## Настройка
 

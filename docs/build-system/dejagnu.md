@@ -1,4 +1,4 @@
-<pkg :name="'dejagnu'" instsize showsbu2></pkg>
+{{ include('../packages/dejagnu/README.md') }}
 
 {{ include('../shared/test-pkgs.md') }}
 

@@ -1,4 +1,4 @@
-<pkg :name="'iproute2'" instsize showsbu2></pkg>
+{{ include('../packages/iproute2/README.md') }}
 
 ## Подготовка
 

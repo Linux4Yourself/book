@@ -1,4 +1,4 @@
-<pkg :name="'less'" instsize showsbu2></pkg>
+{{ include('../packages/less/README.md') }}
 
 ## Настройка
 

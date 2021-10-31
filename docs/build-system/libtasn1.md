@@ -1,4 +1,4 @@
-<pkg :name="'libtasn1'" instsize showsbu2></pkg>
+{{ include('../packages/libtasn1/README.md') }}
 
 ## Настройка
 
