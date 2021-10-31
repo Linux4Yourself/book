@@ -1,3 +1,4 @@
+README.md
 build
 configure
 install
@@ -10,5 +11,4 @@ multi_prepare
 patch
 postinstall
 prepare
-README.md
 test

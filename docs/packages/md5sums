@@ -92,7 +92,7 @@ c46f6eb3bd1287031ae5d36465094402 libtasn1-4.17.0.tar.gz
 8ccf11c4a2e2e505b8e516d8549e64a5 p11-kit-0.24.0.tar.xz
 68c8625c9456815ed17e4f2219c79372 make-ca-1.9.tar.xz
 b45d3bea4ddb7f64b6e56033ecc0fb11 bzip2-1.0.8-install_docs-1.patch
-cd8ebed2a67fff2e231026df91af6776 coreutils-8.32-i18n-1.patch
+e716728302e3ed1dfffb06050a68517c coreutils-8.32-i18n-1.patch
 9a5997c3452909b1769918c759eff8a2 glibc-2.33-fhs-1.patch
 f75cca16a38da6caa7d52151f7136895 kbd-2.4.0-backspace-1.patch
 4900322141d493e74020c9cf437b2cdc sysvinit-2.99-consolidated-1.patch

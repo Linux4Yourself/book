@@ -12,6 +12,6 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/coreutils-8.32-i18n-1.patch](https://lx4u.ru/downloads/packages/coreutils-8.32-i18n-1.patch)
 
-MD5: **cd8ebed2a67fff2e231026df91af6776**
+MD5: **e716728302e3ed1dfffb06050a68517c**
 
 Домашняя страница: []()

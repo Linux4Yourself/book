@@ -14,6 +14,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -42,6 +43,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -70,6 +72,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -93,6 +96,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -117,6 +121,7 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -143,6 +148,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -166,6 +172,7 @@
 		"sbu": 1,
 		"sbu2": 4.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -196,6 +203,7 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -222,6 +230,7 @@
 			"bzip2-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -252,6 +261,7 @@
 		"sbu": 0,
 		"sbu2": 4,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -278,6 +288,7 @@
 			"coreutils-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -304,6 +315,7 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -335,6 +347,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/dejagnu-1.6.3.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"configure",
 			"install",
 			"test"
@@ -355,6 +368,7 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -378,6 +392,7 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -406,6 +421,7 @@
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/emacs-27.2.tar.xz",
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -429,6 +445,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/elfutils-0.185.tar.bz2",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -458,6 +475,7 @@
 			"udev"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -487,6 +505,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -517,6 +536,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/expect5.45.4.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -538,6 +558,7 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -561,6 +582,7 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -585,6 +607,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -609,6 +632,7 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -634,6 +658,7 @@
 		"sbu": 14.8,
 		"sbu2": 25,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -660,6 +685,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -683,6 +709,7 @@
 		"sbu": 4.5,
 		"sbu2": 3,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -709,6 +736,7 @@
 			"glibc-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -741,6 +769,7 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -768,6 +797,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -791,6 +821,7 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -814,6 +845,7 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install"
@@ -838,6 +870,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/grub-2.06.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"configure-mbr",
@@ -861,6 +894,7 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -895,6 +929,7 @@
 			}
 		],
 		"scripts": [
+			"README.md",
 			"install"
 		],
 		"multilibSupport": false,
@@ -915,6 +950,7 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -939,6 +975,7 @@
 		"sbu": 0,
 		"sbu2": 0.01,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -964,6 +1001,7 @@
 		"sbu": 0,
 		"sbu2": 0.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
 			"install-doc",
@@ -988,6 +1026,7 @@
 		"sbu": 0,
 		"sbu2": 0.7,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1015,6 +1054,7 @@
 			"kbd-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1040,6 +1080,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1068,6 +1109,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install"
@@ -1090,6 +1132,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"install"
 		],
 		"multilibSupport": false,
@@ -1110,6 +1153,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -1138,6 +1182,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1165,6 +1210,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1188,6 +1234,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1216,7 +1263,10 @@
 		"sbu": 0,
 		"sbu2": 4.4,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.14.14.tar.xz",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "m4",
@@ -1233,6 +1283,7 @@
 		"sbu": 0.1,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1257,6 +1308,7 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1280,6 +1332,7 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1304,6 +1357,7 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/man-pages-5.13.tar.xz",
 		"scripts": [
+			"README.md",
 			"install"
 		],
 		"multilibSupport": false
@@ -1323,6 +1377,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
 			"prepare"
@@ -1345,6 +1400,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1368,6 +1424,7 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1391,6 +1448,7 @@
 		"sbu": 1.2,
 		"sbu2": 0.4,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1421,6 +1479,7 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
 			"prepare",
@@ -1444,6 +1503,7 @@
 		"sbu": 0,
 		"sbu2": 1.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1471,6 +1531,7 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1494,6 +1555,7 @@
 		"sbu": 1.9,
 		"sbu2": 2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1519,6 +1581,7 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1542,6 +1605,7 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1567,6 +1631,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1590,6 +1655,7 @@
 		"sbu": 1.2,
 		"sbu2": 9.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1613,6 +1679,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1643,6 +1710,7 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"build-doc",
 			"configure",
@@ -1668,6 +1736,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1693,6 +1762,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1719,6 +1789,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"install"
 		],
@@ -1740,6 +1811,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"install"
 		],
 		"multilibSupport": false,
@@ -1760,6 +1832,7 @@
 		"sbu": 0,
 		"sbu2": 1.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1792,6 +1865,7 @@
 			"sysvinit-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
 			"patch"
@@ -1814,6 +1888,7 @@
 		"sbu": 0.4,
 		"sbu2": 0.4,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1839,6 +1914,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/tcl8.6.11-src.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1862,6 +1938,7 @@
 		"sbu": 0.3,
 		"sbu2": 0.7,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1886,7 +1963,10 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/tzdata2021d.tar.gz",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "udev",
@@ -1903,7 +1983,10 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/udev.tar.xz",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "util-linux",
@@ -1920,6 +2003,7 @@
 		"sbu": 0.8,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"build-systemd",
 			"configure",
@@ -1955,6 +2039,7 @@
 		"sbu": 0,
 		"sbu2": 2.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1980,6 +2065,7 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2004,6 +2090,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2027,6 +2114,7 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -2056,6 +2144,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -2087,6 +2176,7 @@
 		"sbu": 0,
 		"sbu2": 1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -2116,6 +2206,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/popt-1.18.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2139,6 +2230,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/freetype-2.11.0.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2166,6 +2258,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37.tar.bz2",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
 			"patch"
@@ -2188,6 +2281,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efibootmgr-17.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
 			"prepare"
@@ -2210,6 +2304,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/dosfstools-4.2.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install"
@@ -2231,6 +2326,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/wget-1.21.2.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install"
@@ -2252,6 +2348,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/libtasn1-4.17.0.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2278,6 +2375,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/p11-kit-0.24.0.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2306,6 +2404,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/make-ca-1.9.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"install",
 			"postinstall",
 			"postinstall-systemd"
@@ -2326,7 +2425,10 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "coreutils-patch",
@@ -2337,13 +2439,16 @@
 		"version": "8.32-i18n-1",
 		"releasesUrl": "",
 		"priority": "optional",
-		"md5": "cd8ebed2a67fff2e231026df91af6776",
+		"md5": "e716728302e3ed1dfffb06050a68517c",
 		"size": "0.16",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-8.32-i18n-1.patch",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "glibc-patch",
@@ -2360,7 +2465,10 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.33-fhs-1.patch",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "kbd-patch",
@@ -2377,7 +2485,10 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "sysvinit-patch",
@@ -2394,7 +2505,10 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	},
 	{
 		"name": "efivar-patch",
@@ -2411,6 +2525,9 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch",
-		"scripts": []
+		"scripts": [
+			"README.md"
+		],
+		"multilibSupport": false
 	}
 ]
