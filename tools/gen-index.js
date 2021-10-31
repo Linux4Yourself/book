@@ -55,7 +55,7 @@ allPackages.forEach(pkg => {
 	const scripts = [];
 	
 	fs.readdirSync(dir).forEach(file => {
-		if (!file.startsWith('.')) {
+		if (!file.startsWith('.') && file !== 'README.md') {
 			scripts.push(file);
 		}
 	});
