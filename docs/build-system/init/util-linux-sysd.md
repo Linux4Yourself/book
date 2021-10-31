@@ -4,7 +4,7 @@
 
 {{ include('../packages/util-linux/configure-systemd') }}
 
-???+ tip
+???+ note "Обратите внимание"
 
     Если вы собираете систему с раздельной структурой каталогов, уберите аргумент `--libdir=/usr/lib`!
 

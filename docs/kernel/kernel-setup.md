@@ -78,7 +78,7 @@ File systems  --->
    [*] Tmpfs POSIX Access Control Lists [CONFIG_TMPFS_POSIX_ACL]
 ```
 
-???+ tip
+???+ note "Обратите внимание"
 
 	  Указанные ниже параметры используйте на своё усмотрение.
 
