@@ -1,4 +1,4 @@
-<pkg :name="'psmisc'" instsize showsbu2></pkg>
+{{ include('../packages/psmisc/README.md') }}
 
 ## Настройка
 

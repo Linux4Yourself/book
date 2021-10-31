@@ -1,4 +1,4 @@
-<pkg :name="'markupsafe'" instsize showsbu2></pkg>
+{{ include('../packages/markupsafe/README.md') }}
 
 {{ include('../shared/systemd-extra-warn.md') }}
 

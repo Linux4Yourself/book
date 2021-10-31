@@ -1,4 +1,4 @@
-<pkg :name="'sed'" instsize showsbu2></pkg>
+{{ include('../packages/sed/README.md') }}
 
 ## Настройка
 

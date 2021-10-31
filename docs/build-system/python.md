@@ -1,4 +1,4 @@
-<pkg :name="'python'" instsize showsbu2></pkg>
+{{ include('../packages/python/README.md') }}
 
 ## Настройка
 

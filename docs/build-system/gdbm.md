@@ -1,4 +1,4 @@
-<pkg :name="'gdbm'" instsize showsbu2></pkg>
+{{ include('../packages/gdbm/README.md') }}
 
 ## Настройка
 

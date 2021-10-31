@@ -1,4 +1,4 @@
-<pkg :name="'sysklogd'" instsize showsbu2></pkg>
+{{ include('../packages/sysklogd/README.md') }}
 
 ## Подготовка
 

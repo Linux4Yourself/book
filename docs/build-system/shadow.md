@@ -1,4 +1,4 @@
-<pkg :name="'shadow'" instsize showsbu2></pkg>
+{{ include('../packages/shadow/README.md') }}
 
 ## Подготовка
 

@@ -1,4 +1,4 @@
-<pkg :name="'isl'" instsize showsbu2></pkg>
+{{ include('../packages/isl/README.md') }}
 
 ## Настройка
 

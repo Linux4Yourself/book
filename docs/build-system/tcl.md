@@ -1,4 +1,4 @@
-<pkg :name="'tcl'" instsize showsbu2></pkg>
+{{ include('../packages/tcl/README.md') }}
 
 {{ include('../shared/test-pkgs.md') }}
 

@@ -1,4 +1,4 @@
-<pkg :name="'ninja'" instsize showsbu2></pkg>
+{{ include('../packages/ninja/README.md') }}
 
 ## Подготовка
 

@@ -1,4 +1,4 @@
-<pkg :name="'perl'" instsize showsbu2></pkg>
+{{ include('../packages/perl/README.md') }}
 
 ## Настройка
 

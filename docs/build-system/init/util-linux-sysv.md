@@ -1,4 +1,4 @@
-<pkg :name="'util-linux'" instsize showsbu2></pkg>
+{{ include('../packages/util-linux/README.md') }}
 
 ## Настройка
 

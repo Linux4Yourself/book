@@ -1,4 +1,4 @@
-<pkg :name="'acl'" instsize showsbu2></pkg>
+{{ include('../packages/acl/README.md') }}
 
 ## Настройка
 

@@ -1,4 +1,4 @@
-<pkg :name="'attr'" instsize showsbu2></pkg>
+{{ include('../packages/attr/README.md') }}
 
 ## Настройка
 

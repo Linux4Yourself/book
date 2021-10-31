@@ -1,4 +1,4 @@
-<pkg :name="'libcap'" instsize showsbu2></pkg>
+{{ include('../packages/libcap/README.md') }}
 
 ## Подготовка
 

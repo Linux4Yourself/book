@@ -1,4 +1,4 @@
-<pkg :name="'autoconf'" instsize showsbu2></pkg>
+{{ include('../packages/autoconf/README.md') }}
 
 ## Настройка
 

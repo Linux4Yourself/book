@@ -1,4 +1,4 @@
-<pkg :name="'automake'" instsize showsbu2></pkg>
+{{ include('../packages/automake/README.md') }}
 
 ## Настройка
 

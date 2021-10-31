@@ -1,4 +1,4 @@
-<pkg :name="'expect'" instsize showsbu2></pkg>
+{{ include('../packages/expect/README.md') }}
 
 {{ include('../shared/test-pkgs.md') }}
 

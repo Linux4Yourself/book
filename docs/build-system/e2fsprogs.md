@@ -1,4 +1,4 @@
-<pkg :name="'e2fsprogs'" instsize showsbu2></pkg>
+{{ include('../packages/e2fsprogs/README.md') }}
 
 ## Настройка
 

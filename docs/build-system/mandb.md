@@ -1,4 +1,4 @@
-<pkg :name="'man-db'" instsize showsbu2></pkg>
+{{ include('../packages/man-db/README.md') }}
 
 ## Настройка
 

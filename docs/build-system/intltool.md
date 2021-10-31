@@ -1,4 +1,4 @@
-<pkg :name="'intltool'" instsize showsbu2></pkg>
+{{ include('../packages/intltool/README.md') }}
 
 ## Настройка
 

@@ -1,4 +1,4 @@
-<pkg :name="'gzip'" instsize showsbu2></pkg>
+{{ include('../packages/gzip/README.md') }}
 
 ## Настройка
 

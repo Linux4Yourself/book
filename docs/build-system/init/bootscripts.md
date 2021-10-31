@@ -1,4 +1,4 @@
-<pkg :name="'bootscripts'" instsize showsbu2></pkg>
+{{ include('../packages/bootscripts/README.md') }}
 
 ## Установка
 

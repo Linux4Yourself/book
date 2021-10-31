@@ -1,4 +1,4 @@
-<pkg :name="'grub'" instsize showsbu2></pkg>
+{{ include('../packages/grub/README.md') }}
 
 ## Настройка
 

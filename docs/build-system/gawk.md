@@ -1,4 +1,4 @@
-<pkg :name="'gawk'" instsize showsbu2></pkg>
+{{ include('../packages/gawk/README.md') }}
 
 ## Подготовка
 

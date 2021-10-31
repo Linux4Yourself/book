@@ -1,4 +1,4 @@
-<pkg :name="'ncurses'" instsize showsbu2></pkg>
+{{ include('../packages/ncurses/README.md') }}
 
 ## Настройка
 

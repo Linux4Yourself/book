@@ -1,4 +1,4 @@
-<pkg :name="'nano'" instsize showsbu2></pkg>
+{{ include('../packages/nano/README.md') }}
 
 ## Настройка
 

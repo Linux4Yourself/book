@@ -1,4 +1,4 @@
-<pkg :name="'dosfstools'" instsize showsbu2></pkg>
+{{ include('../packages/dosfstools/README.md') }}
 
 ## Настройка
 

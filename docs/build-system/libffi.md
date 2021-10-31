@@ -1,4 +1,4 @@
-<pkg :name="'libffi'" instsize showsbu2></pkg>
+{{ include('../packages/libffi/README.md') }}
 
 ## Настройка
 

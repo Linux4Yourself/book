@@ -1,4 +1,4 @@
-<pkg :name="'dbus'" instsize showsbu2></pkg>
+{{ include('../packages/dbus/README.md') }}
 
 ## Настройка
 
