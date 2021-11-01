@@ -918,16 +918,6 @@
 		"installedSize": 0.5,
 		"sbu": 0.01,
 		"sbu2": 0.01,
-		"files": [
-			{
-				"name": "/etc/protocols",
-				"description": "определяет, каким транспортным протоколом пользуется сервис. Имеется возможность различия протоколов udp или tcp. Сервис может работать с разными протоколами, а может быть два сервиса работают на одном порте, но с разными протоколами."
-			},
-			{
-				"name": "/etc/services",
-				"description": "файл определений протоколов. Данный файл является простым ASCII файлом, описывающим различные DARPA internet протоколы, которые доступны через подсистему TCP/IP. Не изменяйте этот файл, так как изменения могут привести к некорректному формированию IP пакетов. Номера протоколов и их имена определяются Центром Сетевой Информации (DDN Network Information Center)."
-			}
-		],
 		"scripts": [
 			"README.md",
 			"install"
@@ -2432,11 +2422,11 @@
 	},
 	{
 		"name": "coreutils-patch",
-		"fileName": "coreutils-8.32-i18n-1.patch",
+		"fileName": "coreutils-9.0-i18n-1.patch",
 		"description": "",
-		"url": "https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-8.32-i18n-1.patch",
+		"url": "https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-9.0-i18n-1.patch",
 		"homeUrl": "",
-		"version": "8.32-i18n-1",
+		"version": "9.0-i18n-1",
 		"releasesUrl": "",
 		"priority": "optional",
 		"md5": "e716728302e3ed1dfffb06050a68517c",
@@ -2444,7 +2434,7 @@
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-8.32-i18n-1.patch",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch",
 		"scripts": [
 			"README.md"
 		],
@@ -2452,11 +2442,11 @@
 	},
 	{
 		"name": "glibc-patch",
-		"fileName": "glibc-2.33-fhs-1.patch",
+		"fileName": "glibc-2.34-fhs-1.patch",
 		"description": "",
-		"url": "https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.33-fhs-1.patch",
+		"url": "https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.34-fhs-1.patch",
 		"homeUrl": "",
-		"version": "2.33-fhs-1",
+		"version": "2.34-fhs-1",
 		"releasesUrl": "",
 		"priority": "important",
 		"md5": "9a5997c3452909b1769918c759eff8a2",
@@ -2464,7 +2454,7 @@
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.33-fhs-1.patch",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch",
 		"scripts": [
 			"README.md"
 		],

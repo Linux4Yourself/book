@@ -1788,15 +1788,15 @@ MD5: **b45d3bea4ddb7f64b6e56033ecc0fb11**
 
 
 
-Версия: **8.32-i18n-1**
+Версия: **9.0-i18n-1**
 
 Размер: **0.16Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-8.32-i18n-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-8.32-i18n-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-9.0-i18n-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-9.0-i18n-1.patch)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/coreutils-8.32-i18n-1.patch](https://lx4u.ru/downloads/packages/coreutils-8.32-i18n-1.patch)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch](https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch)
 
 MD5: **e716728302e3ed1dfffb06050a68517c**
 
@@ -1807,15 +1807,15 @@ MD5: **e716728302e3ed1dfffb06050a68517c**
 
 
 
-Версия: **2.33-fhs-1**
+Версия: **2.34-fhs-1**
 
 Размер: **0.00Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.33-fhs-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.33-fhs-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.34-fhs-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.34-fhs-1.patch)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/glibc-2.33-fhs-1.patch](https://lx4u.ru/downloads/packages/glibc-2.33-fhs-1.patch)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch](https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch)
 
 MD5: **9a5997c3452909b1769918c759eff8a2**
 
