@@ -235,11 +235,9 @@ make modules_install
 для обеспечения совместимости автоматической настройки процесса загрузки. При выполнении следующей команды будет считаться, что используется
 архитектура x86:
 
-<pre class="pre">
-cp -iv arch/x86/boot/bzImage /boot/vmlinuz-```bash 
-{{ include('../packages/linux/.version') }}
-```-my-kernel
-</pre>
+```bash
+cp -iv arch/x86/boot/bzImage /boot/vmlinuz-{{ include('../packages/linux/.version') }}-my-kernel
+```
 
 `System.map` файл, внутри которого находится символьная таблица адресов функций и
 процедур, используемых ядром операционной системы Linux. В этой таблице перечислены
@@ -247,29 +245,23 @@ cp -iv arch/x86/boot/bzImage /boot/vmlinuz-```bash
 при отладке ядра в случае Kernel panic или Linux oops. System.map генерируется при компиляции
 ядра. Выполните следующую команду для установки файла System.map :
 
-<pre class="pre">
-cp -iv System.map /boot/System.map-```bash 
-{{ include('../packages/linux/.version') }}
+```bash
+cp -iv System.map /boot/System.map-{{ include('../packages/linux/.version') }}
 ```
-</pre>
 
 Файл конфигурации ядра `.config`, полученный в результате настройки `make menuconfig`
 содержит в себе все опции конфигурации скомпилированного ядра. Хорошей идеей будет
 оставить этот файл для будующей работы:
 
-<pre class="pre">
-cp -iv .config /boot/config-```bash 
-{{ include('../packages/linux/.version') }}
+```bash
+cp -iv .config /boot/config-{{ include('../packages/linux/.version') }}
 ```
-</pre>
 
 Для облегчения обновления ядра создайте символическую ссылку:
 
-<pre class="pre">
-ln -svf vmlinuz-```bash 
-{{ include('../packages/linux/.version') }}
-```-my-kernel /boot/vmlinuz
-</pre>
+```bash
+ln -svf vmlinuz-{{ include('../packages/linux/.version') }}-my-kernel /boot/vmlinuz
+```
 
 При обновлении ядра будет достаточно установить новую версию и обновить символическую ссылку.
 
@@ -277,14 +269,10 @@ ln -svf vmlinuz-```bash
 
 Установите документацию, если она необходима
 
-<pre class="pre">
-install -d /usr/share/doc/linux-```bash 
-{{ include('../packages/linux/.version') }}
+```bash
+install -d /usr/share/doc/linux-{{ include('../packages/linux/.version') }}
+cp -rv Documentation/* /usr/share/doc/linux-{{ include('../packages/linux/.version') }}
 ```
-cp -rv Documentation/* /usr/share/doc/linux-```bash 
-{{ include('../packages/linux/.version') }}
-```
-</pre>
 
 ## Настройка каталога с исходным кодом
 
@@ -305,11 +293,9 @@ cp -rv Documentation/* /usr/share/doc/linux-```bash
 
 Если вы планируете оставить каталог с исходным кодом ядра, выполните команду:
 
-<pre class="pre">
-chown -R 0:0 /usr/src/linux-```bash 
-{{ include('../packages/linux/.version') }}
+```bash
+chown -R 0:0 /usr/src/linux-{{ include('../packages/linux/.version') }}
 ```
-</pre>
 
 ???+ danger "Важно"
 
