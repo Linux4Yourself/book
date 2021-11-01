@@ -13,7 +13,7 @@ logout
 ```
 
 ```bash 
-{{ include('../scripts/chroot.md') }}
+{{ include('../scripts/chroot.sh') }}
 ```
 
 
@@ -41,7 +41,7 @@ rm -rf /tools
 userdel -r tester
 ```
 
-вы можете удалить ненужные символы из исполняемых файлов:
+Вы можете удалить ненужные символы из исполняемых файлов:
 
 ```bash
 find /lib /usr/lib{,32} -type f -name \*.a \
