@@ -5,22 +5,17 @@
 ### Дополнительные необходимые файлы
 
 ```bash 
-{{ include('../packages/mpc/.url') }}
-```
-
-```bash 
-{{ include('../packages/gmp/.url') }}
-```
-
-```bash 
-{{ include('../packages/mpfr/.url') }}
-```
-
-```bash 
-{{ include('../packages/isl/.url') }}
+{{ include('../packages/mpc/.filename') }}
+{{ include('../packages/gmp/.filename') }}
+{{ include('../packages/mpfr/.filename') }}
+{{ include('../packages/isl/.filename') }}
 ```
 
 Распакуйте дополнительные пакеты:
+
+
+???+ warning "Предупреждение"
+	Распаковка указанных ниже пакетов должна производиться из каталога `{{ include('../packages/gcc/.name') }}`. Проверьте текущее местоположение, прежде чем выполнить команды ниже.
 
 ```bash
 tar -xf ../{{ include('../packages/mpfr/.filename') }}
@@ -33,9 +28,6 @@ tar -xf ../{{ include('../packages/isl/.filename') }}
 mv -v {{ include('../packages/isl/.filename') }} isl
 ```
 
-???+ warning "Предупреждение"
-
-	Обратите внимание, что распаковка указанных пакетов должна производиться из каталога пакета GCC.
 
 Смените пути установки библиотек:
 
