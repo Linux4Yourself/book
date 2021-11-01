@@ -1,10 +1,8 @@
-```bash
 cat > /etc/profile << "EOF"
 # Begin /etc/profile
 # Written for Beyond Linux From Scratch and modified for Linux4yourself
 # by James Robertson <jameswrobertson@earthlink.net>
 # modifications by Dagmar d'Surreal <rivyqntzne@pbzpnfg.arg>
-# modifications for Linux4yourself by makpif <citokot@gmail.com>
 
 # System wide environment variables and startup programs.
 
@@ -84,4 +82,3 @@ export MAKEFLAGS=-j$(lscpu  | grep "CPU(s):" | grep -v NUMA | tr -d "CPU(s):    
 # End /etc/profile
 EOF
 install --directory --mode=0755 --owner=root --group=root /etc/profile.d
-```

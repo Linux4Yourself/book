@@ -1,5 +1,3 @@
-```bash
-
 cat > /etc/profile.d/bash_completion.sh << "EOF"
 # Begin /etc/profile.d/bash_completion.sh
 # Import bash completion scripts
@@ -37,4 +35,3 @@ fi
 # End /etc/profile.d/bash_completion.sh
 EOF
 install --directory --mode=0755 --owner=root --group=root /etc/bash_completion.d
-```

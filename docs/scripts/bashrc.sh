@@ -1,4 +1,3 @@
-```bash
 cat > /etc/bashrc << "EOF"
 # Begin /etc/bashrc
 # Written for Beyond Linux From Scratch
@@ -36,4 +35,3 @@ unset RED GREEN NORMAL
 
 # End /etc/bashrc
 EOF
-```

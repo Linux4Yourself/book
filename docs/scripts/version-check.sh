@@ -1,4 +1,3 @@
-```bash
 cat > version-check.sh << "EOF"
 
 #!/bin/bash
@@ -61,4 +60,3 @@ rm -f dummy.c dummy
 EOF
 
 bash version-check.sh
-```

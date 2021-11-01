@@ -60,7 +60,7 @@ urpmi bison gawk texinfo make gcc-c++
 Чтобы узнать, что ваша хост-система полностью соответствует всем необходимым для дальнейшей работы требованиям, выполните следующий набор команд:
 
 ```bash 
-{{ include('../scripts/version-check.md') }}
+{{ include('../scripts/version-check.sh') }}
 ```
 
 ???+ warning "Предупреждение"

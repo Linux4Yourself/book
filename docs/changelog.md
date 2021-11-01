@@ -50,6 +50,7 @@
 - openssl-3.0.0
 - shadow-4.9
 - systemd-249.4
+- sysvinit-3.00
 - util-linux-2.37.2
 - vim-8.2.3455
 - wget-1.21.2

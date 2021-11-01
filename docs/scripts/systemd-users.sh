@@ -1,4 +1,3 @@
-```bash
 cat >> /etc/passwd << "EOF"
 systemd-bus-proxy:x:72:72:systemd Bus Proxy:/:/bin/false
 systemd-journal-gateway:x:73:73:systemd Journal Gateway:/:/bin/false
@@ -21,4 +20,3 @@ systemd-timesync:x:78:
 systemd-coredump:x:79:
 systemd-oom:x:81:81:
 EOF
-```

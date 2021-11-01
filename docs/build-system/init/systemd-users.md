@@ -3,7 +3,7 @@
 `systemd` требует множество пользователей и групп для своей работы. Создайте их:
 
 ```bash 
-{{ include('../scripts/systemd-users.md') }}
+{{ include('../scripts/systemd-users.sh') }}
 ```
 
 

@@ -1,8 +1,12 @@
-```bash
-mkdir -pv $LIN/{bin,etc,lib,lib64,sbin,usr,var}
+mkdir -pv $LIN/{usr,etc,var,lib64}
 mkdir -pv $LIN/{boot,home,mnt,opt,srv}
-mkdir -pv $LIN/usr/{,local/}{bin,sbin,include,lib,src}
+mkdir -pv $LIN/usr/{,local/}{bin,include,lib,src}
 mkdir -pv $LIN/{dev,proc,sys,run}
+
+ln -sfv usr/bin $LIN/bin
+ln -sfv usr/lib $LIN/lib
+ln -sfv usr/bin $LIN/sbin
+ln -sfv bin $LIN/usr/sbin
 
 mkdir -pv $LIN/etc/{opt,sysconfig}
 mkdir -pv $LIN/lib/firmware
@@ -18,4 +22,3 @@ ln -sfv /run/lock $LIN/var/lock
 
 install -dv -m 0750 $LIN/root
 install -dv -m 1777 $LIN/tmp $LIN/var/tmp
-```

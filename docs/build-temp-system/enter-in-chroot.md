@@ -33,14 +33,14 @@ fi
 Войдите в `chroot`:
 
 ```bash 
-{{ include('../scripts/chroot.md') }}
+{{ include('../scripts/chroot.sh') }}
 ```
 
 ???+ note "Обратите внимание"
 	  После входа в `chroot`, в приглашении `bash` будет написано ```I have no name!```. Это нормально, и ничего плохого в этом нет. Дело в том, что файл `/etc/passwd` ещё не создан.
 
 ```bash 
-{{ include('../shared/exit-chroot.md') }}
+{{ include('../shared/exit-chroot.sh') }}
 ```
 
 ???+ note "Обратите внимание"

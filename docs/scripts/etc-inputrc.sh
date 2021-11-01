@@ -1,4 +1,3 @@
-```bash
 cat > /etc/inputrc << "EOF"
 # Begin /etc/inputrc
 # Modified by Chris Lynn <roryo@roryo.dynup.net>
@@ -42,4 +41,3 @@ set bell-style none
 
 # End /etc/inputrc
 EOF
-```

@@ -5,6 +5,6 @@
 Создайте данный файл:
 
 ```bash 
-{{ include('../scripts/etc-inputrc.md') }}
+{{ include('../scripts/etc-inputrc.sh') }}
 ```
 

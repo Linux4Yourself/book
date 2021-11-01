@@ -34,7 +34,6 @@ cd     build
       --enable-kernel=3.2                \
       --with-headers=$LIN/usr/include    \
       libc_cv_slibdir=/lib               \
-      libc_cv_include_x86_isa_level=no   \
       --disable-nscd                     \
       --disable-timezone-tools
 ```
@@ -51,7 +50,6 @@ cd     build
 
 `--with-headers=$LIN/usr/include` - задает путь к заголовкам ядра.
 
-`libc_cv_include_x86_isa_level=no` - исключает возможную ошибку.
 
 ` --disable-nscd, --disable-timezone-tools` - демон nscd и инструменты для управления часовыми поясами не нужны для временной glibc.
 
@@ -125,7 +123,6 @@ CXX="$LIN_TGT-g++ -m32"                  \
       --libdir=/usr/lib32                \
       --libexecdir=/usr/lib32            \
       libc_cv_slibdir=/lib32             \
-      libc_cv_include_x86_isa_level=no   \
       --disable-nscd                     \
       --disable-timezone-tools
 ```

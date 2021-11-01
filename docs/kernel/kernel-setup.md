@@ -328,5 +328,5 @@ chown -R 0:0 /usr/src/linux-```bash
 Создайте новый файл `/etc/modprobe.d/usb.conf`, выполнив следующую команду:
 
 ```bash 
-{{ include('../scripts/modprobe.md') }}
+{{ include('../scripts/modprobe.sh') }}
 ```
