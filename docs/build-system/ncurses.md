@@ -50,21 +50,21 @@ ln -sfv libncurses.so      /usr/lib/libcurses.so
 rm -fv /usr/lib/libncurses++w.a
 ```
 
-???+ note "Обратите внимание"
+???+ note "Дополнительно"
 
     Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
 
-```bash
-make distclean
-./configure --prefix=/usr    \
-            --with-shared    \
-            --without-normal \
-            --without-debug  \
-            --without-cxx-binding \
-            --with-abi-version=5
-make sources libs
-cp -av lib/lib*.so.5* /usr/lib
-```
+    ```bash
+    make distclean
+    ./configure --prefix=/usr    \
+                --with-shared    \
+                --without-normal \
+                --without-debug  \
+                --without-cxx-binding \
+                --with-abi-version=5
+    make sources libs
+    cp -av lib/lib*.so.5* /usr/lib
+    ```
 
 ## При раздельной структуре каталогов
 
@@ -98,21 +98,21 @@ make distclean
 {{ include('../packages/ncurses/multi_install') }}
 ```
 
-???+ note "Обратите внимание"
+???+ note "Дополнительно"
 
     Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
 
-```bash
-make distclean
-CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr    \
-            --with-shared    \
-            --without-normal \
-            --without-debug  \
-            --without-cxx-binding \
-            --with-abi-version=5 --host=i686-pc-linux-gnu
-make sources libs
-cp -av lib/lib*.so.5* /usr/lib
-```
+    ```bash
+    make distclean
+    CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr    \
+                --with-shared    \
+                --without-normal \
+                --without-debug  \
+                --without-cxx-binding \
+                --with-abi-version=5 --host=i686-pc-linux-gnu
+    make sources libs
+    cp -av lib/lib*.so.5* /usr/lib
+    ```
 
 ## Установленные файлы
 
