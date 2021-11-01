@@ -2,9 +2,7 @@
 
 ## Подготовка
 
-```bash 
 {{ include('../shared/systemd-extra-warn.md') }}
-```
 
 ???+ danger "Важно"
 

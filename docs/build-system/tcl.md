@@ -1,8 +1,6 @@
 {{ include('../packages/tcl/README.md') }}
 
-```bash 
 {{ include('../shared/test-pkgs.md') }}
-```
 
 ## Настройка
 

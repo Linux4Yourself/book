@@ -1,8 +1,6 @@
 {{ include('../packages/markupsafe/README.md') }}
 
-```bash 
 {{ include('../shared/systemd-extra-warn.md') }}
-```
 
 ## Сборка
 
