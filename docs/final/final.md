@@ -10,7 +10,7 @@
 
 Создайте файл, выполнив команду:
 
-<pre class="pre">
+```bash
 cat > /etc/os-release << "EOF"
 NAME="MyLinux"
 VERSION="1.0"
@@ -18,7 +18,7 @@ ID=mylinux
 PRETTY_NAME="MyLinux 1.0"
 VERSION_CODENAME="MyLinuxCodeName"
 EOF
-</pre>
+```
 
 ### Параметры идентификации
 
@@ -136,14 +136,14 @@ EOF
 
 Создайте файл, выполнив команду:
 
-<pre class="pre">
+```bash
 cat > /etc/lsb-release << "EOF"
 DISTRIB_ID="MyLinux"
 DISTRIB_RELEASE="1.0"
 DISTRIB_CODENAME="mylinux"
 DISTRIB_DESCRIPTION="MyLinux"
 EOF
-</pre>
+```
 
 Если система совместима с LSB, файл `/etc/lsb-release` должен содержать поле `LSB_VERSION`. Значение поля должно представлять собой список поддерживаемых версий модулей, разделённых двоеточиями, с указанием модулей спецификации LSB, которым соответствует установка. Если установка не соответствует требованиям, вышеуказанное поле должно отсутствовать.
 
@@ -200,7 +200,3 @@ shutdown -r now
 ```
 
 После перезагрузки система будет готова к использованию.
-
-<script>
-	new Vue({ el: '#main'})
-</script>
