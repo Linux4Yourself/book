@@ -121,5 +121,3 @@ cp -av lib/lib*.so.5* /usr/lib
 Библиотеки: `libcursesw.so` (ссылка на `libncursesw.so`), `libformw.so`, `libmenuw.so`, `libncursesw.so`, `libpanelw.so` и их версии без широких символов
 
 Директории: /usr/share/tabset /usr/share/terminfo
-
-
