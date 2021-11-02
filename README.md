@@ -32,13 +32,15 @@ pip install git+https://github.com/RedisLabs/mkdocs-include.git
 ### Сборка в Linux
 
 ```bash
-mkdocs build
+mkdocs build # Сборка
+mkdocs serve # Запуск
 ```
 
 ### Сборка в Windows
 
 ```bash
-python -m mkdocs build
+python -m mkdocs build # Запуск
+python -m mkdocs serve # Запуск
 ```
 
-В результате будет сгенерирован каталог `site`. Откройте в браузере файл `site/index.html`.
+В результате будет сгенерирован каталог `site`. Руководство будет доступно по адресу http://127.0.0.1:8000/mkdocs/.
