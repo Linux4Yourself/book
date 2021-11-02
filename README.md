@@ -39,7 +39,7 @@ mkdocs serve # Запуск
 ### Сборка в Windows
 
 ```bash
-python -m mkdocs build # Запуск
+python -m mkdocs build # Сборка
 python -m mkdocs serve # Запуск
 ```
 
