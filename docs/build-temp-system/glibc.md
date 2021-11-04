@@ -24,7 +24,7 @@ mkdir  build
 cd     build
 ```
 
-Если вы используете раздельную структуру директорий, то выполните команду ниже:
+Убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
 
 ```bash
 echo "rootsbindir=/usr/sbin" > configparms
