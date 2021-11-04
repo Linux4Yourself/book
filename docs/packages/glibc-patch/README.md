@@ -8,10 +8,10 @@
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.34-fhs-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.34-fhs-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/glibc-2.34-fhs-1.patch](https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/glibc-2.34-fhs-1.patch)
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch](https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch)
 
-MD5: **9a5997c3452909b1769918c759eff8a2**
+MD5: **dd09372fc5740324c82aed7d97635d6d**
 
 Домашняя страница: []()

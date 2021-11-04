@@ -2009,11 +2009,11 @@ SBU: **0.2**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/bzip2-1.0.8-install_docs-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/bzip2-1.0.8-install_docs-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/bzip2-1.0.8-install_docs-1.patch](https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/bzip2-1.0.8-install_docs-1.patch)
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch](https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch)
 
-MD5: **b45d3bea4ddb7f64b6e56033ecc0fb11**
+MD5: **19852fe67b6babb67bfae0b6db9ef732**
 
 Домашняя страница: []()
 
@@ -2024,15 +2024,15 @@ MD5: **b45d3bea4ddb7f64b6e56033ecc0fb11**
 
 Версия: **9.0-i18n-1**
 
-Размер: **0.16Mb**
+Размер: **0.17Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-9.0-i18n-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-9.0-i18n-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/coreutils-9.0-i18n-1.patch](https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/coreutils-9.0-i18n-1.patch)
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch](https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch)
 
-MD5: **e716728302e3ed1dfffb06050a68517c**
+MD5: **1260d0045ce3452fff2aa82c7a04e31a**
 
 Домашняя страница: []()
 
@@ -2047,11 +2047,11 @@ MD5: **e716728302e3ed1dfffb06050a68517c**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.34-fhs-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.34-fhs-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/glibc-2.34-fhs-1.patch](https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/glibc-2.34-fhs-1.patch)
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch](https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch)
 
-MD5: **9a5997c3452909b1769918c759eff8a2**
+MD5: **dd09372fc5740324c82aed7d97635d6d**
 
 Домашняя страница: []()
 
@@ -2066,11 +2066,11 @@ MD5: **9a5997c3452909b1769918c759eff8a2**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/kbd-2.4.0-backspace-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/kbd-2.4.0-backspace-1.patch)
+Оригинальное расположение: [hhttps://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch](hhttps://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch)
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch](https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch)
 
-MD5: **f75cca16a38da6caa7d52151f7136895**
+MD5: **3249eddfaf6138c9542d0b5165033d5d**
 
 Домашняя страница: []()
 
@@ -2085,11 +2085,11 @@ MD5: **f75cca16a38da6caa7d52151f7136895**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/sysvinit-2.99-consolidated-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/sysvinit-2.99-consolidated-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/sysvinit-2.99-consolidated-1.patch](https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/sysvinit-2.99-consolidated-1.patch)
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch](https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch)
 
-MD5: **4900322141d493e74020c9cf437b2cdc**
+MD5: **fd07ab7c0e5ec38ac2aa2d79178e4562**
 
 Домашняя страница: []()
 
@@ -2104,11 +2104,11 @@ MD5: **4900322141d493e74020c9cf437b2cdc**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/efivar-37-gcc_9-1.patch](https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/efivar-37-gcc_9-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/efivar-37-gcc_9-1.patch](https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/efivar-37-gcc_9-1.patch)
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch](https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch)
 
-MD5: **e795e52eeefc0d2c62c6c4bd748d2d38**
+MD5: **6c3af2c50718168f781bf0c565736928**
 
 Домашняя страница: []()
 
