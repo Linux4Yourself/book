@@ -15,3 +15,5 @@ Check - платформа для работы с модульными тест�
 MD5: **50fcafcecde5a380415b12e9c574e0b2**
 
 Домашняя страница: [https://github.com/libcheck/check](https://github.com/libcheck/check)
+
+SBU: **4**

@@ -15,3 +15,5 @@
 MD5: **6321d4c2b820394cf2392985d8f8c563**
 
 Домашняя страница: [https://ftp.gnu.org/gnu/wget](https://ftp.gnu.org/gnu/wget)
+
+SBU: **0.2**

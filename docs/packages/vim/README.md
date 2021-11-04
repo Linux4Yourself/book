@@ -15,3 +15,5 @@
 MD5: **79feec1ac9c4d1b65968247aca16475e**
 
 Домашняя страница: [https://www.vim.org/](https://www.vim.org/)
+
+SBU: **2.1**

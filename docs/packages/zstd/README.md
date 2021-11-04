@@ -15,3 +15,5 @@ Zstandard - это алгоритм сжатия в реальном време�
 MD5: **a6eb7fb1f2c21fa80030a47993853e92**
 
 Домашняя страница: [https://facebook.github.io/zstd/](https://facebook.github.io/zstd/)
+
+SBU: **1**

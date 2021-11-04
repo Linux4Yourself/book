@@ -15,3 +15,5 @@ Dosfstools обеспечивает работу с файловыми сист�
 MD5: **49c8e457327dc61efab5b115a27b087a**
 
 Домашняя страница: [ https://github.com/dosfstools/dosfstools]( https://github.com/dosfstools/dosfstools)
+
+SBU: **0.1**

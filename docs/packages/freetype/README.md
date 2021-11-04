@@ -15,3 +15,5 @@
 MD5: **f931582653774e310ed3a7e49b7167a3**
 
 Домашняя страница: [https://www.freetype.org/](https://www.freetype.org/)
+
+SBU: **0.3**

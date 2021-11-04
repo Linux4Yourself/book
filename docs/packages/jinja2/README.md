@@ -15,3 +15,5 @@ Jinja2 - это модуль Python, который реализует язык 
 MD5: **059f89375d7ea60eb7013f341f0b89e7**
 
 Домашняя страница: [https://jinja.palletsprojects.com/en/3.0.x/](https://jinja.palletsprojects.com/en/3.0.x/)
+
+SBU: **0.1**

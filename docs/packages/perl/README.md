@@ -15,3 +15,7 @@
 MD5: **df7ecb0653440b26dc951ad9dbfab517**
 
 Домашняя страница: [https://www.perl.org/](https://www.perl.org/)
+
+SBU (Сборка временной системы): **1.9**
+
+SBU: **2**

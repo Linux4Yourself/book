@@ -16,6 +16,8 @@ MD5: **95ce715fe09acca7c12d3306d0f076b2**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/acl/](https://savannah.nongnu.org/projects/acl/)
 
+SBU: **0.1**
+
 ---
 # attr
 
@@ -34,6 +36,8 @@ MD5: **95ce715fe09acca7c12d3306d0f076b2**
 MD5: **ac1c5a7a084f0f83b8cace34211f64d8**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/attr/](https://savannah.nongnu.org/projects/attr/)
+
+SBU: **0.1**
 
 ---
 # autoconf
@@ -54,6 +58,8 @@ MD5: **12cfa1687ffa2606337efe1a64416106**
 
 Домашняя страница: [https://www.gnu.org/software/autoconf](https://www.gnu.org/software/autoconf)
 
+SBU: **0.1**
+
 ---
 # automake
 
@@ -72,6 +78,8 @@ MD5: **12cfa1687ffa2606337efe1a64416106**
 MD5: **4017e96f89fca45ca946f1c5db6be714**
 
 Домашняя страница: [https://www.gnu.org/software/automake](https://www.gnu.org/software/automake)
+
+SBU: **0.1**
 
 ---
 # bash
@@ -92,6 +100,10 @@ MD5: **23eee6195b47318b9fd878e590ccb38c**
 
 Домашняя страница: [https://www.gnu.org/software/bash](https://www.gnu.org/software/bash)
 
+SBU (Сборка временной системы): **0.3**
+
+SBU: **0.3**
+
 ---
 # bc
 
@@ -110,6 +122,8 @@ BC (basic calculator) — интерактивный интерпретатор 
 MD5: **1af1e124e5d1734e8770dc85e0af5cd6**
 
 Домашняя страница: [https://git.yzena.com/gavin/bc](https://git.yzena.com/gavin/bc)
+
+SBU: **0.1**
 
 ---
 # binutils
@@ -130,6 +144,10 @@ MD5: **e78d9ff2976b745a348f4c1f27c77cb1**
 
 Домашняя страница: [https://www.gnu.org/software/binutils](https://www.gnu.org/software/binutils)
 
+SBU (Сборка временной системы): **1**
+
+SBU: **4.1**
+
 ---
 # bison
 
@@ -148,6 +166,10 @@ MD5: **e78d9ff2976b745a348f4c1f27c77cb1**
 MD5: **c28f119f405a2304ff0a7ccdcc629713**
 
 Домашняя страница: [https://www.gnu.org/software/bison](https://www.gnu.org/software/bison)
+
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.2**
 
 ---
 # bzip2
@@ -168,6 +190,8 @@ MD5: **67e051268d0c475ea773822f7500d0e5**
 
 Домашняя страница: [https://www.sourceware.org/bzip2](https://www.sourceware.org/bzip2)
 
+SBU: **0.1**
+
 ---
 # check
 
@@ -186,6 +210,8 @@ Check - платформа для работы с модульными тест�
 MD5: **50fcafcecde5a380415b12e9c574e0b2**
 
 Домашняя страница: [https://github.com/libcheck/check](https://github.com/libcheck/check)
+
+SBU: **4**
 
 ---
 # coreutils
@@ -206,6 +232,10 @@ MD5: **0d79ae8a6124546e3b94171375e5e5d0**
 
 Домашняя страница: [https://gnu.org/software/coreutils](https://gnu.org/software/coreutils)
 
+SBU (Сборка временной системы): **0.5**
+
+SBU: **0.4**
+
 ---
 # dbus
 
@@ -224,6 +254,8 @@ D-Bus - система межпроцессного взаимодействия
 MD5: **b25e4fcfbfd4889bef76f7241dfa1a04**
 
 Домашняя страница: [https://www.freedesktop.org/wiki/Software/dbus/](https://www.freedesktop.org/wiki/Software/dbus/)
+
+SBU: **0.2**
 
 ---
 # dejagnu
@@ -244,6 +276,8 @@ MD5: **68c5208c58236eba447d7d6d1326b821**
 
 Домашняя страница: [https://www.gnu.org/software/dejagnu](https://www.gnu.org/software/dejagnu)
 
+SBU: **0.1**
+
 ---
 # diffutils
 
@@ -263,6 +297,10 @@ MD5: **6a6b0fdc72acfe3f2829aab477876fbc**
 
 Домашняя страница: [https://www.gnu.org/software/diffutils](https://www.gnu.org/software/diffutils)
 
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.2**
+
 ---
 # e2fsprogs
 
@@ -270,7 +308,7 @@ MD5: **6a6b0fdc72acfe3f2829aab477876fbc**
 
 Версия: **1.46.4**
 
-Размер: **0.00Mb**
+Размер: **9.07Mb**
 
 Приоритет: **Необходимый**
 
@@ -278,9 +316,11 @@ MD5: **6a6b0fdc72acfe3f2829aab477876fbc**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz](https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz)
 
-MD5: **0ce57ce6ffe2dddb3618200fb8e5f89d**
+MD5: **bdd1034f33b10eebcf2aa2a9298dca33**
 
 Домашняя страница: [https://sourceforge.net/projects/e2fsprogs/](https://sourceforge.net/projects/e2fsprogs/)
+
+SBU: **0.5**
 
 ---
 # emacs
@@ -301,6 +341,10 @@ MD5: **4c3d9ff35b2ab2fe518dc7eb3951e128**
 
 Домашняя страница: [https://www.gnu.org/software/emacs/](https://www.gnu.org/software/emacs/)
 
+SBU (Сборка временной системы): **0.6**
+
+SBU: **0.6**
+
 ---
 # elfutils
 
@@ -319,6 +363,10 @@ MD5: **4c3d9ff35b2ab2fe518dc7eb3951e128**
 MD5: **2b6e94c2eebc1f2194173e31bca9396e**
 
 Домашняя страница: [https://sourceware.org/elfutils/](https://sourceware.org/elfutils/)
+
+SBU (Сборка временной системы): **0.8**
+
+SBU: **0.9**
 
 ---
 # eudev
@@ -339,6 +387,8 @@ MD5: **60b135a189523f333cea5f71a3345c8d**
 
 Домашняя страница: [https://wiki.gentoo.org/wiki/Project:Eudev](https://wiki.gentoo.org/wiki/Project:Eudev)
 
+SBU: **0.2**
+
 ---
 # expat
 
@@ -357,6 +407,8 @@ Expat - потокоориентированная библиотека парс
 MD5: **a4fb91a9441bcaec576d4c4a56fa3aa6**
 
 Домашняя страница: [https://sourceforge.net/projects/expat](https://sourceforge.net/projects/expat)
+
+SBU: **0.1**
 
 ---
 # expect
@@ -377,6 +429,8 @@ MD5: **00fce8de158422f5ccd2666512329bd2**
 
 Домашняя страница: [https://sourceforge.net/projects/expect](https://sourceforge.net/projects/expect)
 
+SBU: **0.2**
+
 ---
 # file
 
@@ -395,6 +449,10 @@ MD5: **00fce8de158422f5ccd2666512329bd2**
 MD5: **18233bb0a0089dfdc7dfbc93b96f231b**
 
 Домашняя страница: [https://www.darwinsys.com/file/](https://www.darwinsys.com/file/)
+
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.1**
 
 ---
 # findutils
@@ -415,6 +473,10 @@ MD5: **eeefe2e6380931a77dfa6d9350b43186**
 
 Домашняя страница: [https://gnu.org/software/findutils](https://gnu.org/software/findutils)
 
+SBU (Сборка временной системы): **0.3**
+
+SBU: **0.3**
+
 ---
 # flex
 
@@ -433,6 +495,8 @@ Flex (Fast Lexical Analyzer) — генератор лексических ан�
 MD5: **2882e3179748cc9f9c23ec593d6adc8d**
 
 Домашняя страница: [https://github.com/westes/flex](https://github.com/westes/flex)
+
+SBU: **0.1**
 
 ---
 # gawk
@@ -453,6 +517,10 @@ MD5: **8470c34eeecc41c1aa0c5d89e630df50**
 
 Домашняя страница: [https://gnu.org/software/gawk](https://gnu.org/software/gawk)
 
+SBU (Сборка временной системы): **0.3**
+
+SBU: **0.3**
+
 ---
 # gcc
 
@@ -471,6 +539,10 @@ MD5: **8470c34eeecc41c1aa0c5d89e630df50**
 MD5: **31c86f2ced76acac66992eeedce2fce2**
 
 Домашняя страница: [https://gnu.org/software/gcc](https://gnu.org/software/gcc)
+
+SBU (Сборка временной системы): **14.8**
+
+SBU: **25**
 
 ---
 # gdbm
@@ -491,6 +563,8 @@ MD5: **0bbd38f12656e4728e2f7c4708aec014**
 
 Домашняя страница: [https://gnu.org/software/gdbm](https://gnu.org/software/gdbm)
 
+SBU: **0.1**
+
 ---
 # gettext
 
@@ -509,6 +583,10 @@ MD5: **0bbd38f12656e4728e2f7c4708aec014**
 MD5: **40996bbaf7d1356d3c22e33a8b255b31**
 
 Домашняя страница: [https://gnu.org/software/gettext](https://gnu.org/software/gettext)
+
+SBU (Сборка временной системы): **4.5**
+
+SBU: **3**
 
 ---
 # glibc
@@ -529,6 +607,10 @@ MD5: **31998b53fb39cb946e96abc310af1c89**
 
 Домашняя страница: [https://gnu.org/software/glibc](https://gnu.org/software/glibc)
 
+SBU (Сборка временной системы): **5.4**
+
+SBU: **4.2**
+
 ---
 # gmp
 
@@ -547,6 +629,8 @@ MD5: **31998b53fb39cb946e96abc310af1c89**
 MD5: **0b82665c4a92fd2ade7440c13fcaa42b**
 
 Домашняя страница: [https://gnu.org/software/gmp](https://gnu.org/software/gmp)
+
+SBU: **0.5**
 
 ---
 # gperf
@@ -567,6 +651,8 @@ MD5: **9e251c0a618ad0824b51117d5d9db87e**
 
 Домашняя страница: [https://gnu.org/software/gperf](https://gnu.org/software/gperf)
 
+SBU: **0.1**
+
 ---
 # grep
 
@@ -574,7 +660,7 @@ MD5: **9e251c0a618ad0824b51117d5d9db87e**
 
 Версия: **3.7**
 
-Размер: **0.00Mb**
+Размер: **1.57Mb**
 
 Приоритет: **Необходимый**
 
@@ -582,9 +668,13 @@ MD5: **9e251c0a618ad0824b51117d5d9db87e**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/grep-3.7.tar.xz](https://lx4u.ru/downloads/packages/grep-3.7.tar.xz)
 
-MD5: **d45af87c3d9d3ddbe11cac971e11236c**
+MD5: **7c9cca97fa18670a21e72638c3e1dabf**
 
 Домашняя страница: [https://gnu.org/software/grep](https://gnu.org/software/grep)
+
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.2**
 
 ---
 # groff
@@ -605,6 +695,8 @@ MD5: **08fb04335e2f5e73f23ea4c3adbf0c5f**
 
 Домашняя страница: [https://gnu.org/software/groff](https://gnu.org/software/groff)
 
+SBU: **0.5**
+
 ---
 # grub
 
@@ -623,6 +715,8 @@ GRUB является эталонной реализацией загрузчи
 MD5: **cf0fd928b1e5479c8108ee52cb114363**
 
 Домашняя страница: [https://www.gnu.org/software/grub](https://www.gnu.org/software/grub)
+
+SBU: **1**
 
 ---
 # gzip
@@ -643,6 +737,10 @@ MD5: **d1e93996dba00cab0caa7903cd01d454**
 
 Домашняя страница: [https://www.gnu.org/software/gzip](https://www.gnu.org/software/gzip)
 
+SBU (Сборка временной системы): **0.1**
+
+SBU: **0.1**
+
 ---
 # iana-etc
 
@@ -661,6 +759,10 @@ MD5: **d1e93996dba00cab0caa7903cd01d454**
 MD5: **abd35941cf49fc26ee2a38120db52883**
 
 Домашняя страница: [https://www.iana.org/protocols](https://www.iana.org/protocols)
+
+SBU (Сборка временной системы): **0.01**
+
+SBU: **0.01**
 
 ---
 # inetutils
@@ -681,6 +783,8 @@ MD5: **de8c1b49cbde2b30e481c61c65357ad4**
 
 Домашняя страница: []()
 
+SBU: **0.2**
+
 ---
 # intltool
 
@@ -699,6 +803,8 @@ Intltool - инструмент интернационализации, испо
 MD5: **12e517cac2b57a0121cda351570f1e63**
 
 Домашняя страница: [https://launchpad.net/intltool](https://launchpad.net/intltool)
+
+SBU: **0.01**
 
 ---
 # iproute2
@@ -719,6 +825,8 @@ MD5: **da53966eb3b08ac264f3e9df02e06bfa**
 
 Домашняя страница: [https://wiki.linuxfoundation.org/networking/iproute2](https://wiki.linuxfoundation.org/networking/iproute2)
 
+SBU: **0.3**
+
 ---
 # isl
 
@@ -737,6 +845,8 @@ isl (библиотека целочисленных наборов) - это п
 MD5: **fae030f604a9537adc2502990a8ab4d1**
 
 Домашняя страница: [http://isl.gforge.inria.fr](http://isl.gforge.inria.fr)
+
+SBU: **0.7**
 
 ---
 # kbd
@@ -757,6 +867,8 @@ MD5: **3cac5be0096fcf7b32dcbd3c53831380**
 
 Домашняя страница: [https://kbd-project.org/](https://kbd-project.org/)
 
+SBU: **0.3**
+
 ---
 # kmod
 
@@ -775,6 +887,8 @@ MD5: **3cac5be0096fcf7b32dcbd3c53831380**
 MD5: **e81e63acd80697d001c8d85c1acb38a0**
 
 Домашняя страница: [https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/about](https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/about)
+
+SBU: **0.1**
 
 ---
 # less
@@ -795,6 +909,8 @@ MD5: **f029087448357812fba450091a1172ab**
 
 Домашняя страница: [https://www.greenwoodsoftware.com/less](https://www.greenwoodsoftware.com/less)
 
+SBU: **0.1**
+
 ---
 # bootscripts
 
@@ -810,9 +926,11 @@ MD5: **f029087448357812fba450091a1172ab**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bootscripts.tar.xz](https://lx4u.ru/downloads/packages/bootscripts.tar.xz)
 
-MD5: **4f2a2b6159a437d1e89961b0231eaab0**
+MD5: **faf24817c9a69daf365a83d425b4fbd4**
 
 Домашняя страница: [https://github.com/Linux4Yourself/bootscripts](https://github.com/Linux4Yourself/bootscripts)
+
+SBU: **0.1**
 
 ---
 # libcap
@@ -833,6 +951,8 @@ MD5: **1eaaf6af4e0ebd638cd876644c8c68c4**
 
 Домашняя страница: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/)
 
+SBU: **0.1**
+
 ---
 # libffi
 
@@ -851,6 +971,8 @@ MD5: **1eaaf6af4e0ebd638cd876644c8c68c4**
 MD5: **294b921e6cf9ab0fbaea4b639f8fdbe8**
 
 Домашняя страница: [https://github.com/libffi/libffi](https://github.com/libffi/libffi)
+
+SBU: **0.1**
 
 ---
 # libpipeline
@@ -871,6 +993,8 @@ MD5: **dad443d0911cf9f0f1bd90a334bc9004**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/libpipeline](https://savannah.nongnu.org/projects/libpipeline)
 
+SBU: **0.1**
+
 ---
 # libtool
 
@@ -889,6 +1013,8 @@ MD5: **dad443d0911cf9f0f1bd90a334bc9004**
 MD5: **1bfb9b923f2c1339b4d2ce1807064aa5**
 
 Домашняя страница: [https://www.gnu.org/software/libtool](https://www.gnu.org/software/libtool)
+
+SBU: **0.1**
 
 ---
 # linux
@@ -909,6 +1035,8 @@ MD5: **9646d53502447936773c65cac149572c**
 
 Домашняя страница: [https://www.kernel.org](https://www.kernel.org)
 
+SBU: **4.4**
+
 ---
 # m4
 
@@ -927,6 +1055,10 @@ MD5: **9646d53502447936773c65cac149572c**
 MD5: **0d90823e1426f1da2fd872df0311298d**
 
 Домашняя страница: [https://www.gnu.org/software/m4](https://www.gnu.org/software/m4)
+
+SBU (Сборка временной системы): **0.1**
+
+SBU: **0.2**
 
 ---
 # make
@@ -947,6 +1079,10 @@ MD5: **fc7a67ea86ace13195b0bce683fd4469**
 
 Домашняя страница: [https://www.gnu.org/software/make](https://www.gnu.org/software/make)
 
+SBU (Сборка временной системы): **0.1**
+
+SBU: **0.1**
+
 ---
 # man-db
 
@@ -965,6 +1101,8 @@ MD5: **fc7a67ea86ace13195b0bce683fd4469**
 MD5: **6e233a555f7b9ae91ce7cd0faa322bce**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/man-db](https://savannah.nongnu.org/projects/man-db)
+
+SBU: **0.5**
 
 ---
 # man-pages
@@ -1004,6 +1142,8 @@ MD5: **a810ef49822de717d579413d30629648**
 
 Домашняя страница: [https://mesonbuild.com](https://mesonbuild.com)
 
+SBU: **0.1**
+
 ---
 # mpc
 
@@ -1022,6 +1162,8 @@ MD5: **a810ef49822de717d579413d30629648**
 MD5: **9f16c976c25bb0f76b50be749cd7a3a8**
 
 Домашняя страница: [https://www.gnu.org/software/mpc](https://www.gnu.org/software/mpc)
+
+SBU: **0.1**
 
 ---
 # mpfr
@@ -1042,6 +1184,8 @@ MD5: **bdd3d5efba9c17da8d83a35ec552baef**
 
 Домашняя страница: [https://www.gnu.org/software/mpfr](https://www.gnu.org/software/mpfr)
 
+SBU: **0.2**
+
 ---
 # ncurses
 
@@ -1060,6 +1204,10 @@ MD5: **bdd3d5efba9c17da8d83a35ec552baef**
 MD5: **e812da327b1c2214ac1aed440ea3ae8d**
 
 Домашняя страница: [https://www.gnu.org/software/ncurses](https://www.gnu.org/software/ncurses)
+
+SBU (Сборка временной системы): **1.2**
+
+SBU: **0.4**
 
 ---
 # ninja
@@ -1080,6 +1228,8 @@ MD5: **639f75bc2e3b19ab893eaf2c810d4eb4**
 
 Домашняя страница: [https://ninja-build.org/](https://ninja-build.org/)
 
+SBU: **0.2**
+
 ---
 # openssl
 
@@ -1098,6 +1248,8 @@ MD5: **639f75bc2e3b19ab893eaf2c810d4eb4**
 MD5: **43c5ab628b7ab899d7cd4a4c7fe4067f**
 
 Домашняя страница: [https://www.openssl.org/](https://www.openssl.org/)
+
+SBU: **1.1**
 
 ---
 # patch
@@ -1118,6 +1270,10 @@ MD5: **78ad9937e4caadcba1526ef1853730d5**
 
 Домашняя страница: [https://www.gnu.org/software/patch](https://www.gnu.org/software/patch)
 
+SBU (Сборка временной системы): **0.1**
+
+SBU: **0.1**
+
 ---
 # perl
 
@@ -1136,6 +1292,10 @@ MD5: **78ad9937e4caadcba1526ef1853730d5**
 MD5: **df7ecb0653440b26dc951ad9dbfab517**
 
 Домашняя страница: [https://www.perl.org/](https://www.perl.org/)
+
+SBU (Сборка временной системы): **1.9**
+
+SBU: **2**
 
 ---
 # pkg-config
@@ -1156,6 +1316,8 @@ MD5: **f6e931e319531b736fadc017f470e68a**
 
 Домашняя страница: [https://www.freedesktop.org/wiki/Software/pkg-config/](https://www.freedesktop.org/wiki/Software/pkg-config/)
 
+SBU: **0.2**
+
 ---
 # procps-ng
 
@@ -1174,6 +1336,8 @@ MD5: **f6e931e319531b736fadc017f470e68a**
 MD5: **d60613e88c2f442ebd462b5a75313d56**
 
 Домашняя страница: [https://sourceforge.net/projects/procps-ng](https://sourceforge.net/projects/procps-ng)
+
+SBU: **0.2**
 
 ---
 # psmisc
@@ -1194,6 +1358,8 @@ MD5: **8114cd4489b95308efe2509c3a406bbf**
 
 Домашняя страница: [https://sourceforge.net/projects/psmisc](https://sourceforge.net/projects/psmisc)
 
+SBU: **0.1**
+
 ---
 # python
 
@@ -1212,6 +1378,10 @@ MD5: **8114cd4489b95308efe2509c3a406bbf**
 MD5: **3e7035d272680f80e3ce4e8eb492d580**
 
 Домашняя страница: [https://www.python.org](https://www.python.org)
+
+SBU (Сборка временной системы): **1.2**
+
+SBU: **9.5**
 
 ---
 # readline
@@ -1232,6 +1402,8 @@ MD5: **e9557dd5b1409f5d7b37ef717c64518e**
 
 Домашняя страница: [https://www.gnu.org/software/readline](https://www.gnu.org/software/readline)
 
+SBU: **0.1**
+
 ---
 # sed
 
@@ -1250,6 +1422,10 @@ Sed - потоковый текстовый редактор (а также яз
 MD5: **6d906edfdb3202304059233f51f9a71d**
 
 Домашняя страница: [https://www.gnu.org/software/sed](https://www.gnu.org/software/sed)
+
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.1**
 
 ---
 # shadow
@@ -1270,6 +1446,8 @@ MD5: **b3c150ebef96d46afd51ef244ef506c8**
 
 Домашняя страница: [https://shadow-maint.github.io/shadow/](https://shadow-maint.github.io/shadow/)
 
+SBU: **0.1**
+
 ---
 # sysklogd
 
@@ -1288,6 +1466,8 @@ MD5: **b3c150ebef96d46afd51ef244ef506c8**
 MD5: **c70599ab0d037fde724f7210c2c8d7f8**
 
 Домашняя страница: [https://www.infodrom.org/projects/sysklogd/](https://www.infodrom.org/projects/sysklogd/)
+
+SBU: **0.1**
 
 ---
 # markupsafe
@@ -1308,6 +1488,8 @@ MD5: **892e0fefa3c488387e5cc0cad2daa523**
 
 Домашняя страница: [https://markupsafe.palletsprojects.com/en/2.0.x/](https://markupsafe.palletsprojects.com/en/2.0.x/)
 
+SBU: **0.1**
+
 ---
 # jinja2
 
@@ -1326,6 +1508,8 @@ Jinja2 - это модуль Python, который реализует язык 
 MD5: **059f89375d7ea60eb7013f341f0b89e7**
 
 Домашняя страница: [https://jinja.palletsprojects.com/en/3.0.x/](https://jinja.palletsprojects.com/en/3.0.x/)
+
+SBU: **0.1**
 
 ---
 # systemd
@@ -1346,6 +1530,8 @@ MD5: **bd8fccd7a5c5672fed1937f8fd228cba**
 
 Домашняя страница: [https://systemd.io/](https://systemd.io/)
 
+SBU: **1.3**
+
 ---
 # sysvinit
 
@@ -1364,6 +1550,8 @@ MD5: **bd8fccd7a5c5672fed1937f8fd228cba**
 MD5: **6d54ca5b648decb106103c01d415417f**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/sysvinit](https://savannah.nongnu.org/projects/sysvinit)
+
+SBU: **0.1**
 
 ---
 # tar
@@ -1384,6 +1572,10 @@ MD5: **9a08d29a9ac4727130b5708347c0f5cf**
 
 Домашняя страница: [https://www.gnu.org/software/tar](https://www.gnu.org/software/tar)
 
+SBU (Сборка временной системы): **0.4**
+
+SBU: **0.4**
+
 ---
 # tcl
 
@@ -1403,6 +1595,8 @@ MD5: **8a4c004f48984a03a7747e9ba06e4da4**
 
 Домашняя страница: [https://sourceforge.net/projects/tcl](https://sourceforge.net/projects/tcl)
 
+SBU: **3.8**
+
 ---
 # texinfo
 
@@ -1421,6 +1615,10 @@ MD5: **8a4c004f48984a03a7747e9ba06e4da4**
 MD5: **a91b404e30561a5df803e6eb3a53be71**
 
 Домашняя страница: [https://www.gnu.org/software/texinfo](https://www.gnu.org/software/texinfo)
+
+SBU (Сборка временной системы): **0.3**
+
+SBU: **0.7**
 
 ---
 # tzdata
@@ -1479,6 +1677,10 @@ MD5: **d659bf7cd417d93dc609872f6334b019**
 
 Домашняя страница: [https://en.wikipedia.org/wiki/Util-linux](https://en.wikipedia.org/wiki/Util-linux)
 
+SBU (Сборка временной системы): **0.8**
+
+SBU: **0.5**
+
 ---
 # vim
 
@@ -1497,6 +1699,8 @@ MD5: **d659bf7cd417d93dc609872f6334b019**
 MD5: **79feec1ac9c4d1b65968247aca16475e**
 
 Домашняя страница: [https://www.vim.org/](https://www.vim.org/)
+
+SBU: **2.1**
 
 ---
 # nano
@@ -1517,6 +1721,8 @@ MD5: **24b67a7a2e731d3a5ec6d154b4521d08**
 
 Домашняя страница: [https://www.nano-editor.org/](https://www.nano-editor.org/)
 
+SBU: **0.2**
+
 ---
 # xml-parser
 
@@ -1535,6 +1741,8 @@ MD5: **24b67a7a2e731d3a5ec6d154b4521d08**
 MD5: **80bb18a8e6240fcf7ec2f7b57601c170**
 
 Домашняя страница: [https://metacpan.org/pod/XML::Parser](https://metacpan.org/pod/XML::Parser)
+
+SBU: **0.1**
 
 ---
 # xz
@@ -1555,6 +1763,10 @@ MD5: **aa1621ec7013a19abab52a8aff04fe5b**
 
 Домашняя страница: [https://tukaani.org/xz](https://tukaani.org/xz)
 
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.1**
+
 ---
 # zlib-ng
 
@@ -1573,6 +1785,8 @@ MD5: **aa1621ec7013a19abab52a8aff04fe5b**
 MD5: **6c17fa8456627d60dd1332a32d8e98bb**
 
 Домашняя страница: [https://github.com/zlib-ng/zlib-ng](https://github.com/zlib-ng/zlib-ng)
+
+SBU: **0.1**
 
 ---
 # zstd
@@ -1593,6 +1807,8 @@ MD5: **a6eb7fb1f2c21fa80030a47993853e92**
 
 Домашняя страница: [https://facebook.github.io/zstd/](https://facebook.github.io/zstd/)
 
+SBU: **1**
+
 ---
 # popt
 
@@ -1611,6 +1827,8 @@ Popt - библиотека анализа параметров командно
 MD5: **450f2f636e6a3aa527de803d0ae76c5a**
 
 Домашняя страница: [https://github.com/rpm-software-management/popt](https://github.com/rpm-software-management/popt)
+
+SBU: **0.1**
 
 ---
 # freetype
@@ -1631,6 +1849,8 @@ MD5: **f931582653774e310ed3a7e49b7167a3**
 
 Домашняя страница: [https://www.freetype.org/](https://www.freetype.org/)
 
+SBU: **0.3**
+
 ---
 # efivar
 
@@ -1649,6 +1869,8 @@ MD5: **f931582653774e310ed3a7e49b7167a3**
 MD5: **9f067275c5f7aafdd75bfb364280ac9c**
 
 Домашняя страница: [https://github.com/rhboot/efivar/](https://github.com/rhboot/efivar/)
+
+SBU: **0.1**
 
 ---
 # efibootmgr
@@ -1669,6 +1891,8 @@ MD5: **6ae315936d9bc8613b3a4cb8a4064128**
 
 Домашняя страница: [https://github.com/rhboot/efibootmgr/](https://github.com/rhboot/efibootmgr/)
 
+SBU: **0.1**
+
 ---
 # dosfstools
 
@@ -1687,6 +1911,8 @@ Dosfstools обеспечивает работу с файловыми сист�
 MD5: **49c8e457327dc61efab5b115a27b087a**
 
 Домашняя страница: [ https://github.com/dosfstools/dosfstools]( https://github.com/dosfstools/dosfstools)
+
+SBU: **0.1**
 
 ---
 # wget
@@ -1707,6 +1933,8 @@ MD5: **6321d4c2b820394cf2392985d8f8c563**
 
 Домашняя страница: [https://ftp.gnu.org/gnu/wget](https://ftp.gnu.org/gnu/wget)
 
+SBU: **0.2**
+
 ---
 # libtasn1
 
@@ -1725,6 +1953,8 @@ MD5: **6321d4c2b820394cf2392985d8f8c563**
 MD5: **c46f6eb3bd1287031ae5d36465094402**
 
 Домашняя страница: [https://www.gnu.org/software/libtasn1/](https://www.gnu.org/software/libtasn1/)
+
+SBU: **0.2**
 
 ---
 # p11-kit
@@ -1745,6 +1975,8 @@ MD5: **8ccf11c4a2e2e505b8e516d8549e64a5**
 
 Домашняя страница: [https://github.com/p11-glue/p11-kit/](https://github.com/p11-glue/p11-kit/)
 
+SBU: **0.2**
+
 ---
 # make-ca
 
@@ -1763,6 +1995,8 @@ MD5: **8ccf11c4a2e2e505b8e516d8549e64a5**
 MD5: **68c8625c9456815ed17e4f2219c79372**
 
 Домашняя страница: [https://github.com/lfs-book/make-ca/](https://github.com/lfs-book/make-ca/)
+
+SBU: **0.2**
 
 ---
 # bzip2-patch

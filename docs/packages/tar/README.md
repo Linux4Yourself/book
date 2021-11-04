@@ -15,3 +15,7 @@
 MD5: **9a08d29a9ac4727130b5708347c0f5cf**
 
 Домашняя страница: [https://www.gnu.org/software/tar](https://www.gnu.org/software/tar)
+
+SBU (Сборка временной системы): **0.4**
+
+SBU: **0.4**

@@ -15,3 +15,5 @@
 MD5: **e81e63acd80697d001c8d85c1acb38a0**
 
 Домашняя страница: [https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/about](https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/about)
+
+SBU: **0.1**

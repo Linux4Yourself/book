@@ -15,3 +15,5 @@
 MD5: **ac1c5a7a084f0f83b8cace34211f64d8**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/attr/](https://savannah.nongnu.org/projects/attr/)
+
+SBU: **0.1**

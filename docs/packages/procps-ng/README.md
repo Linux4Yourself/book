@@ -15,3 +15,5 @@
 MD5: **d60613e88c2f442ebd462b5a75313d56**
 
 Домашняя страница: [https://sourceforge.net/projects/procps-ng](https://sourceforge.net/projects/procps-ng)
+
+SBU: **0.2**

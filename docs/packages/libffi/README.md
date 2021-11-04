@@ -15,3 +15,5 @@
 MD5: **294b921e6cf9ab0fbaea4b639f8fdbe8**
 
 Домашняя страница: [https://github.com/libffi/libffi](https://github.com/libffi/libffi)
+
+SBU: **0.1**

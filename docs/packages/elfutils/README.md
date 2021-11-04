@@ -15,3 +15,7 @@
 MD5: **2b6e94c2eebc1f2194173e31bca9396e**
 
 Домашняя страница: [https://sourceware.org/elfutils/](https://sourceware.org/elfutils/)
+
+SBU (Сборка временной системы): **0.8**
+
+SBU: **0.9**

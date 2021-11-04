@@ -15,3 +15,5 @@
 MD5: **0bbd38f12656e4728e2f7c4708aec014**
 
 Домашняя страница: [https://gnu.org/software/gdbm](https://gnu.org/software/gdbm)
+
+SBU: **0.1**

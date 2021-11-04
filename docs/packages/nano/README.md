@@ -15,3 +15,5 @@
 MD5: **24b67a7a2e731d3a5ec6d154b4521d08**
 
 Домашняя страница: [https://www.nano-editor.org/](https://www.nano-editor.org/)
+
+SBU: **0.2**

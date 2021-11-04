@@ -15,3 +15,5 @@
 MD5: **8ccf11c4a2e2e505b8e516d8549e64a5**
 
 Домашняя страница: [https://github.com/p11-glue/p11-kit/](https://github.com/p11-glue/p11-kit/)
+
+SBU: **0.2**

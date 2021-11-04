@@ -15,3 +15,7 @@
 MD5: **3e7035d272680f80e3ce4e8eb492d580**
 
 Домашняя страница: [https://www.python.org](https://www.python.org)
+
+SBU (Сборка временной системы): **1.2**
+
+SBU: **9.5**

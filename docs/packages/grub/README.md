@@ -15,3 +15,5 @@ GRUB является эталонной реализацией загрузчи
 MD5: **cf0fd928b1e5479c8108ee52cb114363**
 
 Домашняя страница: [https://www.gnu.org/software/grub](https://www.gnu.org/software/grub)
+
+SBU: **1**

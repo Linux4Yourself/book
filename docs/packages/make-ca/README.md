@@ -15,3 +15,5 @@
 MD5: **68c8625c9456815ed17e4f2219c79372**
 
 Домашняя страница: [https://github.com/lfs-book/make-ca/](https://github.com/lfs-book/make-ca/)
+
+SBU: **0.2**

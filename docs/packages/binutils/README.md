@@ -15,3 +15,7 @@
 MD5: **e78d9ff2976b745a348f4c1f27c77cb1**
 
 Домашняя страница: [https://www.gnu.org/software/binutils](https://www.gnu.org/software/binutils)
+
+SBU (Сборка временной системы): **1**
+
+SBU: **4.1**

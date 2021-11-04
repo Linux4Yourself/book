@@ -15,3 +15,5 @@ MarkupSafe - это модуль Python, который экранирует с�
 MD5: **892e0fefa3c488387e5cc0cad2daa523**
 
 Домашняя страница: [https://markupsafe.palletsprojects.com/en/2.0.x/](https://markupsafe.palletsprojects.com/en/2.0.x/)
+
+SBU: **0.1**

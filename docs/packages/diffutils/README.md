@@ -15,3 +15,7 @@
 MD5: **6a6b0fdc72acfe3f2829aab477876fbc**
 
 Домашняя страница: [https://www.gnu.org/software/diffutils](https://www.gnu.org/software/diffutils)
+
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.2**

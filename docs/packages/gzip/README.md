@@ -15,3 +15,7 @@
 MD5: **d1e93996dba00cab0caa7903cd01d454**
 
 Домашняя страница: [https://www.gnu.org/software/gzip](https://www.gnu.org/software/gzip)
+
+SBU (Сборка временной системы): **0.1**
+
+SBU: **0.1**

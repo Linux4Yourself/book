@@ -15,3 +15,5 @@ BC (basic calculator) — интерактивный интерпретатор 
 MD5: **1af1e124e5d1734e8770dc85e0af5cd6**
 
 Домашняя страница: [https://git.yzena.com/gavin/bc](https://git.yzena.com/gavin/bc)
+
+SBU: **0.1**

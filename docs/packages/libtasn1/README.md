@@ -15,3 +15,5 @@
 MD5: **c46f6eb3bd1287031ae5d36465094402**
 
 Домашняя страница: [https://www.gnu.org/software/libtasn1/](https://www.gnu.org/software/libtasn1/)
+
+SBU: **0.2**

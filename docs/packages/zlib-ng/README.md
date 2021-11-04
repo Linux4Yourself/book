@@ -15,3 +15,5 @@
 MD5: **6c17fa8456627d60dd1332a32d8e98bb**
 
 Домашняя страница: [https://github.com/zlib-ng/zlib-ng](https://github.com/zlib-ng/zlib-ng)
+
+SBU: **0.1**

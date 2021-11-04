@@ -15,3 +15,5 @@
 MD5: **8114cd4489b95308efe2509c3a406bbf**
 
 Домашняя страница: [https://sourceforge.net/projects/psmisc](https://sourceforge.net/projects/psmisc)
+
+SBU: **0.1**

@@ -15,3 +15,5 @@
 MD5: **08fb04335e2f5e73f23ea4c3adbf0c5f**
 
 Домашняя страница: [https://gnu.org/software/groff](https://gnu.org/software/groff)
+
+SBU: **0.5**

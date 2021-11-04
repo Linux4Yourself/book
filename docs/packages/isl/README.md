@@ -15,3 +15,5 @@ isl (библиотека целочисленных наборов) - это п
 MD5: **fae030f604a9537adc2502990a8ab4d1**
 
 Домашняя страница: [http://isl.gforge.inria.fr](http://isl.gforge.inria.fr)
+
+SBU: **0.7**

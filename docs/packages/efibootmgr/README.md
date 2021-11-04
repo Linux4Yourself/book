@@ -15,3 +15,5 @@
 MD5: **6ae315936d9bc8613b3a4cb8a4064128**
 
 Домашняя страница: [https://github.com/rhboot/efibootmgr/](https://github.com/rhboot/efibootmgr/)
+
+SBU: **0.1**

@@ -15,3 +15,5 @@
 MD5: **00fce8de158422f5ccd2666512329bd2**
 
 Домашняя страница: [https://sourceforge.net/projects/expect](https://sourceforge.net/projects/expect)
+
+SBU: **0.2**

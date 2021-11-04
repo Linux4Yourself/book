@@ -15,3 +15,5 @@
 MD5: **67e051268d0c475ea773822f7500d0e5**
 
 Домашняя страница: [https://www.sourceware.org/bzip2](https://www.sourceware.org/bzip2)
+
+SBU: **0.1**

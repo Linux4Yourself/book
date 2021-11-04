@@ -15,3 +15,7 @@
 MD5: **d659bf7cd417d93dc609872f6334b019**
 
 Домашняя страница: [https://en.wikipedia.org/wiki/Util-linux](https://en.wikipedia.org/wiki/Util-linux)
+
+SBU (Сборка временной системы): **0.8**
+
+SBU: **0.5**

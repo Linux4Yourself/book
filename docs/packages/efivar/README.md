@@ -15,3 +15,5 @@
 MD5: **9f067275c5f7aafdd75bfb364280ac9c**
 
 Домашняя страница: [https://github.com/rhboot/efivar/](https://github.com/rhboot/efivar/)
+
+SBU: **0.1**

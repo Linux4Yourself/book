@@ -15,3 +15,7 @@
 MD5: **40996bbaf7d1356d3c22e33a8b255b31**
 
 Домашняя страница: [https://gnu.org/software/gettext](https://gnu.org/software/gettext)
+
+SBU (Сборка временной системы): **4.5**
+
+SBU: **3**

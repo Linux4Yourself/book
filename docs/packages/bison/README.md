@@ -15,3 +15,7 @@
 MD5: **c28f119f405a2304ff0a7ccdcc629713**
 
 Домашняя страница: [https://www.gnu.org/software/bison](https://www.gnu.org/software/bison)
+
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.2**

@@ -15,3 +15,7 @@ Sed - потоковый текстовый редактор (а также яз
 MD5: **6d906edfdb3202304059233f51f9a71d**
 
 Домашняя страница: [https://www.gnu.org/software/sed](https://www.gnu.org/software/sed)
+
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.1**

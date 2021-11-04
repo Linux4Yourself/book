@@ -15,3 +15,7 @@
 MD5: **23eee6195b47318b9fd878e590ccb38c**
 
 Домашняя страница: [https://www.gnu.org/software/bash](https://www.gnu.org/software/bash)
+
+SBU (Сборка временной системы): **0.3**
+
+SBU: **0.3**

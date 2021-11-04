@@ -15,3 +15,5 @@ Eudev - диспетчер устройств. Он контролирует з�
 MD5: **60b135a189523f333cea5f71a3345c8d**
 
 Домашняя страница: [https://wiki.gentoo.org/wiki/Project:Eudev](https://wiki.gentoo.org/wiki/Project:Eudev)
+
+SBU: **0.2**

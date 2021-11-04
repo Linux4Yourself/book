@@ -15,3 +15,7 @@
 MD5: **4c3d9ff35b2ab2fe518dc7eb3951e128**
 
 Домашняя страница: [https://www.gnu.org/software/emacs/](https://www.gnu.org/software/emacs/)
+
+SBU (Сборка временной системы): **0.6**
+
+SBU: **0.6**

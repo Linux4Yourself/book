@@ -15,3 +15,7 @@
 MD5: **31998b53fb39cb946e96abc310af1c89**
 
 Домашняя страница: [https://gnu.org/software/glibc](https://gnu.org/software/glibc)
+
+SBU (Сборка временной системы): **5.4**
+
+SBU: **4.2**

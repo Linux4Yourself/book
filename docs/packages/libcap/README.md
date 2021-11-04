@@ -15,3 +15,5 @@
 MD5: **1eaaf6af4e0ebd638cd876644c8c68c4**
 
 Домашняя страница: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/)
+
+SBU: **0.1**

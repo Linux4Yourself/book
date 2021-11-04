@@ -15,3 +15,5 @@ Expat - потокоориентированная библиотека парс
 MD5: **a4fb91a9441bcaec576d4c4a56fa3aa6**
 
 Домашняя страница: [https://sourceforge.net/projects/expat](https://sourceforge.net/projects/expat)
+
+SBU: **0.1**

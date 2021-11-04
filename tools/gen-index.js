@@ -45,8 +45,10 @@ allPackages.forEach(pkg => {
 	const md5 = `MD5: **${pkg.md5}**`;
 	const priority = `Приоритет: **${getPriorityText(pkg.priority)}**`;
 	const homepage = `Домашняя страница: [${pkg.homeUrl}](${pkg.homeUrl})`;
+	const sbu1 = pkg.sbu > 0 && pkg.sbu !== null ? `SBU (Сборка временной системы): **${pkg.sbu}**`: null;
+	const sbu2 = pkg.sbu2 > 0 && pkg.sbu2 !== null ? `SBU: **${pkg.sbu2}**`: null;
 
-	const readmeText = `# ${ pkg.name }${breakLine()}${ pkg.description }${breakLine()}${ version }${breakLine()}${ size }${breakLine()}${ priority }${breakLine()}${ downloadLink }${breakLine()}${ downloadLinkMirror }${breakLine()}${ md5 }${breakLine()}${ homepage }`.trim();
+	const readmeText = `# ${ pkg.name }${breakLine()}${ pkg.description }${breakLine()}${ version }${breakLine()}${ size }${breakLine()}${ priority }${breakLine()}${ downloadLink }${breakLine()}${ downloadLinkMirror }${breakLine()}${ md5 }${breakLine()}${ homepage }${breakLine()}${ sbu1 ? sbu1 + breakLine(): '' }${ sbu2 ? sbu2 + breakLine(): '' }`.trim();
 
 	fs.writeFileSync(`${dir}/README.md`, readmeText, 'utf-8');
 

@@ -15,3 +15,5 @@ Intltool - инструмент интернационализации, испо
 MD5: **12e517cac2b57a0121cda351570f1e63**
 
 Домашняя страница: [https://launchpad.net/intltool](https://launchpad.net/intltool)
+
+SBU: **0.01**

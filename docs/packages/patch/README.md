@@ -15,3 +15,7 @@
 MD5: **78ad9937e4caadcba1526ef1853730d5**
 
 Домашняя страница: [https://www.gnu.org/software/patch](https://www.gnu.org/software/patch)
+
+SBU (Сборка временной системы): **0.1**
+
+SBU: **0.1**

@@ -15,3 +15,5 @@
 MD5: **0b82665c4a92fd2ade7440c13fcaa42b**
 
 Домашняя страница: [https://gnu.org/software/gmp](https://gnu.org/software/gmp)
+
+SBU: **0.5**

@@ -15,3 +15,7 @@
 MD5: **aa1621ec7013a19abab52a8aff04fe5b**
 
 Домашняя страница: [https://tukaani.org/xz](https://tukaani.org/xz)
+
+SBU (Сборка временной системы): **0.2**
+
+SBU: **0.1**

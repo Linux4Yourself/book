@@ -15,3 +15,7 @@
 MD5: **eeefe2e6380931a77dfa6d9350b43186**
 
 Домашняя страница: [https://gnu.org/software/findutils](https://gnu.org/software/findutils)
+
+SBU (Сборка временной системы): **0.3**
+
+SBU: **0.3**

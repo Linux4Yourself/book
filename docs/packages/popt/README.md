@@ -15,3 +15,5 @@ Popt - библиотека анализа параметров командно
 MD5: **450f2f636e6a3aa527de803d0ae76c5a**
 
 Домашняя страница: [https://github.com/rpm-software-management/popt](https://github.com/rpm-software-management/popt)
+
+SBU: **0.1**

@@ -15,3 +15,5 @@ D-Bus - система межпроцессного взаимодействия
 MD5: **b25e4fcfbfd4889bef76f7241dfa1a04**
 
 Домашняя страница: [https://www.freedesktop.org/wiki/Software/dbus/](https://www.freedesktop.org/wiki/Software/dbus/)
+
+SBU: **0.2**

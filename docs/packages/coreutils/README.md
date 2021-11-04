@@ -15,3 +15,7 @@ Coreutils - пакет программного обеспечения GNU, со
 MD5: **0d79ae8a6124546e3b94171375e5e5d0**
 
 Домашняя страница: [https://gnu.org/software/coreutils](https://gnu.org/software/coreutils)
+
+SBU (Сборка временной системы): **0.5**
+
+SBU: **0.4**

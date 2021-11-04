@@ -15,3 +15,5 @@
 MD5: **3cac5be0096fcf7b32dcbd3c53831380**
 
 Домашняя страница: [https://kbd-project.org/](https://kbd-project.org/)
+
+SBU: **0.3**

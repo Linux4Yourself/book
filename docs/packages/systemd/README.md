@@ -15,3 +15,5 @@
 MD5: **bd8fccd7a5c5672fed1937f8fd228cba**
 
 Домашняя страница: [https://systemd.io/](https://systemd.io/)
+
+SBU: **1.3**

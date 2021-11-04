@@ -15,3 +15,7 @@
 MD5: **e812da327b1c2214ac1aed440ea3ae8d**
 
 Домашняя страница: [https://www.gnu.org/software/ncurses](https://www.gnu.org/software/ncurses)
+
+SBU (Сборка временной системы): **1.2**
+
+SBU: **0.4**

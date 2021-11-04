@@ -15,3 +15,7 @@
 MD5: **31c86f2ced76acac66992eeedce2fce2**
 
 Домашняя страница: [https://gnu.org/software/gcc](https://gnu.org/software/gcc)
+
+SBU (Сборка временной системы): **14.8**
+
+SBU: **25**

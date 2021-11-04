@@ -15,3 +15,7 @@
 MD5: **8470c34eeecc41c1aa0c5d89e630df50**
 
 Домашняя страница: [https://gnu.org/software/gawk](https://gnu.org/software/gawk)
+
+SBU (Сборка временной системы): **0.3**
+
+SBU: **0.3**

@@ -15,3 +15,7 @@
 MD5: **fc7a67ea86ace13195b0bce683fd4469**
 
 Домашняя страница: [https://www.gnu.org/software/make](https://www.gnu.org/software/make)
+
+SBU (Сборка временной системы): **0.1**
+
+SBU: **0.1**

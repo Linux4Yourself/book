@@ -15,3 +15,7 @@
 MD5: **a91b404e30561a5df803e6eb3a53be71**
 
 Домашняя страница: [https://www.gnu.org/software/texinfo](https://www.gnu.org/software/texinfo)
+
+SBU (Сборка временной системы): **0.3**
+
+SBU: **0.7**

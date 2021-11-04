@@ -15,3 +15,5 @@
 MD5: **12cfa1687ffa2606337efe1a64416106**
 
 Домашняя страница: [https://www.gnu.org/software/autoconf](https://www.gnu.org/software/autoconf)
+
+SBU: **0.1**

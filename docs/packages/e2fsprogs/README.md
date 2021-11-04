@@ -4,7 +4,7 @@
 
 Версия: **1.46.4**
 
-Размер: **0.00Mb**
+Размер: **9.07Mb**
 
 Приоритет: **Необходимый**
 
@@ -12,6 +12,8 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz](https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz)
 
-MD5: **0ce57ce6ffe2dddb3618200fb8e5f89d**
+MD5: **bdd1034f33b10eebcf2aa2a9298dca33**
 
 Домашняя страница: [https://sourceforge.net/projects/e2fsprogs/](https://sourceforge.net/projects/e2fsprogs/)
+
+SBU: **0.5**

@@ -15,3 +15,7 @@
 MD5: **0d90823e1426f1da2fd872df0311298d**
 
 Домашняя страница: [https://www.gnu.org/software/m4](https://www.gnu.org/software/m4)
+
+SBU (Сборка временной системы): **0.1**
+
+SBU: **0.2**

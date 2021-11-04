@@ -15,3 +15,5 @@
 MD5: **4017e96f89fca45ca946f1c5db6be714**
 
 Домашняя страница: [https://www.gnu.org/software/automake](https://www.gnu.org/software/automake)
+
+SBU: **0.1**
