@@ -20,7 +20,7 @@ wget --input-file=wget-list --continue --directory-prefix=$LIN/usr/src
 
 При желании вы можете выполнить проверку пакетов на соответствие контрольным суммам.
 
-Загрузите файл [md5Sums](../../packages/md5Sums).
+Загрузите файл [md5Sums](../../packages/md5sums).
 
 Поместите его в каталог `$LIN/usr/src` и выполните команду:
 
