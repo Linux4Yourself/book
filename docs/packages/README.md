@@ -503,17 +503,17 @@ SBU: **0.1**
 
 Пакет содержит программы для манипуляции с текстовыми файлами. Это GNU версия awk (Aho-Weinberg-Kernighan). Он используется в процедурах сборки для большинства пакетов.
 
-Версия: **5.1.0**
+Версия: **5.1.1**
 
-Размер: **3.01Mb**
+Размер: **3.10Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.xz](https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.xz)
+Оригинальное расположение: [https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.xz](https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/gawk-5.1.0.tar.xz](https://lx4u.ru/downloads/packages/gawk-5.1.0.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/gawk-5.1.1.tar.xz](https://lx4u.ru/downloads/packages/gawk-5.1.1.tar.xz)
 
-MD5: **8470c34eeecc41c1aa0c5d89e630df50**
+MD5: **83650aa943ff2fd519b2abedf8506ace**
 
 Домашняя страница: [https://gnu.org/software/gawk](https://gnu.org/software/gawk)
 
@@ -1128,17 +1128,17 @@ MD5: **3ac24e8c6fae26b801cb87ceb63c0a30**
 
 Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.
 
-Версия: **0.60.0**
+Версия: **0.60.1**
 
 Размер: **1.90Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://github.com/mesonbuild/meson/releases/download/0.60.0/meson-0.60.0.tar.gz](https://github.com/mesonbuild/meson/releases/download/0.60.0/meson-0.60.0.tar.gz)
+Оригинальное расположение: [https://github.com/mesonbuild/meson/releases/download/0.60.1/meson-0.60.1.tar.gz](https://github.com/mesonbuild/meson/releases/download/0.60.1/meson-0.60.1.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/meson-0.60.0.tar.gz](https://lx4u.ru/downloads/packages/meson-0.60.0.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/meson-0.60.1.tar.gz](https://lx4u.ru/downloads/packages/meson-0.60.1.tar.gz)
 
-MD5: **a810ef49822de717d579413d30629648**
+MD5: **77e41dfa4bc456e03b674537b813328b**
 
 Домашняя страница: [https://mesonbuild.com](https://mesonbuild.com)
 
@@ -2109,6 +2109,44 @@ MD5: **4900322141d493e74020c9cf437b2cdc**
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch](https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch)
 
 MD5: **e795e52eeefc0d2c62c6c4bd748d2d38**
+
+Домашняя страница: []()
+
+---
+# binutils-2.37-upstream_fix-1
+
+
+
+Версия: **1**
+
+Размер: **0.01Mb**
+
+Приоритет: **Необходимый**
+
+Оригинальное расположение: [https://www.linuxfromscratch.org/patches/lfs/development/binutils-2.37-upstream_fix-1.patch](https://www.linuxfromscratch.org/patches/lfs/development/binutils-2.37-upstream_fix-1.patch)
+
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch](https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch)
+
+MD5: **3518fa864fe8d7ef65be4960f380b03b**
+
+Домашняя страница: []()
+
+---
+# perl-5.34.0-upstream_fixes-1
+
+
+
+Версия: **1**
+
+Размер: **0.00Mb**
+
+Приоритет: **Необходимый**
+
+Оригинальное расположение: [https://www.linuxfromscratch.org/patches/lfs/development/perl-5.34.0-upstream_fixes-1.patch](https://www.linuxfromscratch.org/patches/lfs/development/perl-5.34.0-upstream_fixes-1.patch)
+
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch](https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch)
+
+MD5: **fb42558b59ed95ee00eb9f1c1c9b8056**
 
 Домашняя страница: []()
 

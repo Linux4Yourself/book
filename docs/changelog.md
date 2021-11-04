@@ -8,7 +8,8 @@
 
 ## Изменения
 
--  Миграция на mkdocs
+- [Исправлено #955](https://github.com/Linux4Yourself/book/issues/955)
+- [Миграция на mkdocs](https://github.com/Linux4Yourself/book/issues/889)
 - [Исправлено #947](https://github.com/Linux4Yourself/book/issues/947)
 - [Исправлено #937](https://github.com/Linux4Yourself/book/issues/937)
 - [Исправлено #922](https://github.com/Linux4Yourself/book/issues/922)
@@ -78,6 +79,7 @@
 - diffutils-3.8
 - e2fsprogs-1.46.4
 - file-5.41
+- gawk-5.1.1
 - gcc-11.2.0
 - gdbm-1.22
 - glibc-2.34
@@ -89,7 +91,7 @@
 - jinja-3.0.2
 - libcap-2.60
 - linux-5.14.13
-- meson-0.60.0
+- meson-0.60.1
 - nano-5.9
 - openssl-3.0.0
 - python-3.10

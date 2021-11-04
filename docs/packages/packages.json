@@ -181,6 +181,7 @@
 			"multi_install",
 			"multi_postinstall",
 			"multi_test",
+			"patch",
 			"postinstall",
 			"prepare",
 			"test"
@@ -619,15 +620,15 @@
 	},
 	{
 		"name": "gawk",
-		"fileName": "gawk-5.1.0.tar.xz",
+		"fileName": "gawk-5.1.1.tar.xz",
 		"description": "Пакет содержит программы для манипуляции с текстовыми файлами. Это GNU версия awk (Aho-Weinberg-Kernighan). Он используется в процедурах сборки для большинства пакетов.",
-		"url": "https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.xz",
 		"homeUrl": "https://gnu.org/software/gawk",
-		"version": "5.1.0",
+		"version": "5.1.1",
 		"releasesUrl": "https://ftp.gnu.org/gnu/gawk",
 		"priority": "required",
-		"md5": "8470c34eeecc41c1aa0c5d89e630df50",
-		"size": "3.01",
+		"md5": "83650aa943ff2fd519b2abedf8506ace",
+		"size": "3.10",
 		"installedSize": 1.3,
 		"sbu": 0.3,
 		"sbu2": 0.3,
@@ -641,7 +642,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/gawk-5.1.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/gawk-5.1.1.tar.xz"
 	},
 	{
 		"name": "gcc",
@@ -1354,14 +1355,14 @@
 	},
 	{
 		"name": "meson",
-		"fileName": "meson-0.60.0.tar.gz",
+		"fileName": "meson-0.60.1.tar.gz",
 		"description": "Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.",
-		"url": "https://github.com/mesonbuild/meson/releases/download/0.60.0/meson-0.60.0.tar.gz",
+		"url": "https://github.com/mesonbuild/meson/releases/download/0.60.1/meson-0.60.1.tar.gz",
 		"homeUrl": "https://mesonbuild.com",
-		"version": "0.60.0",
+		"version": "0.60.1",
 		"releasesUrl": "https://github.com/mesonbuild/meson/releases/",
 		"priority": "important",
-		"md5": "a810ef49822de717d579413d30629648",
+		"md5": "77e41dfa4bc456e03b674537b813328b",
 		"size": "1.90",
 		"installedSize": 5.3,
 		"sbu": 0,
@@ -1373,7 +1374,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.60.0.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.60.1.tar.gz"
 	},
 	{
 		"name": "mpc",
@@ -1549,6 +1550,7 @@
 			"build",
 			"configure",
 			"install",
+			"patch",
 			"postinstall",
 			"prepare",
 			"test"
@@ -2515,6 +2517,46 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch",
+		"multilibSupport": false,
+		"scripts": [
+			"README.md"
+		]
+	},
+	{
+		"name": "binutils-2.37-upstream_fix-1",
+		"fileName": "binutils-2.37-upstream_fix-1.patch",
+		"description": "",
+		"url": "https://www.linuxfromscratch.org/patches/lfs/development/binutils-2.37-upstream_fix-1.patch",
+		"homeUrl": "",
+		"version": "1",
+		"releasesUrl": "",
+		"priority": "required",
+		"md5": "3518fa864fe8d7ef65be4960f380b03b",
+		"size": "0.01",
+		"installedSize": 0,
+		"sbu": 0,
+		"sbu2": 0,
+		"downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch",
+		"multilibSupport": false,
+		"scripts": [
+			"README.md"
+		]
+	},
+	{
+		"name": "perl-5.34.0-upstream_fixes-1",
+		"fileName": "perl-5.34.0-upstream_fixes-1.patch",
+		"description": "",
+		"url": "https://www.linuxfromscratch.org/patches/lfs/development/perl-5.34.0-upstream_fixes-1.patch",
+		"homeUrl": "",
+		"version": "1",
+		"releasesUrl": "",
+		"priority": "required",
+		"md5": "fb42558b59ed95ee00eb9f1c1c9b8056",
+		"size": "0.00",
+		"installedSize": 0,
+		"sbu": 0,
+		"sbu2": 0,
+		"downloadUrl": "https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch",
 		"multilibSupport": false,
 		"scripts": [
 			"README.md"

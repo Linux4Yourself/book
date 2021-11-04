@@ -8,6 +8,11 @@
 {{ include('../packages/binutils/prepare') }}
 ```
 
+Примените патч 
+```bash 
+{{ include('../packages/binutils/patch') }}
+```
+
 <!-- temp solution TODO: Remove in next versions -->
 Ошибка в системе сборки приводит к тому, что страницы руководства становятся пустыми. Можно обойти проблему, чтобы страницы руководства были созданы правильно:
 

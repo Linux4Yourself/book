@@ -1,0 +1,34 @@
+Submitted By: Ken Moffat <ken at linuxfromscratch dot org>
+Date: 2021-07-13
+Initial Package Version: 5.34.0
+Upstream Status: Applied
+Origin: https://github.com/Perl/perl5/commit/5bc1e5fdd87aa205011512cd1e6cc655bcf677fd
+(backported because that did not apply cleanly to 5.34.0)
+Description: Fixes error with gdbm-1.20, highlighted by a test failure.
+
+diff -Naur a/ext/GDBM_File/GDBM_File.xs b/ext/GDBM_File/GDBM_File.xs
+--- a/ext/GDBM_File/GDBM_File.xs	2021-01-20 23:04:44.000000000 +0000
++++ b/ext/GDBM_File/GDBM_File.xs	2021-07-13 20:39:12.130360272 +0100
+@@ -145,14 +145,16 @@
+ #define gdbm_setopt(db,optflag,optval,optlen) not_here("gdbm_setopt")
+ #endif
+ 
+-#ifndef GDBM_ITEM_NOT_FOUND
+-# define GDBM_ITEM_NOT_FOUND GDBM_NO_ERROR
+-#endif
+-
+-/* Prior to 1.13, gdbm_fetch family functions set gdbm_errno to GDBM_NO_ERROR
+-   if the requested key did not exist */
+ #define ITEM_NOT_FOUND()                                                \
+     (gdbm_errno == GDBM_ITEM_NOT_FOUND || gdbm_errno == GDBM_NO_ERROR)
++#if GDBM_VERSION_MAJOR == 1 && GDBM_VERSION_MINOR < 13
++/* Prior to 1.13, only gdbm_fetch set GDBM_ITEM_NOT_FOUND if the requested
++   key did not exist.  Other similar functions would set GDBM_NO_ERROR instead.
++   The GDBM_ITEM_NOT_FOUND existed as early as in 1.7.3 */
++# define ITEM_NOT_FOUND()  (gdbm_errno == GDBM_NO_ERROR || gdbm_errno == GDBM_ITEM_NOT_FOUND)
++#else
++# define ITEM_NOT_FOUND()  (gdbm_errno == GDBM_ITEM_NOT_FOUND)
++#endif
+ 
+ #define CHECKDB(db) do {                        \
+     if (!db->dbp) {                             \
