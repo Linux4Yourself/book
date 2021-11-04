@@ -756,7 +756,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20211004.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20211004.tar.gz)
 
-MD5: **abd35941cf49fc26ee2a38120db52883**
+MD5: **7f174923f490329e2665ded727b1cc5c**
 
 Домашняя страница: [https://www.iana.org/protocols](https://www.iana.org/protocols)
 
