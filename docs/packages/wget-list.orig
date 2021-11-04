@@ -91,9 +91,9 @@ https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.gz
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.17.0.tar.gz
 https://github.com/p11-glue/p11-kit/releases/download/0.24.0/p11-kit-0.24.0.tar.xz
 https://github.com/lfs-book/make-ca/releases/download/v1.9/make-ca-1.9.tar.xz
-https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/bzip2-1.0.8-install_docs-1.patch
-https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/coreutils-9.0-i18n-1.patch
-https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/glibc-2.34-fhs-1.patch
-https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/kbd-2.4.0-backspace-1.patch
-https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/sysvinit-2.99-consolidated-1.patch
-https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Book.Packages/develop/patches/efivar-37-gcc_9-1.patch
+https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/bzip2-1.0.8-install_docs-1.patch
+https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/coreutils-9.0-i18n-1.patch
+https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/glibc-2.34-fhs-1.patch
+hhttps://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch
+https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/sysvinit-2.99-consolidated-1.patch
+https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/efivar-37-gcc_9-1.patch
