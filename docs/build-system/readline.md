@@ -1,14 +1,18 @@
-<pkg :name="'readline'" instsize showsbu2></pkg>
+{{ include('../packages/readline/README.md') }}
 
 ## Подготовка
 
 Переустановка Readline приведет к переименованию старых библиотек в `<имя библиотеки>.old`. Хотя обычно это не проблема, в некоторых случаях это может вызвать ошибку в ldconfig. Этого можно избежать, выполнив следующие команды:
 
-[filename](../packages/readline/prepare ':include')
+```bash 
+{{ include('../packages/readline/prepare') }}
+```
 
 ## Настройка
 
-[filename](../packages/readline/configure ':include')
+```bash 
+{{ include('../packages/readline/configure') }}
+```
 
 ### Значения параметров
 
@@ -16,38 +20,50 @@
 
 ## Сборка
 
-[filename](../packages/readline/build ':include')
+```bash 
+{{ include('../packages/readline/build') }}
+```
 
 ## Установка
 
-[filename](../packages/readline/install ':include')
+```bash 
+{{ include('../packages/readline/install') }}
+```
 
 ## При использовании раздельной структуры каталогов
 
-[filename](../packages/readline/cldirs ':include')
+```bash 
+{{ include('../packages/readline/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/readline/multi_prepare ':include')
+```bash 
+{{ include('../packages/readline/multi_prepare') }}
+```
 
 ### Настройка
 
-[filename](../packages/readline/multi_configure ':include')
+```bash 
+{{ include('../packages/readline/multi_configure') }}
+```
 
 ### Сборка
 
-[filename](../packages/readline/multi_build ':include')
+```bash 
+{{ include('../packages/readline/multi_build') }}
+```
 
 ### Установка
 
-[filename](../packages/readline/multi_install ':include')
+```bash 
+{{ include('../packages/readline/multi_install') }}
+```
 
 ## Установленные файлы
 
 Библиотеки: `libhistory.so` и `libreadline.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

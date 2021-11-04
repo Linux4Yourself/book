@@ -92,8 +92,8 @@ libtasn1-4.17.0.tar.gz
 p11-kit-0.24.0.tar.xz
 make-ca-1.9.tar.xz
 bzip2-1.0.8-install_docs-1.patch
-coreutils-8.32-i18n-1.patch
-glibc-2.33-fhs-1.patch
+coreutils-9.0-i18n-1.patch
+glibc-2.34-fhs-1.patch
 kbd-2.4.0-backspace-1.patch
 sysvinit-2.99-consolidated-1.patch
 efivar-37-gcc_9-1.patch

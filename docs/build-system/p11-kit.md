@@ -1,14 +1,18 @@
-<pkg :name="'p11-kit'" instsize showsbu2></pkg>
+{{ include('../packages/p11-kit/README.md') }}
 
 ## Подготовка
 
 Подготовьте специфичный для дистрибутива скрипт:
 
-<package-script :package="'p11-kit'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/p11-kit/prepare') }}
+```
 
 ## Настройка
 
-<package-script :package="'p11-kit'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/p11-kit/configure') }}
+```
 
 ### Значение параметров configure
 
@@ -16,30 +20,40 @@
 
 ## Сборка
 
-<package-script :package="'p11-kit'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/p11-kit/build') }}
+```
 
 ## Установка
 
-<package-script :package="'p11-kit'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/p11-kit/install') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'p11-kit'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/p11-kit/multi_prepare') }}
+```
 
 ## Настройка
 
-<package-script :package="'p11-kit'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/p11-kit/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'p11-kit'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/p11-kit/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'p11-kit'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/p11-kit/multi_install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

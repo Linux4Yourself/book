@@ -1,4 +1,5 @@
 build
+cldirs
 install
 multi_build
 multi_install

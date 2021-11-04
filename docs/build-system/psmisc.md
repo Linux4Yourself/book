@@ -1,21 +1,27 @@
-<pkg :name="'psmisc'" instsize showsbu2></pkg>
+{{ include('../packages/psmisc/README.md') }}
 
 ## Настройка
 
-[filename](../packages/psmisc/configure ':include')
+```bash 
+{{ include('../packages/psmisc/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/psmisc/build ':include')
+```bash 
+{{ include('../packages/psmisc/build') }}
+```
 
 ## Установка
 
-[filename](../packages/psmisc/install ':include')
+```bash 
+{{ include('../packages/psmisc/install') }}
+```
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/psmisc/cldirs ':include')
+```bash 
+{{ include('../packages/psmisc/cldirs') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

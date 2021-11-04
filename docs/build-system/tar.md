@@ -1,25 +1,33 @@
-<pkg :name="'tar'" instsize showsbu2></pkg>
+{{ include('../packages/tar/README.md') }}
 
 ## Настройка
 
-[filename](../packages/tar/configure ':include')
+```bash 
+{{ include('../packages/tar/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/tar/build ':include')
+```bash 
+{{ include('../packages/tar/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/tar/test ':include')
+```bash 
+{{ include('../packages/tar/test') }}
+```
 
 > Тестирование добавляет 3 SBU ко всему времени установки пакета
 
-?> Известно, что тест `store/restore` даёт сбой.
+???+ warning "Предупреждение"
+
+    Известно, что тест `store/restore` даёт сбой.
 
 ## Установка
 
-[filename](../packages/tar/install ':include')
+```bash 
+{{ include('../packages/tar/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

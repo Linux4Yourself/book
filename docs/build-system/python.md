@@ -1,22 +1,32 @@
-<pkg :name="'python'" instsize showsbu2></pkg>
+{{ include('../packages/python/README.md') }}
 
 ## Настройка
 
-<package-script :package="'python'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/python/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'python'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/python/build') }}
+```
 
 ## Установка
 
-<package-script :package="'python'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/python/install') }}
+```
 
 ## Тестирование
 
-<package-script :package="'python'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/python/test') }}
+```
 
-!> Тесты запускать не рекомендуется. Они могут зависнуть. При желании выполните тесты при переустановке Python, но уже в руководстве `Extra`.
+???+ danger "Важно"
+
+    Тесты запускать не рекомендуется. Они могут зависнуть. При желании выполните тесты при переустановке Python, но уже в руководстве `Extra`.
 
 ## Установленные файлы
 
@@ -26,6 +36,4 @@
 
 Директории: /usr/include/python3.9 и /usr/lib/python3
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -1,15 +1,17 @@
-<pkg :name="'markupsafe'" instsize showsbu2></pkg>
+{{ include('../packages/markupsafe/README.md') }}
 
-[filename](../shared/systemd-extra-warn.md ':include')
+{{ include('../shared/systemd-extra-warn.md') }}
 
 ## Сборка
 
-<package-script :package="'markupsafe'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/markupsafe/build') }}
+```
 
 ## Установка
 
-<package-script :package="'markupsafe'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/markupsafe/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

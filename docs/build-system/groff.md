@@ -1,4 +1,4 @@
-<pkg :name="'groff'" instsize showsbu2></pkg>
+{{ include('../packages/groff/README.md') }}
 
 ## Подготовка
 
@@ -6,7 +6,9 @@ Groff ожидает переменную окружения `PAGE`, значе�
 
 ## Настройка
 
-<package-script :package="'groff'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/groff/configure') }}
+```
 
 ### Значения параметров
 
@@ -15,12 +17,14 @@ Groff ожидает переменную окружения `PAGE`, значе�
 ## Сборка
 
 Пакет не поддерживает параллельную сборку. Выполните компиляцию пакета:
-<package-script :package="'groff'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/groff/build') }}
+```
 
 ## Установка
 
-<package-script :package="'groff'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/groff/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

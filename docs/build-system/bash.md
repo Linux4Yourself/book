@@ -1,14 +1,19 @@
-<pkg :name="'bash'" instsize showsbu2></pkg>
+
+{{ include('../packages/bash/README.md') }}
 
 ## Подготовка
 
 Для многоядерных процессоров внесите исправление, которое устраняет проблему "состояния гонки" при использовании нескольких ядер.
 
-[filename](../packages/bash/prepare ':include')
+```bash 
+{{ include('../packages/bash/prepare') }}
+```
 
 ## Настройка
 
-[filename](../packages/bash/configure ':include')
+```bash 
+{{ include('../packages/bash/configure') }}
+```
 
 ### Значения параметров
 
@@ -18,23 +23,31 @@
 
 ## Сборка
 
-[filename](../packages/bash/build ':include')
+```bash 
+{{ include('../packages/bash/build') }}
+```
 
 ## Тестирование
 
 Для корректного выполнения тестов, сделайте пользователя `tester` владельцем каталога и запустите тесты от пользователя `tester`
 
-[filename](../packages/bash/test ':include')
+```bash 
+{{ include('../packages/bash/test') }}
+```
 
 ## Установка
 
-[filename](../packages/bash/install ':include')
+```bash 
+{{ include('../packages/bash/install') }}
+```
 
 ## При раздельной структуре каталогов
 
 Создайте ссылку на нужный бинарный файл.
 
-[filename](../packages/bash/cldirs ':include')
+```bash 
+{{ include('../packages/bash/cldirs') }}
+```
 
 `bash` должен находиться в `/bin`. Для упрощённой структуры этого делать не требуется.
 
@@ -45,7 +58,3 @@
 ```bash
 exec /bin/bash --login +h
 ```
-
-<script>
-	new Vue({ el: '#main' })
-</script>

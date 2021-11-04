@@ -1,21 +1,27 @@
-<pkg :name="'make'" instsize showsbu2></pkg>
+{{ include('../packages/make/README.md') }}
 
 ## Настройка
 
-<package-script :package="'make'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/make/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'make'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/make/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'make'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/make/test') }}
+```
 
 ## Установка
 
-<package-script :package="'make'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/make/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

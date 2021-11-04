@@ -1,4 +1,4 @@
-<pkg :name="'shadow'" instsize showsbu2></pkg>
+{{ include('../packages/shadow/README.md') }}
 
 ## Подготовка
 
@@ -8,24 +8,34 @@
 
 - Сделайте незначительное изменение, для того чтобы номера групп начинались с 1000
 
-<package-script :package="'shadow'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/shadow/prepare') }}
+```
 
 ## Настройка
 
-<package-script :package="'shadow'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/shadow/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'shadow'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/shadow/build') }}
+```
 
 ## Установка
 
-<package-script :package="'shadow'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/shadow/install') }}
+```
 
 ## Настройка
 
 Для включения теневых паролей и групп выполните:
-<package-script :package="'shadow'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/shadow/postinstall') }}
+```
 
 В файле `/etc/default/useradd` можно настроить параметры утилиты `useradd`.
 
@@ -41,6 +51,4 @@ passwd root
 
 Директории: `/etc/default`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

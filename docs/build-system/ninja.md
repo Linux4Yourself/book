@@ -1,10 +1,12 @@
-<pkg :name="'ninja'" instsize showsbu2></pkg>
+{{ include('../packages/ninja/README.md') }}
 
 ## Подготовка
 
-[filename](../shared/systemd-extra-warn.md ':include')
+{{ include('../shared/systemd-extra-warn.md') }}
 
-?> `ninja` запускает максимальное количество процессов параллельно. По умолчанию это количество ядер в системе плюс два. В некоторых случаях это может привести к перегреву ЦП или нехватке памяти в системе. При запуске из командной строки передача параметра `-jN` ограничит количество параллельных процессов, но некоторые пакеты могут не передавать параметр `-j`.
+???+ danger "Важно"
+
+    `ninja` запускает максимальное количество процессов параллельно. По умолчанию это количество ядер в системе плюс два. В некоторых случаях это может привести к перегреву ЦП или нехватке памяти в системе. При запуске из командной строки передача параметра `-jN` ограничит количество параллельных процессов, но некоторые пакеты могут не передавать параметр `-j`.
 
 Использование переменной окружения `NINJAJOBS` гарантирует ограничение на количество параллельных процессов.
 
@@ -16,11 +18,15 @@ export NINJAJOBS=4
 
 Для того чтобы задействовать значение переменной `NINJAJOBS`, выполните корректировку:
 
-<package-script :package="'ninja'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/ninja/prepare') }}
+```
 
 ## Сборка
 
-<package-script :package="'ninja'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/ninja/build') }}
+```
 
 ### Значения параметров
 
@@ -28,16 +34,18 @@ export NINJAJOBS=4
 
 ## Тестирование
 
-<package-script :package="'ninja'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/ninja/test') }}
+```
 
 ## Установка
 
-<package-script :package="'ninja'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/ninja/install') }}
+```
 
 ## Установленные файлы
 
 Программы: `ninja`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

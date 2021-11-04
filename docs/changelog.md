@@ -8,28 +8,66 @@
 
 ## Изменения
 
+-  Миграция на mkdocs
+- [Исправлено #947](https://github.com/Linux4Yourself/book/issues/947)
 - [Исправлено #937](https://github.com/Linux4Yourself/book/issues/937)
 - [Исправлено #922](https://github.com/Linux4Yourself/book/issues/922)
 - [Исправлено #920](https://github.com/Linux4Yourself/book/issues/920)
 - [Исправлено #917](https://github.com/Linux4Yourself/book/issues/917)
-- [Исправлено #870](https://github.com/Linux4Yourself/book/issues/870)
+- [Исправлено #906](https://github.com/Linux4Yourself/book/issues/906)
+- [Исправлено #900](https://github.com/Linux4Yourself/book/issues/900)
 - [Исправлено #891](https://github.com/Linux4Yourself/book/issues/891)
-- [Исправлено #877](https://github.com/Linux4Yourself/book/issues/877)
-- [Исправлено #863](https://github.com/Linux4Yourself/book/pull/863)
-- [Исправлено #849](https://github.com/Linux4Yourself/book/issues/849)
-- [Исправлено #816](https://github.com/Linux4Yourself/book/issues/816)
-- [Выполнено #756](https://github.com/Linux4Yourself/book/issues/756)
-- [Выполнено #767](https://github.com/Linux4Yourself/book/issues/767)
-- [Выполнено #779](https://github.com/Linux4Yourself/book/issues/779)
-- [Исправлено #794](https://github.com/Linux4Yourself/book/issues/794)
-- [Исправлено #776](https://github.com/Linux4Yourself/book/issues/776)
-- [Исправлено #777](https://github.com/Linux4Yourself/book/issues/777)
-- [Исправлено #797](https://github.com/Linux4Yourself/book/issues/797)
-- [Исправлено #804](https://github.com/Linux4Yourself/book/issues/804)
-- [Исправлено #815](https://github.com/Linux4Yourself/book/issues/815)
-- [Исправлено #821](https://github.com/Linux4Yourself/book/issues/821)
+- [Исправлено #872](https://github.com/Linux4Yourself/book/issues/872)
+- [Исправлено #871](https://github.com/Linux4Yourself/book/issues/871)
+- [Исправлено #870](https://github.com/Linux4Yourself/book/issues/870)
+- [Исправлено #864](https://github.com/Linux4Yourself/book/issues/864)
+- [Исправлено #861](https://github.com/Linux4Yourself/book/issues/861)
+- [Исправлено #859](https://github.com/Linux4Yourself/book/issues/859)
+- [Исправлено #833](https://github.com/Linux4Yourself/book/issues/833)
 - [Исправлено #829](https://github.com/Linux4Yourself/book/issues/829)
-
+- [Исправлено #821](https://github.com/Linux4Yourself/book/issues/821)
+- [Исправлено #816](https://github.com/Linux4Yourself/book/issues/816)
+- [Исправлено #815](https://github.com/Linux4Yourself/book/issues/815)
+- [Исправлено #812](https://github.com/Linux4Yourself/book/issues/812)
+- [Исправлено #810](https://github.com/Linux4Yourself/book/issues/810)
+- [Исправлено #808](https://github.com/Linux4Yourself/book/issues/808)
+- [Исправлено #804](https://github.com/Linux4Yourself/book/issues/804)
+- [Исправлено #803](https://github.com/Linux4Yourself/book/issues/803)
+- [Исправлено #797](https://github.com/Linux4Yourself/book/issues/797)
+- [Исправлено #794](https://github.com/Linux4Yourself/book/issues/794)
+- [Исправлено #779](https://github.com/Linux4Yourself/book/issues/779)
+- [Исправлено #777](https://github.com/Linux4Yourself/book/issues/777)
+- [Исправлено #776](https://github.com/Linux4Yourself/book/issues/776)
+- [Исправлено #767](https://github.com/Linux4Yourself/book/issues/767)
+- [Исправлено #756](https://github.com/Linux4Yourself/book/issues/756)
+- [Исправлено #680](https://github.com/Linux4Yourself/book/issues/680)
+- [Исправлено #678](https://github.com/Linux4Yourself/book/issues/678)
+- [Исправлено #676](https://github.com/Linux4Yourself/book/issues/676)
+- [Исправлено #667](https://github.com/Linux4Yourself/book/issues/667)
+- [Исправлено #666](https://github.com/Linux4Yourself/book/issues/666)
+- [Исправлено #662](https://github.com/Linux4Yourself/book/issues/662)
+- [Исправлено #660](https://github.com/Linux4Yourself/book/issues/660)
+- [Исправлено #659](https://github.com/Linux4Yourself/book/issues/659)
+- [Исправлено #657](https://github.com/Linux4Yourself/book/issues/657)
+- [Исправлено #655](https://github.com/Linux4Yourself/book/issues/655)
+- [Исправлено #653](https://github.com/Linux4Yourself/book/issues/653)
+- [Исправлено #652](https://github.com/Linux4Yourself/book/issues/652)
+- [Исправлено #647](https://github.com/Linux4Yourself/book/issues/647)
+- [Исправлено #645](https://github.com/Linux4Yourself/book/issues/645)
+- [Исправлено #644](https://github.com/Linux4Yourself/book/issues/644)
+- [Исправлено #636](https://github.com/Linux4Yourself/book/issues/636)
+- [Исправлено #634](https://github.com/Linux4Yourself/book/issues/634)
+- [Исправлено #632](https://github.com/Linux4Yourself/book/issues/632)
+- [Исправлено #629](https://github.com/Linux4Yourself/book/issues/629)
+- [Исправлено #616](https://github.com/Linux4Yourself/book/issues/616)
+- [Исправлено #597](https://github.com/Linux4Yourself/book/issues/597)
+- [Исправлено #585](https://github.com/Linux4Yourself/book/issues/585)
+- [Исправлено #580](https://github.com/Linux4Yourself/book/issues/580)
+- [Исправлено #549](https://github.com/Linux4Yourself/book/issues/549)
+- [Исправлено #427](https://github.com/Linux4Yourself/book/issues/427)
+- [Исправлено #264](https://github.com/Linux4Yourself/book/issues/264)
+- [Исправлено #29](https://github.com/Linux4Yourself/book/issues/29)
+- 
 ## Обновления пакетов
 
 - automake-1.16.5
@@ -39,17 +77,18 @@
 - dbus-1.13.18
 - diffutils-3.8
 - e2fsprogs-1.46.4
+- file-5.41
 - gcc-11.2.0
-- gdbm-1.21
+- gdbm-1.22
 - glibc-2.34
 - grep-3.7
 - gzip-1.11
-- iana-etc-20211004 
+- iana-etc-20211012
 - inetutils-2.2
 - iproute2-5.14.0
 - jinja-3.0.2
 - libcap-2.60
-- linux-5.14.12
+- linux-5.14.13
 - meson-0.60.0
 - nano-5.9
 - openssl-3.0.0
@@ -57,7 +96,7 @@
 - shadow-4.9
 - systemd-249.5
 - sysvinit-3.0
-- tzdata-2021c
+- tzdata-2021d
 - util-linux-2.37.2
 - vim-8.2.3565
 - wget-1.21.2

@@ -14,7 +14,7 @@ rm -rf /usr/share/{info,man,doc}/*
 
 ## Выход из среды chroot
 
-[filename](../shared/exit-chroot.md ':include')
+{{ include('../shared/exit-chroot.md') }}
 
 ## Удаление отладочных символов
 

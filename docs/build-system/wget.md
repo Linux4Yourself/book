@@ -1,8 +1,10 @@
-<pkg :name="'wget'" instsize showsbu2></pkg>
+{{ include('../packages/wget/README.md') }}
 
 ## Настройка
 
-<package-script :package="'wget'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/wget/configure') }}
+```
 
 ### Значения параметров
 
@@ -11,11 +13,15 @@
 
 ## Сборка
 
-<package-script :package="'wget'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/wget/build') }}
+```
 
 ## Установка
 
-<package-script :package="'wget'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/wget/install') }}
+```
 
 ## Конфигурационные файлы
 
@@ -26,6 +32,4 @@
 
 - **Установленные программы:** `wget`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

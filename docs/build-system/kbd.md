@@ -1,20 +1,23 @@
-<pkg :name="'kbd'" instsize showsbu2></pkg>
 
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
+{{ include('../packages/kbd/README.md') }}
 
 ## Подготовка
 
 Примените патч для исправления работы клавиш backspace и delete:
-<package-script :package="'kbd'" :type="'patch'"></package-script>
+```bash 
+{{ include('../packages/kbd/patch') }}
+```
 
 Удалите ненужную программу `resizecons`, требующую `svgalib`:
-<package-script :package="'kbd'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/kbd/prepare') }}
+```
 
 ## Настройка
 
-<package-script :package="'kbd'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/kbd/configure') }}
+```
 
 ### Значения параметров
 
@@ -22,30 +25,18 @@
 
 ## Сборка
 
-<package-script :package="'kbd'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/kbd/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'kbd'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/kbd/test') }}
+```
 
 ## Установка
 
-<package-script :package="'kbd'" :type="'install'"></package-script>
-
-!> Пакет `kbd` не предоставляет некоторых рабочих раскладок клавиатуры (например, для белорусского языка). Загрузите (при необходимости) эти раскладки отдельно.
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPatch();
-		},
-		methods: {
-			getPatch: function() {
-					getPackage('kbd-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>
+```bash 
+{{ include('../packages/kbd/install') }}
+```

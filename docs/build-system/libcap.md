@@ -1,46 +1,64 @@
-<pkg :name="'libcap'" instsize showsbu2></pkg>
+{{ include('../packages/libcap/README.md') }}
 
 ## Подготовка
 
 Отключите установку статических библиотек:
 
-[filename](../packages/libcap/prepare ':include')
+```bash 
+{{ include('../packages/libcap/prepare') }}
+```
 
 ## Сборка
 
-[filename](../packages/libcap/build ':include')
+```bash 
+{{ include('../packages/libcap/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/libcap/test ':include')
+```bash 
+{{ include('../packages/libcap/test') }}
+```
 
 ## Установка
 
-[filename](../packages/libcap/install ':include')
+```bash 
+{{ include('../packages/libcap/install') }}
+```
 
 Установите корректные права для библиотек:
 
-[filename](../packages/libcap/postinstall ':include')
+```bash 
+{{ include('../packages/libcap/postinstall') }}
+```
 
 ## При раздельной структуре каталогов
 
 Уберите `prefix=/usr` в сборке и установке.
 
-[filename](../packages/libcap/cldirs ':include')
+```bash 
+{{ include('../packages/libcap/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/libcap/multi_prepare ':include')
+```bash 
+{{ include('../packages/libcap/multi_prepare') }}
+```
 
 ### Сборка
 
-[filename](../packages/libcap/multi_build ':include')
+```bash 
+{{ include('../packages/libcap/multi_build') }}
+```
 
 ### Установка
 
-[filename](../packages/libcap/multi_install ':include')
+```bash 
+{{ include('../packages/libcap/multi_install') }}
+```
 
 ## Установленные файлы
 
@@ -48,6 +66,4 @@
 
 Библиотеки: `libcap.so` и `libpsx.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

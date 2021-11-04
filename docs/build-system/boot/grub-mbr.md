@@ -1,8 +1,10 @@
-<pkg :name="'grub'" instsize showsbu2></pkg>
+{{ include('../packages/grub/README.md') }}
 
 ## Настройка
 
-<package-script :package="'grub'" :type="'configure-mbr'"></package-script>
+```bash 
+{{ include('../packages/grub/configure-mbr') }}
+```
 
 ## Значения параметров
 
@@ -10,12 +12,14 @@
 
 ## Сборка
 
-<package-script :package="'grub'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/grub/build') }}
+```
 
 ## Установка
 
-<package-script :package="'grub'" :type="'install-mbr'"></package-script>
+```bash 
+{{ include('../packages/grub/install-mbr') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

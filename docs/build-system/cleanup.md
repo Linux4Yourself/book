@@ -12,7 +12,9 @@ rm -rf /tmp/*
 logout
 ```
 
-[filename](../scripts/chroot.md ':include')
+```bash 
+{{ include('../scripts/chroot.sh') }}
+```
 
 
 Файлы `.la` потеряли свою актуальность и могут вызвать проблемы при обновлении. Удалите их:
@@ -40,6 +42,7 @@ userdel -r tester
 ```
 
 Вы можете удалить ненужные символы из исполняемых файлов:
+
 
 ```bash
 save_usrlib="$(cd /usr/lib; ls ld-linux*)
@@ -104,6 +107,3 @@ find /usr/lib32 -type f -name \*.so* ! -name \*dbg \
    -exec strip --strip-unneeded {} ';'
 ```
 
-<script>
-	new Vue({ el: '#main' })
-</script>

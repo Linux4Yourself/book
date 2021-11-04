@@ -1,47 +1,65 @@
-<pkg :name="'dbus'" instsize showsbu2></pkg>
+{{ include('../packages/dbus/README.md') }}
 
 ## Настройка
 
-[filename](../../packages/dbus/configure ':include')
+```bash 
+{{ include('../packages/dbus/configure') }}
+```
 
 ## Сборка
 
-[filename](../../packages/dbus/build ':include')
+```bash 
+{{ include('../packages/dbus/build') }}
+```
 
 ## Тестирование
 
-[filename](../../packages/dbus/test ':include')
+```bash 
+{{ include('../packages/dbus/test') }}
+```
 
 ## Установка
 
-[filename](../../packages/dbus/install ':include')
+```bash 
+{{ include('../packages/dbus/install') }}
+```
 
 Создайте символическую ссылку, чтобы `systemd` и `D-Bus` использовали один и тот же файл `machine-id`:
 
-[filename](../../packages/dbus/postinstall ':include')
+```bash 
+{{ include('../packages/dbus/postinstall') }}
+```
 
 ## При раздельной структуре каталогов
 
-[filename](../../packages/dbus/cldirs ':include')
+```bash 
+{{ include('../packages/dbus/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../../packages/dbus/multi_prepare ':include')
+```bash 
+{{ include('../packages/dbus/multi_prepare') }}
+```
 
 ### Настройка
 
-[filename](../../packages/dbus/multi_configure ':include')
+```bash 
+{{ include('../packages/dbus/multi_configure') }}
+```
 
 ### Сборка
 
-[filename](../../packages/dbus/multi_build ':include')
+```bash 
+{{ include('../packages/dbus/multi_build') }}
+```
 
 ### Установка
 
-[filename](../../packages/dbus/multi_install ':include')
+```bash 
+{{ include('../packages/dbus/multi_install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

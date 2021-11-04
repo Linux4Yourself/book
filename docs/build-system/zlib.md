@@ -1,8 +1,10 @@
-<pkg :name="'zlib-ng'" instsize showsbu2></pkg>
+{{ include('../packages/zlib-ng/README.md') }}
 
 ## Настройка
 
-[filename](../packages/zlib-ng/configure ':include')
+```bash 
+{{ include('../packages/zlib-ng/configure') }}
+```
 
 ### Значения параметров
 
@@ -12,45 +14,65 @@
 
 ## Сборка
 
-[filename](../packages/zlib-ng/build ':include')
+```bash 
+{{ include('../packages/zlib-ng/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/zlib-ng/test ':include')
+```bash 
+{{ include('../packages/zlib-ng/test') }}
+```
 
 ## Установка
 
-[filename](../packages/zlib-ng/install ':include')
+```bash 
+{{ include('../packages/zlib-ng/install') }}
+```
 
 Удалите ненужную статическую библиотеку:
 
-[filename](../packages/zlib-ng/postinstall ':include')
+```bash 
+{{ include('../packages/zlib-ng/postinstall') }}
+```
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/zlib-ng/cldirs ':include')
+```bash 
+{{ include('../packages/zlib-ng/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/zlib-ng/multi_prepare ':include')
+```bash 
+{{ include('../packages/zlib-ng/multi_prepare') }}
+```
 
 ### Настройка
 
-[filename](../packages/zlib-ng/multi_configure ':include')
+```bash 
+{{ include('../packages/zlib-ng/multi_configure') }}
+```
 
 ### Сборка
 
-[filename](../packages/zlib-ng/multi_build ':include')
+```bash 
+{{ include('../packages/zlib-ng/multi_build') }}
+```
 
 ### Установка
 
-[filename](../packages/zlib-ng/multi_install ':include')
+```bash 
+{{ include('../packages/zlib-ng/multi_install') }}
+```
 
 Удалите ненужную статическую библиотеку:
 
-[filename](../packages/zlib-ng/multi_postinstall ':include')
+```bash 
+{{ include('../packages/zlib-ng/multi_postinstall') }}
+```
 
 ## Установленные файлы
 
@@ -60,6 +82,4 @@
 
 `libz.so` - Содержит функции сжатия, используемые многими программами
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

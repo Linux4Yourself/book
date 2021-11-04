@@ -1,8 +1,10 @@
-<pkg :name="'ncurses'" instsize showsbu2></pkg>
+{{ include('../packages/ncurses/README.md') }}
 
 ## Настройка
 
-<package-script :package="'ncurses'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/ncurses/configure') }}
+```
 
 ### Значения параметров
 
@@ -14,11 +16,15 @@
 
 ## Сборка
 
-[filename](../packages/ncurses/build ':include')
+```bash 
+{{ include('../packages/ncurses/build') }}
+```
 
 ## Установка
 
-[filename](../packages/ncurses/install ':include')
+```bash 
+{{ include('../packages/ncurses/install') }}
+```
 
 Многие пакеты при компоновке ищут библиотеки без широких символов. Для компоновки с библиотеками содержащими широкие символы выполните:
 
@@ -44,23 +50,27 @@ ln -sfv libncurses.so      /usr/lib/libcurses.so
 rm -fv /usr/lib/libncurses++w.a
 ```
 
-?> Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
+???+ note "Дополнительно"
 
-```bash
-make distclean
-./configure --prefix=/usr    \
-            --with-shared    \
-            --without-normal \
-            --without-debug  \
-            --without-cxx-binding \
-            --with-abi-version=5
-make sources libs
-cp -av lib/lib*.so.5* /usr/lib
-```
+    Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
+
+    ```bash
+    make distclean
+    ./configure --prefix=/usr    \
+                --with-shared    \
+                --without-normal \
+                --without-debug  \
+                --without-cxx-binding \
+                --with-abi-version=5
+    make sources libs
+    cp -av lib/lib*.so.5* /usr/lib
+    ```
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/ncurses/cldirs ':include')
+```bash 
+{{ include('../packages/ncurses/cldirs') }}
+```
 
 ## Для multilib
 
@@ -72,29 +82,37 @@ make distclean
 
 ### Настройка
 
-[filename](../packages/ncurses/multi_configure ':include')
+```bash 
+{{ include('../packages/ncurses/multi_configure') }}
+```
 
 ### Сборка
 
-[filename](../packages/ncurses/multi_build ':include')
+```bash 
+{{ include('../packages/ncurses/multi_build') }}
+```
 
 ### Установка
 
-[filename](../packages/ncurses/multi_install ':include')
-
-?> Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
-
-```bash
-make distclean
-CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr    \
-            --with-shared    \
-            --without-normal \
-            --without-debug  \
-            --without-cxx-binding \
-            --with-abi-version=5 --host=i686-pc-linux-gnu
-make sources libs
-cp -av lib/lib*.so.5* /usr/lib
+```bash 
+{{ include('../packages/ncurses/multi_install') }}
 ```
+
+???+ note "Дополнительно"
+
+    Если для запуска старых бинарных программ требуется библиотека `ncurses` без широких символов - соберите её:
+
+    ```bash
+    make distclean
+    CC="gcc -m32" CXX="g++ -m32" ./configure --prefix=/usr    \
+                --with-shared    \
+                --without-normal \
+                --without-debug  \
+                --without-cxx-binding \
+                --with-abi-version=5 --host=i686-pc-linux-gnu
+    make sources libs
+    cp -av lib/lib*.so.5* /usr/lib
+    ```
 
 ## Установленные файлы
 
@@ -103,7 +121,3 @@ cp -av lib/lib*.so.5* /usr/lib
 Библиотеки: `libcursesw.so` (ссылка на `libncursesw.so`), `libformw.so`, `libmenuw.so`, `libncursesw.so`, `libpanelw.so` и их версии без широких символов
 
 Директории: /usr/share/tabset /usr/share/terminfo
-
-<script>
-	new Vue({ el: '#main' })
-</script>

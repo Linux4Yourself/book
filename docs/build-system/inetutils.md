@@ -1,8 +1,10 @@
-<pkg :name="'inetutils'" instsize showsbu2></pkg>
+{{ include('../packages/inetutils/README.md') }}
 
 ## Настройка
 
-[filename](../packages/inetutils/configure ':include')
+```bash 
+{{ include('../packages/inetutils/configure') }}
+```
 
 ### Значения параметров
 
@@ -10,26 +12,34 @@
 
 ## Сборка
 
-[filename](../packages/inetutils/build ':include')
+```bash 
+{{ include('../packages/inetutils/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/inetutils/test ':include')
+```bash 
+{{ include('../packages/inetutils/test') }}
+```
 
-?> Тест `libls.sh` даёт сбой, когда система LX4 находится в среде chroot, а тест `ping-localhost.sh` не проходит, если в хост-системе нет поддержки IPv6.
+???+ warning "Предупреждение"
+
+    Тест `libls.sh` даёт сбой, когда система LX4 находится в среде chroot, а тест `ping-localhost.sh` не проходит, если в хост-системе нет поддержки IPv6.
 
 ## Установка
 
-[filename](../packages/inetutils/install ':include')
+```bash 
+{{ include('../packages/inetutils/install') }}
+```
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/inetutils/cldirs ':include')
+```bash 
+{{ include('../packages/inetutils/cldirs') }}
+```
 
 ## Установленные файлы
 
 Программы: `dnsdomainname`, `ftp`, `ifconfig`, `hostname`, `ping`, `ping6`, `talk`, `telnet`, `tftp` и `traceroute`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -1,34 +1,48 @@
-<pkg :name="'zstd'" instsize showsbu2></pkg>
+{{ include('../packages/zstd/README.md') }}
 
 ## Сборка
 
-[filename](../packages/zstd/build ':include')
+```bash 
+{{ include('../packages/zstd/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/zstd/test ':include')
+```bash 
+{{ include('../packages/zstd/test') }}
+```
 
 ## Установка
 
-[filename](../packages/zstd/install ':include')
+```bash 
+{{ include('../packages/zstd/install') }}
+```
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/zstd/cldirs ':include')
+```bash 
+{{ include('../packages/zstd/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/zstd/multi_prepare ':include')
+```bash 
+{{ include('../packages/zstd/multi_prepare') }}
+```
 
 ### Сборка
 
-[filename](../packages/zstd/multi_build ':include')
+```bash 
+{{ include('../packages/zstd/multi_build') }}
+```
 
 ### Установка
 
-[filename](../packages/zstd/multi_install ':include')
+```bash 
+{{ include('../packages/zstd/multi_install') }}
+```
 
 ## Установленные файлы
 
@@ -42,6 +56,4 @@
 
 `libzstd` - библиотека для формата сжатия ZSTD
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

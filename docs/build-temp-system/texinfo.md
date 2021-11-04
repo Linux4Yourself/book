@@ -1,20 +1,4 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('texinfo');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/texinfo/README.md') }}
 
 ## Настройка
 
@@ -22,7 +6,8 @@
 ./configure --prefix=/usr
 ```
 
-?> Во время процесса настройки выполняется тест, который указывает на ошибку TestXS_la-TestXS.lo. Её можно игнорировать.
+???+ note "Обратите внимание"
+	  Во время процесса настройки выполняется тест, который указывает на ошибку TestXS_la-TestXS.lo. Её можно игнорировать.
 
 ## Сборка
 

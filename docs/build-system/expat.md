@@ -1,43 +1,59 @@
-<pkg :name="'expat'" instsize showsbu2></pkg>
+{{ include('../packages/expat/README.md') }}
 
 ## Настройка
 
-<package-script :package="'expat'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/expat/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'expat'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/expat/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'expat'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/expat/test') }}
+```
 
 ## Установка
 
-<package-script :package="'expat'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/expat/install') }}
+```
 
 ## Установка документации
 
-<package-script :package="'expat'" :type="'install-doc'"></package-script>
+```bash 
+{{ include('../packages/expat/install-doc') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'expat'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/expat/multi_prepare') }}
+```
 
 ### Настройка
 
-<package-script :package="'expat'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/expat/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'expat'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/expat/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'expat'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/expat/multi_install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

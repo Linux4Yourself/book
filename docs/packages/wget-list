@@ -92,8 +92,8 @@ https://lx4u.ru/downloads/packages/libtasn1-4.17.0.tar.gz
 https://lx4u.ru/downloads/packages/p11-kit-0.24.0.tar.xz
 https://lx4u.ru/downloads/packages/make-ca-1.9.tar.xz
 https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch
-https://lx4u.ru/downloads/packages/coreutils-8.32-i18n-1.patch
-https://lx4u.ru/downloads/packages/glibc-2.33-fhs-1.patch
+https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch
+https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch
 https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch
 https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch
 https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch

@@ -1,23 +1,31 @@
-<pkg :name="'autoconf'" instsize showsbu2></pkg>
+{{ include('../packages/autoconf/README.md') }}
 
 ## Настройка
 
-[filename](../packages/autoconf/configure ':include')
+```bash 
+{{ include('../packages/autoconf/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/autoconf/build ':include')
+```bash 
+{{ include('../packages/autoconf/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/autoconf/test ':include')
+```bash 
+{{ include('../packages/autoconf/test') }}
+```
 
-?> Если у вас несколько ядер процессора, то можно значительно (иногда более чем на 60%) сократить время выполнения тестирования. Перед выполнением тестов объявите переменную: `TESTSUITEFLAGS=-j<N>`, где `<N>` - число ядер ЦП.
+???+ note "Обратите внимание"
+	
+	Если у вас несколько ядер процессора, то можно значительно (иногда более чем на 60%) сократить время выполнения тестирования. Перед выполнением тестов объявите переменную: `TESTSUITEFLAGS=-j<N>`, где `<N>` - число ядер ЦП.
 
 ## Установка
 
-[filename](../packages/autoconf/install ':include')
+```bash 
+{{ include('../packages/autoconf/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

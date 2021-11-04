@@ -1,24 +1,11 @@
-<package-info :package="package" showsbu></package-info>
+{{ include('../packages/binutils/README.md') }}
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('binutils');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			}
-		}
-  })
-</script>
 
 ## Настройка
 
-!> **Пакет binutils должен быть установлен раньше GCC и libc**.
+???+ note "Обратите внимание"
+
+	**Пакет binutils должен быть установлен раньше GCC и libc**.
 
 Пакет Binutils требует использовать отдельную директорию для сборки. Создайте её:
 
@@ -27,7 +14,9 @@ mkdir -v build
 cd       build
 ```
 
-?> 1 SBU равен времени сборки данного пакета.
+???+ note "Обратите внимание"
+
+	1 SBU равен времени сборки данного пакета.
 
 Запустим скрипт `configure`:
 
@@ -65,4 +54,4 @@ make install -j1
 
 `-j1` предотвращает возможную ошибку установки.
 
-Дополнительную информацию о компиляции пакетов смотрите [здесь](additional/src-compiling).
+Дополнительную информацию о компиляции пакетов смотрите [здесь](../../additional/src-compiling).

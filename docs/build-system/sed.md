@@ -1,30 +1,42 @@
-<pkg :name="'sed'" instsize showsbu2></pkg>
+{{ include('../packages/sed/README.md') }}
 
 ## Настройка
 
-[filename](../packages/sed/configure ':include')
+```bash 
+{{ include('../packages/sed/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/sed/build ':include')
+```bash 
+{{ include('../packages/sed/build') }}
+```
 
 ## Сборка документации
 
-[filename](../packages/sed/build-doc ':include')
+```bash 
+{{ include('../packages/sed/build-doc') }}
+```
 
 ## Тестирование
 
-[filename](../packages/sed/test ':include')
+```bash 
+{{ include('../packages/sed/test') }}
+```
 
 ## Установка
 
-[filename](../packages/sed/install ':include')
+```bash 
+{{ include('../packages/sed/install') }}
+```
 
 ## Установка документации
 
-[filename](../packages/sed/install-doc ':include')
-<package-script :package="'sed'" :type="'install-doc'"></package-script>
+```bash 
+{{ include('../packages/sed/install-doc') }}
+```
+```bash 
+{{ include('../packages/sed/install-doc') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

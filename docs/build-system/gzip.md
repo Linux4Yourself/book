@@ -1,25 +1,33 @@
-<pkg :name="'gzip'" instsize showsbu2></pkg>
+{{ include('../packages/gzip/README.md') }}
 
 ## Настройка
 
-[filename](../packages/gzip/configure ':include')
+```bash 
+{{ include('../packages/gzip/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/gzip/build ':include')
+```bash 
+{{ include('../packages/gzip/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/gzip/test ':include')
+```bash 
+{{ include('../packages/gzip/test') }}
+```
 
 ## Установка
 
-[filename](../packages/gzip/install ':include')
+```bash 
+{{ include('../packages/gzip/install') }}
+```
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/gzip/cldirs ':include')
+```bash 
+{{ include('../packages/gzip/cldirs') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

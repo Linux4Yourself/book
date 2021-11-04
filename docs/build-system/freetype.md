@@ -1,37 +1,51 @@
-<pkg :name="'freetype'" instsize showsbu2></pkg>
+{{ include('../packages/freetype/README.md') }}
 
 ## Настройка
 
-?> В руководстве extra, данный пакет следует переустановить после установки `harfbuzz` из-за циклической зависимости.
+???+ note "Обратите внимание"
 
-<package-script :package="'freetype'" :type="'configure'"></package-script>
+	В руководстве extra, данный пакет следует переустановить после установки `harfbuzz` из-за циклической зависимости.
+
+```bash 
+{{ include('../packages/freetype/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'freetype'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/freetype/build') }}
+```
 
 ## Установка
 
-<package-script :package="'freetype'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/freetype/install') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'freetype'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/freetype/multi_prepare') }}
+```
 
 ### Настройка
 
-<package-script :package="'freetype'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/freetype/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'freetype'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/freetype/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'freetype'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/freetype/multi_install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

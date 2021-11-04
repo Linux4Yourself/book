@@ -1,22 +1,4 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-                new Vue({
-                el: '#main',
-                data: { package: {} },
-                mounted: function () {
-                                this.getPackage('tar');
-                },
-
-                methods: {
-                        getPackage: function(name) {
-                                        getPackage(name)
-                                        .then(response => this.package = response);
-                        },
-                }
-  })
-</script>
-
+{{ include('../packages/tar/README.md') }}
 ## Настройка
 
 ```bash

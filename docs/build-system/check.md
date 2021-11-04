@@ -1,23 +1,29 @@
-<pkg :name="'check'" instsize showsbu2></pkg>
+{{ include('../packages/check/README.md') }}
 
 ## Настройка
 
-[filename](../packages/check/configure ':include')
+```bash 
+{{ include('../packages/check/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/check/build ':include')
+```bash 
+{{ include('../packages/check/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/check/test ':include')
+```bash 
+{{ include('../packages/check/test') }}
+```
 
 > Тесты добавляют 4 SBU ко всему времени установки пакета.
 
 ## Установка
 
-[filename](../packages/check/install ':include')
+```bash 
+{{ include('../packages/check/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

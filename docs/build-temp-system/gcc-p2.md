@@ -1,76 +1,43 @@
-<package-info :package="package" showsbu></package-info>
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, mpc: {}, mpfr: {}, gmp : {}, isl: {}, patch: {} },
-		mounted: function () {
-				this.getPackage('gcc');
-				this.getMpc();
-				this.getMpfr();
-				this.getGmp();
-				this.getIsl();
-				this.getPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getMpc: function() {
-					getPackage('mpc')
-					.then(response => this.mpc = response);
-			},
-			getMpfr: function() {
-					getPackage('mpfr')
-					.then(response => this.mpfr = response);
-			},
-			getGmp: function() {
-					getPackage('gmp')
-					.then(response => this.gmp = response);
-			},
-			getIsl: function() {
-					getPackage('isl')
-					.then(response => this.isl = response);
-			},
-			getPatch: function() {
-					getPackage('gcc-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/gcc/README.md') }}
 
 ## Подготовка
 
 ### Дополнительные необходимые файлы
 
-<a :href="mpc.url">{{ mpc.url}}</a>
 
-<a :href="gmp.url">{{ gmp.url}}</a>
+```bash 
+{{ include('../packages/mpc/.url') }}
+```
 
-<a :href="mpfr.url">{{ mpfr.url}}</a>
+```bash 
+{{ include('../packages/gmp/.url') }}
+```
 
-<a :href="isl.url">{{ isl.url}}</a>
+```bash 
+{{ include('../packages/mpfr/.url') }}
+```
 
-<a :href="patch.url">
-{{ patch.url }}
-</a>
+```bash 
+{{ include('../packages/isl/.url') }}
+```
+
 
 Распакуйте дополнительные пакеты:
 
-!> Обратите внимание, что распаковка указанных пакетов должна производится из каталога пакета GCC.
+???+ warning "Предупреждение"
+	 Обратите внимание, что распаковка указанных пакетов должна производится из каталога пакета GCC.
 
-<pre>
-tar -xf ../{{ mpfr.fileName }}
-mv -v {{ mpfr.name }}-{{ mpfr.version }} {{ mpfr.name }}
-tar -xf ../{{ gmp.fileName }}
-mv -v {{ gmp.name }}-{{ gmp.version }} {{ gmp.name }}
-tar -xf ../{{ mpc.fileName }}
-mv -v {{ mpc.name }}-{{ mpc.version }} {{ mpc.name }}
-tar -xf ../{{ isl.fileName }}
-mv -v {{ isl.name }}-{{ isl.version }} {{ isl.name }}
-</pre>
+```bash
+tar -xf ../{{ include('../packages/mpfr/.filename') }}
+mv -v {{ include('../packages/mpfr/.filename') }} mpfr
+tar -xf ../{{ include('../packages/gmp/.filename') }}
+mv -v {{ include('../packages/gmp/.filename') }} gmp
+tar -xf ../{{ include('../packages/mpc/.filename') }}
+mv -v {{ include('../packages/mpc/.filename') }} mpc
+tar -xf ../{{ include('../packages/isl/.filename') }}
+mv -v {{ include('../packages/isl/.filename') }} isl
+```
 
 Смените пути установки библиотек:
 

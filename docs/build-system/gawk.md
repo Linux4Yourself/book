@@ -1,30 +1,41 @@
-<pkg :name="'gawk'" instsize showsbu2></pkg>
+{{ include('../packages/gawk/README.md') }}
 
 ## Подготовка
 
-Следует убедиться, что ненужные файлы не будут установлены
-<package-script :package="'gawk'" :type="'prepare'"></package-script>
+Следует убедиться, что ненужные файлы не будут установлены:
+
+```bash 
+{{ include('../packages/gawk/prepare') }}
+```
 
 ## Настройка
 
-<package-script :package="'gawk'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/gawk/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'gawk'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/gawk/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'gawk'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/gawk/test') }}
+```
 
 ## Установка
 
-<package-script :package="'gawk'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/gawk/install') }}
+```
 
 ## Установка документации
 
-<package-script :package="'gawk'" :type="'install-doc'"></package-script>
+```bash 
+{{ include('../packages/gawk/install-doc') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

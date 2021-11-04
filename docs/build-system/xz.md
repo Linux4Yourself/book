@@ -1,42 +1,60 @@
-<pkg :name="'xz'" instsize showsbu2></pkg>
+{{ include('../packages/xz/README.md') }}
 
 ## Настройка
 
-[filename](../packages/xz/configure ':include')
+```bash 
+{{ include('../packages/xz/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/xz/build ':include')
+```bash 
+{{ include('../packages/xz/build') }}
+```
 
 ## Тестирование
 
-[filename](../packages/xz/test ':include')
+```bash 
+{{ include('../packages/xz/test') }}
+```
 
 ## Установка
 
-[filename](../packages/xz/install ':include')
+```bash 
+{{ include('../packages/xz/install') }}
+```
 
 ## При раздельной структуре каталогов
 
-[filename](../packages/xz/cldirs ':include')
+```bash 
+{{ include('../packages/xz/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/xz/multi_prepare ':include')
+```bash 
+{{ include('../packages/xz/multi_prepare') }}
+```
 
 ### Настройка
 
-[filename](../packages/xz/multi_configure ':include')
+```bash 
+{{ include('../packages/xz/multi_configure') }}
+```
 
 ### Сборка
 
-[filename](../packages/xz/multi_build ':include')
+```bash 
+{{ include('../packages/xz/multi_build') }}
+```
 
 ### Установка
 
-[filename](../packages/xz/multi_install ':include')
+```bash 
+{{ include('../packages/xz/multi_install') }}
+```
 
 ## Установленные файлы
 
@@ -94,6 +112,4 @@
 
 `liblzma` - библиотека, реализующая сжатие данных без потерь с сортировкой по блокам с использованием цепного алгоритма Лемпеля-Зива-Маркова.
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

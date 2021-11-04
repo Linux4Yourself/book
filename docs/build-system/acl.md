@@ -1,40 +1,56 @@
-<pkg :name="'acl'" instsize showsbu2></pkg>
+{{ include('../packages/acl/README.md') }}
 
 ## Настройка
 
-[filename](../packages/acl/configure ':include')
+```bash 
+{{ include('../packages/acl/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/acl/build ':include')
+```bash 
+{{ include('../packages/acl/build') }}
+```
 
 ## Установка
 
-[filename](../packages/acl/install ':include')
+```bash 
+{{ include('../packages/acl/install') }}
+```
 
 ## При раздельной структуре каталогов
 
 Добавьте к скрипту `configure` опцию `--bindir=/bin`.
 
-[filename](../packages/acl/cldirs ':include')
+```bash 
+{{ include('../packages/acl/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/acl/multi_prepare ':include')
+```bash 
+{{ include('../packages/acl/multi_prepare') }}
+```
 
 ### Настройка
 
-[filename](../packages/acl/multi_configure ':include')
+```bash 
+{{ include('../packages/acl/multi_configure') }}
+```
 
 ### Сборка
 
-[filename](../packages/acl/multi_build ':include')
+```bash 
+{{ include('../packages/acl/multi_build') }}
+```
 
 ### Установка
 
-[filename](../packages/acl/multi_install ':include')
+```bash 
+{{ include('../packages/acl/multi_install') }}
+```
 
 ## Установленные файлы
 
@@ -42,6 +58,4 @@
 
 Библиотеки: `libacl.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

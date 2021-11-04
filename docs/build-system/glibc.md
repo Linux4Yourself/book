@@ -1,40 +1,10 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-	new Vue({
-		el: '#main',
-		data: {
-			package: {},
-			tzdata: {},
-			glibcPatch: {},
-		},
-		mounted: function () {
-				this.getPackage('glibc');
-				this.getTzdata();
-				this.getGlibcPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getTzdata: function() {
-					getPackage('tzdata')
-					.then(response => this.tzdata = response);
-			},
-			getGlibcPatch: function() {
-					getPackage('glibc-patch')
-					.then(response => this.glibcPatch = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/glibc/README.md') }}
 
 ## Дополнительные необходимые файлы
 
-<a :href="glibcPatch.url">{{ glibcPatch.url}}</a>
-
-<a :href="tzdata.url">{{ tzdata.url}}</a>
+```bash 
+{{ include('../packages/tzdata/.url') }}
+```
 
 ## Подготовка
 
@@ -60,13 +30,12 @@ cd       build
 
 ## Настройка
 
+
 Если вы собираете систему с раздельной структурой директорий, убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
 
 ```bash
 echo "rootsbindir=/usr/sbin" > configparms
 ```
-
-Запустите скрипт `configure`:
 
 ```bash
 ../configure                             \
@@ -76,7 +45,6 @@ echo "rootsbindir=/usr/sbin" > configparms
       --with-headers=/usr/include        \
       libc_cv_slibdir=/lib           
 ```
-
 ### Для multilib
 
 Добавьте параметр `--enable-multi-arch`
@@ -128,17 +96,6 @@ sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile
 
 ```bash
 make install
-```
-
-Исправьте жестко заданный путь к исполняемому загрузчику в скрипте ldd:
-
-```bash
-sed '/RTLDLIST=/s@/usr@@g' -i /usr/bin/ldd
-```
-
-Установите нужные файлы для nscd:
-
-```bash
 cp -v ../nscd/nscd.conf /etc/nscd.conf
 mkdir -pv /var/cache/nscd
 ```
@@ -201,7 +158,7 @@ localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 localedef -i zh_TW -f UTF-8 zh_TW.UTF-8
 ```
 
-вы можете установить все локали, которые содержатся в файле `{{ package.fileName }}/localedata/SUPPORTED`.
+вы можете установить все локали, которые содержатся в файле `localedata/SUPPORTED`.
 Выполните следующую команду:
 
 ```bash
@@ -238,8 +195,8 @@ EOF
 
 Установите информацию о часовых поясах:
 
-<pre class="pre">
-tar -xf ../../{{tzdata.fileName}}
+```bash
+tar -xf ../../{{ include('../packages/tzdata/.filename') }}
 
 ZONEINFO=/usr/share/zoneinfo
 mkdir -pv $ZONEINFO/{posix,right}
@@ -254,7 +211,7 @@ done
 cp -v zone.tab zone1970.tab iso3166.tab $ZONEINFO
 zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO
-</pre>
+```
 
 Для выбора часового пояса запустите скрипт:
 
@@ -315,7 +272,8 @@ CC="gcc -m32" CXX="g++ -m32" \
       --with-headers=/usr/include        \
       --enable-multi-arch                \
       --libdir=/usr/lib32                \
-      libc_cv_slibdir=/lib32
+      --libexecdir=/usr/lib32            \
+      libc_cv_slibdir=/usr/lib32
 ```
 
 ## Сборка

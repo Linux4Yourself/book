@@ -1,20 +1,26 @@
-<pkg :name="'dejagnu'" instsize showsbu2></pkg>
+{{ include('../packages/dejagnu/README.md') }}
 
-[filename](../shared/test-pkgs.md ':include')
+{{ include('../shared/test-pkgs.md') }}
 
 ## Настройка
 
-[filename](../packages/dejagnu/configure ':include')
+```bash 
+{{ include('../packages/dejagnu/configure') }}
+```
 
 ## Сборка и установка
 
-[filename](../packages/dejagnu/install ':include')
+```bash 
+{{ include('../packages/dejagnu/install') }}
+```
 
 ## Тестирование
 
-[filename](../packages/dejagnu/test ':include')
-<package-script :package="'dejagnu'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/dejagnu/test') }}
+```
+```bash 
+{{ include('../packages/dejagnu/test') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

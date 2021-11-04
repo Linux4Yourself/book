@@ -1,23 +1,31 @@
-<pkg :name="'gperf'" instsize showsbu2></pkg>
+{{ include('../packages/gperf/README.md') }}
 
 ## Настройка
 
-<package-script :package="'gperf'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/gperf/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'gperf'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/gperf/build') }}
+```
 
 ## Тестирование
 
-!> Тестирование должно производиться в один поток, так как при одновременном тестировании (многопотоковом) появляются всевозможные ошибки. Поэтому и используется ключ `-j1`:
+???+ warning "Предупреждение"
 
-<package-script :package="'gperf'" :type="'test'"></package-script>
+    Тестирование должно производиться в один поток, так как при одновременном тестировании (многопотоковом) появляются всевозможные ошибки. Поэтому и используется ключ `-j1`:
+
+```bash 
+{{ include('../packages/gperf/test') }}
+```
 
 ## Установка
 
-<package-script :package="'gperf'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/gperf/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

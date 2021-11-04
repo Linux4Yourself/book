@@ -1,46 +1,66 @@
-<pkg :name="'attr'" instsize showsbu2></pkg>
+{{ include('../packages/attr/README.md') }}
 
 ## Настройка
 
-[filename](../packages/attr/configure ':include')
+```bash 
+{{ include('../packages/attr/configure') }}
+```
 
 ## Сборка
 
-[filename](../packages/attr/build ':include')
+```bash 
+{{ include('../packages/attr/build') }}
+```
 
 ## Тестирование
 
-!> Тестирование нужно производить на файловой системе, поддерживающей расширенные атрибуты. Например, ext2-ext4.
+???+ warning "Предупреждение"
+	
+	Тестирование нужно производить на файловой системе, поддерживающей расширенные атрибуты. Например, ext2-ext4.
 
-[filename](../packages/attr/test ':include')
+```bash 
+{{ include('../packages/attr/test') }}
+```
 
 ## Установка
 
-[filename](../packages/attr/install ':include')
+```bash 
+{{ include('../packages/attr/install') }}
+```
 
 ## При раздельной структуре каталогов
 
 Добавьте к скрипту `configure` опцию `--bindir=/bin`.
 
-[filename](../packages/attr/cldirs ':include')
+```bash 
+{{ include('../packages/attr/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-[filename](../packages/attr/multi_prepare ':include')
+```bash 
+{{ include('../packages/attr/multi_prepare') }}
+```
 
 ### Настройка
 
-[filename](../packages/attr/multi_configure ':include')
+```bash 
+{{ include('../packages/attr/multi_configure') }}
+```
 
 ### Сборка
 
-[filename](../packages/attr/multi_build ':include')
+```bash 
+{{ include('../packages/attr/multi_build') }}
+```
 
 ### Установка
 
-[filename](../packages/attr/multi_install ':include')
+```bash 
+{{ include('../packages/attr/multi_install') }}
+```
 
 ## Установленные файлы
 
@@ -48,6 +68,4 @@
 
 Библиотеки: `libattr.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+
