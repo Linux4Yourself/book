@@ -19,7 +19,7 @@
 
 ```bash
 tar -xf ../{{ include('../packages/mpfr/.filename') }}
-mv -v { include('../packages/mpfr/.name') }} mpfr
+mv -v {{ include('../packages/mpfr/.name') }} mpfr
 tar -xf ../{{ include('../packages/gmp/.filename') }}
 mv -v {{ include('../packages/gmp/.name') }} gmp
 tar -xf ../{{ include('../packages/mpc/.filename') }}
