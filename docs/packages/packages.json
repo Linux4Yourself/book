@@ -14,6 +14,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -22,7 +23,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -43,6 +43,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -51,7 +52,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -72,10 +72,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -96,11 +96,11 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -121,13 +121,13 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
 			"install",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -148,10 +148,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -172,6 +172,7 @@
 		"sbu": 1,
 		"sbu2": 4.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -182,7 +183,6 @@
 			"multi_test",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -203,10 +203,10 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -230,6 +230,7 @@
 			"bzip2-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -240,7 +241,6 @@
 			"patch",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -261,10 +261,10 @@
 		"sbu": 0,
 		"sbu2": 4,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -288,13 +288,13 @@
 			"coreutils-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
 			"install",
 			"patch",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -315,6 +315,7 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -324,7 +325,6 @@
 			"multi_install",
 			"multi_prepare",
 			"postinstall",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -347,9 +347,9 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/dejagnu-1.6.3.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		]
 	},
@@ -368,10 +368,10 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -392,13 +392,13 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"install-doc",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -421,11 +421,11 @@
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/emacs-27.2.tar.xz",
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"postinstall",
-			"README.md"
+			"postinstall"
 		]
 	},
 	{
@@ -445,6 +445,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/elfutils-0.185.tar.bz2",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -453,7 +454,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		]
 	},
@@ -475,6 +475,7 @@
 			"udev"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -484,7 +485,6 @@
 			"multi_install",
 			"multi_prepare",
 			"postinstall",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -505,6 +505,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -513,7 +514,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -536,10 +536,10 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/expect5.45.4.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		]
 	},
@@ -558,10 +558,10 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -582,11 +582,11 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -607,11 +607,11 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"postinstall",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -632,12 +632,12 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"install-doc",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -658,13 +658,13 @@
 		"sbu": 14.8,
 		"sbu2": 25,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"multi_configure",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -685,10 +685,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -709,10 +709,10 @@
 		"sbu": 4.5,
 		"sbu2": 3,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -736,6 +736,7 @@
 			"glibc-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -748,7 +749,6 @@
 			"patch",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -769,6 +769,7 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -776,7 +777,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -797,10 +797,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -821,10 +821,10 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -845,10 +845,10 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
-			"install",
-			"README.md"
+			"install"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/groff-1.22.4.tar.gz"
@@ -870,13 +870,13 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/grub-2.06.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"configure-mbr",
 			"install",
 			"install-mbr",
-			"prepare",
-			"README.md"
+			"prepare"
 		]
 	},
 	{
@@ -894,11 +894,11 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -919,8 +919,8 @@
 		"sbu": 0.01,
 		"sbu2": 0.01,
 		"scripts": [
-			"install",
-			"README.md"
+			"README.md",
+			"install"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/iana-etc-20211004.tar.gz"
@@ -940,11 +940,11 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -965,12 +965,12 @@
 		"sbu": 0,
 		"sbu2": 0.01,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"install-doc",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -991,11 +991,11 @@
 		"sbu": 0,
 		"sbu2": 0.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
 			"install-doc",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1016,11 +1016,11 @@
 		"sbu": 0,
 		"sbu2": 0.7,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"postinstall",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1044,12 +1044,12 @@
 			"kbd-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"patch",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1070,6 +1070,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1078,8 +1079,7 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"postinstall",
-			"README.md"
+			"postinstall"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/kmod-29.tar.xz"
@@ -1099,10 +1099,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
-			"install",
-			"README.md"
+			"install"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/less-590.tar.gz"
@@ -1122,8 +1122,8 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"install",
-			"README.md"
+			"README.md",
+			"install"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/bootscripts.tar.xz"
@@ -1143,6 +1143,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -1151,7 +1152,6 @@
 			"multi_prepare",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1172,6 +1172,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1179,7 +1180,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1200,10 +1200,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1224,6 +1224,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1232,7 +1233,6 @@
 			"multi_install",
 			"multi_prepare",
 			"postinstall",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1273,11 +1273,11 @@
 		"sbu": 0.1,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1298,10 +1298,10 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1322,10 +1322,10 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1347,8 +1347,8 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/man-pages-5.13.tar.xz",
 		"scripts": [
-			"install",
-			"README.md"
+			"README.md",
+			"install"
 		],
 		"multilibSupport": false
 	},
@@ -1367,10 +1367,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
-			"prepare",
-			"README.md"
+			"prepare"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.60.0.tar.gz"
@@ -1390,10 +1390,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1414,10 +1414,10 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1438,6 +1438,7 @@
 		"sbu": 1.2,
 		"sbu2": 0.4,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1448,7 +1449,6 @@
 			"multi_postinstall",
 			"multi_prepare",
 			"postinstall",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1469,10 +1469,10 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1493,6 +1493,7 @@
 		"sbu": 0,
 		"sbu2": 1.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1500,7 +1501,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1521,10 +1521,10 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1545,12 +1545,12 @@
 		"sbu": 1.9,
 		"sbu2": 2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1571,10 +1571,10 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1595,12 +1595,12 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
 			"configure-systemd",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1621,11 +1621,11 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
-			"install",
-			"README.md"
+			"install"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/psmisc-23.4.tar.xz"
@@ -1645,10 +1645,10 @@
 		"sbu": 1.2,
 		"sbu2": 9.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1669,6 +1669,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1679,7 +1680,6 @@
 			"multi_prepare",
 			"multi_test",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1700,12 +1700,12 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"build-doc",
 			"configure",
 			"install",
 			"install-doc",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1726,12 +1726,12 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1752,13 +1752,13 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
 			"install",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1779,9 +1779,9 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
-			"install",
-			"README.md"
+			"install"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/MarkupSafe-2.0.1.tar.gz"
@@ -1801,8 +1801,8 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"install",
-			"README.md"
+			"README.md",
+			"install"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/Jinja2-3.0.2.tar.gz"
@@ -1822,6 +1822,7 @@
 		"sbu": 0,
 		"sbu2": 1.3,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1831,8 +1832,7 @@
 			"multi_prepare",
 			"patch",
 			"postinstall",
-			"prepare",
-			"README.md"
+			"prepare"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/systemd-stable-249.5.tar.gz"
@@ -1855,10 +1855,10 @@
 			"sysvinit-patch"
 		],
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
-			"patch",
-			"README.md"
+			"patch"
 		],
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/sysvinit-3.00.tar.xz"
@@ -1878,10 +1878,10 @@
 		"sbu": 0.4,
 		"sbu2": 0.4,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1904,12 +1904,12 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/tcl8.6.11-src.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		]
 	},
@@ -1928,11 +1928,11 @@
 		"sbu": 0.3,
 		"sbu2": 0.7,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"postinstall",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -1993,6 +1993,7 @@
 		"sbu": 0.8,
 		"sbu2": 0.5,
 		"scripts": [
+			"README.md",
 			"build",
 			"build-systemd",
 			"configure",
@@ -2007,7 +2008,6 @@
 			"multi_install-systemd",
 			"multi_prepare",
 			"multi_prepare-systemd",
-			"README.md",
 			"test",
 			"test-systemd"
 		],
@@ -2029,12 +2029,12 @@
 		"sbu": 0,
 		"sbu2": 2.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -2055,11 +2055,11 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
 			"install-doc",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -2080,10 +2080,10 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -2104,6 +2104,7 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -2113,7 +2114,6 @@
 			"multi_install",
 			"multi_prepare",
 			"multi_test",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -2134,6 +2134,7 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -2145,7 +2146,6 @@
 			"multi_prepare",
 			"multi_test",
 			"postinstall",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -2166,6 +2166,7 @@
 		"sbu": 0,
 		"sbu2": 1,
 		"scripts": [
+			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -2173,7 +2174,6 @@
 			"multi_install",
 			"multi_prepare",
 			"multi_test",
-			"README.md",
 			"test"
 		],
 		"multilibSupport": false,
@@ -2196,10 +2196,10 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/popt-1.18.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
-			"README.md",
 			"test"
 		]
 	},
@@ -2220,6 +2220,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/freetype-2.11.0.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2227,7 +2228,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		]
 	},
@@ -2248,10 +2248,10 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37.tar.bz2",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
-			"patch",
-			"README.md"
+			"patch"
 		]
 	},
 	{
@@ -2271,10 +2271,10 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efibootmgr-17.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"install",
-			"prepare",
-			"README.md"
+			"prepare"
 		]
 	},
 	{
@@ -2294,10 +2294,10 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/dosfstools-4.2.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
-			"install",
-			"README.md"
+			"install"
 		]
 	},
 	{
@@ -2316,10 +2316,10 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/wget-1.21.2.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
-			"install",
-			"README.md"
+			"install"
 		]
 	},
 	{
@@ -2338,6 +2338,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/libtasn1-4.17.0.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2345,7 +2346,6 @@
 			"multi_configure",
 			"multi_install",
 			"multi_prepare",
-			"README.md",
 			"test"
 		]
 	},
@@ -2365,6 +2365,7 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/p11-kit-0.24.0.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2374,7 +2375,6 @@
 			"multi_prepare",
 			"postinstall",
 			"prepare",
-			"README.md",
 			"test"
 		]
 	},
@@ -2394,10 +2394,10 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/make-ca-1.9.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
+			"README.md",
 			"install",
 			"postinstall",
-			"postinstall-systemd",
-			"README.md"
+			"postinstall-systemd"
 		]
 	},
 	{
@@ -2430,7 +2430,7 @@
 		"releasesUrl": "",
 		"priority": "optional",
 		"md5": "e716728302e3ed1dfffb06050a68517c",
-		"size": "0.17",
+		"size": "0.16",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0,
