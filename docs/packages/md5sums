@@ -21,7 +21,7 @@ a4fb91a9441bcaec576d4c4a56fa3aa6 expat-2.4.1.tar.xz
 18233bb0a0089dfdc7dfbc93b96f231b file-5.41.tar.gz
 eeefe2e6380931a77dfa6d9350b43186 findutils-4.8.0.tar.xz
 2882e3179748cc9f9c23ec593d6adc8d flex-2.6.4.tar.gz
-8470c34eeecc41c1aa0c5d89e630df50 gawk-5.1.0.tar.xz
+83650aa943ff2fd519b2abedf8506ace gawk-5.1.1.tar.xz
 31c86f2ced76acac66992eeedce2fce2 gcc-11.2.0.tar.xz
 0bbd38f12656e4728e2f7c4708aec014 gdbm-1.22.tar.gz
 40996bbaf7d1356d3c22e33a8b255b31 gettext-0.21.tar.xz
@@ -50,7 +50,7 @@ dad443d0911cf9f0f1bd90a334bc9004 libpipeline-1.5.3.tar.gz
 fc7a67ea86ace13195b0bce683fd4469 make-4.3.tar.gz
 6e233a555f7b9ae91ce7cd0faa322bce man-db-2.9.4.tar.xz
 3ac24e8c6fae26b801cb87ceb63c0a30 man-pages-5.13.tar.xz
-a810ef49822de717d579413d30629648 meson-0.60.0.tar.gz
+77e41dfa4bc456e03b674537b813328b meson-0.60.1.tar.gz
 9f16c976c25bb0f76b50be749cd7a3a8 mpc-1.2.1.tar.gz
 bdd3d5efba9c17da8d83a35ec552baef mpfr-4.1.0.tar.xz
 e812da327b1c2214ac1aed440ea3ae8d ncurses-6.2.tar.gz
@@ -97,3 +97,5 @@ e716728302e3ed1dfffb06050a68517c coreutils-9.0-i18n-1.patch
 f75cca16a38da6caa7d52151f7136895 kbd-2.4.0-backspace-1.patch
 4900322141d493e74020c9cf437b2cdc sysvinit-2.99-consolidated-1.patch
 e795e52eeefc0d2c62c6c4bd748d2d38 efivar-37-gcc_9-1.patch
+3518fa864fe8d7ef65be4960f380b03b binutils-2.37-upstream_fix-1.patch
+fb42558b59ed95ee00eb9f1c1c9b8056 perl-5.34.0-upstream_fixes-1.patch

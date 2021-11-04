@@ -21,7 +21,7 @@ https://lx4u.ru/downloads/packages/expect5.45.4.tar.gz
 https://lx4u.ru/downloads/packages/file-5.41.tar.gz
 https://lx4u.ru/downloads/packages/findutils-4.8.0.tar.xz
 https://lx4u.ru/downloads/packages/flex-2.6.4.tar.gz
-https://lx4u.ru/downloads/packages/gawk-5.1.0.tar.xz
+https://lx4u.ru/downloads/packages/gawk-5.1.1.tar.xz
 https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz
 https://lx4u.ru/downloads/packages/gdbm-1.22.tar.gz
 https://lx4u.ru/downloads/packages/gettext-0.21.tar.xz
@@ -50,7 +50,7 @@ https://lx4u.ru/downloads/packages/m4-1.4.19.tar.xz
 https://lx4u.ru/downloads/packages/make-4.3.tar.gz
 https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz
 https://lx4u.ru/downloads/packages/man-pages-5.13.tar.xz
-https://lx4u.ru/downloads/packages/meson-0.60.0.tar.gz
+https://lx4u.ru/downloads/packages/meson-0.60.1.tar.gz
 https://lx4u.ru/downloads/packages/mpc-1.2.1.tar.gz
 https://lx4u.ru/downloads/packages/mpfr-4.1.0.tar.xz
 https://lx4u.ru/downloads/packages/ncurses-6.2.tar.gz
@@ -97,3 +97,5 @@ https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch
 https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch
 https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch
 https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch
+https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch
+https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch
