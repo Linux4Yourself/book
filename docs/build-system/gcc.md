@@ -1,21 +1,5 @@
 {{ include('../packages/gcc/README.md') }}
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gcc');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
-
 ## Подготовка
 
 Исправьте пути установки библиотек:
