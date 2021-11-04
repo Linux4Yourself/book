@@ -19,13 +19,13 @@
 
 ```bash
 tar -xf ../{{ include('../packages/mpfr/.filename') }}
-mv -v {{ include('../packages/mpfr/.filename') }} mpfr
+mv -v {{ include('../packages/mpfr/.name') }} mpfr
 tar -xf ../{{ include('../packages/gmp/.filename') }}
-mv -v {{ include('../packages/gmp/.filename') }} gmp
+mv -v {{ include('../packages/gmp/.name') }} gmp
 tar -xf ../{{ include('../packages/mpc/.filename') }}
-mv -v {{ include('../packages/mpc/.filename') }} mpc
+mv -v {{ include('../packages/mpc/.name') }} mpc
 tar -xf ../{{ include('../packages/isl/.filename') }}
-mv -v {{ include('../packages/isl/.filename') }} isl
+mv -v {{ include('../packages/isl/.name') }} isl
 ```
 
 
