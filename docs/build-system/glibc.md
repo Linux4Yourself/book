@@ -30,18 +30,21 @@ cd       build
 
 ## Настройка
 
+
+Если вы собираете систему с раздельной структурой директорий, убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
+
+```bash
+echo "rootsbindir=/usr/sbin" > configparms
+```
+
 ```bash
 ../configure                             \
       --prefix=/usr                      \
       --disable-werror                   \
       --enable-kernel=3.2                \
       --with-headers=/usr/include        \
-      --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/usr/lib           \
+      libc_cv_slibdir=/lib           
 ```
-
-> Если вы используете раздельную структуру каталогов, то измените значение параметра `libc_cv_slibdir` на `/lib`: `libc_cv_slibdir=/lib`, и удалите параметр `--libexecdir=/usr/lib`.
-
 ### Для multilib
 
 Добавьте параметр `--enable-multi-arch`
