@@ -1492,7 +1492,7 @@
 		"size": "14.28",
 		"installedSize": 5.6,
 		"sbu": 0,
-		"sbu2": 1.1,
+		"sbu2": 1.8,
 		"scripts": [
 			"README.md",
 			"build",
@@ -1645,7 +1645,7 @@
 		"size": "17.86",
 		"installedSize": 165.1,
 		"sbu": 1.2,
-		"sbu2": 9.5,
+		"sbu2": 6.5,
 		"scripts": [
 			"README.md",
 			"build",
