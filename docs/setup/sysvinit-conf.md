@@ -68,7 +68,7 @@ EOF
 Для поиска нужной раскладки выполните:
 
 ```bash
-find /usr/share/keymaps --type f
+find /usr/share/keymaps -type f
 ```
 
 Для русской (на примере qwerty) это может быть:
