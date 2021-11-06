@@ -20,8 +20,8 @@ patch -Np1 -i ../glibc-2.34-fhs-1.patch
 Пакет Glibc требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
-mkdir  build
-cd     build
+mkdir -v build
+cd       build
 ```
 
 Убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
