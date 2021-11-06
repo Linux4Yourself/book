@@ -4,12 +4,13 @@
 
 ### Дополнительные необходимые файлы
 
-```bash 
 {{ include('../packages/mpc/.filename') }}
+
 {{ include('../packages/gmp/.filename') }}
+
 {{ include('../packages/mpfr/.filename') }}
+
 {{ include('../packages/isl/.filename') }}
-```
 
 Распакуйте дополнительные пакеты:
 
