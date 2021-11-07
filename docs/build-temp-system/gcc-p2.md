@@ -5,23 +5,13 @@
 
 ### Дополнительные необходимые файлы
 
-
-```bash 
 {{ include('../packages/mpc/.url') }}
-```
 
-```bash 
 {{ include('../packages/gmp/.url') }}
-```
 
-```bash 
 {{ include('../packages/mpfr/.url') }}
-```
 
-```bash 
 {{ include('../packages/isl/.url') }}
-```
-
 
 Распакуйте дополнительные пакеты:
 
