@@ -37,6 +37,7 @@ allPackages.forEach(pkg => {
 	fs.writeFileSync(`${dir}/.version`, pkg.version, 'utf-8');
 	fs.writeFileSync(`${dir}/.filename`, pkg.fileName, 'utf-8');
 	fs.writeFileSync(`${dir}/.name`, `${pkg.name}-${pkg.version}`, 'utf-8');
+	fs.writeFileSync(`${dir}/.name_short`, pkg.name, 'utf-8');
 
 	const downloadLink = `Оригинальное расположение: [${pkg.url}](${pkg.url})`;
 	const downloadLinkMirror = `Ссылка для загрузки: [${pkg.downloadUrl}](${pkg.downloadUrl})`;

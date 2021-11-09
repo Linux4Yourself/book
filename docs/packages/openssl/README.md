@@ -16,4 +16,4 @@ MD5: **43c5ab628b7ab899d7cd4a4c7fe4067f**
 
 Домашняя страница: [https://www.openssl.org/](https://www.openssl.org/)
 
-SBU: **1.1**
+SBU: **1.8**

@@ -3,30 +3,18 @@
 
 ## Подготовка
 
-### Дополнительные необходимые файлы
-
-{{ include('../packages/mpc/.url') }}
-
-{{ include('../packages/gmp/.url') }}
-
-{{ include('../packages/mpfr/.url') }}
-
-{{ include('../packages/isl/.url') }}
-
-Распакуйте дополнительные пакеты:
-
 ???+ warning "Предупреждение"
-	 Обратите внимание, что распаковка указанных пакетов должна производится из каталога пакета GCC.
+	Распаковка указанных пакетов должна производиться из каталога `{{ include('../packages/gcc/.name') }}`. Проверьте текущее местоположение, прежде чем выполнить команды ниже.
 
 ```bash
 tar -xf ../{{ include('../packages/mpfr/.filename') }}
-mv -v {{ include('../packages/mpfr/.filename') }} mpfr
+mv -v {{ include('../packages/mpfr/.name') }} {{ include('../packages/mpfr/.name_short') }}
 tar -xf ../{{ include('../packages/gmp/.filename') }}
-mv -v {{ include('../packages/gmp/.filename') }} gmp
+mv -v {{ include('../packages/gmp/.name') }} {{ include('../packages/gmp/.name_short') }}
 tar -xf ../{{ include('../packages/mpc/.filename') }}
-mv -v {{ include('../packages/mpc/.filename') }} mpc
+mv -v {{ include('../packages/mpc/.name') }} {{ include('../packages/mpc/.name_short') }}
 tar -xf ../{{ include('../packages/isl/.filename') }}
-mv -v {{ include('../packages/isl/.filename') }} isl
+mv -v {{ include('../packages/isl/.name') }} {{ include('../packages/isl/.name_short') }}
 ```
 
 Смените пути установки библиотек:
