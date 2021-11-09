@@ -35,7 +35,7 @@ https://lx4u.ru/downloads/packages/gzip-1.11.tar.xz
 https://lx4u.ru/downloads/packages/iana-etc-20211004.tar.gz
 https://lx4u.ru/downloads/packages/inetutils-2.2.tar.xz
 https://lx4u.ru/downloads/packages/intltool-0.51.0.tar.gz
-https://lx4u.ru/downloads/packages/iproute2-5.14.0.tar.xz
+https://lx4u.ru/downloads/packages/iproute2-5.15.0.tar.xz
 https://lx4u.ru/downloads/packages/isl-0.24.tar.xz
 https://lx4u.ru/downloads/packages/kbd-2.4.0.tar.xz
 https://lx4u.ru/downloads/packages/kmod-29.tar.xz
@@ -43,9 +43,9 @@ https://lx4u.ru/downloads/packages/less-590.tar.gz
 https://lx4u.ru/downloads/packages/bootscripts.tar.xz
 https://lx4u.ru/downloads/packages/libcap-2.60.tar.xz
 https://lx4u.ru/downloads/packages/libffi-3.4.2.tar.gz
-https://lx4u.ru/downloads/packages/libpipeline-1.5.3.tar.gz
+https://lx4u.ru/downloads/packages/libpipeline-1.5.4.tar.gz
 https://lx4u.ru/downloads/packages/libtool-2.4.6.tar.xz
-https://lx4u.ru/downloads/packages/linux-5.14.14.tar.xz
+https://lx4u.ru/downloads/packages/linux-5.15.1.tar.xz
 https://lx4u.ru/downloads/packages/m4-1.4.19.tar.xz
 https://lx4u.ru/downloads/packages/make-4.3.tar.gz
 https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz
@@ -53,7 +53,7 @@ https://lx4u.ru/downloads/packages/man-pages-5.13.tar.xz
 https://lx4u.ru/downloads/packages/meson-0.60.1.tar.gz
 https://lx4u.ru/downloads/packages/mpc-1.2.1.tar.gz
 https://lx4u.ru/downloads/packages/mpfr-4.1.0.tar.xz
-https://lx4u.ru/downloads/packages/ncurses-6.2.tar.gz
+https://lx4u.ru/downloads/packages/ncurses-6.3.tar.gz
 https://lx4u.ru/downloads/packages/ninja-1.10.2.tar.gz
 https://lx4u.ru/downloads/packages/openssl-3.0.0.tar.gz
 https://lx4u.ru/downloads/packages/patch-2.7.6.tar.xz
@@ -71,7 +71,7 @@ https://lx4u.ru/downloads/packages/Jinja2-3.0.2.tar.gz
 https://lx4u.ru/downloads/packages/systemd-stable-249.5.tar.gz
 https://lx4u.ru/downloads/packages/sysvinit-3.00.tar.xz
 https://lx4u.ru/downloads/packages/tar-1.34.tar.xz
-https://lx4u.ru/downloads/packages/tcl8.6.11-src.tar.gz
+https://lx4u.ru/downloads/packages/tcl8.6.12-src.tar.gz
 https://lx4u.ru/downloads/packages/texinfo-6.8.tar.xz
 https://lx4u.ru/downloads/packages/tzdata2021d.tar.gz
 https://lx4u.ru/downloads/packages/udev.tar.xz
