@@ -14,7 +14,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -43,7 +42,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -72,7 +70,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -96,7 +93,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -121,7 +117,6 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -148,7 +143,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -172,7 +166,6 @@
 		"sbu": 1,
 		"sbu2": 4.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -204,7 +197,6 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -231,7 +223,6 @@
 			"bzip2-patch"
 		],
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -262,7 +253,6 @@
 		"sbu": 0,
 		"sbu2": 4,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -289,7 +279,6 @@
 			"coreutils-patch"
 		],
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -316,7 +305,6 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -348,7 +336,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/dejagnu-1.6.3.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"configure",
 			"install",
 			"test"
@@ -369,7 +356,6 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -393,7 +379,6 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -422,7 +407,6 @@
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/emacs-27.2.tar.xz",
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -446,7 +430,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/elfutils-0.185.tar.bz2",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -476,7 +459,6 @@
 			"udev"
 		],
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -506,7 +488,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -537,7 +518,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/expect5.45.4.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -559,7 +539,6 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -583,7 +562,6 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -608,7 +586,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -633,7 +610,6 @@
 		"sbu": 0.3,
 		"sbu2": 0.3,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -659,7 +635,6 @@
 		"sbu": 14.8,
 		"sbu2": 25,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -686,7 +661,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -710,7 +684,6 @@
 		"sbu": 4.5,
 		"sbu2": 3,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -737,7 +710,6 @@
 			"glibc-patch"
 		],
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -770,7 +742,6 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -798,7 +769,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -822,7 +792,6 @@
 		"sbu": 0.2,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -846,7 +815,6 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install"
@@ -871,7 +839,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/grub-2.06.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"configure-mbr",
@@ -895,7 +862,6 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -920,7 +886,6 @@
 		"sbu": 0.01,
 		"sbu2": 0.01,
 		"scripts": [
-			"README.md",
 			"install"
 		],
 		"multilibSupport": false,
@@ -941,7 +906,6 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -966,7 +930,6 @@
 		"sbu": 0,
 		"sbu2": 0.01,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -979,20 +942,19 @@
 	},
 	{
 		"name": "iproute2",
-		"fileName": "iproute2-5.14.0.tar.xz",
+		"fileName": "iproute2-5.15.0.tar.xz",
 		"description": "Iproute2 — это набор программ для управления параметрами сетевых устройств в ядре Linux. Эти утилиты были разработаны в качестве унифицированного интерфейса к ядру Linux, которое непосредственно управляет сетевым трафиком. Iproute2 заменил полный набор классических сетевых утилит UNIX, которые ранее использовались для настройки сетевых интерфейсов, таблиц маршрутизации и управления arp‐таблицами: ifconfig, route, arp, netstat и других, предназначенных для создания IP‐туннелей. iproute2 предлагает унифицированный синтаксис для управления самыми разными аспектами сетевых интерфейсов.",
-		"url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.14.0.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.10.0.tar.xz",
 		"homeUrl": "https://wiki.linuxfoundation.org/networking/iproute2",
-		"version": "5.14.0",
+		"version": "5.15.0",
 		"releasesUrl": "https://www.kernel.org/pub/linux/utils/net/iproute2/",
 		"priority": "important",
-		"md5": "da53966eb3b08ac264f3e9df02e06bfa",
-		"size": "0.81",
+		"md5": "19ffea480a21e600453776b7225f3319",
+		"size": "0.76",
 		"installedSize": 2.3,
 		"sbu": 0,
 		"sbu2": 0.3,
 		"scripts": [
-			"README.md",
 			"build",
 			"install",
 			"install-doc",
@@ -1000,7 +962,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/iproute2-5.14.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/iproute2-5.15.0.tar.xz"
 	},
 	{
 		"name": "isl",
@@ -1017,7 +979,6 @@
 		"sbu": 0,
 		"sbu2": 0.7,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1045,7 +1006,6 @@
 			"kbd-patch"
 		],
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1071,7 +1031,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1100,7 +1059,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install"
@@ -1123,7 +1081,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"install"
 		],
 		"multilibSupport": false,
@@ -1144,7 +1101,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -1173,7 +1129,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1188,27 +1143,26 @@
 	},
 	{
 		"name": "libpipeline",
-		"fileName": "libpipeline-1.5.3.tar.gz",
+		"fileName": "libpipeline-1.5.4.tar.gz",
 		"description": "Библиотека для манипулирования подпроцессами гибким и удобным способом.",
-		"url": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz",
+		"url": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.4.tar.gz",
 		"homeUrl": "https://savannah.nongnu.org/projects/libpipeline",
-		"version": "1.5.3",
+		"version": "1.5.4",
 		"releasesUrl": "https://download.savannah.gnu.org/releases/libpipeline/",
 		"priority": "optional",
-		"md5": "dad443d0911cf9f0f1bd90a334bc9004",
-		"size": "0.95",
+		"md5": "67c6c1a3d4e3533b4d80cb3683fef970",
+		"size": "0.99",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/libpipeline-1.5.3.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/libpipeline-1.5.4.tar.gz"
 	},
 	{
 		"name": "libtool",
@@ -1225,7 +1179,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1241,22 +1194,20 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.14.14.tar.xz",
+		"fileName": "linux-5.15.1.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.14.14.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.1.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.14.14",
+		"version": "5.15.1",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "9646d53502447936773c65cac149572c",
-		"size": "115.12",
+		"md5": "c636e16efdff88320b5354b16d2a6eb1",
+		"size": "116.26",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.14.14.tar.xz",
-		"scripts": [
-			"README.md"
-		],
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.15.1.tar.xz",
+		"scripts": [],
 		"multilibSupport": false
 	},
 	{
@@ -1274,7 +1225,6 @@
 		"sbu": 0.1,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1299,7 +1249,6 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1323,7 +1272,6 @@
 		"sbu": 0,
 		"sbu2": 0.5,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1348,7 +1296,6 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/man-pages-5.13.tar.xz",
 		"scripts": [
-			"README.md",
 			"install"
 		],
 		"multilibSupport": false
@@ -1368,7 +1315,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"install",
 			"prepare"
@@ -1391,7 +1337,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1415,7 +1360,6 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1426,20 +1370,19 @@
 	},
 	{
 		"name": "ncurses",
-		"fileName": "ncurses-6.2.tar.gz",
+		"fileName": "ncurses-6.3.tar.gz",
 		"description": "Пакет содержит библиотеку, предназначенную для управления вводом-выводом на терминал. В числе прочего, библиотека позволяет задавать экранные координаты (в знакоместах) и цвет выводимых символов. Предоставляет программисту уровень абстракции, позволяющий не беспокоиться об аппаратных различиях терминалов и писать переносимый код. Он необходим для ряда пакетов.",
-		"url": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz",
+		"url": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.3.tar.gz",
 		"homeUrl": "https://www.gnu.org/software/ncurses",
-		"version": "6.2",
+		"version": "6.3",
 		"releasesUrl": "https://ftp.gnu.org/gnu/ncurses/",
 		"priority": "required",
-		"md5": "e812da327b1c2214ac1aed440ea3ae8d",
-		"size": "3.27",
+		"md5": "a2736befde5fee7d2b7eb45eb281cdbe",
+		"size": "3.42",
 		"installedSize": 3.4,
 		"sbu": 1.2,
 		"sbu2": 0.4,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1453,7 +1396,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/ncurses-6.2.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/ncurses-6.3.tar.gz"
 	},
 	{
 		"name": "ninja",
@@ -1470,7 +1413,6 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"install",
 			"prepare",
@@ -1494,7 +1436,6 @@
 		"sbu": 0,
 		"sbu2": 1.8,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1522,7 +1463,6 @@
 		"sbu": 0.1,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1546,7 +1486,6 @@
 		"sbu": 1.9,
 		"sbu2": 2,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1573,7 +1512,6 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1597,7 +1535,6 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1623,7 +1560,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1647,7 +1583,6 @@
 		"sbu": 1.2,
 		"sbu2": 6.5,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1671,7 +1606,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1702,7 +1636,6 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"build-doc",
 			"configure",
@@ -1728,7 +1661,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1754,7 +1686,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -1781,7 +1712,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"install"
 		],
@@ -1803,7 +1733,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"install"
 		],
 		"multilibSupport": false,
@@ -1824,7 +1753,6 @@
 		"sbu": 0,
 		"sbu2": 1.3,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1857,7 +1785,6 @@
 			"sysvinit-patch"
 		],
 		"scripts": [
-			"README.md",
 			"build",
 			"install",
 			"patch"
@@ -1880,7 +1807,6 @@
 		"sbu": 0.4,
 		"sbu2": 0.4,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1891,22 +1817,21 @@
 	},
 	{
 		"name": "tcl",
-		"fileName": "tcl8.6.11-src.tar.gz",
+		"fileName": "tcl8.6.12-src.tar.gz",
 		"description": "Пакет содержит 'командный язык инструментов' - скриптовый язык высокого уровня. Он необходим для выполнения тестов некоторых пакетов, и будет установлен только во временный инструментарий.",
-		"url": "https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz",
+		"url": "https://downloads.sourceforge.net/tcl/tcl8.6.12-src.tar.gz",
 		"homeUrl": "https://sourceforge.net/projects/tcl",
-		"version": "8.6.11",
+		"version": "8.6.12",
 		"releasesUrl": "https://downloads.sourceforge.net/tcl",
 		"priority": "optional",
-		"md5": "8a4c004f48984a03a7747e9ba06e4da4",
-		"size": "9.78",
+		"md5": "87ea890821d2221f2ab5157bc5eb885f",
+		"size": "9.87",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 3.8,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/tcl8.6.11-src.tar.gz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/tcl8.6.12-src.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1930,7 +1855,6 @@
 		"sbu": 0.3,
 		"sbu2": 0.7,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -1955,9 +1879,7 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/tzdata2021d.tar.gz",
-		"scripts": [
-			"README.md"
-		],
+		"scripts": [],
 		"multilibSupport": false
 	},
 	{
@@ -1975,9 +1897,7 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/udev.tar.xz",
-		"scripts": [
-			"README.md"
-		],
+		"scripts": [],
 		"multilibSupport": false
 	},
 	{
@@ -1995,7 +1915,6 @@
 		"sbu": 0.8,
 		"sbu2": 0.5,
 		"scripts": [
-			"README.md",
 			"build",
 			"build-systemd",
 			"configure",
@@ -2031,7 +1950,6 @@
 		"sbu": 0,
 		"sbu2": 2.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2057,7 +1975,6 @@
 		"sbu": 0,
 		"sbu2": 0.2,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2082,7 +1999,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2106,7 +2022,6 @@
 		"sbu": 0.2,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -2136,7 +2051,6 @@
 		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"configure",
@@ -2168,7 +2082,6 @@
 		"sbu": 0,
 		"sbu2": 1,
 		"scripts": [
-			"README.md",
 			"build",
 			"cldirs",
 			"install",
@@ -2198,7 +2111,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/popt-1.18.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2222,7 +2134,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/freetype-2.11.0.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2250,7 +2161,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37.tar.bz2",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"install",
 			"patch"
@@ -2273,7 +2183,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efibootmgr-17.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"install",
 			"prepare"
@@ -2296,7 +2205,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/dosfstools-4.2.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install"
@@ -2318,7 +2226,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/wget-1.21.2.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install"
@@ -2340,7 +2247,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/libtasn1-4.17.0.tar.gz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2367,7 +2273,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/p11-kit-0.24.0.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"build",
 			"configure",
 			"install",
@@ -2396,7 +2301,6 @@
 		"downloadUrl": "https://lx4u.ru/downloads/packages/make-ca-1.9.tar.xz",
 		"multilibSupport": false,
 		"scripts": [
-			"README.md",
 			"install",
 			"postinstall",
 			"postinstall-systemd"
@@ -2418,9 +2322,7 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch",
 		"multilibSupport": false,
-		"scripts": [
-			"README.md"
-		]
+		"scripts": []
 	},
 	{
 		"name": "coreutils-patch",
@@ -2438,9 +2340,7 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch",
 		"multilibSupport": false,
-		"scripts": [
-			"README.md"
-		]
+		"scripts": []
 	},
 	{
 		"name": "glibc-patch",
@@ -2458,9 +2358,7 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch",
 		"multilibSupport": false,
-		"scripts": [
-			"README.md"
-		]
+		"scripts": []
 	},
 	{
 		"name": "kbd-patch",
@@ -2478,9 +2376,7 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch",
 		"multilibSupport": false,
-		"scripts": [
-			"README.md"
-		]
+		"scripts": []
 	},
 	{
 		"name": "sysvinit-patch",
@@ -2498,9 +2394,7 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch",
 		"multilibSupport": false,
-		"scripts": [
-			"README.md"
-		]
+		"scripts": []
 	},
 	{
 		"name": "efivar-patch",
@@ -2518,9 +2412,7 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch",
 		"multilibSupport": false,
-		"scripts": [
-			"README.md"
-		]
+		"scripts": []
 	},
 	{
 		"name": "binutils-2.37-upstream_fix-1",
@@ -2538,9 +2430,7 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch",
 		"multilibSupport": false,
-		"scripts": [
-			"README.md"
-		]
+		"scripts": []
 	},
 	{
 		"name": "perl-5.34.0-upstream_fixes-1",
@@ -2558,8 +2448,6 @@
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch",
 		"multilibSupport": false,
-		"scripts": [
-			"README.md"
-		]
+		"scripts": []
 	}
 ]

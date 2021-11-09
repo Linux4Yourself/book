@@ -44,7 +44,7 @@ packages.forEach(pkg => {
 			const scripts = [];
 
 			fs.readdirSync(pkgScriptsFolder).forEach(file => {
-				if (!file.startsWith('.')) {
+				if (!file.startsWith('.') && !file.startsWith('README')) {
 					const stats = fs.statSync(`${pkgScriptsFolder}/${file}`)
 					const fileSizeInBytes = stats.size;
 					if (fileSizeInBytes > 0) {
