@@ -2,33 +2,20 @@
 
 ## Подготовка
 
-### Дополнительные необходимые файлы
-
-{{ include('../packages/mpc/.filename') }}
-
-{{ include('../packages/gmp/.filename') }}
-
-{{ include('../packages/mpfr/.filename') }}
-
-{{ include('../packages/isl/.filename') }}
-
-Распакуйте дополнительные пакеты:
-
 
 ???+ warning "Предупреждение"
-	Распаковка указанных ниже пакетов должна производиться из каталога `{{ include('../packages/gcc/.name') }}`. Проверьте текущее местоположение, прежде чем выполнить команды ниже.
+	Распаковка указанных пакетов должна производиться из каталога `{{ include('../packages/gcc/.name') }}`. Проверьте текущее местоположение, прежде чем выполнить команды ниже.
 
 ```bash
 tar -xf ../{{ include('../packages/mpfr/.filename') }}
-mv -v {{ include('../packages/mpfr/.name') }} mpfr
+mv -v {{ include('../packages/mpfr/.name') }} {{ include('../packages/mpfr/.name_short') }}
 tar -xf ../{{ include('../packages/gmp/.filename') }}
-mv -v {{ include('../packages/gmp/.name') }} gmp
+mv -v {{ include('../packages/gmp/.name') }} {{ include('../packages/gmp/.name_short') }}
 tar -xf ../{{ include('../packages/mpc/.filename') }}
-mv -v {{ include('../packages/mpc/.name') }} mpc
+mv -v {{ include('../packages/mpc/.name') }} {{ include('../packages/mpc/.name_short') }}
 tar -xf ../{{ include('../packages/isl/.filename') }}
-mv -v {{ include('../packages/isl/.name') }} isl
+mv -v {{ include('../packages/isl/.name') }} {{ include('../packages/isl/.name_short') }}
 ```
-
 
 Смените пути установки библиотек:
 
