@@ -67,7 +67,7 @@ done
 online_usrbin="bash find strip"
 online_usrlib="libbfd-2.37.so
                libhistory.so.8.1
-               libncursesw.so.6.2
+               libncursesw.so.6.3
                libm.so.6
                libreadline.so.8.1
                libz.so.1.2.11.zlib-ng
