@@ -5,7 +5,7 @@ site_url: https://lx4u.ru/mkdocs/#
 
 repo_name: book
 repo_url: https://github.com/Linux4Yourself/book
-edit_url: edit/develop/docs/
+edit_uri: edit/develop/docs/
 
 theme:
   name: 'material'
