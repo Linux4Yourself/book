@@ -99,7 +99,7 @@
 - openssl-3.0.0
 - python-3.10
 - shadow-4.9
-- systemd-249.5
+- systemd-249.6
 - sysvinit-3.0
 - tcl-8.6.12
 - tzdata-2021e
