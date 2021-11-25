@@ -130,11 +130,11 @@
 	},
 	{
 		"name": "bc",
-		"fileName": "bc-5.1.1.tar.xz",
+		"fileName": "bc-5.2.1.tar.xz",
 		"description": "BC (basic calculator) — интерактивный интерпретатор Си-подобного языка, позволяет выполнять вычисления с произвольно заданной точностью. Часто используется как калькулятор в командной строке UNIX-подобных операционных систем.",
-		"url": "https://github.com/gavinhoward/bc/releases/download/5.1.1/bc-5.1.1.tar.xz",
+		"url": "https://github.com/gavinhoward/bc/releases/download/5.2.1/bc-5.2.1.tar.xz",
 		"homeUrl": "https://git.yzena.com/gavin/bc",
-		"version": "5.1.1",
+		"version": "5.2.1",
 		"releasesUrl": "https://git.yzena.com/gavin/bc/releases",
 		"priority": "important",
 		"md5": "1af1e124e5d1734e8770dc85e0af5cd6",
@@ -149,7 +149,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/bc-5.1.1.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/bc-5.2.1.tar.xz"
 	},
 	{
 		"name": "binutils",
@@ -415,11 +415,11 @@
 	},
 	{
 		"name": "elfutils",
-		"fileName": "elfutils-0.185.tar.bz2",
+		"fileName": "elfutils-0.186.tar.bz2",
 		"description": "Библиотека для обработки файлов формата ELF (Executable and Linkable Format — формат исполнимых и компонуемых файлов). Формат двоичных файлов, используемый во многих современных UNIX-подобных операционных системах, таких как FreeBSD, Linux, Solaris и др. Также этот формат используется и во многих других системах. Большинство утилит доступны в других пакетах, но эта библиотека необходима для сборки ядра Linux, используя конфигурацию по умолчанию (и наиболее эффективную).",
-		"url": "https://sourceware.org/ftp/elfutils/0.185/elfutils-0.185.tar.bz2",
+		"url": "https://sourceware.org/ftp/elfutils/0.186/elfutils-0.186.tar.bz2",
 		"homeUrl": "https://sourceware.org/elfutils/",
-		"version": "0.185",
+		"version": "0.186",
 		"releasesUrl": "https://sourceware.org/ftp/elfutils/",
 		"priority": "important",
 		"md5": "2b6e94c2eebc1f2194173e31bca9396e",
@@ -427,7 +427,7 @@
 		"installedSize": 0.16,
 		"sbu": 0.8,
 		"sbu2": 0.9,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/elfutils-0.185.tar.bz2",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/elfutils-0.186.tar.bz2",
 		"multilibSupport": false,
 		"scripts": [
 			"build",
@@ -873,11 +873,11 @@
 	},
 	{
 		"name": "iana-etc",
-		"fileName": "iana-etc-20211004.tar.gz",
+		"fileName": "iana-etc-20211115.tar.gz",
 		"description": "Пакет Iana-Etc содержит данные для сетевых служб и протоколов.",
-		"url": "https://github.com/Mic92/iana-etc/releases/download/20211004/iana-etc-20211004.tar.gz",
+		"url": "https://github.com/Mic92/iana-etc/releases/download/20211115/iana-etc-20211115.tar.gz",
 		"homeUrl": "https://www.iana.org/protocols",
-		"version": "20211004",
+		"version": "20211115",
 		"releasesUrl": "https://github.com/Mic92/iana-etc/releases/",
 		"priority": "required",
 		"md5": "7f174923f490329e2665ded727b1cc5c",
@@ -889,7 +889,7 @@
 			"install"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/iana-etc-20211004.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/iana-etc-20211115.tar.gz"
 	},
 	{
 		"name": "inetutils",
@@ -1088,11 +1088,11 @@
 	},
 	{
 		"name": "libcap",
-		"fileName": "libcap-2.60.tar.xz",
+		"fileName": "libcap-2.61.tar.xz",
 		"description": "Пакет Libcap реализует интерфейсы пользовательского пространства для возможностей POSIX 1003.1 e, доступных в ядрах Linux. Эти возможности представляют собой разделение привилегий All powerful root на набор различных привилегий.",
-		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.60.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.61.tar.xz",
 		"homeUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
-		"version": "2.60",
+		"version": "2.61",
 		"releasesUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
 		"priority": "important",
 		"md5": "1eaaf6af4e0ebd638cd876644c8c68c4",
@@ -1112,7 +1112,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.60.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.61.tar.xz"
 	},
 	{
 		"name": "libffi",
@@ -1194,11 +1194,11 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.15.1.tar.xz",
+		"fileName": "linux-5.15.5.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.1.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.5.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.15.1",
+		"version": "5.15.5",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
 		"md5": "c636e16efdff88320b5354b16d2a6eb1",
@@ -1206,7 +1206,7 @@
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.15.1.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.15.5.tar.xz",
 		"scripts": [],
 		"multilibSupport": false
 	},
@@ -1720,11 +1720,11 @@
 	},
 	{
 		"name": "jinja2",
-		"fileName": "Jinja2-3.0.2.tar.gz",
+		"fileName": "Jinja2-3.0.3.tar.gz",
 		"description": "Jinja2 - это модуль Python, который реализует язык шаблона Pythonic.",
-		"url": "https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.2.tar.gz",
+		"url": "https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.3.tar.gz",
 		"homeUrl": "https://jinja.palletsprojects.com/en/3.0.x/",
-		"version": "3.0.2",
+		"version": "3.0.3",
 		"releasesUrl": "https://github.com/pallets/jinja/releases",
 		"priority": "required",
 		"md5": "059f89375d7ea60eb7013f341f0b89e7",
@@ -1736,7 +1736,7 @@
 			"install"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/Jinja2-3.0.2.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/Jinja2-3.0.3.tar.gz"
 	},
 	{
 		"name": "systemd",
@@ -1866,11 +1866,11 @@
 	},
 	{
 		"name": "tzdata",
-		"fileName": "tzdata2021d.tar.gz",
+		"fileName": "tzdata2021e.tar.gz",
 		"description": "База данных часовых поясов.",
-		"url": "https://www.iana.org/time-zones/repository/releases/tzdata2021d.tar.gz",
+		"url": "https://www.iana.org/time-zones/repository/releases/tzdata2021e.tar.gz",
 		"homeUrl": "https://www.iana.org/time-zones",
-		"version": "2021d",
+		"version": "2021e",
 		"releasesUrl": "https://www.iana.org/time-zones/repository/releases/",
 		"priority": "optional",
 		"md5": "b68bf6c432102bea49fac1c6025e58c7",
@@ -1878,7 +1878,7 @@
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/tzdata2021d.tar.gz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/tzdata2021e.tar.gz",
 		"scripts": [],
 		"multilibSupport": false
 	},
@@ -1937,11 +1937,11 @@
 	},
 	{
 		"name": "vim",
-		"fileName": "vim-8.2.3565.tar.gz",
+		"fileName": "vim-8.2.3676.tar.gz",
 		"description": "Один из мощнейших текстовых редакторов с полной свободой настройки и автоматизации, возможными благодаря расширениям и надстройкам.",
-		"url": "https://github.com/vim/vim/archive/refs/tags/v8.2.3565.tar.gz",
+		"url": "https://github.com/vim/vim/archive/refs/tags/v8.2.3676.tar.gz",
 		"homeUrl": "https://www.vim.org/",
-		"version": "8.2.3565",
+		"version": "8.2.3676",
 		"releasesUrl": "https://github.com/vim/vim/releases",
 		"priority": "optional",
 		"md5": "79feec1ac9c4d1b65968247aca16475e",
@@ -1958,7 +1958,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.3565.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.3676.tar.gz"
 	},
 	{
 		"name": "nano",
