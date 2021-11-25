@@ -109,17 +109,17 @@ SBU: **0.3**
 
 BC (basic calculator) — интерактивный интерпретатор Си-подобного языка, позволяет выполнять вычисления с произвольно заданной точностью. Часто используется как калькулятор в командной строке UNIX-подобных операционных систем.
 
-Версия: **5.1.1**
+Версия: **5.2.1**
 
-Размер: **0.41Mb**
+Размер: **0.42Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://github.com/gavinhoward/bc/releases/download/5.1.1/bc-5.1.1.tar.xz](https://github.com/gavinhoward/bc/releases/download/5.1.1/bc-5.1.1.tar.xz)
+Оригинальное расположение: [https://github.com/gavinhoward/bc/releases/download/5.2.1/bc-5.2.1.tar.xz](https://github.com/gavinhoward/bc/releases/download/5.2.1/bc-5.2.1.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bc-5.1.1.tar.xz](https://lx4u.ru/downloads/packages/bc-5.1.1.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bc-5.2.1.tar.xz](https://lx4u.ru/downloads/packages/bc-5.2.1.tar.xz)
 
-MD5: **1af1e124e5d1734e8770dc85e0af5cd6**
+MD5: **19dbb20c3aba33acacec29edd0b2c46e**
 
 Домашняя страница: [https://git.yzena.com/gavin/bc](https://git.yzena.com/gavin/bc)
 
@@ -308,7 +308,7 @@ SBU: **0.2**
 
 Версия: **1.46.4**
 
-Размер: **9.07Mb**
+Размер: **0.00Mb**
 
 Приоритет: **Необходимый**
 
@@ -316,7 +316,7 @@ SBU: **0.2**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz](https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz)
 
-MD5: **bdd1034f33b10eebcf2aa2a9298dca33**
+MD5: **0ce57ce6ffe2dddb3618200fb8e5f89d**
 
 Домашняя страница: [https://sourceforge.net/projects/e2fsprogs/](https://sourceforge.net/projects/e2fsprogs/)
 
@@ -350,17 +350,17 @@ SBU: **0.6**
 
 Библиотека для обработки файлов формата ELF (Executable and Linkable Format — формат исполнимых и компонуемых файлов). Формат двоичных файлов, используемый во многих современных UNIX-подобных операционных системах, таких как FreeBSD, Linux, Solaris и др. Также этот формат используется и во многих других системах. Большинство утилит доступны в других пакетах, но эта библиотека необходима для сборки ядра Linux, используя конфигурацию по умолчанию (и наиболее эффективную).
 
-Версия: **0.185**
+Версия: **0.186**
 
-Размер: **8.76Mb**
+Размер: **8.80Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://sourceware.org/ftp/elfutils/0.185/elfutils-0.185.tar.bz2](https://sourceware.org/ftp/elfutils/0.185/elfutils-0.185.tar.bz2)
+Оригинальное расположение: [https://sourceware.org/ftp/elfutils/0.186/elfutils-0.186.tar.bz2](https://sourceware.org/ftp/elfutils/0.186/elfutils-0.186.tar.bz2)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/elfutils-0.185.tar.bz2](https://lx4u.ru/downloads/packages/elfutils-0.185.tar.bz2)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/elfutils-0.186.tar.bz2](https://lx4u.ru/downloads/packages/elfutils-0.186.tar.bz2)
 
-MD5: **2b6e94c2eebc1f2194173e31bca9396e**
+MD5: **2c095e31e35d6be7b3718477b6d52702**
 
 Домашняя страница: [https://sourceware.org/elfutils/](https://sourceware.org/elfutils/)
 
@@ -660,7 +660,7 @@ SBU: **0.1**
 
 Версия: **3.7**
 
-Размер: **1.57Mb**
+Размер: **0.00Mb**
 
 Приоритет: **Необходимый**
 
@@ -668,7 +668,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/grep-3.7.tar.xz](https://lx4u.ru/downloads/packages/grep-3.7.tar.xz)
 
-MD5: **7c9cca97fa18670a21e72638c3e1dabf**
+MD5: **d45af87c3d9d3ddbe11cac971e11236c**
 
 Домашняя страница: [https://gnu.org/software/grep](https://gnu.org/software/grep)
 
@@ -746,17 +746,17 @@ SBU: **0.1**
 
 Пакет Iana-Etc содержит данные для сетевых служб и протоколов.
 
-Версия: **20211004**
+Версия: **20211115**
 
 Размер: **0.57Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/Mic92/iana-etc/releases/download/20211004/iana-etc-20211004.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20211004/iana-etc-20211004.tar.gz)
+Оригинальное расположение: [https://github.com/Mic92/iana-etc/releases/download/20211115/iana-etc-20211115.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20211115/iana-etc-20211115.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20211004.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20211004.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20211115.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20211115.tar.gz)
 
-MD5: **7f174923f490329e2665ded727b1cc5c**
+MD5: **8521ee3288b7d86e73eb8a6cb1852350**
 
 Домашняя страница: [https://www.iana.org/protocols](https://www.iana.org/protocols)
 
@@ -811,17 +811,17 @@ SBU: **0.01**
 
 Iproute2 — это набор программ для управления параметрами сетевых устройств в ядре Linux. Эти утилиты были разработаны в качестве унифицированного интерфейса к ядру Linux, которое непосредственно управляет сетевым трафиком. Iproute2 заменил полный набор классических сетевых утилит UNIX, которые ранее использовались для настройки сетевых интерфейсов, таблиц маршрутизации и управления arp‐таблицами: ifconfig, route, arp, netstat и других, предназначенных для создания IP‐туннелей. iproute2 предлагает унифицированный синтаксис для управления самыми разными аспектами сетевых интерфейсов.
 
-Версия: **5.14.0**
+Версия: **5.15.0**
 
-Размер: **0.81Mb**
+Размер: **0.82Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.14.0.tar.xz](https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.14.0.tar.xz)
+Оригинальное расположение: [https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.15.0.tar.xz](https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.15.0.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iproute2-5.14.0.tar.xz](https://lx4u.ru/downloads/packages/iproute2-5.14.0.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iproute2-5.15.0.tar.xz](https://lx4u.ru/downloads/packages/iproute2-5.15.0.tar.xz)
 
-MD5: **da53966eb3b08ac264f3e9df02e06bfa**
+MD5: **8a598a61c054a3ce538b47c40b010552**
 
 Домашняя страница: [https://wiki.linuxfoundation.org/networking/iproute2](https://wiki.linuxfoundation.org/networking/iproute2)
 
@@ -926,7 +926,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bootscripts.tar.xz](https://lx4u.ru/downloads/packages/bootscripts.tar.xz)
 
-MD5: **faf24817c9a69daf365a83d425b4fbd4**
+MD5: **4f2a2b6159a437d1e89961b0231eaab0**
 
 Домашняя страница: [https://github.com/Linux4Yourself/bootscripts](https://github.com/Linux4Yourself/bootscripts)
 
@@ -937,17 +937,17 @@ SBU: **0.1**
 
 Пакет Libcap реализует интерфейсы пользовательского пространства для возможностей POSIX 1003.1 e, доступных в ядрах Linux. Эти возможности представляют собой разделение привилегий All powerful root на набор различных привилегий.
 
-Версия: **2.60**
+Версия: **2.61**
 
-Размер: **0.16Mb**
+Размер: **0.17Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.60.tar.xz](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.60.tar.xz)
+Оригинальное расположение: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.61.tar.xz](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.61.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libcap-2.60.tar.xz](https://lx4u.ru/downloads/packages/libcap-2.60.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libcap-2.61.tar.xz](https://lx4u.ru/downloads/packages/libcap-2.61.tar.xz)
 
-MD5: **1eaaf6af4e0ebd638cd876644c8c68c4**
+MD5: **3bf105e47a8671035a0ce0812185c5e4**
 
 Домашняя страница: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/)
 
@@ -979,17 +979,17 @@ SBU: **0.1**
 
 Библиотека для манипулирования подпроцессами гибким и удобным способом.
 
-Версия: **1.5.3**
+Версия: **1.5.4**
 
-Размер: **0.95Mb**
+Размер: **0.99Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz](https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz)
+Оригинальное расположение: [https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.4.tar.gz](https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.4.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libpipeline-1.5.3.tar.gz](https://lx4u.ru/downloads/packages/libpipeline-1.5.3.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libpipeline-1.5.4.tar.gz](https://lx4u.ru/downloads/packages/libpipeline-1.5.4.tar.gz)
 
-MD5: **dad443d0911cf9f0f1bd90a334bc9004**
+MD5: **67c6c1a3d4e3533b4d80cb3683fef970**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/libpipeline](https://savannah.nongnu.org/projects/libpipeline)
 
@@ -1021,17 +1021,17 @@ SBU: **0.1**
 
 Ядро операционной системы.
 
-Версия: **5.14.14**
+Версия: **5.15.5**
 
-Размер: **115.12Mb**
+Размер: **116.28Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.14.14.tar.xz](https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.14.14.tar.xz)
+Оригинальное расположение: [https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.5.tar.xz](https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.5.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/linux-5.14.14.tar.xz](https://lx4u.ru/downloads/packages/linux-5.14.14.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/linux-5.15.5.tar.xz](https://lx4u.ru/downloads/packages/linux-5.15.5.tar.xz)
 
-MD5: **9646d53502447936773c65cac149572c**
+MD5: **3b3c90c96227030643ff4c1c191e415e**
 
 Домашняя страница: [https://www.kernel.org](https://www.kernel.org)
 
@@ -1191,17 +1191,17 @@ SBU: **0.2**
 
 Пакет содержит библиотеку, предназначенную для управления вводом-выводом на терминал. В числе прочего, библиотека позволяет задавать экранные координаты (в знакоместах) и цвет выводимых символов. Предоставляет программисту уровень абстракции, позволяющий не беспокоиться об аппаратных различиях терминалов и писать переносимый код. Он необходим для ряда пакетов.
 
-Версия: **6.2**
+Версия: **6.3**
 
-Размер: **3.27Mb**
+Размер: **3.42Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz](https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz)
+Оригинальное расположение: [https://ftp.gnu.org/gnu/ncurses/ncurses-6.3.tar.gz](https://ftp.gnu.org/gnu/ncurses/ncurses-6.3.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/ncurses-6.2.tar.gz](https://lx4u.ru/downloads/packages/ncurses-6.2.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/ncurses-6.3.tar.gz](https://lx4u.ru/downloads/packages/ncurses-6.3.tar.gz)
 
-MD5: **e812da327b1c2214ac1aed440ea3ae8d**
+MD5: **a2736befde5fee7d2b7eb45eb281cdbe**
 
 Домашняя страница: [https://www.gnu.org/software/ncurses](https://www.gnu.org/software/ncurses)
 
@@ -1495,17 +1495,17 @@ SBU: **0.1**
 
 Jinja2 - это модуль Python, который реализует язык шаблона Pythonic.
 
-Версия: **3.0.2**
+Версия: **3.0.3**
 
 Размер: **0.26Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.2.tar.gz](https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.2.tar.gz)
+Оригинальное расположение: [https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.3.tar.gz](https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.3.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/Jinja2-3.0.2.tar.gz](https://lx4u.ru/downloads/packages/Jinja2-3.0.2.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/Jinja2-3.0.3.tar.gz](https://lx4u.ru/downloads/packages/Jinja2-3.0.3.tar.gz)
 
-MD5: **059f89375d7ea60eb7013f341f0b89e7**
+MD5: **b76ae2f0647abebc81e7c03f5fb7b00f**
 
 Домашняя страница: [https://jinja.palletsprojects.com/en/3.0.x/](https://jinja.palletsprojects.com/en/3.0.x/)
 
@@ -1516,17 +1516,17 @@ SBU: **0.1**
 
 Системный менеджер, демон инициализации других демонов в Linux, пришедший на замену используемому ранее SystemVInit. Его особенностью является интенсивное распараллеливание запуска служб в процессе загрузки системы, что позволяет существенно ускорить запуск операционной системы. Systemd используется во многих коммерческих дистрибутивах.
 
-Версия: **249.5**
+Версия: **249.6**
 
 Размер: **10.11Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/systemd/systemd-stable/archive/refs/tags/v249.5.tar.gz](https://github.com/systemd/systemd-stable/archive/refs/tags/v249.5.tar.gz)
+Оригинальное расположение: [https://github.com/systemd/systemd-stable/archive/refs/tags/v249.6.tar.gz](https://github.com/systemd/systemd-stable/archive/refs/tags/v249.6.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/systemd-stable-249.5.tar.gz](https://lx4u.ru/downloads/packages/systemd-stable-249.5.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/systemd-stable-249.6.tar.gz](https://lx4u.ru/downloads/packages/systemd-stable-249.6.tar.gz)
 
-MD5: **bd8fccd7a5c5672fed1937f8fd228cba**
+MD5: **eb4a1923009abdb4e25c4802f4921a18**
 
 Домашняя страница: [https://systemd.io/](https://systemd.io/)
 
@@ -1581,17 +1581,17 @@ SBU: **0.4**
 
 Пакет содержит 'командный язык инструментов' - скриптовый язык высокого уровня. Он необходим для выполнения тестов некоторых пакетов, и будет установлен только во временный инструментарий.
 
-Версия: **8.6.11**
+Версия: **8.6.12**
 
-Размер: **9.78Mb**
+Размер: **9.87Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz](https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz)
+Оригинальное расположение: [https://downloads.sourceforge.net/tcl/tcl8.6.12-src.tar.gz](https://downloads.sourceforge.net/tcl/tcl8.6.12-src.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/tcl8.6.11-src.tar.gz](https://lx4u.ru/downloads/packages/tcl8.6.11-src.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/tcl8.6.12-src.tar.gz](https://lx4u.ru/downloads/packages/tcl8.6.12-src.tar.gz)
 
-MD5: **8a4c004f48984a03a7747e9ba06e4da4**
+MD5: **87ea890821d2221f2ab5157bc5eb885f**
 
 Домашняя страница: [https://sourceforge.net/projects/tcl](https://sourceforge.net/projects/tcl)
 
@@ -1625,17 +1625,17 @@ SBU: **0.7**
 
 База данных часовых поясов.
 
-Версия: **2021d**
+Версия: **2021e**
 
 Размер: **0.40Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://www.iana.org/time-zones/repository/releases/tzdata2021d.tar.gz](https://www.iana.org/time-zones/repository/releases/tzdata2021d.tar.gz)
+Оригинальное расположение: [https://www.iana.org/time-zones/repository/releases/tzdata2021e.tar.gz](https://www.iana.org/time-zones/repository/releases/tzdata2021e.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/tzdata2021d.tar.gz](https://lx4u.ru/downloads/packages/tzdata2021d.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/tzdata2021e.tar.gz](https://lx4u.ru/downloads/packages/tzdata2021e.tar.gz)
 
-MD5: **b68bf6c432102bea49fac1c6025e58c7**
+MD5: **4fdfad906ebc85fef30221c10964cce9**
 
 Домашняя страница: [https://www.iana.org/time-zones](https://www.iana.org/time-zones)
 
@@ -1686,17 +1686,17 @@ SBU: **0.5**
 
 Один из мощнейших текстовых редакторов с полной свободой настройки и автоматизации, возможными благодаря расширениям и надстройкам.
 
-Версия: **8.2.3565**
+Версия: **8.2.3676**
 
-Размер: **15.04Mb**
+Размер: **15.07Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://github.com/vim/vim/archive/refs/tags/v8.2.3565.tar.gz](https://github.com/vim/vim/archive/refs/tags/v8.2.3565.tar.gz)
+Оригинальное расположение: [https://github.com/vim/vim/archive/refs/tags/v8.2.3676.tar.gz](https://github.com/vim/vim/archive/refs/tags/v8.2.3676.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/vim-8.2.3565.tar.gz](https://lx4u.ru/downloads/packages/vim-8.2.3565.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/vim-8.2.3676.tar.gz](https://lx4u.ru/downloads/packages/vim-8.2.3676.tar.gz)
 
-MD5: **79feec1ac9c4d1b65968247aca16475e**
+MD5: **c91822aee14403d7e980420125b74bbf**
 
 Домашняя страница: [https://www.vim.org/](https://www.vim.org/)
 

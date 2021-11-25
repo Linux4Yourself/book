@@ -73,7 +73,7 @@
 ## Обновления пакетов
 
 - automake-1.16.5
-- bc-5.1.1
+- bc-5.2.1
 - bison-3.8.2
 - coreutils-9.0
 - dbus-1.13.18
@@ -86,23 +86,23 @@
 - glibc-2.34
 - grep-3.7
 - gzip-1.11
-- iana-etc-20211012
+- iana-etc-20211115
 - inetutils-2.2
 - iproute2-5.15.0
 - libpipeline-1.5.4
-- jinja-3.0.2
-- libcap-2.60
-- linux-5.15.1
+- jinja-3.0.3
+- libcap-2.61
+- linux-5.15.5
 - meson-0.60.1
 - nano-5.9
 - ncurses-6.3
 - openssl-3.0.0
 - python-3.10
 - shadow-4.9
-- systemd-249.5
+- systemd-249.6
 - sysvinit-3.0
 - tcl-8.6.12
-- tzdata-2021d
+- tzdata-2021e
 - util-linux-2.37.2
 - vim-8.2.3565
 - wget-1.21.2
