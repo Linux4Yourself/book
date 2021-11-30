@@ -90,9 +90,10 @@ make distclean
 ```bash
 CC="$LIN_TGT-gcc -m32"                   \
 CXX="$LIN_TGT-g++ -m32"                  \
-./configure --prefix=/usr                \
+DESTDIR=$LIN                             \
+./configure --prefix=/usr                  \
             --host=$LIN_TGT32            \
-            --build=$(./config.guess)    \
+            --build=$(./config.guess)     \
             --libdir=/usr/lib32          \
             --without-manpages           \
             --without-tests              \
@@ -102,7 +103,7 @@ CXX="$LIN_TGT-g++ -m32"                  \
             --without-debug              \
             --without-ada                \
             --without-normal             \
-            --enable-pc-files            \
+            --enable-pc-files             \
             --enable-widec               \
             --with-pkg-config-libdir=/usr/lib32/pkgconfig
 ```
