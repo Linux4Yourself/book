@@ -5,11 +5,10 @@
 ???+ warning "Предупреждение"
 
     По умолчанию gmp оптимизируется под ваш процессор. Для того чтобы её можно было запустить на другом процессоре, можете выполнить:
-
-```
-cp -v configfsf.guess config.guess
-cp -v configfsf.sub config.sub
-```
+    ```
+    cp -v configfsf.guess config.guess
+    cp -v configfsf.sub config.sub
+    ```
 
 ## Настройка
 
