@@ -4,12 +4,8 @@
 ## Настройка
 
 ```bash
-./configure --disable-static
+./configure --disable-static --prefix=/usr
 ```
-
-### Значения параметров
-
-`--disable-static` - так как это временный инструмент, то не требуется наличие общих библиотек, поэтому и нет необходимости их создавать.
 
 ## Сборка
 
@@ -20,5 +16,5 @@ make
 ## Установка
 
 ```bash
-make DESTDIR=/usr install
+make install
 ```
