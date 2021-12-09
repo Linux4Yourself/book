@@ -24,5 +24,5 @@ NUMA node0 CPU(s):               0-3
 При желании добавьте соответствующую переменную окружения, заменив `N` на нужное значение:
 
 ```bash
-echo "MAKEFLAGS=\"-jN\" " >> ~/.bashrc
+echo "export MAKEFLAGS=\"-jN\" " >> ~/.bashrc
 ```
