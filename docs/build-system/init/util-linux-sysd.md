@@ -57,8 +57,4 @@
 ```bash 
 {{ include('../packages/util-linux/multi_install-systemd') }}
 ```
-```bash 
-{{ include('../packages/util-linux/multi_install-systemd') }}
-```
-
 

@@ -8,6 +8,7 @@
 
 ## Изменения
 
+- Пакет Man-pages добавлен в оглавление
 - [Исправлено #968](https://github.com/Linux4Yourself/book/issues/968)
 - [Исправлено #955](https://github.com/Linux4Yourself/book/issues/955)
 - [Миграция на mkdocs](https://github.com/Linux4Yourself/book/issues/889)
@@ -91,13 +92,13 @@
 - iproute2-5.15.0
 - libpipeline-1.5.4
 - jinja-3.0.3
-- libcap-2.61
+- libcap-2.62
 - linux-5.15.5
 - meson-0.60.1
 - nano-5.9
 - ncurses-6.3
 - openssl-3.0.0
-- python-3.10
+- python-3.10.1
 - shadow-4.9
 - systemd-249.6
 - sysvinit-3.0

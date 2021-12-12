@@ -1088,14 +1088,14 @@
 	},
 	{
 		"name": "libcap",
-		"fileName": "libcap-2.61.tar.xz",
+		"fileName": "libcap-2.62.tar.xz",
 		"description": "Пакет Libcap реализует интерфейсы пользовательского пространства для возможностей POSIX 1003.1 e, доступных в ядрах Linux. Эти возможности представляют собой разделение привилегий All powerful root на набор различных привилегий.",
-		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.61.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.62.tar.xz",
 		"homeUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
-		"version": "2.61",
+		"version": "2.62",
 		"releasesUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
 		"priority": "important",
-		"md5": "3bf105e47a8671035a0ce0812185c5e4",
+		"md5": "342c7560ed2103899f6914d1de75a89f",
 		"size": "0.17",
 		"installedSize": 0.19,
 		"sbu": 0,
@@ -1112,7 +1112,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.61.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.62.tar.xz"
 	},
 	{
 		"name": "libffi",
@@ -1570,15 +1570,15 @@
 	},
 	{
 		"name": "python",
-		"fileName": "Python-3.10.0.tar.xz",
+		"fileName": "Python-3.10.1.tar.xz",
 		"description": "Высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода. Содержит среду разработки для объектно-ориентированного программирования, написания сценариев, прототипирования крупных программ и разработки полноценных приложений.",
-		"url": "https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz",
+		"url": "https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz",
 		"homeUrl": "https://www.python.org",
-		"version": "3.10.0",
+		"version": "3.10.1",
 		"releasesUrl": "https://www.python.org/ftp/python/",
 		"priority": "important",
-		"md5": "3e7035d272680f80e3ce4e8eb492d580",
-		"size": "17.86",
+		"md5": "789210934745a65247a3ebf5da9adb64",
+		"size": "17.91",
 		"installedSize": 165.1,
 		"sbu": 1.2,
 		"sbu2": 6.5,
@@ -1589,7 +1589,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/Python-3.10.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz"
 	},
 	{
 		"name": "readline",

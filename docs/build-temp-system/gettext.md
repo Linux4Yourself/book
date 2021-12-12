@@ -4,7 +4,7 @@
 ## Настройка
 
 ```bash
-./configure --disable-static --prefix=/usr
+./configure --prefix=/usr --disable-static
 ```
 
 ## Сборка
