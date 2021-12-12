@@ -937,17 +937,17 @@ SBU: **0.1**
 
 Пакет Libcap реализует интерфейсы пользовательского пространства для возможностей POSIX 1003.1 e, доступных в ядрах Linux. Эти возможности представляют собой разделение привилегий All powerful root на набор различных привилегий.
 
-Версия: **2.61**
+Версия: **2.62**
 
 Размер: **0.17Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.61.tar.xz](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.61.tar.xz)
+Оригинальное расположение: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.62.tar.xz](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.62.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libcap-2.61.tar.xz](https://lx4u.ru/downloads/packages/libcap-2.61.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libcap-2.62.tar.xz](https://lx4u.ru/downloads/packages/libcap-2.62.tar.xz)
 
-MD5: **3bf105e47a8671035a0ce0812185c5e4**
+MD5: **342c7560ed2103899f6914d1de75a89f**
 
 Домашняя страница: [https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/](https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/)
 
@@ -1365,17 +1365,17 @@ SBU: **0.1**
 
 Высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода. Содержит среду разработки для объектно-ориентированного программирования, написания сценариев, прототипирования крупных программ и разработки полноценных приложений.
 
-Версия: **3.10.0**
+Версия: **3.10.1**
 
-Размер: **17.86Mb**
+Размер: **17.91Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz](https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz)
+Оригинальное расположение: [https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz](https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/Python-3.10.0.tar.xz](https://lx4u.ru/downloads/packages/Python-3.10.0.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz](https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz)
 
-MD5: **3e7035d272680f80e3ce4e8eb492d580**
+MD5: **789210934745a65247a3ebf5da9adb64**
 
 Домашняя страница: [https://www.python.org](https://www.python.org)
 

@@ -154,6 +154,7 @@ nav:
         - Введение: build-system/build-system.md
         - Настройка окружения bash: build-system/set-profile.md
         - iana-etc: build-system/iana-etc.md
+        - man-pages: build-system/man-pages.md
         - glibc: build-system/glibc.md
         - zlib-ng: build-system/zlib.md
         - bzip2: build-system/bz2.md

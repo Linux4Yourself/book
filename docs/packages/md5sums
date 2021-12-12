@@ -41,7 +41,7 @@ fae030f604a9537adc2502990a8ab4d1 isl-0.24.tar.xz
 e81e63acd80697d001c8d85c1acb38a0 kmod-29.tar.xz
 f029087448357812fba450091a1172ab less-590.tar.gz
 4f2a2b6159a437d1e89961b0231eaab0 bootscripts.tar.xz
-3bf105e47a8671035a0ce0812185c5e4 libcap-2.61.tar.xz
+342c7560ed2103899f6914d1de75a89f libcap-2.62.tar.xz
 294b921e6cf9ab0fbaea4b639f8fdbe8 libffi-3.4.2.tar.gz
 67c6c1a3d4e3533b4d80cb3683fef970 libpipeline-1.5.4.tar.gz
 1bfb9b923f2c1339b4d2ce1807064aa5 libtool-2.4.6.tar.xz
@@ -61,7 +61,7 @@ df7ecb0653440b26dc951ad9dbfab517 perl-5.34.0.tar.xz
 f6e931e319531b736fadc017f470e68a pkg-config-0.29.2.tar.gz
 d60613e88c2f442ebd462b5a75313d56 procps-ng-3.3.17.tar.xz
 8114cd4489b95308efe2509c3a406bbf psmisc-23.4.tar.xz
-3e7035d272680f80e3ce4e8eb492d580 Python-3.10.0.tar.xz
+789210934745a65247a3ebf5da9adb64 Python-3.10.1.tar.xz
 e9557dd5b1409f5d7b37ef717c64518e readline-8.1.tar.gz
 6d906edfdb3202304059233f51f9a71d sed-4.8.tar.xz
 b3c150ebef96d46afd51ef244ef506c8 shadow-4.9.tar.gz
