@@ -35,8 +35,4 @@
 ```bash 
 {{ include('../packages/sed/install-doc') }}
 ```
-```bash 
-{{ include('../packages/sed/install-doc') }}
-```
-
 
