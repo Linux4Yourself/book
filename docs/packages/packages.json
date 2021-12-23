@@ -873,14 +873,14 @@
 	},
 	{
 		"name": "iana-etc",
-		"fileName": "iana-etc-20211115.tar.gz",
+		"fileName": "iana-etc-20211215.tar.gz",
 		"description": "Пакет Iana-Etc содержит данные для сетевых служб и протоколов.",
-		"url": "https://github.com/Mic92/iana-etc/releases/download/20211115/iana-etc-20211115.tar.gz",
+		"url": "https://github.com/Mic92/iana-etc/releases/download/20211215/iana-etc-20211215.tar.gz",
 		"homeUrl": "https://www.iana.org/protocols",
-		"version": "20211115",
+		"version": "20211215",
 		"releasesUrl": "https://github.com/Mic92/iana-etc/releases/",
 		"priority": "required",
-		"md5": "8521ee3288b7d86e73eb8a6cb1852350",
+		"md5": "30fae65143e88b07793b364c3be43aa4",
 		"size": "0.57",
 		"installedSize": 0.5,
 		"sbu": 0.01,
@@ -889,7 +889,7 @@
 			"install"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/iana-etc-20211115.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/iana-etc-20211215.tar.gz"
 	},
 	{
 		"name": "inetutils",
@@ -1194,19 +1194,19 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.15.5.tar.xz",
+		"fileName": "linux-5.15.11.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.5.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.11.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.15.5",
+		"version": "5.15.11",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "3b3c90c96227030643ff4c1c191e415e",
-		"size": "116.28",
+		"md5": "7fcbea316f8439d092040996295c8f9d",
+		"size": "116.31",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.15.5.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.15.11.tar.xz",
 		"scripts": [],
 		"multilibSupport": false
 	},
@@ -1302,15 +1302,15 @@
 	},
 	{
 		"name": "meson",
-		"fileName": "meson-0.60.1.tar.gz",
+		"fileName": "meson-0.60.3.tar.gz",
 		"description": "Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.",
-		"url": "https://github.com/mesonbuild/meson/releases/download/0.60.1/meson-0.60.1.tar.gz",
+		"url": "https://github.com/mesonbuild/meson/releases/download/0.60.3/meson-0.60.3.tar.gz",
 		"homeUrl": "https://mesonbuild.com",
-		"version": "0.60.1",
+		"version": "0.60.3",
 		"releasesUrl": "https://github.com/mesonbuild/meson/releases/",
 		"priority": "important",
-		"md5": "77e41dfa4bc456e03b674537b813328b",
-		"size": "1.90",
+		"md5": "03ddd7272d8cbb9f33269cb37a200d24",
+		"size": "1.91",
 		"installedSize": 5.3,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -1320,7 +1320,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.60.1.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.60.3.tar.gz"
 	},
 	{
 		"name": "mpc",
@@ -1423,15 +1423,15 @@
 	},
 	{
 		"name": "openssl",
-		"fileName": "openssl-3.0.0.tar.gz",
+		"fileName": "openssl-3.0.1.tar.gz",
 		"description": "Пакет содержит инструменты управления и библиотеки криптографии. Они полезны для предоставления криптографических функций к другим пакетам, таким как OpenSSH, почтовым приложениям и веб-браузерам (для доступа к сайтам по HTTPS).",
-		"url": "https://www.openssl.org/source/openssl-3.0.0.tar.gz",
+		"url": "https://www.openssl.org/source/openssl-3.0.1.tar.gz",
 		"homeUrl": "https://www.openssl.org/",
-		"version": "3.0.0",
+		"version": "3.0.1",
 		"releasesUrl": "https://www.openssl.org/source/",
 		"priority": "required",
-		"md5": "43c5ab628b7ab899d7cd4a4c7fe4067f",
-		"size": "14.28",
+		"md5": "7d07e849d77d276891edd579a8832bb3",
+		"size": "14.32",
 		"installedSize": 5.6,
 		"sbu": 0,
 		"sbu2": 1.8,
@@ -1446,7 +1446,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/openssl-3.0.0.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/openssl-3.0.1.tar.gz"
 	},
 	{
 		"name": "patch",
