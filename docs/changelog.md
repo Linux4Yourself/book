@@ -75,6 +75,8 @@
 - 
 ## Обновления пакетов
 
+- zstd-1.5.1
+- expat-2.4.2
 - automake-1.16.5
 - bc-5.2.1
 - bison-3.8.2
@@ -101,9 +103,9 @@
 - ncurses-6.3
 - openssl-3.0.1
 - python-3.10.1
-- shadow-4.9
-- systemd-249.6
-- sysvinit-3.0
+- shadow-4.10
+- systemd-250
+- sysvinit-3.01
 - tcl-8.6.12
 - tzdata-2021e
 - util-linux-2.37.2

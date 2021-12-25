@@ -12,6 +12,6 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch](https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch)
 
-MD5: **b45d3bea4ddb7f64b6e56033ecc0fb11**
+MD5: **19852fe67b6babb67bfae0b6db9ef732**
 
 Домашняя страница: []()

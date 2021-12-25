@@ -12,7 +12,7 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bootscripts.tar.xz](https://lx4u.ru/downloads/packages/bootscripts.tar.xz)
 
-MD5: **4f2a2b6159a437d1e89961b0231eaab0**
+MD5: **faf24817c9a69daf365a83d425b4fbd4**
 
 Домашняя страница: [https://github.com/Linux4Yourself/bootscripts](https://github.com/Linux4Yourself/bootscripts)
 

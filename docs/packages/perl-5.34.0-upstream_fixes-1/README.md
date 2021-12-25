@@ -12,6 +12,6 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch](https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch)
 
-MD5: **fb42558b59ed95ee00eb9f1c1c9b8056**
+MD5: **7474e7b403e7afde1e2e906bb1938686**
 
 Домашняя страница: []()

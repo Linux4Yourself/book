@@ -16,7 +16,7 @@ e2fsprogs-1.46.4.tar.gz
 emacs-27.2.tar.xz
 elfutils-0.186.tar.bz2
 eudev-3.2.10.tar.gz
-expat-2.4.1.tar.xz
+expat-2.4.2.tar.xz
 expect5.45.4.tar.gz
 file-5.41.tar.gz
 findutils-4.8.0.tar.xz
@@ -64,12 +64,12 @@ psmisc-23.4.tar.xz
 Python-3.10.1.tar.xz
 readline-8.1.tar.gz
 sed-4.8.tar.xz
-shadow-4.9.tar.gz
+shadow-4.10.tar.gz
 sysklogd-1.5.1.tar.gz
 MarkupSafe-2.0.1.tar.gz
 Jinja2-3.0.3.tar.gz
-systemd-stable-249.6.tar.gz
-sysvinit-3.00.tar.xz
+systemd-250.tar.gz
+sysvinit-3.01.tar.xz
 tar-1.34.tar.xz
 tcl8.6.12-src.tar.gz
 texinfo-6.8.tar.xz
@@ -81,7 +81,7 @@ nano-5.9.tar.xz
 XML-Parser-2.46.tar.gz
 xz-5.2.5.tar.xz
 zlib-ng-2.0.5.tar.gz
-zstd-1.5.0.tar.gz
+zstd-1.5.1.tar.gz
 popt-1.18.tar.gz
 freetype-2.11.0.tar.xz
 efivar-37.tar.bz2

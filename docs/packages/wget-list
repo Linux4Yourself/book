@@ -16,7 +16,7 @@ https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz
 https://lx4u.ru/downloads/packages/emacs-27.2.tar.xz
 https://lx4u.ru/downloads/packages/elfutils-0.186.tar.bz2
 https://lx4u.ru/downloads/packages/eudev-3.2.10.tar.gz
-https://lx4u.ru/downloads/packages/expat-2.4.1.tar.xz
+https://lx4u.ru/downloads/packages/expat-2.4.2.tar.xz
 https://lx4u.ru/downloads/packages/expect5.45.4.tar.gz
 https://lx4u.ru/downloads/packages/file-5.41.tar.gz
 https://lx4u.ru/downloads/packages/findutils-4.8.0.tar.xz
@@ -64,12 +64,12 @@ https://lx4u.ru/downloads/packages/psmisc-23.4.tar.xz
 https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz
 https://lx4u.ru/downloads/packages/readline-8.1.tar.gz
 https://lx4u.ru/downloads/packages/sed-4.8.tar.xz
-https://lx4u.ru/downloads/packages/shadow-4.9.tar.gz
+https://lx4u.ru/downloads/packages/shadow-4.10.tar.gz
 https://lx4u.ru/downloads/packages/sysklogd-1.5.1.tar.gz
 https://lx4u.ru/downloads/packages/MarkupSafe-2.0.1.tar.gz
 https://lx4u.ru/downloads/packages/Jinja2-3.0.3.tar.gz
-https://lx4u.ru/downloads/packages/systemd-stable-249.6.tar.gz
-https://lx4u.ru/downloads/packages/sysvinit-3.00.tar.xz
+https://lx4u.ru/downloads/packages/systemd-250.tar.gz
+https://lx4u.ru/downloads/packages/sysvinit-3.01.tar.xz
 https://lx4u.ru/downloads/packages/tar-1.34.tar.xz
 https://lx4u.ru/downloads/packages/tcl8.6.12-src.tar.gz
 https://lx4u.ru/downloads/packages/texinfo-6.8.tar.xz
@@ -81,7 +81,7 @@ https://lx4u.ru/downloads/packages/nano-5.9.tar.xz
 https://lx4u.ru/downloads/packages/XML-Parser-2.46.tar.gz
 https://lx4u.ru/downloads/packages/xz-5.2.5.tar.xz
 https://lx4u.ru/downloads/packages/zlib-ng-2.0.5.tar.gz
-https://lx4u.ru/downloads/packages/zstd-1.5.0.tar.gz
+https://lx4u.ru/downloads/packages/zstd-1.5.1.tar.gz
 https://lx4u.ru/downloads/packages/popt-1.18.tar.gz
 https://lx4u.ru/downloads/packages/freetype-2.11.0.tar.xz
 https://lx4u.ru/downloads/packages/efivar-37.tar.bz2

@@ -12,6 +12,6 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch](https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch)
 
-MD5: **3518fa864fe8d7ef65be4960f380b03b**
+MD5: **0d448d317d9df5e0ea2bf86fe4e84a3a**
 
 Домашняя страница: []()

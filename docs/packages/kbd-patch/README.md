@@ -12,6 +12,6 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch](https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch)
 
-MD5: **f75cca16a38da6caa7d52151f7136895**
+MD5: **3249eddfaf6138c9542d0b5165033d5d**
 
 Домашняя страница: []()
