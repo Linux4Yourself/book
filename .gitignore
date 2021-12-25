@@ -111,3 +111,4 @@ dist
 
 # mkdocs files
 site
+.idea
