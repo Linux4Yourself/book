@@ -291,7 +291,7 @@ nav:
         - Сборка ПО из исходного кода: additional/src-compiling.md
         - Решение ошибок сборки: additional/error-fix.md
         - Кросс-компилятор: additional/cross-compiler.md
-        - Виды популярных архитектур процессора: cpu-arch.md
+        - Виды популярных архитектур процессора: additional/cpu-arch.md
         - Типы разделов и каталогов: additional/partitions_catalogs.md
         - Выбор размера файла подкачки: additional/swap.md
         - Настройка zram: additional/zram.md

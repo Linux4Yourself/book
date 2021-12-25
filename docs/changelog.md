@@ -9,6 +9,7 @@
 ## Изменения
 
 - Пакет Man-pages добавлен в оглавление
+- [Исправлено #969](https://github.com/Linux4Yourself/book/issues/969)
 - [Исправлено #979](https://github.com/Linux4Yourself/book/issues/979)
 - [Исправлено #968](https://github.com/Linux4Yourself/book/issues/968)
 - [Исправлено #955](https://github.com/Linux4Yourself/book/issues/955)
