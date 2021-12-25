@@ -2,17 +2,17 @@
 
 Пакет содержит инструменты управления и библиотеки криптографии. Они полезны для предоставления криптографических функций к другим пакетам, таким как OpenSSH, почтовым приложениям и веб-браузерам (для доступа к сайтам по HTTPS).
 
-Версия: **3.0.0**
+Версия: **3.0.1**
 
-Размер: **14.28Mb**
+Размер: **14.32Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://www.openssl.org/source/openssl-3.0.0.tar.gz](https://www.openssl.org/source/openssl-3.0.0.tar.gz)
+Оригинальное расположение: [https://www.openssl.org/source/openssl-3.0.1.tar.gz](https://www.openssl.org/source/openssl-3.0.1.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/openssl-3.0.0.tar.gz](https://lx4u.ru/downloads/packages/openssl-3.0.0.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/openssl-3.0.1.tar.gz](https://lx4u.ru/downloads/packages/openssl-3.0.1.tar.gz)
 
-MD5: **43c5ab628b7ab899d7cd4a4c7fe4067f**
+MD5: **7d07e849d77d276891edd579a8832bb3**
 
 Домашняя страница: [https://www.openssl.org/](https://www.openssl.org/)
 

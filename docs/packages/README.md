@@ -308,7 +308,7 @@ SBU: **0.2**
 
 Версия: **1.46.4**
 
-Размер: **0.00Mb**
+Размер: **9.07Mb**
 
 Приоритет: **Необходимый**
 
@@ -316,7 +316,7 @@ SBU: **0.2**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz](https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz)
 
-MD5: **0ce57ce6ffe2dddb3618200fb8e5f89d**
+MD5: **bdd1034f33b10eebcf2aa2a9298dca33**
 
 Домашняя страница: [https://sourceforge.net/projects/e2fsprogs/](https://sourceforge.net/projects/e2fsprogs/)
 
@@ -394,17 +394,17 @@ SBU: **0.2**
 
 Expat - потокоориентированная библиотека парсинга XML, написанная на C. Как один из наиболее доступных XML парсеров, широко используется в открытом программном обеспечении.
 
-Версия: **2.4.1**
+Версия: **2.4.2**
 
-Размер: **0.42Mb**
+Размер: **0.43Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://prdownloads.sourceforge.net/expat/expat-2.4.1.tar.xz](https://prdownloads.sourceforge.net/expat/expat-2.4.1.tar.xz)
+Оригинальное расположение: [https://prdownloads.sourceforge.net/expat/expat-2.4.2.tar.xz](https://prdownloads.sourceforge.net/expat/expat-2.4.2.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/expat-2.4.1.tar.xz](https://lx4u.ru/downloads/packages/expat-2.4.1.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/expat-2.4.2.tar.xz](https://lx4u.ru/downloads/packages/expat-2.4.2.tar.xz)
 
-MD5: **a4fb91a9441bcaec576d4c4a56fa3aa6**
+MD5: **b49e50792ddb35165bab41413238f66e**
 
 Домашняя страница: [https://sourceforge.net/projects/expat](https://sourceforge.net/projects/expat)
 
@@ -660,7 +660,7 @@ SBU: **0.1**
 
 Версия: **3.7**
 
-Размер: **0.00Mb**
+Размер: **1.57Mb**
 
 Приоритет: **Необходимый**
 
@@ -668,7 +668,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/grep-3.7.tar.xz](https://lx4u.ru/downloads/packages/grep-3.7.tar.xz)
 
-MD5: **d45af87c3d9d3ddbe11cac971e11236c**
+MD5: **7c9cca97fa18670a21e72638c3e1dabf**
 
 Домашняя страница: [https://gnu.org/software/grep](https://gnu.org/software/grep)
 
@@ -746,17 +746,17 @@ SBU: **0.1**
 
 Пакет Iana-Etc содержит данные для сетевых служб и протоколов.
 
-Версия: **20211115**
+Версия: **20211215**
 
 Размер: **0.57Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/Mic92/iana-etc/releases/download/20211115/iana-etc-20211115.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20211115/iana-etc-20211115.tar.gz)
+Оригинальное расположение: [https://github.com/Mic92/iana-etc/releases/download/20211215/iana-etc-20211215.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20211215/iana-etc-20211215.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20211115.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20211115.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20211215.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20211215.tar.gz)
 
-MD5: **8521ee3288b7d86e73eb8a6cb1852350**
+MD5: **30fae65143e88b07793b364c3be43aa4**
 
 Домашняя страница: [https://www.iana.org/protocols](https://www.iana.org/protocols)
 
@@ -926,7 +926,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bootscripts.tar.xz](https://lx4u.ru/downloads/packages/bootscripts.tar.xz)
 
-MD5: **4f2a2b6159a437d1e89961b0231eaab0**
+MD5: **faf24817c9a69daf365a83d425b4fbd4**
 
 Домашняя страница: [https://github.com/Linux4Yourself/bootscripts](https://github.com/Linux4Yourself/bootscripts)
 
@@ -1021,17 +1021,17 @@ SBU: **0.1**
 
 Ядро операционной системы.
 
-Версия: **5.15.5**
+Версия: **5.15.11**
 
-Размер: **116.28Mb**
+Размер: **116.31Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.5.tar.xz](https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.5.tar.xz)
+Оригинальное расположение: [https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.11.tar.xz](https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.11.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/linux-5.15.5.tar.xz](https://lx4u.ru/downloads/packages/linux-5.15.5.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/linux-5.15.11.tar.xz](https://lx4u.ru/downloads/packages/linux-5.15.11.tar.xz)
 
-MD5: **3b3c90c96227030643ff4c1c191e415e**
+MD5: **7fcbea316f8439d092040996295c8f9d**
 
 Домашняя страница: [https://www.kernel.org](https://www.kernel.org)
 
@@ -1090,7 +1090,7 @@ SBU: **0.1**
 
 Версия: **2.9.4**
 
-Размер: **1.82Mb**
+Размер: **1.27Mb**
 
 Приоритет: **Необязательный**
 
@@ -1098,7 +1098,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz](https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz)
 
-MD5: **6e233a555f7b9ae91ce7cd0faa322bce**
+MD5: **aca67fc0757c9bb423f17d666e178d2f**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/man-db](https://savannah.nongnu.org/projects/man-db)
 
@@ -1128,17 +1128,17 @@ MD5: **3ac24e8c6fae26b801cb87ceb63c0a30**
 
 Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.
 
-Версия: **0.60.1**
+Версия: **0.60.3**
 
-Размер: **1.90Mb**
+Размер: **1.91Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://github.com/mesonbuild/meson/releases/download/0.60.1/meson-0.60.1.tar.gz](https://github.com/mesonbuild/meson/releases/download/0.60.1/meson-0.60.1.tar.gz)
+Оригинальное расположение: [https://github.com/mesonbuild/meson/releases/download/0.60.3/meson-0.60.3.tar.gz](https://github.com/mesonbuild/meson/releases/download/0.60.3/meson-0.60.3.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/meson-0.60.1.tar.gz](https://lx4u.ru/downloads/packages/meson-0.60.1.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/meson-0.60.3.tar.gz](https://lx4u.ru/downloads/packages/meson-0.60.3.tar.gz)
 
-MD5: **77e41dfa4bc456e03b674537b813328b**
+MD5: **03ddd7272d8cbb9f33269cb37a200d24**
 
 Домашняя страница: [https://mesonbuild.com](https://mesonbuild.com)
 
@@ -1235,17 +1235,17 @@ SBU: **0.2**
 
 Пакет содержит инструменты управления и библиотеки криптографии. Они полезны для предоставления криптографических функций к другим пакетам, таким как OpenSSH, почтовым приложениям и веб-браузерам (для доступа к сайтам по HTTPS).
 
-Версия: **3.0.0**
+Версия: **3.0.1**
 
-Размер: **14.28Mb**
+Размер: **14.32Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://www.openssl.org/source/openssl-3.0.0.tar.gz](https://www.openssl.org/source/openssl-3.0.0.tar.gz)
+Оригинальное расположение: [https://www.openssl.org/source/openssl-3.0.1.tar.gz](https://www.openssl.org/source/openssl-3.0.1.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/openssl-3.0.0.tar.gz](https://lx4u.ru/downloads/packages/openssl-3.0.0.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/openssl-3.0.1.tar.gz](https://lx4u.ru/downloads/packages/openssl-3.0.1.tar.gz)
 
-MD5: **43c5ab628b7ab899d7cd4a4c7fe4067f**
+MD5: **7d07e849d77d276891edd579a8832bb3**
 
 Домашняя страница: [https://www.openssl.org/](https://www.openssl.org/)
 
@@ -1432,17 +1432,17 @@ SBU: **0.1**
 
 Пакет Shadow содержит программы для работы с паролями безопасным способом.
 
-Версия: **4.9**
+Версия: **4.10**
 
-Размер: **3.78Mb**
+Размер: **3.95Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/shadow-maint/shadow/releases/download/v4.9/shadow-4.9.tar.gz](https://github.com/shadow-maint/shadow/releases/download/v4.9/shadow-4.9.tar.gz)
+Оригинальное расположение: [https://github.com/shadow-maint/shadow/releases/download/v4.10/shadow-4.10.tar.gz](https://github.com/shadow-maint/shadow/releases/download/v4.10/shadow-4.10.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/shadow-4.9.tar.gz](https://lx4u.ru/downloads/packages/shadow-4.9.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/shadow-4.10.tar.gz](https://lx4u.ru/downloads/packages/shadow-4.10.tar.gz)
 
-MD5: **b3c150ebef96d46afd51ef244ef506c8**
+MD5: **5ea8b8f1304778a850c8139fafc988d8**
 
 Домашняя страница: [https://shadow-maint.github.io/shadow/](https://shadow-maint.github.io/shadow/)
 
@@ -1518,15 +1518,15 @@ SBU: **0.1**
 
 Версия: **249.6**
 
-Размер: **10.11Mb**
+Размер: **10.60Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/systemd/systemd-stable/archive/refs/tags/v249.6.tar.gz](https://github.com/systemd/systemd-stable/archive/refs/tags/v249.6.tar.gz)
+Оригинальное расположение: [https://github.com/systemd/systemd/archive/v250/systemd-250.tar.gz](https://github.com/systemd/systemd/archive/v250/systemd-250.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/systemd-stable-249.6.tar.gz](https://lx4u.ru/downloads/packages/systemd-stable-249.6.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/systemd-250.tar.gz](https://lx4u.ru/downloads/packages/systemd-250.tar.gz)
 
-MD5: **eb4a1923009abdb4e25c4802f4921a18**
+MD5: **8929beb037c587ada4ed201f19756fe2**
 
 Домашняя страница: [https://systemd.io/](https://systemd.io/)
 
@@ -1537,17 +1537,17 @@ SBU: **1.3**
 
 Пакет Sysvinit содержит программы для управления загрузкой, выполнением, и выключением системы.
 
-Версия: **3.00**
+Версия: **3.01**
 
 Размер: **0.12Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://download.savannah.gnu.org/releases/sysvinit/sysvinit-3.00.tar.xz](https://download.savannah.gnu.org/releases/sysvinit/sysvinit-3.00.tar.xz)
+Оригинальное расположение: [https://download.savannah.gnu.org/releases/sysvinit/sysvinit-3.01.tar.xz](https://download.savannah.gnu.org/releases/sysvinit/sysvinit-3.01.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/sysvinit-3.00.tar.xz](https://lx4u.ru/downloads/packages/sysvinit-3.00.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/sysvinit-3.01.tar.xz](https://lx4u.ru/downloads/packages/sysvinit-3.01.tar.xz)
 
-MD5: **6d54ca5b648decb106103c01d415417f**
+MD5: **dc14f92af715bcfa33cc25341730452e**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/sysvinit](https://savannah.nongnu.org/projects/sysvinit)
 
@@ -1793,17 +1793,17 @@ SBU: **0.1**
 
 Zstandard - это алгоритм сжатия в реальном времени, обеспечивающий высокую степень сжатия. Он предлагает очень широкий спектр компромиссов между сжатием и скоростью, а также очень быстрым декодером.
 
-Версия: **1.5.0**
+Версия: **1.5.1**
 
-Размер: **1.77Mb**
+Размер: **1.85Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz](https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz)
+Оригинальное расположение: [https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz](https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/zstd-1.5.0.tar.gz](https://lx4u.ru/downloads/packages/zstd-1.5.0.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/zstd-1.5.1.tar.gz](https://lx4u.ru/downloads/packages/zstd-1.5.1.tar.gz)
 
-MD5: **a6eb7fb1f2c21fa80030a47993853e92**
+MD5: **b97d53547220355907dedec7de9a4f29**
 
 Домашняя страница: [https://facebook.github.io/zstd/](https://facebook.github.io/zstd/)
 
@@ -2013,7 +2013,7 @@ SBU: **0.2**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch](https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch)
 
-MD5: **b45d3bea4ddb7f64b6e56033ecc0fb11**
+MD5: **19852fe67b6babb67bfae0b6db9ef732**
 
 Домашняя страница: []()
 
@@ -2024,7 +2024,7 @@ MD5: **b45d3bea4ddb7f64b6e56033ecc0fb11**
 
 Версия: **9.0-i18n-1**
 
-Размер: **0.16Mb**
+Размер: **0.17Mb**
 
 Приоритет: **Необязательный**
 
@@ -2032,7 +2032,7 @@ MD5: **b45d3bea4ddb7f64b6e56033ecc0fb11**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch](https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch)
 
-MD5: **e716728302e3ed1dfffb06050a68517c**
+MD5: **1260d0045ce3452fff2aa82c7a04e31a**
 
 Домашняя страница: []()
 
@@ -2051,7 +2051,7 @@ MD5: **e716728302e3ed1dfffb06050a68517c**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch](https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch)
 
-MD5: **9a5997c3452909b1769918c759eff8a2**
+MD5: **dd09372fc5740324c82aed7d97635d6d**
 
 Домашняя страница: []()
 
@@ -2070,7 +2070,7 @@ MD5: **9a5997c3452909b1769918c759eff8a2**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch](https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch)
 
-MD5: **f75cca16a38da6caa7d52151f7136895**
+MD5: **3249eddfaf6138c9542d0b5165033d5d**
 
 Домашняя страница: []()
 
@@ -2089,7 +2089,7 @@ MD5: **f75cca16a38da6caa7d52151f7136895**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch](https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch)
 
-MD5: **4900322141d493e74020c9cf437b2cdc**
+MD5: **fd07ab7c0e5ec38ac2aa2d79178e4562**
 
 Домашняя страница: []()
 
@@ -2108,7 +2108,7 @@ MD5: **4900322141d493e74020c9cf437b2cdc**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch](https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch)
 
-MD5: **e795e52eeefc0d2c62c6c4bd748d2d38**
+MD5: **6c3af2c50718168f781bf0c565736928**
 
 Домашняя страница: []()
 
@@ -2127,7 +2127,7 @@ MD5: **e795e52eeefc0d2c62c6c4bd748d2d38**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch](https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch)
 
-MD5: **3518fa864fe8d7ef65be4960f380b03b**
+MD5: **0d448d317d9df5e0ea2bf86fe4e84a3a**
 
 Домашняя страница: []()
 
@@ -2146,7 +2146,7 @@ MD5: **3518fa864fe8d7ef65be4960f380b03b**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch](https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch)
 
-MD5: **fb42558b59ed95ee00eb9f1c1c9b8056**
+MD5: **7474e7b403e7afde1e2e906bb1938686**
 
 Домашняя страница: []()
 
