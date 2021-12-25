@@ -39,6 +39,16 @@ mkdocs serve # Запуск
 
 ### Сборка в Windows
 
+Могут возникнуть проблемы со сборкой в Windows из-за кодировки.
+Чтобы исправить эту проблему, можно выставить переменную окружения PYTHONUTF8 со значением 1
+
+Например 
+
+```bash
+export PYTHONUTF8=1
+```
+
+
 ```bash
 python -m mkdocs build # Сборка
 python -m mkdocs serve # Запуск
