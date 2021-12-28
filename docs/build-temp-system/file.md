@@ -1,24 +1,8 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('file');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/file/README.md') }}
 
 ## Подготовка
 
-На хост-системе должна присутствовать утилита {{package.name}}. Вы можете также собрать её следующим образом:
+На хост-системе должна присутствовать утилита File. Вы можете также собрать её следующим образом:
 
 ```bash
 mkdir build

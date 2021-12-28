@@ -1,8 +1,10 @@
-<pkg :name="'zlib-ng'" instsize showsbu2></pkg>
+{{ include('../packages/zlib-ng/README.md') }}
 
 ## Настройка
 
-<package-script :package="'zlib-ng'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/configure') }}
+```
 
 ### Значения параметров
 
@@ -12,41 +14,65 @@
 
 ## Сборка
 
-<package-script :package="'zlib-ng'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'zlib-ng'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/test') }}
+```
 
 ## Установка
 
-<package-script :package="'zlib-ng'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/install') }}
+```
 
 Удалите ненужную статическую библиотеку:
 
-<package-script :package="'zlib-ng'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/postinstall') }}
+```
+
+## При раздельной структуре каталогов
+
+```bash 
+{{ include('../packages/zlib-ng/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'zlib-ng'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/multi_prepare') }}
+```
 
 ### Настройка
 
-<package-script :package="'zlib-ng'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'zlib-ng'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'zlib-ng'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/multi_install') }}
+```
 
 Удалите ненужную статическую библиотеку:
 
-<package-script :package="'zlib-ng'" :type="'multi_postinstall'"></package-script>
+```bash 
+{{ include('../packages/zlib-ng/multi_postinstall') }}
+```
 
 ## Установленные файлы
 
@@ -56,6 +82,4 @@
 
 `libz.so` - Содержит функции сжатия, используемые многими программами
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

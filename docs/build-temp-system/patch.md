@@ -1,22 +1,4 @@
-<!-- Этот шаблон  можно использовавть для инструкции по сборке пакета. Каркас. -->
-
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('patch');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/patch/README.md') }}
 
 ## Настройка
 

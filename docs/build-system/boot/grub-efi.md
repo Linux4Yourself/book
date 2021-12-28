@@ -1,4 +1,4 @@
-<pkg :name="'grub'" instsize showsbu2></pkg>
+{{ include('../packages/grub/README.md') }}
 
 ## Дополнительные необходимые файлы
 
@@ -8,11 +8,15 @@ https://unifoundry.com/pub/unifont/unifont-13.0.06/font-builds/unifont-13.0.06.p
 
 Установите шрифт, используемый grub:
 
-<package-script :package="'grub'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/grub/prepare') }}
+```
 
 ## Настройка
 
-<package-script :package="'grub'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/grub/configure') }}
+```
 
 ## Значения параметров
 
@@ -24,12 +28,14 @@ https://unifoundry.com/pub/unifont/unifont-13.0.06/font-builds/unifont-13.0.06.p
 
 ## Сборка
 
-<package-script :package="'grub'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/grub/build') }}
+```
 
 ## Установка
 
-<package-script :package="'grub'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/grub/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

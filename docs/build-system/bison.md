@@ -1,23 +1,29 @@
-<pkg :name="'bison'" instsize showsbu2></pkg>
+{{ include('../packages/bison/README.md') }}
 
 ## Настройка
 
-<package-script :package="'bison'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/bison/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'bison'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/bison/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'bison'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/bison/test') }}
+```
 
 > Добавляет примерно 5,5 SBU к общему времени установки пакета
 
 ## Установка
 
-<package-script :package="'bison'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/bison/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

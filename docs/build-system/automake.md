@@ -1,25 +1,35 @@
-<pkg :name="'automake'" instsize showsbu2></pkg>
+{{ include('../packages/automake/README.md') }}
 
 ## Настройка
 
 Внесите исправление для некорректного теста:
-<package-script :package="'automake'" :type="'prepare'"></package-script>
-<package-script :package="'automake'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/automake/prepare') }}
+```
+```bash 
+{{ include('../packages/automake/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'automake'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/automake/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'automake'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/automake/test') }}
+```
 
-?> Известно, что тесты `t/subobj.sh`, `t/deprecated-acinit.sh` и `t/init.sh` не проходят в LX4.
+???+ warning "Предупреждение"
+	
+	Известно, что тесты `t/subobj.sh`, `t/deprecated-acinit.sh` и `t/init.sh` не проходят в LX4.
 
 ## Установка
 
-<package-script :package="'automake'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/automake/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

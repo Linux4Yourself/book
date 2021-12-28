@@ -4,7 +4,7 @@
 
 Создайте данный файл:
 
-[filename](../../scripts/etc-inputrc.md ':include')
-<script>
-	new Vue({ el: '#main' })
-</script>
+```bash 
+{{ include('../scripts/etc-inputrc.sh') }}
+```
+

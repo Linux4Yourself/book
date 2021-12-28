@@ -1,9 +1,9 @@
-<pkg :name="'bootscripts'" instsize showsbu2></pkg>
+{{ include('../packages/bootscripts/README.md') }}
 
 ## Установка
 
-<package-script :package="'bootscripts'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/bootscripts/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

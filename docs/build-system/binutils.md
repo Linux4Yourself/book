@@ -1,18 +1,37 @@
-<pkg :name="'binutils'" instsize showsbu2></pkg>
+{{ include('../packages/binutils/README.md') }}
 
 ## Подготовка
 
 Удалите проблемный тест:
 
-<package-script :package="'binutils'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/binutils/prepare') }}
+```
+
+Примените патч 
+```bash 
+{{ include('../packages/binutils/patch') }}
+```
+
+<!-- temp solution TODO: Remove in next versions -->
+Ошибка в системе сборки приводит к тому, что страницы руководства становятся пустыми. Можно обойти проблему, чтобы страницы руководства были созданы правильно:
+
+```bash
+sed -i '63d' etc/texi2pod.pl
+find -name \*.1 -delete
+```
 
 ## Настройка
 
-<package-script :package="'binutils'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/binutils/configure') }}
+```
 
 ### Для multilib
 
-<package-script :package="'binutils'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/binutils/multi_configure') }}
+```
 
 ### Значения параметров
 
@@ -28,21 +47,31 @@
 
 ## Сборка
 
-<package-script :package="'binutils'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/binutils/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'binutils'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/binutils/test') }}
+```
 
-?> Известно, что четыре теста с меткой `Run property ...` могут дать сбои.
+???+ warning "Предупреждение"
+	
+	Известно, что четыре теста с меткой `Run property ...` могут дать сбои.
 
 ## Установка
 
-<package-script :package="'binutils'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/binutils/install') }}
+```
 
 Удалите бесполезные статические библиотеки:
 
-<package-script :package="'binutils'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/binutils/postinstall') }}
+```
 
 ## Установленные файлы
 
@@ -51,7 +80,3 @@
 Библиотеки: libbfd.so, libctf.so, libctf-nobfd.so и libopcodes.so
 
 Директории: /usr/lib/ldscripts
-
-<script>
-	new Vue({ el: '#main' })
-</script>

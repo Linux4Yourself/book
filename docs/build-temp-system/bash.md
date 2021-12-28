@@ -1,20 +1,4 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('bash');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/bash/README.md') }}
 
 ### Настройка
 
@@ -47,4 +31,12 @@ make DESTDIR=$LIN install
 
 ```bash
 ln -sv bash $LIN/bin/sh
+```
+
+## При раздельной структуре каталогов
+
+Переместите `bash` в нужную директорию:
+
+```bash
+mv $LIN/usr/bin/bash $LIN/bin/bash
 ```

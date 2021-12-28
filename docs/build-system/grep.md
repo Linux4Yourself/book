@@ -1,21 +1,27 @@
-<pkg :name="'grep'" instsize showsbu2></pkg>
+{{ include('../packages/grep/README.md') }}
 
 ## Настройка
 
-<package-script :package="'grep'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/grep/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'grep'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/grep/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'grep'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/grep/test') }}
+```
 
 ## Установка
 
-<package-script :package="'grep'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/grep/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

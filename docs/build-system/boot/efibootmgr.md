@@ -1,17 +1,23 @@
-<pkg :name="'efibootmgr'" instsize showsbu2></pkg>
+{{ include('../packages/efibootmgr/README.md') }}
 
 ## Подготовка
 
 Исправьте ошибку сборки:
-<package-script :package="'efibootmgr'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/efibootmgr/prepare') }}
+```
 
 ## Сборка
 
-<package-script :package="'efibootmgr'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/efibootmgr/build') }}
+```
 
 ## Установка
 
-<package-script :package="'efibootmgr'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/efibootmgr/install') }}
+```
 
 ## Значения новых команд
 
@@ -19,6 +25,4 @@
 - `EFI_LOADER=grubx64.efi`- указывает имя загрузчика EFI по умолчанию.
 - `sbindir=/usr/bin` - установить `efibootmgr` в /usr/bin.
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

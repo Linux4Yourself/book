@@ -1,64 +1,39 @@
-<package-info :package="package" instsize showsbu2></package-info>
-
-<script>
-	new Vue({
-		el: '#main',
-		data: {
-			package: {},
-			tzdata: {},
-			glibcPatch: {},
-		},
-		mounted: function () {
-				this.getPackage('glibc');
-				this.getTzdata();
-				this.getGlibcPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getTzdata: function() {
-					getPackage('tzdata')
-					.then(response => this.tzdata = response);
-			},
-			getGlibcPatch: function() {
-					getPackage('glibc-patch')
-					.then(response => this.glibcPatch = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/glibc/README.md') }}
 
 ## Дополнительные необходимые файлы
 
-<a :href="glibcPatch.url">{{ glibcPatch.url}}</a>
-
-<a :href="tzdata.url">{{ tzdata.url}}</a>
+{{ include('../packages/tzdata/.url') }}
 
 ## Подготовка
+
+Исправьте обнаруженную проблему безопасности:
+
+```bash
+sed -e '/NOTIFY_REMOVED)/s/)/ \&\& data.attr != NULL)/' \
+    -i sysdeps/unix/sysv/linux/mq_notify.c
+```
 
 Glibc по умолчанию использует несоответствующую стандарту FHS директорию `/var/db`. Для соответствия с FHS примените патч:
 
 ```bash
-patch -Np1 -i ../glibc-2.33-fhs-1.patch
+patch -Np1 -i ../glibc-2.34-fhs-1.patch
 ```
 
-Исправьте ошибку:
+Пакет Glibc требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
-sed -e '402a\      *result = local->data.services[database_index];' \
-    -i nss/nss_database.c
-```
-
-Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
-
-```bash
-mkdir  build
-cd     build
+mkdir -v build
+cd       build
 ```
 
 ## Настройка
+
+
+Если вы собираете систему с раздельной структурой директорий, убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
+
+```bash
+echo "rootsbindir=/usr/sbin" > configparms
+```
 
 ```bash
 ../configure                             \
@@ -66,11 +41,8 @@ cd     build
       --disable-werror                   \
       --enable-kernel=3.2                \
       --with-headers=/usr/include        \
-      --libexecdir=/usr/lib              \
-      libc_cv_slibdir=/usr/lib               \
-      libc_cv_include_x86_isa_level=no
+      libc_cv_slibdir=/lib           
 ```
-
 ### Для multilib
 
 Добавьте параметр `--enable-multi-arch`
@@ -81,8 +53,6 @@ cd     build
 
 `--with-headers=/usr/include` - задаёт путь к заголовкам ядра.
 
-`libc_cv_include_x86_isa_level=no` - исключает возможную ошибку.
-
 ## Сборка
 
 ```bash
@@ -91,7 +61,13 @@ make
 
 ## Тестирование
 
-вы можете запустить тесты, выполнив:
+Создайте необходимую для тестирования ссылку:
+
+```bash
+ln -sfnv $PWD/elf/ld-linux-x86-64.so.2 /lib/
+```
+
+Вы можете запустить тесты, выполнив:
 
 ```bash
 make check
@@ -180,7 +156,7 @@ localedef -i zh_HK -f BIG5-HKSCS zh_HK.BIG5-HKSCS
 localedef -i zh_TW -f UTF-8 zh_TW.UTF-8
 ```
 
-вы можете установить все локали, которые содержатся в файле `{{ package.fileName }}/localedata/SUPPORTED`.
+вы можете установить все локали, которые содержатся в файле `localedata/SUPPORTED`.
 Выполните следующую команду:
 
 ```bash
@@ -217,8 +193,8 @@ EOF
 
 Установите информацию о часовых поясах:
 
-<pre class="pre">
-tar -xf ../../{{tzdata.fileName}}
+```bash
+tar -xf ../../{{ include('../packages/tzdata/.filename') }}
 
 ZONEINFO=/usr/share/zoneinfo
 mkdir -pv $ZONEINFO/{posix,right}
@@ -233,7 +209,7 @@ done
 cp -v zone.tab zone1970.tab iso3166.tab $ZONEINFO
 zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO
-</pre>
+```
 
 Для выбора часового пояса запустите скрипт:
 
@@ -275,7 +251,7 @@ ldconfig
 ### Подготовка
 
 Для multilib требуется установить 32-битную версию glibc.
-Для этого, во-первых, удалите оставшиеся от 64-битной сборки glibc файлы:
+Удалите оставшиеся от 64-битной сборки glibc файлы:
 
 ```bash
 rm -rf ./*
@@ -337,8 +313,6 @@ ldconfig
 
 ### Краткое описание
 
-<!-- Содрано с вашего перевода лфс и чуть поправлено -->
-
 `catchsegv` - Может использоваться для создания трассировки стека, когда программа завершается с ошибкой сегментации.
 
 `gencat` - Создаёт каталоги сообщений.
@@ -383,7 +357,7 @@ ldconfig
 
 `zic` - Компилятор часовых поясов.
 
-`ld-2.30.so` - Программа выполняет поиск и загружает динамические библиотеки, необходимые программам, а также подготавливает программы к запуску и запускают их.
+`ld.so` - Программа выполняет поиск и загружает динамические библиотеки, необходимые программам, а также подготавливает программы к запуску и запускают их.
 
 `libBrokenLocale` - Используется внутри Glibc как грубый хак, чтобы обработать запущенную сломанную программу (например некоторые приложения Motif). Изучите комментарии в файле `locale/broken_cur_max.c` для получения более подробной информации.
 

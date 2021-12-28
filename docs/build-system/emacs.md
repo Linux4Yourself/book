@@ -1,20 +1,30 @@
-<pkg :name="'emacs'" instsize showsbu2></pkg>
+{{ include('../packages/emacs/README.md') }}
 
 ## Настройка
 
-<package-script :package="'emacs'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/emacs/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'emacs'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/emacs/build') }}
+```
 
 ## Установка
 
-<package-script :package="'emacs'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/emacs/install') }}
+```
 
-!> Emacs устанавливает файлы иконок в `/usr/share/icons/hicolor`. После того, как вы скомпилируете Xorg/Wayland и GTK+ 2.24.33 или 3.24.25, вы можете улучшить производительность и использование памяти, обновив файл `/usr/share/icons/hicolor/index.theme`. Выполните:
+???+ info
 
-<package-script :package="'emacs'" :type="'postinstall'"></package-script>
+	Emacs устанавливает файлы иконок в `/usr/share/icons/hicolor`. После того, как вы скомпилируете Xorg/Wayland и GTK+ 2.24.33 или 3.24.25, вы можете улучшить производительность и использование памяти, обновив файл `/usr/share/icons/hicolor/index.theme`. Выполните:
+
+```bash 
+{{ include('../packages/emacs/postinstall') }}
+```
 
 ## Установленные файлы
 
@@ -22,6 +32,4 @@
 - **Установленные библиотеки:** нет
 - **Установленные директории:** `/usr/libexec/emacs`, `/usr/share/emacs` и `/var/games/emacs`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

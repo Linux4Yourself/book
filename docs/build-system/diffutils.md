@@ -1,21 +1,27 @@
-<pkg :name="'diffutils'" instsize showsbu2></pkg>
+{{ include('../packages/diffutils/README.md') }}
 
 ## Настройка
 
-<package-script :package="'diffutils'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/diffutils/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'diffutils'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/diffutils/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'diffutils'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/diffutils/test') }}
+```
 
 ## Установка
 
-<package-script :package="'diffutils'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/diffutils/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

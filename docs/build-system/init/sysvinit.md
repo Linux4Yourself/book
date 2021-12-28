@@ -1,35 +1,22 @@
-<pkg :name="'sysvinit'" instsize showsbu2></pkg>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
+{{ include('../packages/sysvinit/README.md') }}
 
 ## Подготовка
 
 Примените необходимый патч:
 
-<package-script :package="'sysvinit'" :type="'patch'"></package-script>
+```bash 
+{{ include('../packages/sysvinit/patch') }}
+```
 
 ## Сборка
 
-<package-script :package="'sysvinit'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/sysvinit/build') }}
+```
 
 ## Установка
 
-<package-script :package="'sysvinit'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/sysvinit/install') }}
+```
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPatch();
-		},
-		methods: {
-			getPatch: function() {
-					getPackage('sysvinit-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>

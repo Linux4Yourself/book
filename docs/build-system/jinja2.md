@@ -1,11 +1,11 @@
-<pkg :name="'jinja2'" instsize showsbu2></pkg>
+{{ include('../packages/jinja2/README.md') }}
 
-[filename](../shared/systemd-extra-warn.md ':include')
+{{ include('../shared/systemd-extra-warn.md') }}
 
 ## Установка
 
-<package-script :package="'jinja2'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/jinja2/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

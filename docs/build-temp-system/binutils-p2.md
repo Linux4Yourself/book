@@ -1,24 +1,8 @@
-<package-info :package="package" ></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('binutils');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/binutils/README.md') }}
 
 ## Подготовка
 
-Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
+Пакет Binutils требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
 mkdir -v build

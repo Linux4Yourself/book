@@ -1,38 +1,14 @@
-# Libstdc v.{{ package.version }} проход 2
+# LibstdC++ проход 2
 
 Пакет содержит библиотеку времени исполнения, необходимую программам, написанным на языке C++ и собранным при помощи компилятора GNU.
 
-Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
-<br />
-Текущая версия: <b>{{ package.version }}</b>
-<br />
-Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
-<br />
-Важность: <b>Необходимый</b>
-<br />
-Размер архива: <b>{{ package.size }} Mb</b>
-<br />
-SBU: <b>1</b>
+{{ include('../packages/gcc/README.md') }}
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gcc');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			}
-		}
-  })
-</script>
 
 ## Настройка
 
-!> **Данный пакет входит в архив с исходниками GCC**.
+???+ warning "Предупреждение"
+	 **Данный пакет входит в архив с исходниками GCC**.
 
 Создайте необходимую символическую ссылку:
 

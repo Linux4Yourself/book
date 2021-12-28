@@ -1,8 +1,14 @@
-<pkg :name="'e2fsprogs'" instsize showsbu2></pkg>
+{{ include('../packages/e2fsprogs/README.md') }}
 
 ## Настройка
 
-<package-script :package="'e2fsprogs'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/e2fsprogs/configure') }}
+```
+
+## При раздельной структуре каталогов
+
+Добавьте к скрипту `configure` ключ `--bindir=/bin`.
 
 ### Значения параметров
 
@@ -16,26 +22,38 @@
 
 ## Сборка
 
-<package-script :package="'e2fsprogs'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/e2fsprogs/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'e2fsprogs'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/e2fsprogs/test') }}
+```
 
 > Тесты могут занять довольно продолжительное время на HDD (около 4 SBU). На SSD же это будет быстрее - 1,5 SBU.
 
-?> Тест `m_rootdir_acl` может дать сбой.
+???+ warning "Предупреждение"
+
+    Тест `m_rootdir_acl` может дать сбой.
 
 ## Установка
 
-<package-script :package="'e2fsprogs'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/e2fsprogs/install') }}
+```
 
 Пакет установит запакованный файл .info и не обновит системный файл dir. Распакуйте файл и обновите файл dir, выполнив следующую команду:
-<package-script :package="'e2fsprogs'" :type="'postinstall'"></package-script>
+
+```bash 
+{{ include('../packages/e2fsprogs/postinstall') }}
+```
 
 При необходимости создайте и установите дополнительную документацию выполнив следующие команды:
-<package-script :package="'e2fsprogs'" :type="'install-doc'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+```bash 
+{{ include('../packages/e2fsprogs/install-doc') }}
+```
+
+

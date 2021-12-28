@@ -1,14 +1,24 @@
-<pkg :name="'perl'" instsize showsbu2></pkg>
+{{ include('../packages/perl/README.md') }}
 
 ## Настройка
 
+
+Примените патч 
+```bash 
+{{ include('../packages/perl/patch') }}
+```
+
 Для использования системных версий `zlib` и `bzip2` вместо встроенных выполните:
 
-<package-script :package="'perl'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/perl/prepare') }}
+```
 
 Запустите скрипт `configure` (Для полного контроля над настройкой удалите опцию `-des`)
 
-<package-script :package="'perl'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/perl/configure') }}
+```
 
 ### Значения параметров
 
@@ -22,17 +32,23 @@
 
 ## Сборка
 
-<package-script :package="'perl'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/perl/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'perl'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/perl/test') }}
+```
 
 > Тесты добавляют 11 SBU ко всему времени установки пакета.
 
 ## Установка
 
-<package-script :package="'perl'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/perl/install') }}
+```
 
 ## Установленные файлы
 
@@ -42,6 +58,4 @@
 
 Директории: `/usr/lib/perl5`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

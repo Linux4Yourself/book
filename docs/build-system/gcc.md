@@ -1,40 +1,28 @@
-<pkg :name="'gcc'" instsize showsbu2></pkg>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gcc');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/gcc/README.md') }}
 
 ## Подготовка
 
-Примените патч, исправляющий несколько проблем:
-
-<package-script :package="'gcc'" :type="'patch'"></package-script>
-
 Исправьте пути установки библиотек:
 
-<package-script :package="'gcc'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/gcc/prepare') }}
+```
 
 ## Настройка
 
-?> На данном этапе необходимы только компиляторы для C и C++, однако вы можете собрать компиляторы для любых поддерживаемых GCC языков программирования, перечислив их через запятые в опции configure `--enable-languages=c,c++`. GCC поддерживает следующие языки - `c,c++,d,fortran,go,objc,obj-c++`. вы можете собрать все доступные компиляторы, добавив параметр `--enable-languages=c,c++,d,fortran,go,objc,obj-c++`. Если позднее вам потребуется компилятор для какого либо языка из этого списка - пересоберите GCC с его поддержкой.
+???+ note "Обратите внимание"
 
-<package-script :package="'gcc'" :type="'configure'"></package-script>
+	На данном этапе необходимы только компиляторы для C и C++, однако вы можете собрать компиляторы для любых поддерживаемых GCC языков программирования, перечислив их через запятые в опции configure `--enable-languages=c,c++`. GCC поддерживает следующие языки - `c,c++,d,fortran,go,objc,obj-c++`. вы можете собрать все доступные компиляторы, добавив параметр `--enable-languages=c,c++,d,fortran,go,objc,obj-c++`. Если позднее вам потребуется компилятор для какого либо языка из этого списка - пересоберите GCC с его поддержкой.
+
+```bash 
+{{ include('../packages/gcc/configure') }}
+```
 
 ### Для multilib
 
-<package-script :package="'gcc'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/gcc/multi_configure') }}
+```
 
 ### Значения параметров
 
@@ -44,16 +32,22 @@
 
 ## Сборка
 
-<package-script :package="'gcc'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/gcc/build') }}
+```
 
 ## Тестирование
 
 - Увеличьте размер стека по умолчанию
 - Произведите тестирование от непривилегированного пользователя во избежание непредвиденных ситуаций с системой.
 
-<package-script :package="'gcc'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/gcc/test') }}
+```
 
-> Тестирование занимает достаточно много времени.
+???+ note "Обратите внимание"
+
+    Тестирование этого пакета занимает достаточно много времени.
 
 Для просмотра итогов теста выполните:
 
@@ -61,11 +55,15 @@
 ../contrib/test_summary
 ```
 
-?> Известно, что 6 тестов, связанных с `get_time`, дают сбои. По видимому, это связано с локалью `en_HK`. Кроме того, тест `COSTEXPR-52830` не удается.
+???+ warning "Предупреждение"
+
+    Известно, что 6 тестов, связанных с `get_time`, дают сбои. По видимому, это связано с локалью `en_HK`. Кроме того, тест `COSTEXPR-52830` не удается.
 
 ## Установка
 
-<package-script :package="'gcc'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/gcc/install') }}
+```
 
 - Удалите ненужную директорию,
 - Убедитесь, что владелец установленных заголовков корректный,
@@ -73,10 +71,18 @@
 - Для поддержки LTO требуется следующая символическая ссылка,
 - Переместите файлы в правильное место:
 
-<package-script :package="'gcc'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/gcc/postinstall') }}
+```
 
+## При использовании раздельных каталогов:
+- Замените `ln -svr /usr/bin/cpp /usr/lib` из предыдущей команды на корректную для раздельной структуры.
 
 ## Проверка работоспособности
+
+???+ danger "Важно"
+
+	Сейчас необходимо проверить работу `gcc`. Если всё нормально, то продолжайте сборку.
 
 Выполните набор команд:
 
@@ -101,9 +107,9 @@ grep -o '/usr/lib.*/crt[1in].*succeeded' dummy.log
 Результат выполнения:
 
 ```
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crt1.o succeeded
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crti.o succeeded
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../lib/crtn.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crt1.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crti.o succeeded
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/../../../../lib/crtn.o succeeded
 ```
 
 В зависимости от архитектуры, приведенное выше может немного отличаться. Разница будет в названии каталога после `/usr/lib/gcc`. Здесь важно обратить внимание на то, что `gcc` обнаружил все три файла `crt * .o` в каталоге `/usr/lib`.
@@ -119,9 +125,9 @@ grep -B4 '^ /usr/include' dummy.log
 
 ```
 #include <...> search starts here:
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
  /usr/local/include
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
 ```
 
 Проверим, что компоновщик использует корректные пути поиска:
@@ -167,7 +173,9 @@ grep "found ld-linux*" dummy.log
 found ld-linux-x86-64.so.2 at /usr/lib/ld-linux-x86-64.so.2
 ```
 
-!> Если вывод не соответствует вышеуказанному, или вообще не получен, значит, что-то не так. Изучите и повторите шаги, чтобы выяснить, в чем проблема. Перед продолжением процесса необходимо решить любые проблемы.
+???+ warning "Предупреждение"
+
+	Если вывод не соответствует вышеуказанному, или вообще не получен, значит, что-то не так. Изучите и повторите шаги, чтобы выяснить, в чем проблема. Перед продолжением процесса необходимо решить любые проблемы.
 
 Удалите тестовые файлы:
 
@@ -181,4 +189,4 @@ rm -v dummy.c a.out dummy.log
 
 Библиотеки: libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so}, liblsan.{a,so}, liblto_plugin.so, libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a, libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so} и libubsan.{a,so}
 
-Директории: /usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc и /usr/share/gcc-11.1.0
+Директории: /usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc и /usr/share/gcc-11.2.0

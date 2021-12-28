@@ -1,8 +1,10 @@
-<pkg :name="'gdbm'" instsize showsbu2></pkg>
+{{ include('../packages/gdbm/README.md') }}
 
 ## Настройка
 
-<package-script :package="'gdbm'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/gdbm/configure') }}
+```
 
 ### Значения параметров
 
@@ -10,18 +12,24 @@
 
 ## Сборка
 
-<package-script :package="'gdbm'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/gdbm/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'gdbm'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/gdbm/test') }}
+```
 
-?> Известно, что один тест (`version`) может дать сбой.
+???+ warning "Предупреждение"
+
+    Известно, что один тест (`version`) может дать сбой.
 
 ## Установка
 
-<package-script :package="'gdbm'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/gdbm/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

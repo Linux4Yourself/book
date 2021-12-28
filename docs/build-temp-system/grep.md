@@ -1,26 +1,12 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('grep');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/grep/README.md') }}
 
 ## Настройка
 
 ```bash
 ./configure --prefix=/usr   \
-            --host=$LIN_TGT  --disable-nls
+            --host=$LIN_TGT \
+            --bindir=/bin   \
+            --disable-nls
 ```
 
 ## Сборка

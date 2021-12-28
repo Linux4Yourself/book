@@ -1,31 +1,4 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPackage();
-				this.getPatch();
-		},
-		methods: {
-			getPackage: function() {
-					getPackage('glibc')
-					.then(response => this.package = response);
-			},
-			getPatch: function() {
-					getPackage('glibc-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">
-{{ patch.url }}
-</a>
+{{ include('../packages/glibc/README.md') }}
 
 ## Настройка
 
@@ -38,20 +11,27 @@ ln -sfv ../lib/ld-linux-x86-64.so.2 $LIN/lib64/ld-lsb-x86-64.so.3
 
 Первая ссылка используется GCC, вторую требует LSB.
 
-В пакете {{package.name}} по умолчанию используется несоответствующая стандаруту FHS директория `/var/db`. Для исправления этого примените патч:
+В пакете Glibc по умолчанию используется несоответствующая стандарту FHS директория `/var/db`. Для исправления этого примените патч:
 
 ```bash
-patch -Np1 -i ../glibc-2.33-fhs-1.patch
+patch -Np1 -i ../glibc-2.34-fhs-1.patch
 ```
 
-Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
+Пакет Glibc требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
-mkdir  build
-cd     build
+mkdir -v build
+cd       build
 ```
 
-Далее запустите скрипт `configure`:
+Убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
+
+```bash
+echo "rootsbindir=/usr/sbin" > configparms
+```
+
+
+Запустите скрипт `configure`:
 
 ```bash
  ../configure                            \
@@ -60,10 +40,7 @@ cd     build
       --build=$(../scripts/config.guess) \
       --enable-kernel=3.2                \
       --with-headers=$LIN/usr/include    \
-      --libdir=/usr/lib                  \
-      --libexecdir=/usr/lib              \
       libc_cv_slibdir=/lib               \
-      libc_cv_include_x86_isa_level=no   \
       --disable-nscd                     \
       --disable-timezone-tools
 ```
@@ -80,7 +57,6 @@ cd     build
 
 `--with-headers=$LIN/usr/include` - задает путь к заголовкам ядра.
 
-`libc_cv_include_x86_isa_level=no` - исключает возможную ошибку.
 
 ` --disable-nscd, --disable-timezone-tools` - демон nscd и инструменты для управления часовыми поясами не нужны для временной glibc.
 
@@ -96,15 +72,23 @@ make
 make DESTDIR=$LIN install
 ```
 
+
+Исправьте жестко заданный путь к исполняемому загрузчику в скрипте ldd:
+
+```bash
+sed '/RTLDLIST=/s@/usr@@g' -i $LIN/usr/bin/ldd
+```
+
 Завершите установку файла `limits.h`, запустив скрипт из состава GCC:
 
 ```bash
-$LIN/tools/libexec/gcc/$LIN_TGT/11.1.0/install-tools/mkheaders
+$LIN/tools/libexec/gcc/$LIN_TGT/11.2.0/install-tools/mkheaders
 ```
 
 ## Тестирование
 
-!> На данном этапе необходимо убедиться, что установленные ранее пакеты работают правильно. Внимательно изучите результаты вывода команд, и проверьте, что они строго соответствуют результатам вывода, приведенным ниже. Если есть несоответствия, значит инструкции на предыдущих этапах были выполнены некорректно.
+???+ warning "Предупреждение"
+	 На данном этапе необходимо убедиться, что установленные ранее пакеты работают правильно. Внимательно изучите результаты вывода команд, и проверьте, что они строго соответствуют результатам вывода, приведенным ниже. Если есть несоответствия, значит инструкции на предыдущих этапах были выполнены некорректно.
 
 ### Чтобы проверить правильность работы кросс-компилятора и libc, выполните:
 
@@ -138,7 +122,7 @@ rm -rf ./*
 find .. -name "*.a" -delete
 ```
 
-Далее запустите скрипт `configure`:
+Запустите скрипт `configure`:
 
 ```bash
 CC="$LIN_TGT-gcc -m32"                   \
@@ -153,7 +137,6 @@ CXX="$LIN_TGT-g++ -m32"                  \
       --libdir=/usr/lib32                \
       --libexecdir=/usr/lib32            \
       libc_cv_slibdir=/lib32             \
-      libc_cv_include_x86_isa_level=no   \
       --disable-nscd                     \
       --disable-timezone-tools
 ```

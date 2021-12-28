@@ -1,19 +1,27 @@
-<pkg :name="'meson'" instsize showsbu2></pkg>
+{{ include('../packages/meson/README.md') }}
 
-?> Хотя данный пакет предлагается использовать при установке systemd, однако он может понадобиться при установке многих других пакетов, за пределами создания базовой системы. Вернитесь к этой инструкции по мере необходимости.
+???+ note "Обратите внимание"
+
+    Хотя данный пакет предлагается использовать при установке systemd, однако он может понадобиться при установке многих других пакетов, за пределами создания базовой системы. Вернитесь к этой инструкции по мере необходимости.
 
 ## Подготовка
 
 Убедитесь, что директория для библиотек по умолчанию корректна:
-<package-script :package="'meson'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/meson/prepare') }}
+```
 
 ## Сборка
 
-<package-script :package="'meson'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/meson/build') }}
+```
 
 ## Установка
 
-<package-script :package="'meson'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/meson/install') }}
+```
 
 ### Значения параметров
 
@@ -23,6 +31,4 @@
 
 Программы: `meson`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

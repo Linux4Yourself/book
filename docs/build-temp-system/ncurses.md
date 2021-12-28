@@ -1,20 +1,4 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('ncurses');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/ncurses/README.md') }}
 
 ## Настройка
 
@@ -74,12 +58,26 @@ make DESTDIR=$LIN TIC_PATH=$(pwd)/tic-build/progs/tic install
 echo "INPUT(-lncursesw)" > $LIN/usr/lib/libncurses.so
 ```
 
+## При раздельной структуре каталогов
+
+Переместите разделяемые библиотеки в `$LIN/lib`:
+
+```bash
+mv -v $LIN/usr/lib/libncursesw.so.6* $LIN/lib
+```
+
+Поскольку библиотеки были перемещены, одна символическая ссылка указывает на несуществующий файл. Исправьте это:
+
+```bash
+ln -sfv ../../lib/$(readlink $LIN/usr/lib/libncursesw.so) $LIN/usr/lib/libncursesw.so
+```
+
 ## Для multilib
 
 ### Настройка
 
 Соберите 32-битную версию ncurses:
-Для этого, во-первых, выполните:
+Выполните:
 
 ```bash
 make distclean
@@ -87,14 +85,15 @@ make distclean
 
 Чтобы очистить директорию от файлов предыдущей сборки.
 
-Далее запустите скрипт `configure`:
+Запустите скрипт `configure`:
 
 ```bash
 CC="$LIN_TGT-gcc -m32"                   \
 CXX="$LIN_TGT-g++ -m32"                  \
-./configure --prefix=/usr                \
+DESTDIR=$LIN                             \
+./configure --prefix=/usr                  \
             --host=$LIN_TGT32            \
-            --build=$(./config.guess)    \
+            --build=$(./config.guess)     \
             --libdir=/usr/lib32          \
             --without-manpages           \
             --without-tests              \
@@ -104,7 +103,7 @@ CXX="$LIN_TGT-g++ -m32"                  \
             --without-debug              \
             --without-ada                \
             --without-normal             \
-            --enable-pc-files            \
+            --enable-pc-files             \
             --enable-widec               \
             --with-pkg-config-libdir=/usr/lib32/pkgconfig
 ```

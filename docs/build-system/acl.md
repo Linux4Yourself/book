@@ -1,41 +1,61 @@
-<pkg :name="'acl'" instsize showsbu2></pkg>
+{{ include('../packages/acl/README.md') }}
 
 ## Настройка
 
-<package-script :package="'acl'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/acl/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'acl'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/acl/build') }}
+```
 
 ## Установка
 
-<package-script :package="'acl'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/acl/install') }}
+```
+
+## При раздельной структуре каталогов
+
+Добавьте к скрипту `configure` опцию `--bindir=/bin`.
+
+```bash 
+{{ include('../packages/acl/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'acl'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/acl/multi_prepare') }}
+```
 
 ### Настройка
 
-<package-script :package="'acl'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/acl/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'acl'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/acl/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'acl'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/acl/multi_install') }}
+```
 
 ## Установленные файлы
 
-Программы: chacl, getfacl, setfacl
+Программы: `chacl`, `getfacl`, `setfacl`
 
-Библиотеки: libacl.so
+Библиотеки: `libacl.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

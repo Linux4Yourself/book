@@ -1,25 +1,31 @@
-<pkg :name="'pkg-config'" instsize showsbu2></pkg>
+{{ include('../packages/pkg-config/README.md') }}
 
 ## Настройка
 
-<package-script :package="'pkg-config'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/pkg-config/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'pkg-config'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/pkg-config/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'pkg-config'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/pkg-config/test') }}
+```
 
 ## Установка
 
-<package-script :package="'pkg-config'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/pkg-config/install') }}
+```
 
 ## Установленные файлы
 
 Программы: `pkg-config`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

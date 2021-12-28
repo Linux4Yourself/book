@@ -1,24 +1,34 @@
-<pkg :name="'flex'" instsize showsbu2></pkg>
+{{ include('../packages/flex/README.md') }}
 
 ## Настройка
 
-<package-script :package="'flex'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/flex/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'flex'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/flex/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'flex'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/flex/test') }}
+```
 
 ## Установка
 
-<package-script :package="'flex'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/flex/install') }}
+```
 
 Некоторые программы обращаются к `lex`, а не `flex`, поэтому создайте ссылку:
 
-<package-script :package="'flex'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/flex/postinstall') }}
+```
 
 ## Установленные файлы
 
@@ -26,6 +36,4 @@
 
 Библиотеки: `libfl.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

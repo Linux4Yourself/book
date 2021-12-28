@@ -1,25 +1,31 @@
-<pkg :name="'mpc'" instsize showsbu2></pkg>
+{{ include('../packages/mpc/README.md') }}
 
 ## Настройка
 
-<package-script :package="'mpc'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/mpc/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'mpc'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/mpc/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'mpc'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/mpc/test') }}
+```
 
 ## Установка
 
-<package-script :package="'mpc'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/mpc/install') }}
+```
 
 ## Установленные файлы
 
 Библиотеки: libmpc.so
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

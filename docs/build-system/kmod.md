@@ -1,8 +1,10 @@
-<pkg :name="'kmod'" instsize showsbu2></pkg>
+{{ include('../packages/kmod/README.md') }}
 
 ## Настройка
 
-<package-script :package="'kmod'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/kmod/configure') }}
+```
 
 ### Значения параметров
 
@@ -12,7 +14,9 @@
 
 ## Сборка
 
-<package-script :package="'kmod'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/kmod/build') }}
+```
 
 ## Тестирование
 
@@ -20,11 +24,27 @@
 
 ## Установка
 
-<package-script :package="'kmod'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/kmod/install') }}
+```
 
-Необходимо создать символические ссылки (симлинки) для совместимости с `Module-Init-Tools` (Предыдущая реализация программы обработки модулей ядра):
+Необходимо создать символические ссылки (симлинки) для совместимости с `Module-Init-Tools` (предыдущая реализация программы обработки модулей ядра).
 
-<package-script :package="'kmod'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/kmod/postinstall') }}
+```
+
+> Заметьте, что эту команду не следует вводить, если вы используете систему с раздельной структурой каталогов, в таком случае перейдите к следующему шагу.
+
+## При раздельной структуре каталогов
+
+Добавьте опции `--bindir=/bin` и `--with-rootlibdir=/lib` скрипту `configure` из пункта "Настройка".
+
+Измените предыдущую команду (создающую симлинки для совместимости с `Module-Init-Tools`) и создайте необходимую ссылку в `/bin`:
+
+```bash 
+{{ include('../packages/kmod/cldirs') }}
+```
 
 ## Для multilib
 
@@ -32,20 +52,26 @@
 
 Очистите предыдущую сборку, но сохраните страницы руководства, так как они не могут быть воссозданы, поскольку пакет `xsltproc` не установлен:
 
-<package-script :package="'kmod'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/kmod/multi_prepare') }}
+```
 
 ### Подготовка
 
-<package-script :package="'kmod'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/kmod/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'kmod'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/kmod/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'kmod'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/kmod/multi_install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

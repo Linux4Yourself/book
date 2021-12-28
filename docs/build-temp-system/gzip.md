@@ -1,20 +1,4 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gzip');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/gzip/README.md') }}
 
 ## Настройка
 
@@ -32,4 +16,12 @@ make
 
 ```bash
 make DESTDIR=$LIN install
+```
+
+## При раздельной структуре каталогов
+
+Переместите исполняемый файл в нужную директорию:
+
+```bash
+mv -v $LIN/usr/bin/gzip $LIN/bin
 ```

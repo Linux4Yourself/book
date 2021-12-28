@@ -1,27 +1,33 @@
-<pkg :name="'iproute2'" instsize showsbu2></pkg>
+{{ include('../packages/iproute2/README.md') }}
 
 ## Подготовка
 
 - Программа `arpd` требует установленную Berkeley DB. Отключите её,
 - Отключите 2 модуля, требующие `iptables`,
 
-<package-script :package="'iproute2'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/iproute2/prepare') }}
+```
 
 ## Сборка
 
-<package-script :package="'iproute2'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/iproute2/build') }}
+```
 
 ## Установка
 
-<package-script :package="'iproute2'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/iproute2/install') }}
+```
 
 ## Установка документации
 
-<package-script :package="'iproute2'" :type="'install-doc'"></package-script>
+```bash 
+{{ include('../packages/iproute2/install-doc') }}
+```
 ## Установленные файлы
 
 Программы: bridge, ctstat (ссылка на lnstat), genl, ifcfg, ifstat, ip, lnstat, nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (ссылка на lnstat), ss, and tc
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

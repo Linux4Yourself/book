@@ -1,8 +1,10 @@
-<pkg :name="'findutils'" instsize showsbu2></pkg>
+{{ include('../packages/findutils/README.md') }}
 
 ## Настройка
 
-<package-script :package="'findutils'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/findutils/configure') }}
+```
 
 ### Значения параметров
 
@@ -10,16 +12,26 @@
 
 ## Сборка
 
-<package-script :package="'findutils'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/findutils/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'findutils'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/findutils/test') }}
+```
 
 ## Установка
 
-<package-script :package="'findutils'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/findutils/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+## При раздельной структуре каталогов
+
+```bash 
+{{ include('../packages/findutils/cldirs') }}
+```
+
+

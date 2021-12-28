@@ -1,25 +1,33 @@
-<pkg :name="'nano'" instsize showsbu2></pkg>
+{{ include('../packages/nano/README.md') }}
 
 ## Настройка
 
-<package-script :package="'nano'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/nano/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'nano'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/nano/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'nano'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/nano/test') }}
+```
 
 ## Установка
 
-<package-script :package="'nano'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/nano/install') }}
+```
 
 ## Установка документации
 
-<package-script :package="'nano'" :type="'install-doc'"></package-script>
+```bash 
+{{ include('../packages/nano/install-doc') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

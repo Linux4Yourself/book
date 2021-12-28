@@ -1,25 +1,31 @@
-<pkg :name="'mpfr'" instsize showsbu2></pkg>
+{{ include('../packages/mpfr/README.md') }}
 
 ## Настройка
 
-<package-script :package="'mpfr'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/mpfr/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'mpfr'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/mpfr/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'mpfr'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/mpfr/test') }}
+```
 
 ## Установка
 
-<package-script :package="'mpfr'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/mpfr/install') }}
+```
 
 ## Установленные файлы
 
 Библиотеки: libmpfr.so
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

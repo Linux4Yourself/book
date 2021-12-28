@@ -1,25 +1,31 @@
-<pkg :name="'bc'" instsize showsbu2></pkg>
+{{ include('../packages/bc/README.md') }}
 
 ## Настройка
 
-<package-script :package="'bc'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/bc/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'bc'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/bc/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'bc'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/bc/test') }}
+```
 
 ## Установка
 
-<package-script :package="'bc'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/bc/install') }}
+```
 
 ## Установленные файлы
 
 Программы: `bc` и `dc`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

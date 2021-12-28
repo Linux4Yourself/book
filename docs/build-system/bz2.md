@@ -1,42 +1,67 @@
-<pkg :name="'bzip2'" instsize showsbu2></pkg>
+{{ include('../packages/bzip2/README.md') }}
 
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
 
 ## Подготовка
 
 Примените патч для правильной установки документации:
 
-<package-script :package="'bzip2'" :type="'patch'"></package-script>
+```bash 
+{{ include('../packages/bzip2/patch') }}
+```
 
 Убедитесь, что будут созданы относительные символические ссылки, и исправьте путь установки man-страниц:
 
-<package-script :package="'bzip2'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/bzip2/prepare') }}
+```
 
 ## Сборка
 
 Для сборки динамической библиотеки `libbz2.so` и самого пакета:
 
-<package-script :package="'bzip2'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/bzip2/build') }}
+```
 
 ## Установка
 
-<package-script :package="'bzip2'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/bzip2/install') }}
+```
+
+Создайте необходимые символические ссылки:
+
+```bash 
+{{ include('../packages/bzip2/postinstall') }}
+```
+
+> Если вы собираете систему с раздельной структурой каталогов, то пропустите шаг с созданием ссылок, перейдя к следующему.
+
+## При раздельной структуре каталогов
+
+```bash 
+{{ include('../packages/bzip2/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'bzip2'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/bzip2/multi_prepare') }}
+```
 
 ### Сборка
 
-<package-script :package="'bzip2'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/bzip2/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'bzip2'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/bzip2/multi_install') }}
+```
 
 ## Установленные файлы
 
@@ -69,24 +94,3 @@
 `bzmore` - работает больше с файлами, сжатыми с помощью bzip
 
 `libbz2` - библиотека, реализующая сжатие данных без потерь с сортировкой по блокам с использованием алгоритма Берроуза-Уиллера.
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, patch: {} },
-		mounted: function () {
-				this.getPackage('bzip2');
-				this.getPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getPatch: function() {
-					getPackage('bzip2-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>

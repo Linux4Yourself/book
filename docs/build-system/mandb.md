@@ -1,8 +1,10 @@
-<pkg :name="'man-db'" instsize showsbu2></pkg>
+{{ include('../packages/man-db/README.md') }}
 
 ## Настройка
 
-<package-script :package="'man-db'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/man-db/configure') }}
+```
 
 ## Значения параметров
 
@@ -14,15 +16,21 @@
 
 ## Сборка
 
-<package-script :package="'man-db'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/man-db/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'man-db'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/man-db/test') }}
+```
 
 ## Установка
 
-<package-script :package="'man-db'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/man-db/install') }}
+```
 
 ## Страницы руководств на других языках
 
@@ -75,8 +83,8 @@
 | Ukrainian (uk)                         |   KOI8-U    |
 | Vietnamese (vi)                        | TCVN5712-1  |
 
-!> Страницы на других языках не поддерживаются.
+???+ note "Обратите внимание"
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+    Страницы на других языках не поддерживаются.
+
+

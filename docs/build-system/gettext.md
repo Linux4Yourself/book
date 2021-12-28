@@ -1,23 +1,29 @@
-<pkg :name="'gettext'" instsize showsbu2></pkg>
+{{ include('../packages/gettext/README.md') }}
 
 ## Настройка
 
-<package-script :package="'gettext'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/gettext/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'gettext'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/gettext/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'gettext'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/gettext/test') }}
+```
 
 > Тестирование добавляет +3 SBU ко всему времени установки пакета.
 
 ## Установка
 
-<package-script :package="'gettext'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/gettext/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

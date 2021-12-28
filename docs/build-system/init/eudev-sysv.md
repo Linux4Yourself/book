@@ -1,46 +1,68 @@
-<pkg :name="'eudev'" instsize showsbu2></pkg>
-
-## Дополнительные необходимые файлы
-
-<a :href="patch.url">{{ patch.url}}</a>
+{{ include('../packages/eudev/README.md') }}
 
 ## Настройка
 
-<package-script :package="'eudev'" :type="'configure'"></package-script>
+> Если вы собираете систему с раздельной структурой каталогов, то пропустите этот шаг и приступите к следующему.
+
+```bash 
+{{ include('../packages/eudev/configure') }}
+```
+
+## При раздельной структуре каталогов
+
+```bash 
+{{ include('../packages/eudev/cldirs') }}
+```
 
 ## Сборка
 
-<package-script :package="'eudev'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/eudev/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'eudev'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/eudev/test') }}
+```
 
 ## Установка
 
-<package-script :package="'eudev'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/eudev/install') }}
+```
 
 Установите необходимые файлы:
 
-<package-script :package="'eudev'" :type="'postinstall'"></package-script>
+```bash 
+{{ include('../packages/eudev/postinstall') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'eudev'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/eudev/multi_prepare') }}
+```
 
 ### Настройка
 
-<package-script :package="'eudev'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/eudev/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'eudev'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/eudev/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'eudev'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/eudev/multi_install') }}
+```
 
 <script>
 		new Vue({

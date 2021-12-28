@@ -1,28 +1,45 @@
-<pkg :name="'sysklogd'" instsize showsbu2></pkg>
+{{ include('../packages/sysklogd/README.md') }}
 
 ## Подготовка
 
 Исправьте ошибку, приводящую к краху программы:
 
-<package-script :package="'sysklogd'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/sysklogd/prepare') }}
+```
 
 ## Сборка
 
-<package-script :package="'sysklogd'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/sysklogd/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'sysklogd'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/sysklogd/test') }}
+```
 
 ## Установка
 
-<package-script :package="'sysklogd'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/sysklogd/install') }}
+```
+
+> Если вы собираете систему с раздельной структурой каталогов, то пропустите шаг с установкой, перейдя к следующему
+
+## При раздельной структуре каталогов
+
+```bash 
+{{ include('../packages/sysklogd/cldirs') }}
+```
 
 ## Настройка
 
 Создайте конфигурационный файл:
-<package-script :package="'sysklogd'" :type="'postinstall'"></package-script>
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+```bash 
+{{ include('../packages/sysklogd/postinstall') }}
+```
+
+

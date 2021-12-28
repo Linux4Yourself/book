@@ -4,22 +4,4 @@
 
 Есть пакеты, которые включены, но строго не требуются. В списке, который расположен ниже, имеются описания для каждого пакета.
 
-<div
-    v-for="pkg in packages"
-    class="pkg"
-  >
-	<h2>{{ pkg.name }}</h2>
-	<span>Версия: {{ pkg.version }}</span>
-	<p>{{ pkg.description }}</p>
-	<a :href="pkg.url">{{ pkg.url }}</a>
-</div>
-
-<script>
-	new Vue({
-		el: '#main',
-		data: { packages: [] },
-		mounted: function () {
-				getPackages().then(response => (this.packages = response.data));
-		},
-  })
-</script>
+{{ include('../packages/README.md') }}

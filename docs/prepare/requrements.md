@@ -46,24 +46,24 @@ ln -sf bash /bin/sh
 
 ```bash
 pacman -S base-devel
-
 ```
 
-### Для Rosa
+### Для Fedora, Redhat
 
 ```bash
-urpmi bison gawk texinfo make gcc-c++
-
+dnf install bison gawk texinfo make gcc-c++
 ```
 
 
 ## Проверка соответствия программного обеспечения
 
 Чтобы узнать, что ваша хост-система полностью соответствует всем необходимым для дальнейшей работы требованиям, выполните следующий набор команд:
+```bash 
+{{ include('../scripts/version-check.sh') }}
+```
 
-[filename](../scripts/version-check.md ':include')
-
-!> Внимательно изучите результат выполнения. В нём не должно встречаться строк, содержащих `ERROR`, `command not found`, `failed`.
+???+ warning "Предупреждение"
+	 Внимательно изучите результат выполнения. В нём не должно встречаться строк, содержащих `ERROR`, `command not found`, `failed`.
 
 **Ошибочный результат**
 
@@ -129,7 +129,3 @@ texi2any (GNU texinfo) 6.6
 xz (XZ Utils) 5.2.4
 g++ compilation OK
 ```
-
-<script>
-	new Vue({ el: '#main' })
-</script>

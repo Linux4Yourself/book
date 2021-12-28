@@ -1,81 +1,20 @@
-<package-info :package="package" showsbu></package-info>
 
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {}, mpc: {}, mpfr: {}, gmp : {}, isl: {}, patch: {} },
-		mounted: function () {
-				this.getPackage('gcc');
-				this.getMpc();
-				this.getMpfr();
-				this.getGmp();
-				this.getIsl();
-				this.getPatch();
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-			getMpc: function() {
-					getPackage('mpc')
-					.then(response => this.mpc = response);
-			},
-			getMpfr: function() {
-					getPackage('mpfr')
-					.then(response => this.mpfr = response);
-			},
-			getGmp: function() {
-					getPackage('gmp')
-					.then(response => this.gmp = response);
-			},
-			getIsl: function() {
-					getPackage('isl')
-					.then(response => this.isl = response);
-			},
-			getPatch: function() {
-					getPackage('gcc-patch')
-					.then(response => this.patch = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/gcc/README.md') }}
 
 ## Подготовка
 
-### Дополнительные необходимые файлы
-
-<a :href="mpc.url">{{ mpc.url}}</a>
-
-<a :href="gmp.url">{{ gmp.url}}</a>
-
-<a :href="mpfr.url">{{ mpfr.url}}</a>
-
-<a :href="isl.url">{{ isl.url}}</a>
-
-<a :href="patch.url">
-{{ patch.url }}
-</a>
-
-Распакуйте дополнительные пакеты:
-
-!> Обратите внимание, что распаковка указанных пакетов должна производится из каталога пакета GCC.
-
-<pre>
-tar -xf ../{{ mpfr.fileName }}
-mv -v {{ mpfr.name }}-{{ mpfr.version }} {{ mpfr.name }}
-tar -xf ../{{ gmp.fileName }}
-mv -v {{ gmp.name }}-{{ gmp.version }} {{ gmp.name }}
-tar -xf ../{{ mpc.fileName }}
-mv -v {{ mpc.name }}-{{ mpc.version }} {{ mpc.name }}
-tar -xf ../{{ isl.fileName }}
-mv -v {{ isl.name }}-{{ isl.version }} {{ isl.name }}
-</pre>
-
-Примените патч, исправляющий некоторые проблемы в GCC:
+???+ warning "Предупреждение"
+	Распаковка указанных пакетов должна производиться из каталога `{{ include('../packages/gcc/.name') }}`. Проверьте текущее местоположение, прежде чем выполнить команды ниже.
 
 ```bash
-patch -Np1 -i ../gcc-11.1.0-upstream_fixes-1.patch
+tar -xf ../{{ include('../packages/mpfr/.filename') }}
+mv -v {{ include('../packages/mpfr/.name') }} {{ include('../packages/mpfr/.name_short') }}
+tar -xf ../{{ include('../packages/gmp/.filename') }}
+mv -v {{ include('../packages/gmp/.name') }} {{ include('../packages/gmp/.name_short') }}
+tar -xf ../{{ include('../packages/mpc/.filename') }}
+mv -v {{ include('../packages/mpc/.name') }} {{ include('../packages/mpc/.name_short') }}
+tar -xf ../{{ include('../packages/isl/.filename') }}
+mv -v {{ include('../packages/isl/.name') }} {{ include('../packages/isl/.name_short') }}
 ```
 
 Смените пути установки библиотек:
@@ -86,11 +25,11 @@ sed -e '/m64=/s/lib64/lib/' \
     -i.orig gcc/config/i386/t-linux64
 ```
 
-Пакет {{package.name}} требует использовать отдельную директорию для сборки. Создайте её:
+Пакет GCC требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
-mkdir build
-cd    build
+mkdir -v build
+cd       build
 ```
 
 Разрешим сборку `libgcc` с поддержкой многопоточности:

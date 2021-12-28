@@ -1,8 +1,10 @@
-<pkg :name="'less'" instsize showsbu2></pkg>
+{{ include('../packages/less/README.md') }}
 
 ## Настройка
 
-<package-script :package="'less'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/less/configure') }}
+```
 
 ### Значения параметров
 
@@ -10,12 +12,14 @@
 
 ## Сборка
 
-<package-script :package="'less'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/less/build') }}
+```
 
 ## Установка
 
-<package-script :package="'less'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/less/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

@@ -1,23 +1,37 @@
-<pkg :name="'procps-ng'" instsize showsbu2></pkg>
+{{ include('../packages/procps-ng/README.md') }}
 
 ## Настройка
 
-<package-script :package="'procps-ng'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/procps-ng/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'procps-ng'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/procps-ng/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'procps-ng'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/procps-ng/test') }}
+```
 
-?> Пять тестов, связанных с `pkill` дают сбои, так как они (тесты) не были обновлены.
+???+ warning "Предупреждение"
+
+    Пять тестов, связанных с `pkill` дают сбои, так как они (тесты) не были обновлены.
 
 ## Установка
 
-<package-script :package="'procps-ng'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/procps-ng/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+## При раздельной структуре каталогов
+
+```bash 
+{{ include('../packages/procps-ng/cldirs') }}
+```
+
+

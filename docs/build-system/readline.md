@@ -1,14 +1,18 @@
-<pkg :name="'readline'" instsize showsbu2></pkg>
+{{ include('../packages/readline/README.md') }}
 
 ## Подготовка
 
-Переустановка Readline приведет к переименованию старых библиотек в <имя библиотеки>.old. Хотя обычно это не проблема, в некоторых случаях это может вызвать ошибку в ldconfig. Этого можно избежать, выполнив следующие команды:
+Переустановка Readline приведет к переименованию старых библиотек в `<имя библиотеки>.old`. Хотя обычно это не проблема, в некоторых случаях это может вызвать ошибку в ldconfig. Этого можно избежать, выполнив следующие команды:
 
-<package-script :package="'readline'" :type="'prepare'"></package-script>
+```bash 
+{{ include('../packages/readline/prepare') }}
+```
 
 ## Настройка
 
-<package-script :package="'readline'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/readline/configure') }}
+```
 
 ### Значения параметров
 
@@ -16,34 +20,50 @@
 
 ## Сборка
 
-<package-script :package="'readline'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/readline/build') }}
+```
 
 ## Установка
 
-<package-script :package="'readline'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/readline/install') }}
+```
+
+## При использовании раздельной структуры каталогов
+
+```bash 
+{{ include('../packages/readline/cldirs') }}
+```
 
 ## Для multilib
 
 ### Очистка
 
-<package-script :package="'readline'" :type="'multi_prepare'"></package-script>
+```bash 
+{{ include('../packages/readline/multi_prepare') }}
+```
 
 ### Настройка
 
-<package-script :package="'readline'" :type="'multi_configure'"></package-script>
+```bash 
+{{ include('../packages/readline/multi_configure') }}
+```
 
 ### Сборка
 
-<package-script :package="'readline'" :type="'multi_build'"></package-script>
+```bash 
+{{ include('../packages/readline/multi_build') }}
+```
 
 ### Установка
 
-<package-script :package="'readline'" :type="'multi_install'"></package-script>
+```bash 
+{{ include('../packages/readline/multi_install') }}
+```
 
 ## Установленные файлы
 
 Библиотеки: `libhistory.so` и `libreadline.so`
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

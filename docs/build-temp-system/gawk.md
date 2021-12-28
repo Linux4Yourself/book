@@ -1,20 +1,4 @@
-<package-info :package="package" showsbu></package-info>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gawk');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			},
-		}
-  })
-</script>
+{{ include('../packages/gawk/README.md') }}
 
 ## Настройка
 
@@ -24,7 +8,7 @@
 sed -i 's/extras//' Makefile.in
 ```
 
-Выполним скрипт `configure`:
+Выполните скрипт `configure`:
 
 ```bash
 ./configure --prefix=/usr   \

@@ -1,40 +1,12 @@
 # LibstdC++ Проход 1
 
-Пакет содержит библиотеку времени исполнения, необходимую программам, написанным на языке C++ и собранным при помощи компилятора GNU.
+{{ include('../packages/gcc/README.md') }}
 
-Версия <b>v.{{ package.version }}</b>
-<br />
-Ссылка для скачивания: <a :href="package.url"><b>{{ package.url }}</b></a>
-<br />
-Текущая версия: <b>{{ package.version }}</b>
-<br />
-Домашняя страница: <a :href="package.homeUrl"><b>{{ package.homeUrl }}</b></a>
-<br />
-Важность: <b>Необходимый</b>
-<br />
-Размер архива: <b>{{ package.size }} Mb</b>
-<br />
-SBU: <b>1</b>
-
-<script>
-		new Vue({
-		el: '#main',
-		data: { package: {} },
-		mounted: function () {
-				this.getPackage('gcc');
-		},
-		methods: {
-			getPackage: function(name) {
-					getPackage(name)
-					.then(response => this.package = response);
-			}
-		}
-  })
-</script>
 
 ## Настройка
 
-!> **Данный пакет входит в архив с исходным кодом пакета GCC**
+???+ warning "Предупреждение"
+	 **Данный пакет входит в архив с исходным кодом пакета GCC**
 
 Создайте отдельную директорию для сборки:
 
@@ -53,7 +25,7 @@ cd       build
     --disable-multilib              \
     --disable-nls                   \
     --disable-libstdcxx-pch         \
-    --with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.1.0
+    --with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.2.0
 ```
 
 ### Значения параметров
@@ -64,7 +36,7 @@ cd       build
 
 `--disable-libstdcxx-pch` - отключает установку предварительно скомпилированных заголовков, ненужных на данном этапе
 
-`--with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.1.0` - путь поиска заголовков C++
+`--with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.2.0` - путь поиска заголовков C++
 
 ## Сборка
 

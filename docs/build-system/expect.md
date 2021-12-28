@@ -1,23 +1,29 @@
-<pkg :name="'expect'" instsize showsbu2></pkg>
+{{ include('../packages/expect/README.md') }}
 
-[filename](../shared/test-pkgs.md ':include')
+{{ include('../shared/test-pkgs.md') }}
 
 ## Настройка
 
-<package-script :package="'expect'" :type="'configure'"></package-script>
+```bash 
+{{ include('../packages/expect/configure') }}
+```
 
 ## Сборка
 
-<package-script :package="'expect'" :type="'build'"></package-script>
+```bash 
+{{ include('../packages/expect/build') }}
+```
 
 ## Тестирование
 
-<package-script :package="'expect'" :type="'test'"></package-script>
+```bash 
+{{ include('../packages/expect/test') }}
+```
 
 ## Установка
 
-<package-script :package="'expect'" :type="'install'"></package-script>
+```bash 
+{{ include('../packages/expect/install') }}
+```
 
-<script>
-	new Vue({ el: '#main' })
-</script>
+

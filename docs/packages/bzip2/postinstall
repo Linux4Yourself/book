@@ -1,0 +1,6 @@
+cp -v bzip2-shared /usr/bin/bzip2
+cp -av libbz2.so* /usr/lib
+ln -sv libbz2.so.1.0 /usr/lib/libbz2.so
+rm -v  /usr/bin/{bunzip2,bzcat}
+ln -sv bzip2 /usr/bin/bunzip2
+ln -sv bzip2 /usr/bin/bzcat
