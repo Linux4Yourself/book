@@ -116,4 +116,4 @@ sudo rm /swapfile
 
 Больше о подкачке смотреть [здесь](https://habr.com/ru/company/flant/blog/348324/).
 
-О работе с `Zram` смотреть [здесь](additional/zram.md).
+О работе с `Zram` смотреть [здесь](../additional/zram.md).
