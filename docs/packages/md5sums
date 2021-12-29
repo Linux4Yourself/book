@@ -15,7 +15,7 @@ b25e4fcfbfd4889bef76f7241dfa1a04 dbus-1.13.18.tar.xz
 bdd1034f33b10eebcf2aa2a9298dca33 e2fsprogs-1.46.4.tar.gz
 4c3d9ff35b2ab2fe518dc7eb3951e128 emacs-27.2.tar.xz
 2c095e31e35d6be7b3718477b6d52702 elfutils-0.186.tar.bz2
-60b135a189523f333cea5f71a3345c8d eudev-3.2.10.tar.gz
+417ba948335736d4d81874fba47a30f7 eudev-3.2.11.tar.gz
 b49e50792ddb35165bab41413238f66e expat-2.4.2.tar.xz
 00fce8de158422f5ccd2666512329bd2 expect5.45.4.tar.gz
 18233bb0a0089dfdc7dfbc93b96f231b file-5.41.tar.gz
@@ -48,7 +48,7 @@ faf24817c9a69daf365a83d425b4fbd4 bootscripts.tar.xz
 7fcbea316f8439d092040996295c8f9d linux-5.15.11.tar.xz
 0d90823e1426f1da2fd872df0311298d m4-1.4.19.tar.xz
 fc7a67ea86ace13195b0bce683fd4469 make-4.3.tar.gz
-aca67fc0757c9bb423f17d666e178d2f man-db-2.9.4.tar.xz
+6e233a555f7b9ae91ce7cd0faa322bce man-db-2.9.4.tar.xz
 3ac24e8c6fae26b801cb87ceb63c0a30 man-pages-5.13.tar.xz
 03ddd7272d8cbb9f33269cb37a200d24 meson-0.60.3.tar.gz
 9f16c976c25bb0f76b50be749cd7a3a8 mpc-1.2.1.tar.gz

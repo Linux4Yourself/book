@@ -15,7 +15,7 @@ https://ftp.gnu.org/gnu/diffutils/diffutils-3.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.4/e2fsprogs-1.46.4.tar.gz
 https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
 https://sourceware.org/ftp/elfutils/0.186/elfutils-0.186.tar.bz2
-https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz
+https://github.com/eudev-project/eudev/releases/download/v3.2.11/eudev-3.2.11.tar.gz
 https://prdownloads.sourceforge.net/expat/expat-2.4.2.tar.xz
 https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz
 https://astron.com/pub/file/file-5.41.tar.gz
@@ -94,7 +94,7 @@ https://github.com/lfs-book/make-ca/releases/download/v1.9/make-ca-1.9.tar.xz
 https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/bzip2-1.0.8-install_docs-1.patch
 https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/coreutils-9.0-i18n-1.patch
 https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/glibc-2.34-fhs-1.patch
-hhttps://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch
+https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch
 https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/sysvinit-2.99-consolidated-1.patch
 https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/efivar-37-gcc_9-1.patch
 https://www.linuxfromscratch.org/patches/lfs/development/binutils-2.37-upstream_fix-1.patch

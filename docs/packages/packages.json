@@ -443,15 +443,15 @@
 	},
 	{
 		"name": "eudev",
-		"fileName": "eudev-3.2.10.tar.gz",
+		"fileName": "eudev-3.2.11.tar.gz",
 		"description": "Eudev - диспетчер устройств. Он контролирует записи в каталоге /dev, так как устройства добавляются или удаляются из системы динамически.",
-		"url": "https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz",
-		"homeUrl": "https://wiki.gentoo.org/wiki/Project:Eudev",
-		"version": "3.2.10",
-		"releasesUrl": "https://dev.gentoo.org/~blueness/eudev/",
+		"url": "https://github.com/eudev-project/eudev/releases/download/v3.2.11/eudev-3.2.11.tar.gz",
+		"homeUrl": "https://github.com/eudev-project/eudev",
+		"version": "3.2.11",
+		"releasesUrl": "https://github.com/eudev-project/eudev/releases",
 		"priority": "required",
-		"md5": "60b135a189523f333cea5f71a3345c8d",
-		"size": "1.87",
+		"md5": "417ba948335736d4d81874fba47a30f7",
+		"size": "2.03",
 		"installedSize": 8.1,
 		"sbu": 0,
 		"sbu2": 0.2,
@@ -471,7 +471,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/eudev-3.2.10.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/eudev-3.2.11.tar.gz"
 	},
 	{
 		"name": "expat",
@@ -1266,8 +1266,8 @@
 		"version": "2.9.4",
 		"releasesUrl": "https://download.savannah.gnu.org/releases/man-db/",
 		"priority": "optional",
-		"md5": "aca67fc0757c9bb423f17d666e178d2f",
-		"size": "1.27",
+		"md5": "6e233a555f7b9ae91ce7cd0faa322bce",
+		"size": "1.82",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0.5,
