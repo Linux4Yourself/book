@@ -7,6 +7,7 @@
 - [Добавление информации о доп. пакетах в заключительной части](https://github.com/Linux4Yourself/book/issues/1014)
 - [Обновление сборочных инструкций `gmp`](https://github.com/Linux4Yourself/book/pull/1018)
 - [Исправлено #1016](https://github.com/Linux4Yourself/book/issues/1016)
+- [Исправлено #1015](https://github.com/Linux4Yourself/book/issues/1015)
 
 ## 28.12.2021
 
