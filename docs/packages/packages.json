@@ -2364,7 +2364,7 @@
 		"name": "kbd-patch",
 		"fileName": "kbd-2.4.0-backspace-1.patch",
 		"description": "",
-		"url": "hhttps://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch",
+		"url": "https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch",
 		"homeUrl": "",
 		"version": "2.4.0-backspace-1",
 		"releasesUrl": "",
