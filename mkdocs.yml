@@ -82,6 +82,9 @@ markdown_extensions:
       linenums_style: pymdownx-inline
 
 plugins:
+  # Раскомментировать в случае необходимости генерации
+  # PDF-версии руководства.
+  #- with-pdf
   - search:
       lang: ru
 
@@ -281,6 +284,7 @@ nav:
         - Создание загрузочной системы Legacy Boot MBR: boot/mbr.md
     - Заключительная часть:
         - Заключительная часть: final/final.md
+        - Что теперь?: final/whatnow.md
     - Вспомогательные материалы:
         - Введение: additional/additional.md
         - Строение GNU/Linux:
