@@ -12,7 +12,7 @@ coreutils-9.0.tar.xz
 dbus-1.13.18.tar.xz
 dejagnu-1.6.3.tar.gz
 diffutils-3.8.tar.xz
-e2fsprogs-1.46.4.tar.gz
+e2fsprogs-1.46.5.tar.gz
 emacs-27.2.tar.xz
 elfutils-0.186.tar.bz2
 eudev-3.2.11.tar.gz
@@ -32,7 +32,7 @@ grep-3.7.tar.xz
 groff-1.22.4.tar.gz
 grub-2.06.tar.xz
 gzip-1.11.tar.xz
-iana-etc-20211215.tar.gz
+iana-etc-20211229.tar.gz
 inetutils-2.2.tar.xz
 intltool-0.51.0.tar.gz
 iproute2-5.15.0.tar.xz
@@ -76,7 +76,7 @@ texinfo-6.8.tar.xz
 tzdata2021e.tar.gz
 udev.tar.xz
 util-linux-2.37.2.tar.xz
-vim-8.2.3676.tar.gz
+vim-8.2.3990.tar.gz
 nano-5.9.tar.xz
 XML-Parser-2.46.tar.gz
 xz-5.2.5.tar.xz

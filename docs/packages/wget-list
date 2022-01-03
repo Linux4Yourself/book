@@ -12,7 +12,7 @@ https://lx4u.ru/downloads/packages/coreutils-9.0.tar.xz
 https://lx4u.ru/downloads/packages/dbus-1.13.18.tar.xz
 https://lx4u.ru/downloads/packages/dejagnu-1.6.3.tar.gz
 https://lx4u.ru/downloads/packages/diffutils-3.8.tar.xz
-https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz
+https://lx4u.ru/downloads/packages/e2fsprogs-1.46.5.tar.gz
 https://lx4u.ru/downloads/packages/emacs-27.2.tar.xz
 https://lx4u.ru/downloads/packages/elfutils-0.186.tar.bz2
 https://lx4u.ru/downloads/packages/eudev-3.2.11.tar.gz
@@ -32,7 +32,7 @@ https://lx4u.ru/downloads/packages/grep-3.7.tar.xz
 https://lx4u.ru/downloads/packages/groff-1.22.4.tar.gz
 https://lx4u.ru/downloads/packages/grub-2.06.tar.xz
 https://lx4u.ru/downloads/packages/gzip-1.11.tar.xz
-https://lx4u.ru/downloads/packages/iana-etc-20211215.tar.gz
+https://lx4u.ru/downloads/packages/iana-etc-20211229.tar.gz
 https://lx4u.ru/downloads/packages/inetutils-2.2.tar.xz
 https://lx4u.ru/downloads/packages/intltool-0.51.0.tar.gz
 https://lx4u.ru/downloads/packages/iproute2-5.15.0.tar.xz
@@ -76,7 +76,7 @@ https://lx4u.ru/downloads/packages/texinfo-6.8.tar.xz
 https://lx4u.ru/downloads/packages/tzdata2021e.tar.gz
 https://lx4u.ru/downloads/packages/udev.tar.xz
 https://lx4u.ru/downloads/packages/util-linux-2.37.2.tar.xz
-https://lx4u.ru/downloads/packages/vim-8.2.3676.tar.gz
+https://lx4u.ru/downloads/packages/vim-8.2.3990.tar.gz
 https://lx4u.ru/downloads/packages/nano-5.9.tar.xz
 https://lx4u.ru/downloads/packages/XML-Parser-2.46.tar.gz
 https://lx4u.ru/downloads/packages/xz-5.2.5.tar.xz
