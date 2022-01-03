@@ -8,7 +8,14 @@
  - новые записи добавлять наверх 
 -->
 
+## Обновление пакетов
+
+- iana-etc 20211229
+- vim 8.2.3990
+- e2fsprogs 1.46.5
+
 ## Изменения
+- [Копирование resolv.conf перенесенно в раздел "подготовка"](https://github.com/Linux4Yourself/book/issues/933)
 - [Изменить формат changelog(а)](https://github.com/Linux4Yourself/book/issues/963)
 - [Cмена репозитория (и мейнтейнера) eudev](https://github.com/Linux4Yourself/book/issues/981)
 - [Битая ссылка https://lx4u.ru/rel/stable/kernel/kernel-setup-intro/additional/LinuxStructure1](https://github.com/Linux4Yourself/book/issues/1015)

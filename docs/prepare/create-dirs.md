@@ -35,6 +35,14 @@ mkdir -pv $LIN/tools
 
 Подробнее об иерархии каталогов можно узнать в спецификации [FHS](https://refspecs.linuxfoundation.org/fhs.shtml).
 
+## Подключение к сети из среды chroot
+
+Для работы сети в среде chroot требуется скопировать файлы `hosts` и `resolv.conf` с хост-системы:
+
+```bash
+cp -v /etc/{hosts,resolv.conf} $LIN/etc
+```
+
 ## Для multilib
 
 Создайте директорию для 32-битных библиотек:

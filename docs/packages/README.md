@@ -128,7 +128,7 @@ SBU: **0.1**
 ---
 # binutils
 
-Пакет содержит компоновщик, ассемблер и другие утилиты и инструменты для работы с объектными файлам. Программы в этом пакете необходимы для компиляции большинства пакетов.
+Пакет содержит компоновщик, ассемблер и другие утилиты и инструменты для работы с объектными файлами. Программы отсюда необходимы для сборки большинства пакетов.
 
 Версия: **2.37**
 
@@ -306,17 +306,17 @@ SBU: **0.2**
 
 Утилиты для работы с файловыми системами ext2, ext3 и ext4. Это наиболее распространенные и тщательно протестированные файловые системы, поддерживаемые в Linux.
 
-Версия: **1.46.4**
+Версия: **1.46.5**
 
 Размер: **9.07Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.4/e2fsprogs-1.46.4.tar.gz](https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.4/e2fsprogs-1.46.4.tar.gz)
+Оригинальное расположение: [https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.5/e2fsprogs-1.46.5.tar.gz](https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.5/e2fsprogs-1.46.5.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz](https://lx4u.ru/downloads/packages/e2fsprogs-1.46.4.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/e2fsprogs-1.46.5.tar.gz](https://lx4u.ru/downloads/packages/e2fsprogs-1.46.5.tar.gz)
 
-MD5: **bdd1034f33b10eebcf2aa2a9298dca33**
+MD5: **d774f74c78afe1c6179b16cae8a420a5**
 
 Домашняя страница: [https://sourceforge.net/projects/e2fsprogs/](https://sourceforge.net/projects/e2fsprogs/)
 
@@ -373,19 +373,19 @@ SBU: **0.9**
 
 Eudev - диспетчер устройств. Он контролирует записи в каталоге /dev, так как устройства добавляются или удаляются из системы динамически.
 
-Версия: **3.2.10**
+Версия: **3.2.11**
 
-Размер: **1.87Mb**
+Размер: **2.03Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz](https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz)
+Оригинальное расположение: [https://github.com/eudev-project/eudev/releases/download/v3.2.11/eudev-3.2.11.tar.gz](https://github.com/eudev-project/eudev/releases/download/v3.2.11/eudev-3.2.11.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/eudev-3.2.10.tar.gz](https://lx4u.ru/downloads/packages/eudev-3.2.10.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/eudev-3.2.11.tar.gz](https://lx4u.ru/downloads/packages/eudev-3.2.11.tar.gz)
 
-MD5: **60b135a189523f333cea5f71a3345c8d**
+MD5: **417ba948335736d4d81874fba47a30f7**
 
-Домашняя страница: [https://wiki.gentoo.org/wiki/Project:Eudev](https://wiki.gentoo.org/wiki/Project:Eudev)
+Домашняя страница: [https://github.com/eudev-project/eudev](https://github.com/eudev-project/eudev)
 
 SBU: **0.2**
 
@@ -660,7 +660,7 @@ SBU: **0.1**
 
 Версия: **3.7**
 
-Размер: **1.57Mb**
+Размер: **0.00Mb**
 
 Приоритет: **Необходимый**
 
@@ -668,7 +668,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/grep-3.7.tar.xz](https://lx4u.ru/downloads/packages/grep-3.7.tar.xz)
 
-MD5: **7c9cca97fa18670a21e72638c3e1dabf**
+MD5: **d45af87c3d9d3ddbe11cac971e11236c**
 
 Домашняя страница: [https://gnu.org/software/grep](https://gnu.org/software/grep)
 
@@ -746,17 +746,17 @@ SBU: **0.1**
 
 Пакет Iana-Etc содержит данные для сетевых служб и протоколов.
 
-Версия: **20211215**
+Версия: **20211229**
 
 Размер: **0.57Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/Mic92/iana-etc/releases/download/20211215/iana-etc-20211215.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20211215/iana-etc-20211215.tar.gz)
+Оригинальное расположение: [https://github.com/Mic92/iana-etc/releases/download/20211229/iana-etc-20211229.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20211229/iana-etc-20211229.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20211215.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20211215.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20211229.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20211229.tar.gz)
 
-MD5: **30fae65143e88b07793b364c3be43aa4**
+MD5: **3982aafed070ddcceb6ac9c46e0d2ab7**
 
 Домашняя страница: [https://www.iana.org/protocols](https://www.iana.org/protocols)
 
@@ -926,7 +926,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bootscripts.tar.xz](https://lx4u.ru/downloads/packages/bootscripts.tar.xz)
 
-MD5: **faf24817c9a69daf365a83d425b4fbd4**
+MD5: **4f2a2b6159a437d1e89961b0231eaab0**
 
 Домашняя страница: [https://github.com/Linux4Yourself/bootscripts](https://github.com/Linux4Yourself/bootscripts)
 
@@ -1090,7 +1090,7 @@ SBU: **0.1**
 
 Версия: **2.9.4**
 
-Размер: **1.27Mb**
+Размер: **1.82Mb**
 
 Приоритет: **Необязательный**
 
@@ -1098,7 +1098,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz](https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz)
 
-MD5: **aca67fc0757c9bb423f17d666e178d2f**
+MD5: **6e233a555f7b9ae91ce7cd0faa322bce**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/man-db](https://savannah.nongnu.org/projects/man-db)
 
@@ -1686,17 +1686,17 @@ SBU: **0.5**
 
 Один из мощнейших текстовых редакторов с полной свободой настройки и автоматизации, возможными благодаря расширениям и надстройкам.
 
-Версия: **8.2.3676**
+Версия: **8.2.3990**
 
-Размер: **15.07Mb**
+Размер: **15.14Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://github.com/vim/vim/archive/refs/tags/v8.2.3676.tar.gz](https://github.com/vim/vim/archive/refs/tags/v8.2.3676.tar.gz)
+Оригинальное расположение: [https://github.com/vim/vim/archive/refs/tags/v8.2.3990.tar.gz](https://github.com/vim/vim/archive/refs/tags/v8.2.3990.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/vim-8.2.3676.tar.gz](https://lx4u.ru/downloads/packages/vim-8.2.3676.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/vim-8.2.3990.tar.gz](https://lx4u.ru/downloads/packages/vim-8.2.3990.tar.gz)
 
-MD5: **c91822aee14403d7e980420125b74bbf**
+MD5: **341088965b3ce0b20afde289cb87ed61**
 
 Домашняя страница: [https://www.vim.org/](https://www.vim.org/)
 
@@ -2013,7 +2013,7 @@ SBU: **0.2**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch](https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch)
 
-MD5: **19852fe67b6babb67bfae0b6db9ef732**
+MD5: **b45d3bea4ddb7f64b6e56033ecc0fb11**
 
 Домашняя страница: []()
 
@@ -2024,7 +2024,7 @@ MD5: **19852fe67b6babb67bfae0b6db9ef732**
 
 Версия: **9.0-i18n-1**
 
-Размер: **0.17Mb**
+Размер: **0.16Mb**
 
 Приоритет: **Необязательный**
 
@@ -2032,7 +2032,7 @@ MD5: **19852fe67b6babb67bfae0b6db9ef732**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch](https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch)
 
-MD5: **1260d0045ce3452fff2aa82c7a04e31a**
+MD5: **e716728302e3ed1dfffb06050a68517c**
 
 Домашняя страница: []()
 
@@ -2051,7 +2051,7 @@ MD5: **1260d0045ce3452fff2aa82c7a04e31a**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch](https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch)
 
-MD5: **dd09372fc5740324c82aed7d97635d6d**
+MD5: **9a5997c3452909b1769918c759eff8a2**
 
 Домашняя страница: []()
 
@@ -2066,11 +2066,11 @@ MD5: **dd09372fc5740324c82aed7d97635d6d**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [hhttps://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch](hhttps://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch)
+Оригинальное расположение: [https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch](https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/kbd-2.4.0-backspace-1.patch)
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch](https://lx4u.ru/downloads/packages/kbd-2.4.0-backspace-1.patch)
 
-MD5: **3249eddfaf6138c9542d0b5165033d5d**
+MD5: **f75cca16a38da6caa7d52151f7136895**
 
 Домашняя страница: []()
 
@@ -2089,7 +2089,7 @@ MD5: **3249eddfaf6138c9542d0b5165033d5d**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch](https://lx4u.ru/downloads/packages/sysvinit-2.99-consolidated-1.patch)
 
-MD5: **fd07ab7c0e5ec38ac2aa2d79178e4562**
+MD5: **4900322141d493e74020c9cf437b2cdc**
 
 Домашняя страница: []()
 
@@ -2108,7 +2108,7 @@ MD5: **fd07ab7c0e5ec38ac2aa2d79178e4562**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch](https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch)
 
-MD5: **6c3af2c50718168f781bf0c565736928**
+MD5: **e795e52eeefc0d2c62c6c4bd748d2d38**
 
 Домашняя страница: []()
 
@@ -2127,7 +2127,7 @@ MD5: **6c3af2c50718168f781bf0c565736928**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch](https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch)
 
-MD5: **0d448d317d9df5e0ea2bf86fe4e84a3a**
+MD5: **3518fa864fe8d7ef65be4960f380b03b**
 
 Домашняя страница: []()
 
@@ -2146,7 +2146,7 @@ MD5: **0d448d317d9df5e0ea2bf86fe4e84a3a**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch](https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch)
 
-MD5: **7474e7b403e7afde1e2e906bb1938686**
+MD5: **fb42558b59ed95ee00eb9f1c1c9b8056**
 
 Домашняя страница: []()
 

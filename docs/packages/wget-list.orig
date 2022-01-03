@@ -12,7 +12,7 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.13.18.tar.xz
 https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.8.tar.xz
-https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.4/e2fsprogs-1.46.4.tar.gz
+https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.5/e2fsprogs-1.46.5.tar.gz
 https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
 https://sourceware.org/ftp/elfutils/0.186/elfutils-0.186.tar.bz2
 https://github.com/eudev-project/eudev/releases/download/v3.2.11/eudev-3.2.11.tar.gz
@@ -32,7 +32,7 @@ https://ftp.gnu.org/gnu/grep/grep-3.7.tar.xz
 https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
 https://ftp.gnu.org/gnu/gzip/gzip-1.11.tar.xz
-https://github.com/Mic92/iana-etc/releases/download/20211215/iana-etc-20211215.tar.gz
+https://github.com/Mic92/iana-etc/releases/download/20211229/iana-etc-20211229.tar.gz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.2.tar.xz
 https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.15.0.tar.xz
@@ -76,7 +76,7 @@ https://ftp.gnu.org/gnu/texinfo/texinfo-6.8.tar.xz
 https://www.iana.org/time-zones/repository/releases/tzdata2021e.tar.gz
 https://github.com/Linux4Yourself/Linux4Yourself.Udev/releases/download/0.1/udev.tar.xz
 https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz
-https://github.com/vim/vim/archive/refs/tags/v8.2.3676.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v8.2.3990.tar.gz
 https://www.nano-editor.org/dist/v5/nano-5.9.tar.xz
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
 https://tukaani.org/xz/xz-5.2.5.tar.xz

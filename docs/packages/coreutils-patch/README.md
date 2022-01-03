@@ -4,7 +4,7 @@
 
 Версия: **9.0-i18n-1**
 
-Размер: **0.17Mb**
+Размер: **0.16Mb**
 
 Приоритет: **Необязательный**
 
@@ -12,6 +12,6 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch](https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch)
 
-MD5: **1260d0045ce3452fff2aa82c7a04e31a**
+MD5: **e716728302e3ed1dfffb06050a68517c**
 
 Домашняя страница: []()

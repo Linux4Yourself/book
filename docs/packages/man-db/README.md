@@ -4,7 +4,7 @@
 
 Версия: **2.9.4**
 
-Размер: **1.27Mb**
+Размер: **1.82Mb**
 
 Приоритет: **Необязательный**
 
@@ -12,7 +12,7 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz](https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz)
 
-MD5: **aca67fc0757c9bb423f17d666e178d2f**
+MD5: **6e233a555f7b9ae91ce7cd0faa322bce**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/man-db](https://savannah.nongnu.org/projects/man-db)
 

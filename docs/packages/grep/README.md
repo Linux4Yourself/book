@@ -4,7 +4,7 @@
 
 Версия: **3.7**
 
-Размер: **1.57Mb**
+Размер: **0.00Mb**
 
 Приоритет: **Необходимый**
 
@@ -12,7 +12,7 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/grep-3.7.tar.xz](https://lx4u.ru/downloads/packages/grep-3.7.tar.xz)
 
-MD5: **7c9cca97fa18670a21e72638c3e1dabf**
+MD5: **d45af87c3d9d3ddbe11cac971e11236c**
 
 Домашняя страница: [https://gnu.org/software/grep](https://gnu.org/software/grep)
 

@@ -12,6 +12,6 @@
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch](https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch)
 
-MD5: **dd09372fc5740324c82aed7d97635d6d**
+MD5: **9a5997c3452909b1769918c759eff8a2**
 
 Домашняя страница: []()
