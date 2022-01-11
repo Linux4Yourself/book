@@ -77,7 +77,7 @@ export CFLAGS="-O3 -s"
 export CXXFLAGS="-O3 -s"
 
 # makeflags for paralell make
-export MAKEFLAGS=-j$(lscpu  | grep "CPU(s):" | grep -v NUMA | tr -d "CPU(s):                          ")
+export MAKEFLAGS=-j$(nproc)
 
 # End /etc/profile
 EOF
