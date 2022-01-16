@@ -2,17 +2,17 @@
 
 Усовершенствованная и модернизированная вариация командной оболочки Bourne shell. Этот пакет выполняет требования стандарта LSB Core для обеспечения интерфейса Bourne Shell в системе. Он был выбран из числа других оболочек из-за широкого распространения и возможностей, которые выходят далеко за пределы базовых функций программ-оболочек.
 
-Версия: **5.1.8**
+Версия: **5.1.16**
 
-Размер: **10.05Mb**
+Размер: **10.04Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz](https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz)
+Оригинальное расположение: [https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz](https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bash-5.1.8.tar.gz](https://lx4u.ru/downloads/packages/bash-5.1.8.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bash-5.1.16.tar.gz](https://lx4u.ru/downloads/packages/bash-5.1.16.tar.gz)
 
-MD5: **23eee6195b47318b9fd878e590ccb38c**
+MD5: **c17b20a09fc38d67fb303aeb6c130b4e**
 
 Домашняя страница: [https://www.gnu.org/software/bash](https://www.gnu.org/software/bash)
 

@@ -2,17 +2,17 @@
 
 Библиотека для манипулирования подпроцессами гибким и удобным способом.
 
-Версия: **1.5.4**
+Версия: **1.5.5**
 
-Размер: **0.99Mb**
+Размер: **0.91Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.4.tar.gz](https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.4.tar.gz)
+Оригинальное расположение: [https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.5.tar.gz](https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.5.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libpipeline-1.5.4.tar.gz](https://lx4u.ru/downloads/packages/libpipeline-1.5.4.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libpipeline-1.5.5.tar.gz](https://lx4u.ru/downloads/packages/libpipeline-1.5.5.tar.gz)
 
-MD5: **67c6c1a3d4e3533b4d80cb3683fef970**
+MD5: **3e725c76bfea1985e87e851ee50c2e29**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/libpipeline](https://savannah.nongnu.org/projects/libpipeline)
 

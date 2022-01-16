@@ -86,17 +86,17 @@ SBU: **0.1**
 
 Усовершенствованная и модернизированная вариация командной оболочки Bourne shell. Этот пакет выполняет требования стандарта LSB Core для обеспечения интерфейса Bourne Shell в системе. Он был выбран из числа других оболочек из-за широкого распространения и возможностей, которые выходят далеко за пределы базовых функций программ-оболочек.
 
-Версия: **5.1.8**
+Версия: **5.1.16**
 
-Размер: **10.05Mb**
+Размер: **10.04Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz](https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz)
+Оригинальное расположение: [https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz](https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bash-5.1.8.tar.gz](https://lx4u.ru/downloads/packages/bash-5.1.8.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/bash-5.1.16.tar.gz](https://lx4u.ru/downloads/packages/bash-5.1.16.tar.gz)
 
-MD5: **23eee6195b47318b9fd878e590ccb38c**
+MD5: **c17b20a09fc38d67fb303aeb6c130b4e**
 
 Домашняя страница: [https://www.gnu.org/software/bash](https://www.gnu.org/software/bash)
 
@@ -394,17 +394,17 @@ SBU: **0.2**
 
 Expat - потокоориентированная библиотека парсинга XML, написанная на C. Как один из наиболее доступных XML парсеров, широко используется в открытом программном обеспечении.
 
-Версия: **2.4.2**
+Версия: **2.4.3**
 
 Размер: **0.43Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://prdownloads.sourceforge.net/expat/expat-2.4.2.tar.xz](https://prdownloads.sourceforge.net/expat/expat-2.4.2.tar.xz)
+Оригинальное расположение: [https://prdownloads.sourceforge.net/expat/expat-2.4.3.tar.xz](https://prdownloads.sourceforge.net/expat/expat-2.4.3.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/expat-2.4.2.tar.xz](https://lx4u.ru/downloads/packages/expat-2.4.2.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/expat-2.4.3.tar.xz](https://lx4u.ru/downloads/packages/expat-2.4.3.tar.xz)
 
-MD5: **b49e50792ddb35165bab41413238f66e**
+MD5: **b1137f030590b3f0c41c69c6cd68fa90**
 
 Домашняя страница: [https://sourceforge.net/projects/expat](https://sourceforge.net/projects/expat)
 
@@ -746,17 +746,17 @@ SBU: **0.1**
 
 Пакет Iana-Etc содержит данные для сетевых служб и протоколов.
 
-Версия: **20211229**
+Версия: **20220110**
 
 Размер: **0.57Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/Mic92/iana-etc/releases/download/20211229/iana-etc-20211229.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20211229/iana-etc-20211229.tar.gz)
+Оригинальное расположение: [https://github.com/Mic92/iana-etc/releases/download/20220110/iana-etc-20220110.tar.gz](https://github.com/Mic92/iana-etc/releases/download/20220110/iana-etc-20220110.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20211229.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20211229.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iana-etc-20220110.tar.gz](https://lx4u.ru/downloads/packages/iana-etc-20220110.tar.gz)
 
-MD5: **3982aafed070ddcceb6ac9c46e0d2ab7**
+MD5: **cd22a9f75b03a2be5638e67d4e72bf19**
 
 Домашняя страница: [https://www.iana.org/protocols](https://www.iana.org/protocols)
 
@@ -979,17 +979,17 @@ SBU: **0.1**
 
 Библиотека для манипулирования подпроцессами гибким и удобным способом.
 
-Версия: **1.5.4**
+Версия: **1.5.5**
 
-Размер: **0.99Mb**
+Размер: **0.91Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.4.tar.gz](https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.4.tar.gz)
+Оригинальное расположение: [https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.5.tar.gz](https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.5.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libpipeline-1.5.4.tar.gz](https://lx4u.ru/downloads/packages/libpipeline-1.5.4.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/libpipeline-1.5.5.tar.gz](https://lx4u.ru/downloads/packages/libpipeline-1.5.5.tar.gz)
 
-MD5: **67c6c1a3d4e3533b4d80cb3683fef970**
+MD5: **3e725c76bfea1985e87e851ee50c2e29**
 
 Домашняя страница: [https://savannah.nongnu.org/projects/libpipeline](https://savannah.nongnu.org/projects/libpipeline)
 
@@ -1021,17 +1021,17 @@ SBU: **0.1**
 
 Ядро операционной системы.
 
-Версия: **5.15.11**
+Версия: **5.16.1**
 
-Размер: **116.31Mb**
+Размер: **121.61Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.11.tar.xz](https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.11.tar.xz)
+Оригинальное расположение: [https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.1.tar.xz](https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.1.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/linux-5.15.11.tar.xz](https://lx4u.ru/downloads/packages/linux-5.15.11.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/linux-5.16.1.tar.xz](https://lx4u.ru/downloads/packages/linux-5.16.1.tar.xz)
 
-MD5: **7fcbea316f8439d092040996295c8f9d**
+MD5: **121e4f65cf16ff76527020ea596fa431**
 
 Домашняя страница: [https://www.kernel.org](https://www.kernel.org)
 
@@ -1128,17 +1128,17 @@ MD5: **3ac24e8c6fae26b801cb87ceb63c0a30**
 
 Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.
 
-Версия: **0.60.3**
+Версия: **0.61.0**
 
 Размер: **1.91Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://github.com/mesonbuild/meson/releases/download/0.60.3/meson-0.60.3.tar.gz](https://github.com/mesonbuild/meson/releases/download/0.60.3/meson-0.60.3.tar.gz)
+Оригинальное расположение: [https://github.com/mesonbuild/meson/releases/download/0.61.0/meson-0.61.0.tar.gz](https://github.com/mesonbuild/meson/releases/download/0.61.0/meson-0.61.0.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/meson-0.60.3.tar.gz](https://lx4u.ru/downloads/packages/meson-0.60.3.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/meson-0.61.0.tar.gz](https://lx4u.ru/downloads/packages/meson-0.61.0.tar.gz)
 
-MD5: **03ddd7272d8cbb9f33269cb37a200d24**
+MD5: **cfe9f5e8ef869ba498a6a84f291f0c74**
 
 Домашняя страница: [https://mesonbuild.com](https://mesonbuild.com)
 
@@ -1388,17 +1388,17 @@ SBU: **6.5**
 
 Пакет Readline - набор библиотек, который предлагает редактирование командной строки и возможности просмотра истории.
 
-Версия: **8.1**
+Версия: **8.1.2**
 
 Размер: **2.85Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz](https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz)
+Оригинальное расположение: [https://ftp.gnu.org/gnu/readline/readline-8.1.2.tar.gz](https://ftp.gnu.org/gnu/readline/readline-8.1.2.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/readline-8.1.tar.gz](https://lx4u.ru/downloads/packages/readline-8.1.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/readline-8.1.2.tar.gz](https://lx4u.ru/downloads/packages/readline-8.1.2.tar.gz)
 
-MD5: **e9557dd5b1409f5d7b37ef717c64518e**
+MD5: **12819fa739a78a6172400f399ab34f81**
 
 Домашняя страница: [https://www.gnu.org/software/readline](https://www.gnu.org/software/readline)
 
@@ -1432,17 +1432,17 @@ SBU: **0.1**
 
 Пакет Shadow содержит программы для работы с паролями безопасным способом.
 
-Версия: **4.10**
+Версия: **4.11.1**
 
-Размер: **3.95Mb**
+Размер: **3.92Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/shadow-maint/shadow/releases/download/v4.10/shadow-4.10.tar.gz](https://github.com/shadow-maint/shadow/releases/download/v4.10/shadow-4.10.tar.gz)
+Оригинальное расположение: [https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz](https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/shadow-4.10.tar.gz](https://lx4u.ru/downloads/packages/shadow-4.10.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/shadow-4.11.1.tar.gz](https://lx4u.ru/downloads/packages/shadow-4.11.1.tar.gz)
 
-MD5: **5ea8b8f1304778a850c8139fafc988d8**
+MD5: **acc9d4a40ea6907d41ed168a468fde5e**
 
 Домашняя страница: [https://shadow-maint.github.io/shadow/](https://shadow-maint.github.io/shadow/)
 
@@ -1516,17 +1516,17 @@ SBU: **0.1**
 
 Системный менеджер, демон инициализации других демонов в Linux, пришедший на замену используемому ранее SystemVInit. Его особенностью является интенсивное распараллеливание запуска служб в процессе загрузки системы, что позволяет существенно ускорить запуск операционной системы. Systemd используется во многих коммерческих дистрибутивах.
 
-Версия: **249.6**
+Версия: **250.2**
 
-Размер: **10.60Mb**
+Размер: **10.61Mb**
 
 Приоритет: **Необходимый**
 
-Оригинальное расположение: [https://github.com/systemd/systemd/archive/v250/systemd-250.tar.gz](https://github.com/systemd/systemd/archive/v250/systemd-250.tar.gz)
+Оригинальное расположение: [https://github.com/systemd/systemd-stable/archive/refs/tags/v250.2.tar.gz](https://github.com/systemd/systemd-stable/archive/refs/tags/v250.2.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/systemd-250.tar.gz](https://lx4u.ru/downloads/packages/systemd-250.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/systemd-250.2.tar.gz](https://lx4u.ru/downloads/packages/systemd-250.2.tar.gz)
 
-MD5: **8929beb037c587ada4ed201f19756fe2**
+MD5: **18c586a74749bbd1e97f94e1cf9729c4**
 
 Домашняя страница: [https://systemd.io/](https://systemd.io/)
 
@@ -1686,17 +1686,17 @@ SBU: **0.5**
 
 Один из мощнейших текстовых редакторов с полной свободой настройки и автоматизации, возможными благодаря расширениям и надстройкам.
 
-Версия: **8.2.3990**
+Версия: **8.2.4115**
 
-Размер: **15.14Mb**
+Размер: **15.23Mb**
 
 Приоритет: **Необязательный**
 
-Оригинальное расположение: [https://github.com/vim/vim/archive/refs/tags/v8.2.3990.tar.gz](https://github.com/vim/vim/archive/refs/tags/v8.2.3990.tar.gz)
+Оригинальное расположение: [https://github.com/vim/vim/archive/refs/tags/v8.2.4115.tar.gz](https://github.com/vim/vim/archive/refs/tags/v8.2.4115.tar.gz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/vim-8.2.3990.tar.gz](https://lx4u.ru/downloads/packages/vim-8.2.3990.tar.gz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/vim-8.2.4115.tar.gz](https://lx4u.ru/downloads/packages/vim-8.2.4115.tar.gz)
 
-MD5: **341088965b3ce0b20afde289cb87ed61**
+MD5: **c9a0f3b6b08f9ed89b0ec6c45180442c**
 
 Домашняя страница: [https://www.vim.org/](https://www.vim.org/)
 

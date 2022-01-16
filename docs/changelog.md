@@ -10,6 +10,13 @@
 
 ## Обновление пакетов
 
+- systemd-250.2
+- shadow-4.11.1
+- readline-8.1.2
+- meson-0.61.0
+- libpipeline-1.5.5
+- bash-5.1.16
+- iana-etc 20220110
 - iana-etc 20211229
 - vim 8.2.3990
 - e2fsprogs 1.46.5
