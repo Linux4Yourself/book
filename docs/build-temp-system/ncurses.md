@@ -37,9 +37,9 @@ cd ..
 
 ### Значения параметров
 
-`--without-manpages , --without-tests, --without-cxx` - Man-страницы, тесты и библиотека C++ не нужны для временной системы.
+`--without-manpages`, `--without-tests`, `--without-cxx` - man-страницы, тесты и библиотека C++ не нужны для временной системы.
 
-`--without-ada` - отключает сборку компонентов на языке `ada`, так как в собираемой системе отсутствуют необходимые для их запуска компоненты.
+`--without-ada` - отключает сборку компонентов на языке Ada, так как в собираемой системе отсутствуют необходимые для их запуска компоненты.
 
 `--without-normal` - отключает установку большинства статических библиотек.
 
@@ -76,7 +76,6 @@ ln -sfv ../../lib/$(readlink $LIN/usr/lib/libncursesw.so) $LIN/usr/lib/libncurse
 
 ### Настройка
 
-Соберите 32-битную версию ncurses:
 Выполните:
 
 ```bash
@@ -91,9 +90,9 @@ make distclean
 CC="$LIN_TGT-gcc -m32"                   \
 CXX="$LIN_TGT-g++ -m32"                  \
 DESTDIR=$LIN                             \
-./configure --prefix=/usr                  \
+./configure --prefix=/usr                \
             --host=$LIN_TGT32            \
-            --build=$(./config.guess)     \
+            --build=$(./config.guess)    \
             --libdir=/usr/lib32          \
             --without-manpages           \
             --without-tests              \
@@ -103,7 +102,7 @@ DESTDIR=$LIN                             \
             --without-debug              \
             --without-ada                \
             --without-normal             \
-            --enable-pc-files             \
+            --enable-pc-files            \
             --enable-widec               \
             --with-pkg-config-libdir=/usr/lib32/pkgconfig
 ```
