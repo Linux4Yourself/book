@@ -2,7 +2,7 @@
 	<img src="https://raw.githubusercontent.com/Linux4Yourself/Linux4Yourself.Design/main/misc/cover.svg" />
 </div>
 
-Lx4U или “Linux для себя” - подробное руководство по созданию Linux-системы, путём сборки исходных текстов необходимого программного обеспечения. 
+Lx4U или “Linux для себя” - подробное руководство по созданию Linux-системы путём сборки исходных текстов необходимого программного обеспечения. 
 
 Это руководство - самостоятельное ответвление от проекта [Linux From Scratch](https://linuxfromscratch.org).
 
