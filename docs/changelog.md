@@ -17,8 +17,8 @@
 
 ## Изменения
 
-- [Мелкие изменения текста по содержанию руководства]
-- [Копирование resolv.conf перенесенно в раздел "подготовка"](https://github.com/Linux4Yourself/book/issues/933)
+- Мелкие изменения текста по содержанию руководства
+- [Копирование resolv.conf перенесенно в раздел "Подготовка"](https://github.com/Linux4Yourself/book/issues/933)
 - [Изменён формат changelog(а)](https://github.com/Linux4Yourself/book/issues/963)
 - [Cмена репозитория (и мейнтейнера) eudev](https://github.com/Linux4Yourself/book/issues/981)
 - [Исправлена битая ссылка https://lx4u.ru/rel/stable/kernel/kernel-setup-intro/additional/LinuxStructure1](https://github.com/Linux4Yourself/book/issues/1015)
