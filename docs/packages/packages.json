@@ -786,8 +786,8 @@
 		"version": "3.7",
 		"releasesUrl": "https://ftp.gnu.org/gnu/grep/",
 		"priority": "required",
-		"md5": "d45af87c3d9d3ddbe11cac971e11236c",
-		"size": "0.00",
+		"md5": "7c9cca97fa18670a21e72638c3e1dabf",
+		"size": "1.57",
 		"installedSize": 0.26,
 		"sbu": 0.2,
 		"sbu2": 0.2,
@@ -942,14 +942,14 @@
 	},
 	{
 		"name": "iproute2",
-		"fileName": "iproute2-5.15.0.tar.xz",
+		"fileName": "iproute2-5.16.0.tar.xz",
 		"description": "Iproute2 — это набор программ для управления параметрами сетевых устройств в ядре Linux. Эти утилиты были разработаны в качестве унифицированного интерфейса к ядру Linux, которое непосредственно управляет сетевым трафиком. Iproute2 заменил полный набор классических сетевых утилит UNIX, которые ранее использовались для настройки сетевых интерфейсов, таблиц маршрутизации и управления arp‐таблицами: ifconfig, route, arp, netstat и других, предназначенных для создания IP‐туннелей. iproute2 предлагает унифицированный синтаксис для управления самыми разными аспектами сетевых интерфейсов.",
-		"url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.15.0.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.16.0.tar.xz",
 		"homeUrl": "https://wiki.linuxfoundation.org/networking/iproute2",
-		"version": "5.15.0",
+		"version": "5.16.0",
 		"releasesUrl": "https://www.kernel.org/pub/linux/utils/net/iproute2/",
 		"priority": "important",
-		"md5": "8a598a61c054a3ce538b47c40b010552",
+		"md5": "994c1bad2a24aa9d70e89670c5b5dfcb",
 		"size": "0.82",
 		"installedSize": 2.3,
 		"sbu": 0,
@@ -962,7 +962,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/iproute2-5.15.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/iproute2-5.16.0.tar.xz"
 	},
 	{
 		"name": "isl",
@@ -1570,14 +1570,14 @@
 	},
 	{
 		"name": "python",
-		"fileName": "Python-3.10.1.tar.xz",
+		"fileName": "Python-3.10.2.tar.xz",
 		"description": "Высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода. Содержит среду разработки для объектно-ориентированного программирования, написания сценариев, прототипирования крупных программ и разработки полноценных приложений.",
-		"url": "https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz",
+		"url": "https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tar.xz",
 		"homeUrl": "https://www.python.org",
-		"version": "3.10.1",
+		"version": "3.10.2",
 		"releasesUrl": "https://www.python.org/ftp/python/",
 		"priority": "important",
-		"md5": "789210934745a65247a3ebf5da9adb64",
+		"md5": "14e8c22458ed7779a1957b26cde01db9",
 		"size": "17.91",
 		"installedSize": 165.1,
 		"sbu": 1.2,
@@ -1589,7 +1589,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/Python-3.10.2.tar.xz"
 	},
 	{
 		"name": "readline",

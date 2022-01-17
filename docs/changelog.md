@@ -10,6 +10,8 @@
 
 ## Обновление пакетов
 
+- python-3.10.2
+- iproute-5.16
 - systemd-250.2
 - shadow-4.11.1
 - readline-8.1.2

@@ -660,7 +660,7 @@ SBU: **0.1**
 
 Версия: **3.7**
 
-Размер: **0.00Mb**
+Размер: **1.57Mb**
 
 Приоритет: **Необходимый**
 
@@ -668,7 +668,7 @@ SBU: **0.1**
 
 Ссылка для загрузки: [https://lx4u.ru/downloads/packages/grep-3.7.tar.xz](https://lx4u.ru/downloads/packages/grep-3.7.tar.xz)
 
-MD5: **d45af87c3d9d3ddbe11cac971e11236c**
+MD5: **7c9cca97fa18670a21e72638c3e1dabf**
 
 Домашняя страница: [https://gnu.org/software/grep](https://gnu.org/software/grep)
 
@@ -811,17 +811,17 @@ SBU: **0.01**
 
 Iproute2 — это набор программ для управления параметрами сетевых устройств в ядре Linux. Эти утилиты были разработаны в качестве унифицированного интерфейса к ядру Linux, которое непосредственно управляет сетевым трафиком. Iproute2 заменил полный набор классических сетевых утилит UNIX, которые ранее использовались для настройки сетевых интерфейсов, таблиц маршрутизации и управления arp‐таблицами: ifconfig, route, arp, netstat и других, предназначенных для создания IP‐туннелей. iproute2 предлагает унифицированный синтаксис для управления самыми разными аспектами сетевых интерфейсов.
 
-Версия: **5.15.0**
+Версия: **5.16.0**
 
 Размер: **0.82Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.15.0.tar.xz](https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.15.0.tar.xz)
+Оригинальное расположение: [https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.16.0.tar.xz](https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.16.0.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iproute2-5.15.0.tar.xz](https://lx4u.ru/downloads/packages/iproute2-5.15.0.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/iproute2-5.16.0.tar.xz](https://lx4u.ru/downloads/packages/iproute2-5.16.0.tar.xz)
 
-MD5: **8a598a61c054a3ce538b47c40b010552**
+MD5: **994c1bad2a24aa9d70e89670c5b5dfcb**
 
 Домашняя страница: [https://wiki.linuxfoundation.org/networking/iproute2](https://wiki.linuxfoundation.org/networking/iproute2)
 
@@ -1365,17 +1365,17 @@ SBU: **0.1**
 
 Высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода. Содержит среду разработки для объектно-ориентированного программирования, написания сценариев, прототипирования крупных программ и разработки полноценных приложений.
 
-Версия: **3.10.1**
+Версия: **3.10.2**
 
 Размер: **17.91Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz](https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz)
+Оригинальное расположение: [https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tar.xz](https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz](https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/Python-3.10.2.tar.xz](https://lx4u.ru/downloads/packages/Python-3.10.2.tar.xz)
 
-MD5: **789210934745a65247a3ebf5da9adb64**
+MD5: **14e8c22458ed7779a1957b26cde01db9**
 
 Домашняя страница: [https://www.python.org](https://www.python.org)
 

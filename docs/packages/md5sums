@@ -28,14 +28,14 @@ eeefe2e6380931a77dfa6d9350b43186 findutils-4.8.0.tar.xz
 31998b53fb39cb946e96abc310af1c89 glibc-2.34.tar.xz
 0b82665c4a92fd2ade7440c13fcaa42b gmp-6.2.1.tar.xz
 9e251c0a618ad0824b51117d5d9db87e gperf-3.1.tar.gz
-d45af87c3d9d3ddbe11cac971e11236c grep-3.7.tar.xz
+7c9cca97fa18670a21e72638c3e1dabf grep-3.7.tar.xz
 08fb04335e2f5e73f23ea4c3adbf0c5f groff-1.22.4.tar.gz
 cf0fd928b1e5479c8108ee52cb114363 grub-2.06.tar.xz
 d1e93996dba00cab0caa7903cd01d454 gzip-1.11.tar.xz
 cd22a9f75b03a2be5638e67d4e72bf19 iana-etc-20220110.tar.gz
 de8c1b49cbde2b30e481c61c65357ad4 inetutils-2.2.tar.xz
 12e517cac2b57a0121cda351570f1e63 intltool-0.51.0.tar.gz
-8a598a61c054a3ce538b47c40b010552 iproute2-5.15.0.tar.xz
+994c1bad2a24aa9d70e89670c5b5dfcb iproute2-5.16.0.tar.xz
 fae030f604a9537adc2502990a8ab4d1 isl-0.24.tar.xz
 3cac5be0096fcf7b32dcbd3c53831380 kbd-2.4.0.tar.xz
 e81e63acd80697d001c8d85c1acb38a0 kmod-29.tar.xz
@@ -61,7 +61,7 @@ df7ecb0653440b26dc951ad9dbfab517 perl-5.34.0.tar.xz
 f6e931e319531b736fadc017f470e68a pkg-config-0.29.2.tar.gz
 d60613e88c2f442ebd462b5a75313d56 procps-ng-3.3.17.tar.xz
 8114cd4489b95308efe2509c3a406bbf psmisc-23.4.tar.xz
-789210934745a65247a3ebf5da9adb64 Python-3.10.1.tar.xz
+14e8c22458ed7779a1957b26cde01db9 Python-3.10.2.tar.xz
 12819fa739a78a6172400f399ab34f81 readline-8.1.2.tar.gz
 6d906edfdb3202304059233f51f9a71d sed-4.8.tar.xz
 acc9d4a40ea6907d41ed168a468fde5e shadow-4.11.1.tar.gz
