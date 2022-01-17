@@ -24,4 +24,6 @@
 {{ include('../packages/diffutils/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `cmp`, `diff`, `diff` и `sdiff`

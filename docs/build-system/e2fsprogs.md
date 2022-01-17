@@ -12,13 +12,11 @@
 
 ### Значения параметров
 
-`--enable-elf-shlibs`
-Это создает общие библиотеки, которые используются некоторыми программами пакета.
+`--enable-elf-shlibs` - создает общие библиотеки, которые используются некоторыми программами пакета.
 
-`--disable-*`
-Исключает установку библиотек libuuid и libblkid, службы uuidd и fsck обертки, которые содержатся в пакете Util-Linux и являются более актуальными.
+`--disable-*` - исключает установку библиотек libuuid и libblkid, службы uuidd и fsck обертки, которые содержатся в пакете Util-Linux и являются более актуальными.
 
-`--enable-symlink-install` `--enable-relative-symlinks` - использовать относительные символические ссылки вместо жёстких.
+`--enable-symlink-install`, `--enable-relative-symlinks` - использовать относительные символические ссылки вместо жёстких.
 
 ## Сборка
 
@@ -56,4 +54,10 @@
 {{ include('../packages/e2fsprogs/install-doc') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `badblocks`, `chattr`, `compile_et`, `debugfs`, `dumpe2fs`, `e2freefrag`, `e2fsck`, `e2image`, `e2label`, `e2mmpstatus`, `e2scrub`, `e2scrub_all`, `e2undo`, `e4crypt`, `e4defrag`, `filefrag`, `fsck.ext2`, `fsck.ext3`, `fsck.ext4`, `logsave`, `lsattr`, `mk_cmds`, `mke2fs`, `mkfs.ext2`, `mkfs.ext3`, `mkfs.ext4`, `mklost+found`, `resize2fs`, и `tune2fs`
+
+**Библиотеки:**  `libcom_err.so`, `libe2p.so`, `libext2fs.so`, и `libss.so`
+
+**Директории:**  `/usr/include/e2p`, `/usr/include/et`, `/usr/include/ext2fs`, `/usr/include/ss`, `/usr/lib/e2fsprogs`, `/usr/share/et`, и `/usr/share/ss`

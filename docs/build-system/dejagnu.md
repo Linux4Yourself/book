@@ -23,4 +23,6 @@
 {{ include('../packages/dejagnu/test') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `runtest`

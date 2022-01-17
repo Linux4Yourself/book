@@ -28,8 +28,8 @@
 
 ## Установленные файлы
 
-- **Установленные программы:** `ctags`, `ebrowse`, `emasc` (символическая ссылка на `emacs-27.1`), `emacs-27.1`, `emacsclient`, `etags` и `grep-changelog`
-- **Установленные библиотеки:** нет
-- **Установленные директории:** `/usr/libexec/emacs`, `/usr/share/emacs` и `/var/games/emacs`
+**Программы:** `ctags`, `ebrowse`, `emasc` (символическая ссылка на `emacs-27.1`), `emacs-27.1`, `emacsclient`, `etags` и `grep-changelog`
+
+**Директории:** `/usr/libexec/emacs`, `/usr/share/emacs` и `/var/games/emacs`
 
 
