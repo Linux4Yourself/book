@@ -32,4 +32,8 @@
 {{ include('../packages/automake/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `aclocal`, `aclocal-1.16` (жёсткая ссылка на `aclocal`), `automake`, `automake-1.16` (жёсткая ссылка на `automake`)
+
+**Директории:** `/usr/share/aclocal-1.16`, `/usr/share/automake-1.16`, `/usr/share/doc/automake`

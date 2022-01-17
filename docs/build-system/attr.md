@@ -64,8 +64,8 @@
 
 ## Установленные файлы
 
-Программы: `attr`, `getfattr`, `setfattr`
+**Программы:** `attr`, `getfattr`, `setfattr`
 
-Библиотеки: `libattr.so`
+**Библиотеки:** `libattr.so`
 
 

@@ -75,8 +75,8 @@ find -name \*.1 -delete
 
 ## Установленные файлы
 
-Программы: addr2line, ar, as, c++filt, dwp, elfedit, gprof, ld, ld.bfd, ld.gold, nm, objcopy, objdump, ranlib, readelf, size, strings и strip
+**Программы:** `addr2line`, `ar`, `as`, `c++filt`, `dwp`, `elfedit`, `gprof`, `ld`, `ld.bfd`, `ld.gold`, `nm`, `objcopy`, `objdump`, `ranlib`, `readelf`, `size`, `strings` и `strip`
 
-Библиотеки: libbfd.so, libctf.so, libctf-nobfd.so и libopcodes.so
+**Библиотеки:** `libbfd.so`, `libctf.so`, `libctf-nobfd.so` и `libopcodes.so`
 
-Директории: /usr/lib/ldscripts
+**Директории:** `/usr/lib/ldscripts`

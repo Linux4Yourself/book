@@ -26,4 +26,8 @@
 {{ include('../packages/check/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `checkmk`
+
+**Библиотеки:** `libcheck.so`
