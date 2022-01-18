@@ -2,17 +2,17 @@
 
 Высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода. Содержит среду разработки для объектно-ориентированного программирования, написания сценариев, прототипирования крупных программ и разработки полноценных приложений.
 
-Версия: **3.10.1**
+Версия: **3.10.2**
 
 Размер: **17.91Mb**
 
 Приоритет: **Важный**
 
-Оригинальное расположение: [https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz](https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tar.xz)
+Оригинальное расположение: [https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tar.xz](https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tar.xz)
 
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz](https://lx4u.ru/downloads/packages/Python-3.10.1.tar.xz)
+Ссылка для загрузки: [https://lx4u.ru/downloads/packages/Python-3.10.2.tar.xz](https://lx4u.ru/downloads/packages/Python-3.10.2.tar.xz)
 
-MD5: **789210934745a65247a3ebf5da9adb64**
+MD5: **14e8c22458ed7779a1957b26cde01db9**
 
 Домашняя страница: [https://www.python.org](https://www.python.org)
 
