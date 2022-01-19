@@ -25,6 +25,8 @@
 - e2fsprogs 1.46.5
 
 ## Изменения
+
+- [Актуализированы сборочные инструкции Glibc для раздельной структуры директорий (#1044)](https://github.com/Linux4Yourself/book/issues/1044)
 - [Копирование resolv.conf перенесенно в раздел "подготовка"](https://github.com/Linux4Yourself/book/issues/933)
 - [Изменить формат changelog(а)](https://github.com/Linux4Yourself/book/issues/963)
 - [Cмена репозитория (и мейнтейнера) eudev](https://github.com/Linux4Yourself/book/issues/981)

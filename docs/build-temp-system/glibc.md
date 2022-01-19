@@ -26,8 +26,10 @@ cd       build
 
 Убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
 
+<!-- TODO: вынести это в отдельный файл в '/docs/packages' -->
+
 ```bash
-echo "rootsbindir=/usr/sbin" > configparms
+echo "rootsbindir=/sbin" > configparms
 ```
 
 
