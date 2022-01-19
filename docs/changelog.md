@@ -17,7 +17,7 @@
 
 ## Изменения
 
-- Мелкие изменения текста по содержанию руководства
+- [Фиксы пунктуации, мелкие дополнения и изменения по тексту руководства](https://github.com/Linux4Yourself/book/pull/1040)
 - [Копирование resolv.conf перенесенно в раздел "Подготовка"](https://github.com/Linux4Yourself/book/issues/933)
 - [Изменён формат changelog(а)](https://github.com/Linux4Yourself/book/issues/963)
 - [Cмена репозитория (и мейнтейнера) eudev](https://github.com/Linux4Yourself/book/issues/981)
