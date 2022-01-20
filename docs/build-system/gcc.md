@@ -128,6 +128,7 @@ grep -B4 '^ /usr/include' dummy.log
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include
  /usr/local/include
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed
+ /usr/include
 ```
 
 Проверим, что компоновщик использует корректные пути поиска:
