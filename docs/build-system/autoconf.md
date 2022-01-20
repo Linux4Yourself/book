@@ -28,4 +28,8 @@
 {{ include('../packages/autoconf/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `autoconf`, `autoheader`, `autom4te`, `autoreconf`, `autoscan`, `autoupdates` и `ifnames`
+
+**Директории:** `/usr/share/autoconf`

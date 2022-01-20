@@ -26,4 +26,10 @@
 {{ include('../packages/bison/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `bison` и `yacc`
+
+**Библиотеки:** `liby.a`
+
+**Директории:** `/usr/share/bison`

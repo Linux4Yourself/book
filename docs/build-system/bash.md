@@ -58,3 +58,9 @@
 ```bash
 exec /bin/bash --login +h
 ```
+
+## Установленные файлы
+
+**Программы:** `bash`, `bashbug` и `sh` (ссылка на `bash`)
+
+**Директории:** `/usr/include/bash`, `/usr/lib/bash` и `/usr/share/doc/bash`

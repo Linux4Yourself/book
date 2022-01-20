@@ -56,4 +56,10 @@
 {{ include('../packages/expat/multi_install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `xmlwf`
+
+**Библиотеки:** `libexpat.so`
+
+**Директории:** `/usr/share/doc/expat`

@@ -18,4 +18,6 @@
 {{ include('../packages/dosfstools/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `fatlabel`, `fsck.fat` и `mkfs.fat`

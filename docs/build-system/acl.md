@@ -54,8 +54,8 @@
 
 ## Установленные файлы
 
-Программы: `chacl`, `getfacl`, `setfacl`
+**Программы:** `chacl`, `getfacl`, `setfacl`
 
-Библиотеки: `libacl.so`
+**Библиотеки:** `libacl.so`
 
 
