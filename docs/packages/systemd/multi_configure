@@ -15,6 +15,7 @@ meson --prefix=/usr                 \
       -Dhomed=false                 \
       -Duserdb=false                \
       -Dman=false                   \
+      -Defi=false                   \
       -Dmode=release                \
       -Dtests=false
       ..
