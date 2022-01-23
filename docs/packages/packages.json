@@ -536,7 +536,7 @@
 		"md5": "18233bb0a0089dfdc7dfbc93b96f231b",
 		"size": "1.01",
 		"installedSize": 7.3,
-		"sbu": 0.2,
+		"sbu": 0,
 		"sbu2": 0.1,
 		"scripts": [
 			"build",

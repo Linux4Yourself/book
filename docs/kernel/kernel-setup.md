@@ -65,7 +65,6 @@ Firmware Drivers  --->
 Networking support --->        [CONFIG_NET]
       Networking options --->
         <*> Packet socket          [CONFIG_PACKET]
-        <*> The IPv6 Protocol ---> [CONFIG_IPV6]
 Device Drivers  --->
   Generic Driver Options  --->
    [ ] Support for uevent helper [CONFIG_UEVENT_HELPER]
