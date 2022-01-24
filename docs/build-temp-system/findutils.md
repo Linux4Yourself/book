@@ -3,7 +3,7 @@
 ## Настройка
 
 ```bash
-./configure --prefix=/usr --host=$LIN_TGT   --disable-nls
+./configure --prefix=/usr --host=$LIN_TGT
 ```
 
 ## Сборка

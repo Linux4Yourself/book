@@ -6,7 +6,6 @@
 ./configure --prefix=/usr   \
             --host=$LIN_TGT \
             --bindir=/bin   \
-            --disable-nls
 ```
 
 ## Сборка

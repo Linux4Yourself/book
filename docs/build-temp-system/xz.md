@@ -6,7 +6,6 @@
 ./configure --prefix=/usr --host=$LIN_TGT     \
             --build=$(build-aux/config.guess) \
             --disable-static                  \
-            --disable-nls                     \
             --disable-doc
 ```
 

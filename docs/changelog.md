@@ -11,6 +11,9 @@
 
 ## Обновление пакетов
 
+- make-ca 0.10
+- linux 5.16.2
+- p11-kit 0.24.1
 - meson-0.61.1
 - python-3.10.2
 - iproute-5.16
@@ -27,6 +30,8 @@
 
 ## Изменения
 
+- Пакет `file` удален из временной системы, так как не требуется на данном этапе.
+- Чиска инструкций util-linux.
 - [Исправления пунктуации, мелкие дополнения и изменения по тексту руководства](https://github.com/Linux4Yourself/book/pull/1040)
 - [Копирование resolv.conf перенесенно в раздел "Подготовка"](https://github.com/Linux4Yourself/book/issues/933)
 - [Изменён формат changelog(а)](https://github.com/Linux4Yourself/book/issues/963)
