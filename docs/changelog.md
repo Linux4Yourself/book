@@ -4,12 +4,16 @@
 
 <!--
  - при апдейтах лучше писать "сверху" списка, а не в алфавитном порядке
+    - UPD. И писать дату обновления.
  - давать понятное описание того, что изменилось (или брать с issue)
  - новые записи добавлять наверх 
 -->
 
 ## Обновление пакетов
 
+- make-ca 0.10
+- linux 5.16.2
+- p11-kit 0.24.1
 - meson-0.61.1
 - python-3.10.2
 - iproute-5.16
@@ -26,14 +30,16 @@
 
 ## Изменения
 
-- [Актуализированы сборочные инструкции Glibc для раздельной структуры директорий (#1044)](https://github.com/Linux4Yourself/book/issues/1044)
-- [Копирование resolv.conf перенесенно в раздел "подготовка"](https://github.com/Linux4Yourself/book/issues/933)
-- [Изменить формат changelog(а)](https://github.com/Linux4Yourself/book/issues/963)
+- Пакет `file` удален из временной системы, так как не требуется на данном этапе.
+- Чиска инструкций util-linux.
+- [Исправления пунктуации, мелкие дополнения и изменения по тексту руководства](https://github.com/Linux4Yourself/book/pull/1040)
+- [Копирование resolv.conf перенесенно в раздел "Подготовка"](https://github.com/Linux4Yourself/book/issues/933)
+- [Изменён формат changelog(а)](https://github.com/Linux4Yourself/book/issues/963)
 - [Cмена репозитория (и мейнтейнера) eudev](https://github.com/Linux4Yourself/book/issues/981)
-- [Битая ссылка https://lx4u.ru/rel/stable/kernel/kernel-setup-intro/additional/LinuxStructure1](https://github.com/Linux4Yourself/book/issues/1015)
-- [Опечатка в ссылке в разделе "Информация об используемых пакетах", пакет kbd-patch](https://github.com/Linux4Yourself/book/issues/1016)
+- [Исправлена битая ссылка https://lx4u.ru/rel/stable/kernel/kernel-setup-intro/additional/LinuxStructure1](https://github.com/Linux4Yourself/book/issues/1015)
+- [Исправлена опечатка в ссылке в разделе "Информация об используемых пакетах", пакет kbd-patch](https://github.com/Linux4Yourself/book/issues/1016)
 - [Добавление информации о доп. пакетах в заключительной части](https://github.com/Linux4Yourself/book/issues/1014)
-- [Обновление сборочных инструкций `gmp`](https://github.com/Linux4Yourself/book/pull/1018)
+- [Обновлены сборочные инструкции `gmp`](https://github.com/Linux4Yourself/book/pull/1018)
 
 
 ## 28.12.2021
