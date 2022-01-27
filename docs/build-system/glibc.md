@@ -29,10 +29,10 @@ cd       build
 ## Настройка
 
 
-Если вы собираете систему с раздельной структурой директорий, убедитесь, что утилиты `ldconfig` и `sln` установлены в `/usr/sbin`: 
+Если вы собираете систему с раздельной структурой директорий, убедитесь, что утилиты `ldconfig` и `sln` установлены в `/sbin`: 
 
 ```bash
-echo "rootsbindir=/usr/sbin" > configparms
+echo "rootsbindir=/sbin" > configparms
 ```
 
 ```bash
