@@ -10,7 +10,6 @@
     "md5": "95ce715fe09acca7c12d3306d0f076b2",
     "size": "0.34",
     "installedSize": 0.16,
-    "sbu": 0,
     "sbu2": 0.1,
     "scripts": [
         "build",

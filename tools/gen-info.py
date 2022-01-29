@@ -102,7 +102,7 @@ class config():
         try:
             sbu = data[mode]
         except:
-            sbu = ""
+            sbu = "not_found"
         
         return sbu
 
@@ -114,15 +114,16 @@ class generator():
     
     def gen(self):
         # TODO: may be better
+        ## ГОВНОКОД ##
         conf      = config(self.package)
 
         base_info = conf.get_base_info()
         priority  = conf.get_priority()
         
-        if conf.get_sbu("sbu2") == "":
-            sbu2 = False
+        if conf.get_sbu("sbu") == "not_found":
+            sbu = False
         else:
-            sbu2 = True
+            sbu = True
         
         info = f"""# {base_info["name"]}-{base_info["version"]}
 
@@ -143,20 +144,20 @@ class generator():
 **Домашняя страница:** {base_info["home_page"]}
         """
 
-        ## ГОВНОКОД ##
-
         with open(self.md_file, "w") as f:
             f.write(info)
         
-        if sbu2:
-            info_sbu = f"""<br />**SBU (сборка временной системы):** {conf.get_sbu("sbu2")}
+        if sbu:
+            info_sbu = f"""<br />**SBU (сборка временной системы):** {conf.get_sbu("sbu")}
 <br />
-**SBU:** {conf.get_sbu("sbu")}
+**SBU:** {conf.get_sbu("sbu2")}
+
 ***
             """
         else:
-            info_sbu = f"""**SBU:** {conf.get_sbu("sbu")}
-            ***
+            info_sbu = f"""<br />**SBU:** {conf.get_sbu("sbu2")}
+
+***
             """
         
         with open(self.md_file, "a") as f:
