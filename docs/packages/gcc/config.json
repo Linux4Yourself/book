@@ -1,7 +1,7 @@
 {
     "name": "gcc",
     "fileName": "gcc-11.2.0.tar.xz",
-    "description": "\u041f\u0430\u043a\u0435\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430\u0431\u043e\u0440 \u043a\u043e\u043c\u043f\u0438\u043b\u044f\u0442\u043e\u0440\u043e\u0432 GNU \u0434\u043b\u044f \u0442\u0430\u043a\u0438\u0445 \u044f\u0437\u044b\u043a\u043e\u0432 \u043a\u0430\u043a \u0421\u0438 \u0438 \u0421\u0438++.",
+    "description": "Пакет содержит набор компиляторов GNU для таких языков как Си и Си++.",
     "url": "https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz",
     "homeUrl": "https://gnu.org/software/gcc",
     "version": "11.2.0",

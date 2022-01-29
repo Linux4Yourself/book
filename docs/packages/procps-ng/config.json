@@ -1,7 +1,7 @@
 {
     "name": "procps-ng",
     "fileName": "procps-ng-3.3.17.tar.xz",
-    "description": "\u041f\u0430\u043a\u0435\u0442 Procps-ng \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0434\u043b\u044f \u043c\u043e\u043d\u0438\u0442\u043e\u0440\u0438\u043d\u0433\u0430 \u0437\u0430 \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430\u043c\u0438.",
+    "description": "Пакет Procps-ng содержит программы для мониторинга за процессами.",
     "url": "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.17.tar.xz",
     "homeUrl": "https://sourceforge.net/projects/procps-ng",
     "version": "3.3.17",

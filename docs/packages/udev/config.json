@@ -1,7 +1,7 @@
 {
     "name": "udev",
     "fileName": "udev.tar.xz",
-    "description": "\u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u0438 \u0444\u0430\u0439\u043b\u044b, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u043c\u044b\u0435 \u0432 \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u0438.",
+    "description": "Дополнительные правила и файлы, используемые в окружении.",
     "url": "https://github.com/Linux4Yourself/Linux4Yourself.Udev/releases/download/0.1/udev.tar.xz",
     "homeUrl": "https://github.com/Linux4Yourself/Linux4Yourself.Udev",
     "version": "20171102",

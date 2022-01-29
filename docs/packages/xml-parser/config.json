@@ -1,7 +1,7 @@
 {
     "name": "xml-parser",
     "fileName": "XML-Parser-2.46.tar.gz",
-    "description": "\u041c\u043e\u0434\u0443\u043b\u044c (\u0430\u0432\u0442\u043e\u0440 James Clark), \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u043e\u043c Perl \u0434\u043b\u044f \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438 Expat.",
+    "description": "Модуль (автор James Clark), который является интерфейсом Perl для библиотеки Expat.",
     "url": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz",
     "homeUrl": "https://metacpan.org/pod/XML::Parser",
     "version": "2.46",

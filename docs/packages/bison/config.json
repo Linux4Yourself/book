@@ -1,7 +1,7 @@
 {
     "name": "bison",
     "fileName": "bison-3.8.2.tar.xz",
-    "description": "\u041f\u0430\u043a\u0435\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 GNU \u0432\u0435\u0440\u0441\u0438\u044e yacc (\u0435\u0449\u0451 \u043e\u0434\u0438\u043d \u043a\u043e\u043c\u043f\u0438\u043b\u044f\u0442\u043e\u0440 \u043a\u043e\u043c\u043f\u0438\u043b\u044f\u0442\u043e\u0440\u043e\u0432), \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0439 \u0434\u043b\u044f \u0441\u0431\u043e\u0440\u043a\u0438 \u043d\u0435\u043a\u043e\u0442\u043e\u0440\u044b\u0445 \u043f\u0430\u043a\u0435\u0442\u043e\u0432",
+    "description": "Пакет содержит GNU версию yacc (ещё один компилятор компиляторов), необходимый для сборки некоторых пакетов",
     "url": "https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.xz",
     "homeUrl": "https://www.gnu.org/software/bison",
     "version": "3.8.2",
