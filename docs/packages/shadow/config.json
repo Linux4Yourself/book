@@ -1,0 +1,25 @@
+{
+    "name": "shadow",
+    "fileName": "shadow-4.11.1.tar.gz",
+    "description": "\u041f\u0430\u043a\u0435\u0442 Shadow \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0434\u043b\u044f \u0440\u0430\u0431\u043e\u0442\u044b \u0441 \u043f\u0430\u0440\u043e\u043b\u044f\u043c\u0438 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u044b\u043c \u0441\u043f\u043e\u0441\u043e\u0431\u043e\u043c.",
+    "url": "https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz",
+    "homeUrl": "https://shadow-maint.github.io/shadow/",
+    "version": "4.11.1",
+    "releasesUrl": "https://github.com/shadow-maint/shadow/releases/",
+    "priority": "required",
+    "md5": "acc9d4a40ea6907d41ed168a468fde5e",
+    "size": "3.92",
+    "installedSize": 1.7,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/shadow-4.11.1.tar.gz"
+}

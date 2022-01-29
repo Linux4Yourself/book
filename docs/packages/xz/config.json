@@ -1,0 +1,29 @@
+{
+    "name": "xz",
+    "fileName": "xz-5.2.5.tar.xz",
+    "description": "\u041f\u0430\u043a\u0435\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0434\u043b\u044f \u0441\u0436\u0430\u0442\u0438\u044f \u0438 \u0440\u0430\u0441\u043f\u0430\u043a\u043e\u0432\u043a\u0438 \u0444\u0430\u0439\u043b\u043e\u0432. \u041e\u043d \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0432\u0430\u0435\u0442 \u0432\u044b\u0441\u043e\u043a\u043e\u0435 \u0441\u0436\u0430\u0442\u0438\u0435 \u0438 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u0434\u043b\u044f \u0440\u0430\u0441\u043f\u0430\u043a\u043e\u0432\u043a\u0438 \u043f\u0430\u043a\u0435\u0442\u043e\u0432 \u0444\u043e\u0440\u043c\u0430\u0442\u043e\u0432 XZ \u0438 LZMA. \u0421\u0436\u0430\u0442\u0438\u0435 \u0442\u0435\u043a\u0441\u0442\u043e\u0432\u044b\u0445 \u0444\u0430\u0439\u043b\u043e\u0432 \u043f\u0440\u0438 \u043f\u043e\u043c\u043e\u0449\u0438 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b xz \u0434\u0430\u0451\u0442 \u0431\u043e\u043b\u044c\u0448\u0438\u0439 \u043f\u0440\u043e\u0446\u0435\u043d\u0442 \u0441\u0436\u0430\u0442\u0438\u044f, \u0447\u0435\u043c gzip \u0438\u043b\u0438 bzip2.",
+    "url": "https://tukaani.org/xz/xz-5.2.5.tar.xz",
+    "homeUrl": "https://tukaani.org/xz",
+    "version": "5.2.5",
+    "releasesUrl": "https://tukaani.org/xz/",
+    "priority": "required",
+    "md5": "aa1621ec7013a19abab52a8aff04fe5b",
+    "size": "1.10",
+    "installedSize": 0.6,
+    "sbu": 0.2,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "multi_test",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/xz-5.2.5.tar.xz"
+}

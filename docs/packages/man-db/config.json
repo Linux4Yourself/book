@@ -1,0 +1,23 @@
+{
+    "name": "man-db",
+    "fileName": "man-db-2.9.4.tar.xz",
+    "description": "\u041f\u0430\u043a\u0435\u0442 Man-DB \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430 \u0438 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0430 \u0441\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u044b\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446.",
+    "url": "https://download.savannah.gnu.org/releases/man-db/man-db-2.9.4.tar.xz",
+    "homeUrl": "https://savannah.nongnu.org/projects/man-db",
+    "version": "2.9.4",
+    "releasesUrl": "https://download.savannah.gnu.org/releases/man-db/",
+    "priority": "optional",
+    "md5": "6e233a555f7b9ae91ce7cd0faa322bce",
+    "size": "1.82",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.5,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz"
+}

@@ -15,9 +15,7 @@
 **MD5:** ac1c5a7a084f0f83b8cace34211f64d8
 <br />
 **Домашняя страница:** https://savannah.nongnu.org/projects/attr/
-        <br />**SBU (сборка временной системы):** 0
-<br />
-**SBU:** 0.1
+        <br />**SBU:** 0.1
 
 ***
             

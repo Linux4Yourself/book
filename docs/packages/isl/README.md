@@ -1,19 +1,21 @@
-# isl
+# isl-0.24
 
 isl (библиотека целочисленных наборов) - это переносимая библиотека C для управления наборами и отношениями целочисленных точек, ограниченных линейными ограничениями.
 
-Версия: **0.24**
+**Версия:** 0.24
+<br />
+**Размер:** 1.84
+<br />
+**Приоритет:** Необязательный
+<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/isl-0.24.tar.xz
+<br />
+**Оригинальное расположение:** https://lx4u.ru/downloads/packages/isl-0.24.tar.xz
+<br />
+**MD5:** fae030f604a9537adc2502990a8ab4d1
+<br />
+**Домашняя страница:** http://isl.gforge.inria.fr
+        <br />**SBU:** 0.7
 
-Размер: **1.84Mb**
-
-Приоритет: **Необязательный**
-
-Оригинальное расположение: [https://lx4u.ru/downloads/packages/isl-0.24.tar.xz](https://lx4u.ru/downloads/packages/isl-0.24.tar.xz)
-
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/isl-0.24.tar.xz](https://lx4u.ru/downloads/packages/isl-0.24.tar.xz)
-
-MD5: **fae030f604a9537adc2502990a8ab4d1**
-
-Домашняя страница: [http://isl.gforge.inria.fr](http://isl.gforge.inria.fr)
-
-SBU: **0.7**
+***
+            

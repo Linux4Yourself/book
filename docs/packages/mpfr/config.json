@@ -1,0 +1,23 @@
+{
+    "name": "mpfr",
+    "fileName": "mpfr-4.1.0.tar.xz",
+    "description": "\u041f\u0430\u043a\u0435\u0442 MPFR \u0432\u043a\u043b\u044e\u0447\u0430\u0435\u0442 \u0444\u0443\u043d\u043a\u0446\u0438\u0438 \u043f\u043e \u0440\u0430\u0431\u043e\u0442\u0435 \u0441 \u0432\u044b\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u044f\u043c\u0438 \u0441 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u043b\u044c\u043d\u043e\u0439 \u0442\u043e\u0447\u043d\u043e\u0441\u0442\u044c\u044e.",
+    "url": "https://www.mpfr.org/mpfr-4.1.0/mpfr-4.1.0.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/mpfr",
+    "version": "4.1.0",
+    "releasesUrl": "",
+    "priority": "important",
+    "md5": "bdd3d5efba9c17da8d83a35ec552baef",
+    "size": "1.45",
+    "installedSize": 0.65,
+    "sbu": 0,
+    "sbu2": 0.2,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/mpfr-4.1.0.tar.xz"
+}

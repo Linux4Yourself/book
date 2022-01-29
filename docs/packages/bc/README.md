@@ -15,9 +15,7 @@ BC (basic calculator) — интерактивный интерпретатор 
 **MD5:** 19dbb20c3aba33acacec29edd0b2c46e
 <br />
 **Домашняя страница:** https://git.yzena.com/gavin/bc
-        <br />**SBU (сборка временной системы):** 0
-<br />
-**SBU:** 0.1
+        <br />**SBU:** 0.1
 
 ***
             

@@ -1,0 +1,23 @@
+{
+    "name": "popt",
+    "fileName": "popt-1.18.tar.gz",
+    "description": "Popt - \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 \u0430\u043d\u0430\u043b\u0438\u0437\u0430 \u043f\u0430\u0440\u0430\u043c\u0435\u0442\u0440\u043e\u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u043e\u043a\u0438.",
+    "url": "http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.18.tar.gz",
+    "homeUrl": "https://github.com/rpm-software-management/popt",
+    "version": "1.18",
+    "releasesUrl": "https://github.com/rpm-software-management/popt/releases/",
+    "priority": "optional",
+    "md5": "450f2f636e6a3aa527de803d0ae76c5a",
+    "size": "0.55",
+    "installedSize": 0.06,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/popt-1.18.tar.gz",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ]
+}

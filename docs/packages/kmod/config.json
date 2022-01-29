@@ -1,0 +1,28 @@
+{
+    "name": "kmod",
+    "fileName": "kmod-29.tar.xz",
+    "description": "\u0421\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438 \u0438 \u0443\u0442\u0438\u043b\u0438\u0442\u044b \u0434\u043b\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u043c\u043e\u0434\u0443\u043b\u0435\u0439 \u044f\u0434\u0440\u0430.",
+    "url": "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-29.tar.xz",
+    "homeUrl": "https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/about",
+    "version": "29",
+    "releasesUrl": "https://www.kernel.org/pub/linux/utils/kernel/kmod/",
+    "priority": "important",
+    "md5": "e81e63acd80697d001c8d85c1acb38a0",
+    "size": "0.53",
+    "installedSize": 0.3,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "postinstall"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/kmod-29.tar.xz"
+}

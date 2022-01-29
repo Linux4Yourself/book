@@ -1,0 +1,22 @@
+{
+    "name": "dosfstools",
+    "fileName": "dosfstools-4.2.tar.gz",
+    "description": "Dosfstools \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0432\u0430\u0435\u0442 \u0440\u0430\u0431\u043e\u0442\u0443 \u0441 \u0444\u0430\u0439\u043b\u043e\u0432\u044b\u043c\u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u0430\u043c\u0438 \u0441\u0435\u043c\u0435\u0439\u0441\u0442\u0432\u0430 FAT.",
+    "url": "https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz",
+    "homeUrl": " https://github.com/dosfstools/dosfstools",
+    "version": "4.2",
+    "releasesUrl": "https://github.com/dosfstools/dosfstools/releases/",
+    "priority": "optional",
+    "md5": "49c8e457327dc61efab5b115a27b087a",
+    "size": "0.31",
+    "installedSize": 0.16,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/dosfstools-4.2.tar.gz",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "configure",
+        "install"
+    ]
+}

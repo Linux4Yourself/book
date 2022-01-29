@@ -1,0 +1,23 @@
+{
+    "name": "gperf",
+    "fileName": "gperf-3.1.tar.gz",
+    "description": "Gperf \u0433\u0435\u043d\u0435\u0440\u0438\u0440\u0443\u0435\u0442 \u043f\u0440\u0435\u0432\u043e\u0441\u0445\u043e\u0434\u043d\u0443\u044e \u0445\u044d\u0448-\u0444\u0443\u043d\u043a\u0446\u0438\u044e \u0438\u0437 \u043d\u0430\u0431\u043e\u0440\u0430 \u043a\u043b\u044e\u0447\u0435\u0439.",
+    "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
+    "homeUrl": "https://gnu.org/software/gperf",
+    "version": "3.1",
+    "releasesUrl": "https://ftp.gnu.org/gnu/gperf/",
+    "priority": "important",
+    "md5": "9e251c0a618ad0824b51117d5d9db87e",
+    "size": "1.16",
+    "installedSize": 0.1,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/gperf-3.1.tar.gz"
+}

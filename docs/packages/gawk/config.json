@@ -1,0 +1,25 @@
+{
+    "name": "gawk",
+    "fileName": "gawk-5.1.1.tar.xz",
+    "description": "\u041f\u0430\u043a\u0435\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0434\u043b\u044f \u043c\u0430\u043d\u0438\u043f\u0443\u043b\u044f\u0446\u0438\u0438 \u0441 \u0442\u0435\u043a\u0441\u0442\u043e\u0432\u044b\u043c\u0438 \u0444\u0430\u0439\u043b\u0430\u043c\u0438. \u042d\u0442\u043e GNU \u0432\u0435\u0440\u0441\u0438\u044f awk (Aho-Weinberg-Kernighan). \u041e\u043d \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u0432 \u043f\u0440\u043e\u0446\u0435\u0434\u0443\u0440\u0430\u0445 \u0441\u0431\u043e\u0440\u043a\u0438 \u0434\u043b\u044f \u0431\u043e\u043b\u044c\u0448\u0438\u043d\u0441\u0442\u0432\u0430 \u043f\u0430\u043a\u0435\u0442\u043e\u0432.",
+    "url": "https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.xz",
+    "homeUrl": "https://gnu.org/software/gawk",
+    "version": "5.1.1",
+    "releasesUrl": "https://ftp.gnu.org/gnu/gawk",
+    "priority": "required",
+    "md5": "83650aa943ff2fd519b2abedf8506ace",
+    "size": "3.10",
+    "installedSize": 1.3,
+    "sbu": 0.3,
+    "sbu2": 0.3,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-doc",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/gawk-5.1.1.tar.xz"
+}

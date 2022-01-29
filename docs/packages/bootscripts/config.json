@@ -1,0 +1,20 @@
+{
+    "name": "bootscripts",
+    "fileName": "bootscripts.tar.xz",
+    "description": "\u0421\u043a\u0440\u0438\u043f\u0442\u044b \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u043e\u0439 \u043a\u043e\u043d\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u0438.",
+    "url": "https://github.com/Linux4Yourself/bootscripts/releases/download/1.1/bootscripts.tar.xz",
+    "homeUrl": "https://github.com/Linux4Yourself/bootscripts",
+    "version": "1.1",
+    "releasesUrl": "",
+    "priority": "required",
+    "md5": "4f2a2b6159a437d1e89961b0231eaab0",
+    "size": "0.03",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "install"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/bootscripts.tar.xz"
+}

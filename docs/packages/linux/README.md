@@ -1,19 +1,21 @@
-# linux
+# linux-5.16.2
 
 Ядро операционной системы.
 
-Версия: **5.16.1**
+**Версия:** 5.16.2
+<br />
+**Размер:** 121.61
+<br />
+**Приоритет:** Необходимый
+<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/linux-5.16.2.tar.xz
+<br />
+**Оригинальное расположение:** https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.2.tar.xz
+<br />
+**MD5:** 121e4f65cf16ff76527020ea596fa431
+<br />
+**Домашняя страница:** https://www.kernel.org
+        <br />**SBU:** 4.4
 
-Размер: **121.61Mb**
-
-Приоритет: **Необходимый**
-
-Оригинальное расположение: [https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.1.tar.xz](https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.1.tar.xz)
-
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/linux-5.16.1.tar.xz](https://lx4u.ru/downloads/packages/linux-5.16.1.tar.xz)
-
-MD5: **121e4f65cf16ff76527020ea596fa431**
-
-Домашняя страница: [https://www.kernel.org](https://www.kernel.org)
-
-SBU: **4.4**
+***
+            

@@ -1,0 +1,26 @@
+{
+    "name": "libtasn1",
+    "fileName": "libtasn1-4.17.0.tar.gz",
+    "description": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 C, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u043a\u043e\u0434\u0438\u0440\u0443\u0435\u0442 \u0438 \u0434\u0435\u043a\u043e\u0434\u0438\u0440\u0443\u0435\u0442 \u0434\u0430\u043d\u043d\u044b\u0435 DER/BER \u0432 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0438 \u0441\u043e \u0441\u0445\u0435\u043c\u043e\u0439 ASN.1.",
+    "url": "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.17.0.tar.gz",
+    "homeUrl": "https://www.gnu.org/software/libtasn1/",
+    "version": "4.17.0",
+    "priority": "optional",
+    "md5": "c46f6eb3bd1287031ae5d36465094402",
+    "size": "1.82",
+    "installedSize": "0",
+    "sbu": "0",
+    "sbu2": 0.2,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/libtasn1-4.17.0.tar.gz",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "test"
+    ]
+}

@@ -1,21 +1,24 @@
-# util-linux
+# util-linux-2.37.2
 
 Содержит стандартный набор служебных утилит командной строки, такие как: утилиты для работы с файловой системой, консолью, разделами, и сообщениями.
 
-Версия: **2.37.2**
+**Версия:** 2.37.2
+<br />
+**Размер:** 5.36
+<br />
+**Приоритет:** Необходимый
+<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/util-linux-2.37.2.tar.xz
+<br />
+**Оригинальное расположение:** https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz
+<br />
+**MD5:** d659bf7cd417d93dc609872f6334b019
+<br />
+**Домашняя страница:** https://en.wikipedia.org/wiki/Util-linux
+        <br />
+**SBU (сборка временной системы):** 0.8
+<br />
+**SBU:** 0.5
 
-Размер: **5.36Mb**
-
-Приоритет: **Необходимый**
-
-Оригинальное расположение: [https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz](https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz)
-
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/util-linux-2.37.2.tar.xz](https://lx4u.ru/downloads/packages/util-linux-2.37.2.tar.xz)
-
-MD5: **d659bf7cd417d93dc609872f6334b019**
-
-Домашняя страница: [https://en.wikipedia.org/wiki/Util-linux](https://en.wikipedia.org/wiki/Util-linux)
-
-SBU (Сборка временной системы): **0.8**
-
-SBU: **0.5**
+***
+            

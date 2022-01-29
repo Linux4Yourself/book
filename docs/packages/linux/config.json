@@ -1,0 +1,18 @@
+{
+    "name": "linux",
+    "fileName": "linux-5.16.2.tar.xz",
+    "description": "\u042f\u0434\u0440\u043e \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b.",
+    "url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.2.tar.xz",
+    "homeUrl": "https://www.kernel.org",
+    "version": "5.16.2",
+    "releasesUrl": "https://www.kernel.org",
+    "priority": "required",
+    "md5": "121e4f65cf16ff76527020ea596fa431",
+    "size": "121.61",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 4.4,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.16.2.tar.xz",
+    "scripts": [],
+    "multilibSupport": false
+}

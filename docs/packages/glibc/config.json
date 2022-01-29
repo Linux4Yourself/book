@@ -1,0 +1,35 @@
+{
+    "name": "glibc",
+    "fileName": "glibc-2.34.tar.xz",
+    "description": "\u041f\u0430\u043a\u0435\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u0443\u044e \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0443 \u044f\u0437\u044b\u043a\u0430 \u0421\u0438 (GNU C Library). \u042d\u0442\u0430 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u0444\u0443\u043d\u043a\u0446\u0438\u0438 \u0434\u043b\u044f \u0432\u044b\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u043f\u0430\u043c\u044f\u0442\u0438, \u043f\u043e\u0438\u0441\u043a\u0430 \u043a\u0430\u0442\u0430\u043b\u043e\u0433\u043e\u0432, \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u044f \u0438 \u0437\u0430\u043a\u0440\u044b\u0442\u0438\u044f \u0444\u0430\u0439\u043b\u043e\u0432, \u0447\u0442\u0435\u043d\u0438\u044f \u0438 \u0437\u0430\u043f\u0438\u0441\u0438 \u0444\u0430\u0439\u043b\u043e\u0432, \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0438 \u0441\u0442\u0440\u043e\u043a, \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u044f \u0448\u0430\u0431\u043b\u043e\u043d\u043e\u0432 (pattern matching), \u0430\u0440\u0438\u0444\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u0439, \u0438 \u0442.\u0434.",
+    "url": "https://ftp.gnu.org/gnu/glibc/glibc-2.34.tar.xz",
+    "homeUrl": "https://gnu.org/software/glibc",
+    "version": "2.34",
+    "releasesUrl": "https://ftp.gnu.org/gnu/glibc/",
+    "priority": "required",
+    "md5": "31998b53fb39cb946e96abc310af1c89",
+    "size": "16.50",
+    "installedSize": 43,
+    "sbu": 5.4,
+    "sbu2": 4.2,
+    "patches": [
+        "glibc-patch"
+    ],
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-systemd",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_postinstall",
+        "multi_prepare",
+        "patch",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.34.tar.xz"
+}

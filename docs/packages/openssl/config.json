@@ -1,0 +1,27 @@
+{
+    "name": "openssl",
+    "fileName": "openssl-3.0.1.tar.gz",
+    "description": "\u041f\u0430\u043a\u0435\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0438 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438 \u043a\u0440\u0438\u043f\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u0438. \u041e\u043d\u0438 \u043f\u043e\u043b\u0435\u0437\u043d\u044b \u0434\u043b\u044f \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u043a\u0440\u0438\u043f\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0444\u0443\u043d\u043a\u0446\u0438\u0439 \u043a \u0434\u0440\u0443\u0433\u0438\u043c \u043f\u0430\u043a\u0435\u0442\u0430\u043c, \u0442\u0430\u043a\u0438\u043c \u043a\u0430\u043a OpenSSH, \u043f\u043e\u0447\u0442\u043e\u0432\u044b\u043c \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f\u043c \u0438 \u0432\u0435\u0431-\u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430\u043c (\u0434\u043b\u044f \u0434\u043e\u0441\u0442\u0443\u043f\u0430 \u043a \u0441\u0430\u0439\u0442\u0430\u043c \u043f\u043e HTTPS).",
+    "url": "https://www.openssl.org/source/openssl-3.0.1.tar.gz",
+    "homeUrl": "https://www.openssl.org/",
+    "version": "3.0.1",
+    "releasesUrl": "https://www.openssl.org/source/",
+    "priority": "required",
+    "md5": "7d07e849d77d276891edd579a8832bb3",
+    "size": "14.32",
+    "installedSize": 5.6,
+    "sbu": 0,
+    "sbu2": 1.8,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/openssl-3.0.1.tar.gz"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "libpipeline",
+    "fileName": "libpipeline-1.5.5.tar.gz",
+    "description": "\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 \u0434\u043b\u044f \u043c\u0430\u043d\u0438\u043f\u0443\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u043f\u043e\u0434\u043f\u0440\u043e\u0446\u0435\u0441\u0441\u0430\u043c\u0438 \u0433\u0438\u0431\u043a\u0438\u043c \u0438 \u0443\u0434\u043e\u0431\u043d\u044b\u043c \u0441\u043f\u043e\u0441\u043e\u0431\u043e\u043c.",
+    "url": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.5.tar.gz",
+    "homeUrl": "https://savannah.nongnu.org/projects/libpipeline",
+    "version": "1.5.5",
+    "releasesUrl": "https://download.savannah.gnu.org/releases/libpipeline/",
+    "priority": "optional",
+    "md5": "3e725c76bfea1985e87e851ee50c2e29",
+    "size": "0.91",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/libpipeline-1.5.5.tar.gz"
+}

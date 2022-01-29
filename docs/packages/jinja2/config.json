@@ -1,0 +1,20 @@
+{
+    "name": "jinja2",
+    "fileName": "Jinja2-3.0.3.tar.gz",
+    "description": "Jinja2 - \u044d\u0442\u043e \u043c\u043e\u0434\u0443\u043b\u044c Python, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0440\u0435\u0430\u043b\u0438\u0437\u0443\u0435\u0442 \u044f\u0437\u044b\u043a \u0448\u0430\u0431\u043b\u043e\u043d\u0430 Pythonic.",
+    "url": "https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.0.3.tar.gz",
+    "homeUrl": "https://jinja.palletsprojects.com/en/3.0.x/",
+    "version": "3.0.3",
+    "releasesUrl": "https://github.com/pallets/jinja/releases",
+    "priority": "required",
+    "md5": "b76ae2f0647abebc81e7c03f5fb7b00f",
+    "size": "0.26",
+    "installedSize": 1,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "install"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/Jinja2-3.0.3.tar.gz"
+}

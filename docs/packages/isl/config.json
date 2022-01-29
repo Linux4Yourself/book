@@ -1,0 +1,24 @@
+{
+    "name": "isl",
+    "fileName": "isl-0.24.tar.xz",
+    "description": "isl (\u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 \u0446\u0435\u043b\u043e\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u044b\u0445 \u043d\u0430\u0431\u043e\u0440\u043e\u0432) - \u044d\u0442\u043e \u043f\u0435\u0440\u0435\u043d\u043e\u0441\u0438\u043c\u0430\u044f \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 C \u0434\u043b\u044f \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u043d\u0430\u0431\u043e\u0440\u0430\u043c\u0438 \u0438 \u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u044f\u043c\u0438 \u0446\u0435\u043b\u043e\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u044b\u0445 \u0442\u043e\u0447\u0435\u043a, \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u044b\u0445 \u043b\u0438\u043d\u0435\u0439\u043d\u044b\u043c\u0438 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f\u043c\u0438.",
+    "url": "https://lx4u.ru/downloads/packages/isl-0.24.tar.xz",
+    "homeUrl": "http://isl.gforge.inria.fr",
+    "version": "0.24",
+    "releasesUrl": "http://isl.gforge.inria.fr",
+    "priority": "optional",
+    "md5": "fae030f604a9537adc2502990a8ab4d1",
+    "size": "1.84",
+    "installedSize": 2.2,
+    "sbu": 0,
+    "sbu2": 0.7,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "postinstall",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/isl-0.24.tar.xz"
+}

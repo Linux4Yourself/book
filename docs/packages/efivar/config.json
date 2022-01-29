@@ -1,0 +1,22 @@
+{
+    "name": "efivar",
+    "fileName": "efivar-37.tar.bz2",
+    "description": "\u041f\u0430\u043a\u0435\u0442 \u0434\u043b\u044f \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u043c\u0438 EFI.",
+    "url": "https://github.com/rhboot/efivar/releases/download/37/efivar-37.tar.bz2",
+    "homeUrl": "https://github.com/rhboot/efivar/",
+    "version": "37",
+    "releasesUrl": "https://github.com/rhboot/efivar/releases/",
+    "priority": "optional",
+    "md5": "9f067275c5f7aafdd75bfb364280ac9c",
+    "size": "0.10",
+    "installedSize": 0.33,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37.tar.bz2",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "install",
+        "patch"
+    ]
+}

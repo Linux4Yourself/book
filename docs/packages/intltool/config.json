@@ -1,0 +1,25 @@
+{
+    "name": "intltool",
+    "fileName": "intltool-0.51.0.tar.gz",
+    "description": "Intltool - \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442 \u0438\u043d\u0442\u0435\u0440\u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438, \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u043c\u044b\u0439 \u0434\u043b\u044f \u0438\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u044f \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0438\u043c\u044b\u0445 \u0441\u0442\u0440\u043e\u043a \u0438\u0437 \u0438\u0441\u0445\u043e\u0434\u043d\u044b\u0445 \u0444\u0430\u0439\u043b\u043e\u0432.",
+    "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+    "homeUrl": "https://launchpad.net/intltool",
+    "version": "0.51.0",
+    "releasesUrl": "https://launchpad.net/intltool/trunk/",
+    "priority": "optional",
+    "md5": "12e517cac2b57a0121cda351570f1e63",
+    "size": "0.15",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.01,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-doc",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/intltool-0.51.0.tar.gz"
+}
