@@ -1,0 +1,15 @@
+{
+    "list": [
+        "acl",
+        "attr",
+        "autoconf",
+        "automake",
+        "bash",
+        "bc",
+        "binutils",
+        "bison",
+        "bzip2",
+        "check",
+        "coreutils"
+    ]
+}

@@ -1,21 +1,22 @@
-# binutils
+# binutils-2.37
 
 Пакет содержит компоновщик, ассемблер и другие утилиты и инструменты для работы с объектными файлами. Программы отсюда необходимы для сборки большинства пакетов.
 
-Версия: **2.37**
-
-Размер: **21.86Mb**
-
-Приоритет: **Необходимый**
-
-Оригинальное расположение: [https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz](https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz)
-
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/binutils-2.37.tar.xz](https://lx4u.ru/downloads/packages/binutils-2.37.tar.xz)
-
-MD5: **e78d9ff2976b745a348f4c1f27c77cb1**
-
-Домашняя страница: [https://www.gnu.org/software/binutils](https://www.gnu.org/software/binutils)
-
-SBU (Сборка временной системы): **1**
-
-SBU: **4.1**
+**Версия:** 2.37
+<br />
+**Размер:** 21.86
+<br />
+**Приоритет:** Необходимый
+<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/binutils-2.37.tar.xz
+<br />
+**Оригинальное расположение:** https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz
+<br />
+**MD5:** e78d9ff2976b745a348f4c1f27c77cb1
+<br />
+**Домашняя страница:** https://www.gnu.org/software/binutils
+        <br />**SBU (сборка временной системы):** 4.1
+<br />
+**SBU:** 1
+***
+            

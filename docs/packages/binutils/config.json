@@ -1,0 +1,31 @@
+{
+    "name": "binutils",
+    "fileName": "binutils-2.37.tar.xz",
+    "description": "Пакет содержит компоновщик, ассемблер и другие утилиты и инструменты для работы с объектными файлами. Программы отсюда необходимы для сборки большинства пакетов.",
+    "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/binutils",
+    "version": "2.37",
+    "releasesUrl": "https://ftp.gnu.org/gnu/binutils",
+    "priority": "required",
+    "md5": "e78d9ff2976b745a348f4c1f27c77cb1",
+    "size": "21.86",
+    "installedSize": 16.5,
+    "sbu": 1,
+    "sbu2": 4.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_postinstall",
+        "multi_test",
+        "patch",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.37.tar.xz"
+}
