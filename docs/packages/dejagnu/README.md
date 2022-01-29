@@ -15,7 +15,8 @@
 **MD5:** 68c5208c58236eba447d7d6d1326b821
 <br />
 **Домашняя страница:** https://www.gnu.org/software/dejagnu
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

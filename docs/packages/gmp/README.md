@@ -15,7 +15,8 @@
 **MD5:** 0b82665c4a92fd2ade7440c13fcaa42b
 <br />
 **Домашняя страница:** https://gnu.org/software/gmp
-        <br />**SBU:** 0.5
+        <br />
+**SBU:** 0.5
 
 ***
             

@@ -15,7 +15,8 @@
 **MD5:** acc9d4a40ea6907d41ed168a468fde5e
 <br />
 **Домашняя страница:** https://shadow-maint.github.io/shadow/
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

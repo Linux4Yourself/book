@@ -15,7 +15,8 @@
 **MD5:** 80bb18a8e6240fcf7ec2f7b57601c170
 <br />
 **Домашняя страница:** https://metacpan.org/pod/XML::Parser
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

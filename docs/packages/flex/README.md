@@ -15,7 +15,8 @@ Flex (Fast Lexical Analyzer) — генератор лексических ан�
 **MD5:** 2882e3179748cc9f9c23ec593d6adc8d
 <br />
 **Домашняя страница:** https://github.com/westes/flex
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

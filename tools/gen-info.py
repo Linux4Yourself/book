@@ -161,7 +161,8 @@ class generator():
 ***
             """
         else:
-            info_sbu = f"""<br />**SBU:** {conf.get_sbu("sbu2")}
+            info_sbu = f"""<br />
+**SBU:** {conf.get_sbu("sbu2")}
 
 ***
             """

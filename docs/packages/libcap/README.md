@@ -15,7 +15,8 @@
 **MD5:** 342c7560ed2103899f6914d1de75a89f
 <br />
 **Домашняя страница:** https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

@@ -15,7 +15,8 @@
 **MD5:** 1bfb9b923f2c1339b4d2ce1807064aa5
 <br />
 **Домашняя страница:** https://www.gnu.org/software/libtool
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

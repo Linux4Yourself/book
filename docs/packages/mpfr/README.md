@@ -15,7 +15,8 @@
 **MD5:** bdd3d5efba9c17da8d83a35ec552baef
 <br />
 **Домашняя страница:** https://www.gnu.org/software/mpfr
-        <br />**SBU:** 0.2
+        <br />
+**SBU:** 0.2
 
 ***
             

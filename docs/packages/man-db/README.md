@@ -15,7 +15,8 @@
 **MD5:** 6e233a555f7b9ae91ce7cd0faa322bce
 <br />
 **Домашняя страница:** https://savannah.nongnu.org/projects/man-db
-        <br />**SBU:** 0.5
+        <br />
+**SBU:** 0.5
 
 ***
             

@@ -15,7 +15,8 @@
 **MD5:** 3cac5be0096fcf7b32dcbd3c53831380
 <br />
 **Домашняя страница:** https://kbd-project.org/
-        <br />**SBU:** 0.3
+        <br />
+**SBU:** 0.3
 
 ***
             

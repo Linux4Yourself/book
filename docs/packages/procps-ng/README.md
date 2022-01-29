@@ -15,7 +15,8 @@
 **MD5:** d60613e88c2f442ebd462b5a75313d56
 <br />
 **Домашняя страница:** https://sourceforge.net/projects/procps-ng
-        <br />**SBU:** 0.2
+        <br />
+**SBU:** 0.2
 
 ***
             

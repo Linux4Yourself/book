@@ -15,7 +15,8 @@
 **MD5:** 294b921e6cf9ab0fbaea4b639f8fdbe8
 <br />
 **Домашняя страница:** https://github.com/libffi/libffi
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

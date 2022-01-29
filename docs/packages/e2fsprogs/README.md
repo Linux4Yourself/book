@@ -15,7 +15,8 @@
 **MD5:** d774f74c78afe1c6179b16cae8a420a5
 <br />
 **Домашняя страница:** https://sourceforge.net/projects/e2fsprogs/
-        <br />**SBU:** 0.5
+        <br />
+**SBU:** 0.5
 
 ***
             

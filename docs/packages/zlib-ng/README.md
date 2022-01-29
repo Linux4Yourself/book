@@ -15,7 +15,8 @@
 **MD5:** 6c17fa8456627d60dd1332a32d8e98bb
 <br />
 **Домашняя страница:** https://github.com/zlib-ng/zlib-ng
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

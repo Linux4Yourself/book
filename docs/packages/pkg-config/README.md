@@ -15,7 +15,8 @@
 **MD5:** f6e931e319531b736fadc017f470e68a
 <br />
 **Домашняя страница:** https://www.freedesktop.org/wiki/Software/pkg-config/
-        <br />**SBU:** 0.2
+        <br />
+**SBU:** 0.2
 
 ***
             

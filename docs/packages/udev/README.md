@@ -15,7 +15,8 @@
 **MD5:** 227cc8ccdd95487804ce1ca7dd817b5a
 <br />
 **Домашняя страница:** https://github.com/Linux4Yourself/Linux4Yourself.Udev
-        <br />**SBU:** 0
+        <br />
+**SBU:** 0
 
 ***
             

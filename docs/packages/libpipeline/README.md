@@ -15,7 +15,8 @@
 **MD5:** 3e725c76bfea1985e87e851ee50c2e29
 <br />
 **Домашняя страница:** https://savannah.nongnu.org/projects/libpipeline
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

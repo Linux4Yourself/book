@@ -15,7 +15,8 @@
 **MD5:** 12cfa1687ffa2606337efe1a64416106
 <br />
 **Домашняя страница:** https://www.gnu.org/software/autoconf
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

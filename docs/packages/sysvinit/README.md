@@ -15,7 +15,8 @@
 **MD5:** dc14f92af715bcfa33cc25341730452e
 <br />
 **Домашняя страница:** https://savannah.nongnu.org/projects/sysvinit
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

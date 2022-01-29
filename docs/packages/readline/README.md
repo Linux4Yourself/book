@@ -15,7 +15,8 @@
 **MD5:** 12819fa739a78a6172400f399ab34f81
 <br />
 **Домашняя страница:** https://www.gnu.org/software/readline
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

@@ -15,7 +15,8 @@
 **MD5:** 08fb04335e2f5e73f23ea4c3adbf0c5f
 <br />
 **Домашняя страница:** https://gnu.org/software/groff
-        <br />**SBU:** 0.5
+        <br />
+**SBU:** 0.5
 
 ***
             

@@ -15,7 +15,8 @@
 **MD5:** 9f16c976c25bb0f76b50be749cd7a3a8
 <br />
 **Домашняя страница:** https://www.gnu.org/software/mpc
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             

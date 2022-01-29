@@ -15,7 +15,8 @@ Access Control List или ACL — список управления досту�
 **MD5:** 95ce715fe09acca7c12d3306d0f076b2
 <br />
 **Домашняя страница:** https://savannah.nongnu.org/projects/acl/
-        <br />**SBU:** 0.1
+        <br />
+**SBU:** 0.1
 
 ***
             
