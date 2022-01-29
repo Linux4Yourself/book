@@ -17,14 +17,19 @@ Required dependencies:
 - 'python-3.10'
 
 Bad things:
-- The 'generator.gen()' function could have been better.
+- The 'generator.gen_header()' function could have been better.
+
+TODO:
+- Add a 'generator.gen_footer()' function.
 
 Sample file 'README.md':
 
 ```
 # coreutils-9.0
 
-Coreutils - пакет программного обеспечения GNU, содержащий большое количество основных утилит, таких как cat, ls и rm, необходимых для UNIX-подобных операционных систем. Пакет включает несколько более ранних пакетов — textutils, shellutils, fileutils и другие различные утилиты.
+Coreutils - пакет программного обеспечения GNU, содержащий большое количество основных утилит,
+таких как cat, ls и rm, необходимых для UNIX-подобных операционных систем. Пакет включает
+несколько более ранних пакетов — textutils, shellutils, fileutils и другие различные утилиты.
 
 **Версия:** 9.0
 <br />
@@ -70,7 +75,7 @@ class config():
                 return "Необязательный"
         return ""
     
-    def get_base_info(self) -> dict:
+    def get_base_info(self):
         with open(self.config) as f:
             data = json.load(f)
         
@@ -112,7 +117,7 @@ class generator():
         self.config  = PACKAGES + package + "/config.json"
         self.md_file = PACKAGES + package + "/README.md"
     
-    def gen(self):
+    def gen_header(self):
         # TODO: may be better
         ## ГОВНОКОД ##
         conf      = config(self.package)
@@ -120,7 +125,7 @@ class generator():
         base_info = conf.get_base_info()
         priority  = conf.get_priority()
         
-        if conf.get_sbu("sbu") == "not_found":
+        if conf.get_sbu("sbu") == "not_found" or conf.get_sbu("sbu") == 0:
             sbu = False
         else:
             sbu = True
@@ -148,7 +153,8 @@ class generator():
             f.write(info)
         
         if sbu:
-            info_sbu = f"""<br />**SBU (сборка временной системы):** {conf.get_sbu("sbu")}
+            info_sbu = f"""<br />
+**SBU (сборка временной системы):** {conf.get_sbu("sbu")}
 <br />
 **SBU:** {conf.get_sbu("sbu2")}
 
@@ -171,6 +177,6 @@ def gen_page():
     for package in packages:
         gen = generator(package)
 
-        gen.gen()
+        gen.gen_header()
 
 gen_page()
