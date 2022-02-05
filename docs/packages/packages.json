@@ -475,14 +475,14 @@
 	},
 	{
 		"name": "expat",
-		"fileName": "expat-2.4.3.tar.xz",
+		"fileName": "expat-2.4.4.tar.xz",
 		"description": "Expat - потокоориентированная библиотека парсинга XML, написанная на C. Как один из наиболее доступных XML парсеров, широко используется в открытом программном обеспечении.",
-		"url": "https://prdownloads.sourceforge.net/expat/expat-2.4.3.tar.xz",
+		"url": "https://prdownloads.sourceforge.net/expat/expat-2.4.4.tar.xz",
 		"homeUrl": "https://sourceforge.net/projects/expat",
-		"version": "2.4.3",
+		"version": "2.4.4",
 		"releasesUrl": "https://sourceforge.net/projects/expat/files/expat/",
 		"priority": "important",
-		"md5": "b1137f030590b3f0c41c69c6cd68fa90",
+		"md5": "a712d23b7afb32e7527cf0b3fd8f12ac",
 		"size": "0.43",
 		"installedSize": 0.3,
 		"sbu": 0,
@@ -499,7 +499,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/expat-2.4.3.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/expat-2.4.4.tar.xz"
 	},
 	{
 		"name": "expect",
@@ -549,15 +549,15 @@
 	},
 	{
 		"name": "findutils",
-		"fileName": "findutils-4.8.0.tar.xz",
+		"fileName": "findutils-4.9.0.tar.xz",
 		"description": "Пакет содержит программы для поиска файлов. Программы предоставляют способы для рекурсивного поиска файлов по дереву каталогов, создания, обслуживания и поиска в базе данных (как правило, поиск выполняется быстрее, чем рекурсивный поиск, но менее надёжен, если база данных не в актуальном состоянии).",
-		"url": "https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/findutils/findutils-4.9.0.tar.xz",
 		"homeUrl": "https://gnu.org/software/findutils",
-		"version": "4.8.0",
+		"version": "4.9.0",
 		"releasesUrl": "https://ftp.gnu.org/gnu/findutils",
 		"priority": "required",
-		"md5": "eeefe2e6380931a77dfa6d9350b43186",
-		"size": "1.89",
+		"md5": "4a4a547e888a944b2f3af31d789a1137",
+		"size": "1.95",
 		"installedSize": 0.68,
 		"sbu": 0.3,
 		"sbu2": 0.3,
@@ -569,7 +569,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/findutils-4.8.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/findutils-4.9.0.tar.xz"
 	},
 	{
 		"name": "flex",
@@ -694,15 +694,15 @@
 	},
 	{
 		"name": "glibc",
-		"fileName": "glibc-2.34.tar.xz",
+		"fileName": "glibc-2.35.tar.xz",
 		"description": "Пакет содержит стандартную библиотеку языка Си (GNU C Library). Эта библиотека предоставляет функции для выделения памяти, поиска каталогов, открытия и закрытия файлов, чтения и записи файлов, обработки строк, соответствия шаблонов (pattern matching), арифметических операций, и т.д.",
-		"url": "https://ftp.gnu.org/gnu/glibc/glibc-2.34.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/glibc/glibc-2.35.tar.xz",
 		"homeUrl": "https://gnu.org/software/glibc",
-		"version": "2.34",
+		"version": "2.35",
 		"releasesUrl": "https://ftp.gnu.org/gnu/glibc/",
 		"priority": "required",
-		"md5": "31998b53fb39cb946e96abc310af1c89",
-		"size": "16.50",
+		"md5": "dd571c67d85d89d7f60b854a4e207423",
+		"size": "17.32",
 		"installedSize": 43,
 		"sbu": 5.4,
 		"sbu2": 4.2,
@@ -725,7 +725,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.34.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.35.tar.xz"
 	},
 	{
 		"name": "gmp",
@@ -1201,8 +1201,8 @@
 		"version": "5.16.2",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "121e4f65cf16ff76527020ea596fa431",
-		"size": "121.61",
+		"md5": "fd00badc3b53d42da3d84a7cf6f53f17",
+		"size": "121.62",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
@@ -2265,7 +2265,7 @@
 		"homeUrl": "https://github.com/p11-glue/p11-kit/",
 		"version": "0.24.1",
 		"priority": "optional",
-		"md5": "8ccf11c4a2e2e505b8e516d8549e64a5",
+		"md5": "67b2539bdca6b4bedaeecc12864d2796",
 		"size": "0.80",
 		"installedSize": "0",
 		"sbu": "0",
@@ -2293,7 +2293,7 @@
 		"homeUrl": "https://github.com/lfs-book/make-ca/",
 		"version": "1.10",
 		"priority": "optional",
-		"md5": "68c8625c9456815ed17e4f2219c79372",
+		"md5": "74f1ad16d7a086ac76e0424fd4dfe67b",
 		"size": "0.03",
 		"installedSize": "0",
 		"sbu": "0",
@@ -2339,6 +2339,24 @@
 		"sbu": 0,
 		"sbu2": 0,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-9.0-i18n-1.patch",
+		"multilibSupport": false,
+		"scripts": []
+	},
+	{
+		"name": "coreutils-patch",
+		"fileName": "coreutils-9.0-chmod_fix-1.patch",
+		"description": "",
+		"url": "https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/coreutils-9.0-chmod_fix-1.patch",
+		"homeUrl": "",
+		"version": "9.0-chmod_fix-1",
+		"releasesUrl": "",
+		"priority": "required",
+		"md5": "4709df88e68279e6ef357aa819ba5b1a",
+		"size": "0.00",
+		"installedSize": 0,
+		"sbu": 0,
+		"sbu2": 0,
+		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-9.0-chmod_fix-1.patch",
 		"multilibSupport": false,
 		"scripts": []
 	},
