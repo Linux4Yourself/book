@@ -2,7 +2,7 @@
 
 ## Подготовка
 
-Исправьте пути установки библиотек:
+Первым делом исправьте ошибку, связанную с `libasan.a`, затем измените пути установки библиотек:
 
 ```bash 
 {{ include('../packages/gcc/prepare') }}
@@ -186,8 +186,8 @@ rm -v dummy.c a.out dummy.log
 
 ## Установленные файлы
 
-Программы: c++ (ссылка на g++), cc (ссылка на gcc), cpp, g++, gcc, gcc-ar, gcc-nm, gcc-ranlib, gcov, gcov-dump и gcov-tool
+**Программы:** `c++` (ссылка на `g++`), `cc` (ссылка на `gcc`), `cpp`, `g++`, `gcc`, `gcc-ar`, `gcc-nm`, `gcc-ranlib`, `gcov`, `gcov-dump` и `gcov-tool`
 
-Библиотеки: libasan.{a,so}, libatomic.{a,so}, libcc1.so, libgcc.a, libgcc_eh.a, libgcc_s.so, libgcov.a, libgomp.{a,so}, libitm.{a,so}, liblsan.{a,so}, liblto_plugin.so, libquadmath.{a,so}, libssp.{a,so}, libssp_nonshared.a, libstdc++.{a,so}, libstdc++fs.a, libsupc++.a, libtsan.{a,so} и libubsan.{a,so}
+**Библиотеки:** `libasan.{a,so}`, `libatomic.{a,so}`, `libcc1.so`, `libgcc.a`, `libgcc_eh.a`, `libgcc_s.so`, `libgcov.a`, `libgomp.{a,so}`, `libitm.{a,so}`, `liblsan.{a,so}`, `liblto_plugin.so`, `libquadmath.{a,so}`, `libssp.{a,so}`, `libssp_nonshared.a`, `libstdc++.{a,so}`, `libstdc++fs.a`, `libsupc++.a`, `libtsan.{a,so}` и `libubsan.{a,so}`
 
-Директории: /usr/include/c++, /usr/lib/gcc, /usr/libexec/gcc и /usr/share/gcc-11.2.0
+**Директории:** `/usr/include/c++`, `/usr/lib/gcc`, `/usr/libexec/gcc` и `/usr/share/gcc-11.2.0`
