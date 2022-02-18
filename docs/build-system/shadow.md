@@ -12,6 +12,10 @@
 {{ include('../packages/shadow/prepare') }}
 ```
 
+## При раздельной структуре каталогов
+
+Уберите `-e '/PATH=/{s@/sbin:@@;s@/bin:@@}'` из команды выше, так как здесь `/{bin,sbin,lib}` не являются ссылками на `/usr/{bin,lib}`.
+
 ## Настройка
 
 ```bash 
@@ -30,6 +34,10 @@
 {{ include('../packages/shadow/install') }}
 ```
 
+<!--
+Возможно использование 'make exec_prefix=/usr install'. Если это будет использоваться, то требуется ввести раздел "При раздельной структуре директорий"
+-->
+
 ## Настройка
 
 Для включения теневых паролей и групп выполните:
@@ -47,8 +55,8 @@ passwd root
 
 ## Установленные файлы
 
-Программы: chage, chfn, chgpasswd, chpasswd, chsh, expiry, faillog, gpasswd, groupadd, groupdel, groupmems, groupmod, grpck, grpconv, grpunconv, lastlog, login, logoutd, newgidmap, newgrp, newuidmap, newusers, nologin, passwd, pwck, pwconv, pwunconv, sg (ссылка на newgrp), su, useradd, userdel, usermod, vigr (ссылка на vipw) и vipw
+**Программы:** `chage`, `chfn`, `chgpasswd`, `chpasswd`, `chsh`, `expiry`, `faillog`, `gpasswd`, `groupadd`, `groupdel`, `groupmems`, `groupmod`, `grpck`, `grpconv`, `grpunconv`, `lastlog`, `login`, `logoutd`, `newgidmap`, `newgrp`, `newuidmap`, `newusers`, `nologin`, `passwd`, `pwck`, `pwconv`, `pwunconv`, `sg` (ссылка на `newgrp`), `su`, `useradd`, `userdel`, `usermod`, `vigr` (ссылка на `vipw`) и `vipw`
 
-Директории: `/etc/default`
+**Директории:** `/etc/default`
 
 
