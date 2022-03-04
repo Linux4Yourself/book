@@ -7,7 +7,11 @@ Files:
 - 'docs/packages/pkglist.json' - list of packages to generate README.md.
 
 Usage:
-'python3 ./tools/gen-info.py'
+'python3 ./tools/gen-info.py mode'
+
+Work modes ('mode'):
+- 'individual',
+- 'prologue'
 
 Global variablea and constants:
 - 'PACKAGES' - directory with package files;
@@ -52,12 +56,15 @@ Coreutils - пакет программного обеспечения GNU, со
 """
 
 import os
+import sys
 import json
 
-PACKAGES = "./docs/packages/"
+DOCS     = "./docs/"
+PACKAGES = DOCS + "packages/"
 PKGLIST  = PACKAGES + "pkglist.json"
 
 class config():
+
     def __init__(self, package: str):
         self.config = PACKAGES + package + "/config.json"
         with open(self.config) as f:
@@ -73,12 +80,18 @@ class config():
                 return "Необходимый"
             case "optional":
                 return "Необязательный"
-        return ""
+            case _:
+                # В том случае, если в JSON'e пакета указан
+                # неправильный приоритет
+                return ""
     
     def get_base_info(self):
         with open(self.config) as f:
             data = json.load(f)
-        
+            
+            # FIXME: исключить огромное количество ненужных строк,
+            # генерируя словарь в цикле. Тогда придётся менять
+            # названия ключей на одинаковые
             info = {
                 "name":          data["name"],
                 "version":       data["version"],
@@ -111,13 +124,14 @@ class config():
         
         return sbu
 
-class generator():
+class generator_header():
+
     def __init__(self, package: str):
         self.package = package
         self.config  = PACKAGES + package + "/config.json"
         self.md_file = PACKAGES + package + "/README.md"
     
-    def gen_header(self):
+    def gen(self):
         # TODO: may be better
         ## ГОВНОКОД ##
         conf      = config(self.package)
@@ -130,22 +144,17 @@ class generator():
         else:
             sbu = True
         
-        info = f"""# {base_info["name"]}-{base_info["version"]}
+        info = f"""
+# {base_info["name"]}-{base_info["version"]}
 
 {base_info["desc"]}
 
-**Версия:** {base_info["version"]}
-<br />
-**Размер:** {base_info["size"]}
-<br />
-**Приоритет:** {priority}
-<br />
-**Ссылка для загрузки:** {base_info["download"]}
-<br />
-**Оригинальное расположение:** {base_info["download_orig"]}
-<br />
-**MD5:** {base_info["md5"]}
-<br />
+**Версия:** {base_info["version"]}<br />
+**Размер:** {base_info["size"]}<br />
+**Приоритет:** {priority}<br />
+**Ссылка для загрузки:** {base_info["download"]}<br />
+**Оригинальное расположение:** {base_info["download_orig"]}<br />
+**MD5:** {base_info["md5"]}<br />
 **Домашняя страница:** {base_info["home_page"]}
         """
 
@@ -153,9 +162,7 @@ class generator():
             f.write(info)
         
         if sbu:
-            info_sbu = f"""<br />
-**SBU (сборка временной системы):** {conf.get_sbu("sbu")}
-<br />
+            info_sbu = f"""<br />**SBU (сборка временной системы):** {conf.get_sbu("sbu")}<br />
 **SBU:** {conf.get_sbu("sbu2")}
 
 ***
@@ -170,14 +177,79 @@ class generator():
         with open(self.md_file, "a") as f:
             f.write(info_sbu)
 
+class generator_prologue():
+
+    def __init__(self, package: str):
+        self.package = package
+        self.config  = PACKAGES + package + "/config.json"
+        self.md_file = PACKAGES + "README.md"
+    
+    def gen(self):
+        conf      = config(self.package)
+
+        base_info = conf.get_base_info()
+        priority  = conf.get_priority()
+        
+        if conf.get_sbu("sbu") == "not_found" or conf.get_sbu("sbu") == 0:
+            sbu = False
+        else:
+            sbu = True
+        
+        info = f"""
+## {base_info["name"]}
+
+{base_info["desc"]}
+
+**Версия:** {base_info["version"]}<br />
+**Размер:** {base_info["size"]}<br />
+**Приоритет:** {priority}<br />
+**Ссылка для загрузки:** {base_info["download"]}<br />
+**Оригинальное расположение:** {base_info["download_orig"]}<br />
+**MD5:** {base_info["md5"]}<br />
+**Домашняя страница:** {base_info["home_page"]}
+**SBU:** {conf.get_sbu("sbu")}
+
+---
+        """
+
+        with open(self.md_file, "a") as f:
+            f.write(info)
+
 def gen_page():
     with open(PKGLIST) as f:
         data = json.load(f)
         packages = data["list"]
     
     for package in packages:
-        gen = generator(package)
+        gen = generator_header(package)
 
-        gen.gen_header()
+        gen.gen()
 
-gen_page()
+def gen_prologue():
+    with open(PKGLIST) as f:
+        data = json.load(f)
+        packages = data["list"]
+    
+    # Очистка ненужного содержимого:
+    with open(PACKAGES + "README.md", "w") as f:
+        f.write('')
+    
+    for package in packages:
+        gen = generator_prologue(package)
+        
+        gen.gen()
+
+try:
+    mode = sys.argv[1]
+    
+    match(mode):
+        case "individual":
+            gen_page()
+        case "prologue":
+            gen_prologue()
+        case _:
+            print("Error: The argument is entered incorrectly.")
+            exit(1)
+except IndexError:
+    print("Error: No argument entered.")
+    exit(1)
