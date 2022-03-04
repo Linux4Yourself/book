@@ -150,7 +150,7 @@ class generator_header():
 {base_info["desc"]}
 
 **Версия:** {base_info["version"]}<br />
-**Размер:** {base_info["size"]}<br />
+**Размер:** {base_info["size"]} Мб<br />
 **Приоритет:** {priority}<br />
 **Ссылка для загрузки:** {base_info["download"]}<br />
 **Оригинальное расположение:** {base_info["download_orig"]}<br />
@@ -201,13 +201,13 @@ class generator_prologue():
 {base_info["desc"]}
 
 **Версия:** {base_info["version"]}<br />
-**Размер:** {base_info["size"]}<br />
+**Размер:** {base_info["size"]} Мб<br />
 **Приоритет:** {priority}<br />
 **Ссылка для загрузки:** {base_info["download"]}<br />
 **Оригинальное расположение:** {base_info["download_orig"]}<br />
 **MD5:** {base_info["md5"]}<br />
-**Домашняя страница:** {base_info["home_page"]}
-**SBU:** {conf.get_sbu("sbu")}
+**Домашняя страница:** {base_info["home_page"]}<br />
+**SBU:** {conf.get_sbu("sbu2")}
 
 ---
         """
