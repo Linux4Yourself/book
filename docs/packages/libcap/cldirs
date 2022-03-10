@@ -1,5 +1,5 @@
 for lib_n in cap psx; do
     mv -v /usr/lib/lib${lib_n}.so.* /lib
     ln -sfv ../../lib/lib${lib_n}.so.2 /usr/lib/lib${lib_n}.so
-    chmod -v 755 /lib/lib${lib_n}.so.2.48
+    chmod -v 755 /lib/lib${lib_n}.so.2
 done
