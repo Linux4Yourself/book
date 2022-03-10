@@ -26,8 +26,9 @@
 ```bash 
 {{ include('../packages/iproute2/install-doc') }}
 ```
+
 ## Установленные файлы
 
-Программы: bridge, ctstat (ссылка на lnstat), genl, ifcfg, ifstat, ip, lnstat, nstat, routef, routel, rtacct, rtmon, rtpr, rtstat (ссылка на lnstat), ss, and tc
+**Программы:** `bridge`, `ctstat` (ссылка на `lnstat`), `genl`, `ifcfg`, `ifstat`, `ip`, `lnstat`, `nstat`, `routef`, `routel`, `rtacct`, `rtmon`, `rtpr`, `rtstat` (ссылка на `lnstat`), `ss` и `tc`
 
 

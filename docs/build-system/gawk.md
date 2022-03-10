@@ -38,4 +38,10 @@
 {{ include('../packages/gawk/install-doc') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `awk` (ссылка на `gawk`), `gawk` и `awk-5.1.1`
+
+**Библиотеки:** `filefuncs.so`, `fnmatch.so`, `fork.so`, `inplace.so`, `intdiv.so`, `ordchr.so`, `readdir.so`, `readfile.so`, `revoutput.so`, `revtwoway.so`, `rwarray.so`, и `time.so` (все из них содержатся в директории `/usr/lib/gawk`)
+
+**Директории:** `/usr/lib/gawk`, `/usr/libexec/awk`, `/usr/share/awk` и `/usr/share/doc/gawk`

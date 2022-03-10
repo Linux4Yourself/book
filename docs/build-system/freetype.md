@@ -48,4 +48,10 @@
 {{ include('../packages/freetype/multi_install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `freetype-config`
+
+**Библиотеки:** `libfreetype.so`
+
+**Директории:** `/usr/include/freetype2` и `/usr/share/doc/freetype`

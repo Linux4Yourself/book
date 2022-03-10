@@ -30,4 +30,6 @@
 {{ include('../packages/gzip/cldirs') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `gunzip`, `gzexe`, `gzip`, `uncompress` (жёсткая ссылка на `gunzip`), `zcat`, `zcmp`, `zdiff`, `zegrep`, `zfgrep`, `zforce`, `zgrep`, `zless`, `zmore` и `znew`
