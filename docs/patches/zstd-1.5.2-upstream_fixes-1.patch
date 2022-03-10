@@ -1,0 +1,96 @@
+Submitted By:                Xi Ruoyao <xry111@linuxfromscratch.org>
+Date:                        2021-03-04
+Initial Package Version:     1.5.2
+Upstream Status:             Applied
+Origin:                      Upstream Git Repository
+Description:                 Fix bad assertions causing test failure.
+
+From 246982e782849d8646b2d5df6648319935669228 Mon Sep 17 00:00:00 2001
+From: Nick Terrell <terrelln@fb.com>
+Date: Thu, 20 Jan 2022 22:41:47 -0800
+Subject: [PATCH] [dibio] Fix assertion triggered by no inputs
+
+Passing 0 inputs to `DiB_shuffle()` caused an assertion failure where
+it should just return.
+
+A test is added in a later commit, with the initial introduction of the
+new testing framework.
+
+Fixes #3007.
+---
+ programs/dibio.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/programs/dibio.c b/programs/dibio.c
+index d19f954486..147d1e7bfd 100644
+--- a/programs/dibio.c
++++ b/programs/dibio.c
+@@ -27,9 +27,9 @@
+ #include <string.h>         /* memset */
+ #include <stdio.h>          /* fprintf, fopen, ftello64 */
+ #include <errno.h>          /* errno */
+-#include <assert.h>
+ 
+ #include "timefn.h"         /* UTIL_time_t, UTIL_clockSpanMicro, UTIL_getTime */
++#include "../lib/common/debug.h" /* assert */
+ #include "../lib/common/mem.h"  /* read */
+ #include "dibio.h"
+ 
+@@ -193,7 +193,8 @@ static U32 DiB_rand(U32* src)
+ static void DiB_shuffle(const char** fileNamesTable, unsigned nbFiles) {
+     U32 seed = 0xFD2FB528;
+     unsigned i;
+-    assert(nbFiles >= 1);
++    if (nbFiles == 0)
++        return;
+     for (i = nbFiles - 1; i > 0; --i) {
+         unsigned const j = DiB_rand(&seed) % (i + 1);
+         const char* const tmp = fileNamesTable[j];
+
+From d109cef2012b1e0ca7a6f47278a2838f68bbc196 Mon Sep 17 00:00:00 2001
+From: Xi Ruoyao <xry111@mengyan1223.wang>
+Date: Sat, 5 Mar 2022 03:56:44 +0800
+Subject: [PATCH] fix the assertion in readLinesFromFile (#3084)
+
+* fix the assertion in readLinesFromFile
+
+When the file is not terminated by endline, readLineFromFile will append
+a '\0' for the last line.  In this case pos + lineLength == dstCapacity.
+
+* test: don't print very long text garbage
+---
+ programs/util.c    | 2 +-
+ tests/playTests.sh | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/programs/util.c b/programs/util.c
+index d69b72a37c..55bcff25af 100644
+--- a/programs/util.c
++++ b/programs/util.c
+@@ -418,7 +418,7 @@ readLinesFromFile(void* dst, size_t dstCapacity,
+     while ( !feof(inputFile) ) {
+         size_t const lineLength = readLineFromFile(buf+pos, dstCapacity-pos, inputFile);
+         if (lineLength == 0) break;
+-        assert(pos + lineLength < dstCapacity);
++        assert(pos + lineLength <= dstCapacity); /* '=' for inputFile not terminated with '\n' */
+         pos += lineLength;
+         ++nbFiles;
+     }
+diff --git a/tests/playTests.sh b/tests/playTests.sh
+index 71e8dc0581..d4271b2f07 100755
+--- a/tests/playTests.sh
++++ b/tests/playTests.sh
+@@ -735,11 +735,11 @@ test -f tmp4
+ 
+ println "test : survive the list of files with too long filenames (--filelist=FILE)"
+ datagen -g5M > tmp_badList
+-zstd -f --filelist=tmp_badList && die "should have failed : file name length is too long"
++zstd -qq -f --filelist=tmp_badList && die "should have failed : file name length is too long"  # printing very long text garbage on console will cause CI failure
+ 
+ println "test : survive a list of files which is text garbage (--filelist=FILE)"
+ datagen > tmp_badList
+-zstd -f --filelist=tmp_badList && die "should have failed : list is text garbage"
++zstd -qq -f --filelist=tmp_badList && die "should have failed : list is text garbage"  # printing very long text garbage on console will cause CI failure
+ 
+ println "test : survive a list of files which is binary garbage (--filelist=FILE)"
+ datagen -P0 -g1M > tmp_badList

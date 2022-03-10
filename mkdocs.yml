@@ -145,7 +145,6 @@ nav:
         - Смена владельца каталога $LIN: build-temp-system/change-owner.md
         - Вход в окружение chroot: build-temp-system/enter-in-chroot.md
         - Создание базовых файлов и ссылок: build-temp-system/create-files.md
-        - libstdc++ проход 2: build-temp-system/libstdc-p2.md
         - gettext: build-temp-system/gettext.md
         - bison: build-temp-system/bison.md
         - perl: build-temp-system/perl.md
