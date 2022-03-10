@@ -130,14 +130,14 @@
 	},
 	{
 		"name": "bc",
-		"fileName": "bc-5.2.1.tar.xz",
+		"fileName": "bc-5.2.2.tar.xz",
 		"description": "BC (basic calculator) — интерактивный интерпретатор Си-подобного языка, позволяет выполнять вычисления с произвольно заданной точностью. Часто используется как калькулятор в командной строке UNIX-подобных операционных систем.",
-		"url": "https://github.com/gavinhoward/bc/releases/download/5.2.1/bc-5.2.1.tar.xz",
+		"url": "https://github.com/gavinhoward/bc/releases/download/5.2.2/bc-5.2.2.tar.xz",
 		"homeUrl": "https://git.yzena.com/gavin/bc",
-		"version": "5.2.1",
+		"version": "5.2.2",
 		"releasesUrl": "https://git.yzena.com/gavin/bc/releases",
 		"priority": "important",
-		"md5": "19dbb20c3aba33acacec29edd0b2c46e",
+		"md5": "632344cdb052af0e06087bd3b0034126",
 		"size": "0.42",
 		"installedSize": 0,
 		"sbu": 0,
@@ -149,19 +149,19 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/bc-5.2.1.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/bc-5.2.2.tar.xz"
 	},
 	{
 		"name": "binutils",
-		"fileName": "binutils-2.37.tar.xz",
+		"fileName": "binutils-2.38.tar.xz",
 		"description": "Пакет содержит компоновщик, ассемблер и другие утилиты и инструменты для работы с объектными файлами. Программы отсюда необходимы для сборки большинства пакетов.",
-		"url": "https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/binutils/binutils-2.38.tar.xz",
 		"homeUrl": "https://www.gnu.org/software/binutils",
-		"version": "2.37",
+		"version": "2.38",
 		"releasesUrl": "https://ftp.gnu.org/gnu/binutils",
 		"priority": "required",
-		"md5": "e78d9ff2976b745a348f4c1f27c77cb1",
-		"size": "21.86",
+		"md5": "6e39cad1bb414add02b5b1169c18fdc5",
+		"size": "22.56",
 		"installedSize": 16.5,
 		"sbu": 1,
 		"sbu2": 4.1,
@@ -180,7 +180,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.37.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.38.tar.xz"
 	},
 	{
 		"name": "bison",
@@ -292,15 +292,15 @@
 	},
 	{
 		"name": "dbus",
-		"fileName": "dbus-1.13.18.tar.xz",
+		"fileName": "dbus-1.14.0.tar.xz",
 		"description": "D-Bus - система межпроцессного взаимодействия, которая позволяет приложениям в операционной системе сообщаться друг с другом. D-Bus предоставляет собой системную службу (для обработки таких событий, как 'Добавлено новое аппаратное устройство' или 'очередь принтеров изменена') и системную службу сеанса для каждого пользователя (для общих потребностей IPC среди пользовательских приложений.) Кроме того, D-Bus построен поверх общей платформы передачи сообщений от одного к другому, которая может использоваться любыми двумя приложениями для связки (в обход шины сообщений).",
-		"url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.13.18.tar.xz",
+		"url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.14.0.tar.xz",
 		"homeUrl": "https://www.freedesktop.org/wiki/Software/dbus/",
-		"version": "1.13.18",
+		"version": "1.14.0",
 		"releasesUrl": "https://dbus.freedesktop.org/releases/dbus/",
 		"priority": "important",
-		"md5": "b25e4fcfbfd4889bef76f7241dfa1a04",
-		"size": "1.28",
+		"md5": "ddd5570aff05191dbee8e42d751f1b7d",
+		"size": "1.30",
 		"installedSize": 1.2,
 		"sbu": 0,
 		"sbu2": 0.2,
@@ -317,7 +317,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/dbus-1.13.18.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/dbus-1.14.0.tar.xz"
 	},
 	{
 		"name": "dejagnu",
@@ -410,7 +410,8 @@
 			"build",
 			"configure",
 			"install",
-			"postinstall"
+			"postinstall",
+			"prepare"
 		]
 	},
 	{
@@ -475,14 +476,14 @@
 	},
 	{
 		"name": "expat",
-		"fileName": "expat-2.4.4.tar.xz",
+		"fileName": "expat-2.4.6.tar.xz",
 		"description": "Expat - потокоориентированная библиотека парсинга XML, написанная на C. Как один из наиболее доступных XML парсеров, широко используется в открытом программном обеспечении.",
-		"url": "https://prdownloads.sourceforge.net/expat/expat-2.4.4.tar.xz",
+		"url": "https://prdownloads.sourceforge.net/expat/expat-2.4.6.tar.xz",
 		"homeUrl": "https://sourceforge.net/projects/expat",
-		"version": "2.4.4",
+		"version": "2.4.6",
 		"releasesUrl": "https://sourceforge.net/projects/expat/files/expat/",
 		"priority": "important",
-		"md5": "a712d23b7afb32e7527cf0b3fd8f12ac",
+		"md5": "22a30c888752fdda9f8dd1b7281c54b0",
 		"size": "0.43",
 		"installedSize": 0.3,
 		"sbu": 0,
@@ -499,7 +500,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/expat-2.4.4.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/expat-2.4.6.tar.xz"
 	},
 	{
 		"name": "expect",
@@ -648,15 +649,15 @@
 	},
 	{
 		"name": "gdbm",
-		"fileName": "gdbm-1.22.tar.gz",
+		"fileName": "gdbm-1.23.tar.gz",
 		"description": "Библиотека функций базы данных, которая использует расширяемое хэширование и работает аналогично стандартным функциям dbm UNIX. Эти процедуры предоставляются программисту, которому необходимо создать и обработать хешированную базу данных. Основное предназначение gdbm — хранение пары ключ/данные в файле данных. Каждый ключ должен быть уникальным и сопряженным только с одним элементом данных. Ключи не могут быть напрямую доступны в отсортированном порядке.",
-		"url": "https://ftp.gnu.org/gnu/gdbm/gdbm-1.22.tar.gz",
+		"url": "https://ftp.gnu.org/gnu/gdbm/gdbm-1.23.tar.gz",
 		"homeUrl": "https://gnu.org/software/gdbm",
-		"version": "1.22",
+		"version": "1.23",
 		"releasesUrl": "https://ftp.gnu.org/gnu/gdbm/",
 		"priority": "important",
-		"md5": "0bbd38f12656e4728e2f7c4708aec014",
-		"size": "1.04",
+		"md5": "8551961e36bf8c70b7500d255d3658ec",
+		"size": "1.06",
 		"installedSize": 0.27,
 		"sbu": 0,
 		"sbu2": 0.1,
@@ -667,7 +668,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/gdbm-1.22.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/gdbm-1.23.tar.gz"
 	},
 	{
 		"name": "gettext",
@@ -873,14 +874,14 @@
 	},
 	{
 		"name": "iana-etc",
-		"fileName": "iana-etc-20220110.tar.gz",
+		"fileName": "iana-etc-20220222.tar.gz",
 		"description": "Пакет Iana-Etc содержит данные для сетевых служб и протоколов.",
-		"url": "https://github.com/Mic92/iana-etc/releases/download/20220110/iana-etc-20220110.tar.gz",
+		"url": "https://github.com/Mic92/iana-etc/releases/download/20220222/iana-etc-20220222.tar.gz",
 		"homeUrl": "https://www.iana.org/protocols",
-		"version": "20220110",
+		"version": "20220222",
 		"releasesUrl": "https://github.com/Mic92/iana-etc/releases/",
 		"priority": "required",
-		"md5": "cd22a9f75b03a2be5638e67d4e72bf19",
+		"md5": "e3ebe5894f3d4117a9a01e9f3d1cbcc9",
 		"size": "0.57",
 		"installedSize": 0.5,
 		"sbu": 0.01,
@@ -889,7 +890,7 @@
 			"install"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/iana-etc-20220110.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/iana-etc-20220222.tar.gz"
 	},
 	{
 		"name": "inetutils",
@@ -1194,19 +1195,19 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.16.2.tar.xz",
+		"fileName": "linux-5.16.12.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.2.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.12.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.16.2",
+		"version": "5.16.12",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "fd00badc3b53d42da3d84a7cf6f53f17",
-		"size": "121.62",
+		"md5": "e859941968400c4437bd62b4fe39b7b7",
+		"size": "121.65",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.16.2.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.16.12.tar.xz",
 		"scripts": [],
 		"multilibSupport": false
 	},
@@ -1259,15 +1260,15 @@
 	},
 	{
 		"name": "man-db",
-		"fileName": "man-db-2.9.4.tar.xz",
+		"fileName": "man-db-2.10.1.tar.xz",
 		"description": "Пакет Man-DB содержит программы для поиска и просмотра справочных страниц.",
-		"url": "https://download.savannah.gnu.org/releases/man-db/man-db-2.9.4.tar.xz",
+		"url": "https://download.savannah.gnu.org/releases/man-db/man-db-2.10.1.tar.xz",
 		"homeUrl": "https://savannah.nongnu.org/projects/man-db",
-		"version": "2.9.4",
+		"version": "2.10.1",
 		"releasesUrl": "https://download.savannah.gnu.org/releases/man-db/",
 		"priority": "optional",
-		"md5": "6e233a555f7b9ae91ce7cd0faa322bce",
-		"size": "1.82",
+		"md5": "b03b76a9a00d0d6b2299b823fba4f579",
+		"size": "1.80",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0.5,
@@ -1278,7 +1279,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/man-db-2.10.1.tar.xz"
 	},
 	{
 		"name": "man-pages",
@@ -1302,14 +1303,14 @@
 	},
 	{
 		"name": "meson",
-		"fileName": "meson-0.61.1.tar.gz",
+		"fileName": "meson-0.61.2.tar.gz",
 		"description": "Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.",
-		"url": "https://github.com/mesonbuild/meson/releases/download/0.61.1/meson-0.61.1.tar.gz",
+		"url": "https://github.com/mesonbuild/meson/releases/download/0.61.2/meson-0.61.2.tar.gz",
 		"homeUrl": "https://mesonbuild.com",
-		"version": "0.61.1",
+		"version": "0.61.2",
 		"releasesUrl": "https://github.com/mesonbuild/meson/releases/",
 		"priority": "important",
-		"md5": "8ed66d5537275df3defffb66d1fb897f",
+		"md5": "7c4220066c70057b4c5a997a47ac710c",
 		"size": "1.92",
 		"installedSize": 5.3,
 		"sbu": 0,
@@ -1320,7 +1321,7 @@
 			"prepare"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.61.1.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.61.2.tar.gz"
 	},
 	{
 		"name": "mpc",
@@ -1699,14 +1700,14 @@
 	},
 	{
 		"name": "markupsafe",
-		"fileName": "MarkupSafe-2.0.1.tar.gz",
+		"fileName": "MarkupSafe-2.1.0.tar.gz",
 		"description": "MarkupSafe - это модуль Python, который экранирует символы, поэтому текст безопасно использовать в HTML и XML. Символы, имеющие особое значение, заменяются так, чтобы они отображались как фактические символы. Это смягчает атаки инъекций, что означает, что вводимые пользователем данные, которым не доверяют, могут безопасно отображаться на странице.",
-		"url": "https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.0.1.tar.gz",
-		"homeUrl": "https://markupsafe.palletsprojects.com/en/2.0.x/",
-		"version": "2.0.1",
+		"url": "https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.1.0.tar.gz",
+		"homeUrl": "https://markupsafe.palletsprojects.com/en/2.1.x/",
+		"version": "2.1.0",
 		"releasesUrl": "https://pypi.org/project/MarkupSafe/#files",
 		"priority": "required",
-		"md5": "892e0fefa3c488387e5cc0cad2daa523",
+		"md5": "1c3ef96104e89fc64f90e48194a4f154",
 		"size": "0.02",
 		"installedSize": 0.1,
 		"sbu": 0,
@@ -1716,7 +1717,7 @@
 			"install"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/MarkupSafe-2.0.1.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/MarkupSafe-2.1.0.tar.gz"
 	},
 	{
 		"name": "jinja2",
@@ -1902,15 +1903,15 @@
 	},
 	{
 		"name": "util-linux",
-		"fileName": "util-linux-2.37.2.tar.xz",
+		"fileName": "util-linux-2.37.4.tar.xz",
 		"description": "Содержит стандартный набор служебных утилит командной строки, такие как: утилиты для работы с файловой системой, консолью, разделами, и сообщениями.",
-		"url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.2.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.37/util-linux-2.37.4.tar.xz",
 		"homeUrl": "https://en.wikipedia.org/wiki/Util-linux",
-		"version": "2.37.2",
+		"version": "2.37.4",
 		"releasesUrl": "https://www.kernel.org/pub/linux/utils/util-linux/",
 		"priority": "required",
-		"md5": "d659bf7cd417d93dc609872f6334b019",
-		"size": "5.36",
+		"md5": "755919e658c349cad9e1c7c771742d48",
+		"size": "5.83",
 		"installedSize": 7.9,
 		"sbu": 0.8,
 		"sbu2": 0.5,
@@ -1933,19 +1934,19 @@
 			"test-systemd"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/util-linux-2.37.2.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/util-linux-2.37.4.tar.xz"
 	},
 	{
 		"name": "vim",
-		"fileName": "vim-8.2.4115.tar.gz",
+		"fileName": "vim-8.2.4489.tar.gz",
 		"description": "Один из мощнейших текстовых редакторов с полной свободой настройки и автоматизации, возможными благодаря расширениям и надстройкам.",
-		"url": "https://github.com/vim/vim/archive/refs/tags/v8.2.4115.tar.gz",
+		"url": "https://github.com/vim/vim/archive/refs/tags/v8.2.4489.tar.gz",
 		"homeUrl": "https://www.vim.org/",
-		"version": "8.2.4115",
+		"version": "8.2.4489",
 		"releasesUrl": "https://github.com/vim/vim/releases",
 		"priority": "optional",
-		"md5": "c9a0f3b6b08f9ed89b0ec6c45180442c",
-		"size": "15.23",
+		"md5": "f9aca6bc0d3922e48a28d696db4cbafa",
+		"size": "15.43",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 2.1,
@@ -1958,7 +1959,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.4115.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.4489.tar.gz"
 	},
 	{
 		"name": "nano",
@@ -2069,14 +2070,14 @@
 	},
 	{
 		"name": "zstd",
-		"fileName": "zstd-1.5.1.tar.gz",
+		"fileName": "zstd-1.5.2.tar.gz",
 		"description": "Zstandard - это алгоритм сжатия в реальном времени, обеспечивающий высокую степень сжатия. Он предлагает очень широкий спектр компромиссов между сжатием и скоростью, а также очень быстрым декодером.",
-		"url": "https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz",
+		"url": "https://github.com/facebook/zstd/releases/download/v1.5.2/zstd-1.5.2.tar.gz",
 		"homeUrl": "https://facebook.github.io/zstd/",
-		"version": "1.5.1",
+		"version": "1.5.2",
 		"releasesUrl": "https://github.com/facebook/zstd/releases/",
 		"priority": "important",
-		"md5": "b97d53547220355907dedec7de9a4f29",
+		"md5": "072b10f71f5820c24761a65f31f43e73",
 		"size": "1.85",
 		"installedSize": 2.6,
 		"sbu": 0,
@@ -2092,7 +2093,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/zstd-1.5.1.tar.gz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/zstd-1.5.2.tar.gz"
 	},
 	{
 		"name": "popt",
@@ -2433,20 +2434,20 @@
 		"scripts": []
 	},
 	{
-		"name": "binutils-2.37-upstream_fix-1",
-		"fileName": "binutils-2.37-upstream_fix-1.patch",
+		"name": "binutils-2.38-lto_fix-1",
+		"fileName": "binutils-2.38-lto_fix-1.patch",
 		"description": "",
-		"url": "https://www.linuxfromscratch.org/patches/lfs/development/binutils-2.37-upstream_fix-1.patch",
+		"url": "https://www.linuxfromscratch.org/patches/lfs/development/binutils-2.38-lto_fix-1.patch",
 		"homeUrl": "",
 		"version": "1",
 		"releasesUrl": "",
 		"priority": "required",
-		"md5": "3518fa864fe8d7ef65be4960f380b03b",
-		"size": "0.01",
+		"md5": "3df11b6123d5bbdb0fc83862a003827a",
+		"size": "0.00",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 0,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.38-lto_fix-1.patch",
 		"multilibSupport": false,
 		"scripts": []
 	},

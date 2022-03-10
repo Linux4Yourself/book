@@ -1,5 +1,13 @@
 {{ include('../packages/zstd/README.md') }}
 
+## Подготовка
+
+Примените патч:
+
+```bash
+patch -Np1 -i ../zstd-1.5.2-upstream_fixes-1.patch
+```
+
 ## Сборка
 
 ```bash 
@@ -46,7 +54,7 @@
 
 ## Установленные файлы
 
-Программы: zstd, zstdcat (link to zstd), zstdgrep, zstdless, zstdmt (ссылка на zstd), and unzstd (ссылка на zstd)
+Программы: zstd, zstdcat (ссылка на zstd), zstdgrep, zstdless, zstdmt (ссылка на zstd), and unzstd (ссылка на zstd)
 
 Библиотеки: libzstd.so
 

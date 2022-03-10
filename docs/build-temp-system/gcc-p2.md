@@ -32,32 +32,40 @@ mkdir -v build
 cd       build
 ```
 
+Исправьте ошибку кросс-компиляции `libstdc++':
+
+```bash
+sed 's/gnu++17/& -nostdinc++/' \
+    -i libstdc++-v3/src/c++17/Makefile.in
+```
+
 Разрешим сборку `libgcc` с поддержкой многопоточности:
 
 ```bash
-mkdir -pv $LIN_TGT/libgcc
-ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
+sed '/thread_header =/s/@.*@/gthr-posix.h/' \
+    -i libgcc/Makefile.in libstdc++-v3/include/Makefile.in
 ```
 
 Настройка:
 
 ```bash
-../configure                   \
-    --build=$(../config.guess) \
-    --host=$LIN_TGT            \
-    --prefix=/usr              \
-    CC_FOR_TARGET=$LIN_TGT-gcc \
-    --with-build-sysroot=$LIN  \
-    --enable-initfini-array    \
-    --disable-nls              \
-    --disable-decimal-float    \
-    --disable-libatomic        \
-    --disable-libgomp          \
-    --disable-libquadmath      \
-    --disable-libssp           \
-    --disable-libvtv           \
-    --disable-libstdcxx        \
-    --enable-languages=c,c++   \
+../configure                                       \
+    --build=$(../config.guess)                     \
+    --host=$LIN_TGT                                \
+    --target=$LIN_TGT                              \
+    LDFLAGS_FOR_TARGET=-L$PWD/$LIN_TGT/libgcc      \
+    --prefix=/usr                                  \
+    --with-build-sysroot=$LFS                      \
+    --enable-initfini-array                        \
+    --disable-nls                                  \
+    --disable-multilib                             \
+    --disable-decimal-float                        \
+    --disable-libatomic                            \
+    --disable-libgomp                              \
+    --disable-libquadmath                          \
+    --disable-libssp                               \
+    --disable-libvtv                               \
+    --enable-languages=c,c++                       \
     --disable-multilib
 ```
 
@@ -69,7 +77,7 @@ ln -s ../../../libgcc/gthr-posix.h $LIN_TGT/libgcc/gthr-default.h
 
 `--enable-initfini-array` - параметр заставляет использовать некоторые внутренние структуры данных, которые необходимы, но не могут быть обнаружены при построении кросс-компилятора.
 
-`--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv, --disable-libstdcxx` - параметр отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp, libvtv и стандартной библиотеки C++ соответственно. Эти функции не будут скомпилированы при сборке кросс-компилятора и не являются необходимыми для кросс-компиляции временной libc.
+`--disable-decimal-float, --disable-threads, --disable-libatomic, --disable-libgomp, --disable-libquadmath, --disable-libssp, --disable-libvtv` - параметры отключают поддержку десятичных расширений с плавающей запятой, потоковой передачи, libatomic, libgomp, libquadmath, libssp и libvtv не требующиеся на данном этапе.
 
 `--enable-languages​​=c,c++` - опция включает поддержку компиляторов C и C++. Это единственные языки, которые нужны сейчас.
 

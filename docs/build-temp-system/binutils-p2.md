@@ -2,6 +2,12 @@
 
 ## Подготовка
 
+Исправьте ошибку связанную с поставкой устаревшей версии `libtool` вместе с `Binutils`:
+
+```bash
+sed '6009s/$add_dir//' -i ltmain.sh
+```
+
 Пакет Binutils требует использовать отдельную директорию для сборки. Создайте её:
 
 ```bash
@@ -35,6 +41,5 @@ make
 ## Установка
 
 ```bash
-make DESTDIR=$LIN install -j1
-install -vm755 libctf/.libs/libctf.so.0.0.0 $LIN/usr/lib
+make DESTDIR=$LIN install
 ```
