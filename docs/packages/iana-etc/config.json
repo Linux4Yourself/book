@@ -1,0 +1,20 @@
+{
+    "name": "iana-etc",
+    "fileName": "iana-etc-20220110.tar.gz",
+    "description": "Пакет Iana-Etc содержит данные для сетевых служб и протоколов.",
+    "url": "https://github.com/Mic92/iana-etc/releases/download/20220110/iana-etc-20220110.tar.gz",
+    "homeUrl": "https://www.iana.org/protocols",
+    "version": "20220110",
+    "releasesUrl": "https://github.com/Mic92/iana-etc/releases/",
+    "priority": "required",
+    "md5": "cd22a9f75b03a2be5638e67d4e72bf19",
+    "size": "0.57",
+    "installedSize": 0.5,
+    "sbu": 0.01,
+    "sbu2": 0.01,
+    "scripts": [
+        "install"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/iana-etc-20220110.tar.gz"
+}

@@ -1,21 +1,24 @@
-# gcc
+# gcc-11.2.0
 
 Пакет содержит набор компиляторов GNU для таких языков как Си и Си++.
 
-Версия: **11.2.0**
+**Версия:** 11.2.0
+<br />
+**Размер:** 77.14
+<br />
+**Приоритет:** Необходимый
+<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz
+<br />
+**Оригинальное расположение:** https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz
+<br />
+**MD5:** 31c86f2ced76acac66992eeedce2fce2
+<br />
+**Домашняя страница:** https://gnu.org/software/gcc
+        <br />
+**SBU (сборка временной системы):** 14.8
+<br />
+**SBU:** 25
 
-Размер: **77.14Mb**
-
-Приоритет: **Необходимый**
-
-Оригинальное расположение: [https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz](https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz)
-
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz](https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz)
-
-MD5: **31c86f2ced76acac66992eeedce2fce2**
-
-Домашняя страница: [https://gnu.org/software/gcc](https://gnu.org/software/gcc)
-
-SBU (Сборка временной системы): **14.8**
-
-SBU: **25**
+***
+            

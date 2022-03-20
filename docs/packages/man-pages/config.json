@@ -1,0 +1,20 @@
+{
+    "name": "man-pages",
+    "fileName": "man-pages-5.13.tar.xz",
+    "description": "Пакет Man-pages содержит более чем 2.200 справочных страниц.",
+    "url": "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-5.13.tar.xz",
+    "homeUrl": "https://www.kernel.org",
+    "version": "5.13",
+    "releasesUrl": "https://www.kernel.org/pub/linux/docs/man-pages/",
+    "priority": "optional",
+    "md5": "3ac24e8c6fae26b801cb87ceb63c0a30",
+    "size": "1.71",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/man-pages-5.13.tar.xz",
+    "scripts": [
+        "install"
+    ],
+    "multilibSupport": false
+}

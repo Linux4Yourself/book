@@ -1,0 +1,18 @@
+{
+    "name": "glibc-patch",
+    "fileName": "glibc-2.34-fhs-1.patch",
+    "description": "",
+    "url": "https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/glibc-2.34-fhs-1.patch",
+    "homeUrl": "",
+    "version": "2.34-fhs-1",
+    "releasesUrl": "",
+    "priority": "important",
+    "md5": "9a5997c3452909b1769918c759eff8a2",
+    "size": "0.00",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.34-fhs-1.patch",
+    "multilibSupport": false,
+    "scripts": []
+}

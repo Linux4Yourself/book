@@ -1,0 +1,24 @@
+{
+    "name": "inetutils",
+    "fileName": "inetutils-2.2.tar.xz",
+    "description": "Пакет Inetutils содержит базовые программы для работы с сетью.",
+    "url": "https://ftp.gnu.org/gnu/inetutils/inetutils-2.2.tar.xz",
+    "homeUrl": "",
+    "version": "2.2",
+    "releasesUrl": "https://ftp.gnu.org/gnu/inetutils/",
+    "priority": "important",
+    "md5": "de8c1b49cbde2b30e481c61c65357ad4",
+    "size": "1.46",
+    "installedSize": 0.8,
+    "sbu": 0,
+    "sbu2": 0.2,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/inetutils-2.2.tar.xz"
+}

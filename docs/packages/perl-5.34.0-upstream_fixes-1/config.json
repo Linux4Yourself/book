@@ -1,0 +1,18 @@
+{
+    "name": "perl-5.34.0-upstream_fixes-1",
+    "fileName": "perl-5.34.0-upstream_fixes-1.patch",
+    "description": "",
+    "url": "https://www.linuxfromscratch.org/patches/lfs/development/perl-5.34.0-upstream_fixes-1.patch",
+    "homeUrl": "",
+    "version": "1",
+    "releasesUrl": "",
+    "priority": "required",
+    "md5": "fb42558b59ed95ee00eb9f1c1c9b8056",
+    "size": "0.00",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/perl-5.34.0-upstream_fixes-1.patch",
+    "multilibSupport": false,
+    "scripts": []
+}

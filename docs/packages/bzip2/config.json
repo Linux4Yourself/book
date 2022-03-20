@@ -1,0 +1,33 @@
+{
+    "name": "bzip2",
+    "fileName": "bzip2-1.0.8.tar.gz",
+    "description": "Пакет содержит программы для сжатия и распаковки файлов. Он необходим для распаковки многих пакетов. Сжатие текстовых файлов при помощи программы bzip2 даёт больший процент сжатия, чем gzip.",
+    "url": "https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+    "homeUrl": "https://www.sourceware.org/bzip2",
+    "version": "1.0.8",
+    "releasesUrl": "https://www.sourceware.org/pub/bzip2",
+    "priority": "required",
+    "md5": "67e051268d0c475ea773822f7500d0e5",
+    "size": "0.77",
+    "installedSize": 0.3,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "patches": [
+        "bzip2-patch"
+    ],
+    "scripts": [
+        "build",
+        "cldirs",
+        "install",
+        "multi_build",
+        "multi_install",
+        "multi_prepare",
+        "multi_test",
+        "patch",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/bzip2-1.0.8.tar.gz"
+}

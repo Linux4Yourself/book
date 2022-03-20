@@ -1,0 +1,23 @@
+{
+    "name": "diffutils",
+    "fileName": "diffutils-3.8.tar.xz",
+    "description": "Пакет содержит программы, которые отображают разницу в содержимом между файлами и каталогами. Эти программы могут быть использованы для создания патчей, а также они используются в процедурах сборки для большинства пакетов.",
+    "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.8.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/diffutils",
+    "version": "3.8",
+    "releasesUrl": "https://ftp.gnu.org/gnu/diffutils/",
+    "priority": "required",
+    "md5": "6a6b0fdc72acfe3f2829aab477876fbc",
+    "size": "1.51",
+    "installedSize": 0,
+    "sbu": 0.2,
+    "sbu2": 0.2,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/diffutils-3.8.tar.xz"
+}

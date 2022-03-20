@@ -1,0 +1,28 @@
+{
+    "name": "kmod",
+    "fileName": "kmod-29.tar.xz",
+    "description": "Содержит библиотеки и утилиты для загрузки модулей ядра.",
+    "url": "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-29.tar.xz",
+    "homeUrl": "https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/about",
+    "version": "29",
+    "releasesUrl": "https://www.kernel.org/pub/linux/utils/kernel/kmod/",
+    "priority": "important",
+    "md5": "e81e63acd80697d001c8d85c1acb38a0",
+    "size": "0.53",
+    "installedSize": 0.3,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "postinstall"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/kmod-29.tar.xz"
+}

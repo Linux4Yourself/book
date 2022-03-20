@@ -1,0 +1,35 @@
+{
+    "name": "glibc",
+    "fileName": "glibc-2.34.tar.xz",
+    "description": "Пакет содержит стандартную библиотеку языка Си (GNU C Library). Эта библиотека предоставляет функции для выделения памяти, поиска каталогов, открытия и закрытия файлов, чтения и записи файлов, обработки строк, соответствия шаблонов (pattern matching), арифметических операций, и т.д.",
+    "url": "https://ftp.gnu.org/gnu/glibc/glibc-2.34.tar.xz",
+    "homeUrl": "https://gnu.org/software/glibc",
+    "version": "2.34",
+    "releasesUrl": "https://ftp.gnu.org/gnu/glibc/",
+    "priority": "required",
+    "md5": "31998b53fb39cb946e96abc310af1c89",
+    "size": "16.50",
+    "installedSize": 43,
+    "sbu": 5.4,
+    "sbu2": 4.2,
+    "patches": [
+        "glibc-patch"
+    ],
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-systemd",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_postinstall",
+        "multi_prepare",
+        "patch",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/glibc-2.34.tar.xz"
+}

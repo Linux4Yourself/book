@@ -1,0 +1,30 @@
+{
+    "name": "ncurses",
+    "fileName": "ncurses-6.3.tar.gz",
+    "description": "Пакет содержит библиотеку, предназначенную для управления вводом-выводом на терминал. В числе прочего, библиотека позволяет задавать экранные координаты (в знакоместах) и цвет выводимых символов. Предоставляет программисту уровень абстракции, позволяющий не беспокоиться об аппаратных различиях терминалов и писать переносимый код. Он необходим для ряда пакетов.",
+    "url": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.3.tar.gz",
+    "homeUrl": "https://www.gnu.org/software/ncurses",
+    "version": "6.3",
+    "releasesUrl": "https://ftp.gnu.org/gnu/ncurses/",
+    "priority": "required",
+    "md5": "a2736befde5fee7d2b7eb45eb281cdbe",
+    "size": "3.42",
+    "installedSize": 3.4,
+    "sbu": 1.2,
+    "sbu2": 0.4,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_postinstall",
+        "multi_prepare",
+        "postinstall",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/ncurses-6.3.tar.gz"
+}

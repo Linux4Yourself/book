@@ -1,0 +1,18 @@
+{
+    "name": "efivar-patch",
+    "fileName": "efivar-37-gcc_9-1.patch",
+    "description": "",
+    "url": "https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/efivar-37-gcc_9-1.patch",
+    "homeUrl": "",
+    "version": "1",
+    "releasesUrl": "",
+    "priority": "required",
+    "md5": "e795e52eeefc0d2c62c6c4bd748d2d38",
+    "size": "0.01",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37-gcc_9-1.patch",
+    "multilibSupport": false,
+    "scripts": []
+}

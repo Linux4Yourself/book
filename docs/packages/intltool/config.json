@@ -1,0 +1,25 @@
+{
+    "name": "intltool",
+    "fileName": "intltool-0.51.0.tar.gz",
+    "description": "Intltool - инструмент интернационализации, используемый для извлечения переводимых строк из исходных файлов.",
+    "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+    "homeUrl": "https://launchpad.net/intltool",
+    "version": "0.51.0",
+    "releasesUrl": "https://launchpad.net/intltool/trunk/",
+    "priority": "optional",
+    "md5": "12e517cac2b57a0121cda351570f1e63",
+    "size": "0.15",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.01,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-doc",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/intltool-0.51.0.tar.gz"
+}

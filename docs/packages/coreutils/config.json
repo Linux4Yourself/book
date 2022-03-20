@@ -1,0 +1,29 @@
+{
+    "name": "coreutils",
+    "fileName": "coreutils-9.0.tar.xz",
+    "description": "Coreutils - пакет программного обеспечения GNU, содержащий большое количество основных утилит, таких как cat, ls и rm, необходимых для UNIX-подобных операционных систем. Пакет включает несколько более ранних пакетов — textutils, shellutils, fileutils и другие различные утилиты.",
+    "url": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz",
+    "homeUrl": "https://gnu.org/software/coreutils",
+    "version": "9.0",
+    "releasesUrl": "https://ftp.gnu.org/gnu/coreutils/",
+    "priority": "required",
+    "md5": "0d79ae8a6124546e3b94171375e5e5d0",
+    "size": "5.35",
+    "installedSize": 3,
+    "sbu": 0.5,
+    "sbu2": 0.4,
+    "patches": [
+        "coreutils-patch"
+    ],
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "patch",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-9.0.tar.xz"
+}

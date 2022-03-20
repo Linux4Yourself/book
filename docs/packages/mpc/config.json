@@ -1,0 +1,23 @@
+{
+    "name": "mpc",
+    "fileName": "mpc-1.2.1.tar.gz",
+    "description": "Пакет MPC содержит функции, предназначенные для вычислений с плавающей запятой, целыми и рациональными числами с произвольной точностью. Он необходим пакету GCC.",
+    "url": "https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz",
+    "homeUrl": "https://www.gnu.org/software/mpc",
+    "version": "1.2.1",
+    "releasesUrl": "https://ftp.gnu.org/gnu/mpc/",
+    "priority": "important",
+    "md5": "9f16c976c25bb0f76b50be749cd7a3a8",
+    "size": "0.80",
+    "installedSize": 0.12,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/mpc-1.2.1.tar.gz"
+}

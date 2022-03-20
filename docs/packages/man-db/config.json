@@ -1,0 +1,23 @@
+{
+    "name": "man-db",
+    "fileName": "man-db-2.9.4.tar.xz",
+    "description": "Пакет Man-DB содержит программы для поиска и просмотра справочных страниц.",
+    "url": "https://download.savannah.gnu.org/releases/man-db/man-db-2.9.4.tar.xz",
+    "homeUrl": "https://savannah.nongnu.org/projects/man-db",
+    "version": "2.9.4",
+    "releasesUrl": "https://download.savannah.gnu.org/releases/man-db/",
+    "priority": "optional",
+    "md5": "6e233a555f7b9ae91ce7cd0faa322bce",
+    "size": "1.82",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.5,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/man-db-2.9.4.tar.xz"
+}

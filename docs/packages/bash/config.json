@@ -1,0 +1,26 @@
+{
+    "name": "bash",
+    "fileName": "bash-5.1.16.tar.gz",
+    "description": "Усовершенствованная и модернизированная вариация командной оболочки Bourne shell. Этот пакет выполняет требования стандарта LSB Core для обеспечения интерфейса Bourne Shell в системе. Он был выбран из числа других оболочек из-за широкого распространения и возможностей, которые выходят далеко за пределы базовых функций программ-оболочек.",
+    "url": "https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz",
+    "homeUrl": "https://www.gnu.org/software/bash",
+    "version": "5.1.16",
+    "releasesUrl": "https://ftp.gnu.org/gnu/bash",
+    "priority": "required",
+    "md5": "c17b20a09fc38d67fb303aeb6c130b4e",
+    "size": "10.04",
+    "installedSize": 1,
+    "sbu": 0.3,
+    "sbu2": 0.3,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/bash-5.1.16.tar.gz"
+}

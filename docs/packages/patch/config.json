@@ -1,0 +1,23 @@
+{
+    "name": "patch",
+    "fileName": "patch-2.7.6.tar.xz",
+    "description": "Пакет содержит программу, предназначенную для переноса правок (изменений) между разными версиями текстовых файлов. Информация о правке обычно содержится в отдельном файле, называемом 'заплаткой' (patch), 'правкой' или 'файлом правки' (англ. patch file). Подобный файл, как правило, создается с помощью другой утилиты Unix — diff, позволяющей автоматически извлечь информацию о различиях в тексте файлов. Он необходим для выполнения сборки некоторых пакетов.",
+    "url": "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/patch",
+    "version": "2.7.6",
+    "releasesUrl": "https://ftp.gnu.org/gnu/patch/",
+    "priority": "important",
+    "md5": "78ad9937e4caadcba1526ef1853730d5",
+    "size": "0.75",
+    "installedSize": 0.2,
+    "sbu": 0.1,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/patch-2.7.6.tar.xz"
+}

@@ -1,0 +1,24 @@
+{
+    "name": "findutils",
+    "fileName": "findutils-4.8.0.tar.xz",
+    "description": "Пакет содержит программы для поиска файлов. Программы предоставляют способы для рекурсивного поиска файлов по дереву каталогов, создания, обслуживания и поиска в базе данных (как правило, поиск выполняется быстрее, чем рекурсивный поиск, но менее надёжен, если база данных не в актуальном состоянии).",
+    "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz",
+    "homeUrl": "https://gnu.org/software/findutils",
+    "version": "4.8.0",
+    "releasesUrl": "https://ftp.gnu.org/gnu/findutils",
+    "priority": "required",
+    "md5": "eeefe2e6380931a77dfa6d9350b43186",
+    "size": "1.89",
+    "installedSize": 0.68,
+    "sbu": 0.3,
+    "sbu2": 0.3,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/findutils-4.8.0.tar.xz"
+}

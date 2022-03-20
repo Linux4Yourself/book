@@ -1,0 +1,27 @@
+{
+    "name": "libffi",
+    "fileName": "libffi-3.4.2.tar.gz",
+    "description": "Переносимый, высокоуровневый интерфейс по различным соглашениям о вызовах. Программы во время компиляции могут не знать об аргументах, которые были переданы функции. Например, интерпретатору можно указать во время выполнения количество аргументов и указать их тип, для вызова функции. Libffi может использоваться в программах как 'мост' от интерпретатора к скомпилированному коду.",
+    "url": "https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz",
+    "homeUrl": "https://github.com/libffi/libffi",
+    "version": "3.4.2",
+    "releasesUrl": "https://github.com/libffi/libffi/releases",
+    "priority": "important",
+    "md5": "294b921e6cf9ab0fbaea4b639f8fdbe8",
+    "size": "1.29",
+    "installedSize": 0.08,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/libffi-3.4.2.tar.gz"
+}

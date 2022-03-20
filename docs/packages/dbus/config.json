@@ -1,0 +1,29 @@
+{
+    "name": "dbus",
+    "fileName": "dbus-1.13.18.tar.xz",
+    "description": "D-Bus - система межпроцессного взаимодействия, которая позволяет приложениям в операционной системе сообщаться друг с другом. D-Bus предоставляет собой системную службу (для обработки таких событий, как 'Добавлено новое аппаратное устройство' или 'очередь принтеров изменена') и системную службу сеанса для каждого пользователя (для общих потребностей IPC среди пользовательских приложений.) Кроме того, D-Bus построен поверх общей платформы передачи сообщений от одного к другому, которая может использоваться любыми двумя приложениями для связки (в обход шины сообщений).",
+    "url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.13.18.tar.xz",
+    "homeUrl": "https://www.freedesktop.org/wiki/Software/dbus/",
+    "version": "1.13.18",
+    "releasesUrl": "https://dbus.freedesktop.org/releases/dbus/",
+    "priority": "important",
+    "md5": "b25e4fcfbfd4889bef76f7241dfa1a04",
+    "size": "1.28",
+    "installedSize": 1.2,
+    "sbu": 0,
+    "sbu2": 0.2,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "postinstall",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/dbus-1.13.18.tar.xz"
+}

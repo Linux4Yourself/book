@@ -1,0 +1,18 @@
+{
+    "name": "linux",
+    "fileName": "linux-5.16.2.tar.xz",
+    "description": "Ядро операционной системы.",
+    "url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.2.tar.xz",
+    "homeUrl": "https://www.kernel.org",
+    "version": "5.16.2",
+    "releasesUrl": "https://www.kernel.org",
+    "priority": "required",
+    "md5": "121e4f65cf16ff76527020ea596fa431",
+    "size": "121.61",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 4.4,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.16.2.tar.xz",
+    "scripts": [],
+    "multilibSupport": false
+}

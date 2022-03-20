@@ -1,0 +1,22 @@
+{
+    "name": "meson",
+    "fileName": "meson-0.61.1.tar.gz",
+    "description": "Meson - высокопроизводительная и удобная система сборки с открытым исходным кодом. Пакет содержит инструменты для автоматизации сборки программ. Основная цель Meson - минимизировать затраты времени на конфигурирование системы сборки.",
+    "url": "https://github.com/mesonbuild/meson/releases/download/0.61.1/meson-0.61.1.tar.gz",
+    "homeUrl": "https://mesonbuild.com",
+    "version": "0.61.1",
+    "releasesUrl": "https://github.com/mesonbuild/meson/releases/",
+    "priority": "important",
+    "md5": "8ed66d5537275df3defffb66d1fb897f",
+    "size": "1.92",
+    "installedSize": 5.3,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "install",
+        "prepare"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/meson-0.61.1.tar.gz"
+}

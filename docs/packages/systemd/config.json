@@ -1,0 +1,29 @@
+{
+    "name": "systemd",
+    "fileName": "systemd-250.2.tar.gz",
+    "description": "Системный менеджер, демон инициализации других демонов в Linux, пришедший на замену используемому ранее SystemVInit. Его особенностью является интенсивное распараллеливание запуска служб в процессе загрузки системы, что позволяет существенно ускорить запуск операционной системы. Systemd используется во многих коммерческих дистрибутивах.",
+    "url": "https://github.com/systemd/systemd-stable/archive/refs/tags/v250.2.tar.gz",
+    "homeUrl": "https://systemd.io/",
+    "version": "250.2",
+    "releasesUrl": "https://github.com/systemd/systemd-stable/releases",
+    "priority": "required",
+    "md5": "18c586a74749bbd1e97f94e1cf9729c4",
+    "size": "10.61",
+    "installedSize": 23.9,
+    "sbu": 0,
+    "sbu2": 1.3,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "patch",
+        "postinstall",
+        "prepare"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/systemd-250.2.tar.gz"
+}

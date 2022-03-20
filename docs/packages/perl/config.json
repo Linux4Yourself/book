@@ -1,0 +1,26 @@
+{
+    "name": "perl",
+    "fileName": "perl-5.34.0.tar.xz",
+    "description": "Высокоуровневый интерпретируемый динамический язык программирования общего назначения. Он необходим многим пакетам.",
+    "url": "https://www.cpan.org/src/5.0/perl-5.34.0.tar.xz",
+    "homeUrl": "https://www.perl.org/",
+    "version": "5.34.0",
+    "releasesUrl": "https://www.cpan.org/src/5.0/",
+    "priority": "important",
+    "md5": "df7ecb0653440b26dc951ad9dbfab517",
+    "size": "12.28",
+    "installedSize": 56.7,
+    "sbu": 1.9,
+    "sbu2": 2,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "patch",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/perl-5.34.0.tar.xz"
+}

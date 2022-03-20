@@ -1,0 +1,23 @@
+{
+    "name": "expect",
+    "fileName": "expect5.45.4.tar.gz",
+    "description": "Пакет содержит инструменты для автоматизации и тестирования и является расширением к скрипт-языку Tcl для многих интерактивных приложений. Он будет установлен только во временный инструментарий.",
+    "url": "https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz",
+    "homeUrl": "https://sourceforge.net/projects/expect",
+    "version": "5.45.4",
+    "releasesUrl": "https://sourceforge.net/projects/expect/files/Expect/",
+    "priority": "optional",
+    "md5": "00fce8de158422f5ccd2666512329bd2",
+    "size": "0.60",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.2,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/expect5.45.4.tar.gz",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ]
+}

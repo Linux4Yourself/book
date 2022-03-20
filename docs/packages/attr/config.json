@@ -1,0 +1,28 @@
+{
+    "name": "attr",
+    "fileName": "attr-2.5.1.tar.gz",
+    "description": "Программы для администрирования расширенных атрибутов объектов файловой системы.",
+    "url": "https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz",
+    "homeUrl": "https://savannah.nongnu.org/projects/attr/",
+    "version": "2.5.1",
+    "releasesUrl": "https://download.savannah.gnu.org/releases/attr/",
+    "priority": "important",
+    "md5": "ac1c5a7a084f0f83b8cace34211f64d8",
+    "size": "0.44",
+    "installedSize": 0.1,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/attr-2.5.1.tar.gz"
+}

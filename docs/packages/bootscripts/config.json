@@ -1,0 +1,20 @@
+{
+    "name": "bootscripts",
+    "fileName": "bootscripts.tar.xz",
+    "description": "Скрипты загрузки и системной конфигурации.",
+    "url": "https://github.com/Linux4Yourself/bootscripts/releases/download/1.1/bootscripts.tar.xz",
+    "homeUrl": "https://github.com/Linux4Yourself/bootscripts",
+    "version": "1.1",
+    "releasesUrl": "",
+    "priority": "required",
+    "md5": "4f2a2b6159a437d1e89961b0231eaab0",
+    "size": "0.03",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "install"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/bootscripts.tar.xz"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "sysvinit",
+    "fileName": "sysvinit-3.01.tar.xz",
+    "description": "Пакет Sysvinit содержит программы для управления загрузкой, выполнением, и выключением системы.",
+    "url": "https://download.savannah.gnu.org/releases/sysvinit/sysvinit-3.01.tar.xz",
+    "homeUrl": "https://savannah.nongnu.org/projects/sysvinit",
+    "version": "3.01",
+    "releasesUrl": "https://download.savannah.gnu.org/releases/sysvinit/",
+    "priority": "required",
+    "md5": "dc14f92af715bcfa33cc25341730452e",
+    "size": "0.12",
+    "installedSize": 0.1,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "patches": [
+        "sysvinit-patch"
+    ],
+    "scripts": [
+        "build",
+        "install",
+        "patch"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/sysvinit-3.01.tar.xz"
+}

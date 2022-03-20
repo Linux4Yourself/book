@@ -1,0 +1,21 @@
+{
+    "name": "wget",
+    "fileName": "wget-1.21.2.tar.gz",
+    "description": "Пакет Wget предназначен для загрузки файлов из Интернета.",
+    "url": "https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.gz",
+    "homeUrl": "https://ftp.gnu.org/gnu/wget",
+    "version": "1.21.2",
+    "priority": "optional",
+    "md5": "6321d4c2b820394cf2392985d8f8c563",
+    "size": "4.77",
+    "installedSize": "0.52",
+    "sbu": "0",
+    "sbu2": 0.2,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/wget-1.21.2.tar.gz",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "configure",
+        "install"
+    ]
+}

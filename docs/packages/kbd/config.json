@@ -1,0 +1,28 @@
+{
+    "name": "kbd",
+    "fileName": "kbd-2.4.0.tar.xz",
+    "description": "Содержит файлы таблицы ключей, консольные шрифты и утилиты клавиатуры.",
+    "url": "https://www.kernel.org/pub/linux/utils/kbd/kbd-2.4.0.tar.xz",
+    "homeUrl": "https://kbd-project.org/",
+    "version": "2.4.0",
+    "releasesUrl": "https://www.kernel.org/pub/linux/utils/kbd/",
+    "priority": "important",
+    "md5": "3cac5be0096fcf7b32dcbd3c53831380",
+    "size": "1.07",
+    "installedSize": 2.4,
+    "sbu": 0,
+    "sbu2": 0.3,
+    "patches": [
+        "kbd-patch"
+    ],
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "patch",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/kbd-2.4.0.tar.xz"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "emacs",
+    "fileName": "emacs-27.2.tar.xz",
+    "description": "Пакет Emacs содержит расширяемый, настраиваемый, самодокументирующийся редактор отображения в реальном времени.",
+    "url": "https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/emacs/",
+    "version": "27.2",
+    "releaseUrl": "https://ftp.gnu.org/gnu/emacs/",
+    "priority": "optional",
+    "md5": "4c3d9ff35b2ab2fe518dc7eb3951e128",
+    "size": "42.56",
+    "installedSize": "620",
+    "sbu": 0.6,
+    "sbu2": 0.6,
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/emacs-27.2.tar.xz",
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "postinstall"
+    ]
+}
