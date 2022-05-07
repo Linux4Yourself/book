@@ -34,4 +34,8 @@
 {{ include('../packages/findutils/cldirs') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `find`, `locate`, `updatedb` и `xargs`
+
+**Директории:** `/var/lib/locate`

@@ -32,4 +32,8 @@
 {{ include('../packages/gdbm/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `gdbm_dump`, `gdbm_load` и `gdbmtool`
+
+**Библиотеки:** `libgdm.so` и `libgdm_compat.so`

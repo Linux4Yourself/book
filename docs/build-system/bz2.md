@@ -65,9 +65,9 @@
 
 ## Установленные файлы
 
-Программы: bunzip2 (ссылка на bzip2), bzcat (ссылка на bzip2), bzcmp (ссылка на bzdiff), bzdiff, bzegrep (ссылка на bzgrep), bzfgrep (ссылка на bzgrep), bzgrep, bzip2, bzip2recover, bzless (ссылка на bzmore), и bzmore
+**Программы:** `bunzip2` (ссылка на `bzip2`), `bzcat` (ссылка на `bzip2`), `bzcmp` (ссылка на `bzdiff`), `bzdiff`, `bzegrep` (ссылка на `bzgrep`), `bzfgrep` (ссылка на `bzgrep`), `bzgrep`, `bzip2`, `bzip2recover`, `bzless` (ссылка на `bzmore`), и `bzmore`
 
-Библиотеки: libbz2.so
+**Библиотеки:** `libbz2.so`
 
 ### Краткое описание
 

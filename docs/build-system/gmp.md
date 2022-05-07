@@ -70,6 +70,4 @@
 
 ## Установленные файлы
 
-Библиотеки: libgmp.so libgmpxx.so
-
-
+**Библиотеки:** `libgmp.so` и `libgmpxx.so`

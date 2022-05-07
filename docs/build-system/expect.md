@@ -26,4 +26,8 @@
 {{ include('../packages/expect/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `expect`
+
+**Библиотеки:** `libexpect-5.45.so`

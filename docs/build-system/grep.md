@@ -24,4 +24,6 @@
 {{ include('../packages/grep/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `egrep`, `fgrep` и `grep`

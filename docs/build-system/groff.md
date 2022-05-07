@@ -27,4 +27,10 @@ Groff ожидает переменную окружения `PAGE`, значе�
 {{ include('../packages/groff/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `addftinfo`, `afmtodit`, `chem`, `eqn`, `eqn2graph`, `gdiffmk`, `glilypond`, `gperl`, `gpinyin`, `grap2graph`, `grn`, `grodvi`, `groff`, `groffer`, `grog`, `grolbp`, `grolj4`, `gropdf`, `grops`, `grotty`, `hpftodit`, `indxbib`, `lkbib`, `lookbib`, `mmroff`, `neqn`, `nroff`, `pdfmom`, `pdfroff`, `pfbtops`, `pic`, `pic2graph`, `post-grohtml`, `preconv`, `pre-grohtml`, `refer`, `roff2dvi`, `roff2html`, `roff2pdf`, `roff2ps`, `roff2text`, `roff2x`, `soelim`, `tbl`, `tfmtodit`, и `troff`
+
+**Директории:** `/usr/lib/groff`, `/usr/share/groff`
+
+<!-- Возможна установка директории /usr/share/doc/groff -->
