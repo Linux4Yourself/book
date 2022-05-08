@@ -298,5 +298,5 @@ nav:
         - Типы разделов и каталогов: additional/partitions_catalogs.md
         - Выбор размера файла подкачки: additional/swap.md
         - Настройка zram: additional/zram.md
-        - О шебангах в скриптах Linux: additional/sha-bang.md
+        - О шебангах в скриптах Linux: additional/shebang.md
 lang: ru
