@@ -1,6 +1,6 @@
 # LibstdC++ Проход 1
 
-{{ include('../packages/gcc/README.md') }}
+{{ include('../packages/libstdc/README.md') }}
 
 
 ## Настройка

@@ -1142,6 +1142,23 @@
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/libffi-3.4.2.tar.gz"
 	},
+    {
+        "name": "libstdcpp",
+        "fileName": "gcc-11.2.0.tar.xz",
+        "description": "Стандартная библиотека C++",
+        "url": "https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz",
+        "homeUrl": "https://gnu.org/software/gcc",
+        "version": "11.2.0",
+        "releasesUrl": "https://ftp.gnu.org/gnu/gcc",
+        "priority": "required",
+        "md5": "31c86f2ced76acac66992eeedce2fce2",
+        "size": "818",
+        "installedSize": 0,
+        "sbu2": 0.4,
+        "scripts": [],
+        "multilibSupport": false,
+        "downloadUrl": "https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz"
+    },
 	{
 		"name": "libpipeline",
 		"fileName": "libpipeline-1.5.5.tar.gz",
