@@ -1,5 +1,3 @@
-# LibstdC++ Проход 1
-
 {{ include('../packages/libstdc/README.md') }}
 
 
