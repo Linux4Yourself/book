@@ -17,7 +17,7 @@
 
     **Данный пакет является частью архива с ядром Linux**.
 
-Убедитесь, что в архив не включены файлы которые могут помешать сборке.
+Убедитесь, что в архив не включены файлы, которые могут помешать сборке.
 
 ```bash
 make mrproper
@@ -44,4 +44,6 @@ cp -rv usr/include $LIN/usr
 
 ### Установленные файлы
 
-Данный пакет устанавливает множество заголовочных файлов, в частности ` /usr/include/asm/*.h, /usr/include/asm-generic/*.h, /usr/include/drm/*.h, /usr/include/linux/*.h, /usr/include/misc/*.h, /usr/include/mtd/*.h, /usr/include/rdma/*.h, /usr/include/scsi/*.h, /usr/include/sound/*.h, /usr/include/video/*.h, and /usr/include/xen/*.h`
+**Заголовочные файлы:** `/usr/include/asm/*.h`, `/usr/include/asm-generic/*.h`, `/usr/include/drm/*.h`, `/usr/include/linux/*.h`, `/usr/include/misc/*.h`, `/usr/include/mtd/*.h`, `/usr/include/rdma/*.h`, `/usr/include/scsi/*.h`, `/usr/include/sound/*.h`, `/usr/include/video/*.h` и `/usr/include/xen/*.h`
+
+**Директории:**  `/usr/include/asm`, `/usr/include/asm-generic`, `/usr/include/drm`, `/usr/include/linux`, `/usr/include/misc`, `/usr/include/mtd`, `/usr/include/rdma`, `/usr/include/scsi`, `/usr/include/sound`, `/usr/include/video` и `/usr/include/xen`
