@@ -263,17 +263,17 @@
 	},
 	{
 		"name": "coreutils",
-		"fileName": "coreutils-9.0.tar.xz",
+		"fileName": "coreutils-9.1.tar.xz",
 		"description": "Coreutils - пакет программного обеспечения GNU, содержащий большое количество основных утилит, таких как cat, ls и rm, необходимых для UNIX-подобных операционных систем. Пакет включает несколько более ранних пакетов — textutils, shellutils, fileutils и другие различные утилиты.",
-		"url": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/coreutils/coreutils-9.1.tar.xz",
 		"homeUrl": "https://gnu.org/software/coreutils",
-		"version": "9.0",
+		"version": "9.1",
 		"releasesUrl": "https://ftp.gnu.org/gnu/coreutils/",
 		"priority": "required",
-		"md5": "0d79ae8a6124546e3b94171375e5e5d0",
+		"md5": "8b1ca4e018a7dce9bb937faec6618671",
 		"size": "5.35",
 		"installedSize": 3,
-		"sbu": 0.5,
+		"sbu": 0.6,
 		"sbu2": 0.4,
 		"patches": [
 			"coreutils-patch"
@@ -288,7 +288,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-9.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/coreutils-9.1.tar.xz"
 	},
 	{
 		"name": "dbus",
@@ -623,17 +623,17 @@
 	},
 	{
 		"name": "gcc",
-		"fileName": "gcc-11.2.0.tar.xz",
+		"fileName": "gcc-12.1.0.tar.xz",
 		"description": "Пакет содержит набор компиляторов GNU для таких языков как Си и Си++.",
-		"url": "https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz",
+		"url": "https://ftp.gnu.org/gnu/gcc/gcc-12.1.0/gcc-12.1.0.tar.xz",
 		"homeUrl": "https://gnu.org/software/gcc",
-		"version": "11.2.0",
+		"version": "12.1.0",
 		"releasesUrl": "https://ftp.gnu.org/gnu/gcc",
 		"priority": "required",
-		"md5": "31c86f2ced76acac66992eeedce2fce2",
+		"md5": "ed45b55ee859ada4b25a1e76e0c4d966",
 		"size": "77.14",
 		"installedSize": 161,
-		"sbu": 14.8,
+		"sbu": 14,
 		"sbu2": 25,
 		"scripts": [
 			"build",
@@ -645,7 +645,7 @@
 			"test"
 		],
 		"multilibSupport": false,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz"
+		"downloadUrl": "https://lx4u.ru/downloads/packages/gcc-12.1.0.tar.xz"
 	},
 	{
 		"name": "gdbm",
@@ -1142,6 +1142,23 @@
 		"multilibSupport": false,
 		"downloadUrl": "https://lx4u.ru/downloads/packages/libffi-3.4.2.tar.gz"
 	},
+    {
+        "name": "libstdcpp",
+        "fileName": "gcc-11.2.0.tar.xz",
+        "description": "Стандартная библиотека C++",
+        "url": "https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz",
+        "homeUrl": "https://gnu.org/software/gcc",
+        "version": "11.2.0",
+        "releasesUrl": "https://ftp.gnu.org/gnu/gcc",
+        "priority": "required",
+        "md5": "31c86f2ced76acac66992eeedce2fce2",
+        "size": "818",
+        "installedSize": 0,
+        "sbu2": 0.4,
+        "scripts": [],
+        "multilibSupport": false,
+        "downloadUrl": "https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz"
+    },
 	{
 		"name": "libpipeline",
 		"fileName": "libpipeline-1.5.5.tar.gz",
@@ -1195,19 +1212,19 @@
 	},
 	{
 		"name": "linux",
-		"fileName": "linux-5.16.12.tar.xz",
+		"fileName": "linux-5.18.2.tar.xz",
 		"description": "Ядро операционной системы.",
-		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.12.tar.xz",
+		"url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.18.2.tar.xz",
 		"homeUrl": "https://www.kernel.org",
-		"version": "5.16.12",
+		"version": "5.18.2",
 		"releasesUrl": "https://www.kernel.org",
 		"priority": "required",
-		"md5": "e859941968400c4437bd62b4fe39b7b7",
-		"size": "121.65",
+        "md5": "b04ef6c41e2a8965201c28e6963beaf8",
+		"size": "123.8",
 		"installedSize": 0,
 		"sbu": 0,
 		"sbu2": 4.4,
-		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.16.12.tar.xz",
+		"downloadUrl": "https://lx4u.ru/downloads/packages/linux-5.18.2.tar.xz",
 		"scripts": [],
 		"multilibSupport": false
 	},

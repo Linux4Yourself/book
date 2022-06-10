@@ -14,7 +14,7 @@ ln -sfv ../lib/ld-linux-x86-64.so.2 $LIN/lib64/ld-lsb-x86-64.so.3
 В пакете Glibc по умолчанию используется несоответствующая стандарту FHS директория `/var/db`. Для исправления этого примените патч:
 
 ```bash
-patch -Np1 -i ../glibc-2.34-fhs-1.patch
+patch -Np1 -i ../glibc-2.35-fhs-1.patch
 ```
 
 Пакет Glibc требует использовать отдельную директорию для сборки. Создайте её:
@@ -84,7 +84,7 @@ sed '/RTLDLIST=/s@/usr@@g' -i $LIN/usr/bin/ldd
 Завершите установку файла `limits.h`, запустив скрипт из состава GCC:
 
 ```bash
-$LIN/tools/libexec/gcc/$LIN_TGT/11.2.0/install-tools/mkheaders
+$LIN/tools/libexec/gcc/$LIN_TGT/12.1.0/install-tools/mkheaders
 ```
 
 ## Тестирование
