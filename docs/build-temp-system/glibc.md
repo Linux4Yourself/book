@@ -84,7 +84,7 @@ sed '/RTLDLIST=/s@/usr@@g' -i $LIN/usr/bin/ldd
 Завершите установку файла `limits.h`, запустив скрипт из состава GCC:
 
 ```bash
-$LIN/tools/libexec/gcc/$LIN_TGT/11.2.0/install-tools/mkheaders
+$LIN/tools/libexec/gcc/$LIN_TGT/12.1.0/install-tools/mkheaders
 ```
 
 ## Тестирование
