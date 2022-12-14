@@ -1,22 +1,13 @@
 # markupsafe-2.0.1
-
 MarkupSafe - это модуль Python, который экранирует символы, поэтому текст безопасно использовать в HTML и XML. Символы, имеющие особое значение, заменяются так, чтобы они отображались как фактические символы. Это смягчает атаки инъекций, что означает, что вводимые пользователем данные, которым не доверяют, могут безопасно отображаться на странице.
 
-**Версия:** 2.0.1
-<br />
-**Размер:** 0.02
-<br />
-**Приоритет:** Необходимый
-<br />
-**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/MarkupSafe-2.0.1.tar.gz
-<br />
-**Оригинальное расположение:** https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.0.1.tar.gz
-<br />
-**MD5:** 892e0fefa3c488387e5cc0cad2daa523
-<br />
+**Версия:** 2.0.1<br />
+**Размер:** 0.02 Мб<br />
+**Приоритет:** Необходимый<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/MarkupSafe-2.0.1.tar.gz<br />
+**Оригинальное расположение:** https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.0.1.tar.gz<br/>
+**MD5:** 892e0fefa3c488387e5cc0cad2daa523<br />
 **Домашняя страница:** https://markupsafe.palletsprojects.com/en/2.0.x/
-        <br />
-**SBU:** 0.1
+<br />**SBU:** 0.1
 
 ***
-            

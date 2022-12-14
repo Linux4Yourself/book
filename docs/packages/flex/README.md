@@ -1,22 +1,13 @@
 # flex-2.6.4
-
 Flex (Fast Lexical Analyzer) — генератор лексических анализаторов. Это инструмент для лексического анализа, который может использоваться для выделения из исходного текста определенных строк заранее заданным способом.
 
-**Версия:** 2.6.4
-<br />
-**Размер:** 1.35
-<br />
-**Приоритет:** Важный
-<br />
-**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/flex-2.6.4.tar.gz
-<br />
-**Оригинальное расположение:** https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
-<br />
-**MD5:** 2882e3179748cc9f9c23ec593d6adc8d
-<br />
+**Версия:** 2.6.4<br />
+**Размер:** 1.35 Мб<br />
+**Приоритет:** Важный<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/flex-2.6.4.tar.gz<br />
+**Оригинальное расположение:** https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz<br/>
+**MD5:** 2882e3179748cc9f9c23ec593d6adc8d<br />
 **Домашняя страница:** https://github.com/westes/flex
-        <br />
-**SBU:** 0.1
+<br />**SBU:** 0.1
 
 ***
-            

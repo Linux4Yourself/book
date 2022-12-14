@@ -1,22 +1,13 @@
 # sysklogd-1.5.1
-
 Системные утилиты, которые обеспечивают поддержку журналирования системы и перехват сообщений ядра. Поддержка доменных гнёзд интернет и unix позволяет этому пакету утилит поддерживать и локальное и удалённое журналирование.
 
-**Версия:** 1.5.1
-<br />
-**Размер:** 0.09
-<br />
-**Приоритет:** Необязательный
-<br />
-**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/sysklogd-1.5.1.tar.gz
-<br />
-**Оригинальное расположение:** https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz
-<br />
-**MD5:** c70599ab0d037fde724f7210c2c8d7f8
-<br />
+**Версия:** 1.5.1<br />
+**Размер:** 0.09 Мб<br />
+**Приоритет:** Необязательный<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/sysklogd-1.5.1.tar.gz<br />
+**Оригинальное расположение:** https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz<br/>
+**MD5:** c70599ab0d037fde724f7210c2c8d7f8<br />
 **Домашняя страница:** https://www.infodrom.org/projects/sysklogd/
-        <br />
-**SBU:** 0.1
+<br />**SBU:** 0.1
 
 ***
-            
