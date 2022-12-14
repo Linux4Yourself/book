@@ -55,7 +55,6 @@ Coreutils - пакет программного обеспечения GNU, со
 ```
 """
 
-import os
 import sys
 import json
 
@@ -144,35 +143,28 @@ class generator_header():
         else:
             sbu = True
         
-        info = f"""
-# {base_info["name"]}-{base_info["version"]}
+        info = f'# {base_info["name"]}-{base_info["version"]}\n' \
+            f'{base_info["desc"]}' \
+            f'\n\n**Версия:** {base_info["version"]}<br />\n' \
+            f'**Размер:** {base_info["size"]} Мб<br />\n' \
+            f'**Приоритет:** {priority}<br />\n' \
+            f'**Ссылка для загрузки:** {base_info["download"]}<br />\n' \
+            f'**Оригинальное расположение:** {base_info["download_orig"]}<br/>\n' \
+            f'**MD5:** {base_info["md5"]}<br />\n' \
+            f'**Домашняя страница:** {base_info["home_page"]}\n'
 
-{base_info["desc"]}
-
-**Версия:** {base_info["version"]}<br />
-**Размер:** {base_info["size"]} Мб<br />
-**Приоритет:** {priority}<br />
-**Ссылка для загрузки:** {base_info["download"]}<br />
-**Оригинальное расположение:** {base_info["download_orig"]}<br />
-**MD5:** {base_info["md5"]}<br />
-**Домашняя страница:** {base_info["home_page"]}
-        """
 
         with open(self.md_file, "w") as f:
             f.write(info)
         
         if sbu:
-            info_sbu = f"""<br />**SBU (сборка временной системы):** {conf.get_sbu("sbu")}<br />
-**SBU:** {conf.get_sbu("sbu2")}
-
-***
-            """
+            info_sbu = f'<br />**SBU (сборка временной системы):** {conf.get_sbu("sbu")}<br />\n' \
+                f'**SBU:** {conf.get_sbu("sbu2")}\n\n' \
+                '***\n'
         else:
-            info_sbu = f"""<br />
-**SBU:** {conf.get_sbu("sbu2")}
-
-***
-            """
+            info_sbu = "<br />" \
+                f'**SBU:** {conf.get_sbu("sbu2")}\n\n' \
+                '***\n'
         
         with open(self.md_file, "a") as f:
             f.write(info_sbu)
@@ -189,28 +181,18 @@ class generator_prologue():
 
         base_info = conf.get_base_info()
         priority  = conf.get_priority()
-        
-        if conf.get_sbu("sbu") == "not_found" or conf.get_sbu("sbu") == 0:
-            sbu = False
-        else:
-            sbu = True
-        
-        info = f"""
-## {base_info["name"]}
 
-{base_info["desc"]}
-
-**Версия:** {base_info["version"]}<br />
-**Размер:** {base_info["size"]} Мб<br />
-**Приоритет:** {priority}<br />
-**Ссылка для загрузки:** {base_info["download"]}<br />
-**Оригинальное расположение:** {base_info["download_orig"]}<br />
-**MD5:** {base_info["md5"]}<br />
-**Домашняя страница:** {base_info["home_page"]}<br />
-**SBU:** {conf.get_sbu("sbu2")}
-
----
-        """
+        info = f'## {base_info["name"]}\n\n' \
+            f'{base_info["desc"]}\n\n' \
+            f'**Версия:** {base_info["version"]}<br />\n' \
+            f'**Размер:** {base_info["size"]} Мб<br />\n' \
+            f'**Приоритет:** {priority}<br />\n' \
+            f'**Ссылка для загрузки:** {base_info["download"]}<br />\n' \
+            f'**Оригинальное расположение:** {base_info["download_orig"]}<br/>\n' \
+            f'**MD5:** {base_info["md5"]}<br />\n' \
+            f'**Домашняя страница:** {base_info["home_page"]}<br />\n' \
+            f'**SBU:** {conf.get_sbu("sbu2")}\n\n' \
+            '---\n\n'
 
         with open(self.md_file, "a") as f:
             f.write(info)
