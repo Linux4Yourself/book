@@ -3,7 +3,10 @@
 ## Настройка
 
 ```bash
-./configure --prefix=/usr --host=$LIN_TGT
+./configure --prefix=/usr                   \
+            --localstatedir=/var/lib/locate \
+            --host=$LIN_TGT                 \
+            --build=$(build-aux/config.guess)
 ```
 
 ## Сборка

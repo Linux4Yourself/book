@@ -1,6 +1,4 @@
-# LibstdC++ Проход 1
-
-{{ include('../packages/gcc/README.md') }}
+{{ include('../packages/libstdc/README.md') }}
 
 
 ## Настройка
@@ -25,7 +23,7 @@ cd       build
     --disable-multilib              \
     --disable-nls                   \
     --disable-libstdcxx-pch         \
-    --with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.2.0
+    --with-gxx-include-dir=/tools/$LIN_TGT/include/c++/12.1.0
 ```
 
 ### Значения параметров
@@ -36,7 +34,7 @@ cd       build
 
 `--disable-libstdcxx-pch` - отключает установку предварительно скомпилированных заголовков, ненужных на данном этапе
 
-`--with-gxx-include-dir=/tools/$LIN_TGT/include/c++/11.2.0` - путь поиска заголовков C++
+`--with-gxx-include-dir=/tools/$LIN_TGT/include/c++/12.1.0` - путь поиска заголовков C++. `libstdc++` является стандартной библиотекой C++, указанная опцией директория должна соответствовать местоположению, в котором компилятор C++ будет искать стандартные включаемые файлы.
 
 ## Сборка
 
