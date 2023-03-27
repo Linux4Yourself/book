@@ -1,0 +1,28 @@
+{
+    "name": "expat",
+    "fileName": "expat-2.4.3.tar.xz",
+    "description": "Expat - потокоориентированная библиотека парсинга XML, написанная на C. Как один из наиболее доступных XML парсеров, широко используется в открытом программном обеспечении.",
+    "url": "https://prdownloads.sourceforge.net/expat/expat-2.4.3.tar.xz",
+    "homeUrl": "https://sourceforge.net/projects/expat",
+    "version": "2.4.3",
+    "releasesUrl": "https://sourceforge.net/projects/expat/files/expat/",
+    "priority": "important",
+    "md5": "b1137f030590b3f0c41c69c6cd68fa90",
+    "size": "0.43",
+    "installedSize": 0.3,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-doc",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/expat-2.4.3.tar.xz"
+}

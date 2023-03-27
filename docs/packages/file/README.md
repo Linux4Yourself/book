@@ -1,21 +1,13 @@
-# file
-
+# file-5.41
 Пакет содержит утилиты для определения типов файлов. Некоторым пакетам требуется, чтобы этот пакет был установлен.
 
-Версия: **5.41**
+**Версия:** 5.41<br />
+**Размер:** 1.01 Мб<br />
+**Приоритет:** Важный<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/file-5.41.tar.gz<br />
+**Оригинальное расположение:** https://astron.com/pub/file/file-5.41.tar.gz<br/>
+**MD5:** 18233bb0a0089dfdc7dfbc93b96f231b<br />
+**Домашняя страница:** https://www.darwinsys.com/file/
+<br />**SBU:** 0.1
 
-Размер: **1.01Mb**
-
-Приоритет: **Важный**
-
-Оригинальное расположение: [https://astron.com/pub/file/file-5.41.tar.gz](https://astron.com/pub/file/file-5.41.tar.gz)
-
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/file-5.41.tar.gz](https://lx4u.ru/downloads/packages/file-5.41.tar.gz)
-
-MD5: **18233bb0a0089dfdc7dfbc93b96f231b**
-
-Домашняя страница: [https://www.darwinsys.com/file/](https://www.darwinsys.com/file/)
-
-SBU (Сборка временной системы): **0.2**
-
-SBU: **0.1**
+***

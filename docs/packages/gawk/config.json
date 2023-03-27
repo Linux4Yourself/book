@@ -1,0 +1,25 @@
+{
+    "name": "gawk",
+    "fileName": "gawk-5.1.1.tar.xz",
+    "description": "Пакет содержит программы для манипуляции с текстовыми файлами. Это GNU версия awk (Aho-Weinberg-Kernighan). Он используется в процедурах сборки для большинства пакетов.",
+    "url": "https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.xz",
+    "homeUrl": "https://gnu.org/software/gawk",
+    "version": "5.1.1",
+    "releasesUrl": "https://ftp.gnu.org/gnu/gawk",
+    "priority": "required",
+    "md5": "83650aa943ff2fd519b2abedf8506ace",
+    "size": "3.10",
+    "installedSize": 1.3,
+    "sbu": 0.3,
+    "sbu2": 0.3,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-doc",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/gawk-5.1.1.tar.xz"
+}

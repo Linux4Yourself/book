@@ -1,0 +1,24 @@
+{
+    "name": "texinfo",
+    "fileName": "texinfo-6.8.tar.xz",
+    "description": "Система документирования и язык разметки, позволяющие создавать документы в разных форматах из одного исходного текста. Он используется в процедурах установки многих пакетов",
+    "url": "https://ftp.gnu.org/gnu/texinfo/texinfo-6.8.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/texinfo",
+    "version": "6.8",
+    "releasesUrl": "https://ftp.gnu.org/gnu/texinfo/",
+    "priority": "optional",
+    "md5": "a91b404e30561a5df803e6eb3a53be71",
+    "size": "4.73",
+    "installedSize": 0,
+    "sbu": 0.3,
+    "sbu2": 0.7,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "postinstall",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/texinfo-6.8.tar.xz"
+}

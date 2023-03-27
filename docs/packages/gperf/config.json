@@ -1,0 +1,23 @@
+{
+    "name": "gperf",
+    "fileName": "gperf-3.1.tar.gz",
+    "description": "Gperf генерирует превосходную хэш-функцию из набора ключей.",
+    "url": "https://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
+    "homeUrl": "https://gnu.org/software/gperf",
+    "version": "3.1",
+    "releasesUrl": "https://ftp.gnu.org/gnu/gperf/",
+    "priority": "important",
+    "md5": "9e251c0a618ad0824b51117d5d9db87e",
+    "size": "1.16",
+    "installedSize": 0.1,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/gperf-3.1.tar.gz"
+}

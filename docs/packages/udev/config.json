@@ -1,0 +1,18 @@
+{
+    "name": "udev",
+    "fileName": "udev.tar.xz",
+    "description": "Дополнительные правила и файлы, используемые в окружении.",
+    "url": "https://github.com/Linux4Yourself/Linux4Yourself.Udev/releases/download/0.1/udev.tar.xz",
+    "homeUrl": "https://github.com/Linux4Yourself/Linux4Yourself.Udev",
+    "version": "20171102",
+    "releasesUrl": "",
+    "priority": "required",
+    "md5": "227cc8ccdd95487804ce1ca7dd817b5a",
+    "size": "0.01",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/udev.tar.xz",
+    "scripts": [],
+    "multilibSupport": false
+}

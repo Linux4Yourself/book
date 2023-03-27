@@ -1,0 +1,28 @@
+{
+    "name": "libcap",
+    "fileName": "libcap-2.62.tar.xz",
+    "description": "Пакет Libcap реализует интерфейсы пользовательского пространства для возможностей POSIX 1003.1 e, доступных в ядрах Linux. Эти возможности представляют собой разделение привилегий All powerful root на набор различных привилегий.",
+    "url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.62.tar.xz",
+    "homeUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
+    "version": "2.62",
+    "releasesUrl": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/",
+    "priority": "important",
+    "md5": "342c7560ed2103899f6914d1de75a89f",
+    "size": "0.17",
+    "installedSize": 0.19,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "install",
+        "multi_build",
+        "multi_install",
+        "multi_prepare",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/libcap-2.62.tar.xz"
+}

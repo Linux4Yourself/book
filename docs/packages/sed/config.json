@@ -1,0 +1,25 @@
+{
+    "name": "sed",
+    "fileName": "sed-4.8.tar.xz",
+    "description": "Sed - потоковый текстовый редактор (а также язык программирования), применяющий различные предопределённые текстовые преобразования к последовательному потоку текстовых данных. Он необходим для многих пакетов на этапе конфигурирования.",
+    "url": "https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/sed",
+    "version": "4.8",
+    "releasesUrl": "https://ftp.gnu.org/gnu/sed/",
+    "priority": "required",
+    "md5": "6d906edfdb3202304059233f51f9a71d",
+    "size": "1.29",
+    "installedSize": 0.2,
+    "sbu": 0.2,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "build-doc",
+        "configure",
+        "install",
+        "install-doc",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/sed-4.8.tar.xz"
+}

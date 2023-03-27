@@ -1,0 +1,28 @@
+{
+    "name": "libtool",
+    "fileName": "libtool-2.4.6.tar.xz",
+    "description": "Является общей библиотекой поддержки скриптов. Libtool скрывает сложность использования распределенных библиотек под последовательным, переносимым интерфейсом. Библиотека необходима для выполнения тестов некоторых пакетов.",
+    "url": "https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/libtool",
+    "version": "2.4.6",
+    "releasesUrl": "https://ftp.gnu.org/gnu/libtool/",
+    "priority": "important",
+    "md5": "1bfb9b923f2c1339b4d2ce1807064aa5",
+    "size": "0.93",
+    "installedSize": 2.3,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "postinstall",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/libtool-2.4.6.tar.xz"
+}

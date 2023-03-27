@@ -1,0 +1,26 @@
+{
+    "name": "e2fsprogs",
+    "fileName": "e2fsprogs-1.46.5.tar.gz",
+    "description": "Утилиты для работы с файловыми системами ext2, ext3 и ext4. Это наиболее распространенные и тщательно протестированные файловые системы, поддерживаемые в Linux.",
+    "url": "https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.5/e2fsprogs-1.46.5.tar.gz",
+    "homeUrl": "https://sourceforge.net/projects/e2fsprogs/",
+    "version": "1.46.5",
+    "releasesUrl": "https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/",
+    "priority": "required",
+    "md5": "d774f74c78afe1c6179b16cae8a420a5",
+    "size": "9.07",
+    "installedSize": 3.2,
+    "sbu": 0,
+    "sbu2": 0.5,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-doc",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/e2fsprogs-1.46.5.tar.gz"
+}

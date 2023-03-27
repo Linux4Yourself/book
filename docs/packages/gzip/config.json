@@ -1,0 +1,24 @@
+{
+    "name": "gzip",
+    "fileName": "gzip-1.11.tar.xz",
+    "description": "Пакет содержит программы для сжатия и распаковки файлов. Он необходим, чтобы выполнять распаковку большинства пакетов.",
+    "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.11.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/gzip",
+    "version": "1.11",
+    "releasesUrl": "https://ftp.gnu.org/gnu/gzip/",
+    "priority": "required",
+    "md5": "d1e93996dba00cab0caa7903cd01d454",
+    "size": "0.77",
+    "installedSize": 0.13,
+    "sbu": 0.1,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/gzip-1.11.tar.xz"
+}

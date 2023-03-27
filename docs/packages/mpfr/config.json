@@ -1,0 +1,23 @@
+{
+    "name": "mpfr",
+    "fileName": "mpfr-4.1.0.tar.xz",
+    "description": "Пакет MPFR включает функции по работе с вычислениями с произвольной точностью.",
+    "url": "https://www.mpfr.org/mpfr-4.1.0/mpfr-4.1.0.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/mpfr",
+    "version": "4.1.0",
+    "releasesUrl": "",
+    "priority": "important",
+    "md5": "bdd3d5efba9c17da8d83a35ec552baef",
+    "size": "1.45",
+    "installedSize": 0.65,
+    "sbu": 0,
+    "sbu2": 0.2,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/mpfr-4.1.0.tar.xz"
+}

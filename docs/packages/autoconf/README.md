@@ -1,19 +1,13 @@
-# autoconf
-
+# autoconf-2.71
 Программы для воспроизведения сценариев командной оболочки, которые могут выполнять автоматическую настройку исходного кода из определенного пользовательского файла-шаблона. Они также необходимы для повторной компиляции пакета после обновления процедур сборки.
 
-Версия: **2.71**
+**Версия:** 2.71<br />
+**Размер:** 1.23 Мб<br />
+**Приоритет:** Необязательный<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/autoconf-2.71.tar.xz<br />
+**Оригинальное расположение:** https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz<br/>
+**MD5:** 12cfa1687ffa2606337efe1a64416106<br />
+**Домашняя страница:** https://www.gnu.org/software/autoconf
+<br />**SBU:** 0.1
 
-Размер: **1.23Mb**
-
-Приоритет: **Необязательный**
-
-Оригинальное расположение: [https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz](https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz)
-
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/autoconf-2.71.tar.xz](https://lx4u.ru/downloads/packages/autoconf-2.71.tar.xz)
-
-MD5: **12cfa1687ffa2606337efe1a64416106**
-
-Домашняя страница: [https://www.gnu.org/software/autoconf](https://www.gnu.org/software/autoconf)
-
-SBU: **0.1**
+***

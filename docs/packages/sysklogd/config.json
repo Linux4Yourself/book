@@ -1,0 +1,26 @@
+{
+    "name": "sysklogd",
+    "fileName": "sysklogd-1.5.1.tar.gz",
+    "description": "Системные утилиты, которые обеспечивают поддержку журналирования системы и перехват сообщений ядра. Поддержка доменных гнёзд интернет и unix позволяет этому пакету утилит поддерживать и локальное и удалённое журналирование.",
+    "url": "https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz",
+    "homeUrl": "https://www.infodrom.org/projects/sysklogd/",
+    "version": "1.5.1",
+    "releasesUrl": "https://www.infodrom.org/projects/sysklogd/download/",
+    "priority": "optional",
+    "md5": "c70599ab0d037fde724f7210c2c8d7f8",
+    "size": "0.09",
+    "installedSize": 0.04,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/sysklogd-1.5.1.tar.gz"
+}

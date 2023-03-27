@@ -1,0 +1,24 @@
+{
+    "name": "automake",
+    "fileName": "automake-1.16.5.tar.xz",
+    "description": "Программы для создания файлов Makefile для использования его программой Autoconf. Он также необходим для повторной компиляции пакета после обновления процедур сборки.",
+    "url": "https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/automake",
+    "version": "1.16.5",
+    "releasesUrl": "https://ftp.gnu.org/gnu/automake/",
+    "priority": "optional",
+    "md5": "4017e96f89fca45ca946f1c5db6be714",
+    "size": "1.53",
+    "installedSize": 1.4,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/automake-1.16.5.tar.xz"
+}

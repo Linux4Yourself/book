@@ -1,0 +1,28 @@
+{
+    "name": "acl",
+    "fileName": "acl-2.3.1.tar.xz",
+    "description": "Access Control List или ACL — список управления доступом, который определяет, кто или что может получать доступ к объекту (программе, процессу или файлу), и какие именно операции разрешено или запрещено выполнять субъекту (пользователю, группе пользователей). Данный пакет содержит утилиты для администрирования списками управления доступом (ACL).",
+    "url": "https://download.savannah.gnu.org/releases/acl/acl-2.3.1.tar.xz",
+    "homeUrl": "https://savannah.nongnu.org/projects/acl/",
+    "version": "2.3.1",
+    "releasesUrl": "https://download.savannah.gnu.org/releases/acl/",
+    "priority": "important",
+    "md5": "95ce715fe09acca7c12d3306d0f076b2",
+    "size": "0.34",
+    "installedSize": 0.16,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/acl-2.3.1.tar.xz"
+}

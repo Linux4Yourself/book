@@ -1,0 +1,23 @@
+{
+    "name": "libpipeline",
+    "fileName": "libpipeline-1.5.5.tar.gz",
+    "description": "Библиотека для манипулирования подпроцессами гибким и удобным способом.",
+    "url": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.5.tar.gz",
+    "homeUrl": "https://savannah.nongnu.org/projects/libpipeline",
+    "version": "1.5.5",
+    "releasesUrl": "https://download.savannah.gnu.org/releases/libpipeline/",
+    "priority": "optional",
+    "md5": "3e725c76bfea1985e87e851ee50c2e29",
+    "size": "0.91",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/libpipeline-1.5.5.tar.gz"
+}

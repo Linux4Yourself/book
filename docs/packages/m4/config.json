@@ -1,0 +1,24 @@
+{
+    "name": "m4",
+    "fileName": "m4-1.4.19.tar.xz",
+    "description": "Пакет содержит общий макропроцессор текста - полезный инструмент для выполнения сборки других программ.",
+    "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz",
+    "homeUrl": "https://www.gnu.org/software/m4",
+    "version": "1.4.19",
+    "releasesUrl": "https://ftp.gnu.org/gnu/m4/",
+    "priority": "required",
+    "md5": "0d90823e1426f1da2fd872df0311298d",
+    "size": "1.58",
+    "installedSize": 0.28,
+    "sbu": 0.1,
+    "sbu2": 0.2,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/m4-1.4.19.tar.xz"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "gettext",
+    "fileName": "gettext-0.21.tar.xz",
+    "description": "Пакет содержит утилиты и библиотеки для работы с локализацией и интернационализацией, необходимые для некоторых пакетов, что позволяет программам, которые скомпилированы с поддержкой NLS (поддержка нативных языков), показывать сообщения в пользовательском нативном языке.",
+    "url": "https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.xz",
+    "homeUrl": "https://gnu.org/software/gettext",
+    "version": "0.21",
+    "releasesUrl": "https://ftp.gnu.org/gnu/gettext/",
+    "priority": "optional",
+    "md5": "40996bbaf7d1356d3c22e33a8b255b31",
+    "size": "9.26",
+    "installedSize": 0,
+    "sbu": 4.5,
+    "sbu2": 3,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/gettext-0.21.tar.xz"
+}

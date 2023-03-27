@@ -1,0 +1,25 @@
+{
+    "name": "vim",
+    "fileName": "vim-8.2.4115.tar.gz",
+    "description": "Один из мощнейших текстовых редакторов с полной свободой настройки и автоматизации, возможными благодаря расширениям и надстройкам.",
+    "url": "https://github.com/vim/vim/archive/refs/tags/v8.2.4115.tar.gz",
+    "homeUrl": "https://www.vim.org/",
+    "version": "8.2.4115",
+    "releasesUrl": "https://github.com/vim/vim/releases",
+    "priority": "optional",
+    "md5": "c9a0f3b6b08f9ed89b0ec6c45180442c",
+    "size": "15.23",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 2.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/vim-8.2.4115.tar.gz"
+}

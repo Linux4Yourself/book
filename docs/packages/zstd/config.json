@@ -1,0 +1,27 @@
+{
+    "name": "zstd",
+    "fileName": "zstd-1.5.1.tar.gz",
+    "description": "Zstandard - это алгоритм сжатия в реальном времени, обеспечивающий высокую степень сжатия. Он предлагает очень широкий спектр компромиссов между сжатием и скоростью, а также очень быстрым декодером.",
+    "url": "https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz",
+    "homeUrl": "https://facebook.github.io/zstd/",
+    "version": "1.5.1",
+    "releasesUrl": "https://github.com/facebook/zstd/releases/",
+    "priority": "important",
+    "md5": "b97d53547220355907dedec7de9a4f29",
+    "size": "1.85",
+    "installedSize": 2.6,
+    "sbu": 0,
+    "sbu2": 1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "install",
+        "multi_build",
+        "multi_install",
+        "multi_prepare",
+        "multi_test",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/zstd-1.5.1.tar.gz"
+}

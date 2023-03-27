@@ -1,0 +1,23 @@
+{
+    "name": "pkg-config",
+    "fileName": "pkg-config-0.29.2.tar.gz",
+    "description": "Утилита, предоставляющая интерфейс для получения информации об установленных программных библиотеках, включающую в себя параметры для Си или Си++ компилятора, параметры для компоновщика, а также версию пакета. Инструмент позволяет передавать для включения пути или пути к библиотекам инструментам для сборки во время процесса конфигурирования (configure) и выполнения команд программы make.",
+    "url": "https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz",
+    "homeUrl": "https://www.freedesktop.org/wiki/Software/pkg-config/",
+    "version": "0.29.2",
+    "releasesUrl": "https://pkg-config.freedesktop.org/releases/",
+    "priority": "required",
+    "md5": "f6e931e319531b736fadc017f470e68a",
+    "size": "1.92",
+    "installedSize": 0.61,
+    "sbu": 0,
+    "sbu2": 0.2,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/pkg-config-0.29.2.tar.gz"
+}

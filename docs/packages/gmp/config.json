@@ -1,0 +1,27 @@
+{
+    "name": "gmp",
+    "fileName": "gmp-6.2.1.tar.xz",
+    "description": "Библиотека GMP (GNU Multi-Precision Library ), предназначенная для вычислений с плавающей запятой, целыми и рациональными числами с произвольной точностью. Библиотека широко используется в криптографических целях и для компьютерных вычислений. Данная библиотека необходима для сборки gcc.",
+    "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz",
+    "homeUrl": "https://gnu.org/software/gmp",
+    "version": "6.2.1",
+    "releasesUrl": "https://ftp.gnu.org/gnu/gmp/",
+    "priority": "important",
+    "md5": "0b82665c4a92fd2ade7440c13fcaa42b",
+    "size": "1.93",
+    "installedSize": 0.7,
+    "sbu": 0,
+    "sbu2": 0.5,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/gmp-6.2.1.tar.xz"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "tzdata",
+    "fileName": "tzdata2021e.tar.gz",
+    "description": "База данных часовых поясов.",
+    "url": "https://www.iana.org/time-zones/repository/releases/tzdata2021e.tar.gz",
+    "homeUrl": "https://www.iana.org/time-zones",
+    "version": "2021e",
+    "releasesUrl": "https://www.iana.org/time-zones/repository/releases/",
+    "priority": "optional",
+    "md5": "4fdfad906ebc85fef30221c10964cce9",
+    "size": "0.40",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/tzdata2021e.tar.gz",
+    "scripts": [],
+    "multilibSupport": false
+}

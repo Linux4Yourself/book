@@ -1,0 +1,22 @@
+{
+    "name": "efivar",
+    "fileName": "efivar-37.tar.bz2",
+    "description": "Пакет для управления переменными EFI.",
+    "url": "https://github.com/rhboot/efivar/releases/download/37/efivar-37.tar.bz2",
+    "homeUrl": "https://github.com/rhboot/efivar/",
+    "version": "37",
+    "releasesUrl": "https://github.com/rhboot/efivar/releases/",
+    "priority": "optional",
+    "md5": "9f067275c5f7aafdd75bfb364280ac9c",
+    "size": "0.10",
+    "installedSize": 0.33,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/efivar-37.tar.bz2",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "install",
+        "patch"
+    ]
+}

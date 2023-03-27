@@ -1,0 +1,25 @@
+{
+    "name": "shadow",
+    "fileName": "shadow-4.11.1.tar.gz",
+    "description": "Пакет Shadow содержит программы для работы с паролями безопасным способом.",
+    "url": "https://github.com/shadow-maint/shadow/releases/download/v4.11.1/shadow-4.11.1.tar.gz",
+    "homeUrl": "https://shadow-maint.github.io/shadow/",
+    "version": "4.11.1",
+    "releasesUrl": "https://github.com/shadow-maint/shadow/releases/",
+    "priority": "required",
+    "md5": "acc9d4a40ea6907d41ed168a468fde5e",
+    "size": "3.92",
+    "installedSize": 1.7,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/shadow-4.11.1.tar.gz"
+}

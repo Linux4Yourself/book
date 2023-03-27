@@ -1,0 +1,22 @@
+{
+    "name": "dejagnu",
+    "fileName": "dejagnu-1.6.3.tar.gz",
+    "description": "Платформа для тестирования, в руководстве используется для тестирования gcc и binutils.",
+    "url": "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz",
+    "homeUrl": "https://www.gnu.org/software/dejagnu",
+    "version": "1.6.2",
+    "releasesUrl": "https://ftp.gnu.org/gnu/dejagnu/",
+    "priority": "optional",
+    "md5": "68c5208c58236eba447d7d6d1326b821",
+    "size": "0.59",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/dejagnu-1.6.3.tar.gz",
+    "multilibSupport": false,
+    "scripts": [
+        "configure",
+        "install",
+        "test"
+    ]
+}

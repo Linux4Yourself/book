@@ -1,0 +1,22 @@
+{
+    "name": "less",
+    "fileName": "less-590.tar.gz",
+    "description": "Программа Less используется для просмотра (но не изменения) содержимого текстовых файлов на экране. Она также используется пакетом Man-DB для просмотра страниц руководств.",
+    "url": "https://www.greenwoodsoftware.com/less/less-590.tar.gz",
+    "homeUrl": "https://www.greenwoodsoftware.com/less",
+    "version": "590",
+    "releasesUrl": "https://www.greenwoodsoftware.com/less/",
+    "priority": "important",
+    "md5": "f029087448357812fba450091a1172ab",
+    "size": "0.34",
+    "installedSize": 0.26,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/less-590.tar.gz"
+}

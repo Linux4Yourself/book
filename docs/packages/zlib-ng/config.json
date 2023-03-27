@@ -1,0 +1,31 @@
+{
+    "name": "zlib-ng",
+    "fileName": "zlib-ng-2.0.5.tar.gz",
+    "description": "Пакет Zlib содержит библиотеку для сжатия и распаковки, которую используют некоторые программы. Zlib-ng - это форк Zlib с улучшенной оптимизацией и дополнительными патчами.",
+    "url": "https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.0.5.tar.gz",
+    "homeUrl": "https://github.com/zlib-ng/zlib-ng",
+    "version": "2.0.5",
+    "releasesUrl": "https://github.com/zlib-ng/zlib-ng/releases",
+    "priority": "required",
+    "md5": "6c17fa8456627d60dd1332a32d8e98bb",
+    "size": "0.77",
+    "installedSize": 0.24,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_postinstall",
+        "multi_prepare",
+        "multi_test",
+        "postinstall",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/zlib-ng-2.0.5.tar.gz"
+}

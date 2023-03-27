@@ -1,0 +1,26 @@
+{
+    "name": "gcc",
+    "fileName": "gcc-11.2.0.tar.xz",
+    "description": "Пакет содержит набор компиляторов GNU для таких языков как Си и Си++.",
+    "url": "https://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.xz",
+    "homeUrl": "https://gnu.org/software/gcc",
+    "version": "11.2.0",
+    "releasesUrl": "https://ftp.gnu.org/gnu/gcc",
+    "priority": "required",
+    "md5": "31c86f2ced76acac66992eeedce2fce2",
+    "size": "77.14",
+    "installedSize": 161,
+    "sbu": 14.8,
+    "sbu2": 25,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "multi_configure",
+        "postinstall",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/gcc-11.2.0.tar.xz"
+}

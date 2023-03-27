@@ -1,0 +1,23 @@
+{
+    "name": "bc",
+    "fileName": "bc-5.2.1.tar.xz",
+    "description": "BC (basic calculator) — интерактивный интерпретатор Си-подобного языка, позволяет выполнять вычисления с произвольно заданной точностью. Часто используется как калькулятор в командной строке UNIX-подобных операционных систем.",
+    "url": "https://github.com/gavinhoward/bc/releases/download/5.2.1/bc-5.2.1.tar.xz",
+    "homeUrl": "https://git.yzena.com/gavin/bc",
+    "version": "5.2.1",
+    "releasesUrl": "https://git.yzena.com/gavin/bc/releases",
+    "priority": "important",
+    "md5": "19dbb20c3aba33acacec29edd0b2c46e",
+    "size": "0.42",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/bc-5.2.1.tar.xz"
+}

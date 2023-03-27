@@ -1,0 +1,23 @@
+{
+    "name": "psmisc",
+    "fileName": "psmisc-23.4.tar.xz",
+    "description": "Пакет Psmisc содержит программы для отображения информации о запущенных процессах.",
+    "url": "https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.4.tar.xz",
+    "homeUrl": "https://sourceforge.net/projects/psmisc",
+    "version": "23.4",
+    "releasesUrl": "https://sourceforge.net/projects/psmisc/files/psmisc/",
+    "priority": "required",
+    "md5": "8114cd4489b95308efe2509c3a406bbf",
+    "size": "0.35",
+    "installedSize": 0.16,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/psmisc-23.4.tar.xz"
+}

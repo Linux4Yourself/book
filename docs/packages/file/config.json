@@ -1,0 +1,23 @@
+{
+    "name": "file",
+    "fileName": "file-5.41.tar.gz",
+    "description": "Пакет содержит утилиты для определения типов файлов. Некоторым пакетам требуется, чтобы этот пакет был установлен.",
+    "url": "https://astron.com/pub/file/file-5.41.tar.gz",
+    "homeUrl": "https://www.darwinsys.com/file/",
+    "version": "5.41",
+    "releasesUrl": "https://astron.com/pub/file/",
+    "priority": "important",
+    "md5": "18233bb0a0089dfdc7dfbc93b96f231b",
+    "size": "1.01",
+    "installedSize": 7.3,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/file-5.41.tar.gz"
+}

@@ -1,19 +1,13 @@
-# attr
-
+# attr-2.5.1
 Программы для администрирования расширенных атрибутов объектов файловой системы.
 
-Версия: **2.5.1**
+**Версия:** 2.5.1<br />
+**Размер:** 0.44 Мб<br />
+**Приоритет:** Важный<br />
+**Ссылка для загрузки:** https://lx4u.ru/downloads/packages/attr-2.5.1.tar.gz<br />
+**Оригинальное расположение:** https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz<br/>
+**MD5:** ac1c5a7a084f0f83b8cace34211f64d8<br />
+**Домашняя страница:** https://savannah.nongnu.org/projects/attr/
+<br />**SBU:** 0.1
 
-Размер: **0.44Mb**
-
-Приоритет: **Важный**
-
-Оригинальное расположение: [https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz](https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz)
-
-Ссылка для загрузки: [https://lx4u.ru/downloads/packages/attr-2.5.1.tar.gz](https://lx4u.ru/downloads/packages/attr-2.5.1.tar.gz)
-
-MD5: **ac1c5a7a084f0f83b8cace34211f64d8**
-
-Домашняя страница: [https://savannah.nongnu.org/projects/attr/](https://savannah.nongnu.org/projects/attr/)
-
-SBU: **0.1**
+***

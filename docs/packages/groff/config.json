@@ -1,0 +1,22 @@
+{
+    "name": "groff",
+    "fileName": "groff-1.22.4.tar.gz",
+    "description": "Пакет Groff содержит программы для обработки и форматирования текста. Одна из самых важных функций - форматирование man страниц.",
+    "url": "https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz",
+    "homeUrl": "https://gnu.org/software/groff",
+    "version": "1.22.4",
+    "releasesUrl": "https://ftp.gnu.org/gnu/groff/",
+    "priority": "optional",
+    "md5": "08fb04335e2f5e73f23ea4c3adbf0c5f",
+    "size": "3.95",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.5,
+    "scripts": [
+        "build",
+        "configure",
+        "install"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/groff-1.22.4.tar.gz"
+}

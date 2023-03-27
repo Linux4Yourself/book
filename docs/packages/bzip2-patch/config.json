@@ -1,0 +1,18 @@
+{
+    "name": "bzip2-patch",
+    "fileName": "bzip2-1.0.8-install_docs-1.patch",
+    "description": "",
+    "url": "https://raw.githubusercontent.com/Linux4Yourself/book/develop/docs/patches/bzip2-1.0.8-install_docs-1.patch",
+    "homeUrl": "",
+    "version": "1.0.8",
+    "releasesUrl": "",
+    "priority": "required",
+    "md5": "b45d3bea4ddb7f64b6e56033ecc0fb11",
+    "size": "0.00",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/bzip2-1.0.8-install_docs-1.patch",
+    "multilibSupport": false,
+    "scripts": []
+}

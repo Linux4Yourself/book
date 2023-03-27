@@ -1,0 +1,25 @@
+{
+    "name": "tcl",
+    "fileName": "tcl8.6.12-src.tar.gz",
+    "description": "Пакет содержит 'командный язык инструментов' - скриптовый язык высокого уровня. Он необходим для выполнения тестов некоторых пакетов, и будет установлен только во временный инструментарий.",
+    "url": "https://downloads.sourceforge.net/tcl/tcl8.6.12-src.tar.gz",
+    "homeUrl": "https://sourceforge.net/projects/tcl",
+    "version": "8.6.12",
+    "releasesUrl": "https://downloads.sourceforge.net/tcl",
+    "priority": "optional",
+    "md5": "87ea890821d2221f2ab5157bc5eb885f",
+    "size": "9.87",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 3.8,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/tcl8.6.12-src.tar.gz",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "postinstall",
+        "prepare",
+        "test"
+    ]
+}

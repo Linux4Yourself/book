@@ -1,0 +1,32 @@
+{
+    "name": "eudev",
+    "fileName": "eudev-3.2.11.tar.gz",
+    "description": "Eudev - диспетчер устройств. Он контролирует записи в каталоге /dev, так как устройства добавляются или удаляются из системы динамически.",
+    "url": "https://github.com/eudev-project/eudev/releases/download/v3.2.11/eudev-3.2.11.tar.gz",
+    "homeUrl": "https://github.com/eudev-project/eudev",
+    "version": "3.2.11",
+    "releasesUrl": "https://github.com/eudev-project/eudev/releases",
+    "priority": "required",
+    "md5": "417ba948335736d4d81874fba47a30f7",
+    "size": "2.03",
+    "installedSize": 8.1,
+    "sbu": 0,
+    "sbu2": 0.2,
+    "dependencies": [
+        "udev"
+    ],
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "postinstall",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/eudev-3.2.11.tar.gz"
+}

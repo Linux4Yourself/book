@@ -1,0 +1,29 @@
+{
+    "name": "xz",
+    "fileName": "xz-5.2.5.tar.xz",
+    "description": "Пакет содержит программы для сжатия и распаковки файлов. Он обеспечивает высокое сжатие и используется для распаковки пакетов форматов XZ и LZMA. Сжатие текстовых файлов при помощи программы xz даёт больший процент сжатия, чем gzip или bzip2.",
+    "url": "https://tukaani.org/xz/xz-5.2.5.tar.xz",
+    "homeUrl": "https://tukaani.org/xz",
+    "version": "5.2.5",
+    "releasesUrl": "https://tukaani.org/xz/",
+    "priority": "required",
+    "md5": "aa1621ec7013a19abab52a8aff04fe5b",
+    "size": "1.10",
+    "installedSize": 0.6,
+    "sbu": 0.2,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "multi_test",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/xz-5.2.5.tar.xz"
+}

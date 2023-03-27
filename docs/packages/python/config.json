@@ -1,0 +1,23 @@
+{
+    "name": "python",
+    "fileName": "Python-3.10.2.tar.xz",
+    "description": "Высокоуровневый язык программирования общего назначения, ориентированный на повышение производительности разработчика и читаемости кода. Содержит среду разработки для объектно-ориентированного программирования, написания сценариев, прототипирования крупных программ и разработки полноценных приложений.",
+    "url": "https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tar.xz",
+    "homeUrl": "https://www.python.org",
+    "version": "3.10.2",
+    "releasesUrl": "https://www.python.org/ftp/python/",
+    "priority": "important",
+    "md5": "14e8c22458ed7779a1957b26cde01db9",
+    "size": "17.91",
+    "installedSize": 165.1,
+    "sbu": 1.2,
+    "sbu2": 6.5,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/Python-3.10.2.tar.xz"
+}

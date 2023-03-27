@@ -1,0 +1,23 @@
+{
+    "name": "popt",
+    "fileName": "popt-1.18.tar.gz",
+    "description": "Popt - библиотека анализа параметров командной строки.",
+    "url": "http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.18.tar.gz",
+    "homeUrl": "https://github.com/rpm-software-management/popt",
+    "version": "1.18",
+    "releasesUrl": "https://github.com/rpm-software-management/popt/releases/",
+    "priority": "optional",
+    "md5": "450f2f636e6a3aa527de803d0ae76c5a",
+    "size": "0.55",
+    "installedSize": 0.06,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/popt-1.18.tar.gz",
+    "multilibSupport": false,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ]
+}

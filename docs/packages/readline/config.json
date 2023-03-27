@@ -1,0 +1,30 @@
+{
+    "name": "readline",
+    "fileName": "readline-8.1.2.tar.gz",
+    "description": "Пакет Readline - набор библиотек, который предлагает редактирование командной строки и возможности просмотра истории.",
+    "url": "https://ftp.gnu.org/gnu/readline/readline-8.1.2.tar.gz",
+    "homeUrl": "https://www.gnu.org/software/readline",
+    "version": "8.1.2",
+    "releasesUrl": "https://ftp.gnu.org/gnu/readline/",
+    "priority": "required",
+    "md5": "12819fa739a78a6172400f399ab34f81",
+    "size": "2.85",
+    "installedSize": 0.65,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "cldirs",
+        "configure",
+        "install",
+        "multi_build",
+        "multi_configure",
+        "multi_install",
+        "multi_prepare",
+        "multi_test",
+        "prepare",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/readline-8.1.2.tar.gz"
+}

@@ -1,0 +1,23 @@
+{
+    "name": "xml-parser",
+    "fileName": "XML-Parser-2.46.tar.gz",
+    "description": "Модуль (автор James Clark), который является интерфейсом Perl для библиотеки Expat.",
+    "url": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz",
+    "homeUrl": "https://metacpan.org/pod/XML::Parser",
+    "version": "2.46",
+    "releasesUrl": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/",
+    "priority": "important",
+    "md5": "80bb18a8e6240fcf7ec2f7b57601c170",
+    "size": "0.24",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.1,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/XML-Parser-2.46.tar.gz"
+}

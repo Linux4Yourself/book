@@ -1,0 +1,18 @@
+{
+    "name": "binutils-2.37-upstream_fix-1",
+    "fileName": "binutils-2.37-upstream_fix-1.patch",
+    "description": "",
+    "url": "https://www.linuxfromscratch.org/patches/lfs/development/binutils-2.37-upstream_fix-1.patch",
+    "homeUrl": "",
+    "version": "1",
+    "releasesUrl": "",
+    "priority": "required",
+    "md5": "3518fa864fe8d7ef65be4960f380b03b",
+    "size": "0.01",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/binutils-2.37-upstream_fix-1.patch",
+    "multilibSupport": false,
+    "scripts": []
+}

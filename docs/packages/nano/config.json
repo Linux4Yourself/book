@@ -1,0 +1,24 @@
+{
+    "name": "nano",
+    "fileName": "nano-5.9.tar.xz",
+    "description": "Консольный текстовый редактор для UNIX и Unix-подобных операционных систем, основанный на библиотеке curses.",
+    "url": "https://www.nano-editor.org/dist/v5/nano-5.9.tar.xz",
+    "homeUrl": "https://www.nano-editor.org/",
+    "version": "5.9",
+    "releasesUrl": "https://www.nano-editor.org/download.php",
+    "priority": "optional",
+    "md5": "24b67a7a2e731d3a5ec6d154b4521d08",
+    "size": "1.43",
+    "installedSize": 0,
+    "sbu": 0,
+    "sbu2": 0.2,
+    "scripts": [
+        "build",
+        "configure",
+        "install",
+        "install-doc",
+        "test"
+    ],
+    "multilibSupport": false,
+    "downloadUrl": "https://lx4u.ru/downloads/packages/nano-5.9.tar.xz"
+}
