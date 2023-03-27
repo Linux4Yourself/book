@@ -35,4 +35,8 @@
 {{ include('../packages/intltool/install-doc') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `intltool-{extract,merge,prepare,update}` и `intltoolize`
+
+**Директории:** `/usr/share/intltool` и `/usr/share/doc/intltool`

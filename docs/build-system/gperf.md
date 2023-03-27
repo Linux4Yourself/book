@@ -28,4 +28,8 @@
 {{ include('../packages/gperf/install') }}
 ```
 
+## Установленные файлы
 
+**Программы:** `gperf`
+
+<!-- Возможна установка директории /usr/share/doc/gperf-$VERSION, тогда требуется 'configure' передать соотв. ключ -->
